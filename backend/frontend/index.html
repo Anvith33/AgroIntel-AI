@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroIntel AI - Crop & Price Advisory</title>
+    <meta name="description" content="AI-powered agricultural advisory for Indian farmers. Get crop recommendations and market price predictions based on live weather and soil data.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm-1-13v6l4 2"/>
+            </svg>
+            AgroIntel AI
+        </div>
+        <div class="nav-links">
+            <span class="badge live-badge">● Live Data Active</span>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="header-content">
+            <h1>Intelligent Agricultural Advisory</h1>
+            <p>Our system fuses real-time market and weather data from the Government of India with historical baseline models to provide hyper-local, accurate predictions — including specialised support for <strong>coastal regions</strong>.</p>
+        </div>
+
+        <div class="grid-container">
+            <!-- ── Crop Recommendation Card ─────────────────────────────── -->
+            <div class="glass-card">
+                <div class="card-header">
+                    <h2>🌱 Crop Recommendation</h2>
+                    <span class="badge">AI Assisted</span>
+                </div>
+                <form id="cropForm" class="input-form">
+                    <div class="input-group full-width">
+                        <label>Location (City / District / Village) *</label>
+                        <input type="text" id="location" required placeholder="e.g. Kozhikode, Visakhapatnam, Pune" />
+                    </div>
+                    <p class="helper-text">Our AI fetches live weather for your location and maps soil type to suggest the most suitable crop — with special handling for coastal zones.</p>
+                    <button type="submit" id="cropSubmitBtn" class="btn primary-btn">
+                        <span>Analyze Location</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+
+                <div id="cropResult" class="result-box hidden">
+                    <!-- Header row: crop name + soil + coastal badge -->
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.4rem;">
+                        <div class="result-label">Recommended Crop</div>
+                        <div style="display:flex; gap:0.4rem; flex-wrap:wrap; align-items:center;">
+                            <div class="badge" id="inferredSoil" style="font-size:0.7rem; background:rgba(59,130,246,0.2); border:1px solid rgba(59,130,246,0.3);">Alluvial Soil</div>
+                            <div class="badge coastal-badge hidden" id="coastalBadge" style="font-size:0.7rem; background:rgba(6,182,212,0.2); border:1px solid rgba(6,182,212,0.4); color:#22d3ee;">🌊 Coastal Zone</div>
+                            <div class="badge hidden" id="dataSourceBadge" style="font-size:0.7rem; background:rgba(16,185,129,0.2); border:1px solid rgba(16,185,129,0.3); color:#10b981;">📊 Mandi Data</div>
+                        </div>
+                    </div>
+                    <div class="result-value highlight" id="cropOutput">Wheat</div>
+
+                    <!-- Weather summary -->
+                    <div class="weather-strip" id="weatherStrip" style="display:flex; gap:1rem; margin:0.75rem 0; flex-wrap:wrap;">
+                        <span id="weatherTemp" class="weather-tag">🌡️ --°C</span>
+                        <span id="weatherHumidity" class="weather-tag">💧 --%</span>
+                        <span id="weatherRain" class="weather-tag">🌧️ -- mm</span>
+                    </div>
+
+                    <div class="reasoning-box">
+                        <h4>AI Reasoning</h4>
+                        <p id="cropReasoning">Moderate temperature and rainfall are ideal.</p>
+                        <h4>Suggested Water Source</h4>
+                        <p id="waterSource">Canal Irrigation</p>
+                    </div>
+
+                    <div class="reasoning-box" id="altCropsBox" style="margin-top:1rem; padding-top:1rem;">
+                        <h4>Alternative Crops</h4>
+                        <ul id="altCropsList" style="font-size:0.85rem; color:var(--text-muted); padding-left:1rem; margin-top:0.5rem; line-height:1.8;"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Price Prediction Card ────────────────────────────────── -->
+            <div class="glass-card">
+                <div class="card-header">
+                    <h2>📈 Market Price Predictor</h2>
+                    <span class="badge warning">Live Market</span>
+                </div>
+                <form id="priceForm" class="input-form">
+                    <div class="input-group">
+                        <label>Select Crop</label>
+                        <select id="cropType">
+                            <optgroup label="Cereals">
+                                <option value="wheat">🌾 Wheat</option>
+                                <option value="rice">🍚 Rice</option>
+                                <option value="maize">🌽 Maize</option>
+                            </optgroup>
+                            <optgroup label="Coastal / Tropical">
+                                <option value="coconut">🥥 Coconut</option>
+                                <option value="banana">🍌 Banana</option>
+                                <option value="arecanut">🌴 Arecanut</option>
+                            </optgroup>
+                            <optgroup label="Oilseeds">
+                                <option value="groundnut">🥜 Groundnut</option>
+                                <option value="mustard">🟡 Mustard</option>
+                                <option value="soybean">🫘 Soybean</option>
+                                <option value="cotton">🏵️ Cotton</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>State</label>
+                        <select id="stateType">
+                            <option value="All">🇮🇳 All India Average</option>
+                            <optgroup label="North India">
+                                <option value="Punjab">Punjab</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                            </optgroup>
+                            <optgroup label="West India">
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            </optgroup>
+                            <optgroup label="South India">
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala 🌊</option>
+                                <option value="Tamil Nadu">Tamil Nadu 🌊</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh 🌊</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Goa">Goa 🌊</option>
+                            </optgroup>
+                            <optgroup label="East India">
+                                <option value="West Bengal">West Bengal 🌊</option>
+                                <option value="Odisha">Odisha 🌊</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                            </optgroup>
+                            <optgroup label="North East">
+                                <option value="Assam">Assam</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input-group full-width">
+                        <label>Forecast Horizon</label>
+                        <select id="horizonType">
+                            <option value="7">7 Days</option>
+                            <option value="15">15 Days</option>
+                            <option value="30" selected>30 Days</option>
+                            <option value="60">60 Days</option>
+                            <option value="90">90 Days</option>
+                        </select>
+                    </div>
+                    <p class="helper-text">Fetching prices directly from data.gov.in Agmarknet API</p>
+                    <button type="submit" id="priceSubmitBtn" class="btn secondary-btn">
+                        <span>Forecast Price</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </button>
+                </form>
+
+                <div id="priceResult" class="result-box hidden">
+                    <div class="price-grid">
+                        <div class="price-item">
+                            <div class="result-label">Live Price (₹/Q)</div>
+                            <div class="result-value" id="currentPrice">₹0</div>
+                        </div>
+                        <div class="price-item">
+                            <div class="result-label">Predicted (₹/Q)</div>
+                            <div class="result-value highlight" id="predictedPrice">₹0</div>
+                        </div>
+                    </div>
+                    <div class="sell-hold-box" id="recommendationBox">
+                        <div class="rec-badge" id="recBadge">HOLD</div>
+                        <div class="rec-reason" id="recReason">Prices are expected to rise.</div>
+                    </div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.5rem; text-align:right;" id="modelLabel"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── How It Works ──────────────────────────────────────────────── -->
+        <div class="glass-card" style="margin-top:2rem;">
+            <h2>How Our System Works</h2>
+            <div style="display:flex; gap:2rem; margin-top:1rem; flex-wrap:wrap;">
+                <div style="flex:1; min-width:220px;">
+                    <h3 style="color:var(--primary); margin-bottom:0.5rem;">📡 Live Data Ingestion</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">When you request a prediction, our system pings the OpenWeatherMap API for exact local weather, and the data.gov.in Agmarknet API for the live, state-level Mandi price.</p>
+                </div>
+                <div style="flex:1; min-width:220px;">
+                    <h3 style="color:var(--secondary); margin-bottom:0.5rem;">🧠 Historical Fusion</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">We anchor our ML models to the live price, using historical trend patterns (including Black Swan events like the COVID-19 lockdown) to project the future trajectory accurately.</p>
+                </div>
+                <div style="flex:1; min-width:220px;">
+                    <h3 style="color:#22d3ee; margin-bottom:0.5rem;">🌊 Coastal Intelligence</h3>
+                    <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Our system automatically detects coastal districts and adjusts recommendations for crops like Coconut, Cashew, Banana, Black Pepper, and Tapioca — which thrive near the Indian coastline.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

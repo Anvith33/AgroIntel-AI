@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore large datasets
+backend/app/data/archive/
+backend/app/data/*.csv
+*.csv

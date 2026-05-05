@@ -1,0 +1,272 @@
+[
+  {
+    "crop": "Arecanut",
+    "suitable_soils": ["Laterite Soil", "Red Soil", "Coastal Alluvial Soil"],
+    "min_temp": 14,
+    "max_temp": 36,
+    "min_rain": 75,
+    "max_rain": 400,
+    "water_source": "Monsoon & Drip Irrigation",
+    "description": "Thrives in high-humidity coastal areas with laterite soil and heavy monsoon rains."
+  },
+  {
+    "crop": "Coconut",
+    "suitable_soils": ["Laterite Soil", "Coastal Alluvial Soil", "Sandy Soil"],
+    "min_temp": 20,
+    "max_temp": 38,
+    "min_rain": 100,
+    "max_rain": 400,
+    "water_source": "Rainfed / Drip Irrigation",
+    "description": "A highly salt-tolerant coastal crop that thrives in sandy laterite soils near the seaboard. Kerala, Karnataka, and Tamil Nadu coasts are ideal."
+  },
+  {
+    "crop": "Banana",
+    "suitable_soils": ["Alluvial Soil", "Laterite Soil", "Coastal Alluvial Soil", "Red Soil"],
+    "min_temp": 20,
+    "max_temp": 38,
+    "min_rain": 100,
+    "max_rain": 350,
+    "water_source": "Drip Irrigation & Canal",
+    "description": "A tropical crop that grows well across Kerala, Andhra Pradesh, Tamil Nadu, and eastern coastal plains. Requires warm temperatures and consistent moisture."
+  },
+  {
+    "crop": "Black Pepper",
+    "suitable_soils": ["Laterite Soil", "Red Soil"],
+    "min_temp": 18,
+    "max_temp": 32,
+    "min_rain": 125,
+    "max_rain": 350,
+    "water_source": "Natural Rainfall & Sprinklers",
+    "description": "The 'King of Spices' — grows as a vine on trees in the humid Western Ghats foothills of Kerala and Karnataka. Requires high humidity and well-drained soil."
+  },
+  {
+    "crop": "Cardamom",
+    "suitable_soils": ["Mountain Soil", "Laterite Soil", "Red Soil"],
+    "min_temp": 10,
+    "max_temp": 28,
+    "min_rain": 150,
+    "max_rain": 400,
+    "water_source": "Natural Rainfall & Sprinklers",
+    "description": "Grows in high-altitude forests of the Western Ghats (Idukki, Wayanad, Kodagu). Requires cool, shaded conditions and heavy rainfall."
+  },
+  {
+    "crop": "Ginger",
+    "suitable_soils": ["Laterite Soil", "Red Soil", "Alluvial Soil"],
+    "min_temp": 20,
+    "max_temp": 32,
+    "min_rain": 100,
+    "max_rain": 300,
+    "water_source": "Natural Rainfall & Sprinklers",
+    "description": "A high-value spice crop grown in Kerala, NE India, and coastal Andhra. Prefers well-drained loamy soils with shade."
+  },
+  {
+    "crop": "Turmeric",
+    "suitable_soils": ["Red Soil", "Alluvial Soil", "Black Soil", "Laterite Soil"],
+    "min_temp": 20,
+    "max_temp": 35,
+    "min_rain": 100,
+    "max_rain": 250,
+    "water_source": "Canal & Drip Irrigation",
+    "description": "A spice crop widely grown in Andhra Pradesh, Telangana, Tamil Nadu, and Odisha. Needs warm temperatures and well-distributed rainfall."
+  },
+  {
+    "crop": "Coffee",
+    "suitable_soils": ["Red Soil", "Laterite Soil"],
+    "min_temp": 15,
+    "max_temp": 28,
+    "min_rain": 50,
+    "max_rain": 250,
+    "water_source": "Natural Rainfall & Sprinklers",
+    "description": "Requires well-drained loamy or red soil, hilly elevation, and moderate, cool temperatures."
+  },
+  {
+    "crop": "Rice",
+    "suitable_soils": ["Alluvial Soil", "Laterite Soil", "Black Soil", "Coastal Alluvial Soil"],
+    "min_temp": 22,
+    "max_temp": 35,
+    "min_rain": 100,
+    "max_rain": 500,
+    "water_source": "Flooded Surface Irrigation",
+    "description": "A highly water-intensive crop perfect for heavy monsoon regions with clayey or alluvial soils. Coastal varieties like Jyothi (Kerala) and Samba (TN) thrive near the coast."
+  },
+  {
+    "crop": "Wheat",
+    "suitable_soils": ["Alluvial Soil", "Black Soil"],
+    "min_temp": 10,
+    "max_temp": 25,
+    "min_rain": 10,
+    "max_rain": 75,
+    "water_source": "Canal Irrigation",
+    "description": "A rabi (winter) crop that requires cool temperatures and moderate water."
+  },
+  {
+    "crop": "Maize",
+    "suitable_soils": ["Alluvial Soil", "Red Soil", "Black Soil"],
+    "min_temp": 21,
+    "max_temp": 32,
+    "min_rain": 25,
+    "max_rain": 100,
+    "water_source": "Drip Irrigation",
+    "description": "Highly adaptable crop that grows well in moderately warm and semi-dry regions."
+  },
+  {
+    "crop": "Cotton",
+    "suitable_soils": ["Black Soil"],
+    "min_temp": 21,
+    "max_temp": 30,
+    "min_rain": 25,
+    "max_rain": 85,
+    "water_source": "Borewell & Drip Irrigation",
+    "description": "Perfect for the Deccan plateau; requires deep black soil and dry harvest periods."
+  },
+  {
+    "crop": "Sugarcane",
+    "suitable_soils": ["Alluvial Soil", "Black Soil", "Red Soil"],
+    "min_temp": 20,
+    "max_temp": 35,
+    "min_rain": 60,
+    "max_rain": 150,
+    "water_source": "Canal & Borewell",
+    "description": "A cash crop needing long, hot summers and consistent irrigation year-round."
+  },
+  {
+    "crop": "Cashew",
+    "suitable_soils": ["Laterite Soil", "Red Soil", "Sandy Soil", "Coastal Alluvial Soil"],
+    "min_temp": 20,
+    "max_temp": 38,
+    "min_rain": 40,
+    "max_rain": 350,
+    "water_source": "Rainfed",
+    "description": "Grows excellently in coastal laterite soils with minimal maintenance. Widely cultivated in Goa, Kerala, and Maharashtra coast."
+  },
+  {
+    "crop": "Groundnut",
+    "suitable_soils": ["Red Soil", "Black Soil", "Sandy Soil", "Alluvial Soil"],
+    "min_temp": 20,
+    "max_temp": 35,
+    "min_rain": 25,
+    "max_rain": 125,
+    "water_source": "Rainfed / Borewell",
+    "description": "A major oilseed crop in Andhra Pradesh, Gujarat, Tamil Nadu, and Karnataka. Requires well-drained sandy-loam soil."
+  },
+  {
+    "crop": "Soybean",
+    "suitable_soils": ["Black Soil", "Alluvial Soil", "Red Soil"],
+    "min_temp": 20,
+    "max_temp": 30,
+    "min_rain": 50,
+    "max_rain": 150,
+    "water_source": "Rainfed / Drip Irrigation",
+    "description": "A kharif oilseed crop widely grown in Madhya Pradesh, Maharashtra, and Rajasthan."
+  },
+  {
+    "crop": "Mustard",
+    "suitable_soils": ["Alluvial Soil", "Black Soil", "Desert Soil"],
+    "min_temp": 8,
+    "max_temp": 25,
+    "min_rain": 10,
+    "max_rain": 60,
+    "water_source": "Canal Irrigation",
+    "description": "A rabi (winter) oilseed crop grown in Rajasthan, Punjab, Haryana, and West Bengal. Tolerates cold and semi-arid conditions."
+  },
+  {
+    "crop": "Sunflower",
+    "suitable_soils": ["Black Soil", "Red Soil", "Alluvial Soil"],
+    "min_temp": 18,
+    "max_temp": 35,
+    "min_rain": 30,
+    "max_rain": 100,
+    "water_source": "Drip Irrigation / Canal",
+    "description": "A versatile oilseed crop adaptable to many soils. Grows well in Karnataka, Andhra Pradesh, and Tamil Nadu."
+  },
+  {
+    "crop": "Millets (Ragi/Jowar)",
+    "suitable_soils": ["Red Soil", "Black Soil", "Desert Soil"],
+    "min_temp": 25,
+    "max_temp": 40,
+    "min_rain": 10,
+    "max_rain": 50,
+    "water_source": "Rainfed / Dryland",
+    "description": "Extremely drought-resistant crop suitable for dry regions with poor soil fertility."
+  },
+  {
+    "crop": "Bajra (Pearl Millet)",
+    "suitable_soils": ["Desert Soil", "Red Soil", "Black Soil", "Alluvial Soil"],
+    "min_temp": 25,
+    "max_temp": 42,
+    "min_rain": 8,
+    "max_rain": 60,
+    "water_source": "Rainfed / Dryland",
+    "description": "The most drought-tolerant cereal. Ideal for arid Rajasthan, Gujarat, and Haryana. Can withstand extreme heat and minimal rainfall."
+  },
+  {
+    "crop": "Jute",
+    "suitable_soils": ["Alluvial Soil"],
+    "min_temp": 25,
+    "max_temp": 38,
+    "min_rain": 150,
+    "max_rain": 400,
+    "water_source": "Flood Irrigation / Rainfed",
+    "description": "A major fibre crop grown in West Bengal, Assam, Bihar, and Odisha's alluvial plains. Thrives in hot, humid, and waterlogged conditions."
+  },
+  {
+    "crop": "Tapioca (Cassava)",
+    "suitable_soils": ["Laterite Soil", "Sandy Soil", "Coastal Alluvial Soil"],
+    "min_temp": 22,
+    "max_temp": 38,
+    "min_rain": 75,
+    "max_rain": 250,
+    "water_source": "Rainfed",
+    "description": "A starch-rich tuber crop widely grown in Kerala and Tamil Nadu. Tolerates poor, sandy, and laterite soils common along the coast."
+  },
+  {
+    "crop": "Betel Leaf",
+    "suitable_soils": ["Alluvial Soil", "Laterite Soil", "Coastal Alluvial Soil"],
+    "min_temp": 20,
+    "max_temp": 38,
+    "min_rain": 100,
+    "max_rain": 300,
+    "water_source": "Drip Irrigation",
+    "description": "A high-value cash crop grown in Andhra Pradesh, West Bengal, and Odisha. Requires humid, warm conditions and well-drained soils."
+  },
+  {
+    "crop": "Paddy (Coastal/Kharif)",
+    "suitable_soils": ["Coastal Alluvial Soil", "Alluvial Soil", "Laterite Soil"],
+    "min_temp": 24,
+    "max_temp": 36,
+    "min_rain": 120,
+    "max_rain": 500,
+    "water_source": "Monsoon Rainfall / Flooded Irrigation",
+    "description": "Coastal paddy varieties (Jyothi, Samba Masuri, BPT-5204) are salt-tolerant and grow in coastal deltaic regions of Andhra, Kerala, Odisha, and West Bengal."
+  },
+  {
+    "crop": "Mango",
+    "suitable_soils": ["Alluvial Soil", "Red Soil", "Black Soil", "Laterite Soil"],
+    "min_temp": 22,
+    "max_temp": 40,
+    "min_rain": 25,
+    "max_rain": 200,
+    "water_source": "Rainfed / Borewell",
+    "description": "India's most popular fruit. Grows across Andhra Pradesh, Maharashtra, Uttar Pradesh, and Gujarat. Tolerates dry spells during flowering."
+  },
+  {
+    "crop": "Rubber",
+    "suitable_soils": ["Laterite Soil", "Red Soil"],
+    "min_temp": 20,
+    "max_temp": 34,
+    "min_rain": 200,
+    "max_rain": 450,
+    "water_source": "Natural Rainfall",
+    "description": "A plantation crop cultivated in Kerala's midland laterite slopes. Requires consistently high rainfall and warm temperatures year-round."
+  },
+  {
+    "crop": "Tea",
+    "suitable_soils": ["Mountain Soil", "Laterite Soil", "Red Soil"],
+    "min_temp": 12,
+    "max_temp": 28,
+    "min_rain": 150,
+    "max_rain": 400,
+    "water_source": "Natural Rainfall",
+    "description": "Grown in the high-altitude zones of Assam, West Bengal (Darjeeling), and Nilgiris. Requires cool, misty conditions and well-drained, acidic soil."
+  }
+]

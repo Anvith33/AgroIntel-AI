@@ -1,0 +1,21 @@
+{
+  "models": {
+    "prophet": {
+      "mae": 65.56,
+      "rmse": 69.6
+    },
+    "xgboost": {
+      "mae": 25.37,
+      "rmse": 33.51
+    },
+    "arima": {
+      "mae": 15.82,
+      "rmse": 21.12
+    },
+    "mlp": {
+      "mae": 50.31,
+      "rmse": 59.11
+    }
+  },
+  "best_model": "arima"
+}
