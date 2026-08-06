@@ -423,12 +423,12 @@ function renderPredResults(data, horizon) {
             <p>${decReason}</p>
         </div>
 
-        <div class="chart-box glass-card">
+        <div class="chart-box glass-card" style="height: 360px; overflow: hidden;">
             <div class="chart-header">
                 <h4>Price Forecast Chart</h4>
                 <span class="chart-horizon">${horizon}-day outlook</span>
             </div>
-            <canvas id="priceChart" height="240"></canvas>
+            <canvas id="priceChart"></canvas>
         </div>`;
 
     document.getElementById("predResults").innerHTML = html;
@@ -457,14 +457,15 @@ function simplifyDecisionReason(data) {
 function renderPriceChart(data, horizon) {
     const ctx = document.getElementById("priceChart");
     if (!ctx) return;
-    if (activeChart) { activeChart.destroy(); activeChart = null; }
 
-    // Use the predictions dict from backend directly for accuracy
-    // These are the ACTUAL model outputs: no interpolation, no smoothing
+    if (activeChart) {
+        activeChart.destroy();
+        activeChart = null;
+    }
+
     const predsDict = data.predictions || {};
     const curPrice  = typeof data.current_price === "number" ? data.current_price : 0;
 
-    // Build milestone points up to the selected horizon ONLY
     const allMilestones = [
         { day: 0,  label: "Today",   val: curPrice },
         { day: 7,  label: "7 Days",  val: predsDict["7_day"] },
@@ -474,21 +475,10 @@ function renderPriceChart(data, horizon) {
         { day: 90, label: "90 Days", val: predsDict["90_day"] },
     ];
 
-    // Only include milestones up to selected horizon
     const points = allMilestones.filter(m => m.day <= horizon && m.val !== undefined);
-    // Ensure the exact horizon is the last point
-    const lastPoint = points[points.length - 1];
-    if (lastPoint && lastPoint.day !== horizon) {
-        const exactVal = predsDict[`${horizon}_day`];
-        if (exactVal !== undefined) {
-            points.push({ day: horizon, label: `${horizon} Days`, val: exactVal });
-        }
-    }
-
     const chartLabels = points.map(p => p.label);
     const chartValues = points.map(p => p.val);
 
-    // Styling: amber for Today, green for all forecasted milestones
     const pointRadius  = points.map((p, i) => (i === 0 || i === points.length - 1) ? 7 : 5);
     const pointBgColor = points.map((p, i) => i === 0 ? "#f59e0b" : "#22c55e");
 
@@ -496,25 +486,24 @@ function renderPriceChart(data, horizon) {
         type: "line",
         data: {
             labels: chartLabels,
-            datasets: [
-                {
-                    label: "Price Forecast (Rs. per quintal)",
-                    data: chartValues,
-                    borderColor: "#22c55e",
-                    backgroundColor: "rgba(34,197,94,0.07)",
-                    borderWidth: 3,
-                    fill: true,
-                    tension: 0.3,
-                    pointRadius: pointRadius,
-                    pointHoverRadius: 8,
-                    pointBackgroundColor: pointBgColor,
-                    pointBorderColor: "#fff",
-                    pointBorderWidth: 2,
-                },
-            ],
+            datasets: [{
+                label: "Price Forecast (Rs. per quintal)",
+                data: chartValues,
+                borderColor: "#22c55e",
+                backgroundColor: "rgba(34,197,94,0.07)",
+                borderWidth: 3,
+                fill: true,
+                tension: 0.3,
+                pointRadius: pointRadius,
+                pointHoverRadius: 8,
+                pointBackgroundColor: pointBgColor,
+                pointBorderColor: "#fff",
+                pointBorderWidth: 2,
+            }],
         },
         options: {
-            responsive: true,
+            animation: false,
+            responsive: false,
             maintainAspectRatio: false,
             interaction: { mode: "index", intersect: false },
             plugins: {
