@@ -256,29 +256,34 @@ def predict_crop_price(
 
     # 3. Retrieve Current Mandi Price
     # Priority: (1) Live data.gov.in API  (2) Disk cache  (3) Historical tail (last CSV row)
+    # NOTE: AGMARKNET publishes with 3–6 day delay — any successful API response is VALID.
+    # Fallback to CSV ONLY on timeout / HTTP error / no records.
     mandi_res = get_latest_price(crop_lower, state)
     if mandi_res:
         current_price = mandi_res.modal_price
-        current_price_source = f"Live Mandi (data.gov.in)" if mandi_res.data_age_days <= 3 else f"Cached Mandi (data.gov.in)"
-        current_price_date  = mandi_res.arrival_date          # ISO date string of the actual market record
-        data_age_days = mandi_res.data_age_days
-        price_timestamp = mandi_res.arrival_date
-        market_data_status = "LIVE" if mandi_res.data_age_days <= 3 else "CACHE"
-        logger.info(
+        freshness     = mandi_res.freshness_label   # Fresh / Recent / Historical
+        current_price_source = f"Government Mandi Data (data.gov.in) — {freshness}"
+        current_price_date   = mandi_res.arrival_date
+        data_age_days        = mandi_res.data_age_days
+        price_timestamp      = mandi_res.arrival_date
+        # data_status mirrors freshness for the frontend badge
+        market_data_status   = freshness.upper()   # FRESH / RECENT / HISTORICAL
+        logger.warning(
             f"[PRICE_SOURCE] {crop_lower}: ₹{current_price}/q "
-            f"from {current_price_source} | market={mandi_res.market} | age={data_age_days}d"
+            f"from {current_price_source} | market={mandi_res.market} | "
+            f"record_date={current_price_date} | age={data_age_days}d | fallback=No"
         )
     else:
-        last_hist_price = float(data_tail_df["y"].iloc[-1])
-        current_price = last_hist_price
+        last_hist_price      = float(data_tail_df["y"].iloc[-1])
+        current_price        = last_hist_price
         current_price_source = "Historical Dataset"
-        current_price_date   = hist_end_date                  # Last date in training data (2024-12-31)
-        data_age_days = 7
-        price_timestamp = hist_end_date
-        market_data_status = "FALLBACK"
+        current_price_date   = hist_end_date
+        data_age_days        = 7
+        price_timestamp      = hist_end_date
+        market_data_status   = "FALLBACK"
         logger.warning(
             f"[PRICE_SOURCE] {crop_lower}: Mandi price unavailable. "
-            f"Used historical tail ₹{current_price}/q (date: {hist_end_date})"
+            f"Used historical tail ₹{current_price}/q (date: {hist_end_date}) | fallback=Yes"
         )
 
     # 4. Retrieve Current Weather

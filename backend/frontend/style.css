@@ -836,6 +836,8 @@ body {
     letter-spacing: 0.03em;
 }
 .chart-src-badge.price-src-live     { color: #4ade80; border-color: rgba(74,222,128,0.35); background: rgba(74,222,128,0.08); }
+.chart-src-badge.price-src-recent   { color: #fbbf24; border-color: rgba(251,191,36,0.35);  background: rgba(251,191,36,0.08); }
+.chart-src-badge.price-src-old      { color: #fb923c; border-color: rgba(251,146,60,0.35);  background: rgba(251,146,60,0.08); }
 .chart-src-badge.price-src-cache    { color: #fbbf24; border-color: rgba(251,191,36,0.35);  background: rgba(251,191,36,0.08); }
 .chart-src-badge.price-src-fallback { color: #60a5fa; border-color: rgba(96,165,250,0.35);  background: rgba(96,165,250,0.08); }
 
@@ -854,6 +856,8 @@ body {
     text-transform: uppercase;
 }
 .price-src-badge.price-src-live     { color: #4ade80; border-color: rgba(74,222,128,0.4);  background: rgba(74,222,128,0.1); }
+.price-src-badge.price-src-recent   { color: #fbbf24; border-color: rgba(251,191,36,0.4);   background: rgba(251,191,36,0.1); }
+.price-src-badge.price-src-old      { color: #fb923c; border-color: rgba(251,146,60,0.4);   background: rgba(251,146,60,0.1); }
 .price-src-badge.price-src-cache    { color: #fbbf24; border-color: rgba(251,191,36,0.4);   background: rgba(251,191,36,0.1); }
 .price-src-badge.price-src-fallback { color: #93c5fd; border-color: rgba(147,197,253,0.4);  background: rgba(147,197,253,0.08); }
 .price-src-line {
