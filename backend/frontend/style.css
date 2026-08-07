@@ -820,6 +820,56 @@ body {
     border: 1px solid rgba(34, 197, 94, 0.2);
 }
 
+/* ── Chart header badge row ──────────────────────────────────── */
+.chart-header-badges {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.chart-src-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 2px 9px;
+    border-radius: 10px;
+    border: 1px solid;
+    letter-spacing: 0.03em;
+}
+.chart-src-badge.price-src-live     { color: #4ade80; border-color: rgba(74,222,128,0.35); background: rgba(74,222,128,0.08); }
+.chart-src-badge.price-src-cache    { color: #fbbf24; border-color: rgba(251,191,36,0.35);  background: rgba(251,191,36,0.08); }
+.chart-src-badge.price-src-fallback { color: #60a5fa; border-color: rgba(96,165,250,0.35);  background: rgba(96,165,250,0.08); }
+
+/* ── Price source badge beneath Current Price card ────────────────── */
+.price-src-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 8px;
+    border: 1px solid;
+    margin-top: 6px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.price-src-badge.price-src-live     { color: #4ade80; border-color: rgba(74,222,128,0.4);  background: rgba(74,222,128,0.1); }
+.price-src-badge.price-src-cache    { color: #fbbf24; border-color: rgba(251,191,36,0.4);   background: rgba(251,191,36,0.1); }
+.price-src-badge.price-src-fallback { color: #93c5fd; border-color: rgba(147,197,253,0.4);  background: rgba(147,197,253,0.08); }
+.price-src-line {
+    display: block;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+    line-height: 1.4;
+}
+.price-src-date {
+    display: block;
+    font-size: 0.67rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
 .price-summary {
     padding: 18px 20px;
     display: flex;
