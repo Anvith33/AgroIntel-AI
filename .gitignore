@@ -1,9 +1,37 @@
+# Python
 .venv/
+.venv-1/
 __pycache__/
 *.pyc
-.DS_Store
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
 
-# Ignore large datasets
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Large raw Agmarknet archive CSVs (year-by-year raw data — not needed to run the app)
 backend/app/data/archive/
-backend/app/data/*.csv
-*.csv
+
+# Mandi cache (runtime-generated, not needed for clone)
+backend/app/data/mandi_cache.json
+
+# Prediction/recommendation history (runtime logs, not needed for clone)
+backend/app/data/prediction_history.json
+backend/app/data/recommendation_history.json
+
+# EDA plots (generated output, not needed for clone)
+backend/app/data/eda_plots/
+
+# NOTE: real_historical_prices.csv IS tracked (required for fallback pricing)
+# NOTE: frontend/indian_districts.json IS tracked (required for State/District dropdowns)
+# NOTE: All *.pkl model files ARE tracked (required for inference)
+# NOTE: All *.json config/data files ARE tracked

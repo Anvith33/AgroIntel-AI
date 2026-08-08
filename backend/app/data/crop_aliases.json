@@ -1,0 +1,146 @@
+{
+  "paddy": "rice",
+  "paddy (dhan)(common)": "rice",
+  "paddy (dhan)(grade a)": "rice",
+  "rice (paddy - husked)": "rice",
+  "dhan": "rice",
+  "rice": "rice",
+  "broken rice": "rice",
+
+  "maize": "maize",
+  "corn": "maize",
+  "baby corn": "maize",
+
+  "green gram": "mungbean",
+  "moong": "mungbean",
+  "green gram (moong)(whole)": "mungbean",
+  "green gram dal (moong dal)": "mungbean",
+  "moong dal": "mungbean",
+  "mungbean": "mungbean",
+
+  "black gram": "blackgram",
+  "urad": "blackgram",
+  "urd": "blackgram",
+  "black gram (urd beans)(whole)": "blackgram",
+  "black gram dal (urd dal)": "blackgram",
+  "urad dal": "blackgram",
+  "blackgram": "blackgram",
+
+  "bengal gram": "chickpea",
+  "bengal gram (gram)(whole)": "chickpea",
+  "bengal gram dal (chana dal)": "chickpea",
+  "chana": "chickpea",
+  "chana dal": "chickpea",
+  "gram": "chickpea",
+  "gram raw(green)": "chickpea",
+  "kabuli chana": "chickpea",
+  "kabuli chana (chickpeas-white)": "chickpea",
+  "chickpea": "chickpea",
+
+  "arhar": "pigeonpeas",
+  "tur": "pigeonpeas",
+  "red gram": "pigeonpeas",
+  "arhar (tur/red gram)(whole)": "pigeonpeas",
+  "arhar dal (tur dal)": "pigeonpeas",
+  "tur dal": "pigeonpeas",
+  "red gram dal": "pigeonpeas",
+  "pigeonpeas": "pigeonpeas",
+
+  "masoor": "lentil",
+  "masur": "lentil",
+  "masur dal": "lentil",
+  "lentil": "lentil",
+  "lentil (masur)(whole)": "lentil",
+
+  "rajma": "kidneybeans",
+  "kidney beans": "kidneybeans",
+  "kidneybeans": "kidneybeans",
+  "french beans (frasbean)": "kidneybeans",
+  "beans": "kidneybeans",
+
+  "moth": "mothbeans",
+  "moth beans": "mothbeans",
+  "mothbeans": "mothbeans",
+  "alasande gram": "mothbeans",
+  "alsandikai": "mothbeans",
+  "cowpea (veg)": "mothbeans",
+  "cowpea": "mothbeans",
+
+  "banana": "banana",
+  "banana - green": "banana",
+  "balekai": "banana",
+  "kela": "banana",
+
+  "mango": "mango",
+  "mango (raw-loss green)": "mango",
+  "raw mango": "mango",
+
+  "pomegranate": "pomegranate",
+  "anar": "pomegranate",
+
+  "grapes": "grapes",
+  "angoor": "grapes",
+
+  "watermelon": "watermelon",
+  "water melon": "watermelon",
+  "tarbooz": "watermelon",
+
+  "muskmelon": "muskmelon",
+  "musk melon": "muskmelon",
+  "kharbuja": "muskmelon",
+  "karbuja (musk melon)": "muskmelon",
+
+  "apple": "apple",
+  "seb": "apple",
+
+  "orange": "orange",
+  "santra": "orange",
+  "mousambi": "orange",
+  "mousambi (sweet lime)": "orange",
+  "kinnow": "orange",
+  "lemon": "orange",
+  "lime": "orange",
+
+  "papaya": "papaya",
+  "papaya (raw)": "papaya",
+
+  "coconut": "coconut",
+  "coconut seed": "coconut",
+  "copra": "coconut",
+
+  "cotton": "cotton",
+  "cotton (kapas)": "cotton",
+  "raw cotton": "cotton",
+  "kapas": "cotton",
+
+  "jute": "jute",
+  "raw jute": "jute",
+
+  "coffee": "coffee",
+
+  "wheat": "wheat",
+  "wheat attar": "wheat",
+
+  "onion": "onion",
+  "pyaz": "onion",
+
+  "potato": "potato",
+  "aloo": "potato",
+
+  "ground nut": "groundnut",
+  "groundnut": "groundnut",
+  "peanuts": "groundnut",
+  "groundnut (split)": "groundnut",
+  "groundnut pods (kacha)": "groundnut",
+
+  "soybean": "soybean",
+  "soyabean": "soybean",
+
+  "mustard": "mustard",
+  "sarson": "mustard",
+  "mustard seed": "mustard",
+  "rai": "mustard",
+
+  "sugarcane": "sugarcane",
+  "ganna": "sugarcane"
+}

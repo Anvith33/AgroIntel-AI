@@ -16,11 +16,12 @@ TARGET_YEARS = [2019, 2020, 2021, 2022, 2023, 2024]
 # Crop mappings to standard names
 CROP_MAPPINGS = {
     "wheat": "wheat",
-    "rice": "rice",
-    "paddy": "rice", # Often listed as Paddy
-    "paddy(dhan)": "rice",
-    "maize": "maize"
+    "paddy (dhan)(common)": "rice",
+    "maize": "maize",
+    "potato": "potato",
+    "onion": "onion"
 }
+
 
 def process_data():
     logger.info("Starting historical data processing...")
@@ -109,9 +110,9 @@ def process_data():
         
     final_clean_df = pd.concat(clean_dfs, ignore_index=True)
 
-    # Remove extreme outliers (prices > 15000 or < 500 for these staple crops)
+    # Remove extreme outliers (prices > 15000 or < 200 for these staple crops)
     final_clean_df.loc[final_clean_df["y"] > 15000, "y"] = np.nan
-    final_clean_df.loc[final_clean_df["y"] < 500, "y"] = np.nan
+    final_clean_df.loc[final_clean_df["y"] < 200, "y"] = np.nan
     final_clean_df["y"] = final_clean_df.groupby("crop")["y"].transform(lambda x: x.ffill().bfill())
 
     logger.info(f"Final dataset shape: {final_clean_df.shape}")

@@ -1,21 +1,55 @@
 {
+  "crop": "wheat",
+  "best_baseline": "prophet",
+  "production_model": "prophet",
   "models": {
+    "arima": {
+      "model_name": "arima",
+      "status": "trained",
+      "mae": 82.65,
+      "rmse": 90.64,
+      "training_time_sec": 0.98,
+      "hyperparameters": {
+        "order": "(1,1,1)"
+      }
+    },
     "prophet": {
-      "mae": 63.2,
-      "rmse": 71.18
+      "model_name": "prophet",
+      "status": "trained",
+      "mae": 62.92,
+      "rmse": 67.69,
+      "training_time_sec": 1.11,
+      "hyperparameters": {
+        "yearly_seasonality": true,
+        "weekly_seasonality": true
+      }
+    },
+    "lstm": {
+      "model_name": "lstm",
+      "status": "skipped",
+      "mae": 999999.0,
+      "rmse": 999999.0,
+      "training_time_sec": 0.0,
+      "hyperparameters": {
+        "sequence_length": 30,
+        "architecture": "LSTM(64)->Dropout(0.2)->LSTM(32)->Dense(16)->Dense(1)"
+      }
     },
     "xgboost": {
-      "mae": 26.11,
-      "rmse": 32.2
-    },
-    "arima": {
-      "mae": 39.03,
-      "rmse": 48.58
-    },
-    "mlp": {
-      "mae": 178.84,
-      "rmse": 180.37
+      "model_name": "xgboost",
+      "status": "trained",
+      "mae": 84.73,
+      "rmse": 93.29,
+      "training_time_sec": 2.09,
+      "hyperparameters": {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "n_estimators": 100
+      }
     }
   },
-  "best_model": "xgboost"
+  "training_rows": 2102,
+  "validation_rows": 60,
+  "dataset_range": "2019-01-31 to 2024-12-31",
+  "selected_production_model": "prophet"
 }

@@ -11,6 +11,9 @@ from app.ml.train import train_all_crops, train_price_prediction_model, CROPS
 
 class CropRequest(BaseModel):
     location: str
+    season: str = "Auto"  # Auto | Kharif | Rabi | Zaid
+    lat: float = None     # Optional GPS latitude  (enables satellite soil detection)
+    lon: float = None     # Optional GPS longitude (enables satellite soil detection)
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -75,9 +78,14 @@ def train_single_crop(crop: str):
 
 @router.post("/predict/crop")
 def predict_crop_endpoint(request: CropRequest):
-    """Predict the best crop to grow based on location weather."""
+    """Predict the best crop to grow based on location, weather, satellite soil, and season."""
     try:
-        result = predict_crop(request.location)
+        result = predict_crop(
+            request.location,
+            request.season,
+            lat=request.lat,
+            lon=request.lon,
+        )
         return result
     except Exception as e:
         logger.error("Crop prediction error for %s: %s", request.location, e)

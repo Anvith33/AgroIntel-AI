@@ -34,10 +34,10 @@ CROPS = {
         "noise_std": 60,
     },
     "rice": {
-        "base_price": 2900,
-        "seasonal_amplitude": 220,
-        "trend_per_year": 150,
-        "noise_std": 70,
+        "base_price": 2300,
+        "seasonal_amplitude": 150,
+        "trend_per_year": 100,
+        "noise_std": 50,
     },
     "maize": {
         "base_price": 1600,
@@ -45,7 +45,20 @@ CROPS = {
         "trend_per_year": 90,
         "noise_std": 50,
     },
+    "potato": {
+        "base_price": 1300,
+        "seasonal_amplitude": 200,
+        "trend_per_year": 80,
+        "noise_std": 60,
+    },
+    "onion": {
+        "base_price": 1800,
+        "seasonal_amplitude": 400,
+        "trend_per_year": 100,
+        "noise_std": 120,
+    },
 }
+
 
 # ── Black Swan events (used for feature engineering flags, not data synthesis) ──
 from app.ml.feature_engineering import BLACK_SWAN_EVENTS

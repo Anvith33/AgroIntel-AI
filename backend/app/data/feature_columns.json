@@ -1,0 +1,32 @@
+{
+  "feature_version": "4.0.0",
+  "data_version": "2019-2024-v1",
+  "weather_version": "open-meteo-nagpur-monthly-v1",
+  "total_features": 11,
+  "feature_columns": [
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_mean_7",
+    "rolling_mean_30",
+    "month",
+    "season",
+    "monthly_avg_temp",
+    "monthly_total_rainfall",
+    "black_swan"
+  ],
+  "feature_descriptions": {
+    "lag_1": "Price 1 day prior (₹/quintal)",
+    "lag_7": "Price 7 days prior (₹/quintal)",
+    "lag_14": "Price 14 days prior (₹/quintal)",
+    "lag_30": "Price 30 days prior (₹/quintal)",
+    "rolling_mean_7": "7-day backward rolling mean price",
+    "rolling_mean_30": "30-day backward rolling mean price",
+    "month": "Calendar month integer (1–12)",
+    "season": "Agricultural season integer: Kharif=0, Rabi=1, Zaid=2",
+    "monthly_avg_temp": "Monthly historical mean temperature from Open-Meteo Archive (°C)",
+    "monthly_total_rainfall": "Monthly historical total precipitation from Open-Meteo Archive (mm)",
+    "black_swan": "Binary flag (0/1) for major market disruptions defined in black_swan_config.json"
+  }
+}

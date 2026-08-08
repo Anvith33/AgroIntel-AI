@@ -1,0 +1,140 @@
+{
+  "system_version": "4.0.0",
+  "last_updated": "2026-08-03T22:44:08.465604",
+  "registry": {
+    "wheat": {
+      "crop": "wheat",
+      "production_model": "prophet",
+      "best_baseline": "prophet",
+      "training_timestamp": "2026-08-03T22:44:08.463219",
+      "feature_version": "4.0.0",
+      "dataset_version": "2019-2024-v1",
+      "weather_version": "open-meteo-nagpur-monthly-v1",
+      "training_samples": 2102,
+      "validation_samples": 60,
+      "mae": 62.92,
+      "rmse": 67.69,
+      "hyperparameters": {
+        "yearly_seasonality": true,
+        "weekly_seasonality": true
+      },
+      "training_duration_sec": 1.11,
+      "model_file_path": "models/prophet_wheat.pkl",
+      "lstm_availability": false,
+      "all_models_mae": {
+        "arima": 82.65,
+        "prophet": 62.92,
+        "lstm": 999999.0,
+        "xgboost": 84.73
+      }
+    },
+    "rice": {
+      "crop": "rice",
+      "production_model": "xgboost",
+      "best_baseline": "prophet",
+      "training_timestamp": "2026-08-03T22:44:08.463996",
+      "feature_version": "4.0.0",
+      "dataset_version": "2019-2024-v1",
+      "weather_version": "open-meteo-nagpur-monthly-v1",
+      "training_samples": 2102,
+      "validation_samples": 60,
+      "mae": 23.98,
+      "rmse": 30.12,
+      "hyperparameters": {
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "n_estimators": 100
+      },
+      "training_duration_sec": 1.84,
+      "model_file_path": "models/xgboost_rice.pkl",
+      "lstm_availability": false,
+      "all_models_mae": {
+        "arima": 63.98,
+        "prophet": 63.81,
+        "lstm": 999999.0,
+        "xgboost": 23.98
+      }
+    },
+    "maize": {
+      "crop": "maize",
+      "production_model": "xgboost",
+      "best_baseline": "arima",
+      "training_timestamp": "2026-08-03T22:44:08.464618",
+      "feature_version": "4.0.0",
+      "dataset_version": "2019-2024-v1",
+      "weather_version": "open-meteo-nagpur-monthly-v1",
+      "training_samples": 2102,
+      "validation_samples": 60,
+      "mae": 23.79,
+      "rmse": 35.88,
+      "hyperparameters": {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 100
+      },
+      "training_duration_sec": 1.84,
+      "model_file_path": "models/xgboost_maize.pkl",
+      "lstm_availability": false,
+      "all_models_mae": {
+        "arima": 42.11,
+        "prophet": 98.7,
+        "lstm": 999999.0,
+        "xgboost": 23.79
+      }
+    },
+    "potato": {
+      "crop": "potato",
+      "production_model": "xgboost",
+      "best_baseline": "prophet",
+      "training_timestamp": "2026-08-03T22:44:08.465263",
+      "feature_version": "4.0.0",
+      "dataset_version": "2019-2024-v1",
+      "weather_version": "open-meteo-nagpur-monthly-v1",
+      "training_samples": 2102,
+      "validation_samples": 60,
+      "mae": 93.54,
+      "rmse": 156.35,
+      "hyperparameters": {
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "n_estimators": 200
+      },
+      "training_duration_sec": 1.83,
+      "model_file_path": "models/xgboost_potato.pkl",
+      "lstm_availability": false,
+      "all_models_mae": {
+        "arima": 300.48,
+        "prophet": 208.39,
+        "lstm": 999999.0,
+        "xgboost": 93.54
+      }
+    },
+    "onion": {
+      "crop": "onion",
+      "production_model": "xgboost",
+      "best_baseline": "prophet",
+      "training_timestamp": "2026-08-03T22:44:08.465597",
+      "feature_version": "4.0.0",
+      "dataset_version": "2019-2024-v1",
+      "weather_version": "open-meteo-nagpur-monthly-v1",
+      "training_samples": 2102,
+      "validation_samples": 60,
+      "mae": 156.63,
+      "rmse": 212.63,
+      "hyperparameters": {
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "n_estimators": 100
+      },
+      "training_duration_sec": 1.82,
+      "model_file_path": "models/xgboost_onion.pkl",
+      "lstm_availability": false,
+      "all_models_mae": {
+        "arima": 493.14,
+        "prophet": 473.8,
+        "lstm": 999999.0,
+        "xgboost": 156.63
+      }
+    }
+  }
+}

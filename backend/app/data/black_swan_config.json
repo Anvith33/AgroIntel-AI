@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "label": "2019 Drought",
+      "start": "2019-06-01",
+      "end": "2019-09-30",
+      "description": "Monsoon deficit leading to crop supply shortages across central and western India."
+    },
+    {
+      "label": "COVID-19 Lockdown & Supply Chain Disruption",
+      "start": "2020-03-15",
+      "end": "2021-12-31",
+      "description": "Nationwide lockdowns, transport restrictions, and mandi closures disrupting agricultural supply chains."
+    },
+    {
+      "label": "Russia-Ukraine War & Global Fertilizer Price Surge",
+      "start": "2022-02-24",
+      "end": "2023-12-31",
+      "description": "Geopolitical conflict triggering global fertilizer price spikes, grain export bans, and global food inflation."
+    }
+  ]
+}

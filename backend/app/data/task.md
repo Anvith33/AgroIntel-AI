@@ -7,4 +7,5 @@
 - [x] 5. Refactor `inference.py` to use a 3-tier system: Mandi Data (Tier 1) -> AI Scored (Tier 2) -> Fallback (Tier 3)
 - [x] 6. Update frontend `index.html` — more crops + states in dropdowns, coastal badge, data source badge
 - [x] 7. Update frontend `script.js` — handle coastal flag and data_source in API response
-- [ ] 8. Test the full flow with coastal locations
+- [x] 8. Test the full flow with coastal locations
+
