@@ -385,34 +385,8 @@ function renderPredResults(data, horizon) {
     const trendDir  = trend.includes("UP") ? "Rising" : trend.includes("DOWN") ? "Falling" : "Stable";
     const changeStr = changeP > 0 ? `+${changeP}%` : `${changeP}%`;
 
-    // ── Price source transparency ─────────────────────────────────────────────
-    const priceSource  = data.current_price_source || "Unknown";
-    const priceDate    = data.current_price_date || data.price_timestamp || null;
-    const dataStatus   = (data.data_status || "FALLBACK").toUpperCase();
-    let priceDateFmt = "—";
-    if (priceDate) {
-        try {
-            const d = new Date(priceDate);
-            priceDateFmt = `${String(d.getDate()).padStart(2,"0")}-${String(d.getMonth()+1).padStart(2,"0")}-${d.getFullYear()}`;
-        } catch (_) { priceDateFmt = priceDate; }
-    }
-    const statusCls = dataStatus === "FRESH"    ? "price-src-live"
-                     : dataStatus === "RECENT"   ? "price-src-recent"
-                     : dataStatus === "HISTORICAL" ? "price-src-old"
-                     : "price-src-fallback";  // FALLBACK
-    const statusDot = dataStatus === "FRESH"    ? "\u{1F7E2}"
-                    : dataStatus === "RECENT"   ? "\u{1F7E1}"
-                    : dataStatus === "HISTORICAL" ? "\u{1F7E0}"
-                    : "\u{1F535}";  // FALLBACK
-    const statusLabel = dataStatus === "FRESH"    ? "FRESH"
-                      : dataStatus === "RECENT"   ? "RECENT"
-                      : dataStatus === "HISTORICAL" ? "GOVT. DATA"
-                      : "HISTORICAL";  // FALLBACK = Historical CSV
-    // Human-readable freshness description
-    const freshnessDesc = dataStatus === "FRESH"     ? "Fresh (0–3 days)"
-                        : dataStatus === "RECENT"    ? "Recent (4–7 days)"
-                        : dataStatus === "HISTORICAL" ? "Historical (>7 days, Govt. data)"
-                        : "Historical Dataset (Dec 2024)";
+
+
 
     const html = `
         <div class="pred-summary-row">
@@ -429,10 +403,6 @@ function renderPredResults(data, horizon) {
                 <span class="metric-lbl">Current Price</span>
                 <span class="metric-val">&#8377;${curPrice}</span>
                 <span class="metric-unit">per quintal</span>
-                <div class="price-src-badge ${statusCls}">${statusDot} ${statusLabel}</div>
-                <span class="price-src-line">Source: ${priceSource}</span>
-                <span class="price-src-date">Freshness: ${freshnessDesc}</span>
-                <span class="price-src-date">Last Updated: ${priceDateFmt}</span>
             </div>
             <div class="metric-box glass-card accent-box">
                 <span class="metric-lbl">Predicted Price (${horizon}d)</span>
