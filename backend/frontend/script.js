@@ -429,10 +429,7 @@ function renderPredResults(data, horizon) {
         <div class="chart-box glass-card">
             <div class="chart-header">
                 <h4>Price Forecast Chart</h4>
-                <div class="chart-header-badges">
-                    <span class="chart-horizon">${horizon}-day outlook</span>
-                    <span class="chart-src-badge ${statusCls}">${statusDot} ${statusLabel} &middot; ${priceDateFmt}</span>
-                </div>
+                <span class="chart-horizon">${horizon}-day outlook</span>
             </div>
             <canvas id="priceChart"></canvas>
         </div>`;
