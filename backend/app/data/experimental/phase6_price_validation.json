@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-08-11T11:25:31.168028",
+  "price_separation_rule": "current_price (OBSERVED mandi modal) NEVER equals predicted_price (ML forecast)",
+  "chronological_validation": {
+    "train_period": "2019-01-01 to 2023-12-31",
+    "test_period": "2024-01-01 to 2024-12-31",
+    "no_future_leakage": true
+  },
+  "model_evaluation": {
+    "rice": {
+      "XGBoost_MAE": 23.98,
+      "Naive_MAE": 106.88,
+      "improvement_pct": 77.56,
+      "best_model": "XGBoost"
+    },
+    "wheat": {
+      "XGBoost_MAE": 62.92,
+      "Naive_MAE": 141.53,
+      "improvement_pct": 55.54,
+      "best_model": "XGBoost"
+    },
+    "maize": {
+      "XGBoost_MAE": 23.79,
+      "Naive_MAE": 175.97,
+      "improvement_pct": 86.48,
+      "best_model": "XGBoost"
+    },
+    "onion": {
+      "XGBoost_MAE": 156.63,
+      "Naive_MAE": 1105.47,
+      "improvement_pct": 85.83,
+      "best_model": "XGBoost"
+    },
+    "potato": {
+      "XGBoost_MAE": 93.54,
+      "Naive_MAE": 1204.44,
+      "improvement_pct": 92.23,
+      "best_model": "XGBoost"
+    }
+  },
+  "min_current_max_validation": "min_price <= current_price <= max_price enforced for all mandi records",
+  "data_sources": {
+    "historical": "real_historical_prices.csv (Kaggle commodity prices 2019-2024)",
+    "mandi_live": "data.gov.in resource/9ef84268 (timed out from environment)",
+    "mandi_cache": "market_intelligence.json (Phase 5 Mandi batch)"
+  }
+}

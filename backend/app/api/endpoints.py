@@ -98,15 +98,60 @@ def predict(
     horizon_days: int = Query(default=30, ge=1, le=90, description="Forecast horizon in days"),
 ):
     """Get price prediction for a crop using the best available model."""
-    crop = crop.lower()
-    if crop not in SUPPORTED_CROPS:
-        raise HTTPException(status_code=400, detail=f"Unsupported crop. Choose from: {SUPPORTED_CROPS}")
+    crop_clean = crop.lower()
+    if crop_clean not in ["rice", "wheat", "maize", "onion", "potato"]:
+        return {
+            "available": False,
+            "crop": crop,
+            "forecast": {
+                "available": False,
+                "status": "FORECAST_UNAVAILABLE",
+                "reason": "Price prediction is currently unavailable for this crop because a validated forecasting model is not available."
+            },
+            "advisory": {
+                "decision": "INSUFFICIENT_DATA",
+                "reason": "No validated forecasting model available."
+            },
+            "message": "Price prediction is currently unavailable for this crop because a validated forecasting model is not available."
+        }
     try:
-        result = predict_price(crop, state, horizon_days)
+        result = predict_price(crop_clean, state, horizon_days)
+        result["available"] = True
+        
+        # Add Requirement 17 nested objects
+        result["market"] = {
+            "current_price": result.get("current_price"),
+            "source": result.get("price_data_source", "data.gov.in")
+        }
+        result["forecast"] = {
+            "available": True,
+            "model": result.get("best_model_label", result.get("best_model")),
+            "predicted_price": result.get("predicted_price"),
+            "prediction_date": result.get("prediction_start"),
+            "forecast_series": result.get("predictions", [])
+        }
+        result["advisory"] = {
+            "decision": result.get("recommendation", "HOLD"),
+            "reason": result.get("recommendation_reason", "")
+        }
         return result
     except Exception as e:
         logger.error("Prediction error for %s in %s: %s", crop, state, e)
-        raise HTTPException(status_code=500, detail=str(e))
+        return {
+            "available": False,
+            "crop": crop,
+            "forecast": {
+                "available": False,
+                "status": "FORECAST_UNAVAILABLE",
+                "reason": str(e)
+            },
+            "advisory": {
+                "decision": "INSUFFICIENT_DATA",
+                "reason": str(e)
+            },
+            "message": "Price prediction is currently unavailable for this crop because a validated forecasting model is not available."
+        }
+
 
 
 @router.get("/crops")

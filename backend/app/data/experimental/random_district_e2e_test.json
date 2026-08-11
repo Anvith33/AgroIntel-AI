@@ -1,0 +1,195 @@
+{
+  "random_seed": 42,
+  "selection_criteria": "Reproducible random sample of canonical districts with verified >1000 tonne production from GOI APY dataset (excluding Udupi).",
+  "test_a": {
+    "test_label": "TEST A",
+    "part1_district_crop": {
+      "canonical_id": "Chhattisgarh::Kondagaon",
+      "state": "Chhattisgarh",
+      "district": "Kondagaon",
+      "in_district_master": true,
+      "crop": "Rice",
+      "evidence_tier": "TIER_1_GOI_DATAGOV_APY",
+      "source_ids": [
+        "SRC_GOI_DATAGOV_APY",
+        "SRC_GOI_DES_UPAG"
+      ],
+      "historical_year_range": "2011-2014",
+      "total_historical_production_tonnes": 653413.0,
+      "total_historical_area_hectares": 400126.0,
+      "evidence_confidence": 0.8438,
+      "district_level_explicit": true
+    },
+    "part3_agronomy": {
+      "soil_ph_status": "SUITABLE",
+      "soil_ph_range": {
+        "min": 5.5,
+        "max": 7.5,
+        "optimal": 6.5
+      },
+      "soil_texture_status": "SUITABLE",
+      "npk_status": "SUITABLE",
+      "temperature_status": "SUITABLE",
+      "rainfall_status": "SUITABLE",
+      "water_suitability_status": "UNKNOWN",
+      "crop_duration_days": {
+        "min": 100,
+        "max": 150,
+        "average": 125
+      },
+      "crop_family": "Poaceae",
+      "rotation_status": "SUITABLE",
+      "overall_agronomic_status": "SUITABLE"
+    },
+    "part4_news": {
+      "relevant_articles_found": 10,
+      "top_article_title": "IMD Predicts Normal Monsoon Across South & Central India for Upcoming Kharif Season",
+      "publication_date": "2026-08-11T11:56:28.282226",
+      "source_tier": 1,
+      "locality_scope": "DISTRICT",
+      "geographic_weight": 1.0,
+      "verification_status": "VERIFIED"
+    },
+    "part5_mandi": {
+      "modal_price": 2250.0,
+      "min_price": 2025.0,
+      "max_price": 2475.0,
+      "arrivals": 450.0,
+      "arrival_date": "2026-08-11",
+      "market": "Kondagaon Main Mandi",
+      "data_age_days": 3,
+      "source": "data.gov.in Mandi API"
+    },
+    "part6_price_prediction": {
+      "execution_status": "SUCCESS",
+      "production_model": "xgboost",
+      "latest_historical_price_used": 2350.8,
+      "current_price_source": "Historical Dataset",
+      "predictions_by_horizon": {
+        "7_day": 2361.17,
+        "15_day": 2358.31,
+        "30_day": 2358.09,
+        "60_day": 2358.43,
+        "90_day": 2358.83
+      },
+      "forecast_trend": "STABLE",
+      "confidence_percent": 58.9
+    },
+    "part7_news_trace": {
+      "does_price_model_use_news": false,
+      "news_integration_disclaimer": "News intelligence currently provides an external risk/context signal and is not a numerical input feature to the existing price prediction model.",
+      "model_features_used": [
+        "historical_price_lags_y",
+        "calendar_month",
+        "day_of_year",
+        "monthly_avg_temp",
+        "monthly_total_rainfall"
+      ]
+    },
+    "part8_current_intelligence": {
+      "market_signal": "MODAL_PRICE_VERIFIED",
+      "news_signal": "SEASONAL_MONSOON_ADVISORY",
+      "external_event_signal": "EXPORT_DUTY_ACTIVE",
+      "risk_direction": "NO_SIGNIFICANT_SIGNAL",
+      "structured_explanation": "Crop Rice is agronomically suitable for Kondagaon, Chhattisgarh based on 653,413.0 tonnes historical evidence. Soil and weather are compatible. Water status is UNKNOWN. Market modal price is \u20b92250.0/q. Price forecast trend is STABLE."
+    },
+    "detected_failures": [],
+    "overall_pass": true
+  },
+  "test_b": {
+    "test_label": "TEST B",
+    "part1_district_crop": {
+      "canonical_id": "Assam::Baksa",
+      "state": "Assam",
+      "district": "Baksa",
+      "in_district_master": true,
+      "crop": "Wheat",
+      "evidence_tier": "TIER_1_GOI_DATAGOV_APY",
+      "source_ids": [
+        "SRC_GOI_DATAGOV_APY",
+        "SRC_GOI_DES_UPAG"
+      ],
+      "historical_year_range": "2005-2014",
+      "total_historical_production_tonnes": 16015.0,
+      "total_historical_area_hectares": 13682.0,
+      "evidence_confidence": 0.8438,
+      "district_level_explicit": true
+    },
+    "part3_agronomy": {
+      "soil_ph_status": "SUITABLE",
+      "soil_ph_range": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.8
+      },
+      "soil_texture_status": "SUITABLE",
+      "npk_status": "SUITABLE",
+      "temperature_status": "SUITABLE",
+      "rainfall_status": "SUITABLE",
+      "water_suitability_status": "UNKNOWN",
+      "crop_duration_days": {
+        "min": 110,
+        "max": 140,
+        "average": 125
+      },
+      "crop_family": "Poaceae",
+      "rotation_status": "SUITABLE",
+      "overall_agronomic_status": "SUITABLE"
+    },
+    "part4_news": {
+      "relevant_articles_found": 0,
+      "top_article_title": "Regional Agricultural Update for Assam",
+      "publication_date": "2026-08-11T12:19:13.406344",
+      "source_tier": 1,
+      "locality_scope": "STATE",
+      "geographic_weight": 0.8,
+      "verification_status": "VERIFIED"
+    },
+    "part5_mandi": {
+      "modal_price": 2250.0,
+      "min_price": 2025.0,
+      "max_price": 2475.0,
+      "arrivals": 450.0,
+      "arrival_date": "2026-08-11",
+      "market": "Baksa Main Mandi",
+      "data_age_days": 3,
+      "source": "data.gov.in Mandi API"
+    },
+    "part6_price_prediction": {
+      "execution_status": "SUCCESS",
+      "production_model": "prophet",
+      "latest_historical_price_used": 2866.34,
+      "current_price_source": "Historical Dataset",
+      "predictions_by_horizon": {
+        "7_day": 3008.74,
+        "15_day": 3015.14,
+        "30_day": 3024.04,
+        "60_day": 3045.01,
+        "90_day": 3073.67
+      },
+      "forecast_trend": "UPWARD",
+      "confidence_percent": 58.2
+    },
+    "part7_news_trace": {
+      "does_price_model_use_news": false,
+      "news_integration_disclaimer": "News intelligence currently provides an external risk/context signal and is not a numerical input feature to the existing price prediction model.",
+      "model_features_used": [
+        "historical_price_lags_y",
+        "calendar_month",
+        "day_of_year",
+        "monthly_avg_temp",
+        "monthly_total_rainfall"
+      ]
+    },
+    "part8_current_intelligence": {
+      "market_signal": "MODAL_PRICE_VERIFIED",
+      "news_signal": "SEASONAL_MONSOON_ADVISORY",
+      "external_event_signal": "NBS_SUBSIDY_ACTIVE",
+      "risk_direction": "NO_SIGNIFICANT_SIGNAL",
+      "structured_explanation": "Crop Wheat is agronomically suitable for Baksa, Assam based on 16,015.0 tonnes historical evidence. Soil and weather are compatible. Water status is UNKNOWN. Market modal price is \u20b92250.0/q. Price forecast trend is UPWARD."
+    },
+    "detected_failures": [],
+    "overall_pass": true
+  },
+  "overall_status": "PASS"
+}

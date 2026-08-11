@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-08-11T12:05:44.271423+00:00",
+  "system": "AgroIntel AI \u2014 Agricultural Decision Support System",
+  "version": "6.0.0-FINAL",
+  "phases_implemented": [
+    "Phase1",
+    "Phase2",
+    "Phase3",
+    "Phase4",
+    "Phase5",
+    "Phase5.1",
+    "Phase5.2",
+    "Phase5.3",
+    "Phase6"
+  ],
+  "backend_url": "http://127.0.0.1:8000",
+  "frontend_url": "http://127.0.0.1:8000",
+  "api_endpoints": {
+    "health": "GET /health",
+    "version": "GET /api/version",
+    "demo_data": "GET /api/demo",
+    "states": "GET /api/states",
+    "crop_recommendation_rf": "POST /api/crop/recommend",
+    "price_prediction": "POST /api/price/predict",
+    "farmer_advisory": "POST /api/advisory/recommend",
+    "phase6_recommend": "POST /api/phase6/recommend (PRIMARY)",
+    "phase6_status": "GET /api/phase6/status",
+    "phase6_demo": "GET /api/phase6/demo",
+    "phase6_districts": "GET /api/phase6/districts",
+    "phase6_mandi_live": "GET /api/phase6/mandi-live",
+    "phase6_news_intel": "GET /api/phase6/news-intel"
+  },
+  "data_assets": {
+    "canonical_districts": 652,
+    "canonical_crops": 122,
+    "historical_apy_records": 246091,
+    "phase4_candidate_vectors": 31401,
+    "mandi_reference_records": 700,
+    "news_intel_signals": 3956,
+    "historical_price_records": 2162,
+    "model_evaluation_period": "2024-01-01 to 2024-12-31"
+  },
+  "ml_models": {
+    "crop_recommendation": {
+      "model": "RandomForestClassifier",
+      "n_estimators": 100,
+      "accuracy": "99.55%",
+      "note": "RF used as candidate RANKER only \u2014 never creates crops outside evidence matrix"
+    },
+    "price_prediction": {
+      "rice": {
+        "best_model": "XGBoost",
+        "MAE": 23.98,
+        "RMSE": 30.12,
+        "MAPE_pct": 1.1
+      },
+      "wheat": {
+        "best_model": "XGBoost",
+        "MAE": 62.92,
+        "RMSE": 67.69,
+        "MAPE_pct": 2.8
+      },
+      "maize": {
+        "best_model": "XGBoost",
+        "MAE": 23.79,
+        "RMSE": 35.88,
+        "MAPE_pct": 1.4
+      },
+      "onion": {
+        "best_model": "XGBoost",
+        "MAE": 156.63,
+        "RMSE": 212.63,
+        "MAPE_pct": 8.5
+      },
+      "potato": {
+        "best_model": "XGBoost",
+        "MAE": 93.54,
+        "RMSE": 156.35,
+        "MAPE_pct": 7.2
+      },
+      "note": "Models selected by lowest MAE on unseen chronological 2024 test set."
+    },
+    "news_intelligence": {
+      "primary_llm": "Groq Llama 3.3 70B",
+      "fallback_llm": "Gemini 2.5 Flash",
+      "rule": "LLM analyzes ONLY retrieved article text. LLM internal knowledge is NOT ground truth."
+    }
+  },
+  "design_rules_enforced": {
+    "water_unknown": "UNKNOWN is NEVER converted to SUITABLE",
+    "price_separation": "current_price (OBSERVED Mandi modal) NEVER equals predicted_price (ML forecast)",
+    "mandi_labeling": "LATEST_AVAILABLE_MARKET_PRICE with observation_date + data_age_days shown",
+    "no_hardcoded_districts": true,
+    "no_invented_crops": "All candidates strictly from nationwide_candidate_matrix_v2.json",
+    "no_api_key_exposure": "All external API keys in .env, never in frontend or response JSON",
+    "mae_not_price": "MAE/RMSE/MAPE are model accuracy metrics, NEVER displayed as crop prices",
+    "perennial_crops_preserved": true,
+    "no_future_leakage": "Chronological train/test split: train 2019-2023, test 2024"
+  },
+  "mandi_api": {
+    "resource_1": "data.gov.in/resource/9ef84268 (daily price)",
+    "resource_2": "data.gov.in/resource/35be999b (APY historical)",
+    "api_key_env": "MARKET_DATA_API_KEY",
+    "live_status": "TIMEOUT (network blocked from development environment)",
+    "fallback": "market_intelligence.json (700 records, batch reference)",
+    "observation_date": "computed as data_age_days = today - arrival_date",
+    "freshness_thresholds": {
+      "VERY_FRESH": "0-3 days",
+      "FRESH": "4-14 days",
+      "RECENT": "15-30 days",
+      "BACKGROUND": "31-60 days",
+      "STALE": "61-180 days",
+      "VERY_STALE": ">180 days"
+    }
+  },
+  "storage": {
+    "type": "JSON/CSV flat files",
+    "note": "No database used. All data in app/data/experimental/ and models/ directories.",
+    "models_dir": "models/ (XGBoost .pkl, Prophet .pkl, ARIMA .pkl, RF .pkl)",
+    "datasets": "app/data/experimental/*.json (Phase 1-5 evidence + market + news)"
+  },
+  "validation": {
+    "seed42_10districts": "10/10 PASS",
+    "water_unknown_enforced": true,
+    "price_separation_verified": true,
+    "no_invented_crops": true
+  }
+}

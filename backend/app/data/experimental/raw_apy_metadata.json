@@ -1,0 +1,20 @@
+{
+  "resource_id": "35be999b-0208-4354-b557-f6ca9a5355de",
+  "title": "District-wise, season-wise crop production statistics from 1997",
+  "total_records_api": 246091,
+  "records_retrieved": 246091,
+  "pages_retrieved": 25,
+  "fetch_time_seconds": 196.61,
+  "fields": [
+    "state_name",
+    "district_name",
+    "crop_year",
+    "season",
+    "crop",
+    "area_",
+    "production_"
+  ],
+  "api_catalog_uuid": "f4435c3b-96be-4002-9839-aa3897dc732b",
+  "created_date": "2021-07-13T11:48:59Z",
+  "updated_date": "2021-07-13T15:50:06Z"
+}

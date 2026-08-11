@@ -1,0 +1,5218 @@
+[
+  {
+    "canonical_id": "Andaman and Nicobar Islands::Nicobars",
+    "state": "Andaman and Nicobar Islands",
+    "district": "Nicobars",
+    "source_names": [
+      "NICOBARS"
+    ]
+  },
+  {
+    "canonical_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "state": "Andaman and Nicobar Islands",
+    "district": "North and Middle Andaman",
+    "source_names": [
+      "NORTH AND MIDDLE ANDAMAN"
+    ]
+  },
+  {
+    "canonical_id": "Andaman and Nicobar Islands::South Andamans",
+    "state": "Andaman and Nicobar Islands",
+    "district": "South Andamans",
+    "source_names": [
+      "SOUTH ANDAMANS"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Anantapur",
+    "state": "Andhra Pradesh",
+    "district": "Anantapur",
+    "source_names": [
+      "ANANTAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Chittoor",
+    "state": "Andhra Pradesh",
+    "district": "Chittoor",
+    "source_names": [
+      "CHITTOOR"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::East Godavari",
+    "state": "Andhra Pradesh",
+    "district": "East Godavari",
+    "source_names": [
+      "EAST GODAVARI"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Guntur",
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "source_names": [
+      "GUNTUR"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Kadapa",
+    "state": "Andhra Pradesh",
+    "district": "Kadapa",
+    "source_names": [
+      "KADAPA"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Krishna",
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "source_names": [
+      "KRISHNA"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Kurnool",
+    "state": "Andhra Pradesh",
+    "district": "Kurnool",
+    "source_names": [
+      "KURNOOL"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Prakasam",
+    "state": "Andhra Pradesh",
+    "district": "Prakasam",
+    "source_names": [
+      "PRAKASAM"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Spsr Nellore",
+    "state": "Andhra Pradesh",
+    "district": "Spsr Nellore",
+    "source_names": [
+      "SPSR NELLORE"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Srikakulam",
+    "state": "Andhra Pradesh",
+    "district": "Srikakulam",
+    "source_names": [
+      "SRIKAKULAM"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Visakhapatanam",
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatanam",
+    "source_names": [
+      "VISAKHAPATANAM"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::Vizianagaram",
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram",
+    "source_names": [
+      "VIZIANAGARAM"
+    ]
+  },
+  {
+    "canonical_id": "Andhra Pradesh::West Godavari",
+    "state": "Andhra Pradesh",
+    "district": "West Godavari",
+    "source_names": [
+      "WEST GODAVARI"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Anjaw",
+    "state": "Arunachal Pradesh",
+    "district": "Anjaw",
+    "source_names": [
+      "ANJAW"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Changlang",
+    "state": "Arunachal Pradesh",
+    "district": "Changlang",
+    "source_names": [
+      "CHANGLANG"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Dibang Valley",
+    "state": "Arunachal Pradesh",
+    "district": "Dibang Valley",
+    "source_names": [
+      "DIBANG VALLEY"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::East Kameng",
+    "state": "Arunachal Pradesh",
+    "district": "East Kameng",
+    "source_names": [
+      "EAST KAMENG"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::East Siang",
+    "state": "Arunachal Pradesh",
+    "district": "East Siang",
+    "source_names": [
+      "EAST SIANG"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Kurung Kumey",
+    "state": "Arunachal Pradesh",
+    "district": "Kurung Kumey",
+    "source_names": [
+      "KURUNG KUMEY"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Lohit",
+    "state": "Arunachal Pradesh",
+    "district": "Lohit",
+    "source_names": [
+      "LOHIT"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Longding",
+    "state": "Arunachal Pradesh",
+    "district": "Longding",
+    "source_names": [
+      "LONGDING"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "state": "Arunachal Pradesh",
+    "district": "Lower Dibang Valley",
+    "source_names": [
+      "LOWER DIBANG VALLEY"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Lower Subansiri",
+    "state": "Arunachal Pradesh",
+    "district": "Lower Subansiri",
+    "source_names": [
+      "LOWER SUBANSIRI"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Namsai",
+    "state": "Arunachal Pradesh",
+    "district": "Namsai",
+    "source_names": [
+      "NAMSAI"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Papum Pare",
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare",
+    "source_names": [
+      "PAPUM PARE"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Tawang",
+    "state": "Arunachal Pradesh",
+    "district": "Tawang",
+    "source_names": [
+      "TAWANG"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Tirap",
+    "state": "Arunachal Pradesh",
+    "district": "Tirap",
+    "source_names": [
+      "TIRAP"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Upper Siang",
+    "state": "Arunachal Pradesh",
+    "district": "Upper Siang",
+    "source_names": [
+      "UPPER SIANG"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::Upper Subansiri",
+    "state": "Arunachal Pradesh",
+    "district": "Upper Subansiri",
+    "source_names": [
+      "UPPER SUBANSIRI"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::West Kameng",
+    "state": "Arunachal Pradesh",
+    "district": "West Kameng",
+    "source_names": [
+      "WEST KAMENG"
+    ]
+  },
+  {
+    "canonical_id": "Arunachal Pradesh::West Siang",
+    "state": "Arunachal Pradesh",
+    "district": "West Siang",
+    "source_names": [
+      "WEST SIANG"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Baksa",
+    "state": "Assam",
+    "district": "Baksa",
+    "source_names": [
+      "BAKSA"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Barpeta",
+    "state": "Assam",
+    "district": "Barpeta",
+    "source_names": [
+      "BARPETA"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Bongaigaon",
+    "state": "Assam",
+    "district": "Bongaigaon",
+    "source_names": [
+      "BONGAIGAON"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Cachar",
+    "state": "Assam",
+    "district": "Cachar",
+    "source_names": [
+      "CACHAR"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Chirang",
+    "state": "Assam",
+    "district": "Chirang",
+    "source_names": [
+      "CHIRANG"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Darrang",
+    "state": "Assam",
+    "district": "Darrang",
+    "source_names": [
+      "DARRANG"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Dhemaji",
+    "state": "Assam",
+    "district": "Dhemaji",
+    "source_names": [
+      "DHEMAJI"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Dhubri",
+    "state": "Assam",
+    "district": "Dhubri",
+    "source_names": [
+      "DHUBRI"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Dibrugarh",
+    "state": "Assam",
+    "district": "Dibrugarh",
+    "source_names": [
+      "DIBRUGARH"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Dima Hasao",
+    "state": "Assam",
+    "district": "Dima Hasao",
+    "source_names": [
+      "DIMA HASAO"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Goalpara",
+    "state": "Assam",
+    "district": "Goalpara",
+    "source_names": [
+      "GOALPARA"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Golaghat",
+    "state": "Assam",
+    "district": "Golaghat",
+    "source_names": [
+      "GOLAGHAT"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Hailakandi",
+    "state": "Assam",
+    "district": "Hailakandi",
+    "source_names": [
+      "HAILAKANDI"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Jorhat",
+    "state": "Assam",
+    "district": "Jorhat",
+    "source_names": [
+      "JORHAT"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Kamrup",
+    "state": "Assam",
+    "district": "Kamrup",
+    "source_names": [
+      "KAMRUP"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Kamrup Metro",
+    "state": "Assam",
+    "district": "Kamrup Metro",
+    "source_names": [
+      "KAMRUP METRO"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Karbi Anglong",
+    "state": "Assam",
+    "district": "Karbi Anglong",
+    "source_names": [
+      "KARBI ANGLONG"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Karimganj",
+    "state": "Assam",
+    "district": "Karimganj",
+    "source_names": [
+      "KARIMGANJ"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Kokrajhar",
+    "state": "Assam",
+    "district": "Kokrajhar",
+    "source_names": [
+      "KOKRAJHAR"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Lakhimpur",
+    "state": "Assam",
+    "district": "Lakhimpur",
+    "source_names": [
+      "LAKHIMPUR"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Marigaon",
+    "state": "Assam",
+    "district": "Marigaon",
+    "source_names": [
+      "MARIGAON"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Nagaon",
+    "state": "Assam",
+    "district": "Nagaon",
+    "source_names": [
+      "NAGAON"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Nalbari",
+    "state": "Assam",
+    "district": "Nalbari",
+    "source_names": [
+      "NALBARI"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Sivasagar",
+    "state": "Assam",
+    "district": "Sivasagar",
+    "source_names": [
+      "SIVASAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Sonitpur",
+    "state": "Assam",
+    "district": "Sonitpur",
+    "source_names": [
+      "SONITPUR"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Tinsukia",
+    "state": "Assam",
+    "district": "Tinsukia",
+    "source_names": [
+      "TINSUKIA"
+    ]
+  },
+  {
+    "canonical_id": "Assam::Udalguri",
+    "state": "Assam",
+    "district": "Udalguri",
+    "source_names": [
+      "UDALGURI"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Araria",
+    "state": "Bihar",
+    "district": "Araria",
+    "source_names": [
+      "ARARIA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Arwal",
+    "state": "Bihar",
+    "district": "Arwal",
+    "source_names": [
+      "ARWAL"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Aurangabad",
+    "state": "Bihar",
+    "district": "Aurangabad",
+    "source_names": [
+      "AURANGABAD"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Banka",
+    "state": "Bihar",
+    "district": "Banka",
+    "source_names": [
+      "BANKA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Begusarai",
+    "state": "Bihar",
+    "district": "Begusarai",
+    "source_names": [
+      "BEGUSARAI"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Bhagalpur",
+    "state": "Bihar",
+    "district": "Bhagalpur",
+    "source_names": [
+      "BHAGALPUR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Bhojpur",
+    "state": "Bihar",
+    "district": "Bhojpur",
+    "source_names": [
+      "BHOJPUR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Buxar",
+    "state": "Bihar",
+    "district": "Buxar",
+    "source_names": [
+      "BUXAR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Darbhanga",
+    "state": "Bihar",
+    "district": "Darbhanga",
+    "source_names": [
+      "DARBHANGA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Gaya",
+    "state": "Bihar",
+    "district": "Gaya",
+    "source_names": [
+      "GAYA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Gopalganj",
+    "state": "Bihar",
+    "district": "Gopalganj",
+    "source_names": [
+      "GOPALGANJ"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Jamui",
+    "state": "Bihar",
+    "district": "Jamui",
+    "source_names": [
+      "JAMUI"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Jehanabad",
+    "state": "Bihar",
+    "district": "Jehanabad",
+    "source_names": [
+      "JEHANABAD"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Kaimur (bhabua)",
+    "state": "Bihar",
+    "district": "Kaimur (bhabua)",
+    "source_names": [
+      "KAIMUR (BHABUA)"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Katihar",
+    "state": "Bihar",
+    "district": "Katihar",
+    "source_names": [
+      "KATIHAR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Khagaria",
+    "state": "Bihar",
+    "district": "Khagaria",
+    "source_names": [
+      "KHAGARIA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Kishanganj",
+    "state": "Bihar",
+    "district": "Kishanganj",
+    "source_names": [
+      "KISHANGANJ"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Lakhisarai",
+    "state": "Bihar",
+    "district": "Lakhisarai",
+    "source_names": [
+      "LAKHISARAI"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Madhepura",
+    "state": "Bihar",
+    "district": "Madhepura",
+    "source_names": [
+      "MADHEPURA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Madhubani",
+    "state": "Bihar",
+    "district": "Madhubani",
+    "source_names": [
+      "MADHUBANI"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Munger",
+    "state": "Bihar",
+    "district": "Munger",
+    "source_names": [
+      "MUNGER"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Muzaffarpur",
+    "state": "Bihar",
+    "district": "Muzaffarpur",
+    "source_names": [
+      "MUZAFFARPUR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Nalanda",
+    "state": "Bihar",
+    "district": "Nalanda",
+    "source_names": [
+      "NALANDA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Nawada",
+    "state": "Bihar",
+    "district": "Nawada",
+    "source_names": [
+      "NAWADA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Pashchim Champaran",
+    "state": "Bihar",
+    "district": "Pashchim Champaran",
+    "source_names": [
+      "PASHCHIM CHAMPARAN"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Patna",
+    "state": "Bihar",
+    "district": "Patna",
+    "source_names": [
+      "PATNA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Purbi Champaran",
+    "state": "Bihar",
+    "district": "Purbi Champaran",
+    "source_names": [
+      "PURBI CHAMPARAN"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Purnia",
+    "state": "Bihar",
+    "district": "Purnia",
+    "source_names": [
+      "PURNIA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Rohtas",
+    "state": "Bihar",
+    "district": "Rohtas",
+    "source_names": [
+      "ROHTAS"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Saharsa",
+    "state": "Bihar",
+    "district": "Saharsa",
+    "source_names": [
+      "SAHARSA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Samastipur",
+    "state": "Bihar",
+    "district": "Samastipur",
+    "source_names": [
+      "SAMASTIPUR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Saran",
+    "state": "Bihar",
+    "district": "Saran",
+    "source_names": [
+      "SARAN"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Sheikhpura",
+    "state": "Bihar",
+    "district": "Sheikhpura",
+    "source_names": [
+      "SHEIKHPURA"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Sheohar",
+    "state": "Bihar",
+    "district": "Sheohar",
+    "source_names": [
+      "SHEOHAR"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Sitamarhi",
+    "state": "Bihar",
+    "district": "Sitamarhi",
+    "source_names": [
+      "SITAMARHI"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Siwan",
+    "state": "Bihar",
+    "district": "Siwan",
+    "source_names": [
+      "SIWAN"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Supaul",
+    "state": "Bihar",
+    "district": "Supaul",
+    "source_names": [
+      "SUPAUL"
+    ]
+  },
+  {
+    "canonical_id": "Bihar::Vaishali",
+    "state": "Bihar",
+    "district": "Vaishali",
+    "source_names": [
+      "VAISHALI"
+    ]
+  },
+  {
+    "canonical_id": "Chandigarh::Chandigarh",
+    "state": "Chandigarh",
+    "district": "Chandigarh",
+    "source_names": [
+      "CHANDIGARH"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Balod",
+    "state": "Chhattisgarh",
+    "district": "Balod",
+    "source_names": [
+      "BALOD"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Baloda Bazar",
+    "state": "Chhattisgarh",
+    "district": "Baloda Bazar",
+    "source_names": [
+      "BALODA BAZAR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Balrampur",
+    "state": "Chhattisgarh",
+    "district": "Balrampur",
+    "source_names": [
+      "BALRAMPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Bastar",
+    "state": "Chhattisgarh",
+    "district": "Bastar",
+    "source_names": [
+      "BASTAR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Bemetara",
+    "state": "Chhattisgarh",
+    "district": "Bemetara",
+    "source_names": [
+      "BEMETARA"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Bijapur",
+    "state": "Chhattisgarh",
+    "district": "Bijapur",
+    "source_names": [
+      "BIJAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Bilaspur",
+    "state": "Chhattisgarh",
+    "district": "Bilaspur",
+    "source_names": [
+      "BILASPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Dantewada",
+    "state": "Chhattisgarh",
+    "district": "Dantewada",
+    "source_names": [
+      "DANTEWADA"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Dhamtari",
+    "state": "Chhattisgarh",
+    "district": "Dhamtari",
+    "source_names": [
+      "DHAMTARI"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Durg",
+    "state": "Chhattisgarh",
+    "district": "Durg",
+    "source_names": [
+      "DURG"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Gariyaband",
+    "state": "Chhattisgarh",
+    "district": "Gariyaband",
+    "source_names": [
+      "GARIYABAND"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Janjgir-champa",
+    "state": "Chhattisgarh",
+    "district": "Janjgir-champa",
+    "source_names": [
+      "JANJGIR-CHAMPA"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Jashpur",
+    "state": "Chhattisgarh",
+    "district": "Jashpur",
+    "source_names": [
+      "JASHPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Kabirdham",
+    "state": "Chhattisgarh",
+    "district": "Kabirdham",
+    "source_names": [
+      "KABIRDHAM"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Kanker",
+    "state": "Chhattisgarh",
+    "district": "Kanker",
+    "source_names": [
+      "KANKER"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Kondagaon",
+    "state": "Chhattisgarh",
+    "district": "Kondagaon",
+    "source_names": [
+      "KONDAGAON"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Korba",
+    "state": "Chhattisgarh",
+    "district": "Korba",
+    "source_names": [
+      "KORBA"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Korea",
+    "state": "Chhattisgarh",
+    "district": "Korea",
+    "source_names": [
+      "KOREA"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Mahasamund",
+    "state": "Chhattisgarh",
+    "district": "Mahasamund",
+    "source_names": [
+      "MAHASAMUND"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Mungeli",
+    "state": "Chhattisgarh",
+    "district": "Mungeli",
+    "source_names": [
+      "MUNGELI"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Narayanpur",
+    "state": "Chhattisgarh",
+    "district": "Narayanpur",
+    "source_names": [
+      "NARAYANPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Raigarh",
+    "state": "Chhattisgarh",
+    "district": "Raigarh",
+    "source_names": [
+      "RAIGARH"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Raipur",
+    "state": "Chhattisgarh",
+    "district": "Raipur",
+    "source_names": [
+      "RAIPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Rajnandgaon",
+    "state": "Chhattisgarh",
+    "district": "Rajnandgaon",
+    "source_names": [
+      "RAJNANDGAON"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Sukma",
+    "state": "Chhattisgarh",
+    "district": "Sukma",
+    "source_names": [
+      "SUKMA"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Surajpur",
+    "state": "Chhattisgarh",
+    "district": "Surajpur",
+    "source_names": [
+      "SURAJPUR"
+    ]
+  },
+  {
+    "canonical_id": "Chhattisgarh::Surguja",
+    "state": "Chhattisgarh",
+    "district": "Surguja",
+    "source_names": [
+      "SURGUJA"
+    ]
+  },
+  {
+    "canonical_id": "Dadra and Nagar Haveli::Dadra and Nagar Haveli",
+    "state": "Dadra and Nagar Haveli",
+    "district": "Dadra and Nagar Haveli",
+    "source_names": [
+      "DADRA AND NAGAR HAVELI"
+    ]
+  },
+  {
+    "canonical_id": "Goa::North Goa",
+    "state": "Goa",
+    "district": "North Goa",
+    "source_names": [
+      "NORTH GOA"
+    ]
+  },
+  {
+    "canonical_id": "Goa::South Goa",
+    "state": "Goa",
+    "district": "South Goa",
+    "source_names": [
+      "SOUTH GOA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Ahmadabad",
+    "state": "Gujarat",
+    "district": "Ahmadabad",
+    "source_names": [
+      "AHMADABAD"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Amreli",
+    "state": "Gujarat",
+    "district": "Amreli",
+    "source_names": [
+      "AMRELI"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Anand",
+    "state": "Gujarat",
+    "district": "Anand",
+    "source_names": [
+      "ANAND"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Banas Kantha",
+    "state": "Gujarat",
+    "district": "Banas Kantha",
+    "source_names": [
+      "BANAS KANTHA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Bharuch",
+    "state": "Gujarat",
+    "district": "Bharuch",
+    "source_names": [
+      "BHARUCH"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Bhavnagar",
+    "state": "Gujarat",
+    "district": "Bhavnagar",
+    "source_names": [
+      "BHAVNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Dang",
+    "state": "Gujarat",
+    "district": "Dang",
+    "source_names": [
+      "DANG"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Dohad",
+    "state": "Gujarat",
+    "district": "Dohad",
+    "source_names": [
+      "DOHAD"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Gandhinagar",
+    "state": "Gujarat",
+    "district": "Gandhinagar",
+    "source_names": [
+      "GANDHINAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Jamnagar",
+    "state": "Gujarat",
+    "district": "Jamnagar",
+    "source_names": [
+      "JAMNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Junagadh",
+    "state": "Gujarat",
+    "district": "Junagadh",
+    "source_names": [
+      "JUNAGADH"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Kachchh",
+    "state": "Gujarat",
+    "district": "Kachchh",
+    "source_names": [
+      "KACHCHH"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Kheda",
+    "state": "Gujarat",
+    "district": "Kheda",
+    "source_names": [
+      "KHEDA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Mahesana",
+    "state": "Gujarat",
+    "district": "Mahesana",
+    "source_names": [
+      "MAHESANA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Narmada",
+    "state": "Gujarat",
+    "district": "Narmada",
+    "source_names": [
+      "NARMADA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Navsari",
+    "state": "Gujarat",
+    "district": "Navsari",
+    "source_names": [
+      "NAVSARI"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Panch Mahals",
+    "state": "Gujarat",
+    "district": "Panch Mahals",
+    "source_names": [
+      "PANCH MAHALS"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Patan",
+    "state": "Gujarat",
+    "district": "Patan",
+    "source_names": [
+      "PATAN"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Porbandar",
+    "state": "Gujarat",
+    "district": "Porbandar",
+    "source_names": [
+      "PORBANDAR"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Rajkot",
+    "state": "Gujarat",
+    "district": "Rajkot",
+    "source_names": [
+      "RAJKOT"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Sabar Kantha",
+    "state": "Gujarat",
+    "district": "Sabar Kantha",
+    "source_names": [
+      "SABAR KANTHA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Surat",
+    "state": "Gujarat",
+    "district": "Surat",
+    "source_names": [
+      "SURAT"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Surendranagar",
+    "state": "Gujarat",
+    "district": "Surendranagar",
+    "source_names": [
+      "SURENDRANAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Tapi",
+    "state": "Gujarat",
+    "district": "Tapi",
+    "source_names": [
+      "TAPI"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Vadodara",
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "source_names": [
+      "VADODARA"
+    ]
+  },
+  {
+    "canonical_id": "Gujarat::Valsad",
+    "state": "Gujarat",
+    "district": "Valsad",
+    "source_names": [
+      "VALSAD"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Ambala",
+    "state": "Haryana",
+    "district": "Ambala",
+    "source_names": [
+      "AMBALA"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Bhiwani",
+    "state": "Haryana",
+    "district": "Bhiwani",
+    "source_names": [
+      "BHIWANI"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Faridabad",
+    "state": "Haryana",
+    "district": "Faridabad",
+    "source_names": [
+      "FARIDABAD"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Fatehabad",
+    "state": "Haryana",
+    "district": "Fatehabad",
+    "source_names": [
+      "FATEHABAD"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Gurgaon",
+    "state": "Haryana",
+    "district": "Gurgaon",
+    "source_names": [
+      "GURGAON"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Hisar",
+    "state": "Haryana",
+    "district": "Hisar",
+    "source_names": [
+      "HISAR"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Jhajjar",
+    "state": "Haryana",
+    "district": "Jhajjar",
+    "source_names": [
+      "JHAJJAR"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Jind",
+    "state": "Haryana",
+    "district": "Jind",
+    "source_names": [
+      "JIND"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Kaithal",
+    "state": "Haryana",
+    "district": "Kaithal",
+    "source_names": [
+      "KAITHAL"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Karnal",
+    "state": "Haryana",
+    "district": "Karnal",
+    "source_names": [
+      "KARNAL"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Kurukshetra",
+    "state": "Haryana",
+    "district": "Kurukshetra",
+    "source_names": [
+      "KURUKSHETRA"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Mahendragarh",
+    "state": "Haryana",
+    "district": "Mahendragarh",
+    "source_names": [
+      "MAHENDRAGARH"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Mewat",
+    "state": "Haryana",
+    "district": "Mewat",
+    "source_names": [
+      "MEWAT"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Palwal",
+    "state": "Haryana",
+    "district": "Palwal",
+    "source_names": [
+      "PALWAL"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Panchkula",
+    "state": "Haryana",
+    "district": "Panchkula",
+    "source_names": [
+      "PANCHKULA"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Panipat",
+    "state": "Haryana",
+    "district": "Panipat",
+    "source_names": [
+      "PANIPAT"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Rewari",
+    "state": "Haryana",
+    "district": "Rewari",
+    "source_names": [
+      "REWARI"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Rohtak",
+    "state": "Haryana",
+    "district": "Rohtak",
+    "source_names": [
+      "ROHTAK"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Sirsa",
+    "state": "Haryana",
+    "district": "Sirsa",
+    "source_names": [
+      "SIRSA"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Sonipat",
+    "state": "Haryana",
+    "district": "Sonipat",
+    "source_names": [
+      "SONIPAT"
+    ]
+  },
+  {
+    "canonical_id": "Haryana::Yamunanagar",
+    "state": "Haryana",
+    "district": "Yamunanagar",
+    "source_names": [
+      "YAMUNANAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Bilaspur",
+    "state": "Himachal Pradesh",
+    "district": "Bilaspur",
+    "source_names": [
+      "BILASPUR"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Chamba",
+    "state": "Himachal Pradesh",
+    "district": "Chamba",
+    "source_names": [
+      "CHAMBA"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Hamirpur",
+    "state": "Himachal Pradesh",
+    "district": "Hamirpur",
+    "source_names": [
+      "HAMIRPUR"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Kangra",
+    "state": "Himachal Pradesh",
+    "district": "Kangra",
+    "source_names": [
+      "KANGRA"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Kinnaur",
+    "state": "Himachal Pradesh",
+    "district": "Kinnaur",
+    "source_names": [
+      "KINNAUR"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Kullu",
+    "state": "Himachal Pradesh",
+    "district": "Kullu",
+    "source_names": [
+      "KULLU"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Lahul and Spiti",
+    "state": "Himachal Pradesh",
+    "district": "Lahul and Spiti",
+    "source_names": [
+      "LAHUL AND SPITI"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Mandi",
+    "state": "Himachal Pradesh",
+    "district": "Mandi",
+    "source_names": [
+      "MANDI"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Shimla",
+    "state": "Himachal Pradesh",
+    "district": "Shimla",
+    "source_names": [
+      "SHIMLA"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Sirmaur",
+    "state": "Himachal Pradesh",
+    "district": "Sirmaur",
+    "source_names": [
+      "SIRMAUR"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Solan",
+    "state": "Himachal Pradesh",
+    "district": "Solan",
+    "source_names": [
+      "SOLAN"
+    ]
+  },
+  {
+    "canonical_id": "Himachal Pradesh::Una",
+    "state": "Himachal Pradesh",
+    "district": "Una",
+    "source_names": [
+      "UNA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Anantnag",
+    "state": "Jammu and Kashmir",
+    "district": "Anantnag",
+    "source_names": [
+      "ANANTNAG"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Badgam",
+    "state": "Jammu and Kashmir",
+    "district": "Badgam",
+    "source_names": [
+      "BADGAM"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Bandipora",
+    "state": "Jammu and Kashmir",
+    "district": "Bandipora",
+    "source_names": [
+      "BANDIPORA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Baramulla",
+    "state": "Jammu and Kashmir",
+    "district": "Baramulla",
+    "source_names": [
+      "BARAMULLA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Doda",
+    "state": "Jammu and Kashmir",
+    "district": "Doda",
+    "source_names": [
+      "DODA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Ganderbal",
+    "state": "Jammu and Kashmir",
+    "district": "Ganderbal",
+    "source_names": [
+      "GANDERBAL"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Jammu",
+    "state": "Jammu and Kashmir",
+    "district": "Jammu",
+    "source_names": [
+      "JAMMU"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Kargil",
+    "state": "Jammu and Kashmir",
+    "district": "Kargil",
+    "source_names": [
+      "KARGIL"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Kathua",
+    "state": "Jammu and Kashmir",
+    "district": "Kathua",
+    "source_names": [
+      "KATHUA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Kishtwar",
+    "state": "Jammu and Kashmir",
+    "district": "Kishtwar",
+    "source_names": [
+      "KISHTWAR"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Kulgam",
+    "state": "Jammu and Kashmir",
+    "district": "Kulgam",
+    "source_names": [
+      "KULGAM"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Kupwara",
+    "state": "Jammu and Kashmir",
+    "district": "Kupwara",
+    "source_names": [
+      "KUPWARA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Leh Ladakh",
+    "state": "Jammu and Kashmir",
+    "district": "Leh Ladakh",
+    "source_names": [
+      "LEH LADAKH"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Poonch",
+    "state": "Jammu and Kashmir",
+    "district": "Poonch",
+    "source_names": [
+      "POONCH"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Pulwama",
+    "state": "Jammu and Kashmir",
+    "district": "Pulwama",
+    "source_names": [
+      "PULWAMA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Rajauri",
+    "state": "Jammu and Kashmir",
+    "district": "Rajauri",
+    "source_names": [
+      "RAJAURI"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Ramban",
+    "state": "Jammu and Kashmir",
+    "district": "Ramban",
+    "source_names": [
+      "RAMBAN"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Reasi",
+    "state": "Jammu and Kashmir",
+    "district": "Reasi",
+    "source_names": [
+      "REASI"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Samba",
+    "state": "Jammu and Kashmir",
+    "district": "Samba",
+    "source_names": [
+      "SAMBA"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Shopian",
+    "state": "Jammu and Kashmir",
+    "district": "Shopian",
+    "source_names": [
+      "SHOPIAN"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Srinagar",
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar",
+    "source_names": [
+      "SRINAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Jammu and Kashmir::Udhampur",
+    "state": "Jammu and Kashmir",
+    "district": "Udhampur",
+    "source_names": [
+      "UDHAMPUR"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Bokaro",
+    "state": "Jharkhand",
+    "district": "Bokaro",
+    "source_names": [
+      "BOKARO"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Chatra",
+    "state": "Jharkhand",
+    "district": "Chatra",
+    "source_names": [
+      "CHATRA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Deoghar",
+    "state": "Jharkhand",
+    "district": "Deoghar",
+    "source_names": [
+      "DEOGHAR"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Dhanbad",
+    "state": "Jharkhand",
+    "district": "Dhanbad",
+    "source_names": [
+      "DHANBAD"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Dumka",
+    "state": "Jharkhand",
+    "district": "Dumka",
+    "source_names": [
+      "DUMKA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::East Singhbum",
+    "state": "Jharkhand",
+    "district": "East Singhbum",
+    "source_names": [
+      "EAST SINGHBUM"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Garhwa",
+    "state": "Jharkhand",
+    "district": "Garhwa",
+    "source_names": [
+      "GARHWA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Giridih",
+    "state": "Jharkhand",
+    "district": "Giridih",
+    "source_names": [
+      "GIRIDIH"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Godda",
+    "state": "Jharkhand",
+    "district": "Godda",
+    "source_names": [
+      "GODDA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Gumla",
+    "state": "Jharkhand",
+    "district": "Gumla",
+    "source_names": [
+      "GUMLA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Hazaribagh",
+    "state": "Jharkhand",
+    "district": "Hazaribagh",
+    "source_names": [
+      "HAZARIBAGH"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Jamtara",
+    "state": "Jharkhand",
+    "district": "Jamtara",
+    "source_names": [
+      "JAMTARA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Khunti",
+    "state": "Jharkhand",
+    "district": "Khunti",
+    "source_names": [
+      "KHUNTI"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Koderma",
+    "state": "Jharkhand",
+    "district": "Koderma",
+    "source_names": [
+      "KODERMA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Latehar",
+    "state": "Jharkhand",
+    "district": "Latehar",
+    "source_names": [
+      "LATEHAR"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Lohardaga",
+    "state": "Jharkhand",
+    "district": "Lohardaga",
+    "source_names": [
+      "LOHARDAGA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Pakur",
+    "state": "Jharkhand",
+    "district": "Pakur",
+    "source_names": [
+      "PAKUR"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Palamu",
+    "state": "Jharkhand",
+    "district": "Palamu",
+    "source_names": [
+      "PALAMU"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Ramgarh",
+    "state": "Jharkhand",
+    "district": "Ramgarh",
+    "source_names": [
+      "RAMGARH"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Ranchi",
+    "state": "Jharkhand",
+    "district": "Ranchi",
+    "source_names": [
+      "RANCHI"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Sahebganj",
+    "state": "Jharkhand",
+    "district": "Sahebganj",
+    "source_names": [
+      "SAHEBGANJ"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Saraikela Kharsawan",
+    "state": "Jharkhand",
+    "district": "Saraikela Kharsawan",
+    "source_names": [
+      "SARAIKELA KHARSAWAN"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::Simdega",
+    "state": "Jharkhand",
+    "district": "Simdega",
+    "source_names": [
+      "SIMDEGA"
+    ]
+  },
+  {
+    "canonical_id": "Jharkhand::West Singhbhum",
+    "state": "Jharkhand",
+    "district": "West Singhbhum",
+    "source_names": [
+      "WEST SINGHBHUM"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Bagalkot",
+    "state": "Karnataka",
+    "district": "Bagalkot",
+    "source_names": [
+      "BAGALKOT"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Ballari",
+    "state": "Karnataka",
+    "district": "Ballari",
+    "source_names": [
+      "BELLARY"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Belagavi",
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "source_names": [
+      "BELGAUM"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Bengaluru Rural",
+    "state": "Karnataka",
+    "district": "Bengaluru Rural",
+    "source_names": [
+      "BANGALORE RURAL"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Bengaluru Urban",
+    "state": "Karnataka",
+    "district": "Bengaluru Urban",
+    "source_names": [
+      "BENGALURU URBAN"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Bidar",
+    "state": "Karnataka",
+    "district": "Bidar",
+    "source_names": [
+      "BIDAR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Chamarajanagar",
+    "state": "Karnataka",
+    "district": "Chamarajanagar",
+    "source_names": [
+      "CHAMARAJANAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Chikballapur",
+    "state": "Karnataka",
+    "district": "Chikballapur",
+    "source_names": [
+      "CHIKBALLAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Chikmagalur",
+    "state": "Karnataka",
+    "district": "Chikmagalur",
+    "source_names": [
+      "CHIKMAGALUR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Chitradurga",
+    "state": "Karnataka",
+    "district": "Chitradurga",
+    "source_names": [
+      "CHITRADURGA"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Dakshin Kannad",
+    "state": "Karnataka",
+    "district": "Dakshin Kannad",
+    "source_names": [
+      "DAKSHIN KANNAD"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Davangere",
+    "state": "Karnataka",
+    "district": "Davangere",
+    "source_names": [
+      "DAVANGERE"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Dharwad",
+    "state": "Karnataka",
+    "district": "Dharwad",
+    "source_names": [
+      "DHARWAD"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Gadag",
+    "state": "Karnataka",
+    "district": "Gadag",
+    "source_names": [
+      "GADAG"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Hassan",
+    "state": "Karnataka",
+    "district": "Hassan",
+    "source_names": [
+      "HASSAN"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Haveri",
+    "state": "Karnataka",
+    "district": "Haveri",
+    "source_names": [
+      "HAVERI"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Kalaburagi",
+    "state": "Karnataka",
+    "district": "Kalaburagi",
+    "source_names": [
+      "GULBARGA"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Kodagu",
+    "state": "Karnataka",
+    "district": "Kodagu",
+    "source_names": [
+      "KODAGU"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Kolar",
+    "state": "Karnataka",
+    "district": "Kolar",
+    "source_names": [
+      "KOLAR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Koppal",
+    "state": "Karnataka",
+    "district": "Koppal",
+    "source_names": [
+      "KOPPAL"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Mandya",
+    "state": "Karnataka",
+    "district": "Mandya",
+    "source_names": [
+      "MANDYA"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Mysuru",
+    "state": "Karnataka",
+    "district": "Mysuru",
+    "source_names": [
+      "MYSORE"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Raichur",
+    "state": "Karnataka",
+    "district": "Raichur",
+    "source_names": [
+      "RAICHUR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Ramanagara",
+    "state": "Karnataka",
+    "district": "Ramanagara",
+    "source_names": [
+      "RAMANAGARA"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Shivamogga",
+    "state": "Karnataka",
+    "district": "Shivamogga",
+    "source_names": [
+      "SHIMOGA"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Tumakuru",
+    "state": "Karnataka",
+    "district": "Tumakuru",
+    "source_names": [
+      "TUMKUR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Udupi",
+    "state": "Karnataka",
+    "district": "Udupi",
+    "source_names": [
+      "UDUPI"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Uttar Kannad",
+    "state": "Karnataka",
+    "district": "Uttar Kannad",
+    "source_names": [
+      "UTTAR KANNAD"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Vijayapura",
+    "state": "Karnataka",
+    "district": "Vijayapura",
+    "source_names": [
+      "BIJAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Karnataka::Yadgir",
+    "state": "Karnataka",
+    "district": "Yadgir",
+    "source_names": [
+      "YADGIR"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Alappuzha",
+    "state": "Kerala",
+    "district": "Alappuzha",
+    "source_names": [
+      "ALAPPUZHA"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Ernakulam",
+    "state": "Kerala",
+    "district": "Ernakulam",
+    "source_names": [
+      "ERNAKULAM"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Idukki",
+    "state": "Kerala",
+    "district": "Idukki",
+    "source_names": [
+      "IDUKKI"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Kannur",
+    "state": "Kerala",
+    "district": "Kannur",
+    "source_names": [
+      "KANNUR"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Kasaragod",
+    "state": "Kerala",
+    "district": "Kasaragod",
+    "source_names": [
+      "KASARAGOD"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Kollam",
+    "state": "Kerala",
+    "district": "Kollam",
+    "source_names": [
+      "KOLLAM"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Kottayam",
+    "state": "Kerala",
+    "district": "Kottayam",
+    "source_names": [
+      "KOTTAYAM"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Kozhikode",
+    "state": "Kerala",
+    "district": "Kozhikode",
+    "source_names": [
+      "KOZHIKODE"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Malappuram",
+    "state": "Kerala",
+    "district": "Malappuram",
+    "source_names": [
+      "MALAPPURAM"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Palakkad",
+    "state": "Kerala",
+    "district": "Palakkad",
+    "source_names": [
+      "PALAKKAD"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Pathanamthitta",
+    "state": "Kerala",
+    "district": "Pathanamthitta",
+    "source_names": [
+      "PATHANAMTHITTA"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Thiruvananthapuram",
+    "state": "Kerala",
+    "district": "Thiruvananthapuram",
+    "source_names": [
+      "THIRUVANANTHAPURAM"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Thrissur",
+    "state": "Kerala",
+    "district": "Thrissur",
+    "source_names": [
+      "THRISSUR"
+    ]
+  },
+  {
+    "canonical_id": "Kerala::Wayanad",
+    "state": "Kerala",
+    "district": "Wayanad",
+    "source_names": [
+      "WAYANAD"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Agar Malwa",
+    "state": "Madhya Pradesh",
+    "district": "Agar Malwa",
+    "source_names": [
+      "AGAR MALWA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Alirajpur",
+    "state": "Madhya Pradesh",
+    "district": "Alirajpur",
+    "source_names": [
+      "ALIRAJPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Anuppur",
+    "state": "Madhya Pradesh",
+    "district": "Anuppur",
+    "source_names": [
+      "ANUPPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Ashoknagar",
+    "state": "Madhya Pradesh",
+    "district": "Ashoknagar",
+    "source_names": [
+      "ASHOKNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Balaghat",
+    "state": "Madhya Pradesh",
+    "district": "Balaghat",
+    "source_names": [
+      "BALAGHAT"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Barwani",
+    "state": "Madhya Pradesh",
+    "district": "Barwani",
+    "source_names": [
+      "BARWANI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Betul",
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "source_names": [
+      "BETUL"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Bhind",
+    "state": "Madhya Pradesh",
+    "district": "Bhind",
+    "source_names": [
+      "BHIND"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Bhopal",
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "source_names": [
+      "BHOPAL"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Burhanpur",
+    "state": "Madhya Pradesh",
+    "district": "Burhanpur",
+    "source_names": [
+      "BURHANPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Chhatarpur",
+    "state": "Madhya Pradesh",
+    "district": "Chhatarpur",
+    "source_names": [
+      "CHHATARPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Chhindwara",
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "source_names": [
+      "CHHINDWARA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Damoh",
+    "state": "Madhya Pradesh",
+    "district": "Damoh",
+    "source_names": [
+      "DAMOH"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Datia",
+    "state": "Madhya Pradesh",
+    "district": "Datia",
+    "source_names": [
+      "DATIA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Dewas",
+    "state": "Madhya Pradesh",
+    "district": "Dewas",
+    "source_names": [
+      "DEWAS"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Dhar",
+    "state": "Madhya Pradesh",
+    "district": "Dhar",
+    "source_names": [
+      "DHAR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Dindori",
+    "state": "Madhya Pradesh",
+    "district": "Dindori",
+    "source_names": [
+      "DINDORI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Guna",
+    "state": "Madhya Pradesh",
+    "district": "Guna",
+    "source_names": [
+      "GUNA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Gwalior",
+    "state": "Madhya Pradesh",
+    "district": "Gwalior",
+    "source_names": [
+      "GWALIOR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Harda",
+    "state": "Madhya Pradesh",
+    "district": "Harda",
+    "source_names": [
+      "HARDA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Hoshangabad",
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "source_names": [
+      "HOSHANGABAD"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Indore",
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "source_names": [
+      "INDORE"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Jabalpur",
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "source_names": [
+      "JABALPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Jhabua",
+    "state": "Madhya Pradesh",
+    "district": "Jhabua",
+    "source_names": [
+      "JHABUA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Katni",
+    "state": "Madhya Pradesh",
+    "district": "Katni",
+    "source_names": [
+      "KATNI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Khandwa",
+    "state": "Madhya Pradesh",
+    "district": "Khandwa",
+    "source_names": [
+      "KHANDWA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Khargone",
+    "state": "Madhya Pradesh",
+    "district": "Khargone",
+    "source_names": [
+      "KHARGONE"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Mandla",
+    "state": "Madhya Pradesh",
+    "district": "Mandla",
+    "source_names": [
+      "MANDLA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Mandsaur",
+    "state": "Madhya Pradesh",
+    "district": "Mandsaur",
+    "source_names": [
+      "MANDSAUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Morena",
+    "state": "Madhya Pradesh",
+    "district": "Morena",
+    "source_names": [
+      "MORENA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Narsinghpur",
+    "state": "Madhya Pradesh",
+    "district": "Narsinghpur",
+    "source_names": [
+      "NARSINGHPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Neemuch",
+    "state": "Madhya Pradesh",
+    "district": "Neemuch",
+    "source_names": [
+      "NEEMUCH"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Panna",
+    "state": "Madhya Pradesh",
+    "district": "Panna",
+    "source_names": [
+      "PANNA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Raisen",
+    "state": "Madhya Pradesh",
+    "district": "Raisen",
+    "source_names": [
+      "RAISEN"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Rajgarh",
+    "state": "Madhya Pradesh",
+    "district": "Rajgarh",
+    "source_names": [
+      "RAJGARH"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Ratlam",
+    "state": "Madhya Pradesh",
+    "district": "Ratlam",
+    "source_names": [
+      "RATLAM"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Rewa",
+    "state": "Madhya Pradesh",
+    "district": "Rewa",
+    "source_names": [
+      "REWA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Sagar",
+    "state": "Madhya Pradesh",
+    "district": "Sagar",
+    "source_names": [
+      "SAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Satna",
+    "state": "Madhya Pradesh",
+    "district": "Satna",
+    "source_names": [
+      "SATNA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Sehore",
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "source_names": [
+      "SEHORE"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Seoni",
+    "state": "Madhya Pradesh",
+    "district": "Seoni",
+    "source_names": [
+      "SEONI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Shahdol",
+    "state": "Madhya Pradesh",
+    "district": "Shahdol",
+    "source_names": [
+      "SHAHDOL"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Shajapur",
+    "state": "Madhya Pradesh",
+    "district": "Shajapur",
+    "source_names": [
+      "SHAJAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Sheopur",
+    "state": "Madhya Pradesh",
+    "district": "Sheopur",
+    "source_names": [
+      "SHEOPUR"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Shivpuri",
+    "state": "Madhya Pradesh",
+    "district": "Shivpuri",
+    "source_names": [
+      "SHIVPURI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Sidhi",
+    "state": "Madhya Pradesh",
+    "district": "Sidhi",
+    "source_names": [
+      "SIDHI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Singrauli",
+    "state": "Madhya Pradesh",
+    "district": "Singrauli",
+    "source_names": [
+      "SINGRAULI"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Tikamgarh",
+    "state": "Madhya Pradesh",
+    "district": "Tikamgarh",
+    "source_names": [
+      "TIKAMGARH"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Ujjain",
+    "state": "Madhya Pradesh",
+    "district": "Ujjain",
+    "source_names": [
+      "UJJAIN"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Umaria",
+    "state": "Madhya Pradesh",
+    "district": "Umaria",
+    "source_names": [
+      "UMARIA"
+    ]
+  },
+  {
+    "canonical_id": "Madhya Pradesh::Vidisha",
+    "state": "Madhya Pradesh",
+    "district": "Vidisha",
+    "source_names": [
+      "VIDISHA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Ahilya Nagar",
+    "state": "Maharashtra",
+    "district": "Ahilya Nagar",
+    "source_names": [
+      "AHMEDNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Akola",
+    "state": "Maharashtra",
+    "district": "Akola",
+    "source_names": [
+      "AKOLA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Amravati",
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "source_names": [
+      "AMRAVATI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Beed",
+    "state": "Maharashtra",
+    "district": "Beed",
+    "source_names": [
+      "BEED"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Bhandara",
+    "state": "Maharashtra",
+    "district": "Bhandara",
+    "source_names": [
+      "BHANDARA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Buldhana",
+    "state": "Maharashtra",
+    "district": "Buldhana",
+    "source_names": [
+      "BULDHANA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Chandrapur",
+    "state": "Maharashtra",
+    "district": "Chandrapur",
+    "source_names": [
+      "CHANDRAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Chhatrapati Sambhaji Nagar",
+    "state": "Maharashtra",
+    "district": "Chhatrapati Sambhaji Nagar",
+    "source_names": [
+      "AURANGABAD"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Dharashiv",
+    "state": "Maharashtra",
+    "district": "Dharashiv",
+    "source_names": [
+      "OSMANABAD"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Dhule",
+    "state": "Maharashtra",
+    "district": "Dhule",
+    "source_names": [
+      "DHULE"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Gadchiroli",
+    "state": "Maharashtra",
+    "district": "Gadchiroli",
+    "source_names": [
+      "GADCHIROLI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Gondia",
+    "state": "Maharashtra",
+    "district": "Gondia",
+    "source_names": [
+      "GONDIA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Hingoli",
+    "state": "Maharashtra",
+    "district": "Hingoli",
+    "source_names": [
+      "HINGOLI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Jalgaon",
+    "state": "Maharashtra",
+    "district": "Jalgaon",
+    "source_names": [
+      "JALGAON"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Jalna",
+    "state": "Maharashtra",
+    "district": "Jalna",
+    "source_names": [
+      "JALNA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Kolhapur",
+    "state": "Maharashtra",
+    "district": "Kolhapur",
+    "source_names": [
+      "KOLHAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Latur",
+    "state": "Maharashtra",
+    "district": "Latur",
+    "source_names": [
+      "LATUR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Mumbai",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "source_names": [
+      "MUMBAI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Nagpur",
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "source_names": [
+      "NAGPUR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Nanded",
+    "state": "Maharashtra",
+    "district": "Nanded",
+    "source_names": [
+      "NANDED"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Nandurbar",
+    "state": "Maharashtra",
+    "district": "Nandurbar",
+    "source_names": [
+      "NANDURBAR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Nashik",
+    "state": "Maharashtra",
+    "district": "Nashik",
+    "source_names": [
+      "NASHIK"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Palghar",
+    "state": "Maharashtra",
+    "district": "Palghar",
+    "source_names": [
+      "PALGHAR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Parbhani",
+    "state": "Maharashtra",
+    "district": "Parbhani",
+    "source_names": [
+      "PARBHANI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Pune",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "source_names": [
+      "PUNE"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Raigad",
+    "state": "Maharashtra",
+    "district": "Raigad",
+    "source_names": [
+      "RAIGAD"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Ratnagiri",
+    "state": "Maharashtra",
+    "district": "Ratnagiri",
+    "source_names": [
+      "RATNAGIRI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Sangli",
+    "state": "Maharashtra",
+    "district": "Sangli",
+    "source_names": [
+      "SANGLI"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Satara",
+    "state": "Maharashtra",
+    "district": "Satara",
+    "source_names": [
+      "SATARA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Sindhudurg",
+    "state": "Maharashtra",
+    "district": "Sindhudurg",
+    "source_names": [
+      "SINDHUDURG"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Solapur",
+    "state": "Maharashtra",
+    "district": "Solapur",
+    "source_names": [
+      "SOLAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Thane",
+    "state": "Maharashtra",
+    "district": "Thane",
+    "source_names": [
+      "THANE"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Wardha",
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "source_names": [
+      "WARDHA"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Washim",
+    "state": "Maharashtra",
+    "district": "Washim",
+    "source_names": [
+      "WASHIM"
+    ]
+  },
+  {
+    "canonical_id": "Maharashtra::Yavatmal",
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "source_names": [
+      "YAVATMAL"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Bishnupur",
+    "state": "Manipur",
+    "district": "Bishnupur",
+    "source_names": [
+      "BISHNUPUR"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Chandel",
+    "state": "Manipur",
+    "district": "Chandel",
+    "source_names": [
+      "CHANDEL"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Churachandpur",
+    "state": "Manipur",
+    "district": "Churachandpur",
+    "source_names": [
+      "CHURACHANDPUR"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Imphal East",
+    "state": "Manipur",
+    "district": "Imphal East",
+    "source_names": [
+      "IMPHAL EAST"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Imphal West",
+    "state": "Manipur",
+    "district": "Imphal West",
+    "source_names": [
+      "IMPHAL WEST"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Senapati",
+    "state": "Manipur",
+    "district": "Senapati",
+    "source_names": [
+      "SENAPATI"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Tamenglong",
+    "state": "Manipur",
+    "district": "Tamenglong",
+    "source_names": [
+      "TAMENGLONG"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Thoubal",
+    "state": "Manipur",
+    "district": "Thoubal",
+    "source_names": [
+      "THOUBAL"
+    ]
+  },
+  {
+    "canonical_id": "Manipur::Ukhrul",
+    "state": "Manipur",
+    "district": "Ukhrul",
+    "source_names": [
+      "UKHRUL"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::East Garo Hills",
+    "state": "Meghalaya",
+    "district": "East Garo Hills",
+    "source_names": [
+      "EAST GARO HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::East Jaintia Hills",
+    "state": "Meghalaya",
+    "district": "East Jaintia Hills",
+    "source_names": [
+      "EAST JAINTIA HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::East Khasi Hills",
+    "state": "Meghalaya",
+    "district": "East Khasi Hills",
+    "source_names": [
+      "EAST KHASI HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::North Garo Hills",
+    "state": "Meghalaya",
+    "district": "North Garo Hills",
+    "source_names": [
+      "NORTH GARO HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::Ri Bhoi",
+    "state": "Meghalaya",
+    "district": "Ri Bhoi",
+    "source_names": [
+      "RI BHOI"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::South Garo Hills",
+    "state": "Meghalaya",
+    "district": "South Garo Hills",
+    "source_names": [
+      "SOUTH GARO HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::South West Garo Hills",
+    "state": "Meghalaya",
+    "district": "South West Garo Hills",
+    "source_names": [
+      "SOUTH WEST GARO HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::South West Khasi Hills",
+    "state": "Meghalaya",
+    "district": "South West Khasi Hills",
+    "source_names": [
+      "SOUTH WEST KHASI HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::West Garo Hills",
+    "state": "Meghalaya",
+    "district": "West Garo Hills",
+    "source_names": [
+      "WEST GARO HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::West Jaintia Hills",
+    "state": "Meghalaya",
+    "district": "West Jaintia Hills",
+    "source_names": [
+      "WEST JAINTIA HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Meghalaya::West Khasi Hills",
+    "state": "Meghalaya",
+    "district": "West Khasi Hills",
+    "source_names": [
+      "WEST KHASI HILLS"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Aizawl",
+    "state": "Mizoram",
+    "district": "Aizawl",
+    "source_names": [
+      "AIZAWL"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Champhai",
+    "state": "Mizoram",
+    "district": "Champhai",
+    "source_names": [
+      "CHAMPHAI"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Kolasib",
+    "state": "Mizoram",
+    "district": "Kolasib",
+    "source_names": [
+      "KOLASIB"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Lawngtlai",
+    "state": "Mizoram",
+    "district": "Lawngtlai",
+    "source_names": [
+      "LAWNGTLAI"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Lunglei",
+    "state": "Mizoram",
+    "district": "Lunglei",
+    "source_names": [
+      "LUNGLEI"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Mamit",
+    "state": "Mizoram",
+    "district": "Mamit",
+    "source_names": [
+      "MAMIT"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Saiha",
+    "state": "Mizoram",
+    "district": "Saiha",
+    "source_names": [
+      "SAIHA"
+    ]
+  },
+  {
+    "canonical_id": "Mizoram::Serchhip",
+    "state": "Mizoram",
+    "district": "Serchhip",
+    "source_names": [
+      "SERCHHIP"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Dimapur",
+    "state": "Nagaland",
+    "district": "Dimapur",
+    "source_names": [
+      "DIMAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Kiphire",
+    "state": "Nagaland",
+    "district": "Kiphire",
+    "source_names": [
+      "KIPHIRE"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Kohima",
+    "state": "Nagaland",
+    "district": "Kohima",
+    "source_names": [
+      "KOHIMA"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Longleng",
+    "state": "Nagaland",
+    "district": "Longleng",
+    "source_names": [
+      "LONGLENG"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Mokokchung",
+    "state": "Nagaland",
+    "district": "Mokokchung",
+    "source_names": [
+      "MOKOKCHUNG"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Mon",
+    "state": "Nagaland",
+    "district": "Mon",
+    "source_names": [
+      "MON"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Peren",
+    "state": "Nagaland",
+    "district": "Peren",
+    "source_names": [
+      "PEREN"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Phek",
+    "state": "Nagaland",
+    "district": "Phek",
+    "source_names": [
+      "PHEK"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Tuensang",
+    "state": "Nagaland",
+    "district": "Tuensang",
+    "source_names": [
+      "TUENSANG"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Wokha",
+    "state": "Nagaland",
+    "district": "Wokha",
+    "source_names": [
+      "WOKHA"
+    ]
+  },
+  {
+    "canonical_id": "Nagaland::Zunheboto",
+    "state": "Nagaland",
+    "district": "Zunheboto",
+    "source_names": [
+      "ZUNHEBOTO"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Anugul",
+    "state": "Odisha",
+    "district": "Anugul",
+    "source_names": [
+      "ANUGUL"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Balangir",
+    "state": "Odisha",
+    "district": "Balangir",
+    "source_names": [
+      "BALANGIR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Baleshwar",
+    "state": "Odisha",
+    "district": "Baleshwar",
+    "source_names": [
+      "BALESHWAR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Bargarh",
+    "state": "Odisha",
+    "district": "Bargarh",
+    "source_names": [
+      "BARGARH"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Bhadrak",
+    "state": "Odisha",
+    "district": "Bhadrak",
+    "source_names": [
+      "BHADRAK"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Boudh",
+    "state": "Odisha",
+    "district": "Boudh",
+    "source_names": [
+      "BOUDH"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Cuttack",
+    "state": "Odisha",
+    "district": "Cuttack",
+    "source_names": [
+      "CUTTACK"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Deogarh",
+    "state": "Odisha",
+    "district": "Deogarh",
+    "source_names": [
+      "DEOGARH"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Dhenkanal",
+    "state": "Odisha",
+    "district": "Dhenkanal",
+    "source_names": [
+      "DHENKANAL"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Gajapati",
+    "state": "Odisha",
+    "district": "Gajapati",
+    "source_names": [
+      "GAJAPATI"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Ganjam",
+    "state": "Odisha",
+    "district": "Ganjam",
+    "source_names": [
+      "GANJAM"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Jagatsinghapur",
+    "state": "Odisha",
+    "district": "Jagatsinghapur",
+    "source_names": [
+      "JAGATSINGHAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Jajapur",
+    "state": "Odisha",
+    "district": "Jajapur",
+    "source_names": [
+      "JAJAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Jharsuguda",
+    "state": "Odisha",
+    "district": "Jharsuguda",
+    "source_names": [
+      "JHARSUGUDA"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Kalahandi",
+    "state": "Odisha",
+    "district": "Kalahandi",
+    "source_names": [
+      "KALAHANDI"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Kandhamal",
+    "state": "Odisha",
+    "district": "Kandhamal",
+    "source_names": [
+      "KANDHAMAL"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Kendrapara",
+    "state": "Odisha",
+    "district": "Kendrapara",
+    "source_names": [
+      "KENDRAPARA"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Kendujhar",
+    "state": "Odisha",
+    "district": "Kendujhar",
+    "source_names": [
+      "KENDUJHAR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Khordha",
+    "state": "Odisha",
+    "district": "Khordha",
+    "source_names": [
+      "KHORDHA"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Koraput",
+    "state": "Odisha",
+    "district": "Koraput",
+    "source_names": [
+      "KORAPUT"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Malkangiri",
+    "state": "Odisha",
+    "district": "Malkangiri",
+    "source_names": [
+      "MALKANGIRI"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Mayurbhanj",
+    "state": "Odisha",
+    "district": "Mayurbhanj",
+    "source_names": [
+      "MAYURBHANJ"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Nabarangpur",
+    "state": "Odisha",
+    "district": "Nabarangpur",
+    "source_names": [
+      "NABARANGPUR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Nayagarh",
+    "state": "Odisha",
+    "district": "Nayagarh",
+    "source_names": [
+      "NAYAGARH"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Nuapada",
+    "state": "Odisha",
+    "district": "Nuapada",
+    "source_names": [
+      "NUAPADA"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Puri",
+    "state": "Odisha",
+    "district": "Puri",
+    "source_names": [
+      "PURI"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Rayagada",
+    "state": "Odisha",
+    "district": "Rayagada",
+    "source_names": [
+      "RAYAGADA"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Sambalpur",
+    "state": "Odisha",
+    "district": "Sambalpur",
+    "source_names": [
+      "SAMBALPUR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Sonepur",
+    "state": "Odisha",
+    "district": "Sonepur",
+    "source_names": [
+      "SONEPUR"
+    ]
+  },
+  {
+    "canonical_id": "Odisha::Sundargarh",
+    "state": "Odisha",
+    "district": "Sundargarh",
+    "source_names": [
+      "SUNDARGARH"
+    ]
+  },
+  {
+    "canonical_id": "Puducherry::Karaikal",
+    "state": "Puducherry",
+    "district": "Karaikal",
+    "source_names": [
+      "KARAIKAL"
+    ]
+  },
+  {
+    "canonical_id": "Puducherry::Mahe",
+    "state": "Puducherry",
+    "district": "Mahe",
+    "source_names": [
+      "MAHE"
+    ]
+  },
+  {
+    "canonical_id": "Puducherry::Pondicherry",
+    "state": "Puducherry",
+    "district": "Pondicherry",
+    "source_names": [
+      "PONDICHERRY"
+    ]
+  },
+  {
+    "canonical_id": "Puducherry::Yanam",
+    "state": "Puducherry",
+    "district": "Yanam",
+    "source_names": [
+      "YANAM"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Amritsar",
+    "state": "Punjab",
+    "district": "Amritsar",
+    "source_names": [
+      "AMRITSAR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Barnala",
+    "state": "Punjab",
+    "district": "Barnala",
+    "source_names": [
+      "BARNALA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Bathinda",
+    "state": "Punjab",
+    "district": "Bathinda",
+    "source_names": [
+      "BATHINDA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Faridkot",
+    "state": "Punjab",
+    "district": "Faridkot",
+    "source_names": [
+      "FARIDKOT"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Fatehgarh Sahib",
+    "state": "Punjab",
+    "district": "Fatehgarh Sahib",
+    "source_names": [
+      "FATEHGARH SAHIB"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Fazilka",
+    "state": "Punjab",
+    "district": "Fazilka",
+    "source_names": [
+      "FAZILKA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Firozepur",
+    "state": "Punjab",
+    "district": "Firozepur",
+    "source_names": [
+      "FIROZEPUR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Gurdaspur",
+    "state": "Punjab",
+    "district": "Gurdaspur",
+    "source_names": [
+      "GURDASPUR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Hoshiarpur",
+    "state": "Punjab",
+    "district": "Hoshiarpur",
+    "source_names": [
+      "HOSHIARPUR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Jalandhar",
+    "state": "Punjab",
+    "district": "Jalandhar",
+    "source_names": [
+      "JALANDHAR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Kapurthala",
+    "state": "Punjab",
+    "district": "Kapurthala",
+    "source_names": [
+      "KAPURTHALA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Ludhiana",
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "source_names": [
+      "LUDHIANA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Mansa",
+    "state": "Punjab",
+    "district": "Mansa",
+    "source_names": [
+      "MANSA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Moga",
+    "state": "Punjab",
+    "district": "Moga",
+    "source_names": [
+      "MOGA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Muktsar",
+    "state": "Punjab",
+    "district": "Muktsar",
+    "source_names": [
+      "MUKTSAR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Nawanshahr",
+    "state": "Punjab",
+    "district": "Nawanshahr",
+    "source_names": [
+      "NAWANSHAHR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Pathankot",
+    "state": "Punjab",
+    "district": "Pathankot",
+    "source_names": [
+      "PATHANKOT"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Patiala",
+    "state": "Punjab",
+    "district": "Patiala",
+    "source_names": [
+      "PATIALA"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Rupnagar",
+    "state": "Punjab",
+    "district": "Rupnagar",
+    "source_names": [
+      "RUPNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::S.a.s Nagar",
+    "state": "Punjab",
+    "district": "S.a.s Nagar",
+    "source_names": [
+      "S.A.S NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Sangrur",
+    "state": "Punjab",
+    "district": "Sangrur",
+    "source_names": [
+      "SANGRUR"
+    ]
+  },
+  {
+    "canonical_id": "Punjab::Tarn Taran",
+    "state": "Punjab",
+    "district": "Tarn Taran",
+    "source_names": [
+      "TARN TARAN"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Ajmer",
+    "state": "Rajasthan",
+    "district": "Ajmer",
+    "source_names": [
+      "AJMER"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Alwar",
+    "state": "Rajasthan",
+    "district": "Alwar",
+    "source_names": [
+      "ALWAR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Banswara",
+    "state": "Rajasthan",
+    "district": "Banswara",
+    "source_names": [
+      "BANSWARA"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Baran",
+    "state": "Rajasthan",
+    "district": "Baran",
+    "source_names": [
+      "BARAN"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Barmer",
+    "state": "Rajasthan",
+    "district": "Barmer",
+    "source_names": [
+      "BARMER"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Bharatpur",
+    "state": "Rajasthan",
+    "district": "Bharatpur",
+    "source_names": [
+      "BHARATPUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Bhilwara",
+    "state": "Rajasthan",
+    "district": "Bhilwara",
+    "source_names": [
+      "BHILWARA"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Bikaner",
+    "state": "Rajasthan",
+    "district": "Bikaner",
+    "source_names": [
+      "BIKANER"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Bundi",
+    "state": "Rajasthan",
+    "district": "Bundi",
+    "source_names": [
+      "BUNDI"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Chittorgarh",
+    "state": "Rajasthan",
+    "district": "Chittorgarh",
+    "source_names": [
+      "CHITTORGARH"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Churu",
+    "state": "Rajasthan",
+    "district": "Churu",
+    "source_names": [
+      "CHURU"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Dausa",
+    "state": "Rajasthan",
+    "district": "Dausa",
+    "source_names": [
+      "DAUSA"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Dholpur",
+    "state": "Rajasthan",
+    "district": "Dholpur",
+    "source_names": [
+      "DHOLPUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Dungarpur",
+    "state": "Rajasthan",
+    "district": "Dungarpur",
+    "source_names": [
+      "DUNGARPUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Ganganagar",
+    "state": "Rajasthan",
+    "district": "Ganganagar",
+    "source_names": [
+      "GANGANAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Hanumangarh",
+    "state": "Rajasthan",
+    "district": "Hanumangarh",
+    "source_names": [
+      "HANUMANGARH"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Jaipur",
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "source_names": [
+      "JAIPUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Jaisalmer",
+    "state": "Rajasthan",
+    "district": "Jaisalmer",
+    "source_names": [
+      "JAISALMER"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Jalore",
+    "state": "Rajasthan",
+    "district": "Jalore",
+    "source_names": [
+      "JALORE"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Jhalawar",
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "source_names": [
+      "JHALAWAR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Jhunjhunu",
+    "state": "Rajasthan",
+    "district": "Jhunjhunu",
+    "source_names": [
+      "JHUNJHUNU"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Jodhpur",
+    "state": "Rajasthan",
+    "district": "Jodhpur",
+    "source_names": [
+      "JODHPUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Karauli",
+    "state": "Rajasthan",
+    "district": "Karauli",
+    "source_names": [
+      "KARAULI"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Kota",
+    "state": "Rajasthan",
+    "district": "Kota",
+    "source_names": [
+      "KOTA"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Nagaur",
+    "state": "Rajasthan",
+    "district": "Nagaur",
+    "source_names": [
+      "NAGAUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Pali",
+    "state": "Rajasthan",
+    "district": "Pali",
+    "source_names": [
+      "PALI"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Pratapgarh",
+    "state": "Rajasthan",
+    "district": "Pratapgarh",
+    "source_names": [
+      "PRATAPGARH"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Rajsamand",
+    "state": "Rajasthan",
+    "district": "Rajsamand",
+    "source_names": [
+      "RAJSAMAND"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Sawai Madhopur",
+    "state": "Rajasthan",
+    "district": "Sawai Madhopur",
+    "source_names": [
+      "SAWAI MADHOPUR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Sikar",
+    "state": "Rajasthan",
+    "district": "Sikar",
+    "source_names": [
+      "SIKAR"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Sirohi",
+    "state": "Rajasthan",
+    "district": "Sirohi",
+    "source_names": [
+      "SIROHI"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Tonk",
+    "state": "Rajasthan",
+    "district": "Tonk",
+    "source_names": [
+      "TONK"
+    ]
+  },
+  {
+    "canonical_id": "Rajasthan::Udaipur",
+    "state": "Rajasthan",
+    "district": "Udaipur",
+    "source_names": [
+      "UDAIPUR"
+    ]
+  },
+  {
+    "canonical_id": "Sikkim::East District",
+    "state": "Sikkim",
+    "district": "East District",
+    "source_names": [
+      "EAST DISTRICT"
+    ]
+  },
+  {
+    "canonical_id": "Sikkim::North District",
+    "state": "Sikkim",
+    "district": "North District",
+    "source_names": [
+      "NORTH DISTRICT"
+    ]
+  },
+  {
+    "canonical_id": "Sikkim::South District",
+    "state": "Sikkim",
+    "district": "South District",
+    "source_names": [
+      "SOUTH DISTRICT"
+    ]
+  },
+  {
+    "canonical_id": "Sikkim::West District",
+    "state": "Sikkim",
+    "district": "West District",
+    "source_names": [
+      "WEST DISTRICT"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Ariyalur",
+    "state": "Tamil Nadu",
+    "district": "Ariyalur",
+    "source_names": [
+      "ARIYALUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Coimbatore",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "source_names": [
+      "COIMBATORE"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Cuddalore",
+    "state": "Tamil Nadu",
+    "district": "Cuddalore",
+    "source_names": [
+      "CUDDALORE"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Dharmapuri",
+    "state": "Tamil Nadu",
+    "district": "Dharmapuri",
+    "source_names": [
+      "DHARMAPURI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Dindigul",
+    "state": "Tamil Nadu",
+    "district": "Dindigul",
+    "source_names": [
+      "DINDIGUL"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Erode",
+    "state": "Tamil Nadu",
+    "district": "Erode",
+    "source_names": [
+      "ERODE"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Kanchipuram",
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram",
+    "source_names": [
+      "KANCHIPURAM"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Kanniyakumari",
+    "state": "Tamil Nadu",
+    "district": "Kanniyakumari",
+    "source_names": [
+      "KANNIYAKUMARI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Karur",
+    "state": "Tamil Nadu",
+    "district": "Karur",
+    "source_names": [
+      "KARUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Krishnagiri",
+    "state": "Tamil Nadu",
+    "district": "Krishnagiri",
+    "source_names": [
+      "KRISHNAGIRI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Madurai",
+    "state": "Tamil Nadu",
+    "district": "Madurai",
+    "source_names": [
+      "MADURAI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Nagapattinam",
+    "state": "Tamil Nadu",
+    "district": "Nagapattinam",
+    "source_names": [
+      "NAGAPATTINAM"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Namakkal",
+    "state": "Tamil Nadu",
+    "district": "Namakkal",
+    "source_names": [
+      "NAMAKKAL"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Perambalur",
+    "state": "Tamil Nadu",
+    "district": "Perambalur",
+    "source_names": [
+      "PERAMBALUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Pudukkottai",
+    "state": "Tamil Nadu",
+    "district": "Pudukkottai",
+    "source_names": [
+      "PUDUKKOTTAI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Ramanathapuram",
+    "state": "Tamil Nadu",
+    "district": "Ramanathapuram",
+    "source_names": [
+      "RAMANATHAPURAM"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Salem",
+    "state": "Tamil Nadu",
+    "district": "Salem",
+    "source_names": [
+      "SALEM"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Sivaganga",
+    "state": "Tamil Nadu",
+    "district": "Sivaganga",
+    "source_names": [
+      "SIVAGANGA"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Thanjavur",
+    "state": "Tamil Nadu",
+    "district": "Thanjavur",
+    "source_names": [
+      "THANJAVUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::The Nilgiris",
+    "state": "Tamil Nadu",
+    "district": "The Nilgiris",
+    "source_names": [
+      "THE NILGIRIS"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Theni",
+    "state": "Tamil Nadu",
+    "district": "Theni",
+    "source_names": [
+      "THENI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Thiruvallur",
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur",
+    "source_names": [
+      "THIRUVALLUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Thiruvarur",
+    "state": "Tamil Nadu",
+    "district": "Thiruvarur",
+    "source_names": [
+      "THIRUVARUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli",
+    "source_names": [
+      "TIRUCHIRAPPALLI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Tirunelveli",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli",
+    "source_names": [
+      "TIRUNELVELI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Tiruppur",
+    "state": "Tamil Nadu",
+    "district": "Tiruppur",
+    "source_names": [
+      "TIRUPPUR"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Tiruvannamalai",
+    "state": "Tamil Nadu",
+    "district": "Tiruvannamalai",
+    "source_names": [
+      "TIRUVANNAMALAI"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Tuticorin",
+    "state": "Tamil Nadu",
+    "district": "Tuticorin",
+    "source_names": [
+      "TUTICORIN"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Vellore",
+    "state": "Tamil Nadu",
+    "district": "Vellore",
+    "source_names": [
+      "VELLORE"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Villupuram",
+    "state": "Tamil Nadu",
+    "district": "Villupuram",
+    "source_names": [
+      "VILLUPURAM"
+    ]
+  },
+  {
+    "canonical_id": "Tamil Nadu::Virudhunagar",
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar",
+    "source_names": [
+      "VIRUDHUNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Adilabad",
+    "state": "Telangana",
+    "district": "Adilabad",
+    "source_names": [
+      "ADILABAD"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Hyderabad",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "source_names": [
+      "HYDERABAD"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Karimnagar",
+    "state": "Telangana",
+    "district": "Karimnagar",
+    "source_names": [
+      "KARIMNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Khammam",
+    "state": "Telangana",
+    "district": "Khammam",
+    "source_names": [
+      "KHAMMAM"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Mahbubnagar",
+    "state": "Telangana",
+    "district": "Mahbubnagar",
+    "source_names": [
+      "MAHBUBNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Medak",
+    "state": "Telangana",
+    "district": "Medak",
+    "source_names": [
+      "MEDAK"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Nalgonda",
+    "state": "Telangana",
+    "district": "Nalgonda",
+    "source_names": [
+      "NALGONDA"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Nizamabad",
+    "state": "Telangana",
+    "district": "Nizamabad",
+    "source_names": [
+      "NIZAMABAD"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Rangareddi",
+    "state": "Telangana",
+    "district": "Rangareddi",
+    "source_names": [
+      "RANGAREDDI"
+    ]
+  },
+  {
+    "canonical_id": "Telangana::Warangal",
+    "state": "Telangana",
+    "district": "Warangal",
+    "source_names": [
+      "WARANGAL"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::Dhalai",
+    "state": "Tripura",
+    "district": "Dhalai",
+    "source_names": [
+      "DHALAI"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::Gomati",
+    "state": "Tripura",
+    "district": "Gomati",
+    "source_names": [
+      "GOMATI"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::Khowai",
+    "state": "Tripura",
+    "district": "Khowai",
+    "source_names": [
+      "KHOWAI"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::North Tripura",
+    "state": "Tripura",
+    "district": "North Tripura",
+    "source_names": [
+      "NORTH TRIPURA"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::Sepahijala",
+    "state": "Tripura",
+    "district": "Sepahijala",
+    "source_names": [
+      "SEPAHIJALA"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::South Tripura",
+    "state": "Tripura",
+    "district": "South Tripura",
+    "source_names": [
+      "SOUTH TRIPURA"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::Unakoti",
+    "state": "Tripura",
+    "district": "Unakoti",
+    "source_names": [
+      "UNAKOTI"
+    ]
+  },
+  {
+    "canonical_id": "Tripura::West Tripura",
+    "state": "Tripura",
+    "district": "West Tripura",
+    "source_names": [
+      "WEST TRIPURA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Agra",
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "source_names": [
+      "AGRA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Aligarh",
+    "state": "Uttar Pradesh",
+    "district": "Aligarh",
+    "source_names": [
+      "ALIGARH"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Ambedkar Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Ambedkar Nagar",
+    "source_names": [
+      "AMBEDKAR NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Amethi",
+    "state": "Uttar Pradesh",
+    "district": "Amethi",
+    "source_names": [
+      "AMETHI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Amroha",
+    "state": "Uttar Pradesh",
+    "district": "Amroha",
+    "source_names": [
+      "AMROHA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Auraiya",
+    "state": "Uttar Pradesh",
+    "district": "Auraiya",
+    "source_names": [
+      "AURAIYA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Ayodhya",
+    "state": "Uttar Pradesh",
+    "district": "Ayodhya",
+    "source_names": [
+      "FAIZABAD"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Azamgarh",
+    "state": "Uttar Pradesh",
+    "district": "Azamgarh",
+    "source_names": [
+      "AZAMGARH"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Baghpat",
+    "state": "Uttar Pradesh",
+    "district": "Baghpat",
+    "source_names": [
+      "BAGHPAT"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Bahraich",
+    "state": "Uttar Pradesh",
+    "district": "Bahraich",
+    "source_names": [
+      "BAHRAICH"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Ballia",
+    "state": "Uttar Pradesh",
+    "district": "Ballia",
+    "source_names": [
+      "BALLIA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Balrampur",
+    "state": "Uttar Pradesh",
+    "district": "Balrampur",
+    "source_names": [
+      "BALRAMPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Banda",
+    "state": "Uttar Pradesh",
+    "district": "Banda",
+    "source_names": [
+      "BANDA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Barabanki",
+    "state": "Uttar Pradesh",
+    "district": "Barabanki",
+    "source_names": [
+      "BARABANKI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Bareilly",
+    "state": "Uttar Pradesh",
+    "district": "Bareilly",
+    "source_names": [
+      "BAREILLY"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Basti",
+    "state": "Uttar Pradesh",
+    "district": "Basti",
+    "source_names": [
+      "BASTI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Bijnor",
+    "state": "Uttar Pradesh",
+    "district": "Bijnor",
+    "source_names": [
+      "BIJNOR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Budaun",
+    "state": "Uttar Pradesh",
+    "district": "Budaun",
+    "source_names": [
+      "BUDAUN"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Bulandshahr",
+    "state": "Uttar Pradesh",
+    "district": "Bulandshahr",
+    "source_names": [
+      "BULANDSHAHR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Chandauli",
+    "state": "Uttar Pradesh",
+    "district": "Chandauli",
+    "source_names": [
+      "CHANDAULI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Chitrakoot",
+    "state": "Uttar Pradesh",
+    "district": "Chitrakoot",
+    "source_names": [
+      "CHITRAKOOT"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Deoria",
+    "state": "Uttar Pradesh",
+    "district": "Deoria",
+    "source_names": [
+      "DEORIA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Etah",
+    "state": "Uttar Pradesh",
+    "district": "Etah",
+    "source_names": [
+      "ETAH"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Etawah",
+    "state": "Uttar Pradesh",
+    "district": "Etawah",
+    "source_names": [
+      "ETAWAH"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Farrukhabad",
+    "state": "Uttar Pradesh",
+    "district": "Farrukhabad",
+    "source_names": [
+      "FARRUKHABAD"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Fatehpur",
+    "state": "Uttar Pradesh",
+    "district": "Fatehpur",
+    "source_names": [
+      "FATEHPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Firozabad",
+    "state": "Uttar Pradesh",
+    "district": "Firozabad",
+    "source_names": [
+      "FIROZABAD"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Gautam Buddha Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "source_names": [
+      "GAUTAM BUDDHA NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Ghaziabad",
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "source_names": [
+      "GHAZIABAD"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Ghazipur",
+    "state": "Uttar Pradesh",
+    "district": "Ghazipur",
+    "source_names": [
+      "GHAZIPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Gonda",
+    "state": "Uttar Pradesh",
+    "district": "Gonda",
+    "source_names": [
+      "GONDA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Gorakhpur",
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur",
+    "source_names": [
+      "GORAKHPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Hamirpur",
+    "state": "Uttar Pradesh",
+    "district": "Hamirpur",
+    "source_names": [
+      "HAMIRPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Hapur",
+    "state": "Uttar Pradesh",
+    "district": "Hapur",
+    "source_names": [
+      "HAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Hardoi",
+    "state": "Uttar Pradesh",
+    "district": "Hardoi",
+    "source_names": [
+      "HARDOI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Hathras",
+    "state": "Uttar Pradesh",
+    "district": "Hathras",
+    "source_names": [
+      "HATHRAS"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Jalaun",
+    "state": "Uttar Pradesh",
+    "district": "Jalaun",
+    "source_names": [
+      "JALAUN"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Jaunpur",
+    "state": "Uttar Pradesh",
+    "district": "Jaunpur",
+    "source_names": [
+      "JAUNPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Jhansi",
+    "state": "Uttar Pradesh",
+    "district": "Jhansi",
+    "source_names": [
+      "JHANSI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kannauj",
+    "state": "Uttar Pradesh",
+    "district": "Kannauj",
+    "source_names": [
+      "KANNAUJ"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kanpur Dehat",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Dehat",
+    "source_names": [
+      "KANPUR DEHAT"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kanpur Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar",
+    "source_names": [
+      "KANPUR NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kasganj",
+    "state": "Uttar Pradesh",
+    "district": "Kasganj",
+    "source_names": [
+      "KASGANJ"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kaushambi",
+    "state": "Uttar Pradesh",
+    "district": "Kaushambi",
+    "source_names": [
+      "KAUSHAMBI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kheri",
+    "state": "Uttar Pradesh",
+    "district": "Kheri",
+    "source_names": [
+      "KHERI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Kushi Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Kushi Nagar",
+    "source_names": [
+      "KUSHI NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Lalitpur",
+    "state": "Uttar Pradesh",
+    "district": "Lalitpur",
+    "source_names": [
+      "LALITPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Lucknow",
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "source_names": [
+      "LUCKNOW"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Maharajganj",
+    "state": "Uttar Pradesh",
+    "district": "Maharajganj",
+    "source_names": [
+      "MAHARAJGANJ"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Mahoba",
+    "state": "Uttar Pradesh",
+    "district": "Mahoba",
+    "source_names": [
+      "MAHOBA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Mainpuri",
+    "state": "Uttar Pradesh",
+    "district": "Mainpuri",
+    "source_names": [
+      "MAINPURI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Mathura",
+    "state": "Uttar Pradesh",
+    "district": "Mathura",
+    "source_names": [
+      "MATHURA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Mau",
+    "state": "Uttar Pradesh",
+    "district": "Mau",
+    "source_names": [
+      "MAU"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Meerut",
+    "state": "Uttar Pradesh",
+    "district": "Meerut",
+    "source_names": [
+      "MEERUT"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Mirzapur",
+    "state": "Uttar Pradesh",
+    "district": "Mirzapur",
+    "source_names": [
+      "MIRZAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Moradabad",
+    "state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "source_names": [
+      "MORADABAD"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Muzaffarnagar",
+    "state": "Uttar Pradesh",
+    "district": "Muzaffarnagar",
+    "source_names": [
+      "MUZAFFARNAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Pilibhit",
+    "state": "Uttar Pradesh",
+    "district": "Pilibhit",
+    "source_names": [
+      "PILIBHIT"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Pratapgarh",
+    "state": "Uttar Pradesh",
+    "district": "Pratapgarh",
+    "source_names": [
+      "PRATAPGARH"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Prayagraj",
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "source_names": [
+      "ALLAHABAD"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Rae Bareli",
+    "state": "Uttar Pradesh",
+    "district": "Rae Bareli",
+    "source_names": [
+      "RAE BARELI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Rampur",
+    "state": "Uttar Pradesh",
+    "district": "Rampur",
+    "source_names": [
+      "RAMPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Saharanpur",
+    "state": "Uttar Pradesh",
+    "district": "Saharanpur",
+    "source_names": [
+      "SAHARANPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Sambhal",
+    "state": "Uttar Pradesh",
+    "district": "Sambhal",
+    "source_names": [
+      "SAMBHAL"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Sant Kabeer Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Sant Kabeer Nagar",
+    "source_names": [
+      "SANT KABEER NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Sant Ravidas Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Sant Ravidas Nagar",
+    "source_names": [
+      "SANT RAVIDAS NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Shahjahanpur",
+    "state": "Uttar Pradesh",
+    "district": "Shahjahanpur",
+    "source_names": [
+      "SHAHJAHANPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Shamli",
+    "state": "Uttar Pradesh",
+    "district": "Shamli",
+    "source_names": [
+      "SHAMLI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Shravasti",
+    "state": "Uttar Pradesh",
+    "district": "Shravasti",
+    "source_names": [
+      "SHRAVASTI"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Siddharth Nagar",
+    "state": "Uttar Pradesh",
+    "district": "Siddharth Nagar",
+    "source_names": [
+      "SIDDHARTH NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Sitapur",
+    "state": "Uttar Pradesh",
+    "district": "Sitapur",
+    "source_names": [
+      "SITAPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Sonbhadra",
+    "state": "Uttar Pradesh",
+    "district": "Sonbhadra",
+    "source_names": [
+      "SONBHADRA"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Sultanpur",
+    "state": "Uttar Pradesh",
+    "district": "Sultanpur",
+    "source_names": [
+      "SULTANPUR"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Unnao",
+    "state": "Uttar Pradesh",
+    "district": "Unnao",
+    "source_names": [
+      "UNNAO"
+    ]
+  },
+  {
+    "canonical_id": "Uttar Pradesh::Varanasi",
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "source_names": [
+      "VARANASI"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Almora",
+    "state": "Uttarakhand",
+    "district": "Almora",
+    "source_names": [
+      "ALMORA"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Bageshwar",
+    "state": "Uttarakhand",
+    "district": "Bageshwar",
+    "source_names": [
+      "BAGESHWAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Chamoli",
+    "state": "Uttarakhand",
+    "district": "Chamoli",
+    "source_names": [
+      "CHAMOLI"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Champawat",
+    "state": "Uttarakhand",
+    "district": "Champawat",
+    "source_names": [
+      "CHAMPAWAT"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Dehradun",
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "source_names": [
+      "DEHRADUN"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Haridwar",
+    "state": "Uttarakhand",
+    "district": "Haridwar",
+    "source_names": [
+      "HARIDWAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Nainital",
+    "state": "Uttarakhand",
+    "district": "Nainital",
+    "source_names": [
+      "NAINITAL"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Pauri Garhwal",
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal",
+    "source_names": [
+      "PAURI GARHWAL"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Pithoragarh",
+    "state": "Uttarakhand",
+    "district": "Pithoragarh",
+    "source_names": [
+      "PITHORAGARH"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Rudra Prayag",
+    "state": "Uttarakhand",
+    "district": "Rudra Prayag",
+    "source_names": [
+      "RUDRA PRAYAG"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Tehri Garhwal",
+    "state": "Uttarakhand",
+    "district": "Tehri Garhwal",
+    "source_names": [
+      "TEHRI GARHWAL"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Udam Singh Nagar",
+    "state": "Uttarakhand",
+    "district": "Udam Singh Nagar",
+    "source_names": [
+      "UDAM SINGH NAGAR"
+    ]
+  },
+  {
+    "canonical_id": "Uttarakhand::Uttar Kashi",
+    "state": "Uttarakhand",
+    "district": "Uttar Kashi",
+    "source_names": [
+      "UTTAR KASHI"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::24 Paraganas North",
+    "state": "West Bengal",
+    "district": "24 Paraganas North",
+    "source_names": [
+      "24 PARAGANAS NORTH"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::24 Paraganas South",
+    "state": "West Bengal",
+    "district": "24 Paraganas South",
+    "source_names": [
+      "24 PARAGANAS SOUTH"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Bankura",
+    "state": "West Bengal",
+    "district": "Bankura",
+    "source_names": [
+      "BANKURA"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Bardhaman",
+    "state": "West Bengal",
+    "district": "Bardhaman",
+    "source_names": [
+      "BARDHAMAN"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Birbhum",
+    "state": "West Bengal",
+    "district": "Birbhum",
+    "source_names": [
+      "BIRBHUM"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Coochbehar",
+    "state": "West Bengal",
+    "district": "Coochbehar",
+    "source_names": [
+      "COOCHBEHAR"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Darjeeling",
+    "state": "West Bengal",
+    "district": "Darjeeling",
+    "source_names": [
+      "DARJEELING"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Dinajpur Dakshin",
+    "state": "West Bengal",
+    "district": "Dinajpur Dakshin",
+    "source_names": [
+      "DINAJPUR DAKSHIN"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Dinajpur Uttar",
+    "state": "West Bengal",
+    "district": "Dinajpur Uttar",
+    "source_names": [
+      "DINAJPUR UTTAR"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Hooghly",
+    "state": "West Bengal",
+    "district": "Hooghly",
+    "source_names": [
+      "HOOGHLY"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Howrah",
+    "state": "West Bengal",
+    "district": "Howrah",
+    "source_names": [
+      "HOWRAH"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Jalpaiguri",
+    "state": "West Bengal",
+    "district": "Jalpaiguri",
+    "source_names": [
+      "JALPAIGURI"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Maldah",
+    "state": "West Bengal",
+    "district": "Maldah",
+    "source_names": [
+      "MALDAH"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Medinipur East",
+    "state": "West Bengal",
+    "district": "Medinipur East",
+    "source_names": [
+      "MEDINIPUR EAST"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Medinipur West",
+    "state": "West Bengal",
+    "district": "Medinipur West",
+    "source_names": [
+      "MEDINIPUR WEST"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Murshidabad",
+    "state": "West Bengal",
+    "district": "Murshidabad",
+    "source_names": [
+      "MURSHIDABAD"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Nadia",
+    "state": "West Bengal",
+    "district": "Nadia",
+    "source_names": [
+      "NADIA"
+    ]
+  },
+  {
+    "canonical_id": "West Bengal::Purulia",
+    "state": "West Bengal",
+    "district": "Purulia",
+    "source_names": [
+      "PURULIA"
+    ]
+  }
+]

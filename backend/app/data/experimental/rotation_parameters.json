@@ -1,0 +1,43 @@
+{
+  "rotation_engine_version": "1.0.0-experimental",
+  "description": "Agronomic Crop Rotation & Compatibility Parameters for AgroIntel Phase 4 Engine",
+  "last_updated": "2026-08-11",
+  "parameters": {
+    "monoculture_repetition_penalty": {
+      "weight": 0.35,
+      "description": "Penalty multiplier applied when repeating the exact same crop in consecutive seasons (e.g. Rice -> Rice).",
+      "agronomic_justification": "Monoculture leads to rapid soil nutrient depletion (especially N and K), host-specific pest buildup (e.g. stem borer), and soil pathogen accumulation.",
+      "source_reference": "ICAR Handbook of Agriculture & TNAU Agronomic Rotation Guidelines"
+    },
+    "same_family_repetition_penalty": {
+      "weight": 0.60,
+      "description": "Penalty multiplier applied when planting a crop from the same botanical family in consecutive seasons (e.g. Poaceae -> Poaceae).",
+      "agronomic_justification": "Crops in the same botanical family share similar nutrient extraction profiles and insect pest/fungal disease susceptibilities.",
+      "source_reference": "FAO Crop Rotation & Soil Health Guidelines"
+    },
+    "legume_rotation_bonus": {
+      "weight": 1.25,
+      "description": "Bonus multiplier applied when a legume/pulse crop (Fabaceae) follows a heavy cereal nitrogen feeder (Poaceae).",
+      "agronomic_justification": "Legumes fix atmospheric nitrogen via Rhizobium symbiosis (20-40 kg N/ha residual), improving soil structure and organic matter.",
+      "source_reference": "ICAR-Indian Institute of Pulses Research (IIPR) Rotation Guidelines"
+    },
+    "deep_root_rotation_bonus": {
+      "weight": 1.15,
+      "description": "Bonus multiplier applied when alternating shallow-rooted crops with deep-rooted taproot crops.",
+      "agronomic_justification": "Breaks hardpan compaction, extracts subsoil nutrients, and improves water infiltration.",
+      "source_reference": "USDA Soil Conservation & Agronomy Manual"
+    },
+    "short_duration_window_bonus": {
+      "weight": 1.10,
+      "description": "Bonus multiplier for short-duration crops (<=120 days) fitting tight seasonal windows.",
+      "agronomic_justification": "Allows double/triple cropping without exposing crops to end-of-season drought or frost risks.",
+      "source_reference": "State Agricultural University Cropping System Bulletins"
+    },
+    "exceed_duration_window_penalty": {
+      "weight": 0.20,
+      "description": "Severe penalty multiplier applied when candidate crop duration exceeds the remaining seasonal window.",
+      "agronomic_justification": "Crops extending beyond seasonal moisture/temperature boundaries suffer severe yield loss or total crop failure.",
+      "source_reference": "Agro-meteorological Crop Insurance Risk Manual"
+    }
+  }
+}

@@ -107,7 +107,7 @@ class DataIngestion:
                     url += f"&filters[state]={state_clean.capitalize()}"
 
                 logger.info(f"Fetching live mandi price for {api_crop} in {state_clean}...")
-                response = requests.get(url, timeout=3)
+                response = requests.get(url, timeout=0.5)
 
                 if response.status_code == 200:
                     data = response.json()

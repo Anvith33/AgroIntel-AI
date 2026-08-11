@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-08-11T11:25:31.168225",
+  "news_sources": {
+    "ICAR_RSS": {
+      "status": "OPERATIONAL",
+      "tier": 1
+    },
+    "Google_News_RSS": {
+      "status": "OPERATIONAL",
+      "tier": 2
+    },
+    "PIB_RSS": {
+      "status": "LIMITED",
+      "note": "Feeds inconsistent"
+    },
+    "IMD_Agromet": {
+      "status": "PARTIALLY_AVAILABLE"
+    }
+  },
+  "llm_pipeline": {
+    "primary": "Groq Llama 3.3 70B",
+    "fallback": "Gemini 2.5 Flash",
+    "rule": "LLM analyzes ONLY retrieved article text. LLM internal knowledge NEVER used as ground truth."
+  },
+  "freshness_categories": {
+    "VERY_FRESH": "0-3 days",
+    "FRESH": "4-14 days",
+    "RECENT": "15-30 days",
+    "BACKGROUND": "31-60 days",
+    "STALE": "61-180 days",
+    "VERY_STALE": ">180 days"
+  },
+  "current_intelligence_signals": 3956,
+  "geographic_weighting": {
+    "DISTRICT": 1.0,
+    "STATE": 0.8,
+    "NATIONAL": 0.5
+  },
+  "deduplication": "Active - URL+headline hash deduplication"
+}

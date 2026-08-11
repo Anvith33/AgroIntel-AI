@@ -87,7 +87,7 @@
                             <span class="material-symbols-rounded feat-sym">eco</span>
                         </div>
                         <h3>Crop Recommendation</h3>
-                        <p>Find the most suitable crops for your district based on season, soil and weather conditions.</p>
+                        <p>Find the most suitable crops for your district based on season, soil, weather, rotation and news intelligence.</p>
                         <button class="feat-btn" onclick="event.stopPropagation(); showPage('recommendation')">Start Recommendation</button>
                     </div>
 
@@ -96,7 +96,7 @@
                             <span class="material-symbols-rounded feat-sym">trending_up</span>
                         </div>
                         <h3>Price Prediction</h3>
-                        <p>Forecast crop prices for the next 7 to 90 days and receive an intelligent Sell or Hold recommendation.</p>
+                        <p>Forecast commodity prices, check latest Mandi market rates, and receive intelligent Sell/Hold advisories.</p>
                         <button class="feat-btn" onclick="event.stopPropagation(); showPage('prediction')">Start Prediction</button>
                     </div>
 
@@ -105,30 +105,30 @@
                             <span class="material-symbols-rounded feat-sym">lightbulb</span>
                         </div>
                         <h3>Farmer Advisory</h3>
-                        <p>Get a combined crop and market advisory — what to grow and when to sell, in one step.</p>
+                        <p>Get a combined crop and market advisory — what to grow and when to sell, in one unified view.</p>
                         <button class="feat-btn" onclick="event.stopPropagation(); showPage('advisory')">Get Advisory</button>
                     </div>
                 </div>
 
                 <div class="stats-bar">
                     <div class="stat-item">
-                        <span class="stat-num">35</span>
+                        <span class="stat-num">28</span>
                         <span class="stat-lbl">States Covered</span>
                     </div>
                     <div class="stat-div"></div>
                     <div class="stat-item">
-                        <span class="stat-num">722</span>
-                        <span class="stat-lbl">Districts Supported</span>
+                        <span class="stat-num">8</span>
+                        <span class="stat-lbl">Union Territories</span>
+                    </div>
+                    <div class="stat-div"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">652</span>
+                        <span class="stat-lbl">Canonical Districts</span>
                     </div>
                     <div class="stat-div"></div>
                     <div class="stat-item">
                         <span class="stat-num">6 Years</span>
                         <span class="stat-lbl">Mandi Price History</span>
-                    </div>
-                    <div class="stat-div"></div>
-                    <div class="stat-item">
-                        <span class="stat-num">90 Days</span>
-                        <span class="stat-lbl">Max Forecast Horizon</span>
                     </div>
                 </div>
 
@@ -140,7 +140,7 @@
             <div class="page-wrap">
                 <div class="page-header">
                     <h2>Crop Recommendation</h2>
-                    <p>Enter your location and soil details to find the most suitable crops for your region and season.</p>
+                    <p>Enter your location, season, soil parameters and previous crop to receive multi-source evidence-backed crop recommendations.</p>
                 </div>
 
                 <div class="split-layout">
@@ -165,13 +165,14 @@
                                 <select id="recSeason" class="form-select" required>
                                     <option value="Kharif">Kharif — Monsoon (Jun – Oct)</option>
                                     <option value="Rabi">Rabi — Winter (Nov – Mar)</option>
-                                    <option value="Zaid">Zaid — Summer (Apr – May)</option>
+                                    <option value="Summer">Summer (Zaid)</option>
+                                    <option value="Whole Year">Whole Year / Perennial</option>
                                 </select>
                             </div>
 
                             <div class="optional-section">
                                 <div class="optional-label">
-                                    <span>Soil Parameters</span>
+                                    <span>Soil & Crop History Parameters</span>
                                     <span class="optional-tag">Optional</span>
                                 </div>
                                 <div class="npk-grid">
@@ -191,6 +192,10 @@
                                 <div class="form-group">
                                     <label for="recPh">Soil pH</label>
                                     <input type="number" step="0.1" id="recPh" class="form-input" min="1" max="14" placeholder="e.g. 7.2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recPrevCrop">Previous Crop <span class="optional-tag">Optional</span></label>
+                                    <input type="text" id="recPrevCrop" class="form-input" placeholder="e.g. Rice, Wheat...">
                                 </div>
                             </div>
 
@@ -219,8 +224,8 @@
         <section class="page" id="page-prediction">
             <div class="page-wrap">
                 <div class="page-header">
-                    <h2>Price Prediction</h2>
-                    <p>Forecast commodity prices and get a Sell or Hold recommendation for your harvest.</p>
+                    <h2>Price Prediction & Mandi Intelligence</h2>
+                    <p>Check latest Mandi market rates, forecast commodity prices, and receive market advisories.</p>
                 </div>
 
                 <div class="split-layout">
@@ -238,9 +243,16 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="predState">State <span class="optional-tag">Optional</span></label>
-                                <select id="predState" class="form-select">
-                                    <option value="">National Average</option>
+                                <label for="predState">State <span class="req">*</span></label>
+                                <select id="predState" class="form-select" required onchange="onStateChange('predState','predDistrict')">
+                                    <option value="">Loading states...</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="predDistrict">District <span class="req">*</span></label>
+                                <select id="predDistrict" class="form-select" required>
+                                    <option value="">Select a state first</option>
                                 </select>
                             </div>
 
@@ -269,7 +281,7 @@
                         <div class="placeholder-card glass-card">
                             <span class="material-symbols-rounded ph-icon-sym">bar_chart</span>
                             <h3>Ready to Forecast</h3>
-                            <p>Select a crop and forecast horizon, then click Generate Price Forecast.</p>
+                            <p>Select a crop, location and horizon, then click Generate Price Forecast.</p>
                         </div>
                     </div>
                 </div>
@@ -342,16 +354,17 @@
                 </div>
             </div>
         </section>
-
     </main>
+
+
 
     <!-- Footer -->
     <footer class="app-footer">
         <div class="footer-inner">
             <span class="footer-brand">AgroIntel AI — Agricultural Decision Support System</span>
-            <span class="footer-copy">© 2026 · Final Year Engineering Project</span>
         </div>
     </footer>
+
 
     <!-- Toast Notifications -->
     <div id="toastBox" class="toast-box"></div>

@@ -1,0 +1,990 @@
+[
+  {
+    "event_cluster_id": "EVT_8dc6c9728bb39f61",
+    "clustered_article_ids": [
+      "ART_86419c9b74cfb5dc",
+      "ART_8485ab84e117905e"
+    ],
+    "article_count": 2,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_979e85347318530b",
+    "clustered_article_ids": [
+      "ART_6475cc6b712d638d"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0b352e1d1f59e3b4",
+    "clustered_article_ids": [
+      "ART_99007b52150c9493"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_6817094a7ea9c9c1",
+    "clustered_article_ids": [
+      "ART_0d4e513d9443ee89"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_6fe5c81af217e418",
+    "clustered_article_ids": [
+      "ART_7e53dfa76c241d9a"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_924876253659f6e4",
+    "clustered_article_ids": [
+      "ART_79e446f49d073021"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1f149bd52cabdb16",
+    "clustered_article_ids": [
+      "ART_f548be993e418a7f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_2615dd4c5548aa3b",
+    "clustered_article_ids": [
+      "ART_36f935db3586e5fd"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_4d572f19e8da31f7",
+    "clustered_article_ids": [
+      "ART_5ac6411f64417baa",
+      "ART_603db39e877cc463"
+    ],
+    "article_count": 2,
+    "unique_sources": 2
+  },
+  {
+    "event_cluster_id": "EVT_30566738630b3bcb",
+    "clustered_article_ids": [
+      "ART_70f43d658eb64a0e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_5daf634030b9ed6c",
+    "clustered_article_ids": [
+      "ART_78e4f5a0cd13dd21"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_9b5720d6fc0a7277",
+    "clustered_article_ids": [
+      "ART_ceae37691deaf2b0"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0e79dd2251ec4107",
+    "clustered_article_ids": [
+      "ART_2bd31f3f4a9c7e9c"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_fe64e3123d7e446f",
+    "clustered_article_ids": [
+      "ART_42d65f3943cea026"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_f8c6ad7c012ef149",
+    "clustered_article_ids": [
+      "ART_715c92a6a4a87752"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1c349ebc3187d899",
+    "clustered_article_ids": [
+      "ART_debef5813b886cb9"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_8991419db5380071",
+    "clustered_article_ids": [
+      "ART_bb1b042babe2a77f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_ab7b6fba68790723",
+    "clustered_article_ids": [
+      "ART_5a9c0b304c5b22ac"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_e8eecc112164c99b",
+    "clustered_article_ids": [
+      "ART_01fc3631154d9bb8"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_fc529f2695a28134",
+    "clustered_article_ids": [
+      "ART_6e6e572294969b7a"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_d0eb7d9121824d07",
+    "clustered_article_ids": [
+      "ART_5eb26855913e2ba6"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_8eec8195b00391ec",
+    "clustered_article_ids": [
+      "ART_e01a26d084e4d848"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_edf07a7a98d8d7aa",
+    "clustered_article_ids": [
+      "ART_4bdae2ee2ee4c35e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_cb7469837bd98c9b",
+    "clustered_article_ids": [
+      "ART_66d01715a46255c6"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_34a05f9f8f2b2827",
+    "clustered_article_ids": [
+      "ART_bb05ad82a060231b"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_6ec81e256416e788",
+    "clustered_article_ids": [
+      "ART_3f470a2fcc5fca35"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_75ab8eb1d7c935e5",
+    "clustered_article_ids": [
+      "ART_39c4944adc6e6b5b"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_c94b1606232f815d",
+    "clustered_article_ids": [
+      "ART_23ca394ab49bd847"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_f111ed969c1ed9ee",
+    "clustered_article_ids": [
+      "ART_064d85ebaf3b9a8b"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1633651faec6c4b1",
+    "clustered_article_ids": [
+      "ART_2a2b718f179e4c6f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0dc25a72fc8f6154",
+    "clustered_article_ids": [
+      "ART_5b203469c5dd0f4f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_b7cbf4e7e83e7ce4",
+    "clustered_article_ids": [
+      "ART_a9230e1834963c0f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_4e4d6caa728c13c9",
+    "clustered_article_ids": [
+      "ART_ef064bcfeebbe3db"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_9a76d49e2e9bd042",
+    "clustered_article_ids": [
+      "ART_60011f80bc7055a5"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_da45ddfeba23b939",
+    "clustered_article_ids": [
+      "ART_8dd6556be5e3d7f0"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_e47a7f2dde6c23d2",
+    "clustered_article_ids": [
+      "ART_576b8e7bcc99227f",
+      "ART_16b863246acf8a84"
+    ],
+    "article_count": 2,
+    "unique_sources": 2
+  },
+  {
+    "event_cluster_id": "EVT_9f6c461b7073f0bf",
+    "clustered_article_ids": [
+      "ART_bba15cf31b07e956"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_47432f4f0fe488ee",
+    "clustered_article_ids": [
+      "ART_aeaf60142b449818"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_ecd1fb852ea5de3e",
+    "clustered_article_ids": [
+      "ART_c88aa250d501a922"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_184d69d635d007d2",
+    "clustered_article_ids": [
+      "ART_39b14ef5e9a16f49"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_fcae4ccbf35b1f45",
+    "clustered_article_ids": [
+      "ART_e0b2e02934243069"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_5c66ff995a86191b",
+    "clustered_article_ids": [
+      "ART_bf743cc06df7bec6"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_325ebf96e2d40076",
+    "clustered_article_ids": [
+      "ART_13107d7013632aff"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_c187d4790a494310",
+    "clustered_article_ids": [
+      "ART_710babf96f4497bd"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_03374e9e3aac0715",
+    "clustered_article_ids": [
+      "ART_363cfefea2371b88"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_f8162945c57ecba7",
+    "clustered_article_ids": [
+      "ART_1706fe6e06304714"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1cf6816d679d4b4c",
+    "clustered_article_ids": [
+      "ART_8224fb80cc375476"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1b48f811265e91c5",
+    "clustered_article_ids": [
+      "ART_46063869277f2dbc"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0314736a5f41e742",
+    "clustered_article_ids": [
+      "ART_22e4f1766fe4d438"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_01204c2062842af7",
+    "clustered_article_ids": [
+      "ART_cbfd6f73d1055562"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_c59fec3f3a09e801",
+    "clustered_article_ids": [
+      "ART_adc6209ecd3a688c"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_77d42697593c953d",
+    "clustered_article_ids": [
+      "ART_1cfe02d8a59f3a7f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_66b7debb63c63f29",
+    "clustered_article_ids": [
+      "ART_2705eb53cbb8364e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_64957ad887c5186c",
+    "clustered_article_ids": [
+      "ART_b22db2b68bae4e3f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_d763690bb1e4aeb6",
+    "clustered_article_ids": [
+      "ART_b003ede0028d3493"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_a07305e25330a2b8",
+    "clustered_article_ids": [
+      "ART_64d530d5fc17105e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_e153eba2fde33630",
+    "clustered_article_ids": [
+      "ART_ee9f10a1049da342"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_49e6fe8c41f82aaa",
+    "clustered_article_ids": [
+      "ART_e34cf55b221f0133"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_e01eafc0920330cf",
+    "clustered_article_ids": [
+      "ART_f0214219d6541254"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_3263e601eca5aa4c",
+    "clustered_article_ids": [
+      "ART_1ba879a7e31acb9f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_56a5d65b4815ebef",
+    "clustered_article_ids": [
+      "ART_e5987c0d5a3b6797"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_de4fc24146b31a37",
+    "clustered_article_ids": [
+      "ART_1ad320db942faa73"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0ce201d2320afa8c",
+    "clustered_article_ids": [
+      "ART_f04f18911452647a"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_52418bd437590a50",
+    "clustered_article_ids": [
+      "ART_8cb92f4e1f8de775"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_5959813218448d4c",
+    "clustered_article_ids": [
+      "ART_4c20d76a4ae2a5aa"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_60e18f00251f3937",
+    "clustered_article_ids": [
+      "ART_b3bf5b0c1eae35a4"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_dad2dd5b8c7b2b67",
+    "clustered_article_ids": [
+      "ART_62a929e53b78a8ce"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_a448711eba444c54",
+    "clustered_article_ids": [
+      "ART_6781d72faf00f5cf"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_f1e8fb949cc0ab57",
+    "clustered_article_ids": [
+      "ART_5b3957a07675cbac"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_6ae24f2a3424cba0",
+    "clustered_article_ids": [
+      "ART_64f9a4ff3a0c125e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_9f66e42f3af0ee3e",
+    "clustered_article_ids": [
+      "ART_be0acd550ab6117d"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_28d80d16394d0475",
+    "clustered_article_ids": [
+      "ART_b1984a4b12ab30e0"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1165ef8aa2e90a0f",
+    "clustered_article_ids": [
+      "ART_b9675aae46543d95"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_37285939085dbd98",
+    "clustered_article_ids": [
+      "ART_5719efad124cc247"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_173f9064928113b1",
+    "clustered_article_ids": [
+      "ART_d459167aeba675f0"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_b12a31b1690968ca",
+    "clustered_article_ids": [
+      "ART_0495f90981c06d6e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_be947f9d7ae7874b",
+    "clustered_article_ids": [
+      "ART_edca12f5a67857e1"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_d28befda3c57460a",
+    "clustered_article_ids": [
+      "ART_0a317ef7542803fc"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_4ca7acff2d1a33aa",
+    "clustered_article_ids": [
+      "ART_f1821399ec5e4965"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_ac927c132ab9321c",
+    "clustered_article_ids": [
+      "ART_d87b628f35c08574"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_aafdd7b1f71d2edd",
+    "clustered_article_ids": [
+      "ART_2239cc5e78646437"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_e5b250d8208b619c",
+    "clustered_article_ids": [
+      "ART_9b7dc99cd7cd9dc8"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_b70b95726372bc72",
+    "clustered_article_ids": [
+      "ART_13792b1f5c78538f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_45d5d472ecbbdeea",
+    "clustered_article_ids": [
+      "ART_f93e73e47d9d4d7e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_d5f1e1798dbd1eeb",
+    "clustered_article_ids": [
+      "ART_95e7a5638aa4870d"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_02c8003836588d09",
+    "clustered_article_ids": [
+      "ART_47e17181f88c72dd"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_bc6edd1dbebe5f80",
+    "clustered_article_ids": [
+      "ART_9644af81f644a4fd"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_3c4e0df4831dcf32",
+    "clustered_article_ids": [
+      "ART_68fdbcaa3a4a7861"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_1473af0f59f3fd92",
+    "clustered_article_ids": [
+      "ART_f0a34f562d17ea69",
+      "ART_6f1f10f9320d0873"
+    ],
+    "article_count": 2,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_fa277dd870c1d945",
+    "clustered_article_ids": [
+      "ART_0d34877e9ab186c8"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_9c1bbe87dd14cca1",
+    "clustered_article_ids": [
+      "ART_ad13e480126ba4f0"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_b0224f943013baa7",
+    "clustered_article_ids": [
+      "ART_db5b1e74d9fa9d7c"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_fd04ce691c88266c",
+    "clustered_article_ids": [
+      "ART_6b3881bcc140d96f"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_76c65aee34146f39",
+    "clustered_article_ids": [
+      "ART_d2323de638312c82"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_bc1d04cca21622c5",
+    "clustered_article_ids": [
+      "ART_e4e6caa104c57318"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_904350a6e2f1415a",
+    "clustered_article_ids": [
+      "ART_138aedc45c5b53fe"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_dd94c070333bbb20",
+    "clustered_article_ids": [
+      "ART_02621c1deb3777d5"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_7f01475cd21fe34c",
+    "clustered_article_ids": [
+      "ART_09645312f635236e"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_59971812be80347b",
+    "clustered_article_ids": [
+      "ART_833c8bda0083d7eb"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_98d993ce34c3733d",
+    "clustered_article_ids": [
+      "ART_3a347fcd50ebd494"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_7c64ec7f20f0c084",
+    "clustered_article_ids": [
+      "ART_d7ca6056eab4f666"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_b8967258ffa241ff",
+    "clustered_article_ids": [
+      "ART_de07ce3da0b2c4cd"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_2ab27445383bf539",
+    "clustered_article_ids": [
+      "ART_9605ea5ade8ff10b"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_d7aa9888cd0c6bbe",
+    "clustered_article_ids": [
+      "ART_afd6d1965862135b"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_3aa3adc2c5c90106",
+    "clustered_article_ids": [
+      "ART_66df079e313206b0"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_f539a448348f3c73",
+    "clustered_article_ids": [
+      "ART_39532c2843778ffa"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_210ca8870f233bb7",
+    "clustered_article_ids": [
+      "ART_f3bbc739a45efeb5"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_fc0abe94da446878",
+    "clustered_article_ids": [
+      "ART_7b65ab7950e70379"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_872ae012c5e58c45",
+    "clustered_article_ids": [
+      "ART_0e68923e880244c5"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_a3cdc626d2524ef2",
+    "clustered_article_ids": [
+      "ART_e66791433ab64838"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_91166832abb928d3",
+    "clustered_article_ids": [
+      "ART_003afe7a3c00055c"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_7106e3265ef3329e",
+    "clustered_article_ids": [
+      "ART_6a17b5df1d01e7cf"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_921897728ff6777d",
+    "clustered_article_ids": [
+      "ART_5903a7619d378d58"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0eb19f1759345631",
+    "clustered_article_ids": [
+      "ART_93e0f1559e3bc4da"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_14c88a8e36681a54",
+    "clustered_article_ids": [
+      "ART_a37971daf858ec01"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_632475d8bb1d54b2",
+    "clustered_article_ids": [
+      "ART_5a6f251911033d20"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_c76cb813aba94810",
+    "clustered_article_ids": [
+      "ART_500dbd2631f016f3"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_e85df6bc7b28b359",
+    "clustered_article_ids": [
+      "ART_e63295d9331f30d3"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_baf9b4ab75839498",
+    "clustered_article_ids": [
+      "ART_853ff99fd266fcf1"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_0ef6fc0aabb2b682",
+    "clustered_article_ids": [
+      "ART_7b9d5472212f71a2"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_8c5bff371fedf6f3",
+    "clustered_article_ids": [
+      "ART_2daa4e253c8142db"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_304fc19f564735b6",
+    "clustered_article_ids": [
+      "ART_ae08042f32ec08c7"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  },
+  {
+    "event_cluster_id": "EVT_bff93791a4439ee7",
+    "clustered_article_ids": [
+      "ART_62d1966079320f89"
+    ],
+    "article_count": 1,
+    "unique_sources": 1
+  }
+]

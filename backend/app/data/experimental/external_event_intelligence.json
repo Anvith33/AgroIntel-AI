@@ -1,0 +1,37 @@
+{
+  "external_events": [
+    {
+      "event_id": "BLACKSWAN_2025_EXPORT_DUTY_RICE",
+      "event_name": "Non-Basmati Rice Export Tariff & Duty Revision",
+      "event_type": "EXPORT_RESTRICTION",
+      "affected_crops": [
+        "Rice"
+      ],
+      "affected_scope": "NATIONAL",
+      "start_date": "2024-09-28",
+      "end_date": "2026-12-31",
+      "severity_level": 4,
+      "market_shock_impact": "Downside risk on domestic mandi prices due to higher domestic market retention.",
+      "verification_source": "Ministry of Commerce & DGFT Notification",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "event_id": "BLACKSWAN_2025_FERTILIZER_SUBSIDY",
+      "event_name": "Cabinet Approves Nutrient Based Subsidy (NBS) Rates for Rabi/Kharif",
+      "event_type": "SUBSIDY",
+      "affected_crops": [
+        "Wheat",
+        "Rice",
+        "Maize",
+        "Pulses"
+      ],
+      "affected_scope": "NATIONAL",
+      "start_date": "2025-04-01",
+      "end_date": "2026-03-31",
+      "severity_level": 3,
+      "market_shock_impact": "Stabilizes fertilizer input cost for nitrogen & phosphate fertilizers.",
+      "verification_source": "Press Information Bureau (PIB)",
+      "verification_status": "VERIFIED"
+    }
+  ]
+}

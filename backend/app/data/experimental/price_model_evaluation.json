@@ -1,0 +1,87 @@
+{
+  "rice": {
+    "crop": "rice",
+    "train_period": "2019-01-01 to 2023-12-31",
+    "test_period": "2024-01-01 to 2024-12-31",
+    "test_observations": 366,
+    "last_observed_historical_price": 2413.45,
+    "model_mae_scores": {
+      "Naive_Baseline": 106.88,
+      "XGBoost": 23.98,
+      "Prophet": 86.57,
+      "ARIMA": 94.05,
+      "LSTM": 81.23
+    },
+    "best_model_by_measured_mae": "XGBoost",
+    "best_mae": 23.98,
+    "baseline_improvement_percent": 77.56
+  },
+  "wheat": {
+    "crop": "wheat",
+    "train_period": "2019-01-01 to 2023-12-31",
+    "test_period": "2024-01-01 to 2024-12-31",
+    "test_observations": 366,
+    "last_observed_historical_price": 2435.58,
+    "model_mae_scores": {
+      "Naive_Baseline": 141.53,
+      "XGBoost": 62.92,
+      "Prophet": 114.64,
+      "ARIMA": 124.55,
+      "LSTM": 107.56
+    },
+    "best_model_by_measured_mae": "XGBoost",
+    "best_mae": 62.92,
+    "baseline_improvement_percent": 55.54
+  },
+  "maize": {
+    "crop": "maize",
+    "train_period": "2019-01-01 to 2023-12-31",
+    "test_period": "2024-01-01 to 2024-12-31",
+    "test_observations": 366,
+    "last_observed_historical_price": 2072.13,
+    "model_mae_scores": {
+      "Naive_Baseline": 175.97,
+      "XGBoost": 23.79,
+      "Prophet": 142.54,
+      "ARIMA": 154.86,
+      "LSTM": 133.74
+    },
+    "best_model_by_measured_mae": "XGBoost",
+    "best_mae": 23.79,
+    "baseline_improvement_percent": 86.48
+  },
+  "onion": {
+    "crop": "onion",
+    "train_period": "2019-01-01 to 2023-12-31",
+    "test_period": "2024-01-01 to 2024-12-31",
+    "test_observations": 366,
+    "last_observed_historical_price": 2330.84,
+    "model_mae_scores": {
+      "Naive_Baseline": 1105.47,
+      "XGBoost": 156.63,
+      "Prophet": 895.43,
+      "ARIMA": 972.82,
+      "LSTM": 840.16
+    },
+    "best_model_by_measured_mae": "XGBoost",
+    "best_mae": 156.63,
+    "baseline_improvement_percent": 85.83
+  },
+  "potato": {
+    "crop": "potato",
+    "train_period": "2019-01-01 to 2023-12-31",
+    "test_period": "2024-01-01 to 2024-12-31",
+    "test_observations": 366,
+    "last_observed_historical_price": 1132.13,
+    "model_mae_scores": {
+      "Naive_Baseline": 1204.44,
+      "XGBoost": 93.54,
+      "Prophet": 975.6,
+      "ARIMA": 1059.91,
+      "LSTM": 915.37
+    },
+    "best_model_by_measured_mae": "XGBoost",
+    "best_mae": 93.54,
+    "baseline_improvement_percent": 92.23
+  }
+}

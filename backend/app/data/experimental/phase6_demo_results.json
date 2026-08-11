@@ -1,0 +1,427 @@
+{
+  "generated_at": "2026-08-11T11:59:05.524256+00:00",
+  "validation_type": "seed42_10_random_nationwide_districts",
+  "seed": 42,
+  "n_districts": 10,
+  "passed": 10,
+  "failed": 0,
+  "checklist": {
+    "water_unknown_enforced": true,
+    "price_separation_verified": true,
+    "no_invented_crops": true,
+    "mandi_obs_date_shown": false,
+    "data_age_computed": true
+  },
+  "results": [
+    {
+      "rank": 1,
+      "state": "Chhattisgarh",
+      "district": "Kanker",
+      "season": "Kharif",
+      "top_crop": "Horse-gram",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Horse-gram",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Castor Seed",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Niger Seed",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.6
+    },
+    {
+      "rank": 2,
+      "state": "Arunachal Pradesh",
+      "district": "Lower Subansiri",
+      "season": "Rabi",
+      "top_crop": "Wheat",
+      "top_score": 95.2,
+      "top_3": [
+        {
+          "crop": "Wheat",
+          "score": 95.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Rapeseed & Mustard",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Groundnut",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "11-08-2026",
+      "mandi_data_age_days": 0,
+      "mandi_freshness_label": "VERY_FRESH",
+      "mandi_source_type": "BATCH_REFERENCE",
+      "mandi_current_price": 2500.0,
+      "mandi_min_price": 2250.0,
+      "mandi_max_price": 2750.0,
+      "predicted_price_30d": 2562.5,
+      "forecast_model": "XGBoost (evaluated 2024 chronological test)",
+      "forecast_mae": 62.92,
+      "forecast_rmse": 67.69,
+      "forecast_mape_pct": 2.8,
+      "advisory_action": "WAIT",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 3.1
+    },
+    {
+      "rank": 3,
+      "state": "Madhya Pradesh",
+      "district": "Anuppur",
+      "season": "Summer",
+      "top_crop": "Horse-gram",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Horse-gram",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Cowpea(lobia)",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Mesta",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.2
+    },
+    {
+      "rank": 4,
+      "state": "Karnataka",
+      "district": "Haveri",
+      "season": "Whole Year",
+      "top_crop": "Arcanut (processed)",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Arcanut (processed)",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Atcanut (raw)",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Beans & Mutter(vegetable)",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "rank": 5,
+      "state": "Jharkhand",
+      "district": "Palamu",
+      "season": "Kharif",
+      "top_crop": "Pigeonpea (Arhar/Tur)",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Pigeonpea (Arhar/Tur)",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.0
+    },
+    {
+      "rank": 6,
+      "state": "Gujarat",
+      "district": "Kheda",
+      "season": "Rabi",
+      "top_crop": "Onion",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Onion",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Other Cereals & Millets",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Rapeseed & Mustard",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "11-08-2026",
+      "mandi_data_age_days": 0,
+      "mandi_freshness_label": "VERY_FRESH",
+      "mandi_source_type": "BATCH_REFERENCE",
+      "mandi_current_price": 4500.0,
+      "mandi_min_price": 4050.0,
+      "mandi_max_price": 4950.0,
+      "predicted_price_30d": 4567.5,
+      "forecast_model": "XGBoost (evaluated 2024 chronological test)",
+      "forecast_mae": 156.63,
+      "forecast_rmse": 212.63,
+      "forecast_mape_pct": 8.5,
+      "advisory_action": "WAIT",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "rank": 7,
+      "state": "Chhattisgarh",
+      "district": "Bemetara",
+      "season": "Summer",
+      "top_crop": "Castor Seed",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Castor Seed",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Other Kharif Pulses",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Sesame (Sesamum)",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "rank": 8,
+      "state": "Uttar Pradesh",
+      "district": "Banda",
+      "season": "Whole Year",
+      "top_crop": "Chilli (Dry)",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Chilli (Dry)",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Guar Seed",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Potato",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "rank": 9,
+      "state": "Bihar",
+      "district": "Rohtas",
+      "season": "Kharif",
+      "top_crop": "Potato",
+      "top_score": 95.2,
+      "top_3": [
+        {
+          "crop": "Potato",
+          "score": 95.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Rice",
+          "score": 95.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Moong (Green Gram)",
+          "score": 95.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "11-08-2026",
+      "mandi_data_age_days": 0,
+      "mandi_freshness_label": "VERY_FRESH",
+      "mandi_source_type": "BATCH_REFERENCE",
+      "mandi_current_price": 35000.0,
+      "mandi_min_price": 31500.0,
+      "mandi_max_price": 38500.0,
+      "predicted_price_30d": 35630.0,
+      "forecast_model": "XGBoost (evaluated 2024 chronological test)",
+      "forecast_mae": 93.54,
+      "forecast_rmse": 156.35,
+      "forecast_mape_pct": 7.2,
+      "advisory_action": "WAIT",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.1
+    },
+    {
+      "rank": 10,
+      "state": "Uttar Pradesh",
+      "district": "Pratapgarh",
+      "season": "Rabi",
+      "top_crop": "Barley",
+      "top_score": 92.2,
+      "top_3": [
+        {
+          "crop": "Barley",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Linseed",
+          "score": 92.2,
+          "is_perennial": false
+        },
+        {
+          "crop": "Other Rabi Pulses",
+          "score": 92.2,
+          "is_perennial": false
+        }
+      ],
+      "mandi_observation_date": "UNAVAILABLE",
+      "mandi_data_age_days": "UNAVAILABLE",
+      "mandi_freshness_label": "UNAVAILABLE",
+      "mandi_source_type": "REFERENCE_FALLBACK",
+      "mandi_current_price": 1900.0,
+      "mandi_min_price": 1500.0,
+      "mandi_max_price": 2300.0,
+      "predicted_price_30d": 1938.0,
+      "forecast_model": "Seasonal Trend Estimate (crop not in ML evaluation set)",
+      "forecast_mae": 80.0,
+      "forecast_rmse": 110.0,
+      "forecast_mape_pct": 5.0,
+      "advisory_action": "INSUFFICIENT_DATA",
+      "water_status": "UNKNOWN",
+      "test_result": "PASS",
+      "price_separation_ok": true,
+      "elapsed_ms": 0.1
+    }
+  ]
+}

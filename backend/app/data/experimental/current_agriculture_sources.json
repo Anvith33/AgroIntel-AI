@@ -1,0 +1,64 @@
+{
+  "official_sources": [
+    {
+      "source_id": "GOI_DATAGOV_APY",
+      "name": "data.gov.in \u2014 District-wise Season-wise Crop Production Statistics",
+      "authority": "Ministry of Agriculture and Farmers Welfare, Govt. of India",
+      "url": "https://api.data.gov.in/resource/35be999b-0208-4354-b557-f6ca9a5355de",
+      "type": "REST API (JSON)",
+      "credibility_tier": "TIER 1 (Authoritative)",
+      "data_type": "Cultivation Evidence (Area, Production, Yield)",
+      "geographic_coverage": "Nationwide (All States & UTs)",
+      "update_frequency": "Annual / Periodic Statistical Releases",
+      "freshness_policy": "Historical Baseline (1997-2015). Retained for long-term historical crop probability."
+    },
+    {
+      "source_id": "GOI_DES_APY_PORTAL",
+      "name": "DES \u2014 District-wise Area, Production & Yield (APY) Query Report",
+      "authority": "Directorate of Economics & Statistics (DES), DA&FW",
+      "url": "https://data.desagri.gov.in/website/apy-query-report-web",
+      "type": "Web Reporting Portal (DataTables / CSV Export)",
+      "credibility_tier": "TIER 1 (Authoritative)",
+      "data_type": "Cultivation Evidence (Area, Production, Yield)",
+      "geographic_coverage": "Nationwide",
+      "update_frequency": "Annual Final & Advance Estimates",
+      "freshness_policy": "Recent Data Validation Source (2016-2024 releases)"
+    },
+    {
+      "source_id": "GOI_UPAG_PORTAL",
+      "name": "UPAg \u2014 Unified Portal for Agricultural Statistics",
+      "authority": "Ministry of Agriculture & Farmers Welfare",
+      "url": "https://upag.gov.in",
+      "type": "National Agricultural Statistics Platform",
+      "credibility_tier": "TIER 1 (Authoritative)",
+      "data_type": "Advance Estimates, Area Sown & Crop Conditions",
+      "geographic_coverage": "Nationwide",
+      "update_frequency": "Real-Time / Weekly Sowing Reports",
+      "freshness_policy": "CURRENT (2025-2026 Sowing & Kharif/Rabi Forecasts)"
+    },
+    {
+      "source_id": "ICAR_KVK_DISTRICT_CALENDARS",
+      "name": "ICAR / Krishi Vigyan Kendra (KVK) District Contingency Plans & Calendars",
+      "authority": "Indian Council of Agricultural Research (ICAR)",
+      "url": "https://icar.org.in",
+      "type": "Agronomic District Contingency Documentation",
+      "credibility_tier": "TIER 1 (Authoritative Scientific)",
+      "data_type": "Crop Suitability, Soil Maps, Season Calendars",
+      "geographic_coverage": "700+ Rural Districts",
+      "update_frequency": "Periodic Agronomic Revisions",
+      "freshness_policy": "Agronomic Foundation Benchmark"
+    },
+    {
+      "source_id": "GOI_AGMARKNET_MANDI",
+      "name": "AGMARKNET Mandi Price & Arrival API",
+      "authority": "Directorate of Marketing & Inspection (DMI)",
+      "url": "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070",
+      "type": "REST API (JSON)",
+      "credibility_tier": "TIER 1 (Authoritative)",
+      "data_type": "Market Intelligence ONLY (Modal Price, Min/Max Price, Arrivals)",
+      "geographic_coverage": "Nationwide Mandis",
+      "update_frequency": "Daily / Real-Time",
+      "freshness_policy": "CURRENT / RECENT (0-7 days delay window)"
+    }
+  ]
+}
