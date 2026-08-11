@@ -1,0 +1,515 @@
+{
+  "crop_requirements": {
+    "Rice": {
+      "soil_ph": {
+        "min": 5.5,
+        "max": 7.5,
+        "optimal": 6.5
+      },
+      "npk_requirement": {
+        "N": "High (80-120 kg/ha)",
+        "P": "Medium (40-60 kg/ha)",
+        "K": "Medium (40-60 kg/ha)"
+      },
+      "suitable_soils": [
+        "Alluvial",
+        "Clay Loam",
+        "Clay",
+        "Coastal Alluvial"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Heavy / Flooded",
+        "seasonal_rainfall_mm": {
+          "min": 1000,
+          "optimal": 1500
+        }
+      },
+      "temperature_c": {
+        "min": 20,
+        "max": 38,
+        "optimal": 27
+      },
+      "duration_days": {
+        "min": 100,
+        "max": 150,
+        "average": 125
+      }
+    },
+    "Wheat": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.8
+      },
+      "npk_requirement": {
+        "N": "High (100-120 kg/ha)",
+        "P": "Medium (50-60 kg/ha)",
+        "K": "Medium (40-50 kg/ha)"
+      },
+      "suitable_soils": [
+        "Alluvial",
+        "Loam",
+        "Clay Loam"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Limited / 4-6 Irrigations",
+        "seasonal_rainfall_mm": {
+          "min": 450,
+          "optimal": 650
+        }
+      },
+      "temperature_c": {
+        "min": 10,
+        "max": 25,
+        "optimal": 18
+      },
+      "duration_days": {
+        "min": 110,
+        "max": 140,
+        "average": 125
+      }
+    },
+    "Maize": {
+      "soil_ph": {
+        "min": 5.8,
+        "max": 7.8,
+        "optimal": 6.5
+      },
+      "npk_requirement": {
+        "N": "High (120-150 kg/ha)",
+        "P": "Medium (60 kg/ha)",
+        "K": "High (60-80 kg/ha)"
+      },
+      "suitable_soils": [
+        "Alluvial",
+        "Red Loam",
+        "Black Cotton Soil",
+        "Loam"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Moderate / Well Drained",
+        "seasonal_rainfall_mm": {
+          "min": 500,
+          "optimal": 750
+        }
+      },
+      "temperature_c": {
+        "min": 18,
+        "max": 35,
+        "optimal": 25
+      },
+      "duration_days": {
+        "min": 85,
+        "max": 120,
+        "average": 100
+      }
+    },
+    "Potato": {
+      "soil_ph": {
+        "min": 5.2,
+        "max": 6.8,
+        "optimal": 5.8
+      },
+      "npk_requirement": {
+        "N": "High (120-150 kg/ha)",
+        "P": "High (80-100 kg/ha)",
+        "K": "High (100-120 kg/ha)"
+      },
+      "suitable_soils": [
+        "Sandy Loam",
+        "Loam",
+        "Alluvial"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Frequent Shallow Irrigation",
+        "seasonal_rainfall_mm": {
+          "min": 400,
+          "optimal": 600
+        }
+      },
+      "temperature_c": {
+        "min": 12,
+        "max": 24,
+        "optimal": 18
+      },
+      "duration_days": {
+        "min": 80,
+        "max": 110,
+        "average": 95
+      }
+    },
+    "Onion": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.5
+      },
+      "npk_requirement": {
+        "N": "High (100-120 kg/ha)",
+        "P": "Medium (50 kg/ha)",
+        "K": "High (80-100 kg/ha)"
+      },
+      "suitable_soils": [
+        "Sandy Loam",
+        "Clay Loam",
+        "Alluvial"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Regular Frequent Irrigation",
+        "seasonal_rainfall_mm": {
+          "min": 350,
+          "optimal": 550
+        }
+      },
+      "temperature_c": {
+        "min": 13,
+        "max": 30,
+        "optimal": 20
+      },
+      "duration_days": {
+        "min": 120,
+        "max": 150,
+        "average": 135
+      }
+    },
+    "Moong (Green Gram)": {
+      "soil_ph": {
+        "min": 6.2,
+        "max": 7.8,
+        "optimal": 7.0
+      },
+      "npk_requirement": {
+        "N": "Low (20 kg/ha - Starter)",
+        "P": "Medium (40-50 kg/ha)",
+        "K": "Low-Med (20-30 kg/ha)"
+      },
+      "suitable_soils": [
+        "Well-Drained Loam",
+        "Alluvial",
+        "Red Soil"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Rainfed / 1-2 Irrigations",
+        "seasonal_rainfall_mm": {
+          "min": 300,
+          "optimal": 500
+        }
+      },
+      "temperature_c": {
+        "min": 25,
+        "max": 38,
+        "optimal": 30
+      },
+      "duration_days": {
+        "min": 60,
+        "max": 75,
+        "average": 65
+      }
+    },
+    "Black Gram (Urad)": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.8
+      },
+      "npk_requirement": {
+        "N": "Low (20 kg/ha)",
+        "P": "Medium (40 kg/ha)",
+        "K": "Low (20 kg/ha)"
+      },
+      "suitable_soils": [
+        "Black Cotton Soil",
+        "Alluvial",
+        "Loam"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Rainfed / Limited",
+        "seasonal_rainfall_mm": {
+          "min": 350,
+          "optimal": 550
+        }
+      },
+      "temperature_c": {
+        "min": 22,
+        "max": 35,
+        "optimal": 28
+      },
+      "duration_days": {
+        "min": 70,
+        "max": 90,
+        "average": 80
+      }
+    },
+    "Cotton": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 8.0,
+        "optimal": 7.2
+      },
+      "npk_requirement": {
+        "N": "High (100-120 kg/ha)",
+        "P": "Medium (50 kg/ha)",
+        "K": "High (50-60 kg/ha)"
+      },
+      "suitable_soils": [
+        "Deep Black Cotton Soil",
+        "Alluvial"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Rainfed / Semi-Irrigated",
+        "seasonal_rainfall_mm": {
+          "min": 500,
+          "optimal": 800
+        }
+      },
+      "temperature_c": {
+        "min": 21,
+        "max": 38,
+        "optimal": 28
+      },
+      "duration_days": {
+        "min": 150,
+        "max": 180,
+        "average": 165
+      }
+    },
+    "Sugarcane": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.8,
+        "optimal": 6.8
+      },
+      "npk_requirement": {
+        "N": "Very High (250-300 kg/ha)",
+        "P": "High (100 kg/ha)",
+        "K": "Very High (120-150 kg/ha)"
+      },
+      "suitable_soils": [
+        "Deep Alluvial",
+        "Black Loam",
+        "Red Heavy Loam"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Heavy Perennial Irrigation",
+        "seasonal_rainfall_mm": {
+          "min": 1200,
+          "optimal": 2000
+        }
+      },
+      "temperature_c": {
+        "min": 20,
+        "max": 38,
+        "optimal": 30
+      },
+      "duration_days": {
+        "min": 300,
+        "max": 365,
+        "average": 330
+      }
+    },
+    "Groundnut": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.5
+      },
+      "npk_requirement": {
+        "N": "Low (20-25 kg/ha)",
+        "P": "Medium (40-50 kg/ha)",
+        "K": "Medium (40 kg/ha) + Gypsum"
+      },
+      "suitable_soils": [
+        "Sandy Loam",
+        "Red Sandy Soil",
+        "Well-Drained Black Soil"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Rainfed / 2-4 Irrigations",
+        "seasonal_rainfall_mm": {
+          "min": 450,
+          "optimal": 650
+        }
+      },
+      "temperature_c": {
+        "min": 22,
+        "max": 33,
+        "optimal": 27
+      },
+      "duration_days": {
+        "min": 100,
+        "max": 125,
+        "average": 110
+      }
+    },
+    "Soybean": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.5
+      },
+      "npk_requirement": {
+        "N": "Low (30 kg/ha)",
+        "P": "High (60-80 kg/ha)",
+        "K": "Medium (40 kg/ha)"
+      },
+      "suitable_soils": [
+        "Deep Black Soil",
+        "Clay Loam"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Rainfed Monsoon",
+        "seasonal_rainfall_mm": {
+          "min": 600,
+          "optimal": 850
+        }
+      },
+      "temperature_c": {
+        "min": 20,
+        "max": 32,
+        "optimal": 26
+      },
+      "duration_days": {
+        "min": 90,
+        "max": 110,
+        "average": 100
+      }
+    },
+    "Rapeseed & Mustard": {
+      "soil_ph": {
+        "min": 6.0,
+        "max": 7.5,
+        "optimal": 6.8
+      },
+      "npk_requirement": {
+        "N": "High (80-100 kg/ha)",
+        "P": "Medium (40 kg/ha)",
+        "K": "Low-Med (30 kg/ha) + Sulfur"
+      },
+      "suitable_soils": [
+        "Alluvial",
+        "Loam",
+        "Sandy Loam"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Limited / 2-3 Irrigations",
+        "seasonal_rainfall_mm": {
+          "min": 350,
+          "optimal": 500
+        }
+      },
+      "temperature_c": {
+        "min": 10,
+        "max": 25,
+        "optimal": 18
+      },
+      "duration_days": {
+        "min": 105,
+        "max": 135,
+        "average": 120
+      }
+    },
+    "Arecanut": {
+      "soil_ph": {
+        "min": 5.5,
+        "max": 7.0,
+        "optimal": 6.0
+      },
+      "npk_requirement": {
+        "N": "High Perennial",
+        "P": "Medium Perennial",
+        "K": "High Perennial"
+      },
+      "suitable_soils": [
+        "Laterite",
+        "Red Loam",
+        "Coastal Alluvial"
+      ],
+      "water_requirement": {
+        "irrigation_type": "Heavy Perennial / High Rainfall",
+        "seasonal_rainfall_mm": {
+          "min": 1500,
+          "optimal": 2500
+        }
+      },
+      "temperature_c": {
+        "min": 15,
+        "max": 35,
+        "optimal": 25
+      },
+      "duration_days": {
+        "min": 365,
+        "max": 365,
+        "average": 365
+      }
+    },
+    "Coconut": {
+      "soil_ph": {
+        "min": 5.2,
+        "max": 8.0,
+        "optimal": 6.5
+      },
+      "npk_requirement": {
+        "N": "High Perennial",
+        "P": "Medium Perennial",
+        "K": "Very High Perennial + NaCl"
+      },
+      "suitable_soils": [
+        "Coastal Sand",
+        "Alluvial",
+        "Red Loam",
+        "Laterite"
+      ],
+      "water_requirement": {
+        "irrigation_type": "High Perennial / Coastal Moisture",
+        "seasonal_rainfall_mm": {
+          "min": 1300,
+          "optimal": 2000
+        }
+      },
+      "temperature_c": {
+        "min": 20,
+        "max": 34,
+        "optimal": 27
+      },
+      "duration_days": {
+        "min": 365,
+        "max": 365,
+        "average": 365
+      }
+    }
+  },
+  "default_template": {
+    "soil_ph": {
+      "min": 5.8,
+      "max": 7.5,
+      "optimal": 6.5
+    },
+    "npk_requirement": {
+      "N": "Medium (60-80 kg/ha)",
+      "P": "Medium (40 kg/ha)",
+      "K": "Medium (40 kg/ha)"
+    },
+    "suitable_soils": [
+      "Loam",
+      "Alluvial",
+      "Red Soil"
+    ],
+    "water_requirement": {
+      "irrigation_type": "Moderate Irrigation",
+      "seasonal_rainfall_mm": {
+        "min": 500,
+        "optimal": 800
+      }
+    },
+    "temperature_c": {
+      "min": 15,
+      "max": 35,
+      "optimal": 25
+    },
+    "duration_days": {
+      "min": 90,
+      "max": 130,
+      "average": 110
+    }
+  }
+}

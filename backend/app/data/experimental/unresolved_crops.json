@@ -1,0 +1,338 @@
+[
+  {
+    "crop_name": "Small millets",
+    "count": 4652
+  },
+  {
+    "crop_name": "Peas & beans (Pulses)",
+    "count": 4524
+  },
+  {
+    "crop_name": "Linseed",
+    "count": 4405
+  },
+  {
+    "crop_name": "Masoor",
+    "count": 4224
+  },
+  {
+    "crop_name": "Barley",
+    "count": 4199
+  },
+  {
+    "crop_name": "Horse-gram",
+    "count": 3902
+  },
+  {
+    "crop_name": "Other Kharif pulses",
+    "count": 3659
+  },
+  {
+    "crop_name": "Castor seed",
+    "count": 3376
+  },
+  {
+    "crop_name": "Other  Rabi pulses",
+    "count": 3180
+  },
+  {
+    "crop_name": "Sannhamp",
+    "count": 2395
+  },
+  {
+    "crop_name": "Niger seed",
+    "count": 2070
+  },
+  {
+    "crop_name": "Khesari",
+    "count": 1360
+  },
+  {
+    "crop_name": "Safflower",
+    "count": 1335
+  },
+  {
+    "crop_name": "Guar seed",
+    "count": 1295
+  },
+  {
+    "crop_name": "Moth",
+    "count": 878
+  },
+  {
+    "crop_name": "other oilseeds",
+    "count": 633
+  },
+  {
+    "crop_name": "Other Cereals & Millets",
+    "count": 628
+  },
+  {
+    "crop_name": "Cowpea(Lobia)",
+    "count": 587
+  },
+  {
+    "crop_name": "Papaya",
+    "count": 483
+  },
+  {
+    "crop_name": "Mango",
+    "count": 449
+  },
+  {
+    "crop_name": "Oilseeds total",
+    "count": 426
+  },
+  {
+    "crop_name": "Other Fresh Fruits",
+    "count": 410
+  },
+  {
+    "crop_name": "Brinjal",
+    "count": 386
+  },
+  {
+    "crop_name": "Other Vegetables",
+    "count": 381
+  },
+  {
+    "crop_name": "Tomato",
+    "count": 368
+  },
+  {
+    "crop_name": "Citrus Fruit",
+    "count": 301
+  },
+  {
+    "crop_name": "Pome Fruit",
+    "count": 297
+  },
+  {
+    "crop_name": "Orange",
+    "count": 271
+  },
+  {
+    "crop_name": "Pulses total",
+    "count": 266
+  },
+  {
+    "crop_name": "Pineapple",
+    "count": 247
+  },
+  {
+    "crop_name": "Bhindi",
+    "count": 236
+  },
+  {
+    "crop_name": "Cabbage",
+    "count": 205
+  },
+  {
+    "crop_name": "Total foodgrain",
+    "count": 188
+  },
+  {
+    "crop_name": "Beans & Mutter(Vegetable)",
+    "count": 167
+  },
+  {
+    "crop_name": "Grapes",
+    "count": 129
+  },
+  {
+    "crop_name": "Korra",
+    "count": 126
+  },
+  {
+    "crop_name": "Cauliflower",
+    "count": 122
+  },
+  {
+    "crop_name": "Blackgram",
+    "count": 118
+  },
+  {
+    "crop_name": "Drum Stick",
+    "count": 112
+  },
+  {
+    "crop_name": "Jack Fruit",
+    "count": 112
+  },
+  {
+    "crop_name": "Cucumber",
+    "count": 93
+  },
+  {
+    "crop_name": "Pump Kin",
+    "count": 93
+  },
+  {
+    "crop_name": "Bitter Gourd",
+    "count": 92
+  },
+  {
+    "crop_name": "Samai",
+    "count": 87
+  },
+  {
+    "crop_name": "Water Melon",
+    "count": 85
+  },
+  {
+    "crop_name": "Bottle Gourd",
+    "count": 84
+  },
+  {
+    "crop_name": "Snak Guard",
+    "count": 82
+  },
+  {
+    "crop_name": "other misc. pulses",
+    "count": 70
+  },
+  {
+    "crop_name": "Other Citrus Fruit",
+    "count": 69
+  },
+  {
+    "crop_name": "Pome Granet",
+    "count": 66
+  },
+  {
+    "crop_name": "Redish",
+    "count": 61
+  },
+  {
+    "crop_name": "Varagu",
+    "count": 58
+  },
+  {
+    "crop_name": "Lab-Lab",
+    "count": 48
+  },
+  {
+    "crop_name": "Ash Gourd",
+    "count": 44
+  },
+  {
+    "crop_name": "Lemon",
+    "count": 39
+  },
+  {
+    "crop_name": "Sapota",
+    "count": 39
+  },
+  {
+    "crop_name": "Ribed Guard",
+    "count": 38
+  },
+  {
+    "crop_name": "Yam",
+    "count": 36
+  },
+  {
+    "crop_name": "Cashewnut Raw",
+    "count": 35
+  },
+  {
+    "crop_name": "Lentil",
+    "count": 31
+  },
+  {
+    "crop_name": "Carrot",
+    "count": 28
+  },
+  {
+    "crop_name": "Cashewnut Processed",
+    "count": 21
+  },
+  {
+    "crop_name": "Arcanut (Processed)",
+    "count": 20
+  },
+  {
+    "crop_name": "Atcanut (Raw)",
+    "count": 20
+  },
+  {
+    "crop_name": "Bean",
+    "count": 20
+  },
+  {
+    "crop_name": "Jute & mesta",
+    "count": 20
+  },
+  {
+    "crop_name": "Cond-spcs other",
+    "count": 18
+  },
+  {
+    "crop_name": "Rajmash Kholar",
+    "count": 18
+  },
+  {
+    "crop_name": "Beet Root",
+    "count": 16
+  },
+  {
+    "crop_name": "Kapas",
+    "count": 12
+  },
+  {
+    "crop_name": "Peas  (vegetable)",
+    "count": 11
+  },
+  {
+    "crop_name": "Colocosia",
+    "count": 11
+  },
+  {
+    "crop_name": "Ber",
+    "count": 11
+  },
+  {
+    "crop_name": "other fibres",
+    "count": 10
+  },
+  {
+    "crop_name": "Ricebean (nagadal)",
+    "count": 10
+  },
+  {
+    "crop_name": "Jobster",
+    "count": 9
+  },
+  {
+    "crop_name": "Perilla",
+    "count": 9
+  },
+  {
+    "crop_name": "Turnip",
+    "count": 8
+  },
+  {
+    "crop_name": "Pear",
+    "count": 6
+  },
+  {
+    "crop_name": "Plums",
+    "count": 6
+  },
+  {
+    "crop_name": "Litchi",
+    "count": 6
+  },
+  {
+    "crop_name": "Apple",
+    "count": 4
+  },
+  {
+    "crop_name": "Peach",
+    "count": 4
+  },
+  {
+    "crop_name": "Other Dry Fruit",
+    "count": 1
+  }
+]

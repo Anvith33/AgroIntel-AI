@@ -1,0 +1,6522 @@
+[
+  {
+    "state": "Andaman and Nicobar Islands",
+    "district": "Nicobars",
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "latest_year": 2010,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andaman and Nicobar Islands",
+    "district": "North and Middle Andaman",
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "latest_year": 2010,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andaman and Nicobar Islands",
+    "district": "South Andamans",
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Anantapur",
+    "district_id": "Andhra Pradesh::Anantapur",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Chittoor",
+    "district_id": "Andhra Pradesh::Chittoor",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "East Godavari",
+    "district_id": "Andhra Pradesh::East Godavari",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Guntur",
+    "district_id": "Andhra Pradesh::Guntur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Kadapa",
+    "district_id": "Andhra Pradesh::Kadapa",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Krishna",
+    "district_id": "Andhra Pradesh::Krishna",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Kurnool",
+    "district_id": "Andhra Pradesh::Kurnool",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Prakasam",
+    "district_id": "Andhra Pradesh::Prakasam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Spsr Nellore",
+    "district_id": "Andhra Pradesh::Spsr Nellore",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Srikakulam",
+    "district_id": "Andhra Pradesh::Srikakulam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Visakhapatanam",
+    "district_id": "Andhra Pradesh::Visakhapatanam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "Vizianagaram",
+    "district_id": "Andhra Pradesh::Vizianagaram",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Andhra Pradesh",
+    "district": "West Godavari",
+    "district_id": "Andhra Pradesh::West Godavari",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Anjaw",
+    "district_id": "Arunachal Pradesh::Anjaw",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Changlang",
+    "district_id": "Arunachal Pradesh::Changlang",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Dibang Valley",
+    "district_id": "Arunachal Pradesh::Dibang Valley",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "East Kameng",
+    "district_id": "Arunachal Pradesh::East Kameng",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "East Siang",
+    "district_id": "Arunachal Pradesh::East Siang",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Kurung Kumey",
+    "district_id": "Arunachal Pradesh::Kurung Kumey",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lohit",
+    "district_id": "Arunachal Pradesh::Lohit",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Longding",
+    "district_id": "Arunachal Pradesh::Longding",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lower Dibang Valley",
+    "district_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lower Subansiri",
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Namsai",
+    "district_id": "Arunachal Pradesh::Namsai",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare",
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Tawang",
+    "district_id": "Arunachal Pradesh::Tawang",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Tirap",
+    "district_id": "Arunachal Pradesh::Tirap",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Upper Siang",
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Upper Subansiri",
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "West Kameng",
+    "district_id": "Arunachal Pradesh::West Kameng",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "West Siang",
+    "district_id": "Arunachal Pradesh::West Siang",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Baksa",
+    "district_id": "Assam::Baksa",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Barpeta",
+    "district_id": "Assam::Barpeta",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Bongaigaon",
+    "district_id": "Assam::Bongaigaon",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Cachar",
+    "district_id": "Assam::Cachar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Chirang",
+    "district_id": "Assam::Chirang",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Darrang",
+    "district_id": "Assam::Darrang",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Dhemaji",
+    "district_id": "Assam::Dhemaji",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Dhubri",
+    "district_id": "Assam::Dhubri",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Dibrugarh",
+    "district_id": "Assam::Dibrugarh",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Dima Hasao",
+    "district_id": "Assam::Dima Hasao",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Goalpara",
+    "district_id": "Assam::Goalpara",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Golaghat",
+    "district_id": "Assam::Golaghat",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Hailakandi",
+    "district_id": "Assam::Hailakandi",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Jorhat",
+    "district_id": "Assam::Jorhat",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Kamrup",
+    "district_id": "Assam::Kamrup",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Kamrup Metro",
+    "district_id": "Assam::Kamrup Metro",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Karbi Anglong",
+    "district_id": "Assam::Karbi Anglong",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Karimganj",
+    "district_id": "Assam::Karimganj",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Kokrajhar",
+    "district_id": "Assam::Kokrajhar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Lakhimpur",
+    "district_id": "Assam::Lakhimpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Marigaon",
+    "district_id": "Assam::Marigaon",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Nagaon",
+    "district_id": "Assam::Nagaon",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Nalbari",
+    "district_id": "Assam::Nalbari",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Sivasagar",
+    "district_id": "Assam::Sivasagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Sonitpur",
+    "district_id": "Assam::Sonitpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Tinsukia",
+    "district_id": "Assam::Tinsukia",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Assam",
+    "district": "Udalguri",
+    "district_id": "Assam::Udalguri",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Araria",
+    "district_id": "Bihar::Araria",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Arwal",
+    "district_id": "Bihar::Arwal",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Aurangabad",
+    "district_id": "Bihar::Aurangabad",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Banka",
+    "district_id": "Bihar::Banka",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Begusarai",
+    "district_id": "Bihar::Begusarai",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Bhagalpur",
+    "district_id": "Bihar::Bhagalpur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Bhojpur",
+    "district_id": "Bihar::Bhojpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Buxar",
+    "district_id": "Bihar::Buxar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Darbhanga",
+    "district_id": "Bihar::Darbhanga",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Gaya",
+    "district_id": "Bihar::Gaya",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Gopalganj",
+    "district_id": "Bihar::Gopalganj",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Jamui",
+    "district_id": "Bihar::Jamui",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Jehanabad",
+    "district_id": "Bihar::Jehanabad",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Kaimur (bhabua)",
+    "district_id": "Bihar::Kaimur (bhabua)",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Katihar",
+    "district_id": "Bihar::Katihar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Khagaria",
+    "district_id": "Bihar::Khagaria",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Kishanganj",
+    "district_id": "Bihar::Kishanganj",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Lakhisarai",
+    "district_id": "Bihar::Lakhisarai",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Madhepura",
+    "district_id": "Bihar::Madhepura",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Madhubani",
+    "district_id": "Bihar::Madhubani",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Munger",
+    "district_id": "Bihar::Munger",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Muzaffarpur",
+    "district_id": "Bihar::Muzaffarpur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Nalanda",
+    "district_id": "Bihar::Nalanda",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Nawada",
+    "district_id": "Bihar::Nawada",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Pashchim Champaran",
+    "district_id": "Bihar::Pashchim Champaran",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Patna",
+    "district_id": "Bihar::Patna",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Purbi Champaran",
+    "district_id": "Bihar::Purbi Champaran",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Purnia",
+    "district_id": "Bihar::Purnia",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Rohtas",
+    "district_id": "Bihar::Rohtas",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Saharsa",
+    "district_id": "Bihar::Saharsa",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Samastipur",
+    "district_id": "Bihar::Samastipur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Saran",
+    "district_id": "Bihar::Saran",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Sheikhpura",
+    "district_id": "Bihar::Sheikhpura",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Sheohar",
+    "district_id": "Bihar::Sheohar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Sitamarhi",
+    "district_id": "Bihar::Sitamarhi",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Siwan",
+    "district_id": "Bihar::Siwan",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Supaul",
+    "district_id": "Bihar::Supaul",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Bihar",
+    "district": "Vaishali",
+    "district_id": "Bihar::Vaishali",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chandigarh",
+    "district": "Chandigarh",
+    "district_id": "Chandigarh::Chandigarh",
+    "latest_year": 2010,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Balod",
+    "district_id": "Chhattisgarh::Balod",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Baloda Bazar",
+    "district_id": "Chhattisgarh::Baloda Bazar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Balrampur",
+    "district_id": "Chhattisgarh::Balrampur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Bastar",
+    "district_id": "Chhattisgarh::Bastar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Bemetara",
+    "district_id": "Chhattisgarh::Bemetara",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Bijapur",
+    "district_id": "Chhattisgarh::Bijapur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Bilaspur",
+    "district_id": "Chhattisgarh::Bilaspur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Dantewada",
+    "district_id": "Chhattisgarh::Dantewada",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Dhamtari",
+    "district_id": "Chhattisgarh::Dhamtari",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Durg",
+    "district_id": "Chhattisgarh::Durg",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Gariyaband",
+    "district_id": "Chhattisgarh::Gariyaband",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Janjgir-champa",
+    "district_id": "Chhattisgarh::Janjgir-champa",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Jashpur",
+    "district_id": "Chhattisgarh::Jashpur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Kabirdham",
+    "district_id": "Chhattisgarh::Kabirdham",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Kanker",
+    "district_id": "Chhattisgarh::Kanker",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Kondagaon",
+    "district_id": "Chhattisgarh::Kondagaon",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Korba",
+    "district_id": "Chhattisgarh::Korba",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Korea",
+    "district_id": "Chhattisgarh::Korea",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Mahasamund",
+    "district_id": "Chhattisgarh::Mahasamund",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Mungeli",
+    "district_id": "Chhattisgarh::Mungeli",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Narayanpur",
+    "district_id": "Chhattisgarh::Narayanpur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Raigarh",
+    "district_id": "Chhattisgarh::Raigarh",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Raipur",
+    "district_id": "Chhattisgarh::Raipur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Rajnandgaon",
+    "district_id": "Chhattisgarh::Rajnandgaon",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Sukma",
+    "district_id": "Chhattisgarh::Sukma",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Surajpur",
+    "district_id": "Chhattisgarh::Surajpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Chhattisgarh",
+    "district": "Surguja",
+    "district_id": "Chhattisgarh::Surguja",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Dadra and Nagar Haveli",
+    "district": "Dadra and Nagar Haveli",
+    "district_id": "Dadra and Nagar Haveli::Dadra and Nagar Haveli",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Goa",
+    "district": "North Goa",
+    "district_id": "Goa::North Goa",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Goa",
+    "district": "South Goa",
+    "district_id": "Goa::South Goa",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Ahmadabad",
+    "district_id": "Gujarat::Ahmadabad",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Amreli",
+    "district_id": "Gujarat::Amreli",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Anand",
+    "district_id": "Gujarat::Anand",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Banas Kantha",
+    "district_id": "Gujarat::Banas Kantha",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Bharuch",
+    "district_id": "Gujarat::Bharuch",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Bhavnagar",
+    "district_id": "Gujarat::Bhavnagar",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Dang",
+    "district_id": "Gujarat::Dang",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Dohad",
+    "district_id": "Gujarat::Dohad",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Gandhinagar",
+    "district_id": "Gujarat::Gandhinagar",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Jamnagar",
+    "district_id": "Gujarat::Jamnagar",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Junagadh",
+    "district_id": "Gujarat::Junagadh",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Kachchh",
+    "district_id": "Gujarat::Kachchh",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Kheda",
+    "district_id": "Gujarat::Kheda",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Mahesana",
+    "district_id": "Gujarat::Mahesana",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Narmada",
+    "district_id": "Gujarat::Narmada",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Navsari",
+    "district_id": "Gujarat::Navsari",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Panch Mahals",
+    "district_id": "Gujarat::Panch Mahals",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Patan",
+    "district_id": "Gujarat::Patan",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Porbandar",
+    "district_id": "Gujarat::Porbandar",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Rajkot",
+    "district_id": "Gujarat::Rajkot",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Sabar Kantha",
+    "district_id": "Gujarat::Sabar Kantha",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Surat",
+    "district_id": "Gujarat::Surat",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Surendranagar",
+    "district_id": "Gujarat::Surendranagar",
+    "latest_year": 2012,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Tapi",
+    "district_id": "Gujarat::Tapi",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Vadodara",
+    "district_id": "Gujarat::Vadodara",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Gujarat",
+    "district": "Valsad",
+    "district_id": "Gujarat::Valsad",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Ambala",
+    "district_id": "Haryana::Ambala",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Bhiwani",
+    "district_id": "Haryana::Bhiwani",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Faridabad",
+    "district_id": "Haryana::Faridabad",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Fatehabad",
+    "district_id": "Haryana::Fatehabad",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Gurgaon",
+    "district_id": "Haryana::Gurgaon",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Hisar",
+    "district_id": "Haryana::Hisar",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Jhajjar",
+    "district_id": "Haryana::Jhajjar",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Jind",
+    "district_id": "Haryana::Jind",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Kaithal",
+    "district_id": "Haryana::Kaithal",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Karnal",
+    "district_id": "Haryana::Karnal",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Kurukshetra",
+    "district_id": "Haryana::Kurukshetra",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Mahendragarh",
+    "district_id": "Haryana::Mahendragarh",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Mewat",
+    "district_id": "Haryana::Mewat",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Palwal",
+    "district_id": "Haryana::Palwal",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Panchkula",
+    "district_id": "Haryana::Panchkula",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Panipat",
+    "district_id": "Haryana::Panipat",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Rewari",
+    "district_id": "Haryana::Rewari",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Rohtak",
+    "district_id": "Haryana::Rohtak",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Sirsa",
+    "district_id": "Haryana::Sirsa",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Sonipat",
+    "district_id": "Haryana::Sonipat",
+    "latest_year": 2012,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Haryana",
+    "district": "Yamunanagar",
+    "district_id": "Haryana::Yamunanagar",
+    "latest_year": 2012,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Bilaspur",
+    "district_id": "Himachal Pradesh::Bilaspur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Chamba",
+    "district_id": "Himachal Pradesh::Chamba",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Hamirpur",
+    "district_id": "Himachal Pradesh::Hamirpur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Kangra",
+    "district_id": "Himachal Pradesh::Kangra",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Kinnaur",
+    "district_id": "Himachal Pradesh::Kinnaur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Kullu",
+    "district_id": "Himachal Pradesh::Kullu",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Lahul and Spiti",
+    "district_id": "Himachal Pradesh::Lahul and Spiti",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Mandi",
+    "district_id": "Himachal Pradesh::Mandi",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Shimla",
+    "district_id": "Himachal Pradesh::Shimla",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Sirmaur",
+    "district_id": "Himachal Pradesh::Sirmaur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Solan",
+    "district_id": "Himachal Pradesh::Solan",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Himachal Pradesh",
+    "district": "Una",
+    "district_id": "Himachal Pradesh::Una",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Anantnag",
+    "district_id": "Jammu and Kashmir::Anantnag",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Badgam",
+    "district_id": "Jammu and Kashmir::Badgam",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Bandipora",
+    "district_id": "Jammu and Kashmir::Bandipora",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Baramulla",
+    "district_id": "Jammu and Kashmir::Baramulla",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Doda",
+    "district_id": "Jammu and Kashmir::Doda",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Ganderbal",
+    "district_id": "Jammu and Kashmir::Ganderbal",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Jammu",
+    "district_id": "Jammu and Kashmir::Jammu",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Kargil",
+    "district_id": "Jammu and Kashmir::Kargil",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Kathua",
+    "district_id": "Jammu and Kashmir::Kathua",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Kishtwar",
+    "district_id": "Jammu and Kashmir::Kishtwar",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Kulgam",
+    "district_id": "Jammu and Kashmir::Kulgam",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Kupwara",
+    "district_id": "Jammu and Kashmir::Kupwara",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Leh Ladakh",
+    "district_id": "Jammu and Kashmir::Leh Ladakh",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Poonch",
+    "district_id": "Jammu and Kashmir::Poonch",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Pulwama",
+    "district_id": "Jammu and Kashmir::Pulwama",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Rajauri",
+    "district_id": "Jammu and Kashmir::Rajauri",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Ramban",
+    "district_id": "Jammu and Kashmir::Ramban",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Reasi",
+    "district_id": "Jammu and Kashmir::Reasi",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Samba",
+    "district_id": "Jammu and Kashmir::Samba",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Shopian",
+    "district_id": "Jammu and Kashmir::Shopian",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Srinagar",
+    "district_id": "Jammu and Kashmir::Srinagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jammu and Kashmir",
+    "district": "Udhampur",
+    "district_id": "Jammu and Kashmir::Udhampur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Bokaro",
+    "district_id": "Jharkhand::Bokaro",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Chatra",
+    "district_id": "Jharkhand::Chatra",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Deoghar",
+    "district_id": "Jharkhand::Deoghar",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Dhanbad",
+    "district_id": "Jharkhand::Dhanbad",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Dumka",
+    "district_id": "Jharkhand::Dumka",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "East Singhbum",
+    "district_id": "Jharkhand::East Singhbum",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Garhwa",
+    "district_id": "Jharkhand::Garhwa",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Giridih",
+    "district_id": "Jharkhand::Giridih",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Godda",
+    "district_id": "Jharkhand::Godda",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Gumla",
+    "district_id": "Jharkhand::Gumla",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Hazaribagh",
+    "district_id": "Jharkhand::Hazaribagh",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Jamtara",
+    "district_id": "Jharkhand::Jamtara",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Khunti",
+    "district_id": "Jharkhand::Khunti",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Koderma",
+    "district_id": "Jharkhand::Koderma",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Latehar",
+    "district_id": "Jharkhand::Latehar",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Lohardaga",
+    "district_id": "Jharkhand::Lohardaga",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Pakur",
+    "district_id": "Jharkhand::Pakur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Palamu",
+    "district_id": "Jharkhand::Palamu",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Ramgarh",
+    "district_id": "Jharkhand::Ramgarh",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Ranchi",
+    "district_id": "Jharkhand::Ranchi",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Sahebganj",
+    "district_id": "Jharkhand::Sahebganj",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Saraikela Kharsawan",
+    "district_id": "Jharkhand::Saraikela Kharsawan",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "Simdega",
+    "district_id": "Jharkhand::Simdega",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Jharkhand",
+    "district": "West Singhbhum",
+    "district_id": "Jharkhand::West Singhbhum",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bagalkot",
+    "district_id": "Karnataka::Bagalkot",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Ballari",
+    "district_id": "Karnataka::Ballari",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Belagavi",
+    "district_id": "Karnataka::Belagavi",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bengaluru Rural",
+    "district_id": "Karnataka::Bengaluru Rural",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bengaluru Urban",
+    "district_id": "Karnataka::Bengaluru Urban",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Bidar",
+    "district_id": "Karnataka::Bidar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Chamarajanagar",
+    "district_id": "Karnataka::Chamarajanagar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Chikballapur",
+    "district_id": "Karnataka::Chikballapur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Chikmagalur",
+    "district_id": "Karnataka::Chikmagalur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Chitradurga",
+    "district_id": "Karnataka::Chitradurga",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Dakshin Kannad",
+    "district_id": "Karnataka::Dakshin Kannad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Davangere",
+    "district_id": "Karnataka::Davangere",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Dharwad",
+    "district_id": "Karnataka::Dharwad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Gadag",
+    "district_id": "Karnataka::Gadag",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Hassan",
+    "district_id": "Karnataka::Hassan",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Haveri",
+    "district_id": "Karnataka::Haveri",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Kalaburagi",
+    "district_id": "Karnataka::Kalaburagi",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Kodagu",
+    "district_id": "Karnataka::Kodagu",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Kolar",
+    "district_id": "Karnataka::Kolar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Koppal",
+    "district_id": "Karnataka::Koppal",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Mandya",
+    "district_id": "Karnataka::Mandya",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Mysuru",
+    "district_id": "Karnataka::Mysuru",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Raichur",
+    "district_id": "Karnataka::Raichur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Ramanagara",
+    "district_id": "Karnataka::Ramanagara",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Shivamogga",
+    "district_id": "Karnataka::Shivamogga",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Tumakuru",
+    "district_id": "Karnataka::Tumakuru",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Udupi",
+    "district_id": "Karnataka::Udupi",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Uttar Kannad",
+    "district_id": "Karnataka::Uttar Kannad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Vijayapura",
+    "district_id": "Karnataka::Vijayapura",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Karnataka",
+    "district": "Yadgir",
+    "district_id": "Karnataka::Yadgir",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Alappuzha",
+    "district_id": "Kerala::Alappuzha",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Ernakulam",
+    "district_id": "Kerala::Ernakulam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Idukki",
+    "district_id": "Kerala::Idukki",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Kannur",
+    "district_id": "Kerala::Kannur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Kasaragod",
+    "district_id": "Kerala::Kasaragod",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Kollam",
+    "district_id": "Kerala::Kollam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Kottayam",
+    "district_id": "Kerala::Kottayam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Kozhikode",
+    "district_id": "Kerala::Kozhikode",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Malappuram",
+    "district_id": "Kerala::Malappuram",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Palakkad",
+    "district_id": "Kerala::Palakkad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Pathanamthitta",
+    "district_id": "Kerala::Pathanamthitta",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Thiruvananthapuram",
+    "district_id": "Kerala::Thiruvananthapuram",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Thrissur",
+    "district_id": "Kerala::Thrissur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Kerala",
+    "district": "Wayanad",
+    "district_id": "Kerala::Wayanad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Agar Malwa",
+    "district_id": "Madhya Pradesh::Agar Malwa",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Alirajpur",
+    "district_id": "Madhya Pradesh::Alirajpur",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Anuppur",
+    "district_id": "Madhya Pradesh::Anuppur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Ashoknagar",
+    "district_id": "Madhya Pradesh::Ashoknagar",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Balaghat",
+    "district_id": "Madhya Pradesh::Balaghat",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Barwani",
+    "district_id": "Madhya Pradesh::Barwani",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Betul",
+    "district_id": "Madhya Pradesh::Betul",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Bhind",
+    "district_id": "Madhya Pradesh::Bhind",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Bhopal",
+    "district_id": "Madhya Pradesh::Bhopal",
+    "latest_year": 2013,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Burhanpur",
+    "district_id": "Madhya Pradesh::Burhanpur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Chhatarpur",
+    "district_id": "Madhya Pradesh::Chhatarpur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Chhindwara",
+    "district_id": "Madhya Pradesh::Chhindwara",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Damoh",
+    "district_id": "Madhya Pradesh::Damoh",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Datia",
+    "district_id": "Madhya Pradesh::Datia",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Dewas",
+    "district_id": "Madhya Pradesh::Dewas",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Dhar",
+    "district_id": "Madhya Pradesh::Dhar",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Dindori",
+    "district_id": "Madhya Pradesh::Dindori",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Guna",
+    "district_id": "Madhya Pradesh::Guna",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Gwalior",
+    "district_id": "Madhya Pradesh::Gwalior",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Harda",
+    "district_id": "Madhya Pradesh::Harda",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Hoshangabad",
+    "district_id": "Madhya Pradesh::Hoshangabad",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Indore",
+    "district_id": "Madhya Pradesh::Indore",
+    "latest_year": 2013,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Jabalpur",
+    "district_id": "Madhya Pradesh::Jabalpur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Jhabua",
+    "district_id": "Madhya Pradesh::Jhabua",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Katni",
+    "district_id": "Madhya Pradesh::Katni",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Khandwa",
+    "district_id": "Madhya Pradesh::Khandwa",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Khargone",
+    "district_id": "Madhya Pradesh::Khargone",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Mandla",
+    "district_id": "Madhya Pradesh::Mandla",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Mandsaur",
+    "district_id": "Madhya Pradesh::Mandsaur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Morena",
+    "district_id": "Madhya Pradesh::Morena",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Narsinghpur",
+    "district_id": "Madhya Pradesh::Narsinghpur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Neemuch",
+    "district_id": "Madhya Pradesh::Neemuch",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Panna",
+    "district_id": "Madhya Pradesh::Panna",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Raisen",
+    "district_id": "Madhya Pradesh::Raisen",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Rajgarh",
+    "district_id": "Madhya Pradesh::Rajgarh",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Ratlam",
+    "district_id": "Madhya Pradesh::Ratlam",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Rewa",
+    "district_id": "Madhya Pradesh::Rewa",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sagar",
+    "district_id": "Madhya Pradesh::Sagar",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Satna",
+    "district_id": "Madhya Pradesh::Satna",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sehore",
+    "district_id": "Madhya Pradesh::Sehore",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Seoni",
+    "district_id": "Madhya Pradesh::Seoni",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Shahdol",
+    "district_id": "Madhya Pradesh::Shahdol",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Shajapur",
+    "district_id": "Madhya Pradesh::Shajapur",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sheopur",
+    "district_id": "Madhya Pradesh::Sheopur",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Shivpuri",
+    "district_id": "Madhya Pradesh::Shivpuri",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Sidhi",
+    "district_id": "Madhya Pradesh::Sidhi",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Singrauli",
+    "district_id": "Madhya Pradesh::Singrauli",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Tikamgarh",
+    "district_id": "Madhya Pradesh::Tikamgarh",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Ujjain",
+    "district_id": "Madhya Pradesh::Ujjain",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Umaria",
+    "district_id": "Madhya Pradesh::Umaria",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Madhya Pradesh",
+    "district": "Vidisha",
+    "district_id": "Madhya Pradesh::Vidisha",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Ahilya Nagar",
+    "district_id": "Maharashtra::Ahilya Nagar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Akola",
+    "district_id": "Maharashtra::Akola",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Amravati",
+    "district_id": "Maharashtra::Amravati",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Beed",
+    "district_id": "Maharashtra::Beed",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Bhandara",
+    "district_id": "Maharashtra::Bhandara",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Buldhana",
+    "district_id": "Maharashtra::Buldhana",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Chandrapur",
+    "district_id": "Maharashtra::Chandrapur",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Chhatrapati Sambhaji Nagar",
+    "district_id": "Maharashtra::Chhatrapati Sambhaji Nagar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Dharashiv",
+    "district_id": "Maharashtra::Dharashiv",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Dhule",
+    "district_id": "Maharashtra::Dhule",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Gadchiroli",
+    "district_id": "Maharashtra::Gadchiroli",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Gondia",
+    "district_id": "Maharashtra::Gondia",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Hingoli",
+    "district_id": "Maharashtra::Hingoli",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Jalgaon",
+    "district_id": "Maharashtra::Jalgaon",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Jalna",
+    "district_id": "Maharashtra::Jalna",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Kolhapur",
+    "district_id": "Maharashtra::Kolhapur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Latur",
+    "district_id": "Maharashtra::Latur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "district_id": "Maharashtra::Mumbai",
+    "latest_year": 1997,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nagpur",
+    "district_id": "Maharashtra::Nagpur",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nanded",
+    "district_id": "Maharashtra::Nanded",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nandurbar",
+    "district_id": "Maharashtra::Nandurbar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Nashik",
+    "district_id": "Maharashtra::Nashik",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Palghar",
+    "district_id": "Maharashtra::Palghar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Parbhani",
+    "district_id": "Maharashtra::Parbhani",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Pune",
+    "district_id": "Maharashtra::Pune",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Raigad",
+    "district_id": "Maharashtra::Raigad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Ratnagiri",
+    "district_id": "Maharashtra::Ratnagiri",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Sangli",
+    "district_id": "Maharashtra::Sangli",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Satara",
+    "district_id": "Maharashtra::Satara",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Sindhudurg",
+    "district_id": "Maharashtra::Sindhudurg",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Solapur",
+    "district_id": "Maharashtra::Solapur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Thane",
+    "district_id": "Maharashtra::Thane",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Wardha",
+    "district_id": "Maharashtra::Wardha",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Washim",
+    "district_id": "Maharashtra::Washim",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Maharashtra",
+    "district": "Yavatmal",
+    "district_id": "Maharashtra::Yavatmal",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Bishnupur",
+    "district_id": "Manipur::Bishnupur",
+    "latest_year": 2007,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Chandel",
+    "district_id": "Manipur::Chandel",
+    "latest_year": 2007,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Churachandpur",
+    "district_id": "Manipur::Churachandpur",
+    "latest_year": 2007,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Imphal East",
+    "district_id": "Manipur::Imphal East",
+    "latest_year": 2007,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Imphal West",
+    "district_id": "Manipur::Imphal West",
+    "latest_year": 2007,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Senapati",
+    "district_id": "Manipur::Senapati",
+    "latest_year": 2007,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Tamenglong",
+    "district_id": "Manipur::Tamenglong",
+    "latest_year": 2007,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Thoubal",
+    "district_id": "Manipur::Thoubal",
+    "latest_year": 2007,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Manipur",
+    "district": "Ukhrul",
+    "district_id": "Manipur::Ukhrul",
+    "latest_year": 2007,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "East Garo Hills",
+    "district_id": "Meghalaya::East Garo Hills",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "East Jaintia Hills",
+    "district_id": "Meghalaya::East Jaintia Hills",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "East Khasi Hills",
+    "district_id": "Meghalaya::East Khasi Hills",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "North Garo Hills",
+    "district_id": "Meghalaya::North Garo Hills",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "Ri Bhoi",
+    "district_id": "Meghalaya::Ri Bhoi",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "South Garo Hills",
+    "district_id": "Meghalaya::South Garo Hills",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "South West Garo Hills",
+    "district_id": "Meghalaya::South West Garo Hills",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "South West Khasi Hills",
+    "district_id": "Meghalaya::South West Khasi Hills",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "West Garo Hills",
+    "district_id": "Meghalaya::West Garo Hills",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "West Jaintia Hills",
+    "district_id": "Meghalaya::West Jaintia Hills",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Meghalaya",
+    "district": "West Khasi Hills",
+    "district_id": "Meghalaya::West Khasi Hills",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Aizawl",
+    "district_id": "Mizoram::Aizawl",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Champhai",
+    "district_id": "Mizoram::Champhai",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Kolasib",
+    "district_id": "Mizoram::Kolasib",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Lawngtlai",
+    "district_id": "Mizoram::Lawngtlai",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Lunglei",
+    "district_id": "Mizoram::Lunglei",
+    "latest_year": 2009,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Mamit",
+    "district_id": "Mizoram::Mamit",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Saiha",
+    "district_id": "Mizoram::Saiha",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Mizoram",
+    "district": "Serchhip",
+    "district_id": "Mizoram::Serchhip",
+    "latest_year": 2009,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Dimapur",
+    "district_id": "Nagaland::Dimapur",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Kiphire",
+    "district_id": "Nagaland::Kiphire",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Kohima",
+    "district_id": "Nagaland::Kohima",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Longleng",
+    "district_id": "Nagaland::Longleng",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Mokokchung",
+    "district_id": "Nagaland::Mokokchung",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Mon",
+    "district_id": "Nagaland::Mon",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Peren",
+    "district_id": "Nagaland::Peren",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Phek",
+    "district_id": "Nagaland::Phek",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Tuensang",
+    "district_id": "Nagaland::Tuensang",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Wokha",
+    "district_id": "Nagaland::Wokha",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Nagaland",
+    "district": "Zunheboto",
+    "district_id": "Nagaland::Zunheboto",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Anugul",
+    "district_id": "Odisha::Anugul",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Balangir",
+    "district_id": "Odisha::Balangir",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Baleshwar",
+    "district_id": "Odisha::Baleshwar",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Bargarh",
+    "district_id": "Odisha::Bargarh",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Bhadrak",
+    "district_id": "Odisha::Bhadrak",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Boudh",
+    "district_id": "Odisha::Boudh",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Cuttack",
+    "district_id": "Odisha::Cuttack",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Deogarh",
+    "district_id": "Odisha::Deogarh",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Dhenkanal",
+    "district_id": "Odisha::Dhenkanal",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Gajapati",
+    "district_id": "Odisha::Gajapati",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Ganjam",
+    "district_id": "Odisha::Ganjam",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Jagatsinghapur",
+    "district_id": "Odisha::Jagatsinghapur",
+    "latest_year": 2015,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Jajapur",
+    "district_id": "Odisha::Jajapur",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Jharsuguda",
+    "district_id": "Odisha::Jharsuguda",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Kalahandi",
+    "district_id": "Odisha::Kalahandi",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Kandhamal",
+    "district_id": "Odisha::Kandhamal",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Kendrapara",
+    "district_id": "Odisha::Kendrapara",
+    "latest_year": 2015,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Kendujhar",
+    "district_id": "Odisha::Kendujhar",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Khordha",
+    "district_id": "Odisha::Khordha",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Koraput",
+    "district_id": "Odisha::Koraput",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Malkangiri",
+    "district_id": "Odisha::Malkangiri",
+    "latest_year": 2015,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Mayurbhanj",
+    "district_id": "Odisha::Mayurbhanj",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Nabarangpur",
+    "district_id": "Odisha::Nabarangpur",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Nayagarh",
+    "district_id": "Odisha::Nayagarh",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Nuapada",
+    "district_id": "Odisha::Nuapada",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Puri",
+    "district_id": "Odisha::Puri",
+    "latest_year": 2015,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Rayagada",
+    "district_id": "Odisha::Rayagada",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Sambalpur",
+    "district_id": "Odisha::Sambalpur",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Sonepur",
+    "district_id": "Odisha::Sonepur",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Odisha",
+    "district": "Sundargarh",
+    "district_id": "Odisha::Sundargarh",
+    "latest_year": 2015,
+    "latest_season": "Autumn",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Puducherry",
+    "district": "Karaikal",
+    "district_id": "Puducherry::Karaikal",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Puducherry",
+    "district": "Mahe",
+    "district_id": "Puducherry::Mahe",
+    "latest_year": 2011,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Puducherry",
+    "district": "Pondicherry",
+    "district_id": "Puducherry::Pondicherry",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Puducherry",
+    "district": "Yanam",
+    "district_id": "Puducherry::Yanam",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Amritsar",
+    "district_id": "Punjab::Amritsar",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Barnala",
+    "district_id": "Punjab::Barnala",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Bathinda",
+    "district_id": "Punjab::Bathinda",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Faridkot",
+    "district_id": "Punjab::Faridkot",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Fatehgarh Sahib",
+    "district_id": "Punjab::Fatehgarh Sahib",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Fazilka",
+    "district_id": "Punjab::Fazilka",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Firozepur",
+    "district_id": "Punjab::Firozepur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Gurdaspur",
+    "district_id": "Punjab::Gurdaspur",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Hoshiarpur",
+    "district_id": "Punjab::Hoshiarpur",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Jalandhar",
+    "district_id": "Punjab::Jalandhar",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Kapurthala",
+    "district_id": "Punjab::Kapurthala",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Ludhiana",
+    "district_id": "Punjab::Ludhiana",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Mansa",
+    "district_id": "Punjab::Mansa",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Moga",
+    "district_id": "Punjab::Moga",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Muktsar",
+    "district_id": "Punjab::Muktsar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Nawanshahr",
+    "district_id": "Punjab::Nawanshahr",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Pathankot",
+    "district_id": "Punjab::Pathankot",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Patiala",
+    "district_id": "Punjab::Patiala",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Rupnagar",
+    "district_id": "Punjab::Rupnagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "S.a.s Nagar",
+    "district_id": "Punjab::S.a.s Nagar",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Sangrur",
+    "district_id": "Punjab::Sangrur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Punjab",
+    "district": "Tarn Taran",
+    "district_id": "Punjab::Tarn Taran",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Ajmer",
+    "district_id": "Rajasthan::Ajmer",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Alwar",
+    "district_id": "Rajasthan::Alwar",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Banswara",
+    "district_id": "Rajasthan::Banswara",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Baran",
+    "district_id": "Rajasthan::Baran",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Barmer",
+    "district_id": "Rajasthan::Barmer",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bharatpur",
+    "district_id": "Rajasthan::Bharatpur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bhilwara",
+    "district_id": "Rajasthan::Bhilwara",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bikaner",
+    "district_id": "Rajasthan::Bikaner",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Bundi",
+    "district_id": "Rajasthan::Bundi",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Chittorgarh",
+    "district_id": "Rajasthan::Chittorgarh",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Churu",
+    "district_id": "Rajasthan::Churu",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Dausa",
+    "district_id": "Rajasthan::Dausa",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Dholpur",
+    "district_id": "Rajasthan::Dholpur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Dungarpur",
+    "district_id": "Rajasthan::Dungarpur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Ganganagar",
+    "district_id": "Rajasthan::Ganganagar",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Hanumangarh",
+    "district_id": "Rajasthan::Hanumangarh",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jaipur",
+    "district_id": "Rajasthan::Jaipur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jaisalmer",
+    "district_id": "Rajasthan::Jaisalmer",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jalore",
+    "district_id": "Rajasthan::Jalore",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jhalawar",
+    "district_id": "Rajasthan::Jhalawar",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jhunjhunu",
+    "district_id": "Rajasthan::Jhunjhunu",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Jodhpur",
+    "district_id": "Rajasthan::Jodhpur",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Karauli",
+    "district_id": "Rajasthan::Karauli",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Kota",
+    "district_id": "Rajasthan::Kota",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Nagaur",
+    "district_id": "Rajasthan::Nagaur",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Pali",
+    "district_id": "Rajasthan::Pali",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Pratapgarh",
+    "district_id": "Rajasthan::Pratapgarh",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Rajsamand",
+    "district_id": "Rajasthan::Rajsamand",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Sawai Madhopur",
+    "district_id": "Rajasthan::Sawai Madhopur",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Sikar",
+    "district_id": "Rajasthan::Sikar",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Sirohi",
+    "district_id": "Rajasthan::Sirohi",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Tonk",
+    "district_id": "Rajasthan::Tonk",
+    "latest_year": 2010,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Rajasthan",
+    "district": "Udaipur",
+    "district_id": "Rajasthan::Udaipur",
+    "latest_year": 2010,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Sikkim",
+    "district": "East District",
+    "district_id": "Sikkim::East District",
+    "latest_year": 2015,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Sikkim",
+    "district": "North District",
+    "district_id": "Sikkim::North District",
+    "latest_year": 2015,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Sikkim",
+    "district": "South District",
+    "district_id": "Sikkim::South District",
+    "latest_year": 2015,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Sikkim",
+    "district": "West District",
+    "district_id": "Sikkim::West District",
+    "latest_year": 2015,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Ariyalur",
+    "district_id": "Tamil Nadu::Ariyalur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "district_id": "Tamil Nadu::Coimbatore",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Cuddalore",
+    "district_id": "Tamil Nadu::Cuddalore",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Dharmapuri",
+    "district_id": "Tamil Nadu::Dharmapuri",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Dindigul",
+    "district_id": "Tamil Nadu::Dindigul",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Erode",
+    "district_id": "Tamil Nadu::Erode",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Kanchipuram",
+    "district_id": "Tamil Nadu::Kanchipuram",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Kanniyakumari",
+    "district_id": "Tamil Nadu::Kanniyakumari",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Karur",
+    "district_id": "Tamil Nadu::Karur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Krishnagiri",
+    "district_id": "Tamil Nadu::Krishnagiri",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Madurai",
+    "district_id": "Tamil Nadu::Madurai",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Nagapattinam",
+    "district_id": "Tamil Nadu::Nagapattinam",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Namakkal",
+    "district_id": "Tamil Nadu::Namakkal",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Perambalur",
+    "district_id": "Tamil Nadu::Perambalur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Pudukkottai",
+    "district_id": "Tamil Nadu::Pudukkottai",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Ramanathapuram",
+    "district_id": "Tamil Nadu::Ramanathapuram",
+    "latest_year": 2013,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Salem",
+    "district_id": "Tamil Nadu::Salem",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Sivaganga",
+    "district_id": "Tamil Nadu::Sivaganga",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Thanjavur",
+    "district_id": "Tamil Nadu::Thanjavur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "The Nilgiris",
+    "district_id": "Tamil Nadu::The Nilgiris",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Theni",
+    "district_id": "Tamil Nadu::Theni",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Thiruvallur",
+    "district_id": "Tamil Nadu::Thiruvallur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Thiruvarur",
+    "district_id": "Tamil Nadu::Thiruvarur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Tiruchirappalli",
+    "district_id": "Tamil Nadu::Tiruchirappalli",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli",
+    "district_id": "Tamil Nadu::Tirunelveli",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Tiruppur",
+    "district_id": "Tamil Nadu::Tiruppur",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Tiruvannamalai",
+    "district_id": "Tamil Nadu::Tiruvannamalai",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Tuticorin",
+    "district_id": "Tamil Nadu::Tuticorin",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Vellore",
+    "district_id": "Tamil Nadu::Vellore",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Villupuram",
+    "district_id": "Tamil Nadu::Villupuram",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tamil Nadu",
+    "district": "Virudhunagar",
+    "district_id": "Tamil Nadu::Virudhunagar",
+    "latest_year": 2013,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Adilabad",
+    "district_id": "Telangana::Adilabad",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "district_id": "Telangana::Hyderabad",
+    "latest_year": 2000,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Karimnagar",
+    "district_id": "Telangana::Karimnagar",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Khammam",
+    "district_id": "Telangana::Khammam",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Mahbubnagar",
+    "district_id": "Telangana::Mahbubnagar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Medak",
+    "district_id": "Telangana::Medak",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Nalgonda",
+    "district_id": "Telangana::Nalgonda",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Nizamabad",
+    "district_id": "Telangana::Nizamabad",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Rangareddi",
+    "district_id": "Telangana::Rangareddi",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Telangana",
+    "district": "Warangal",
+    "district_id": "Telangana::Warangal",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "Dhalai",
+    "district_id": "Tripura::Dhalai",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "Gomati",
+    "district_id": "Tripura::Gomati",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "Khowai",
+    "district_id": "Tripura::Khowai",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "North Tripura",
+    "district_id": "Tripura::North Tripura",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "Sepahijala",
+    "district_id": "Tripura::Sepahijala",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "South Tripura",
+    "district_id": "Tripura::South Tripura",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "Unakoti",
+    "district_id": "Tripura::Unakoti",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Tripura",
+    "district": "West Tripura",
+    "district_id": "Tripura::West Tripura",
+    "latest_year": 2014,
+    "latest_season": "Kharif",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "district_id": "Uttar Pradesh::Agra",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Aligarh",
+    "district_id": "Uttar Pradesh::Aligarh",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ambedkar Nagar",
+    "district_id": "Uttar Pradesh::Ambedkar Nagar",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Amethi",
+    "district_id": "Uttar Pradesh::Amethi",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Amroha",
+    "district_id": "Uttar Pradesh::Amroha",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Auraiya",
+    "district_id": "Uttar Pradesh::Auraiya",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ayodhya",
+    "district_id": "Uttar Pradesh::Ayodhya",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Azamgarh",
+    "district_id": "Uttar Pradesh::Azamgarh",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Baghpat",
+    "district_id": "Uttar Pradesh::Baghpat",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bahraich",
+    "district_id": "Uttar Pradesh::Bahraich",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ballia",
+    "district_id": "Uttar Pradesh::Ballia",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Balrampur",
+    "district_id": "Uttar Pradesh::Balrampur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Banda",
+    "district_id": "Uttar Pradesh::Banda",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Barabanki",
+    "district_id": "Uttar Pradesh::Barabanki",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bareilly",
+    "district_id": "Uttar Pradesh::Bareilly",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Basti",
+    "district_id": "Uttar Pradesh::Basti",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bijnor",
+    "district_id": "Uttar Pradesh::Bijnor",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Budaun",
+    "district_id": "Uttar Pradesh::Budaun",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Bulandshahr",
+    "district_id": "Uttar Pradesh::Bulandshahr",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Chandauli",
+    "district_id": "Uttar Pradesh::Chandauli",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Chitrakoot",
+    "district_id": "Uttar Pradesh::Chitrakoot",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Deoria",
+    "district_id": "Uttar Pradesh::Deoria",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Etah",
+    "district_id": "Uttar Pradesh::Etah",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Etawah",
+    "district_id": "Uttar Pradesh::Etawah",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Farrukhabad",
+    "district_id": "Uttar Pradesh::Farrukhabad",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Fatehpur",
+    "district_id": "Uttar Pradesh::Fatehpur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Firozabad",
+    "district_id": "Uttar Pradesh::Firozabad",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Gautam Buddha Nagar",
+    "district_id": "Uttar Pradesh::Gautam Buddha Nagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ghaziabad",
+    "district_id": "Uttar Pradesh::Ghaziabad",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Ghazipur",
+    "district_id": "Uttar Pradesh::Ghazipur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Gonda",
+    "district_id": "Uttar Pradesh::Gonda",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Gorakhpur",
+    "district_id": "Uttar Pradesh::Gorakhpur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Hamirpur",
+    "district_id": "Uttar Pradesh::Hamirpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Hapur",
+    "district_id": "Uttar Pradesh::Hapur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Hardoi",
+    "district_id": "Uttar Pradesh::Hardoi",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Hathras",
+    "district_id": "Uttar Pradesh::Hathras",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Jalaun",
+    "district_id": "Uttar Pradesh::Jalaun",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Jaunpur",
+    "district_id": "Uttar Pradesh::Jaunpur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Jhansi",
+    "district_id": "Uttar Pradesh::Jhansi",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kannauj",
+    "district_id": "Uttar Pradesh::Kannauj",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Dehat",
+    "district_id": "Uttar Pradesh::Kanpur Dehat",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kanpur Nagar",
+    "district_id": "Uttar Pradesh::Kanpur Nagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kasganj",
+    "district_id": "Uttar Pradesh::Kasganj",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kaushambi",
+    "district_id": "Uttar Pradesh::Kaushambi",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kheri",
+    "district_id": "Uttar Pradesh::Kheri",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Kushi Nagar",
+    "district_id": "Uttar Pradesh::Kushi Nagar",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Lalitpur",
+    "district_id": "Uttar Pradesh::Lalitpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Lucknow",
+    "district_id": "Uttar Pradesh::Lucknow",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Maharajganj",
+    "district_id": "Uttar Pradesh::Maharajganj",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mahoba",
+    "district_id": "Uttar Pradesh::Mahoba",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mainpuri",
+    "district_id": "Uttar Pradesh::Mainpuri",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mathura",
+    "district_id": "Uttar Pradesh::Mathura",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mau",
+    "district_id": "Uttar Pradesh::Mau",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Meerut",
+    "district_id": "Uttar Pradesh::Meerut",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Mirzapur",
+    "district_id": "Uttar Pradesh::Mirzapur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Moradabad",
+    "district_id": "Uttar Pradesh::Moradabad",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Muzaffarnagar",
+    "district_id": "Uttar Pradesh::Muzaffarnagar",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Pilibhit",
+    "district_id": "Uttar Pradesh::Pilibhit",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Pratapgarh",
+    "district_id": "Uttar Pradesh::Pratapgarh",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Prayagraj",
+    "district_id": "Uttar Pradesh::Prayagraj",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Rae Bareli",
+    "district_id": "Uttar Pradesh::Rae Bareli",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Rampur",
+    "district_id": "Uttar Pradesh::Rampur",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Saharanpur",
+    "district_id": "Uttar Pradesh::Saharanpur",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sambhal",
+    "district_id": "Uttar Pradesh::Sambhal",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sant Kabeer Nagar",
+    "district_id": "Uttar Pradesh::Sant Kabeer Nagar",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sant Ravidas Nagar",
+    "district_id": "Uttar Pradesh::Sant Ravidas Nagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Shahjahanpur",
+    "district_id": "Uttar Pradesh::Shahjahanpur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Shamli",
+    "district_id": "Uttar Pradesh::Shamli",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Shravasti",
+    "district_id": "Uttar Pradesh::Shravasti",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Siddharth Nagar",
+    "district_id": "Uttar Pradesh::Siddharth Nagar",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sitapur",
+    "district_id": "Uttar Pradesh::Sitapur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sonbhadra",
+    "district_id": "Uttar Pradesh::Sonbhadra",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Sultanpur",
+    "district_id": "Uttar Pradesh::Sultanpur",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Unnao",
+    "district_id": "Uttar Pradesh::Unnao",
+    "latest_year": 2014,
+    "latest_season": "Summer",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttar Pradesh",
+    "district": "Varanasi",
+    "district_id": "Uttar Pradesh::Varanasi",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Almora",
+    "district_id": "Uttarakhand::Almora",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Bageshwar",
+    "district_id": "Uttarakhand::Bageshwar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Chamoli",
+    "district_id": "Uttarakhand::Chamoli",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Champawat",
+    "district_id": "Uttarakhand::Champawat",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Dehradun",
+    "district_id": "Uttarakhand::Dehradun",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Haridwar",
+    "district_id": "Uttarakhand::Haridwar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Nainital",
+    "district_id": "Uttarakhand::Nainital",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Pauri Garhwal",
+    "district_id": "Uttarakhand::Pauri Garhwal",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Pithoragarh",
+    "district_id": "Uttarakhand::Pithoragarh",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Rudra Prayag",
+    "district_id": "Uttarakhand::Rudra Prayag",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Tehri Garhwal",
+    "district_id": "Uttarakhand::Tehri Garhwal",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Udam Singh Nagar",
+    "district_id": "Uttarakhand::Udam Singh Nagar",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "Uttarakhand",
+    "district": "Uttar Kashi",
+    "district_id": "Uttarakhand::Uttar Kashi",
+    "latest_year": 2014,
+    "latest_season": "Rabi",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "24 Paraganas North",
+    "district_id": "West Bengal::24 Paraganas North",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "24 Paraganas South",
+    "district_id": "West Bengal::24 Paraganas South",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Bankura",
+    "district_id": "West Bengal::Bankura",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Bardhaman",
+    "district_id": "West Bengal::Bardhaman",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Birbhum",
+    "district_id": "West Bengal::Birbhum",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Coochbehar",
+    "district_id": "West Bengal::Coochbehar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Darjeeling",
+    "district_id": "West Bengal::Darjeeling",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Dinajpur Dakshin",
+    "district_id": "West Bengal::Dinajpur Dakshin",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Dinajpur Uttar",
+    "district_id": "West Bengal::Dinajpur Uttar",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Hooghly",
+    "district_id": "West Bengal::Hooghly",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Howrah",
+    "district_id": "West Bengal::Howrah",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Jalpaiguri",
+    "district_id": "West Bengal::Jalpaiguri",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Maldah",
+    "district_id": "West Bengal::Maldah",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Medinipur East",
+    "district_id": "West Bengal::Medinipur East",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Medinipur West",
+    "district_id": "West Bengal::Medinipur West",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Murshidabad",
+    "district_id": "West Bengal::Murshidabad",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Nadia",
+    "district_id": "West Bengal::Nadia",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  },
+  {
+    "state": "West Bengal",
+    "district": "Purulia",
+    "district_id": "West Bengal::Purulia",
+    "latest_year": 2014,
+    "latest_season": "Whole Year",
+    "number_of_recent_records": 0,
+    "number_of_current_records": 0,
+    "current_data_status": "HISTORICAL_ONLY"
+  }
+]

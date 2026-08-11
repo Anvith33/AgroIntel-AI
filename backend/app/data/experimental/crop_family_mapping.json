@@ -1,0 +1,347 @@
+{
+  "crops": {
+    "Rice": {
+      "family": "Poaceae",
+      "category": "Cereal",
+      "nutrient_habit": "Heavy N & Water Feeder",
+      "root_depth": "Shallow (15-30 cm)",
+      "rotation_group": "Cereal"
+    },
+    "Wheat": {
+      "family": "Poaceae",
+      "category": "Cereal",
+      "nutrient_habit": "Heavy N Feeder",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Cereal"
+    },
+    "Maize": {
+      "family": "Poaceae",
+      "category": "Cereal",
+      "nutrient_habit": "Heavy Feeder (N & K)",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Cereal"
+    },
+    "Sorghum (Jowar)": {
+      "family": "Poaceae",
+      "category": "Cereal / Millet",
+      "nutrient_habit": "Moderate Feeder / Drought Tolerant",
+      "root_depth": "Deep (60-120 cm)",
+      "rotation_group": "Millet"
+    },
+    "Pearl Millet (Bajra)": {
+      "family": "Poaceae",
+      "category": "Millet",
+      "nutrient_habit": "Low Feeder / Highly Drought Tolerant",
+      "root_depth": "Deep (60-100 cm)",
+      "rotation_group": "Millet"
+    },
+    "Finger Millet (Ragi)": {
+      "family": "Poaceae",
+      "category": "Millet",
+      "nutrient_habit": "Moderate Feeder / Hardy",
+      "root_depth": "Medium (30-50 cm)",
+      "rotation_group": "Millet"
+    },
+    "Barley": {
+      "family": "Poaceae",
+      "category": "Cereal",
+      "nutrient_habit": "Moderate Feeder",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Cereal"
+    },
+    "Small Millets": {
+      "family": "Poaceae",
+      "category": "Millet",
+      "nutrient_habit": "Low Feeder",
+      "root_depth": "Shallow (20-40 cm)",
+      "rotation_group": "Millet"
+    },
+    "Moong (Green Gram)": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Atmospheric N Fixer / Light Feeder",
+      "root_depth": "Medium (30-50 cm)",
+      "rotation_group": "Legume"
+    },
+    "Black Gram (Urad)": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Atmospheric N Fixer / Light Feeder",
+      "root_depth": "Medium (30-50 cm)",
+      "rotation_group": "Legume"
+    },
+    "Pigeonpea (Arhar/Tur)": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Deep-Rooted N Fixer",
+      "root_depth": "Deep (90-150 cm)",
+      "rotation_group": "Legume"
+    },
+    "Chickpea (Gram)": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Atmospheric N Fixer",
+      "root_depth": "Deep (60-100 cm)",
+      "rotation_group": "Legume"
+    },
+    "Lentil (Masoor)": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Atmospheric N Fixer",
+      "root_depth": "Medium (30-50 cm)",
+      "rotation_group": "Legume"
+    },
+    "Cowpea (Lobia)": {
+      "family": "Fabaceae",
+      "category": "Pulse / Legume",
+      "nutrient_habit": "Atmospheric N Fixer / Cover Crop",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Legume"
+    },
+    "Horse-gram": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Atmospheric N Fixer / Drought Hardy",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Legume"
+    },
+    "Field Pea": {
+      "family": "Fabaceae",
+      "category": "Pulse",
+      "nutrient_habit": "Atmospheric N Fixer",
+      "root_depth": "Medium (30-50 cm)",
+      "rotation_group": "Legume"
+    },
+    "Soybean": {
+      "family": "Fabaceae",
+      "category": "Oilseed / Legume",
+      "nutrient_habit": "Atmospheric N Fixer & Heavy P Feeder",
+      "root_depth": "Medium (40-70 cm)",
+      "rotation_group": "Legume"
+    },
+    "Groundnut": {
+      "family": "Fabaceae",
+      "category": "Oilseed / Legume",
+      "nutrient_habit": "N Fixer / Calcium & P Feeder",
+      "root_depth": "Medium (30-50 cm)",
+      "rotation_group": "Legume"
+    },
+    "Rapeseed & Mustard": {
+      "family": "Brassicaceae",
+      "category": "Oilseed",
+      "nutrient_habit": "Heavy Sulfur & N Feeder",
+      "root_depth": "Deep (60-100 cm)",
+      "rotation_group": "Crucifer"
+    },
+    "Sunflower": {
+      "family": "Asteraceae",
+      "category": "Oilseed",
+      "nutrient_habit": "Heavy Feeder / Deep Taproot",
+      "root_depth": "Deep (100-150 cm)",
+      "rotation_group": "Aster"
+    },
+    "Sesame (Sesamum)": {
+      "family": "Pedaliaceae",
+      "category": "Oilseed",
+      "nutrient_habit": "Moderate Feeder / Heat Tolerant",
+      "root_depth": "Medium (40-70 cm)",
+      "rotation_group": "Oilseed"
+    },
+    "Castor Seed": {
+      "family": "Euphorbiaceae",
+      "category": "Oilseed",
+      "nutrient_habit": "Deep Taproot / Drought Tolerant",
+      "root_depth": "Deep (100-180 cm)",
+      "rotation_group": "Commercial"
+    },
+    "Linseed": {
+      "family": "Linaceae",
+      "category": "Oilseed / Fiber",
+      "nutrient_habit": "Moderate Feeder",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Oilseed"
+    },
+    "Niger Seed": {
+      "family": "Asteraceae",
+      "category": "Oilseed",
+      "nutrient_habit": "Low Feeder / Soil Restorer",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Aster"
+    },
+    "Safflower": {
+      "family": "Asteraceae",
+      "category": "Oilseed",
+      "nutrient_habit": "Deep Rooted / Salt Tolerant",
+      "root_depth": "Very Deep (150-200 cm)",
+      "rotation_group": "Aster"
+    },
+    "Cotton": {
+      "family": "Malvaceae",
+      "category": "Fiber / Commercial",
+      "nutrient_habit": "Heavy N & K Feeder",
+      "root_depth": "Deep (90-150 cm)",
+      "rotation_group": "Fiber"
+    },
+    "Jute": {
+      "family": "Malvaceae",
+      "category": "Fiber",
+      "nutrient_habit": "Heavy Feeder / High Biomass",
+      "root_depth": "Medium (40-60 cm)",
+      "rotation_group": "Fiber"
+    },
+    "Mesta": {
+      "family": "Malvaceae",
+      "category": "Fiber",
+      "nutrient_habit": "Moderate Feeder",
+      "root_depth": "Medium (40-60 cm)",
+      "rotation_group": "Fiber"
+    },
+    "Sugarcane": {
+      "family": "Poaceae",
+      "category": "Commercial / Cash",
+      "nutrient_habit": "Exhaustive Feeder (High N, P, K & Water)",
+      "root_depth": "Deep (100-150 cm)",
+      "rotation_group": "Sugarcane"
+    },
+    "Tobacco": {
+      "family": "Solanaceae",
+      "category": "Commercial",
+      "nutrient_habit": "Heavy K & N Feeder",
+      "root_depth": "Medium (40-70 cm)",
+      "rotation_group": "Solanaceous"
+    },
+    "Potato": {
+      "family": "Solanaceae",
+      "category": "Vegetable / Tuber",
+      "nutrient_habit": "Heavy K & N Feeder / Tuberous",
+      "root_depth": "Shallow (20-40 cm)",
+      "rotation_group": "Solanaceous"
+    },
+    "Onion": {
+      "family": "Amaryllidaceae",
+      "category": "Vegetable / Bulb",
+      "nutrient_habit": "Moderate Feeder (High S & K)",
+      "root_depth": "Shallow (15-25 cm)",
+      "rotation_group": "Alliaceae"
+    },
+    "Garlic": {
+      "family": "Amaryllidaceae",
+      "category": "Spice / Bulb",
+      "nutrient_habit": "Moderate Feeder",
+      "root_depth": "Shallow (15-25 cm)",
+      "rotation_group": "Alliaceae"
+    },
+    "Tapioca (Cassava)": {
+      "family": "Euphorbiaceae",
+      "category": "Root Tuber",
+      "nutrient_habit": "Heavy K Feeder / Drought Hardy",
+      "root_depth": "Medium (40-80 cm)",
+      "rotation_group": "Root"
+    },
+    "Sweet Potato": {
+      "family": "Convolvulaceae",
+      "category": "Root Tuber",
+      "nutrient_habit": "Moderate K Feeder",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Root"
+    },
+    "Arecanut": {
+      "family": "Arecaceae",
+      "category": "Plantation",
+      "nutrient_habit": "Perennial Feeder (N, P, K, Mg)",
+      "root_depth": "Deep Perennial (100-200 cm)",
+      "rotation_group": "Perennial Plantation"
+    },
+    "Coconut": {
+      "family": "Arecaceae",
+      "category": "Plantation",
+      "nutrient_habit": "Perennial Feeder (High K, Cl, N)",
+      "root_depth": "Deep Perennial (150-300 cm)",
+      "rotation_group": "Perennial Plantation"
+    },
+    "Cashewnut": {
+      "family": "Anacardiaceae",
+      "category": "Plantation / Nut",
+      "nutrient_habit": "Perennial Hardy / Low Nutrients",
+      "root_depth": "Deep Perennial (200-400 cm)",
+      "rotation_group": "Perennial Plantation"
+    },
+    "Banana": {
+      "family": "Musaceae",
+      "category": "Fruit / Plantation",
+      "nutrient_habit": "Heavy K & Water Feeder",
+      "root_depth": "Shallow-Medium (30-60 cm)",
+      "rotation_group": "Banana"
+    },
+    "Turmeric": {
+      "family": "Zingiberaceae",
+      "category": "Spice / Rhizome",
+      "nutrient_habit": "Heavy Organic & K Feeder",
+      "root_depth": "Shallow Rhizome (20-35 cm)",
+      "rotation_group": "Rhizome"
+    },
+    "Ginger": {
+      "family": "Zingiberaceae",
+      "category": "Spice / Rhizome",
+      "nutrient_habit": "Heavy K & N Feeder",
+      "root_depth": "Shallow Rhizome (20-30 cm)",
+      "rotation_group": "Rhizome"
+    },
+    "Black Pepper": {
+      "family": "Piperaceae",
+      "category": "Spice / Vine",
+      "nutrient_habit": "Perennial Shade Vine",
+      "root_depth": "Medium Perennial (40-80 cm)",
+      "rotation_group": "Perennial Spice"
+    },
+    "Chilli (Dry)": {
+      "family": "Solanaceae",
+      "category": "Spice / Vegetable",
+      "nutrient_habit": "Heavy N & K Feeder",
+      "root_depth": "Medium (30-60 cm)",
+      "rotation_group": "Solanaceous"
+    },
+    "Cardamom": {
+      "family": "Zingiberaceae",
+      "category": "Spice",
+      "nutrient_habit": "Shade Loving Perennial",
+      "root_depth": "Shallow Rhizome (20-40 cm)",
+      "rotation_group": "Perennial Spice"
+    },
+    "Coriander": {
+      "family": "Apiaceae",
+      "category": "Spice",
+      "nutrient_habit": "Light Feeder",
+      "root_depth": "Shallow (20-40 cm)",
+      "rotation_group": "Spice"
+    },
+    "Tea": {
+      "family": "Theaceae",
+      "category": "Plantation",
+      "nutrient_habit": "Acidic Soil Perennial (N, K)",
+      "root_depth": "Deep Perennial (100-200 cm)",
+      "rotation_group": "Perennial Plantation"
+    },
+    "Coffee": {
+      "family": "Rubiaceae",
+      "category": "Plantation",
+      "nutrient_habit": "Shade Perennial (N, K, P)",
+      "root_depth": "Deep Perennial (150-250 cm)",
+      "rotation_group": "Perennial Plantation"
+    },
+    "Rubber": {
+      "family": "Euphorbiaceae",
+      "category": "Plantation / Industrial",
+      "nutrient_habit": "Perennial Tree",
+      "root_depth": "Deep Tree (200-500 cm)",
+      "rotation_group": "Perennial Tree"
+    }
+  },
+  "default": {
+    "family": "General Agronomic",
+    "category": "Field Crop",
+    "nutrient_habit": "Moderate Feeder",
+    "root_depth": "Medium (30-60 cm)",
+    "rotation_group": "General"
+  }
+}

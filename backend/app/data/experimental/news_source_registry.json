@@ -1,0 +1,46 @@
+{
+  "credibility_tiers": {
+    "TIER_1": {
+      "label": "Government & Scientific Authorities",
+      "credibility_score": 1.0,
+      "sources": [
+        "Ministry of Agriculture & Farmers Welfare (DA&FW)",
+        "India Meteorological Department (IMD)",
+        "Press Information Bureau (PIB Agriculture)",
+        "Indian Council of Agricultural Research (ICAR)",
+        "State Agriculture Departments",
+        "Commission for Agricultural Costs and Prices (CACP)"
+      ],
+      "ml_weight": 1.0
+    },
+    "TIER_2": {
+      "label": "Reputable Financial & Agricultural Media",
+      "credibility_score": 0.8,
+      "sources": [
+        "The Hindu BusinessLine (Agri-Business)",
+        "Economic Times (Agriculture)",
+        "Financial Express (Agri Section)",
+        "Press Trust of India (PTI)",
+        "Reuters India Agriculture",
+        "Krishi Jagran"
+      ],
+      "ml_weight": 0.8
+    },
+    "TIER_3": {
+      "label": "Unverified Websites & Social Media",
+      "credibility_score": 0.0,
+      "sources": [
+        "Unverified Agri Blogs",
+        "Social Media Posts"
+      ],
+      "ml_weight": 0.0,
+      "note": "STRICTLY EXCLUDED from ML inference."
+    }
+  },
+  "geographic_relevance_weights": {
+    "DISTRICT": 1.0,
+    "STATE": 0.8,
+    "NATIONAL": 0.5,
+    "INTERNATIONAL": 0.3
+  }
+}

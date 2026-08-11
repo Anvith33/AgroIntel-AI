@@ -1,0 +1,37 @@
+{
+  "model_name": "RandomForestClassifier",
+  "n_estimators": 100,
+  "supported_crop_classes_count": 22,
+  "unseen_test_accuracy": 0.9955,
+  "weighted_f1_score": 0.9955,
+  "cv_5fold_mean_accuracy": 0.9959,
+  "cv_5fold_std": 0.0027,
+  "class_performance_summary": {
+    "rice": {
+      "precision": 1.0,
+      "recall": 0.95,
+      "f1-score": 0.9743589743589743,
+      "support": 20.0
+    },
+    "maize": {
+      "precision": 0.9523809523809523,
+      "recall": 1.0,
+      "f1-score": 0.975609756097561,
+      "support": 20.0
+    },
+    "chickpea": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 20.0
+    },
+    "cotton": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 20.0
+    }
+  },
+  "district_candidate_restriction_rule": "Random Forest evaluates probabilities ONLY for crops present in the district candidate list. RF cannot introduce outside crops.",
+  "perennial_crop_preservation_rule": "Perennial crops (Arecanut, Coconut, Coffee, Tea, Rubber, Banana, Black Pepper) are explicitly cataloged under Whole Year/Perennial cycles."
+}

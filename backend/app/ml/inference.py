@@ -150,13 +150,12 @@ def _predict_xgboost(model, recent_prices: list, target_date: date, horizon_days
 
 def _predict_arima(model, horizon_days: int) -> list:
     """Generate ARIMA forecasts (weekly model → daily interpolation)."""
-    # ARIMA is weekly; convert horizon to weeks
     weeks = max(1, horizon_days // 7 + 1)
     forecast = model.forecast(steps=weeks)
-    # Interpolate back to daily
+    vals = forecast.values if hasattr(forecast, "values") else forecast
     daily = []
-    for val in forecast.values:
-        daily.extend([val] * 7)
+    for val in vals:
+        daily.extend([float(val)] * 7)
     return daily[:horizon_days]
 
 
@@ -239,54 +238,56 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
             logger.warning(f"MLP predict error: {e}")
 
     # ── Select best model ─────────────────────────────────────────────────────
-    metrics = bundle.get("metrics") or {}
-    model_metrics = metrics.get("models", {})
-    best_model = metrics.get("best_model", "prophet")
-
-    # Fallback: pick the first available model if best isn't available
-    if best_model not in all_predictions:
+    # Evaluated best models per crop from price_model_evaluation.json
+    EVALUATED_BEST_MODELS = {
+        "rice": "xgboost",
+        "wheat": "prophet",
+        "maize": "xgboost",
+        "onion": "xgboost",
+        "potato": "xgboost",
+    }
+    
+    preferred_model = EVALUATED_BEST_MODELS.get(crop, "prophet")
+    if preferred_model in all_predictions:
+        best_model = preferred_model
+    else:
         best_model = next(iter(all_predictions), None)
 
     if not all_predictions or best_model is None:
-        # Last resort: return a trend-based estimate
-        cfg = CROPS[crop]
-        estimated = cfg["base_price"] + cfg["trend_per_year"] * 5
         return {
+            "available": False,
             "crop": crop,
-            "current_price": round(estimated, 2),
-            "predicted_price": round(estimated * 1.02, 2),
-            "predictions": [round(estimated * 1.02, 2)] * horizon_days,
-            "best_model": "fallback",
+            "status": "FORECAST_UNAVAILABLE",
+            "current_price": live_current_price,
+            "predicted_price": None,
+            "predictions": [],
+            "best_model": "None",
             "model_comparison": {},
-            "error": "No trained models found. Please run training first.",
+            "message": "Current Mandi price is available, but a validated future forecast could not be generated.",
             "black_swan_warning": None,
         }
 
-    best_predictions = all_predictions[best_model]
+    # 30-day forecast series generated directly by trained ML model
+    best_predictions = [round(float(p), 2) for p in all_predictions[best_model]]
     
-    # Anchor predictions to live price if available
-    base_pred = float(np.mean(best_predictions[:7]))
-    current_price = round(live_current_price if live_current_price else (recent_prices[-1] if recent_prices else base_pred), 2)
+    # Current observed Mandi modal price
+    current_price = round(float(live_current_price if live_current_price else (recent_prices[-1] if recent_prices else 2000.0)), 2)
     
-    # Adjust prediction relative to live price gap
-    adjustment = current_price - base_pred
-    adjusted_predictions = [round(p + adjustment, 2) for p in best_predictions]
-    predicted_price = round(float(np.mean(adjusted_predictions[:7])), 2)
+    # Predicted 30-day horizon price directly from ML model forecast
+    predicted_price = round(float(best_predictions[29] if len(best_predictions) >= 30 else best_predictions[-1]), 2)
 
-    # Calculate Sell/Hold Recommendation based on 15-day trend
-    price_in_15_days = adjusted_predictions[14] if len(adjusted_predictions) > 14 else adjusted_predictions[-1]
-    expected_change = price_in_15_days - current_price
-    percent_change = (expected_change / current_price) * 100
+    # Calculate Sell/Hold Recommendation based on 30-day trend using 3% threshold rule
+    percent_change = round(((predicted_price - current_price) / current_price) * 100.0, 2)
     
-    if percent_change > 2.0:
-        recommendation = "HOLD"
-        reason = f"Prices are expected to rise by {percent_change:.1f}% in the next 15 days."
-    elif percent_change < -2.0:
+    if percent_change <= -3.0:
         recommendation = "SELL"
-        reason = f"Prices are expected to drop by {abs(percent_change):.1f}% in the next 15 days."
+        reason = f"Prices are forecasted to drop by {abs(percent_change):.1f}% from ₹{current_price} to ₹{predicted_price} over the next 30 days."
+    elif percent_change >= 3.0:
+        recommendation = "HOLD"
+        reason = f"Prices are forecasted to rise by {percent_change:.1f}% from ₹{current_price} to ₹{predicted_price} over the next 30 days."
     else:
         recommendation = "HOLD"
-        reason = "Prices are expected to remain stable."
+        reason = f"Prices are forecasted to remain steady within ±3% ({percent_change:+.1f}%) over the next 30 days."
 
     # ── Black Swan context ────────────────────────────────────────────────────
     black_swan_info = None
@@ -300,6 +301,8 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
         }
 
     # ── Model comparison table ────────────────────────────────────────────────
+    metrics = bundle.get("metrics") or {}
+    model_metrics = metrics.get("models", {})
     comparison = {}
     model_labels = {
         "prophet": "Prophet (Seasonal)",
@@ -312,7 +315,7 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
         m_rmse = model_metrics.get(m_name, {}).get("rmse", None)
         comparison[m_name] = {
             "label": model_labels.get(m_name, m_name),
-            "predicted_price": round(float(np.mean(m_preds[:7])), 2),
+            "predicted_price": round(float(m_preds[29] if len(m_preds) >= 30 else m_preds[-1]), 2),
             "mae": m_mae,
             "rmse": m_rmse,
             "is_best": m_name == best_model,
@@ -329,7 +332,7 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
         "state": state,
         "current_price": current_price,
         "predicted_price": predicted_price,
-        "predictions": adjusted_predictions,
+        "predictions": best_predictions,
         "date_labels": date_labels,
         "recommendation": recommendation,
         "recommendation_reason": reason,

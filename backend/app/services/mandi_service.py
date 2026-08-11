@@ -172,114 +172,128 @@ def get_latest_price(crop: str, state: Optional[str] = None) -> Optional["MandiP
             cached_entry["data_age_days"] = data_age
             return _build_result(cached_entry, from_api=True)
 
-    # ── 2. Live API fetch (data.gov.in) ─────────────────────────────────────
-    api_success = False
-    api_error_msg = ""
+RESOURCE_1_URL = "https://api.data.gov.in/resource/9ef84268-d588-465a-a308-a864a43d0070"
+RESOURCE_2_URL = "https://api.data.gov.in/resource/35be999b-0b15-465f-b964-1e582e0e0129"
+
+def _normalize_api_record(rec: dict) -> dict:
+    """Normalize records from Resource 1 or Resource 2 with various field naming conventions."""
+    arr_str = rec.get("arrival_date") or rec.get("date") or ""
+    
+    modal_val = rec.get("modal_price") or rec.get("modal_price_rs_qtl") or 0.0
+    min_val   = rec.get("min_price") or rec.get("min_price_rs_qtl") or 0.0
+    max_val   = rec.get("max_price") or rec.get("max_price_rs_qtl") or 0.0
+
+    return {
+        "commodity": rec.get("commodity") or rec.get("commodity_name") or rec.get("crop") or "Unknown",
+        "state": rec.get("state") or rec.get("state_name") or "All",
+        "district": rec.get("district") or rec.get("district_name") or "Unknown",
+        "market": rec.get("market") or rec.get("market_name") or "Unknown Mandi",
+        "arrival_date": str(arr_str),
+        "modal_price": float(modal_val) if modal_val else 0.0,
+        "min_price": float(min_val) if min_val else 0.0,
+        "max_price": float(max_val) if max_val else 0.0,
+    }
+
+
+def get_latest_price(crop: str, state: Optional[str] = None) -> Optional["MandiPriceResult"]:
+    """
+    Fetch the latest available mandi price for a crop using Resource 1 and Resource 2 APIs.
+    """
+    crop_lower = crop.lower()
+    commodity = CROP_TO_COMMODITY.get(crop_lower, crop.capitalize())
+
+    cache = _load_cache()
+    cache_key = f"{crop_lower}_{(state or 'all').lower()}"
+
+    today = date.today()
+    request_time = datetime.now().isoformat(timespec="seconds")
+
+    # ── 1. Disk cache check (within TTL) ────────────────────────────────────
+    cached_entry = cache.get(cache_key)
+    if cached_entry:
+        fetched_at = cached_entry.get("fetched_at", 0)
+        cache_age_s = time.time() - fetched_at
+        if cache_age_s < settings.MANDI_CACHE_TTL_SECONDS:
+            rec_date_str = cached_entry.get("arrival_date", "")
+            rec_date = _parse_date(rec_date_str) or today
+            data_age = (today - rec_date).days
+            logger.info(
+                f"[MANDI] CACHE HIT for {cache_key} | "
+                f"record_date={rec_date_str} | data_age={data_age}d | "
+                f"cache_age={round(cache_age_s/3600,1)}h | fallback_used=No"
+            )
+            cached_entry["data_age_days"] = data_age
+            return _build_result(cached_entry, from_api=True)
+
+    # ── 2. Live API fetch (Resource 1 then Resource 2) ─────────────────────
     t_api_start = time.time()
 
-    try:
-        params: dict = {
-            "api-key": settings.MARKET_DATA_API_KEY,
-            "format": "json",
-            "filters[commodity]": commodity,
-            "limit": 50,
-            "sort[arrival_date]": "desc",
-        }
-        if state:
-            params["filters[state]"] = state
-
-        response = httpx.get(
-            settings.MARKET_DATA_BASE_URL,
-            params=params,
-            timeout=8.0,       # Increased from 3.0s → 8.0s (AGMARKNET can be slow)
-        )
-        api_elapsed_ms = round((time.time() - t_api_start) * 1000, 1)
-
-        response.raise_for_status()
-        api_data = response.json()
-        records = api_data.get("records", [])
-
-        if not records:
-            api_error_msg = "No records in API response"
-            logger.warning(
-                f"[MANDI] API returned 0 records for {commodity} | "
-                f"request_time={request_time} | elapsed={api_elapsed_ms}ms | fallback_used=Yes"
-            )
-        else:
-            # ── SUCCESS: Accept regardless of record age ──────────────────
-            api_success = True
-            rec = records[0]
-            arrival_str = rec.get("arrival_date", "")
-            arrival = _parse_date(arrival_str)
-            data_age_days = (today - arrival).days if arrival else 999
-            arrival_iso = arrival.isoformat() if arrival else arrival_str
-
-            # Freshness label for logging
-            if data_age_days <= FRESHNESS_FRESH_DAYS:
-                freshness = "Fresh"
-            elif data_age_days <= FRESHNESS_RECENT_DAYS:
-                freshness = "Recent"
-            else:
-                freshness = "Historical"
-
-            entry = {
-                "crop": crop_lower,
-                "modal_price": float(rec.get("modal_price", 0)),
-                "min_price": float(rec.get("min_price", 0)),
-                "max_price": float(rec.get("max_price", 0)),
-                "arrival_date": arrival_iso,
-                "market": rec.get("market", "Unknown"),
-                "state": rec.get("state", state or "All"),
-                "data_age_days": data_age_days,
-                "fetched_at": time.time(),
+    for res_name, res_url in [("Resource 1 (9ef84268)", RESOURCE_1_URL), ("Resource 2 (35be999b)", RESOURCE_2_URL)]:
+        try:
+            params: dict = {
+                "api-key": settings.MARKET_DATA_API_KEY,
+                "format": "json",
+                "filters[commodity]": commodity,
+                "limit": 50,
+                "sort[arrival_date]": "desc",
             }
+            if state:
+                params["filters[state]"] = state
 
-            # Persist to cache
-            cache[cache_key] = entry
-            _save_cache(cache)
+            response = httpx.get(res_url, params=params, timeout=0.5)
+            api_elapsed_ms = round((time.time() - t_api_start) * 1000, 1)
 
-            logger.warning(
-                f"[MANDI] API SUCCESS | crop={commodity} | "
-                f"request_time={request_time} | elapsed={api_elapsed_ms}ms | "
-                f"record_date={arrival_iso} | today={today} | "
-                f"data_age={data_age_days}d | freshness={freshness} | "
-                f"modal=₹{entry['modal_price']}/q | market={entry['market']} | "
-                f"fallback_used=No"
-            )
-            return _build_result(entry, from_api=True)
+            if response.status_code == 200:
+                api_data = response.json()
+                raw_records = api_data.get("records", [])
+                if raw_records:
+                    rec = _normalize_api_record(raw_records[0])
+                    arrival_str = rec["arrival_date"]
+                    arrival = _parse_date(arrival_str)
+                    data_age_days = (today - arrival).days if arrival else 999
+                    arrival_iso = arrival.isoformat() if arrival else arrival_str
 
-    except httpx.TimeoutException as e:
-        api_elapsed_ms = round((time.time() - t_api_start) * 1000, 1)
-        api_error_msg = f"Timeout after {api_elapsed_ms}ms"
-    except httpx.HTTPStatusError as e:
-        api_elapsed_ms = round((time.time() - t_api_start) * 1000, 1)
-        api_error_msg = f"HTTP {e.response.status_code}"
-    except Exception as e:
-        api_elapsed_ms = round((time.time() - t_api_start) * 1000, 1)
-        api_error_msg = str(e)
+                    if data_age_days <= FRESHNESS_FRESH_DAYS:
+                        freshness = "Fresh"
+                    elif data_age_days <= FRESHNESS_RECENT_DAYS:
+                        freshness = "Recent"
+                    else:
+                        freshness = "Historical"
 
-    # ── 3. Stale cache fallback (API failed) ─────────────────────────────────
-    logger.warning(
-        f"[MANDI] API FAILED | crop={commodity} | "
-        f"request_time={request_time} | error='{api_error_msg}' | "
-        f"falling back to stale disk cache"
-    )
+                    entry = {
+                        "crop": crop_lower,
+                        "modal_price": rec["modal_price"],
+                        "min_price": rec["min_price"],
+                        "max_price": rec["max_price"],
+                        "arrival_date": arrival_iso,
+                        "market": rec["market"],
+                        "state": rec["state"],
+                        "data_age_days": data_age_days,
+                        "fetched_at": time.time(),
+                        "source": f"data.gov.in — {res_name}"
+                    }
 
+                    # Persist to cache
+                    cache[cache_key] = entry
+                    _save_cache(cache)
+
+                    logger.warning(
+                        f"[MANDI] API SUCCESS via {res_name} | crop={commodity} | "
+                        f"record_date={arrival_iso} | modal=₹{entry['modal_price']}/q"
+                    )
+                    return _build_result(entry, from_api=True)
+        except Exception as e:
+            logger.debug(f"[MANDI] {res_name} call failed: {e}")
+            continue
+
+    # ── 3. Stale cache fallback ─────────────────────────────────────────────
     stale_entry = cache.get(cache_key)
     if stale_entry:
         rec_date_str = stale_entry.get("arrival_date", "")
         rec_date = _parse_date(rec_date_str) or today
         data_age = (today - rec_date).days
         stale_entry["data_age_days"] = data_age
-        logger.warning(
-            f"[MANDI] STALE CACHE USED | key={cache_key} | "
-            f"record_date={rec_date_str} | data_age={data_age}d | fallback_used=No (cache)"
-        )
         return _build_result(stale_entry, from_api=True)
 
-    # ── 4. No data at all — caller must use historical CSV ───────────────────
-    logger.warning(
-        f"[MANDI] NO DATA AVAILABLE | key={cache_key} | "
-        f"today={today} | fallback_used=Yes (historical CSV)"
-    )
     return None
+

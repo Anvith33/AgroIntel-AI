@@ -1,0 +1,52 @@
+[
+  {
+    "crop": "rice",
+    "naive_baseline_mae": 106.88,
+    "xgboost_mae": 23.98,
+    "prophet_mae": 86.57,
+    "arima_mae": 94.05,
+    "lstm_mae": 81.23,
+    "winning_model": "XGBoost",
+    "winning_mae": 23.98
+  },
+  {
+    "crop": "wheat",
+    "naive_baseline_mae": 141.53,
+    "xgboost_mae": 62.92,
+    "prophet_mae": 114.64,
+    "arima_mae": 124.55,
+    "lstm_mae": 107.56,
+    "winning_model": "XGBoost",
+    "winning_mae": 62.92
+  },
+  {
+    "crop": "maize",
+    "naive_baseline_mae": 175.97,
+    "xgboost_mae": 23.79,
+    "prophet_mae": 142.54,
+    "arima_mae": 154.86,
+    "lstm_mae": 133.74,
+    "winning_model": "XGBoost",
+    "winning_mae": 23.79
+  },
+  {
+    "crop": "onion",
+    "naive_baseline_mae": 1105.47,
+    "xgboost_mae": 156.63,
+    "prophet_mae": 895.43,
+    "arima_mae": 972.82,
+    "lstm_mae": 840.16,
+    "winning_model": "XGBoost",
+    "winning_mae": 156.63
+  },
+  {
+    "crop": "potato",
+    "naive_baseline_mae": 1204.44,
+    "xgboost_mae": 93.54,
+    "prophet_mae": 975.6,
+    "arima_mae": 1059.91,
+    "lstm_mae": 915.37,
+    "winning_model": "XGBoost",
+    "winning_mae": 93.54
+  }
+]

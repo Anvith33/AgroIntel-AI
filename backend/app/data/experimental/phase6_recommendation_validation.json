@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-08-11T11:25:31.167610",
+  "validation_tests": [
+    {
+      "test": "Ludhiana Punjab Rabi",
+      "result": "PASS",
+      "note": "Wheat correctly recommended"
+    },
+    {
+      "test": "Bardhaman West Bengal Kharif",
+      "district": "Bardhaman",
+      "top_crop": "Horse-gram"
+    },
+    {
+      "test": "Amritsar Punjab Rabi",
+      "top_crop": "Other Rabi Pulses"
+    }
+  ],
+  "water_unknown_rule": "ENFORCED - water_suitability_status=UNKNOWN never converts to SUITABLE",
+  "evidence_restriction": "All candidates come strictly from nationwide_candidate_matrix_v2.json",
+  "no_hardcoded_districts": true,
+  "perennial_preservation": true
+}

@@ -1,0 +1,47 @@
+{
+  "schema_name": "AgroIntel_News_Intelligence_Schema_v2",
+  "geographic_categories": [
+    "LOCAL",
+    "STATE",
+    "NATIONAL",
+    "INTERNATIONAL"
+  ],
+  "event_categories": [
+    "FLOOD",
+    "DROUGHT",
+    "HEAVY_RAIN",
+    "CYCLONE",
+    "HEATWAVE",
+    "PEST_OUTBREAK",
+    "DISEASE_OUTBREAK",
+    "EXPORT_RESTRICTION",
+    "IMPORT_RESTRICTION",
+    "MSP_POLICY",
+    "SUBSIDY",
+    "FERTILIZER",
+    "FUEL_PRICE",
+    "SUPPLY_SHOCK",
+    "DEMAND_SHOCK",
+    "WAR_CONFLICT",
+    "PANDEMIC",
+    "TRADE_POLICY",
+    "CROP_DAMAGE",
+    "MARKET_PRICE_EVENT",
+    "OTHER"
+  ],
+  "fields": {
+    "article_id": "String (SHA256 Hash)",
+    "title": "String",
+    "source_name": "String",
+    "source_tier": "Enum [TIER_1, TIER_2, TIER_3]",
+    "geographic_scope": "Enum [LOCAL, STATE, NATIONAL, INTERNATIONAL]",
+    "target_state": "String",
+    "target_district": "String",
+    "target_crop": "String",
+    "event_category": "Enum [21 Event Categories]",
+    "severity_level": "Integer (1-5)",
+    "impact_direction": "Enum [POSITIVE, NEGATIVE, UNCERTAIN]",
+    "confidence_score": "Float (0.0 to 1.0)",
+    "verification_status": "Enum [VERIFIED_TIER1, UNVERIFIED_EXCLUDED]"
+  }
+}

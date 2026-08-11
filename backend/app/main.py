@@ -25,6 +25,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from app.api import advisory_router, crop_router, health_router, price_router, system_router, endpoints
+from app.api import phase6_router
 from app.core.config import settings
 
 # ── Structured Logging ────────────────────────────────────────────────────────
@@ -188,6 +189,7 @@ app.include_router(price_router.router)
 app.include_router(crop_router.router)
 app.include_router(advisory_router.router)
 app.include_router(endpoints.router, prefix="/api")  # Legacy support
+app.include_router(phase6_router.router)  # Phase 6 Final Integration
 
 
 # ── Serve Frontend ────────────────────────────────────────────────────────────

@@ -1,0 +1,2462 @@
+[
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "crop": "Arecanut",
+    "year": 2010,
+    "phase1_datagov_value": 10562.45,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 10562.45,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "crop": "Banana",
+    "year": 2010,
+    "phase1_datagov_value": 9069.12,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 9069.12,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "crop": "Black Gram (Urad)",
+    "year": 2010,
+    "phase1_datagov_value": 1.16,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1.16,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "crop": "Black Pepper",
+    "year": 2010,
+    "phase1_datagov_value": 54.5,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 54.5,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "crop": "Cashewnut",
+    "year": 2010,
+    "phase1_datagov_value": 1372.83,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1372.83,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "crop": "Arecanut",
+    "year": 2010,
+    "phase1_datagov_value": 15740.7,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 15740.7,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "crop": "Banana",
+    "year": 2010,
+    "phase1_datagov_value": 28623.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 28623.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "crop": "Black Gram (Urad)",
+    "year": 2010,
+    "phase1_datagov_value": 458.79,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 458.79,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "crop": "Black Pepper",
+    "year": 2010,
+    "phase1_datagov_value": 204.64,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 204.64,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "crop": "Cashewnut",
+    "year": 2010,
+    "phase1_datagov_value": 170.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 170.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "crop": "Arecanut",
+    "year": 2010,
+    "phase1_datagov_value": 21732.66,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 21732.66,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "crop": "Banana",
+    "year": 2010,
+    "phase1_datagov_value": 59732.53,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 59732.53,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "crop": "Black Gram (Urad)",
+    "year": 2010,
+    "phase1_datagov_value": 15.05,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 15.05,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "crop": "Black Pepper",
+    "year": 2010,
+    "phase1_datagov_value": 465.36,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 465.36,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "crop": "Cashewnut",
+    "year": 2010,
+    "phase1_datagov_value": 141.96,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 141.96,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Anantapur",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 3396.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3396.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Anantapur",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 1701534.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1701534.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Anantapur",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2002,
+    "phase1_datagov_value": 5.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Anantapur",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 1811.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1811.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Anantapur",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 2166.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2166.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Chittoor",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 397236.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 397236.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Chittoor",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 14630.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 14630.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Chittoor",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 5574.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5574.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Chittoor",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 11870.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 11870.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Chittoor",
+    "crop": "Brinjal",
+    "year": 2014,
+    "phase1_datagov_value": 146040.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 146040.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::East Godavari",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 238.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 238.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::East Godavari",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 2533853.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2533853.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::East Godavari",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 3181.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3181.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::East Godavari",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 25433.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 25433.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::East Godavari",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 212425.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 212425.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Guntur",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 1936195.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1936195.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Guntur",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 5853.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5853.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Guntur",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 24420.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 24420.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Guntur",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 1245396.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1245396.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Guntur",
+    "crop": "Bottle Gourd",
+    "year": 2003,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kadapa",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 3531337.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3531337.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kadapa",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 924.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 924.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kadapa",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 3616.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3616.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kadapa",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 24937.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 24937.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kadapa",
+    "crop": "Bottle Gourd",
+    "year": 2002,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Krishna",
+    "crop": "Arecanut",
+    "year": 2010,
+    "phase1_datagov_value": 61.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 61.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Krishna",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 332574.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 332574.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Krishna",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 2907.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2907.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Krishna",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 10766.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 10766.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Krishna",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 1890518.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1890518.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kurnool",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 487620.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 487620.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kurnool",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 5279.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5279.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kurnool",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 99177.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 99177.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kurnool",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 91239.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 91239.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Kurnool",
+    "crop": "Bottle Gourd",
+    "year": 2003,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Prakasam",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 83445.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 83445.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Prakasam",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 3031.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3031.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Prakasam",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 6239.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 6239.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Prakasam",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 223713.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 223713.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Prakasam",
+    "crop": "Bottle Gourd",
+    "year": 2003,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Spsr Nellore",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 182514.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 182514.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Spsr Nellore",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 985.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 985.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Spsr Nellore",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 2522.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2522.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Spsr Nellore",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 260583.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 260583.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Spsr Nellore",
+    "crop": "Bottle Gourd",
+    "year": 2003,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Srikakulam",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 325717.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 325717.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Srikakulam",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 2890.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2890.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Srikakulam",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 3812.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3812.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Srikakulam",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 339787.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 339787.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Srikakulam",
+    "crop": "Bottle Gourd",
+    "year": 2003,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Visakhapatanam",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 292892.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 292892.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Visakhapatanam",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 21297.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 21297.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Visakhapatanam",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 5916.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5916.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Visakhapatanam",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 59187.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 59187.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Visakhapatanam",
+    "crop": "Bottle Gourd",
+    "year": 2003,
+    "phase1_datagov_value": 0.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 0.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Vizianagaram",
+    "crop": "Arecanut",
+    "year": 2012,
+    "phase1_datagov_value": 43.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 43.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Vizianagaram",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 1367275.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1367275.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Vizianagaram",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 5232.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5232.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Vizianagaram",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 7141.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 7141.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::Vizianagaram",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 123965.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 123965.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::West Godavari",
+    "crop": "Arecanut",
+    "year": 2010,
+    "phase1_datagov_value": 46.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 46.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::West Godavari",
+    "crop": "Banana",
+    "year": 2013,
+    "phase1_datagov_value": 1869439.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1869439.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::West Godavari",
+    "crop": "Beans & Mutter(vegetable)",
+    "year": 2003,
+    "phase1_datagov_value": 3827.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3827.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::West Godavari",
+    "crop": "Bhindi",
+    "year": 2003,
+    "phase1_datagov_value": 3178.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3178.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Andhra Pradesh::West Godavari",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 111037.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 111037.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Anjaw",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 754.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 754.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Anjaw",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 11220.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 11220.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Anjaw",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 41361.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 41361.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Anjaw",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 4616.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4616.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Anjaw",
+    "crop": "Potato",
+    "year": 2014,
+    "phase1_datagov_value": 9356.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 9356.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Changlang",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 16138.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 16138.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Changlang",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 46224.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 46224.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Changlang",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 403.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 403.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Changlang",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 27919.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 27919.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Changlang",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 81207.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 81207.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Dibang Valley",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 1439.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1439.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Dibang Valley",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 77945.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 77945.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Dibang Valley",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 125.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 125.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Dibang Valley",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 59170.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 59170.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Dibang Valley",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 34560.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 34560.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Kameng",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 2078.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2078.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Kameng",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 4111.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4111.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Kameng",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 129.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 129.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Kameng",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 61324.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 61324.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Kameng",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 28223.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 28223.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Siang",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 2963.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2963.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Siang",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 101399.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 101399.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Siang",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 102.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 102.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Siang",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 110124.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 110124.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Siang",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 100956.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 100956.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Kurung Kumey",
+    "crop": "Chilli (Dry)",
+    "year": 2012,
+    "phase1_datagov_value": 522.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 522.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Kurung Kumey",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 1853.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1853.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Kurung Kumey",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 14416.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 14416.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Kurung Kumey",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 4517.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4517.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Kurung Kumey",
+    "crop": "Potato",
+    "year": 2014,
+    "phase1_datagov_value": 8639.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 8639.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lohit",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 3502.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3502.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lohit",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 148337.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 148337.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lohit",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 125.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 125.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lohit",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 175554.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 175554.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lohit",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 172089.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 172089.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Longding",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 756.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 756.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Longding",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 369.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 369.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Longding",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 7406.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 7406.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Longding",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 571.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 571.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Longding",
+    "crop": "Potato",
+    "year": 2013,
+    "phase1_datagov_value": 86.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 86.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 1753.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1753.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 252715.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 252715.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 130822.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 130822.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 57291.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 57291.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Dibang Valley",
+    "crop": "Potato",
+    "year": 2014,
+    "phase1_datagov_value": 25382.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 25382.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 4120.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4120.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 12886.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 12886.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 25.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 25.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 42394.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 42394.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 35051.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 35051.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Namsai",
+    "crop": "Potato",
+    "year": 2014,
+    "phase1_datagov_value": 794.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 794.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 3849.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3849.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 17911.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 17911.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 52.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 52.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 64199.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 64199.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 50969.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 50969.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tawang",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 1991.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1991.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tawang",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 1070.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1070.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tawang",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 15.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 15.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tawang",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 28498.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 28498.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tawang",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 5911.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5911.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tirap",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 3353.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3353.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tirap",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 6716.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 6716.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tirap",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 60.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 60.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tirap",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 59279.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 59279.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tirap",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 15914.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 15914.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 5240.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5240.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 13503.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 13503.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 6.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 6.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 38542.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 38542.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 22524.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 22524.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 4525.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4525.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 15535.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 15535.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 57.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 57.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 31492.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 31492.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 19237.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 19237.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Kameng",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 2626.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2626.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Kameng",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 1978.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1978.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Kameng",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 56.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 56.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Kameng",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 91750.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 91750.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Kameng",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 4432.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4432.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Siang",
+    "crop": "Chilli (Dry)",
+    "year": 2014,
+    "phase1_datagov_value": 3950.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3950.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Siang",
+    "crop": "Ginger",
+    "year": 2014,
+    "phase1_datagov_value": 25699.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 25699.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Siang",
+    "crop": "Groundnut",
+    "year": 1998,
+    "phase1_datagov_value": 47.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 47.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Siang",
+    "crop": "Maize",
+    "year": 2014,
+    "phase1_datagov_value": 74579.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 74579.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Siang",
+    "crop": "Oilseeds Total",
+    "year": 2014,
+    "phase1_datagov_value": 67396.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 67396.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 19544.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 19544.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 248211.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 248211.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 9091.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 9091.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 1120.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1120.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 780.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 780.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 70432.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 70432.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 825862.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 825862.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 36567.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 36567.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 522.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 522.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 2491.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2491.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 48800.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 48800.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 172553.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 172553.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 17638.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 17638.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 371.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 371.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 1457.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1457.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 30126.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 30126.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 717702.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 717702.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 6653.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 6653.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 661.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 661.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 521.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 521.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 17160.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 17160.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 96068.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 96068.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 4057.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 4057.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 199.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 199.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 430.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 430.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 31945.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 31945.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 378776.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 378776.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 18863.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 18863.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 475.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 475.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 1277.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1277.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 14201.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 14201.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 301305.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 301305.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 6604.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 6604.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 342.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 342.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 698.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 698.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 23050.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 23050.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 316473.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 316473.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 45596.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 45596.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 30.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 30.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 2475.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2475.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 33525.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 33525.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 196924.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 196924.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 5395.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5395.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 1031.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1031.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 165.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 165.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 6009.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 6009.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 217174.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 217174.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 3067.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3067.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 533.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 533.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 143.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 143.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 51920.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 51920.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 734117.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 734117.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 21076.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 21076.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 1202.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1202.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 1556.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1556.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 62953.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 62953.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 746410.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 746410.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 8748.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 8748.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 3507.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3507.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 391.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 391.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 35697.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 35697.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 324590.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 324590.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 3271.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 3271.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 665.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 665.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 215.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 215.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 26236.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 26236.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 572963.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 572963.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 21096.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 21096.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 2214.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 2214.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 877.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 877.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 73412.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 73412.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 660904.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 660904.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 14699.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 14699.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 1344.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1344.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 725.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 725.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "crop": "Arecanut",
+    "year": 2013,
+    "phase1_datagov_value": 5864.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 5864.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "crop": "Banana",
+    "year": 2014,
+    "phase1_datagov_value": 88790.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 88790.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "crop": "Black Gram (Urad)",
+    "year": 2014,
+    "phase1_datagov_value": 1138.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 1138.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "crop": "Black Pepper",
+    "year": 2014,
+    "phase1_datagov_value": 635.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 635.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "crop": "Blackgram",
+    "year": 2008,
+    "phase1_datagov_value": 111.0,
+    "upag_api_value": "NOT_ACCESSIBLE_NO_BEARER_TOKEN",
+    "des_portal_value": 111.0,
+    "source_difference": 0.0,
+    "reconciliation_notes": "Phase 1 APY and DES Portal values align. UPAg direct API requires authenticated token."
+  }
+]

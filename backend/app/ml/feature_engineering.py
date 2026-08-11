@@ -199,8 +199,8 @@ add_features = build_training_features
 def build_inference_features(
     price_tail: list[float],
     target_date: date,
-    monthly_avg_temp: float,
-    monthly_total_rainfall: float,
+    monthly_avg_temp: float = 25.0,
+    monthly_total_rainfall: float = 50.0,
 ) -> pd.DataFrame:
     if len(price_tail) < 30:
         pad_val = price_tail[0] if price_tail else 1000.0

@@ -1,0 +1,1262 @@
+[
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "season": "Rabi",
+    "crop": "Cashewnut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Cashewnut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::Nicobars",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::North and Middle Andaman",
+    "season": "Rabi",
+    "crop": "Cashewnut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Cashewnut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Andaman and Nicobar Islands::South Andamans",
+    "season": "Rabi",
+    "crop": "Cashewnut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Cashewnut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Changlang",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::East Siang",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lohit",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Lower Subansiri",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Papum Pare",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Tirap",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Siang",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::Upper Subansiri",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Arunachal Pradesh::West Siang",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Baksa",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Barpeta",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Bongaigaon",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Cachar",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Chirang",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Darrang",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dhemaji",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dhubri",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dibrugarh",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Dima Hasao",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Goalpara",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Golaghat",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Hailakandi",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Jorhat",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kamrup",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kamrup Metro",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Karbi Anglong",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Karbi Anglong",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Karbi Anglong",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Karimganj",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Karimganj",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Karimganj",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kokrajhar",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kokrajhar",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Kokrajhar",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Lakhimpur",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Lakhimpur",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Lakhimpur",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Marigaon",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Marigaon",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Marigaon",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Nagaon",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Nagaon",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Nagaon",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Nalbari",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Nalbari",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Nalbari",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Sivasagar",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Sivasagar",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Sivasagar",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Sonitpur",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Sonitpur",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Sonitpur",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Tinsukia",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Tinsukia",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Tinsukia",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Udalguri",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Udalguri",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Assam::Udalguri",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Dadra and Nagar Haveli::Dadra and Nagar Haveli",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Bishnupur",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Bishnupur",
+    "season": "Summer",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Chandel",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Chandel",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Churachandpur",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Churachandpur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Imphal East",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Imphal West",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Senapati",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Senapati",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Tamenglong",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Tamenglong",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Thoubal",
+    "season": "Summer",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Ukhrul",
+    "season": "Rabi",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Manipur::Ukhrul",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::East Garo Hills",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::East Garo Hills",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::East Jaintia Hills",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::East Jaintia Hills",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::East Khasi Hills",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::East Khasi Hills",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::Ri Bhoi",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::Ri Bhoi",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::South Garo Hills",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::South Garo Hills",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::West Garo Hills",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::West Garo Hills",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::West Khasi Hills",
+    "season": "Rabi",
+    "crop": "Arecanut",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Arecanut is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Meghalaya::West Khasi Hills",
+    "season": "Rabi",
+    "crop": "Black Pepper",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Black Pepper is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Nagaland::Mokokchung",
+    "season": "Rabi",
+    "crop": "Sugarcane",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Sugarcane is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Aligarh",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Ambedkar Nagar",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Amethi",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Auraiya",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Ayodhya",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Azamgarh",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Baghpat",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Bahraich",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Ballia",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Barabanki",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Bareilly",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Basti",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Budaun",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Bulandshahr",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Deoria",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Etah",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Farrukhabad",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Fatehpur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Ghaziabad",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Gonda",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Gorakhpur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Hardoi",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Hathras",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Jalaun",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Jaunpur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Kannauj",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Kanpur Dehat",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Kaushambi",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Kheri",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Kushi Nagar",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Lucknow",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Maharajganj",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Mainpuri",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Mathura",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Mau",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Mirzapur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Moradabad",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Muzaffarnagar",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Pilibhit",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Pratapgarh",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Prayagraj",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Rae Bareli",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Sambhal",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Sant Kabeer Nagar",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Shahjahanpur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Shravasti",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Siddharth Nagar",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Sitapur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Sultanpur",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  },
+  {
+    "district_id": "Uttar Pradesh::Unnao",
+    "season": "Summer",
+    "crop": "Banana",
+    "rejection_reason": "PERENNIAL_CLASSIFICATION_MISMATCH",
+    "details": "Perennial crop Banana is classified under Whole Year/Perennial growth cycle."
+  }
+]
