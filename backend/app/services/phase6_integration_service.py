@@ -34,6 +34,12 @@ from app.services.nlp_explanation_service import (
     get_crop_information
 )
 
+try:
+    from app.services import mandi_service
+except ImportError:
+    mandi_service = None
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 EXP_DIR = BASE_DIR / "app" / "data" / "experimental"
@@ -659,7 +665,7 @@ class AgroIntelPhase6Engine:
                     break
 
         # 5. Live Mandi Service lookup
-        if not m_data:
+        if not m_data and mandi_service is not None:
             live_res = mandi_service.get_latest_price(crop, canon_st)
             if live_res and live_res.modal_price > 0:
                 m_data = {

@@ -243,17 +243,14 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="predState">State <span class="req">*</span></label>
-                                <select id="predState" class="form-select" required onchange="onStateChange('predState','predDistrict')">
+                                <label for="predState">State (for Mandi Price) <span class="req">*</span></label>
+                                <select id="predState" class="form-select" required>
                                     <option value="">Loading states...</option>
                                 </select>
                             </div>
-
-                            <div class="form-group">
-                                <label for="predDistrict">District <span class="req">*</span></label>
-                                <select id="predDistrict" class="form-select" required>
-                                    <option value="">Select a state first</option>
-                                </select>
+                            <div class="form-group" style="font-size:0.78rem;opacity:0.7;padding:6px 10px;background:rgba(255,255,255,0.04);border-radius:6px;border:1px solid rgba(255,255,255,0.08)">
+                                <span class="material-symbols-rounded" style="font-size:0.9rem;vertical-align:middle;margin-right:4px">info</span>
+                                Price prediction uses a crop-level ML model. State determines the current Mandi price lookup.
                             </div>
 
                             <div class="form-group">
@@ -281,7 +278,7 @@
                         <div class="placeholder-card glass-card">
                             <span class="material-symbols-rounded ph-icon-sym">bar_chart</span>
                             <h3>Ready to Forecast</h3>
-                            <p>Select a crop, location and horizon, then click Generate Price Forecast.</p>
+                            <p>Select a crop and state, then click Generate Price Forecast to see the latest Mandi price and 30-day ML forecast.</p>
                         </div>
                     </div>
                 </div>

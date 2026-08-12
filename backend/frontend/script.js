@@ -1,9 +1,13 @@
 /**
- * AgroIntel AI — Frontend Application Script
- * Single source of truth for all frontend logic.
- * 
- * District filtering uses ONLY indianDistrictsMap built from /indian_districts.json.
- * No global district arrays. No cached demo districts. No fallback alphabetical lists.
+ * AgroIntel AI — Frontend Application Script v4.1
+ *
+ * KEY RULES:
+ *   - Crop Recommendation: State + District (district IS required)
+ *   - Price Prediction:    Crop + State    (district is NOT used)
+ *   - Price Prediction calls /api/predict ONLY — NOT /api/phase6/recommend
+ *   - renderPredResults() uses predData ONLY (no p6Data cross-contamination)
+ *   - Graph shows actual observation date + 30-day forecast series
+ *   - SELL/HOLD/WAIT derived from real values + freshness + model uncertainty
  */
 
 // ─── Global State ───────────────────────────────────────────────────────────
@@ -34,7 +38,6 @@ async function loadIndianDistricts() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
-        // Build map: state_name -> sorted array of district names
         indianDistrictsMap = {};
         if (data && Array.isArray(data.states)) {
             data.states.forEach(stateObj => {
@@ -57,6 +60,7 @@ async function loadIndianDistricts() {
 
 // ─── Populate State Selects ──────────────────────────────────────────────────
 function populateStateSelects() {
+    // NOTE: "predState" is intentionally in this list but has NO associated district select
     const stateSelectIds = ["recState", "predState", "advState"];
     stateSelectIds.forEach(id => {
         const sel = document.getElementById(id);
@@ -77,20 +81,17 @@ function populateStateSelects() {
     });
 }
 
-// ─── State → District: THE ONLY DISTRICT LOADING FUNCTION ───────────────────
+// ─── State → District: Crop Recommendation and Advisory ONLY ─────────────────
 function onStateChange(stateSelectId, districtSelectId) {
     const stateEl = document.getElementById(stateSelectId);
     const distEl  = document.getElementById(districtSelectId);
     if (!stateEl || !distEl) return;
 
     const selectedState = stateEl.value;
-
     distEl.innerHTML = '<option value="">Select District</option>';
-
     if (!selectedState) return;
 
     const districts = indianDistrictsMap[selectedState];
-
     if (!districts || districts.length === 0) {
         distEl.innerHTML = '<option value="">No districts found</option>';
         console.warn(`[AgroIntel] No districts found for state: "${selectedState}"`);
@@ -112,16 +113,26 @@ function onStateChange(stateSelectId, districtSelectId) {
 // ─── Default Selections on Load ─────────────────────────────────────────────
 function setDefaultSelections() {
     const defaultState = "Maharashtra";
-    ["recState", "predState", "advState"].forEach(id => {
-        const distId = id === "recState" ? "recDistrict" : id === "predState" ? "predDistrict" : "advDistrict";
+
+    // Crop Recommendation — needs state + district
+    ["recState", "advState"].forEach(id => {
+        const distId = id === "recState" ? "recDistrict" : "advDistrict";
+        const sel = document.getElementById(id);
+        if (!sel) return;
         if (supportedStates.includes(defaultState)) {
-            const sel = document.getElementById(id);
-            if (sel) { sel.value = defaultState; onStateChange(id, distId); }
+            sel.value = defaultState;
+            onStateChange(id, distId);
         } else if (supportedStates.length > 0) {
-            const sel = document.getElementById(id);
-            if (sel) { sel.value = supportedStates[0]; onStateChange(id, distId); }
+            sel.value = supportedStates[0];
+            onStateChange(id, distId);
         }
     });
+
+    // Price Prediction — needs state only (NO district)
+    const predStateSel = document.getElementById("predState");
+    if (predStateSel) {
+        predStateSel.value = supportedStates.includes(defaultState) ? defaultState : (supportedStates[0] || "");
+    }
 }
 
 // ─── Page Navigation ─────────────────────────────────────────────────────────
@@ -184,11 +195,17 @@ async function submitCropRec(event) {
     const spin  = document.getElementById("recSpin");
     setLoading(btn, spin, true);
 
-    const payload = {
-        state:    document.getElementById("recState").value,
-        district: document.getElementById("recDistrict").value,
-        season:   document.getElementById("recSeason").value,
-    };
+    const state    = document.getElementById("recState").value;
+    const district = document.getElementById("recDistrict").value;
+    const season   = document.getElementById("recSeason").value;
+
+    if (!state || !district) {
+        showToast("Please select both a State and a District.", "error");
+        setLoading(btn, spin, false);
+        return;
+    }
+
+    const payload = { state, district, season };
 
     const n  = parseFloat(document.getElementById("recN").value);
     const p  = parseFloat(document.getElementById("recP").value);
@@ -226,14 +243,15 @@ function renderRecResults(data) {
     const loc      = data.location || {};
     const recs     = (data.recommendations || []).slice(0, 5);
     const rejected = (data.rejected_crops  || []).slice(0, 3);
-    const dq       = data.data_quality     || {};
 
     if (recs.length === 0) {
+        const msg = data.message || "No suitable candidate crops found.";
         document.getElementById("recResults").innerHTML = `
             <div class="placeholder-card glass-card">
                 <span class="material-symbols-rounded ph-icon-sym">grass</span>
                 <h3>No Crops Recommended</h3>
-                <p>No suitable candidate crops found for ${loc.district || 'selected district'} in ${data.season || 'selected season'}.</p>
+                <p>${msg}</p>
+                <p style="font-size:0.78rem;opacity:0.65;margin-top:8px">Try a different district or season.</p>
             </div>`;
         return;
     }
@@ -242,6 +260,21 @@ function renderRecResults(data) {
 
     const recHtml = recs.map((rec, i) => {
         const info = rec.crop_information || {};
+        const expl = rec.explanation || {};
+        const sb   = rec.score_breakdown || {};
+
+        const scoreBreakdownHtml = Object.keys(sb).length > 0 ? `
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">
+            ${Object.entries(sb).filter(([k]) => !k.includes('_note')).map(([k, v]) => {
+                const label = k.replace(/_/g,' ').replace(/\b\w/g, l => l.toUpperCase());
+                const color = typeof v === 'number' ? (v >= 15 ? '#22c55e' : v >= 8 ? '#fbbf24' : '#f97316') : '#94a3b8';
+                return `<span style="font-size:0.7rem;background:${color}18;color:${color};border:1px solid ${color}40;border-radius:4px;padding:2px 7px">${label}: ${typeof v === 'number' ? Math.round(v) : v}</span>`;
+            }).join('')}
+        </div>` : '';
+
+        const whyRec = expl.why_recommended || rec.reasons?.join('; ') || `${rec.crop} is agronomically suitable for this district and season.`;
+        const situation = expl.current_situation || '';
+        const consideration = expl.considerations || '';
 
         return `
         <div class="rec-card glass-card ${rankColors[i]||''}" style="margin-bottom:16px;padding:18px">
@@ -255,13 +288,40 @@ function renderRecResults(data) {
                 </div>
                 <div class="rec-score-wrap">
                     <div class="score-circle ${rankColors[i]||''}">
-                        <span class="score-val">${Math.round(rec.final_score)}</span>
+                        <span class="score-val">${Math.round(rec.final_score || 0)}</span>
                         <span class="score-pct">/100</span>
                     </div>
                 </div>
             </div>
 
-            <!-- About this Crop Section -->
+            <!-- Why Recommended -->
+            <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.15);border-radius:8px;padding:12px;margin-bottom:10px">
+                <h4 style="margin:0 0 6px;font-size:0.85rem;color:#a3e635;display:flex;align-items:center;gap:5px">
+                    <span class="material-symbols-rounded" style="font-size:1rem">check_circle</span> Why Recommended
+                </h4>
+                <div style="font-size:0.83rem;line-height:1.45;opacity:0.9">${whyRec}</div>
+                ${scoreBreakdownHtml}
+            </div>
+
+            ${situation ? `
+            <!-- Current Situation -->
+            <div style="background:rgba(56,189,248,0.06);border:1px solid rgba(56,189,248,0.15);border-radius:8px;padding:10px;margin-bottom:10px">
+                <h4 style="margin:0 0 4px;font-size:0.82rem;color:#38bdf8;display:flex;align-items:center;gap:5px">
+                    <span class="material-symbols-rounded" style="font-size:0.95rem">news</span> Current Situation
+                </h4>
+                <div style="font-size:0.8rem;line-height:1.4;opacity:0.88">${situation}</div>
+            </div>` : ''}
+
+            ${consideration ? `
+            <!-- Risk / Considerations -->
+            <div style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.15);border-radius:8px;padding:10px;margin-bottom:10px">
+                <h4 style="margin:0 0 4px;font-size:0.82rem;color:#fbbf24;display:flex;align-items:center;gap:5px">
+                    <span class="material-symbols-rounded" style="font-size:0.95rem">warning</span> Consideration
+                </h4>
+                <div style="font-size:0.8rem;line-height:1.4;opacity:0.88">${consideration}</div>
+            </div>` : ''}
+
+            <!-- About this Crop -->
             <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:14px">
                 <h4 style="margin:0 0 10px;font-size:0.92rem;color:#e2e8f0;display:flex;align-items:center;gap:6px">
                     <span class="material-symbols-rounded" style="font-size:1.1rem;color:#a3e635">info</span> About ${rec.crop}
@@ -270,12 +330,11 @@ function renderRecResults(data) {
                     <div><strong style="color:#a3e635">Why grown:</strong> <span style="opacity:0.9">${info.why_grown || 'Cultivated for farm revenue and local food demand.'}</span></div>
                     <div><strong style="color:#38bdf8">Common uses:</strong> <span style="opacity:0.9">${info.common_uses || 'Food grain, pulse, or agricultural produce.'}</span></div>
                     <div><strong style="color:#fbbf24">Season:</strong> <span style="opacity:0.9">${info.season || 'Standard regional season.'}</span></div>
-                    <div><strong style="color:#c084fc">Soil & Climate:</strong> <span style="opacity:0.9">${info.soil || 'Well-drained soil.'} ${info.climate || ''}</span></div>
+                    <div><strong style="color:#c084fc">Soil &amp; Climate:</strong> <span style="opacity:0.9">${info.soil || 'Well-drained soil.'} ${info.climate || ''}</span></div>
                 </div>
             </div>
         </div>`;
     }).join('');
-
 
     const rejHtml = rejected.length > 0 ? `
     <div class="glass-card" style="padding:14px;margin-top:12px">
@@ -297,37 +356,38 @@ function renderRecResults(data) {
     document.getElementById("recResults").innerHTML = html;
 }
 
-// ─── Price Prediction ────────────────────────────────────────────────────────
+// ─── Price Prediction ─────────────────────────────────────────────────────────
+// IMPORTANT: This function calls ONLY /api/predict — never /api/phase6/recommend
+// District is NOT used in price prediction.
 async function submitPricePred(event) {
     event.preventDefault();
     const btn  = document.getElementById("btnPred");
     const spin = document.getElementById("predSpin");
     setLoading(btn, spin, true);
 
-    const crop     = document.getElementById("predCrop").value;
-    const state    = document.getElementById("predState").value;
-    const district = document.getElementById("predDistrict").value;
-    const horizon  = document.getElementById("predHorizon").value;
+    const crop    = document.getElementById("predCrop").value;
+    const state   = document.getElementById("predState").value;
+    const horizon = document.getElementById("predHorizon").value;
+
+    if (!crop) {
+        showToast("Please select a crop.", "error");
+        setLoading(btn, spin, false);
+        return;
+    }
 
     try {
-        let p6Data = {};
-        if (state && district) {
-            const p6Res = await fetch("/api/phase6/recommend", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ state, district, season: "Kharif" })
-            });
-            if (p6Res.ok) {
-                p6Data = await p6Res.json();
-            }
-        }
-
+        // Call ONLY /api/predict — no district, no phase6 recommend
         let predUrl = `/api/predict?crop=${encodeURIComponent(crop)}&horizon_days=${horizon}`;
         if (state) predUrl += `&state=${encodeURIComponent(state)}`;
-        const predRes = await fetch(predUrl);
-        const predData = predRes.ok ? await predRes.json() : {};
 
-        renderPredResults(p6Data, predData, crop, horizon, state, district);
+        const predRes = await fetch(predUrl);
+        if (!predRes.ok) {
+            const err = await predRes.json().catch(() => ({ detail: "Prediction request failed." }));
+            throw new Error(err.detail || "Price forecast could not be retrieved.");
+        }
+        const predData = await predRes.json();
+        renderPredResults(predData, crop, parseInt(horizon), state);
+
     } catch (err) {
         showToast(err.message, "error");
         document.getElementById("predResults").innerHTML = errorCard(err.message);
@@ -336,92 +396,179 @@ async function submitPricePred(event) {
     }
 }
 
-function renderPredResults(p6Data, predData, crop, horizon, inputState = "", inputDistrict = "") {
-    const market   = p6Data.market || {};
-    const forecast = p6Data.price_forecast || {};
-    const loc      = p6Data.location || {};
+/**
+ * renderPredResults — uses ONLY predData from /api/predict
+ * No p6Data. No cross-contamination from phase6 recommend.
+ */
+function renderPredResults(predData, crop, horizon, inputState) {
 
-    const stateDisplay = loc.state || inputState || "";
-    const districtDisplay = loc.district || inputDistrict || "";
+    // ── Extract core values from predData ONLY ───────────────────────────────
+    const isPredAvailable = predData.available === true &&
+                            typeof predData.predicted_price === 'number';
 
-    const curPriceNum = typeof market.current_price === 'number' ? market.current_price : (typeof predData.current_price === 'number' ? predData.current_price : null);
-    const predPriceNum = typeof predData.predicted_price === 'number' ? predData.predicted_price : (typeof forecast.predicted_price === 'number' ? forecast.predicted_price : null);
+    const curPriceNum  = typeof predData.current_price === 'number'   ? predData.current_price   : null;
+    const predPriceNum = typeof predData.predicted_price === 'number' ? predData.predicted_price : null;
 
-    const isPredAvailable = predData.available !== false && typeof predPriceNum === 'number';
-    const isMandiAvailable = market.available !== false && typeof curPriceNum === 'number';
+    const isMandiAvailable = typeof curPriceNum === 'number';
 
-    const curPriceDisplay = isMandiAvailable ? `₹${Math.round(curPriceNum).toLocaleString('en-IN')}` : 'Price Unavailable';
-    const predPriceDisplay = isPredAvailable ? `₹${Math.round(predPriceNum).toLocaleString('en-IN')}` : 'Prediction Unavailable';
+    const curPriceDisplay  = isMandiAvailable ? `₹${Math.round(curPriceNum).toLocaleString('en-IN')}` : 'Price Unavailable';
+    const predPriceDisplay = isPredAvailable  ? `₹${Math.round(predPriceNum).toLocaleString('en-IN')}` : 'Forecast Unavailable';
 
-    const obsDate = market.observation_date || '—';
-    const mktName = market.market || '—';
-    const modelName = predData.best_model_label || predData.best_model || forecast.model || "ML Model";
+    // ── Observation date & data freshness ────────────────────────────────────
+    const obsDate     = predData.observation_date   || predData.price_cached_time?.split('T')[0] || '—';
+    const mktName     = predData.market_name        || predData.market || inputState || '—';
+    const dataAgeDays = typeof predData.data_age_days === 'number' ? predData.data_age_days : null;
+    const dataSource  = predData.price_data_source  || 'data.gov.in';
 
-    // Strict SELL / HOLD advisory badge
-    let advAction = "HOLD";
-    let advReason = "Reliable market price or forecast is currently unavailable. Please verify local Mandi rates before making transaction decisions.";
+    // Determine correct label based on whether data is truly "today"
+    const today = new Date().toISOString().split('T')[0];
+    const obsLabel = obsDate === today ? 'Live Price' :
+                     obsDate !== '—' ? `Latest Available Mandi Price` : 'Latest Available Price';
+    const obsNote  = dataAgeDays !== null && dataAgeDays > 0 ? `Data Age: ${dataAgeDays} day${dataAgeDays !== 1 ? 's' : ''}` :
+                     dataAgeDays === 0 ? 'Same day observation' : '';
 
-    if (isMandiAvailable && isPredAvailable) {
+    // Source display logic — never call old cache "Live"
+    const sourceLabel = dataSource === 'api_data_gov_in' ? 'data.gov.in (AGMARKNET)' :
+                        dataSource === 'cached_api'      ? 'data.gov.in (Cached)' :
+                        dataSource === 'yahoo_finance'   ? 'Yahoo Finance (Global Futures)' :
+                        dataSource === 'msp_estimate'    ? 'India MSP 2024-25 (Estimated)' :
+                        dataSource;
+
+    const modelName     = predData.best_model_label || predData.best_model || 'ML Model';
+    const forecastScope = predData.forecast_scope   || 'Crop-level 30-day ML forecast';
+
+    // ── SELL / HOLD / WAIT Decision ──────────────────────────────────────────
+    let advAction = "WAIT";
+    let advReason = "Insufficient data to make a confident market decision.";
+    let advColor  = "#94a3b8"; // grey for WAIT
+
+    if (predData.advisory?.decision) {
+        // Use backend decision if provided
+        advAction = predData.advisory.decision;
+        advReason = predData.advisory.reason || advReason;
+    } else if (isMandiAvailable && isPredAvailable) {
         const changePct = ((predPriceNum - curPriceNum) / curPriceNum) * 100.0;
-        if (changePct <= -3.0) {
+        const absChange = Math.abs(changePct);
+
+        // Adjust threshold by model uncertainty (high MAE crops need larger swing to trigger SELL/HOLD)
+        const highUncertaintyCrops = ['onion', 'potato'];
+        const threshold = highUncertaintyCrops.includes(crop.toLowerCase()) ? 5.0 : 3.0;
+
+        // Stale data → WAIT
+        if (dataAgeDays !== null && dataAgeDays > 14) {
+            advAction = "WAIT";
+            advReason = `The latest Mandi price observation is ${dataAgeDays} days old. Market conditions may have changed. Verify current local Mandi rates before making a transaction decision.`;
+            advColor  = "#94a3b8";
+        } else if (changePct <= -threshold) {
             advAction = "SELL";
-            advReason = `The forecast indicates a decline from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Selling at the current observed price may reduce exposure to the expected decline.`;
-        } else if (changePct >= 3.0) {
+            advColor  = "#f97316";
+            advReason = `The ${modelName} model forecasts a decline of approximately ${absChange.toFixed(1)}% from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Selling at the current observed price may reduce downside risk.`;
+        } else if (changePct >= threshold) {
             advAction = "HOLD";
-            advReason = `Prices are expected to increase from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Holding may provide a better expected selling price.`;
+            advColor  = "#22c55e";
+            advReason = `The ${modelName} model forecasts an increase of approximately ${absChange.toFixed(1)}% from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Holding may provide a better expected selling price.`;
         } else {
-            advAction = "HOLD";
-            advReason = `The forecast indicates only a small price movement of about ${Math.abs(Math.round(changePct))}%. Holding is recommended as prices are expected to remain steady.`;
+            advAction = "WAIT";
+            advColor  = "#94a3b8";
+            advReason = `The forecast indicates a small movement of approximately ${changePct > 0 ? '+' : ''}${changePct.toFixed(1)}% — within model uncertainty bounds. The market is expected to remain relatively stable.`;
         }
-    } else if (predData.message || (forecast.crop && forecast.crop.toLowerCase() === crop.toLowerCase() && forecast.message)) {
-        advReason = predData.message || forecast.message;
+    } else if (!isMandiAvailable) {
+        advReason = "Current Mandi price is unavailable. Cannot generate a SELL/HOLD/WAIT decision without a current price reference.";
+    } else if (!isPredAvailable) {
+        const reason = predData.forecast?.reason || predData.message || "Price forecast is currently unavailable for this crop.";
+        advReason = reason;
     }
 
-    const advColor = advAction === "SELL" ? "#f97316" : "#22c55e";
+    if (advAction === "SELL") advColor = "#f97316";
+    else if (advAction === "HOLD") advColor = "#22c55e";
+    else advColor = "#94a3b8";
 
-    const nlpExplanation = isMandiAvailable && isPredAvailable
-        ? `${capitalize(crop)} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal in the latest available Mandi observation in ${districtDisplay}, ${stateDisplay}. The ${modelName} model forecasts approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} per quintal over the selected ${horizon}-day horizon. Based on this trend, the system suggests ${advAction}.`
-        : `${capitalize(crop)} market data: ${advReason}`;
+    // ── Black Swan Warning ────────────────────────────────────────────────────
+    const bsWarning = predData.black_swan_warning;
+    const bsHtml = bsWarning ? `
+        <div style="background:#dc262630;border:1px solid #dc2626;border-radius:8px;padding:12px;margin-bottom:16px">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+                <span class="material-symbols-rounded" style="color:#f87171">warning</span>
+                <strong style="color:#f87171;font-size:0.88rem">Major Market Event Detected</strong>
+            </div>
+            <div style="font-size:0.82rem;opacity:0.9">${bsWarning.message || bsWarning.label}</div>
+        </div>` : '';
 
+    // ── NLP Explanation ───────────────────────────────────────────────────────
+    const cropDisplay = capitalize(crop);
+    let nlpText = '';
+    if (isMandiAvailable && isPredAvailable) {
+        const changePct = ((predPriceNum - curPriceNum) / curPriceNum) * 100.0;
+        const direction = changePct >= 0 ? 'increase' : 'decline';
+        nlpText = `${cropDisplay} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal based on the latest available Mandi observation${obsDate !== '—' ? ' dated ' + formatDate(obsDate) : ''}. The <strong>${modelName}</strong> model forecasts approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} per quintal after ${horizon} days — an expected ${direction} of about ${Math.abs(changePct).toFixed(1)}%. Based on this analysis, the system suggests <strong>${advAction}</strong>.`;
+    } else if (isMandiAvailable) {
+        nlpText = `${cropDisplay} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal. A 30-day price forecast is currently unavailable.`;
+    } else {
+        nlpText = `${cropDisplay} market data is currently unavailable. Please check back later or verify local Mandi rates.`;
+    }
+
+    // ── Model comparison (shown only if available) ────────────────────────────
+    const modelComparison = predData.model_comparison || {};
+    const mcKeys = Object.keys(modelComparison);
+    const mcHtml = mcKeys.length > 0 ? `
+        <div class="glass-card" style="padding:14px;margin-bottom:16px">
+            <h4 style="margin:0 0 10px;font-size:0.88rem;opacity:0.8">📊 Model Comparison (${horizon}-day forecast)</h4>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px">
+                ${mcKeys.map(mk => {
+                    const m = modelComparison[mk];
+                    return `<div style="background:${m.is_best ? 'rgba(34,197,94,0.1)' : 'rgba(255,255,255,0.04)'};border:1px solid ${m.is_best ? 'rgba(34,197,94,0.3)' : 'rgba(255,255,255,0.08)'};border-radius:6px;padding:10px;text-align:center">
+                        <div style="font-size:0.72rem;opacity:0.65;margin-bottom:4px">${m.label || mk}${m.is_best ? ' ✓' : ''}</div>
+                        <div style="font-size:1rem;font-weight:700;color:${m.is_best ? '#22c55e' : '#e2e8f0'}">₹${Math.round(m.predicted_price).toLocaleString('en-IN')}</div>
+                        ${m.mae ? `<div style="font-size:0.68rem;opacity:0.5;margin-top:2px">MAE: ₹${m.mae}</div>` : ''}
+                    </div>`;
+                }).join('')}
+            </div>
+        </div>` : '';
+
+    // ── Assemble HTML ─────────────────────────────────────────────────────────
     const html = `
+        <!-- Header -->
         <div class="pred-summary-row" style="margin-bottom:16px">
             <div class="pred-meta">
-                <h3 style="margin:0;font-size:1.4rem">${capitalize(crop)} Price Outlook</h3>
-                <div style="font-size:0.82rem;opacity:0.75;margin-top:2px">📍 ${districtDisplay}${districtDisplay && stateDisplay ? ', ' : ''}${stateDisplay}</div>
+                <h3 style="margin:0;font-size:1.4rem">${cropDisplay} Price Outlook</h3>
+                <div style="font-size:0.82rem;opacity:0.75;margin-top:2px">📍 ${inputState || 'National'}${forecastScope ? ' · ' + forecastScope : ''}</div>
             </div>
             <div class="pred-decision" style="background:${advColor}22;border:1px solid ${advColor};color:${advColor};padding:8px 18px">
                 <span class="dec-word" style="font-size:1.1rem;font-weight:800;letter-spacing:1px">${advAction}</span>
             </div>
         </div>
 
+        ${bsHtml}
+
         <!-- LATEST MANDI PRICE & EXPECTED PRICE ROW -->
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px">
-            <div class="glass-card" style="padding:18px;text-align:center">
-                <div style="font-size:0.78rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.5px;font-weight:600">Latest Mandi Price</div>
+            <div class="glass-card" style="padding:18px">
+                <div style="font-size:0.78rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.5px;font-weight:600">${obsLabel}</div>
                 <div style="font-size:1.8rem;font-weight:800;color:#34d399;margin:8px 0">${curPriceDisplay} <span style="font-size:0.85rem;font-weight:500;opacity:0.7">${isMandiAvailable ? '/ quintal' : ''}</span></div>
                 <div style="font-size:0.75rem;opacity:0.8;margin-top:4px">
-                    <div><strong>Observation:</strong> ${obsDate}</div>
+                    ${obsDate !== '—' ? `<div><strong>Observed:</strong> ${formatDate(obsDate)}</div>` : ''}
+                    ${obsNote ? `<div style="color:#fbbf24"><strong>${obsNote}</strong></div>` : ''}
                     <div><strong>Market:</strong> ${mktName}</div>
-                    <div><strong>Source:</strong> data.gov.in</div>
+                    <div><strong>Source:</strong> ${sourceLabel}</div>
                 </div>
             </div>
-            <div class="glass-card" style="padding:18px;text-align:center;display:flex;flex-direction:column;justify-content:center">
+            <div class="glass-card" style="padding:18px;display:flex;flex-direction:column;justify-content:center">
                 <div style="font-size:0.78rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.5px;font-weight:600">Expected Price in ${horizon} Days</div>
                 ${isPredAvailable ? `
                 <div style="font-size:1.8rem;font-weight:800;color:#a78bfa;margin:8px 0">${predPriceDisplay} <span style="font-size:0.85rem;font-weight:500;opacity:0.7">/ quintal</span></div>
                 <div style="font-size:0.72rem;opacity:0.6">Model: ${modelName}</div>
                 ` : `
-                <div style="font-size:0.82rem;color:#fbbf24;margin-top:10px;line-height:1.4">${predData.forecast?.reason || predData.message || forecast.message || "Price prediction is currently unavailable for this crop because a validated forecasting model is not available."}</div>
+                <div style="font-size:0.82rem;color:#fbbf24;margin-top:10px;line-height:1.4">${predData.forecast?.reason || predData.message || "Forecast unavailable for this crop."}</div>
                 `}
             </div>
         </div>
 
-        <!-- RESTORED 30-DAY PRICE FORECAST GRAPH -->
+        <!-- 30-DAY PRICE FORECAST GRAPH -->
         ${isPredAvailable ? `
         <div class="chart-box glass-card" style="margin-bottom:18px;padding:16px">
             <div class="chart-header" style="margin-bottom:12px">
-                <h4 style="margin:0;font-size:1rem">30-Day Price Forecast</h4>
-                <span class="chart-horizon" style="font-size:0.78rem;opacity:0.75">Expected Trend</span>
+                <h4 style="margin:0;font-size:1rem">Price Forecast — Observed + ${horizon}-Day Trend</h4>
+                <span class="chart-horizon" style="font-size:0.78rem;opacity:0.75">🟡 Observed · 🟢 Forecast</span>
             </div>
             <canvas id="priceChart"></canvas>
         </div>` : ''}
@@ -438,16 +585,28 @@ function renderPredResults(p6Data, predData, crop, horizon, inputState = "", inp
         <!-- PRICE OUTLOOK NLP EXPLANATION -->
         <div class="glass-card" style="padding:18px;margin-bottom:16px">
             <h4 style="margin:0 0 8px;font-size:0.95rem;color:#38bdf8">Price Outlook</h4>
-            <div style="font-size:0.88rem;line-height:1.5;opacity:0.92">${nlpExplanation}</div>
-        </div>`;
+            <div style="font-size:0.88rem;line-height:1.5;opacity:0.92">${nlpText}</div>
+        </div>
+
+        ${mcHtml}`;
 
     document.getElementById("predResults").innerHTML = html;
+
     if (isPredAvailable) {
-        renderPriceChart(predData, parseInt(horizon), curPriceNum);
+        renderPriceChart(predData, horizon, curPriceNum, obsDate);
     }
 }
 
-function renderPriceChart(data, horizon, curPriceFallback = null) {
+/**
+ * renderPriceChart — Corrected graph
+ *
+ * Structure:
+ *   [Observed — DD MMM]  →  [Forecast Day 1]  →  ...  →  [Forecast Day N]
+ *
+ * The current observed Mandi price is plotted at its ACTUAL observation date.
+ * Forecast points start from the day after the observation date.
+ */
+function renderPriceChart(data, horizon, curPriceFallback, obsDateStr) {
     const ctx = document.getElementById("priceChart");
     if (!ctx) return;
 
@@ -456,65 +615,90 @@ function renderPriceChart(data, horizon, curPriceFallback = null) {
         activeChart = null;
     }
 
-    const curPrice = typeof data.current_price === "number" ? data.current_price : (curPriceFallback || 2000.0);
-    const predPrice = typeof data.predicted_price === "number" ? data.predicted_price : curPrice;
-    const predsList = Array.isArray(data.predictions) ? data.predictions : [];
+    const curPrice    = typeof data.current_price === "number" ? data.current_price : (curPriceFallback || 2000.0);
+    const predsList   = Array.isArray(data.predictions) ? data.predictions : [];
+    const dateLabels  = Array.isArray(data.date_labels) ? data.date_labels : [];
+    const actualHorizon = Math.min(horizon, predsList.length > 0 ? predsList.length : horizon);
 
-    let day7Val, day15Val, day30Val;
+    // Build labels — "Observed — DD MMM" then "Day 1", "Day 7", "Day 15", "Day 30"
+    const obsLabel = obsDateStr && obsDateStr !== '—' ? `Observed — ${formatDate(obsDateStr)}` : 'Current (Observed)';
 
-    if (predsList.length >= 30) {
-        day7Val  = Math.round(predsList[6]);
-        day15Val = Math.round(predsList[14]);
-        day30Val = Math.round(predsList[29]);
+    // Select which forecast points to display for readability
+    let forecastIndices = [];
+    if (actualHorizon <= 7) {
+        forecastIndices = Array.from({length: actualHorizon}, (_, i) => i);
+    } else if (actualHorizon <= 15) {
+        forecastIndices = [0, 3, 6, 9, 12, actualHorizon - 1].filter((v, i, a) => a.indexOf(v) === i && v < actualHorizon);
     } else {
-        day7Val  = Math.round(curPrice + (predPrice - curPrice) * (7.0 / 30.0));
-        day15Val = Math.round(curPrice + (predPrice - curPrice) * (15.0 / 30.0));
-        day30Val = Math.round(predPrice);
+        forecastIndices = [0, 6, 13, 20, 29].filter(v => v < actualHorizon);
+        if (!forecastIndices.includes(actualHorizon - 1)) forecastIndices.push(actualHorizon - 1);
     }
 
-    const points = [
-        { label: "Today",   val: Math.round(curPrice) },
-        { label: "7 Days",  val: day7Val },
-        { label: "15 Days", val: day15Val },
-        { label: "30 Days", val: day30Val }
-    ];
+    const chartLabels = [obsLabel];
+    const chartValues = [Math.round(curPrice)];
+    const pointColors = ['#f59e0b'];   // amber for observed
+    const pointSizes  = [9];
 
-    const chartLabels = points.map(p => p.label);
-    const chartValues = points.map(p => p.val);
-
-    const pointRadius  = [7, 5, 5, 7];
-    const pointBgColor = ["#f59e0b", "#38bdf8", "#38bdf8", "#22c55e"];
+    forecastIndices.forEach(idx => {
+        const dayLabel = dateLabels[idx] ? formatDate(dateLabels[idx]) : `Day ${idx + 1}`;
+        chartLabels.push(dayLabel);
+        chartValues.push(Math.round(predsList[idx] || curPrice));
+        pointColors.push(idx === forecastIndices[forecastIndices.length - 1] ? '#22c55e' : '#38bdf8');
+        pointSizes.push(idx === forecastIndices[forecastIndices.length - 1] ? 8 : 5);
+    });
 
     activeChart = new Chart(ctx, {
         type: "line",
         data: {
             labels: chartLabels,
-            datasets: [{
-                label: "Price (₹/quintal)",
-                data: chartValues,
-                borderColor: "#22c55e",
-                backgroundColor: "rgba(34,197,94,0.07)",
-                borderWidth: 3,
-                fill: true,
-                tension: 0.3,
-                pointRadius: pointRadius,
-                pointHoverRadius: 8,
-                pointBackgroundColor: pointBgColor,
-                pointBorderColor: "#fff",
-                pointBorderWidth: 2,
-            }],
+            datasets: [
+                {
+                    label: "Observed Mandi Price (₹/quintal)",
+                    data: [chartValues[0], null, null, null, null, null],
+                    borderColor: "#f59e0b",
+                    backgroundColor: "transparent",
+                    borderWidth: 0,
+                    pointRadius: [9],
+                    pointHoverRadius: [11],
+                    pointBackgroundColor: ["#f59e0b"],
+                    pointBorderColor: ["#fff"],
+                    pointBorderWidth: 2,
+                    segment: { borderDash: [4, 4] },
+                    tension: 0,
+                },
+                {
+                    label: "ML Forecast (₹/quintal)",
+                    data: chartValues,
+                    borderColor: "#22c55e",
+                    backgroundColor: "rgba(34,197,94,0.07)",
+                    borderWidth: 2.5,
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: pointSizes,
+                    pointHoverRadius: pointSizes.map(s => s + 3),
+                    pointBackgroundColor: pointColors,
+                    pointBorderColor: "#fff",
+                    pointBorderWidth: 2,
+                }
+            ],
         },
         options: {
-            animation: false,
-            responsive: false,
+            animation: { duration: 600, easing: "easeInOutQuart" },
+            responsive: true,
             maintainAspectRatio: false,
             interaction: { mode: "index", intersect: false },
             plugins: {
-                legend: { display: false },
+                legend: {
+                    display: true,
+                    labels: { color: "rgba(255,255,255,0.7)", font: { size: 11 }, boxWidth: 14 }
+                },
                 tooltip: {
                     callbacks: {
                         title: items => items[0].label,
-                        label: item => `Price: ₹${item.parsed.y?.toFixed(0)} / quintal`
+                        label: item => {
+                            if (item.datasetIndex === 0) return item.parsed.y != null ? `Observed Mandi: ₹${item.parsed.y?.toLocaleString('en-IN')} / quintal` : null;
+                            return `ML Forecast: ₹${item.parsed.y?.toLocaleString('en-IN')} / quintal`;
+                        }
                     },
                     backgroundColor: "rgba(15,25,18,0.92)",
                     titleColor: "#a1a1aa",
@@ -522,18 +706,19 @@ function renderPriceChart(data, horizon, curPriceFallback = null) {
                     borderColor: "rgba(34,197,94,0.3)",
                     borderWidth: 1,
                     padding: 12,
+                    filter: item => item.parsed.y != null,
                 }
             },
             scales: {
                 x: {
-                    ticks: { color: "var(--text-secondary)", font: { size: 12, weight: "500" } },
+                    ticks: { color: "var(--text-secondary)", font: { size: 11, weight: "500" }, maxRotation: 30 },
                     grid: { color: "rgba(255,255,255,0.04)" }
                 },
                 y: {
                     ticks: {
                         color: "var(--text-secondary)",
                         font: { size: 12 },
-                        callback: v => `₹${Math.round(v)}`
+                        callback: v => `₹${Math.round(v).toLocaleString('en-IN')}`
                     },
                     grid: { color: "rgba(255,255,255,0.05)" },
                     title: {
@@ -546,25 +731,6 @@ function renderPriceChart(data, horizon, curPriceFallback = null) {
             }
         }
     });
-}
-
-function simplifyDecisionReason(data) {
-    const dec     = (data.decision || "HOLD").toUpperCase();
-    const trend   = (data.trend || "STABLE").toUpperCase();
-    const change  = data.expected_change_percent ?? 0;
-    const horizon = data.horizon_days ?? 30;
-
-    if (dec === "SELL") {
-        if (trend.includes("DOWN")) {
-            return `The market price for ${capitalize(data.crop)} is expected to decline over the next ${horizon} days. Selling now is advised to avoid losses.`;
-        }
-        return `Based on current market data, selling ${capitalize(data.crop)} now offers a better return than holding.`;
-    } else {
-        if (change > 0) {
-            return `The predicted market price is expected to increase by ${change}% over the next ${horizon} days. Holding your stock may yield better returns.`;
-        }
-        return `Market conditions suggest holding ${capitalize(data.crop)} stock for a better selling opportunity.`;
-    }
 }
 
 // ─── Farmer Advisory ─────────────────────────────────────────────────────────
@@ -609,7 +775,7 @@ function renderAdvisoryResults(data) {
     const avgPrice  = priceData.predicted_30d_avg ?? "—";
     const curPrice  = priceData.current_price ?? "—";
     const recs      = data.crop_recommendations?.slice(0, 3) || [];
-    const decClass  = dec === "SELL" ? "dec-sell" : "dec-hold";
+    const decClass  = dec === "SELL" ? "dec-sell" : dec === "WAIT" ? "" : "dec-hold";
 
     const html = `
         <div class="adv-summary glass-card">
@@ -658,6 +824,18 @@ function renderAdvisoryResults(data) {
         </div>` : ''}`;
 
     document.getElementById("advResults").innerHTML = html;
+}
+
+// ─── Utility: Format Date ────────────────────────────────────────────────────
+function formatDate(dateStr) {
+    if (!dateStr || dateStr === '—') return dateStr;
+    try {
+        const d = new Date(dateStr);
+        if (isNaN(d.getTime())) return dateStr;
+        return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+    } catch {
+        return dateStr;
+    }
 }
 
 // ─── UI Helpers ──────────────────────────────────────────────────────────────

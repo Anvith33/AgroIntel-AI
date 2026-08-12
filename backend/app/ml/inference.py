@@ -184,12 +184,19 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
     Main inference entry point.
 
     Args:
-        crop: crop name (wheat, rice, maize)
-        state: State name for market price fetching
+        crop: crop name (wheat, rice, maize, onion, potato)
+        state: State name for market price fetching (affects Mandi lookup only)
         horizon_days: number of days to forecast ahead
 
     Returns:
-        dict with prediction results, model comparison, and Black Swan context
+        dict with prediction results, model comparison, observation metadata,
+        and SELL/HOLD/WAIT advisory with reasoning.
+
+    SCIENTIFIC NOTE:
+        Trained features: lag_1, lag_7, lag_14, lag_30, rolling_mean_7, rolling_mean_30,
+        month, season, monthly_avg_temp, monthly_total_rainfall, black_swan.
+        State is NOT a model feature. ML forecast is crop-level (same across states).
+        Current Mandi price DOES vary by state (separate cache key per crop:state).
     """
     crop = crop.lower()
     if crop not in CROPS:
@@ -199,12 +206,34 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
     target_date = date.today() + timedelta(days=1)
     recent_prices = _get_recent_prices(bundle["data_tail"])
     
-    # Fetch Live Data
+    # ── Fetch Live Mandi Data ──────────────────────────────────────────────────
     from app.data.ingestion import DataIngestion
     live_data = DataIngestion.fetch_live_market_data(crop, state)
     live_current_price = live_data.get("current_price")
     price_data_source  = live_data.get("data_source", "simulator_fallback")
     price_cached_time  = live_data.get("cached_time")
+
+    # Extract observation date from arrival_date field (if available)
+    observation_date_str = live_data.get("arrival_date") or live_data.get("cached_time", "")
+    if observation_date_str and "T" in str(observation_date_str):
+        observation_date_str = str(observation_date_str).split("T")[0]
+
+    # Compute data age in days
+    data_age_days = None
+    if observation_date_str:
+        try:
+            from datetime import datetime as _dt
+            obs_d = _dt.strptime(str(observation_date_str), "%Y-%m-%d").date()
+            data_age_days = (date.today() - obs_d).days
+        except Exception:
+            pass
+
+    if data_age_days is None:
+        age_h = live_data.get("data_age_hours")
+        if isinstance(age_h, (int, float)):
+            data_age_days = int(age_h // 24)
+
+    market_name = live_data.get("market") or state or "National"
 
     # ── Build predictions from each available model ──────────────────────────
     all_predictions = {}
@@ -255,100 +284,136 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
 
     if not all_predictions or best_model is None:
         return {
-            "available": False,
-            "crop": crop,
-            "status": "FORECAST_UNAVAILABLE",
-            "current_price": live_current_price,
-            "predicted_price": None,
-            "predictions": [],
-            "best_model": "None",
-            "model_comparison": {},
-            "message": "Current Mandi price is available, but a validated future forecast could not be generated.",
+            "available":          False,
+            "crop":               crop,
+            "state":              state,
+            "status":             "FORECAST_UNAVAILABLE",
+            "current_price":      live_current_price,
+            "predicted_price":    None,
+            "predictions":        [],
+            "best_model":         "None",
+            "model_comparison":   {},
+            "message":            "Current Mandi price is available, but a validated future forecast could not be generated.",
             "black_swan_warning": None,
+            "observation_date":   observation_date_str or None,
+            "market_name":        market_name,
+            "data_age_days":      data_age_days,
+            "price_data_source":  price_data_source,
+            "price_cached_time":  price_cached_time,
+            "forecast_scope":     "Crop-level ML forecast (state not a model feature)",
         }
 
     # 30-day forecast series generated directly by trained ML model
     best_predictions = [round(float(p), 2) for p in all_predictions[best_model]]
     
     # Current observed Mandi modal price
-    current_price = round(float(live_current_price if live_current_price else (recent_prices[-1] if recent_prices else 2000.0)), 2)
-    
-    # Predicted 30-day horizon price directly from ML model forecast
-    predicted_price = round(float(best_predictions[29] if len(best_predictions) >= 30 else best_predictions[-1]), 2)
+    current_price   = round(float(live_current_price if live_current_price else (recent_prices[-1] if recent_prices else 2000.0)), 2)
 
-    # Calculate Sell/Hold Recommendation based on 30-day trend using 3% threshold rule
-    percent_change = round(((predicted_price - current_price) / current_price) * 100.0, 2)
-    
-    if percent_change <= -3.0:
+    # Predicted price at horizon from ML model (no multipliers)
+    predicted_price = round(float(best_predictions[horizon_days - 1] if len(best_predictions) >= horizon_days else best_predictions[-1]), 2)
+
+    percent_change  = round(((predicted_price - current_price) / current_price) * 100.0, 2)
+
+    # ── SELL / HOLD / WAIT Decision ──────────────────────────────────────────
+    # High uncertainty crops get wider threshold (onion MAE=156, potato MAE=93)
+    HIGH_UNCERTAINTY_CROPS = {"onion", "potato"}
+    threshold = 5.0 if crop in HIGH_UNCERTAINTY_CROPS else 3.0
+
+    if data_age_days is not None and data_age_days > 14:
+        recommendation = "WAIT"
+        reason = (f"The latest Mandi price observation is {data_age_days} days old. "
+                  f"Market conditions may have changed. "
+                  f"Verify current local Mandi rates before making a transaction decision.")
+    elif abs(percent_change) < threshold:
+        recommendation = "WAIT"
+        reason = (f"The {horizon_days}-day forecast indicates a marginal movement of "
+                  f"{percent_change:+.1f}% — within model uncertainty bounds. "
+                  f"Prices are expected to remain relatively stable.")
+    elif percent_change <= -threshold:
         recommendation = "SELL"
-        reason = f"Prices are forecasted to drop by {abs(percent_change):.1f}% from ₹{current_price} to ₹{predicted_price} over the next 30 days."
-    elif percent_change >= 3.0:
-        recommendation = "HOLD"
-        reason = f"Prices are forecasted to rise by {percent_change:.1f}% from ₹{current_price} to ₹{predicted_price} over the next 30 days."
+        reason = (f"The {horizon_days}-day forecast indicates a price decline of approximately "
+                  f"{abs(percent_change):.1f}% from Rs.{current_price:,.0f} to Rs.{predicted_price:,.0f}. "
+                  f"Selling at the current observed Mandi price may reduce downside risk.")
     else:
         recommendation = "HOLD"
-        reason = f"Prices are forecasted to remain steady within ±3% ({percent_change:+.1f}%) over the next 30 days."
+        reason = (f"The {horizon_days}-day forecast indicates a price increase of approximately "
+                  f"{percent_change:.1f}% from Rs.{current_price:,.0f} to Rs.{predicted_price:,.0f}. "
+                  f"Holding may provide a better expected selling price.")
 
     # ── Black Swan context ────────────────────────────────────────────────────
     black_swan_info = None
     active_event = get_active_black_swan(target_date)
     if active_event:
         black_swan_info = {
-            "label": active_event["label"],
-            "factor": active_event["factor"],
-            "message": f"⚠️ Active market disruption: {active_event['label']} "
-                       f"(price elevated by ~{int((active_event['factor']-1)*100)}%)",
+            "label":   active_event["label"],
+            "factor":  active_event.get("factor", 1.0),
+            "message": f"Active market disruption: {active_event['label']}. Prices may be significantly affected.",
         }
+        if recommendation == "HOLD" and percent_change < 8.0:
+            recommendation = "WAIT"
+            reason = (f"An active market disruption ({active_event['label']}) "
+                      f"introduces significant price uncertainty. Verify local conditions before acting.")
 
     # ── Model comparison table ────────────────────────────────────────────────
-    metrics = bundle.get("metrics") or {}
+    metrics       = bundle.get("metrics") or {}
     model_metrics = metrics.get("models", {})
-    comparison = {}
-    model_labels = {
+    comparison    = {}
+    model_labels  = {
         "prophet": "Prophet (Seasonal)",
         "xgboost": "XGBoost (Gradient Boost)",
-        "arima": "ARIMA (Statistical)",
-        "mlp": "Deep Learning (MLP)",
+        "arima":   "ARIMA (Statistical)",
+        "mlp":     "Deep Learning (MLP)",
     }
     for m_name, m_preds in all_predictions.items():
-        m_mae = model_metrics.get(m_name, {}).get("mae", None)
+        m_mae  = model_metrics.get(m_name, {}).get("mae", None)
         m_rmse = model_metrics.get(m_name, {}).get("rmse", None)
         comparison[m_name] = {
-            "label": model_labels.get(m_name, m_name),
-            "predicted_price": round(float(m_preds[29] if len(m_preds) >= 30 else m_preds[-1]), 2),
-            "mae": m_mae,
-            "rmse": m_rmse,
-            "is_best": m_name == best_model,
+            "label":           model_labels.get(m_name, m_name),
+            "predicted_price": round(float(m_preds[horizon_days - 1] if len(m_preds) >= horizon_days else m_preds[-1]), 2),
+            "mae":             m_mae,
+            "rmse":            m_rmse,
+            "is_best":         m_name == best_model,
         }
 
-    # ── Date labels ──────────────────────────────────────────────────────────
+    # ── Date labels for graph ─────────────────────────────────────────────────
     date_labels = [
         (target_date + timedelta(days=i)).isoformat()
         for i in range(horizon_days)
     ]
 
     return {
-        "crop": crop,
-        "state": state,
-        "current_price": current_price,
-        "predicted_price": predicted_price,
-        "predictions": best_predictions,
-        "date_labels": date_labels,
-        "recommendation": recommendation,
+        "available":             True,
+        "crop":                  crop,
+        "state":                 state,
+        "current_price":         current_price,
+        "predicted_price":       predicted_price,
+        "predictions":           best_predictions,
+        "date_labels":           date_labels,
+        "recommendation":        recommendation,
         "recommendation_reason": reason,
-        "best_model": best_model,
-        "best_model_label": model_labels.get(best_model, best_model),
-        "model_comparison": comparison,
-        "black_swan_warning": black_swan_info,
-        "horizon_days": horizon_days,
-        "prediction_start": target_date.isoformat(),
-        # ── Data freshness transparency fields ──
-        "price_data_source":  price_data_source,
-        "price_cached_time":  price_cached_time,
-        "price_data_quality": live_data.get("data_quality", "unknown"),
-        "price_age_hours":    live_data.get("data_age_hours"),
-        "price_source_note":  live_data.get("note", ""),
+        "best_model":            best_model,
+        "best_model_label":      model_labels.get(best_model, best_model),
+        "model_comparison":      comparison,
+        "black_swan_warning":    black_swan_info,
+        "horizon_days":          horizon_days,
+        "prediction_start":      target_date.isoformat(),
+        # ── Observation / freshness transparency ──
+        "observation_date":      observation_date_str or None,
+        "market_name":           market_name,
+        "data_age_days":         data_age_days,
+        "price_data_source":     price_data_source,
+        "price_cached_time":     price_cached_time,
+        "price_data_quality":    live_data.get("data_quality", "unknown"),
+        "price_age_hours":       live_data.get("data_age_hours"),
+        "price_source_note":     live_data.get("note", ""),
+        # ── Forecast scope disclaimer ──
+        "forecast_scope": (
+            "Crop-level 30-day ML forecast. "
+            "State is not a trained feature; the ML forecast is the same across states for the same crop. "
+            "The current Mandi price varies by state/market."
+        ),
     }
+
 
 # ── Region-crop mapping cache ─────────────────────────────────────────────────
 _region_map_cache: dict = {}

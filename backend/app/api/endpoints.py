@@ -116,23 +116,30 @@ def predict(
         }
     try:
         result = predict_price(crop_clean, state, horizon_days)
-        result["available"] = True
-        
-        # Add Requirement 17 nested objects
+
+        # predict_price now sets "available" correctly — do NOT override it
+        # Add nested market/forecast/advisory objects for frontend compatibility
         result["market"] = {
-            "current_price": result.get("current_price"),
-            "source": result.get("price_data_source", "data.gov.in")
+            "current_price":     result.get("current_price"),
+            "observation_date":  result.get("observation_date"),
+            "market_name":       result.get("market_name"),
+            "data_age_days":     result.get("data_age_days"),
+            "source":            result.get("price_data_source", "data.gov.in"),
+            "source_note":       result.get("price_source_note", ""),
+            "price_label":       "Latest Available Mandi Price",
         }
         result["forecast"] = {
-            "available": True,
-            "model": result.get("best_model_label", result.get("best_model")),
+            "available":       result.get("available", False),
+            "model":           result.get("best_model_label", result.get("best_model")),
             "predicted_price": result.get("predicted_price"),
             "prediction_date": result.get("prediction_start"),
-            "forecast_series": result.get("predictions", [])
+            "forecast_series": result.get("predictions", []),
+            "date_labels":     result.get("date_labels", []),
+            "scope":           result.get("forecast_scope", ""),
         }
         result["advisory"] = {
-            "decision": result.get("recommendation", "HOLD"),
-            "reason": result.get("recommendation_reason", "")
+            "decision": result.get("recommendation", "WAIT"),
+            "reason":   result.get("recommendation_reason", ""),
         }
         return result
     except Exception as e:
@@ -147,10 +154,11 @@ def predict(
             },
             "advisory": {
                 "decision": "INSUFFICIENT_DATA",
-                "reason": str(e)
+                "reason":   str(e)
             },
             "message": "Price prediction is currently unavailable for this crop because a validated forecasting model is not available."
         }
+
 
 
 

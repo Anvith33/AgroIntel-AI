@@ -1,46 +1,422 @@
 {
+  "version": "2.0",
+  "description": "AgroIntel News Intelligence Source Registry — Full Tiered Source List",
+  "last_updated": "2026-08-12",
+
   "credibility_tiers": {
-    "TIER_1": {
-      "label": "Government & Scientific Authorities",
+    "TIER_1_OFFICIAL_GOVERNMENT": {
+      "label": "Official Government & Scientific Authorities",
       "credibility_score": 1.0,
+      "ml_weight": 1.0,
       "sources": [
-        "Ministry of Agriculture & Farmers Welfare (DA&FW)",
-        "India Meteorological Department (IMD)",
-        "Press Information Bureau (PIB Agriculture)",
-        "Indian Council of Agricultural Research (ICAR)",
-        "State Agriculture Departments",
-        "Commission for Agricultural Costs and Prices (CACP)"
-      ],
-      "ml_weight": 1.0
+        {
+          "source_id": "icar",
+          "source_name": "Indian Council of Agricultural Research (ICAR)",
+          "tier": "TIER_1",
+          "source_type": "government_research",
+          "access_method": "rss",
+          "official_url": "https://icar.org.in/",
+          "rss_url": "https://icar.org.in/rss.xml",
+          "google_news_query": "ICAR agriculture crop research India",
+          "topics": ["crop_research", "agricultural_advisories", "pest_disease", "farming_technology", "variety_release"],
+          "enabled": true,
+          "status": "active"
+        },
+        {
+          "source_id": "pib_agriculture",
+          "source_name": "Press Information Bureau (PIB) — Agriculture",
+          "tier": "TIER_1",
+          "source_type": "government_press",
+          "access_method": "rss",
+          "official_url": "https://pib.gov.in/",
+          "rss_url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
+          "google_news_query": "site:pib.gov.in agriculture MSP policy",
+          "topics": ["msp_policy", "agriculture_policy", "subsidies", "government_schemes", "export_import", "fertilizer"],
+          "enabled": true,
+          "status": "active"
+        },
+        {
+          "source_id": "dafew",
+          "source_name": "Ministry of Agriculture & Farmers Welfare (DA&FW)",
+          "tier": "TIER_1",
+          "source_type": "government",
+          "access_method": "rss",
+          "official_url": "https://agriwelfare.gov.in/",
+          "google_news_query": "site:agriwelfare.gov.in agriculture scheme farmer",
+          "topics": ["agriculture_policy", "farmer_schemes", "crop_production", "subsidy"],
+          "enabled": true,
+          "status": "active"
+        },
+        {
+          "source_id": "imd",
+          "source_name": "India Meteorological Department (IMD)",
+          "tier": "TIER_1",
+          "source_type": "government_weather",
+          "access_method": "rss",
+          "official_url": "https://mausam.imd.gov.in/",
+          "rss_url": "https://mausam.imd.gov.in/rss/weather_warning.xml",
+          "google_news_query": "IMD India weather warning rainfall cyclone drought",
+          "topics": ["rainfall", "cyclone", "drought", "heatwave", "extreme_weather", "weather_warning", "flood"],
+          "enabled": true,
+          "status": "active"
+        },
+        {
+          "source_id": "moes",
+          "source_name": "Ministry of Earth Sciences",
+          "tier": "TIER_1",
+          "source_type": "government_science",
+          "access_method": "rss",
+          "official_url": "https://moes.gov.in/",
+          "google_news_query": "site:moes.gov.in climate weather extreme event",
+          "topics": ["climate", "weather", "extreme_events", "ocean"],
+          "enabled": true,
+          "status": "active"
+        }
+      ]
     },
-    "TIER_2": {
-      "label": "Reputable Financial & Agricultural Media",
+
+    "TIER_1B_STATE_GOVERNMENT": {
+      "label": "State Government Agriculture Departments",
+      "credibility_score": 0.95,
+      "ml_weight": 0.95,
+      "note": "Dynamically selected based on user-selected state. Use google_news_query_template.",
+      "query_template": {
+        "crop_recommendation": "{state} agriculture department crop advisory pest disease farmer",
+        "price_prediction": "{state} {crop} mandi price market agriculture department"
+      },
+      "state_url_templates": {
+        "Karnataka": "https://raitamitra.karnataka.gov.in/",
+        "Maharashtra": "https://krishi.maharashtra.gov.in/",
+        "Punjab": "https://agripb.gov.in/",
+        "Haryana": "https://agriharyana.gov.in/",
+        "Uttar Pradesh": "https://upagriculture.com/",
+        "Rajasthan": "https://agriculture.rajasthan.gov.in/",
+        "Tamil Nadu": "https://www.tn.gov.in/department/2",
+        "Andhra Pradesh": "https://ap.gov.in/agriculture",
+        "Telangana": "https://agri.telangana.gov.in/",
+        "West Bengal": "https://wb.gov.in/department-details-27.aspx",
+        "Bihar": "https://agriculture.bih.nic.in/",
+        "Madhya Pradesh": "https://mpkrishi.mp.gov.in/",
+        "Gujarat": "https://agri.gujarat.gov.in/",
+        "Odisha": "https://agri.odisha.gov.in/",
+        "Kerala": "https://www.keralaagriculture.gov.in/"
+      },
+      "fallback_google_query": "{state} agriculture department advisory {season}",
+      "enabled": true,
+      "status": "dynamic"
+    },
+
+    "TIER_1C_KVK_UNIVERSITIES": {
+      "label": "KVK Network & State Agricultural Universities",
+      "credibility_score": 0.92,
+      "ml_weight": 0.92,
+      "note": "Used for district-level advisories when district is available (Crop Recommendation).",
+      "query_template": {
+        "district_specific": "{district} KVK crop advisory sowing pest disease",
+        "state_level": "{state} agricultural university crop advisory research"
+      },
+      "known_kvk_domains": [
+        "kvk.icar.gov.in",
+        "www.kvk.icar.gov.in"
+      ],
+      "known_universities": {
+        "Karnataka": "University of Agricultural Sciences (UAS) Bangalore / Dharwad / Raichur",
+        "Punjab": "Punjab Agricultural University (PAU)",
+        "Haryana": "Chaudhary Charan Singh Haryana Agricultural University (CCSHAU)",
+        "Maharashtra": "Dr. Panjabrao Deshmukh Krishi Vidyapeeth / Mahatma Phule Krishi Vidyapeeth",
+        "Tamil Nadu": "Tamil Nadu Agricultural University (TNAU)",
+        "Andhra Pradesh": "Acharya N.G. Ranga Agricultural University (ANGRAU)",
+        "Uttar Pradesh": "Chandra Shekhar Azad University of Agriculture & Technology"
+      },
+      "enabled": true,
+      "status": "dynamic"
+    },
+
+    "TIER_2_AGRICULTURAL_NEWS": {
+      "label": "Agricultural News & Trade Publications",
       "credibility_score": 0.8,
+      "ml_weight": 0.8,
       "sources": [
-        "The Hindu BusinessLine (Agri-Business)",
-        "Economic Times (Agriculture)",
-        "Financial Express (Agri Section)",
-        "Press Trust of India (PTI)",
-        "Reuters India Agriculture",
-        "Krishi Jagran"
-      ],
-      "ml_weight": 0.8
+        {
+          "source_id": "krishi_jagran",
+          "source_name": "Krishi Jagran",
+          "official_url": "https://krishijagran.com/",
+          "rss_url": "https://krishijagran.com/feed/",
+          "topics": ["crop_advisory", "market_price", "government_scheme", "farming_technology"],
+          "enabled": true
+        },
+        {
+          "source_id": "agri_farming",
+          "source_name": "Agri Farming",
+          "official_url": "https://www.agrifarming.in/",
+          "rss_url": "https://www.agrifarming.in/feed",
+          "topics": ["crop_guide", "farming_practices", "horticulture"],
+          "enabled": true
+        },
+        {
+          "source_id": "agriculture_world",
+          "source_name": "Agriculture World",
+          "official_url": "https://www.agriworld.in/",
+          "topics": ["market_price", "crop_news", "agricultural_policy"],
+          "enabled": true
+        },
+        {
+          "source_id": "chinimandi",
+          "source_name": "ChiniMandi",
+          "official_url": "https://www.chinimandi.com/",
+          "rss_url": "https://www.chinimandi.com/feed/",
+          "topics": ["sugarcane", "sugar", "commodity_price", "export_import"],
+          "enabled": true
+        },
+        {
+          "source_id": "agrospectrum",
+          "source_name": "AgroSpectrum",
+          "official_url": "https://www.agrospectrum.in/",
+          "rss_url": "https://www.agrospectrum.in/feed/",
+          "topics": ["agribusiness", "input_market", "agricultural_technology"],
+          "enabled": true
+        },
+        {
+          "source_id": "rural_voice",
+          "source_name": "Rural Voice",
+          "official_url": "https://ruralvoice.in/",
+          "rss_url": "https://ruralvoice.in/feed/",
+          "topics": ["farmer_welfare", "crop_news", "mandi_price", "government_scheme"],
+          "enabled": true
+        },
+        {
+          "source_id": "agriculture_post",
+          "source_name": "Agriculture Post",
+          "official_url": "https://agriculturepost.com/",
+          "rss_url": "https://agriculturepost.com/feed/",
+          "topics": ["crop_news", "market", "farming_technology"],
+          "enabled": true
+        }
+      ]
     },
-    "TIER_3": {
-      "label": "Unverified Websites & Social Media",
-      "credibility_score": 0.0,
+
+    "TIER_3_BUSINESS_MARKET": {
+      "label": "Business & Financial Market News",
+      "credibility_score": 0.8,
+      "ml_weight": 0.8,
       "sources": [
-        "Unverified Agri Blogs",
-        "Social Media Posts"
-      ],
-      "ml_weight": 0.0,
-      "note": "STRICTLY EXCLUDED from ML inference."
+        {
+          "source_id": "economic_times_agri",
+          "source_name": "Economic Times — Agriculture",
+          "official_url": "https://economictimes.indiatimes.com/news/economy/agriculture",
+          "rss_url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms",
+          "google_news_query": "site:economictimes.indiatimes.com agriculture commodity price",
+          "topics": ["commodity_market", "supply_shock", "export_import", "msp", "inflation", "fuel", "logistics"],
+          "enabled": true
+        },
+        {
+          "source_id": "business_standard_agri",
+          "source_name": "Business Standard — Agriculture",
+          "official_url": "https://www.business-standard.com/topic/agriculture",
+          "rss_url": "https://www.business-standard.com/rss/latest.rss",
+          "topics": ["commodity_market", "agribusiness", "export_policy", "market_price"],
+          "enabled": true
+        },
+        {
+          "source_id": "hindu_businessline",
+          "source_name": "The Hindu BusinessLine — Agri-Business",
+          "official_url": "https://www.thehindubusinessline.com/economy/agri-business/",
+          "rss_url": "https://www.thehindubusinessline.com/feeder/default.rss",
+          "topics": ["agribusiness", "commodity_market", "msp", "export_import", "market_price"],
+          "enabled": true
+        },
+        {
+          "source_id": "financial_express_agri",
+          "source_name": "Financial Express — Agriculture",
+          "official_url": "https://www.financialexpress.com/market/commodities/",
+          "rss_url": "https://www.financialexpress.com/feeds/",
+          "topics": ["commodity_market", "agri_finance", "market_price", "export"],
+          "enabled": true
+        },
+        {
+          "source_id": "moneycontrol_agri",
+          "source_name": "Moneycontrol — Commodity",
+          "official_url": "https://www.moneycontrol.com/commodity/",
+          "topics": ["commodity_price", "market_price", "global_market"],
+          "enabled": true
+        },
+        {
+          "source_id": "reuters_agri",
+          "source_name": "Reuters — Agriculture India",
+          "official_url": "https://www.reuters.com/world/india/",
+          "google_news_query": "site:reuters.com India agriculture crop commodity",
+          "topics": ["international_commodity", "global_market", "war_conflict", "food_inflation"],
+          "enabled": true
+        }
+      ]
+    },
+
+    "TIER_4_NATIONAL_NEWS": {
+      "label": "National News Outlets",
+      "credibility_score": 0.75,
+      "ml_weight": 0.7,
+      "sources": [
+        {
+          "source_id": "the_hindu",
+          "source_name": "The Hindu",
+          "official_url": "https://www.thehindu.com/",
+          "rss_url": "https://www.thehindu.com/feeder/default.rss",
+          "enabled": true
+        },
+        {
+          "source_id": "indian_express",
+          "source_name": "The Indian Express",
+          "official_url": "https://indianexpress.com/",
+          "rss_url": "https://indianexpress.com/feed/",
+          "enabled": true
+        },
+        {
+          "source_id": "times_of_india",
+          "source_name": "Times of India",
+          "official_url": "https://timesofindia.indiatimes.com/",
+          "rss_url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
+          "enabled": true
+        },
+        {
+          "source_id": "hindustan_times",
+          "source_name": "Hindustan Times",
+          "official_url": "https://www.hindustantimes.com/",
+          "rss_url": "https://www.hindustantimes.com/feeds/rss/agriculture/rssfeed.xml",
+          "enabled": true
+        },
+        {
+          "source_id": "india_today",
+          "source_name": "India Today",
+          "official_url": "https://www.indiatoday.in/",
+          "rss_url": "https://www.indiatoday.in/rss/1206577",
+          "enabled": true
+        }
+      ]
+    },
+
+    "TIER_5_CLIMATE_SCIENCE": {
+      "label": "Climate & Environmental Science",
+      "credibility_score": 0.9,
+      "ml_weight": 0.85,
+      "sources": [
+        {
+          "source_id": "down_to_earth",
+          "source_name": "Down To Earth",
+          "official_url": "https://www.downtoearth.org.in/",
+          "rss_url": "https://www.downtoearth.org.in/rss",
+          "topics": ["climate_change", "drought", "flood", "environmental_disaster", "food_security"],
+          "enabled": true
+        },
+        {
+          "source_id": "mongabay_india",
+          "source_name": "Mongabay India",
+          "official_url": "https://india.mongabay.com/",
+          "rss_url": "https://india.mongabay.com/feed/",
+          "topics": ["environmental_impact", "climate", "biodiversity", "agriculture_environment"],
+          "enabled": true
+        },
+        {
+          "source_id": "fao_india",
+          "source_name": "FAO India",
+          "official_url": "https://www.fao.org/india/",
+          "google_news_query": "FAO India food security crop production 2024",
+          "topics": ["food_security", "global_crop_production", "international_commodity"],
+          "enabled": true
+        }
+      ]
+    },
+
+    "TIER_6_GOOGLE_NEWS_RSS": {
+      "label": "Google News RSS — Broad Discovery Layer",
+      "credibility_score": 0.6,
+      "ml_weight": 0.6,
+      "note": "Google News aggregates all tiers. Used as dynamic discovery. Groq validates and classifies retrieved content.",
+      "base_url": "https://news.google.com/rss/search?q={query}&hl=en-IN&gl=IN&ceid=IN:en",
+      "query_templates": {
+        "crop_recommendation_district": [
+          "{state} agriculture",
+          "{district} agriculture",
+          "{district} farmers",
+          "{district} crop",
+          "{district} rainfall",
+          "{district} flood",
+          "{district} drought",
+          "{district} pest disease",
+          "{district} mandi price",
+          "{state} agriculture department advisory",
+          "{state} crop damage disaster"
+        ],
+        "price_prediction_crop_state": [
+          "{state} {crop}",
+          "{state} {crop} price",
+          "{state} {crop} mandi",
+          "{state} agriculture",
+          "{state} {crop} rainfall",
+          "{state} {crop} disease",
+          "{state} {crop} export",
+          "{state} agriculture policy",
+          "India {crop} market price",
+          "India {crop} export restriction",
+          "global {crop} commodity price"
+        ],
+        "general_agricultural_india": [
+          "India MSP 2024 2025",
+          "India agriculture ministry announcement",
+          "India crop production estimate USDA",
+          "India food inflation commodity",
+          "India agricultural disaster flood drought cyclone"
+        ]
+      },
+      "enabled": true,
+      "status": "active"
     }
   },
+
   "geographic_relevance_weights": {
     "DISTRICT": 1.0,
     "STATE": 0.8,
     "NATIONAL": 0.5,
     "INTERNATIONAL": 0.3
+  },
+
+  "event_type_categories": [
+    "FLOOD", "DROUGHT", "HEAVY_RAIN", "HEATWAVE", "CYCLONE", "FROST", "HAILSTORM",
+    "PEST_OUTBREAK", "DISEASE_OUTBREAK", "MSP_POLICY", "EXPORT_RESTRICTION",
+    "IMPORT_RESTRICTION", "FERTILIZER", "MARKET_PRICE_EVENT", "SUPPLY_SHOCK",
+    "WAR_CONFLICT", "FUEL_SHOCK", "GOVERNMENT_POLICY", "CROP_DAMAGE", "OTHER"
+  ],
+
+  "groq_extraction_schema": {
+    "model": "llama-3.3-70b-versatile",
+    "instruction": "Extract structured agricultural intelligence from the provided source text. ONLY use information present in the supplied text. Do not use general knowledge as current evidence.",
+    "required_fields": [
+      "is_agriculture_related",
+      "crop",
+      "state",
+      "district",
+      "event_type",
+      "impact_direction",
+      "severity",
+      "confidence",
+      "verification_status",
+      "supporting_evidence",
+      "is_blackswan",
+      "geographic_scope"
+    ],
+    "verification_values": ["VERIFIED", "PLAUSIBLE", "INSUFFICIENT"],
+    "impact_directions": ["POSITIVE", "NEGATIVE", "NEUTRAL"],
+    "severity_values": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+    "blackswan_criteria": "Confirmed major disruption with actual source evidence: war, export ban, severe multi-district disaster, major pandemic, extreme commodity shock. NOT to be declared from speculative or opinion content."
+  },
+
+  "pipeline": {
+    "step_1": "Fetch from registered sources via RSS / HTTP",
+    "step_2": "Extract title + summary + URL",
+    "step_3": "Deduplicate by URL and headline similarity",
+    "step_4": "Send retrieved text to Groq Llama 3.3 70B for structured extraction",
+    "step_5": "Apply geographic relevance scoring (DISTRICT > STATE > NATIONAL > INTERNATIONAL)",
+    "step_6": "Apply freshness scoring (hours/days since publication)",
+    "step_7": "Integrate into Crop Recommendation risk signal or Price Advisory layer",
+    "critical_rule": "Groq DOES NOT FETCH NEWS. Groq reads retrieved source text ONLY. Groq's internal knowledge is NOT used as current evidence."
   }
 }

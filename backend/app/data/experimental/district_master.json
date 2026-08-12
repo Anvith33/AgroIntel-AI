@@ -1964,9 +1964,15 @@
     "state": "Karnataka",
     "district": "Dakshin Kannad",
     "source_names": [
-      "DAKSHIN KANNAD"
+      "DAKSHIN KANNAD",
+      "DAKSHINA KANNADA",
+      "DAKSHINA KANNAD",
+      "SOUTH CANARA",
+      "SOUTH KANARA",
+      "MANGALORE DISTRICT"
     ]
   },
+
   {
     "canonical_id": "Karnataka::Davangere",
     "state": "Karnataka",
