@@ -1,0 +1,29 @@
+{
+  "state_aware": {
+    "mae": 87.23514677576051,
+    "rmse": 158.82782973652195,
+    "mape": 3.4413107987423106,
+    "r2": 0.8739446915479744
+  },
+  "baseline_crop_only": {
+    "mae": 90.75206893894581,
+    "rmse": 171.2264228982788
+  },
+  "total_records": 34137,
+  "states_covered": 24,
+  "feature_cols": [
+    "state_enc",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_7",
+    "rolling_30",
+    "day_of_year",
+    "month",
+    "day_of_week",
+    "year",
+    "black_swan",
+    "arrival_qtl"
+  ]
+}

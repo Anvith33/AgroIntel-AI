@@ -1,0 +1,1459 @@
+{
+  "generated_at": "2026-08-12T23:50:39.683289",
+  "source_years": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "total_records": 178522,
+  "unique_states": 30,
+  "adequate_pairs": 116,
+  "limited_pairs": 3,
+  "insufficient_pairs": 6,
+  "no_data_pairs": 55,
+  "coverage": [
+    {
+      "state": "Andaman and Nicobar Islands",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Andaman and Nicobar Islands",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "crop": "rice",
+      "record_count": 13261,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "crop": "maize",
+      "record_count": 5039,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "crop": "onion",
+      "record_count": 2628,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Andhra Pradesh",
+      "crop": "potato",
+      "record_count": 739,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-28",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Assam",
+      "crop": "rice",
+      "record_count": 578,
+      "first_date": "2019-01-02",
+      "last_date": "2019-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Assam",
+      "crop": "wheat",
+      "record_count": 1351,
+      "first_date": "2019-01-01",
+      "last_date": "2019-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Assam",
+      "crop": "maize",
+      "record_count": 599,
+      "first_date": "2019-01-01",
+      "last_date": "2019-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Assam",
+      "crop": "onion",
+      "record_count": 1181,
+      "first_date": "2019-01-01",
+      "last_date": "2023-12-22",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Assam",
+      "crop": "potato",
+      "record_count": 1347,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Bihar",
+      "crop": "rice",
+      "record_count": 170,
+      "first_date": "2022-02-03",
+      "last_date": "2024-12-31",
+      "coverage_status": "LIMITED"
+    },
+    {
+      "state": "Bihar",
+      "crop": "wheat",
+      "record_count": 1952,
+      "first_date": "2022-01-03",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Bihar",
+      "crop": "maize",
+      "record_count": 218,
+      "first_date": "2022-01-06",
+      "last_date": "2023-04-22",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Bihar",
+      "crop": "onion",
+      "record_count": 21558,
+      "first_date": "2021-11-16",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Bihar",
+      "crop": "potato",
+      "record_count": 22160,
+      "first_date": "2021-11-16",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chandigarh",
+      "crop": "rice",
+      "record_count": 7,
+      "first_date": "2023-10-03",
+      "last_date": "2024-10-10",
+      "coverage_status": "INSUFFICIENT"
+    },
+    {
+      "state": "Chandigarh",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Chandigarh",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Chandigarh",
+      "crop": "onion",
+      "record_count": 866,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-24",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chandigarh",
+      "crop": "potato",
+      "record_count": 903,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-24",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chhattisgarh",
+      "crop": "rice",
+      "record_count": 180877,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chhattisgarh",
+      "crop": "wheat",
+      "record_count": 13315,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chhattisgarh",
+      "crop": "maize",
+      "record_count": 21634,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chhattisgarh",
+      "crop": "onion",
+      "record_count": 6483,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Chhattisgarh",
+      "crop": "potato",
+      "record_count": 8070,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Dadra and Nagar Haveli",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Daman and Diu",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Daman and Diu",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Daman and Diu",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Daman and Diu",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Daman and Diu",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Delhi",
+      "crop": "rice",
+      "record_count": 3176,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Delhi",
+      "crop": "wheat",
+      "record_count": 2684,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Delhi",
+      "crop": "maize",
+      "record_count": 277,
+      "first_date": "2019-01-03",
+      "last_date": "2024-12-23",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Delhi",
+      "crop": "onion",
+      "record_count": 5470,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Delhi",
+      "crop": "potato",
+      "record_count": 5590,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Goa",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Goa",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Goa",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Goa",
+      "crop": "onion",
+      "record_count": 1532,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Goa",
+      "crop": "potato",
+      "record_count": 1501,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Gujarat",
+      "crop": "rice",
+      "record_count": 26702,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Gujarat",
+      "crop": "wheat",
+      "record_count": 95434,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Gujarat",
+      "crop": "maize",
+      "record_count": 22545,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Gujarat",
+      "crop": "onion",
+      "record_count": 37886,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Gujarat",
+      "crop": "potato",
+      "record_count": 32063,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Haryana",
+      "crop": "rice",
+      "record_count": 5179,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Haryana",
+      "crop": "wheat",
+      "record_count": 4839,
+      "first_date": "2019-01-21",
+      "last_date": "2024-12-06",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Haryana",
+      "crop": "maize",
+      "record_count": 1877,
+      "first_date": "2019-01-13",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Haryana",
+      "crop": "onion",
+      "record_count": 71610,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Haryana",
+      "crop": "potato",
+      "record_count": 79702,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Himachal Pradesh",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Himachal Pradesh",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Himachal Pradesh",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Himachal Pradesh",
+      "crop": "onion",
+      "record_count": 27601,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Himachal Pradesh",
+      "crop": "potato",
+      "record_count": 28466,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "crop": "onion",
+      "record_count": 9391,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jammu and Kashmir",
+      "crop": "potato",
+      "record_count": 9191,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jharkhand",
+      "crop": "rice",
+      "record_count": 1287,
+      "first_date": "2019-01-01",
+      "last_date": "2021-07-10",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jharkhand",
+      "crop": "wheat",
+      "record_count": 981,
+      "first_date": "2019-01-01",
+      "last_date": "2021-07-10",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jharkhand",
+      "crop": "maize",
+      "record_count": 293,
+      "first_date": "2019-01-01",
+      "last_date": "2021-07-10",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jharkhand",
+      "crop": "onion",
+      "record_count": 1215,
+      "first_date": "2019-01-01",
+      "last_date": "2022-04-21",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Jharkhand",
+      "crop": "potato",
+      "record_count": 1236,
+      "first_date": "2019-01-01",
+      "last_date": "2023-01-24",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Karnataka",
+      "crop": "rice",
+      "record_count": 20144,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Karnataka",
+      "crop": "wheat",
+      "record_count": 13018,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Karnataka",
+      "crop": "maize",
+      "record_count": 36403,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Karnataka",
+      "crop": "onion",
+      "record_count": 28883,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Karnataka",
+      "crop": "potato",
+      "record_count": 28312,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Kerala",
+      "crop": "rice",
+      "record_count": 2669,
+      "first_date": "2019-01-04",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Kerala",
+      "crop": "wheat",
+      "record_count": 825,
+      "first_date": "2019-01-16",
+      "last_date": "2023-12-05",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Kerala",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Kerala",
+      "crop": "onion",
+      "record_count": 102445,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Kerala",
+      "crop": "potato",
+      "record_count": 79936,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Lakshadweep",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Lakshadweep",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Lakshadweep",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Lakshadweep",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Lakshadweep",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "crop": "rice",
+      "record_count": 50295,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "crop": "wheat",
+      "record_count": 314370,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "crop": "maize",
+      "record_count": 83394,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "crop": "onion",
+      "record_count": 58729,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "crop": "potato",
+      "record_count": 47708,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Maharashtra",
+      "crop": "rice",
+      "record_count": 15933,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Maharashtra",
+      "crop": "wheat",
+      "record_count": 126900,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Maharashtra",
+      "crop": "maize",
+      "record_count": 64511,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Maharashtra",
+      "crop": "onion",
+      "record_count": 101898,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Maharashtra",
+      "crop": "potato",
+      "record_count": 40351,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Manipur",
+      "crop": "rice",
+      "record_count": 3037,
+      "first_date": "2019-01-02",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Manipur",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Manipur",
+      "crop": "maize",
+      "record_count": 723,
+      "first_date": "2019-01-02",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Manipur",
+      "crop": "onion",
+      "record_count": 3005,
+      "first_date": "2019-01-02",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Manipur",
+      "crop": "potato",
+      "record_count": 3134,
+      "first_date": "2019-01-02",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "rice",
+      "record_count": 49,
+      "first_date": "2019-01-12",
+      "last_date": "2021-02-13",
+      "coverage_status": "INSUFFICIENT"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "maize",
+      "record_count": 14,
+      "first_date": "2019-06-25",
+      "last_date": "2019-07-12",
+      "coverage_status": "INSUFFICIENT"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "onion",
+      "record_count": 366,
+      "first_date": "2019-01-03",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "potato",
+      "record_count": 2474,
+      "first_date": "2019-01-03",
+      "last_date": "2024-12-30",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "onion",
+      "record_count": 70,
+      "first_date": "2019-01-04",
+      "last_date": "2019-11-28",
+      "coverage_status": "LIMITED"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "potato",
+      "record_count": 103,
+      "first_date": "2019-01-04",
+      "last_date": "2019-11-28",
+      "coverage_status": "LIMITED"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "rice",
+      "record_count": 15,
+      "first_date": "2019-12-05",
+      "last_date": "2020-03-12",
+      "coverage_status": "INSUFFICIENT"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "maize",
+      "record_count": 231,
+      "first_date": "2019-06-27",
+      "last_date": "2023-10-09",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "onion",
+      "record_count": 989,
+      "first_date": "2019-01-04",
+      "last_date": "2024-12-19",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "potato",
+      "record_count": 3351,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-27",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Odisha",
+      "crop": "rice",
+      "record_count": 15668,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Odisha",
+      "crop": "wheat",
+      "record_count": 893,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-14",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Odisha",
+      "crop": "maize",
+      "record_count": 3069,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Odisha",
+      "crop": "onion",
+      "record_count": 52765,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Odisha",
+      "crop": "potato",
+      "record_count": 66741,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Puducherry",
+      "crop": "rice",
+      "record_count": 6136,
+      "first_date": "2019-01-02",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Puducherry",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Puducherry",
+      "crop": "maize",
+      "record_count": 14,
+      "first_date": "2019-01-23",
+      "last_date": "2023-10-30",
+      "coverage_status": "INSUFFICIENT"
+    },
+    {
+      "state": "Puducherry",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Puducherry",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Punjab",
+      "crop": "rice",
+      "record_count": 16261,
+      "first_date": "2019-03-04",
+      "last_date": "2024-12-19",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Punjab",
+      "crop": "wheat",
+      "record_count": 11569,
+      "first_date": "2019-01-07",
+      "last_date": "2024-12-24",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Punjab",
+      "crop": "maize",
+      "record_count": 2367,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Punjab",
+      "crop": "onion",
+      "record_count": 100935,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Punjab",
+      "crop": "potato",
+      "record_count": 114020,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Rajasthan",
+      "crop": "rice",
+      "record_count": 6294,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Rajasthan",
+      "crop": "wheat",
+      "record_count": 100886,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Rajasthan",
+      "crop": "maize",
+      "record_count": 26827,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Rajasthan",
+      "crop": "onion",
+      "record_count": 46654,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Rajasthan",
+      "crop": "potato",
+      "record_count": 45092,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Sikkim",
+      "crop": "rice",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Sikkim",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Sikkim",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Sikkim",
+      "crop": "onion",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Sikkim",
+      "crop": "potato",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "rice",
+      "record_count": 70984,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "maize",
+      "record_count": 24435,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "onion",
+      "record_count": 58221,
+      "first_date": "2023-08-17",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "potato",
+      "record_count": 33887,
+      "first_date": "2024-06-18",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Telangana",
+      "crop": "rice",
+      "record_count": 100298,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Telangana",
+      "crop": "wheat",
+      "record_count": 367,
+      "first_date": "2019-03-09",
+      "last_date": "2024-11-26",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Telangana",
+      "crop": "maize",
+      "record_count": 22636,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Telangana",
+      "crop": "onion",
+      "record_count": 15487,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Telangana",
+      "crop": "potato",
+      "record_count": 15759,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Tripura",
+      "crop": "rice",
+      "record_count": 2703,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Tripura",
+      "crop": "wheat",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "Tripura",
+      "crop": "maize",
+      "record_count": 2,
+      "first_date": "2019-09-14",
+      "last_date": "2020-12-21",
+      "coverage_status": "INSUFFICIENT"
+    },
+    {
+      "state": "Tripura",
+      "crop": "onion",
+      "record_count": 13397,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Tripura",
+      "crop": "potato",
+      "record_count": 39300,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "crop": "rice",
+      "record_count": 91761,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "crop": "wheat",
+      "record_count": 261240,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "crop": "maize",
+      "record_count": 77632,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "crop": "onion",
+      "record_count": 304807,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttar Pradesh",
+      "crop": "potato",
+      "record_count": 340940,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttarakhand",
+      "crop": "rice",
+      "record_count": 2691,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttarakhand",
+      "crop": "wheat",
+      "record_count": 2081,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttarakhand",
+      "crop": "maize",
+      "record_count": 270,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-26",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttarakhand",
+      "crop": "onion",
+      "record_count": 17033,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "Uttarakhand",
+      "crop": "potato",
+      "record_count": 21489,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "West Bengal",
+      "crop": "rice",
+      "record_count": 33917,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "West Bengal",
+      "crop": "wheat",
+      "record_count": 22840,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "West Bengal",
+      "crop": "maize",
+      "record_count": 0,
+      "first_date": null,
+      "last_date": null,
+      "coverage_status": "NO_DATA"
+    },
+    {
+      "state": "West Bengal",
+      "crop": "onion",
+      "record_count": 84580,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    },
+    {
+      "state": "West Bengal",
+      "crop": "potato",
+      "record_count": 126590,
+      "first_date": "2019-01-01",
+      "last_date": "2024-12-31",
+      "coverage_status": "ADEQUATE"
+    }
+  ]
+}

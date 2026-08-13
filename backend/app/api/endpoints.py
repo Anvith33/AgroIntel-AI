@@ -136,7 +136,9 @@ def predict(
             "forecast_series": result.get("predictions", []),
             "date_labels":     result.get("date_labels", []),
             "scope":           result.get("forecast_scope", ""),
+            "model_level":     result.get("model_level", "STATE_AWARE"),
         }
+
         result["advisory"] = {
             "decision": result.get("recommendation", "WAIT"),
             "reason":   result.get("recommendation_reason", ""),

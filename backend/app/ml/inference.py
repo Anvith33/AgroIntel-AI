@@ -84,7 +84,8 @@ def _load_models(crop: str) -> dict:
         return _model_cache[crop]
 
     bundle = {"prophet": None, "xgboost": None, "arima": None, "mlp": None,
-              "metrics": None, "data_tail": None}
+              "metrics": None, "data_tail": None, "xgboost_state": None,
+              "state_encoder": None, "data_tail_state": None, "state_audit": None}
 
     for model_name in ["prophet", "xgboost", "arima", "mlp"]:
         path = MODELS_DIR / f"{model_name}_{crop}.pkl"
@@ -95,6 +96,33 @@ def _load_models(crop: str) -> dict:
                 logger.info(f"Loaded {model_name} for {crop}")
             except Exception as e:
                 logger.warning(f"Could not load {model_name} for {crop}: {e}")
+
+    # Load State-Aware XGBoost model & LabelEncoder
+    state_model_path = MODELS_DIR / f"xgboost_state_{crop}.pkl"
+    encoder_path = MODELS_DIR / f"state_encoder_{crop}.pkl"
+    tail_state_path = MODELS_DIR / f"data_tail_state_{crop}.pkl"
+
+    if state_model_path.exists() and encoder_path.exists():
+        try:
+            with open(state_model_path, "rb") as f:
+                bundle["xgboost_state"] = pickle.load(f)
+            with open(encoder_path, "rb") as f:
+                bundle["state_encoder"] = pickle.load(f)
+            if tail_state_path.exists():
+                with open(tail_state_path, "rb") as f:
+                    bundle["data_tail_state"] = pickle.load(f)
+            logger.info(f"Loaded State-Aware XGBoost & Encoder for {crop}")
+        except Exception as e:
+            logger.warning(f"Could not load state model/encoder for {crop}: {e}")
+
+    # Load state audit JSON if available
+    audit_path = BASE_DIR / "app" / "data" / "experimental" / "state_crop_data_audit.json"
+    if audit_path.exists():
+        try:
+            with open(audit_path, "r", encoding="utf-8") as f:
+                bundle["state_audit"] = json.load(f)
+        except Exception:
+            pass
 
     metrics_path = MODELS_DIR / f"metrics_{crop}.json"
     if metrics_path.exists():
@@ -108,6 +136,7 @@ def _load_models(crop: str) -> dict:
 
     _model_cache[crop] = bundle
     return bundle
+
 
 
 def clear_model_cache():
@@ -146,6 +175,83 @@ def _predict_xgboost(model, recent_prices: list, target_date: date, horizon_days
         prices.append(pred)
         current_date += timedelta(days=1)
     return predictions
+
+
+def _predict_state_aware_xgboost(bundle: dict, crop: str, state: str, live_current_price: float, target_date: date, horizon_days: int):
+    """
+    Generate state-aware XGBoost price prediction using state encoding and state price history.
+    Returns (predictions, model_level, forecast_scope, state_enc)
+    """
+    model = bundle.get("xgboost_state")
+    encoder = bundle.get("state_encoder")
+    tails = bundle.get("data_tail_state") or {}
+    
+    if not model or not encoder:
+        return None, "CROP_ONLY", "National Crop Model Fallback", 0
+
+    from app.ml.build_state_dataset import _norm_state
+    norm_st = _norm_state(state) if state else "Maharashtra"
+
+    classes = list(encoder.classes_)
+    if norm_st not in classes:
+        return None, "CROP_ONLY", f"National Crop Model Fallback ({state})", 0
+
+    state_enc = int(encoder.transform([norm_st])[0])
+
+    record_count = 0
+    audit = bundle.get("state_audit") or {}
+    for r in audit.get("coverage", []):
+        if r.get("state") == norm_st and r.get("crop") == crop.lower():
+            record_count = r.get("record_count", 0)
+            break
+
+    if record_count >= 200:
+        model_level = "STATE_CROP"
+        forecast_scope = f"State-Specific Forecast ({norm_st})"
+    elif record_count >= 50:
+        model_level = "STATE_AWARE"
+        forecast_scope = f"State-Aware Forecast ({norm_st})"
+    else:
+        model_level = "CROP_ONLY"
+        forecast_scope = f"National Crop Model Fallback ({norm_st})"
+
+    st_tail = tails.get(norm_st, [])
+    if st_tail and len(st_tail) >= 15:
+        recent_prices = [float(r["y"]) for r in st_tail]
+    else:
+        base_p = float(live_current_price) if live_current_price else 2000.0
+        recent_prices = [base_p] * 30
+
+    if live_current_price and live_current_price > 0:
+        recent_prices[-1] = float(live_current_price)
+
+    prices = list(recent_prices)
+    predictions = []
+    current_dt = target_date
+
+    for _ in range(horizon_days):
+        l1 = prices[-1]
+        l7 = prices[-7] if len(prices) >= 7 else prices[-1]
+        l14 = prices[-14] if len(prices) >= 14 else prices[-1]
+        l30 = prices[-30] if len(prices) >= 30 else prices[-1]
+        r7 = float(np.mean(prices[-7:]))
+        r30 = float(np.mean(prices[-30:]))
+        d_year = current_dt.timetuple().tm_yday
+        month = current_dt.month
+        d_week = current_dt.weekday()
+        year = current_dt.year
+        bs = 0
+        arr_qtl = 500.0
+
+        feats = np.array([[state_enc, l1, l7, l14, l30, r7, r30, d_year, month, d_week, year, bs, arr_qtl]])
+        pred_val = float(model.predict(feats)[0])
+
+        predictions.append(pred_val)
+        prices.append(pred_val)
+        current_dt += timedelta(days=1)
+
+    return predictions, model_level, forecast_scope, state_enc
+
 
 
 def _predict_arima(model, horizon_days: int) -> list:
@@ -235,8 +341,15 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
 
     market_name = live_data.get("market") or state or "National"
 
-    # ── Build predictions from each available model ──────────────────────────
+    # ── Try State-Aware XGBoost Model first ──────────────────────────────────
+    state_preds, model_level, forecast_scope, state_enc = _predict_state_aware_xgboost(
+        bundle, crop, state, live_current_price, target_date, horizon_days
+    )
+
     all_predictions = {}
+
+    if state_preds:
+        all_predictions["xgboost_state"] = state_preds
 
     if bundle["prophet"]:
         try:
@@ -267,20 +380,21 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
             logger.warning(f"MLP predict error: {e}")
 
     # ── Select best model ─────────────────────────────────────────────────────
-    # Evaluated best models per crop from price_model_evaluation.json
-    EVALUATED_BEST_MODELS = {
-        "rice": "xgboost",
-        "wheat": "prophet",
-        "maize": "xgboost",
-        "onion": "xgboost",
-        "potato": "xgboost",
-    }
-    
-    preferred_model = EVALUATED_BEST_MODELS.get(crop, "prophet")
-    if preferred_model in all_predictions:
-        best_model = preferred_model
+    if "xgboost_state" in all_predictions:
+        best_model = "xgboost_state"
     else:
-        best_model = next(iter(all_predictions), None)
+        EVALUATED_BEST_MODELS = {
+            "rice": "xgboost",
+            "wheat": "prophet",
+            "maize": "xgboost",
+            "onion": "xgboost",
+            "potato": "xgboost",
+        }
+        preferred_model = EVALUATED_BEST_MODELS.get(crop, "prophet")
+        if preferred_model in all_predictions:
+            best_model = preferred_model
+        else:
+            best_model = next(iter(all_predictions), None)
 
     if not all_predictions or best_model is None:
         return {
@@ -300,7 +414,8 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
             "data_age_days":      data_age_days,
             "price_data_source":  price_data_source,
             "price_cached_time":  price_cached_time,
-            "forecast_scope":     "Crop-level ML forecast (state not a model feature)",
+            "forecast_scope":     forecast_scope,
+            "model_level":        model_level,
         }
 
     # 30-day forecast series generated directly by trained ML model
@@ -313,6 +428,7 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
     predicted_price = round(float(best_predictions[horizon_days - 1] if len(best_predictions) >= horizon_days else best_predictions[-1]), 2)
 
     percent_change  = round(((predicted_price - current_price) / current_price) * 100.0, 2)
+
 
     # ── SELL / HOLD / WAIT Decision ──────────────────────────────────────────
     # High uncertainty crops get wider threshold (onion MAE=156, potato MAE=93)
@@ -359,10 +475,11 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
     model_metrics = metrics.get("models", {})
     comparison    = {}
     model_labels  = {
-        "prophet": "Prophet (Seasonal)",
-        "xgboost": "XGBoost (Gradient Boost)",
-        "arima":   "ARIMA (Statistical)",
-        "mlp":     "Deep Learning (MLP)",
+        "xgboost_state": "State-Aware XGBoost (ML Market Forecast)",
+        "prophet":       "Prophet (Seasonal)",
+        "xgboost":       "XGBoost (Gradient Boost)",
+        "arima":         "ARIMA (Statistical)",
+        "mlp":           "Deep Learning (MLP)",
     }
     for m_name, m_preds in all_predictions.items():
         m_mae  = model_metrics.get(m_name, {}).get("mae", None)
@@ -406,13 +523,10 @@ def predict_price(crop: str, state: str = "All", horizon_days: int = 30) -> dict
         "price_data_quality":    live_data.get("data_quality", "unknown"),
         "price_age_hours":       live_data.get("data_age_hours"),
         "price_source_note":     live_data.get("note", ""),
-        # ── Forecast scope disclaimer ──
-        "forecast_scope": (
-            "Crop-level 30-day ML forecast. "
-            "State is not a trained feature; the ML forecast is the same across states for the same crop. "
-            "The current Mandi price varies by state/market."
-        ),
+        "model_level":           model_level,
+        "forecast_scope":        forecast_scope,
     }
+
 
 
 # ── Region-crop mapping cache ─────────────────────────────────────────────────

@@ -500,38 +500,20 @@ function renderPredResults(predData, crop, horizon, inputState) {
     if (isMandiAvailable && isPredAvailable) {
         const changePct = ((predPriceNum - curPriceNum) / curPriceNum) * 100.0;
         const direction = changePct >= 0 ? 'increase' : 'decline';
-        nlpText = `${cropDisplay} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal based on the latest available Mandi observation${obsDate !== '—' ? ' dated ' + formatDate(obsDate) : ''}. The <strong>${modelName}</strong> model forecasts approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} per quintal after ${horizon} days — an expected ${direction} of about ${Math.abs(changePct).toFixed(1)}%. Based on this analysis, the system suggests <strong>${advAction}</strong>.`;
+        nlpText = `${cropDisplay} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal in ${mktName}${obsDate !== '—' ? ' (observed on ' + formatDate(obsDate) + ')' : ''}. The state-aware forecasting model projects approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} per quintal after ${horizon} days — an expected market ${direction} of about ${Math.abs(changePct).toFixed(1)}%. Based on price trends and market uncertainty, the recommended decision is <strong>${advAction}</strong>.`;
     } else if (isMandiAvailable) {
-        nlpText = `${cropDisplay} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal. A 30-day price forecast is currently unavailable.`;
+        nlpText = `${cropDisplay} is currently trading at ₹${Math.round(curPriceNum).toLocaleString('en-IN')} per quintal in ${mktName}. A 30-day price forecast is currently unavailable.`;
     } else {
-        nlpText = `${cropDisplay} market data is currently unavailable. Please check back later or verify local Mandi rates.`;
+        nlpText = `${cropDisplay} market data is currently unavailable for ${mktName}. Please check back later or verify local Mandi rates.`;
     }
 
-    // ── Model comparison (shown only if available) ────────────────────────────
-    const modelComparison = predData.model_comparison || {};
-    const mcKeys = Object.keys(modelComparison);
-    const mcHtml = mcKeys.length > 0 ? `
-        <div class="glass-card" style="padding:14px;margin-bottom:16px">
-            <h4 style="margin:0 0 10px;font-size:0.88rem;opacity:0.8">📊 Model Comparison (${horizon}-day forecast)</h4>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px">
-                ${mcKeys.map(mk => {
-                    const m = modelComparison[mk];
-                    return `<div style="background:${m.is_best ? 'rgba(34,197,94,0.1)' : 'rgba(255,255,255,0.04)'};border:1px solid ${m.is_best ? 'rgba(34,197,94,0.3)' : 'rgba(255,255,255,0.08)'};border-radius:6px;padding:10px;text-align:center">
-                        <div style="font-size:0.72rem;opacity:0.65;margin-bottom:4px">${m.label || mk}${m.is_best ? ' ✓' : ''}</div>
-                        <div style="font-size:1rem;font-weight:700;color:${m.is_best ? '#22c55e' : '#e2e8f0'}">₹${Math.round(m.predicted_price).toLocaleString('en-IN')}</div>
-                        ${m.mae ? `<div style="font-size:0.68rem;opacity:0.5;margin-top:2px">MAE: ₹${m.mae}</div>` : ''}
-                    </div>`;
-                }).join('')}
-            </div>
-        </div>` : '';
-
-    // ── Assemble HTML ─────────────────────────────────────────────────────────
+    // ── Assemble Farmer-Friendly HTML ─────────────────────────────────────────
     const html = `
         <!-- Header -->
         <div class="pred-summary-row" style="margin-bottom:16px">
             <div class="pred-meta">
                 <h3 style="margin:0;font-size:1.4rem">${cropDisplay} Price Outlook</h3>
-                <div style="font-size:0.82rem;opacity:0.75;margin-top:2px">📍 ${inputState || 'National'}${forecastScope ? ' · ' + forecastScope : ''}</div>
+                <div style="font-size:0.82rem;opacity:0.75;margin-top:2px">📍 State: ${inputState || 'National'}</div>
             </div>
             <div class="pred-decision" style="background:${advColor}22;border:1px solid ${advColor};color:${advColor};padding:8px 18px">
                 <span class="dec-word" style="font-size:1.1rem;font-weight:800;letter-spacing:1px">${advAction}</span>
@@ -556,7 +538,6 @@ function renderPredResults(predData, crop, horizon, inputState) {
                 <div style="font-size:0.78rem;opacity:0.75;text-transform:uppercase;letter-spacing:0.5px;font-weight:600">Expected Price in ${horizon} Days</div>
                 ${isPredAvailable ? `
                 <div style="font-size:1.8rem;font-weight:800;color:#a78bfa;margin:8px 0">${predPriceDisplay} <span style="font-size:0.85rem;font-weight:500;opacity:0.7">/ quintal</span></div>
-                <div style="font-size:0.72rem;opacity:0.6">Model: ${modelName}</div>
                 ` : `
                 <div style="font-size:0.82rem;color:#fbbf24;margin-top:10px;line-height:1.4">${predData.forecast?.reason || predData.message || "Forecast unavailable for this crop."}</div>
                 `}
@@ -586,15 +567,14 @@ function renderPredResults(predData, crop, horizon, inputState) {
         <div class="glass-card" style="padding:18px;margin-bottom:16px">
             <h4 style="margin:0 0 8px;font-size:0.95rem;color:#38bdf8">Price Outlook</h4>
             <div style="font-size:0.88rem;line-height:1.5;opacity:0.92">${nlpText}</div>
-        </div>
-
-        ${mcHtml}`;
+        </div>`;
 
     document.getElementById("predResults").innerHTML = html;
 
     if (isPredAvailable) {
         renderPriceChart(predData, horizon, curPriceNum, obsDate);
     }
+
 }
 
 /**
