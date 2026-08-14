@@ -1,0 +1,132 @@
+{
+  "rice": {
+    "1_day": {
+      "mae": 91.29,
+      "rmse": 167.18,
+      "mape_pct": 3.62,
+      "reliability_rating": "HIGH"
+    },
+    "7_day": {
+      "mae": 97.94,
+      "rmse": 176.87,
+      "mape_pct": 3.82,
+      "reliability_rating": "HIGH"
+    },
+    "15_day": {
+      "mae": 149.65,
+      "rmse": 308.49,
+      "mape_pct": 5.54,
+      "reliability_rating": "HIGH"
+    },
+    "30_day": {
+      "mae": 132.36,
+      "rmse": 240.15,
+      "mape_pct": 5.28,
+      "reliability_rating": "HIGH"
+    }
+  },
+  "wheat": {
+    "1_day": {
+      "mae": 93.02,
+      "rmse": 179.67,
+      "mape_pct": 3.63,
+      "reliability_rating": "HIGH"
+    },
+    "7_day": {
+      "mae": 76.75,
+      "rmse": 123.28,
+      "mape_pct": 3.01,
+      "reliability_rating": "HIGH"
+    },
+    "15_day": {
+      "mae": 125.73,
+      "rmse": 256.01,
+      "mape_pct": 4.83,
+      "reliability_rating": "HIGH"
+    },
+    "30_day": {
+      "mae": 152.03,
+      "rmse": 300.57,
+      "mape_pct": 5.95,
+      "reliability_rating": "HIGH"
+    }
+  },
+  "maize": {
+    "1_day": {
+      "mae": 101.13,
+      "rmse": 207.24,
+      "mape_pct": 4.27,
+      "reliability_rating": "HIGH"
+    },
+    "7_day": {
+      "mae": 83.91,
+      "rmse": 143.57,
+      "mape_pct": 3.43,
+      "reliability_rating": "HIGH"
+    },
+    "15_day": {
+      "mae": 91.6,
+      "rmse": 151.82,
+      "mape_pct": 3.73,
+      "reliability_rating": "HIGH"
+    },
+    "30_day": {
+      "mae": 116.03,
+      "rmse": 184.44,
+      "mape_pct": 5.04,
+      "reliability_rating": "HIGH"
+    }
+  },
+  "onion": {
+    "1_day": {
+      "mae": 172.12,
+      "rmse": 287.42,
+      "mape_pct": 11.07,
+      "reliability_rating": "MODERATE"
+    },
+    "7_day": {
+      "mae": 213.89,
+      "rmse": 429.21,
+      "mape_pct": 12.95,
+      "reliability_rating": "MODERATE"
+    },
+    "15_day": {
+      "mae": 203.04,
+      "rmse": 336.69,
+      "mape_pct": 7.26,
+      "reliability_rating": "MODERATE"
+    },
+    "30_day": {
+      "mae": 278.32,
+      "rmse": 459.16,
+      "mape_pct": 16.68,
+      "reliability_rating": "UNCERTAIN"
+    }
+  },
+  "potato": {
+    "1_day": {
+      "mae": 332.1,
+      "rmse": 1427.39,
+      "mape_pct": 36.54,
+      "reliability_rating": "UNCERTAIN"
+    },
+    "7_day": {
+      "mae": 418.09,
+      "rmse": 2343.81,
+      "mape_pct": 16.85,
+      "reliability_rating": "UNCERTAIN"
+    },
+    "15_day": {
+      "mae": 359.65,
+      "rmse": 1497.98,
+      "mape_pct": 13.55,
+      "reliability_rating": "MODERATE"
+    },
+    "30_day": {
+      "mae": 381.23,
+      "rmse": 1460.28,
+      "mape_pct": 17.13,
+      "reliability_rating": "UNCERTAIN"
+    }
+  }
+}

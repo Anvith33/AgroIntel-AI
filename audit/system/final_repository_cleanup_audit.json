@@ -1,0 +1,25 @@
+{
+  "audit_timestamp": "2026-08-14T15:10:00",
+  "cleanup_strategy": "Consolidated single-authoritative architecture without duplicate legacy files",
+  "components": {
+    "price_forecasting": {
+      "authoritative_data_builder": "backend/app/ml/build_state_dataset.py",
+      "authoritative_training_script": "backend/app/ml/train_state_models.py",
+      "authoritative_inference_engine": "backend/app/ml/inference.py",
+      "authoritative_feature_engineering": "backend/app/ml/feature_engineering.py"
+    },
+    "crop_recommendation": {
+      "authoritative_engine": "backend/app/services/phase6_integration_service.py",
+      "authoritative_classifier": "backend/app/ml/crop_recommender.py"
+    },
+    "news_intelligence": {
+      "authoritative_service": "backend/app/services/news_intelligence_service.py",
+      "source_registry": "backend/app/data/experimental/news_source_registry.json"
+    },
+    "api_layer": {
+      "farmer_endpoints": "backend/app/api/endpoints.py",
+      "phase6_endpoints": "backend/app/api/phase6_router.py",
+      "main_entry": "backend/app/main.py"
+    }
+  }
+}

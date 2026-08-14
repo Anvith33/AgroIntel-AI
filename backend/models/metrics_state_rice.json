@@ -1,13 +1,13 @@
 {
   "state_aware": {
-    "mae": 87.23514677576051,
-    "rmse": 158.82782973652195,
-    "mape": 3.4413107987423106,
-    "r2": 0.8739446915479744
+    "mae": 94.45386291693391,
+    "rmse": 167.812246690287,
+    "mape": 3.696071761843141,
+    "r2": 0.8592801900783198
   },
   "baseline_crop_only": {
-    "mae": 90.75206893894581,
-    "rmse": 171.2264228982788
+    "mae": 91.89426058655732,
+    "rmse": 165.82426426374744
   },
   "total_records": 34137,
   "states_covered": 24,
@@ -19,11 +19,12 @@
     "lag_30",
     "rolling_7",
     "rolling_30",
+    "rolling_std_7",
+    "price_range",
     "day_of_year",
     "month",
     "day_of_week",
     "year",
-    "black_swan",
-    "arrival_qtl"
+    "black_swan"
   ]
 }

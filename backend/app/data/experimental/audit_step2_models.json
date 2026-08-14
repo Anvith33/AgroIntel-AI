@@ -1,0 +1,884 @@
+{
+  "arima_maize": {
+    "file": "arima_maize.pkl",
+    "size_kb": 4541.0
+  },
+  "arima_onion": {
+    "file": "arima_onion.pkl",
+    "size_kb": 4541.0
+  },
+  "arima_potato": {
+    "file": "arima_potato.pkl",
+    "size_kb": 4541.0
+  },
+  "arima_rice": {
+    "file": "arima_rice.pkl",
+    "size_kb": 4541.0
+  },
+  "arima_wheat": {
+    "file": "arima_wheat.pkl",
+    "size_kb": 4541.0
+  },
+  "crop_recommender_encoder": {
+    "file": "crop_recommender_encoder.pkl",
+    "size_kb": 0.5
+  },
+  "crop_recommender_rf": {
+    "file": "crop_recommender_rf.pkl",
+    "size_kb": 3261.6
+  },
+  "data_tail_maize": {
+    "file": "data_tail_maize.pkl",
+    "size_kb": 7.3
+  },
+  "data_tail_onion": {
+    "file": "data_tail_onion.pkl",
+    "size_kb": 7.3
+  },
+  "data_tail_potato": {
+    "file": "data_tail_potato.pkl",
+    "size_kb": 7.3
+  },
+  "data_tail_rice": {
+    "file": "data_tail_rice.pkl",
+    "size_kb": 7.3
+  },
+  "data_tail_state_maize": {
+    "file": "data_tail_state_maize.pkl",
+    "size_kb": 40.2,
+    "states": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Gujarat",
+      "Haryana",
+      "Jharkhand",
+      "Karnataka",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Uttar Pradesh",
+      "Uttarakhand"
+    ],
+    "n_states": 20,
+    "min_tail_size": 60,
+    "max_tail_size": 60
+  },
+  "data_tail_state_onion": {
+    "file": "data_tail_state_onion.pkl",
+    "size_kb": 59.0,
+    "states": [
+      "Andaman and Nicobar",
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chandigarh",
+      "Chhattisgarh",
+      "Delhi",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_states": 30,
+    "min_tail_size": 26,
+    "max_tail_size": 60
+  },
+  "data_tail_state_potato": {
+    "file": "data_tail_state_potato.pkl",
+    "size_kb": 60.1,
+    "states": [
+      "Andaman and Nicobar",
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chandigarh",
+      "Chhattisgarh",
+      "Delhi",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_states": 30,
+    "min_tail_size": 56,
+    "max_tail_size": 60
+  },
+  "data_tail_state_rice": {
+    "file": "data_tail_state_rice.pkl",
+    "size_kb": 46.9,
+    "states": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Gujarat",
+      "Haryana",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Odisha",
+      "Puducherry",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_states": 24,
+    "min_tail_size": 19,
+    "max_tail_size": 60
+  },
+  "data_tail_state_wheat": {
+    "file": "data_tail_state_wheat.pkl",
+    "size_kb": 36.2,
+    "states": [
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Gujarat",
+      "Haryana",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Telangana",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_states": 18,
+    "min_tail_size": 60,
+    "max_tail_size": 60
+  },
+  "data_tail_wheat": {
+    "file": "data_tail_wheat.pkl",
+    "size_kb": 7.3
+  },
+  "mlp_maize": {
+    "file": "mlp_maize.pkl",
+    "size_kb": 80.3
+  },
+  "mlp_onion": {
+    "file": "mlp_onion.pkl",
+    "size_kb": 80.3
+  },
+  "mlp_potato": {
+    "file": "mlp_potato.pkl",
+    "size_kb": 80.3
+  },
+  "mlp_rice": {
+    "file": "mlp_rice.pkl",
+    "size_kb": 80.3
+  },
+  "mlp_wheat": {
+    "file": "mlp_wheat.pkl",
+    "size_kb": 80.3
+  },
+  "prophet_maize": {
+    "file": "prophet_maize.pkl",
+    "size_kb": 190.8
+  },
+  "prophet_onion": {
+    "file": "prophet_onion.pkl",
+    "size_kb": 190.8
+  },
+  "prophet_potato": {
+    "file": "prophet_potato.pkl",
+    "size_kb": 190.8
+  },
+  "prophet_rice": {
+    "file": "prophet_rice.pkl",
+    "size_kb": 190.8
+  },
+  "prophet_wheat": {
+    "file": "prophet_wheat.pkl",
+    "size_kb": 190.8
+  },
+  "state_encoder_maize": {
+    "file": "state_encoder_maize.pkl",
+    "size_kb": 0.5,
+    "classes": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Gujarat",
+      "Haryana",
+      "Jharkhand",
+      "Karnataka",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Uttar Pradesh",
+      "Uttarakhand"
+    ],
+    "n_classes": 20
+  },
+  "state_encoder_onion": {
+    "file": "state_encoder_onion.pkl",
+    "size_kb": 0.6,
+    "classes": [
+      "Andaman and Nicobar",
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chandigarh",
+      "Chhattisgarh",
+      "Delhi",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_classes": 30
+  },
+  "state_encoder_potato": {
+    "file": "state_encoder_potato.pkl",
+    "size_kb": 0.6,
+    "classes": [
+      "Andaman and Nicobar",
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chandigarh",
+      "Chhattisgarh",
+      "Delhi",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jammu and Kashmir",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_classes": 30
+  },
+  "state_encoder_rice": {
+    "file": "state_encoder_rice.pkl",
+    "size_kb": 0.5,
+    "classes": [
+      "Andhra Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Gujarat",
+      "Haryana",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Odisha",
+      "Puducherry",
+      "Punjab",
+      "Rajasthan",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_classes": 24
+  },
+  "state_encoder_wheat": {
+    "file": "state_encoder_wheat.pkl",
+    "size_kb": 0.4,
+    "classes": [
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Delhi",
+      "Gujarat",
+      "Haryana",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Telangana",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal"
+    ],
+    "n_classes": 18
+  },
+  "xgboost_maize": {
+    "file": "xgboost_maize.pkl",
+    "size_kb": 118.0,
+    "n_features": 11
+  },
+  "xgboost_onion": {
+    "file": "xgboost_onion.pkl",
+    "size_kb": 118.1,
+    "n_features": 11
+  },
+  "xgboost_potato": {
+    "file": "xgboost_potato.pkl",
+    "size_kb": 232.0,
+    "n_features": 11
+  },
+  "xgboost_rice": {
+    "file": "xgboost_rice.pkl",
+    "size_kb": 257.4,
+    "n_features": 11
+  },
+  "xgboost_state_maize": {
+    "file": "xgboost_state_maize.pkl",
+    "size_kb": 1095.1,
+    "n_features": 13
+  },
+  "xgboost_state_onion": {
+    "file": "xgboost_state_onion.pkl",
+    "size_kb": 1214.6,
+    "n_features": 13
+  },
+  "xgboost_state_potato": {
+    "file": "xgboost_state_potato.pkl",
+    "size_kb": 1151.8,
+    "n_features": 13
+  },
+  "xgboost_state_rice": {
+    "file": "xgboost_state_rice.pkl",
+    "size_kb": 1218.1,
+    "n_features": 13
+  },
+  "xgboost_state_wheat": {
+    "file": "xgboost_state_wheat.pkl",
+    "size_kb": 1062.1,
+    "n_features": 13
+  },
+  "xgboost_wheat": {
+    "file": "xgboost_wheat.pkl",
+    "size_kb": 117.4,
+    "n_features": 11
+  },
+  "metrics_maize": {
+    "crop": "maize",
+    "best_baseline": "arima",
+    "production_model": "xgboost",
+    "models": {
+      "arima": {
+        "model_name": "arima",
+        "status": "trained",
+        "mae": 42.11,
+        "rmse": 54.8,
+        "training_time_sec": 0.1,
+        "hyperparameters": {
+          "order": "(1,1,1)"
+        }
+      },
+      "prophet": {
+        "model_name": "prophet",
+        "status": "trained",
+        "mae": 98.7,
+        "rmse": 105.53,
+        "training_time_sec": 0.66,
+        "hyperparameters": {
+          "yearly_seasonality": true,
+          "weekly_seasonality": true
+        }
+      },
+      "lstm": {
+        "model_name": "lstm",
+        "status": "skipped",
+        "mae": 999999.0,
+        "rmse": 999999.0,
+        "training_time_sec": 0.0,
+        "hyperparameters": {
+          "sequence_length": 30,
+          "architecture": "LSTM(64)->Dropout(0.2)->LSTM(32)->Dense(16)->Dense(1)"
+        }
+      },
+      "xgboost": {
+        "model_name": "xgboost",
+        "status": "trained",
+        "mae": 23.79,
+        "rmse": 35.88,
+        "training_time_sec": 1.84,
+        "hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "n_estimators": 100
+        }
+      }
+    },
+    "training_rows": 2102,
+    "validation_rows": 60,
+    "dataset_range": "2019-01-31 to 2024-12-31",
+    "selected_production_model": "xgboost"
+  },
+  "metrics_onion": {
+    "crop": "onion",
+    "best_baseline": "prophet",
+    "production_model": "xgboost",
+    "models": {
+      "arima": {
+        "model_name": "arima",
+        "status": "trained",
+        "mae": 493.14,
+        "rmse": 702.51,
+        "training_time_sec": 0.06,
+        "hyperparameters": {
+          "order": "(1,1,1)"
+        }
+      },
+      "prophet": {
+        "model_name": "prophet",
+        "status": "trained",
+        "mae": 473.8,
+        "rmse": 609.75,
+        "training_time_sec": 0.32,
+        "hyperparameters": {
+          "yearly_seasonality": true,
+          "weekly_seasonality": true
+        }
+      },
+      "lstm": {
+        "model_name": "lstm",
+        "status": "skipped",
+        "mae": 999999.0,
+        "rmse": 999999.0,
+        "training_time_sec": 0.0,
+        "hyperparameters": {
+          "sequence_length": 30,
+          "architecture": "LSTM(64)->Dropout(0.2)->LSTM(32)->Dense(16)->Dense(1)"
+        }
+      },
+      "xgboost": {
+        "model_name": "xgboost",
+        "status": "trained",
+        "mae": 156.63,
+        "rmse": 212.63,
+        "training_time_sec": 1.82,
+        "hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.03,
+          "n_estimators": 100
+        }
+      }
+    },
+    "training_rows": 2102,
+    "validation_rows": 60,
+    "dataset_range": "2019-01-31 to 2024-12-31",
+    "selected_production_model": "xgboost"
+  },
+  "metrics_potato": {
+    "crop": "potato",
+    "best_baseline": "prophet",
+    "production_model": "xgboost",
+    "models": {
+      "arima": {
+        "model_name": "arima",
+        "status": "trained",
+        "mae": 300.48,
+        "rmse": 368.19,
+        "training_time_sec": 0.06,
+        "hyperparameters": {
+          "order": "(1,1,1)"
+        }
+      },
+      "prophet": {
+        "model_name": "prophet",
+        "status": "trained",
+        "mae": 208.39,
+        "rmse": 249.13,
+        "training_time_sec": 0.52,
+        "hyperparameters": {
+          "yearly_seasonality": true,
+          "weekly_seasonality": true
+        }
+      },
+      "lstm": {
+        "model_name": "lstm",
+        "status": "skipped",
+        "mae": 999999.0,
+        "rmse": 999999.0,
+        "training_time_sec": 0.0,
+        "hyperparameters": {
+          "sequence_length": 30,
+          "architecture": "LSTM(64)->Dropout(0.2)->LSTM(32)->Dense(16)->Dense(1)"
+        }
+      },
+      "xgboost": {
+        "model_name": "xgboost",
+        "status": "trained",
+        "mae": 93.54,
+        "rmse": 156.35,
+        "training_time_sec": 1.83,
+        "hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.03,
+          "n_estimators": 200
+        }
+      }
+    },
+    "training_rows": 2102,
+    "validation_rows": 60,
+    "dataset_range": "2019-01-31 to 2024-12-31",
+    "selected_production_model": "xgboost"
+  },
+  "metrics_rice": {
+    "crop": "rice",
+    "best_baseline": "prophet",
+    "production_model": "xgboost",
+    "models": {
+      "arima": {
+        "model_name": "arima",
+        "status": "trained",
+        "mae": 63.98,
+        "rmse": 69.39,
+        "training_time_sec": 0.14,
+        "hyperparameters": {
+          "order": "(1,1,1)"
+        }
+      },
+      "prophet": {
+        "model_name": "prophet",
+        "status": "trained",
+        "mae": 63.81,
+        "rmse": 78.63,
+        "training_time_sec": 0.57,
+        "hyperparameters": {
+          "yearly_seasonality": true,
+          "weekly_seasonality": true
+        }
+      },
+      "lstm": {
+        "model_name": "lstm",
+        "status": "skipped",
+        "mae": 999999.0,
+        "rmse": 999999.0,
+        "training_time_sec": 0.0,
+        "hyperparameters": {
+          "sequence_length": 30,
+          "architecture": "LSTM(64)->Dropout(0.2)->LSTM(32)->Dense(16)->Dense(1)"
+        }
+      },
+      "xgboost": {
+        "model_name": "xgboost",
+        "status": "trained",
+        "mae": 23.98,
+        "rmse": 30.12,
+        "training_time_sec": 1.84,
+        "hyperparameters": {
+          "max_depth": 5,
+          "learning_rate": 0.03,
+          "n_estimators": 100
+        }
+      }
+    },
+    "training_rows": 2102,
+    "validation_rows": 60,
+    "dataset_range": "2019-01-31 to 2024-12-31",
+    "selected_production_model": "xgboost"
+  },
+  "metrics_state_maize": {
+    "state_aware": {
+      "mae": 87.25726039431429,
+      "rmse": 159.42078696268817,
+      "mape": 3.633461577703435,
+      "r2": 0.8144660682977607
+    },
+    "baseline_crop_only": {
+      "mae": 86.3788289523432,
+      "rmse": 162.70497027770878
+    },
+    "total_records": 25592,
+    "states_covered": 20,
+    "feature_cols": [
+      "state_enc",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "lag_30",
+      "rolling_7",
+      "rolling_30",
+      "day_of_year",
+      "month",
+      "day_of_week",
+      "year",
+      "black_swan",
+      "arrival_qtl"
+    ]
+  },
+  "metrics_state_onion": {
+    "state_aware": {
+      "mae": 1651.0324092623987,
+      "rmse": 132899.95701792926,
+      "mape": 10.287803499121734,
+      "r2": -0.00020408846497632638
+    },
+    "baseline_crop_only": {
+      "mae": 1644.2974942823819,
+      "rmse": 132900.0761077594
+    },
+    "total_records": 45556,
+    "states_covered": 30,
+    "feature_cols": [
+      "state_enc",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "lag_30",
+      "rolling_7",
+      "rolling_30",
+      "day_of_year",
+      "month",
+      "day_of_week",
+      "year",
+      "black_swan",
+      "arrival_qtl"
+    ]
+  },
+  "metrics_state_potato": {
+    "state_aware": {
+      "mae": 185.61655522063685,
+      "rmse": 456.15414819982476,
+      "mape": 16.603147165604547,
+      "r2": 0.8153371952614895
+    },
+    "baseline_crop_only": {
+      "mae": 175.58080150209256,
+      "rmse": 514.9856843211945
+    },
+    "total_records": 46807,
+    "states_covered": 30,
+    "feature_cols": [
+      "state_enc",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "lag_30",
+      "rolling_7",
+      "rolling_30",
+      "day_of_year",
+      "month",
+      "day_of_week",
+      "year",
+      "black_swan",
+      "arrival_qtl"
+    ]
+  },
+  "metrics_state_rice": {
+    "state_aware": {
+      "mae": 87.23514677576051,
+      "rmse": 158.82782973652195,
+      "mape": 3.4413107987423106,
+      "r2": 0.8739446915479744
+    },
+    "baseline_crop_only": {
+      "mae": 90.75206893894581,
+      "rmse": 171.2264228982788
+    },
+    "total_records": 34137,
+    "states_covered": 24,
+    "feature_cols": [
+      "state_enc",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "lag_30",
+      "rolling_7",
+      "rolling_30",
+      "day_of_year",
+      "month",
+      "day_of_week",
+      "year",
+      "black_swan",
+      "arrival_qtl"
+    ]
+  },
+  "metrics_state_wheat": {
+    "state_aware": {
+      "mae": 66.86997866218377,
+      "rmse": 131.56063747970734,
+      "mape": 2.5423318650681583,
+      "r2": 0.7916237817234888
+    },
+    "baseline_crop_only": {
+      "mae": 84.37245812783694,
+      "rmse": 235.61797321601065
+    },
+    "total_records": 22722,
+    "states_covered": 18,
+    "feature_cols": [
+      "state_enc",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "lag_30",
+      "rolling_7",
+      "rolling_30",
+      "day_of_year",
+      "month",
+      "day_of_week",
+      "year",
+      "black_swan",
+      "arrival_qtl"
+    ]
+  },
+  "metrics_wheat": {
+    "crop": "wheat",
+    "best_baseline": "prophet",
+    "production_model": "prophet",
+    "models": {
+      "arima": {
+        "model_name": "arima",
+        "status": "trained",
+        "mae": 82.65,
+        "rmse": 90.64,
+        "training_time_sec": 0.98,
+        "hyperparameters": {
+          "order": "(1,1,1)"
+        }
+      },
+      "prophet": {
+        "model_name": "prophet",
+        "status": "trained",
+        "mae": 62.92,
+        "rmse": 67.69,
+        "training_time_sec": 1.11,
+        "hyperparameters": {
+          "yearly_seasonality": true,
+          "weekly_seasonality": true
+        }
+      },
+      "lstm": {
+        "model_name": "lstm",
+        "status": "skipped",
+        "mae": 999999.0,
+        "rmse": 999999.0,
+        "training_time_sec": 0.0,
+        "hyperparameters": {
+          "sequence_length": 30,
+          "architecture": "LSTM(64)->Dropout(0.2)->LSTM(32)->Dense(16)->Dense(1)"
+        }
+      },
+      "xgboost": {
+        "model_name": "xgboost",
+        "status": "trained",
+        "mae": 84.73,
+        "rmse": 93.29,
+        "training_time_sec": 2.09,
+        "hyperparameters": {
+          "max_depth": 3,
+          "learning_rate": 0.1,
+          "n_estimators": 100
+        }
+      }
+    },
+    "training_rows": 2102,
+    "validation_rows": 60,
+    "dataset_range": "2019-01-31 to 2024-12-31",
+    "selected_production_model": "prophet"
+  }
+}

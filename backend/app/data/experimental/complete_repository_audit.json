@@ -1,0 +1,696 @@
+{
+  "audit_generated_at": "2026-08-14T13:09:35.692780",
+  "audit_version": "1.0",
+  "auditor": "AgroIntel Master Audit Script",
+  "repository_structure": {
+    "backend_root": "backend/",
+    "app_dir": "backend/app/",
+    "models_dir": "backend/models/ (55 model artifact files)",
+    "frontend_dir": "backend/frontend/",
+    "scripts_dir": "backend/scripts/ (14 scripts)",
+    "data_dir": "backend/app/data/ (71 files + subdirs)",
+    "ml_dir": "backend/app/ml/ (15 Python files)",
+    "services_dir": "backend/app/services/ (14 Python files)",
+    "experimental_dir": "backend/app/data/experimental/ (74 files)",
+    "archive_dir": "backend/app/data/archive/csv/ (26 CSVs, 2001-2026)"
+  },
+  "data_sources": {
+    "AGMARKNET_archive_csv": {
+      "path": "app/data/archive/csv/2001.csv ... 2024.csv",
+      "years_available": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "total_rows_all_years": 69570996,
+      "rows_2019_to_2024": 26132521,
+      "columns": [
+        "State",
+        "District",
+        "Market",
+        "Commodity",
+        "Variety",
+        "Grade",
+        "Arrival_Date",
+        "Min_Price",
+        "Max_Price",
+        "Modal_Price",
+        "Commodity_Code"
+      ],
+      "geographic_resolution": "state + district + market",
+      "has_arrival_quantity": false,
+      "arrival_column": "Arrival_Date (a date, not a quantity)",
+      "note": "AGMARKNET archive does NOT have arrival quantity \u2014 only prices and dates",
+      "target_crop_rows_2019_2024": {
+        "wheat": 973421,
+        "rice": 750092,
+        "maize": 395010,
+        "potato": 1147387,
+        "onion": 1115076
+      }
+    },
+    "real_historical_prices_csv": {
+      "path": "app/data/real_historical_prices.csv",
+      "rows": 10960,
+      "columns": [
+        "ds",
+        "crop",
+        "y"
+      ],
+      "crops": [
+        "maize",
+        "onion",
+        "potato",
+        "rice",
+        "wheat"
+      ],
+      "date_range": "2019-01-01 to 2024-12-31",
+      "geographic_resolution": "NATIONAL (no state column)",
+      "missing_y": 0,
+      "price_range": [
+        100.0,
+        8500.0
+      ],
+      "generation_method": "Daily national average modal price from AGMARKNET 2019-2024",
+      "used_for": "crop-only ARIMA/Prophet/XGBoost models (national level)"
+    },
+    "real_historical_prices_state_csv": {
+      "path": "app/data/real_historical_prices_state.csv",
+      "rows": 178522,
+      "columns": [
+        "ds",
+        "crop",
+        "state",
+        "y",
+        "min_price",
+        "max_price",
+        "market_count",
+        "arrival_qtl"
+      ],
+      "crops": [
+        "maize",
+        "onion",
+        "potato",
+        "rice",
+        "wheat"
+      ],
+      "states": 30,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "geographic_resolution": "state-level",
+      "CRITICAL_BUG_arrival_qtl": {
+        "status": "ALL ZEROS",
+        "pct_nonzero": 0.0,
+        "reason": "AGMARKNET archive does not have arrival quantity. Script tried to parse 'Arrivals' column which does not exist. All arrivals defaulted to 0.0.",
+        "action_required": "REMOVE arrival_qtl from feature set. Retrain all state-aware XGBoost models.",
+        "inference_bug": "inference.py line 244 hardcodes arr_qtl = 500.0 \u2014 fabricated value used at inference that was never present in training"
+      }
+    },
+    "weather_history_csv": {
+      "path": "app/data/weather_history.csv",
+      "rows": 72,
+      "columns": [
+        "year",
+        "month",
+        "avg_temp",
+        "total_rainfall"
+      ],
+      "date_range": "2019-01-01 to 2024-12-31 (monthly)",
+      "geographic_resolution": "NATIONAL proxy (Delhi/Nagpur region)",
+      "is_state_specific": false,
+      "is_district_specific": false,
+      "used_for": "crop-only models (monthly temp/rainfall as features)",
+      "honesty_note": "This is a national proxy \u2014 not state-specific. Cannot differentiate Kerala rain from Rajasthan."
+    },
+    "crop_recommendation_csv": {
+      "path": "app/data/crop_recommendation.csv",
+      "rows": 2200,
+      "columns": [
+        "N",
+        "P",
+        "K",
+        "temperature",
+        "humidity",
+        "ph",
+        "rainfall",
+        "label"
+      ],
+      "n_classes": 22,
+      "geographic_info": "NONE \u2014 synthetic NPK/climate features only, no State/District columns",
+      "used_for": "Random Forest crop recommender training",
+      "limitation": "No geographic context. Crop probabilities are location-agnostic."
+    },
+    "black_swan_config_json": {
+      "path": "app/data/black_swan_config.json",
+      "events_count": 3,
+      "events": [
+        {
+          "label": "2019 Drought",
+          "period": "2019-06-01 to 2019-09-30"
+        },
+        {
+          "label": "COVID-19 Lockdown",
+          "period": "2020-03-15 to 2021-12-31"
+        },
+        {
+          "label": "Russia-Ukraine War",
+          "period": "2022-02-24 to 2023-12-31"
+        }
+      ],
+      "date_aligned": true,
+      "nationally_defined": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "mandi_cache_json": {
+      "path": "app/data/mandi_cache.json",
+      "purpose": "Cache for live data.gov.in AGMARKNET API responses",
+      "geographic_resolution": "state + market level",
+      "is_historical_data": false,
+      "used_for": "current_price and observation_date for inference"
+    }
+  },
+  "feature_availability_audit": {
+    "lag_1": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "lag_7": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "lag_14": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "lag_30": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "rolling_mean_7": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "rolling_mean_30": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "rolling_std_7": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID \u2014 NEW, to be added"
+    },
+    "price_range": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID \u2014 NEW, derived from min/max"
+    },
+    "market_count": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID \u2014 proxy for market depth"
+    },
+    "month": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "day_of_year": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "day_of_week": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "year": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "season_code": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "black_swan": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": true,
+      "status": "VALID \u2014 nationally defined events"
+    },
+    "state_encoding": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": true,
+      "can_be_ml_feature": true,
+      "status": "VALID"
+    },
+    "weather_temperature": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": "LIMITED",
+      "status": "NATIONAL PROXY \u2014 valid for crop-only, honest limitation"
+    },
+    "weather_rainfall": {
+      "historical_data_exists": true,
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": "LIMITED",
+      "status": "NATIONAL PROXY \u2014 valid for crop-only, honest limitation"
+    },
+    "arrival_quantity": {
+      "historical_data_exists": false,
+      "date_aligned": false,
+      "state_specific": false,
+      "can_be_ml_feature": false,
+      "status": "NOT AVAILABLE \u2014 all zeros in archive, inference uses fabricated 500.0 \u2014 MUST REMOVE"
+    },
+    "fuel_price": {
+      "historical_data_exists": false,
+      "date_aligned": false,
+      "state_specific": false,
+      "can_be_ml_feature": false,
+      "status": "NOT AVAILABLE \u2014 no historical data in repository"
+    },
+    "transport_cost": {
+      "historical_data_exists": false,
+      "date_aligned": false,
+      "state_specific": false,
+      "can_be_ml_feature": false,
+      "status": "NOT AVAILABLE \u2014 no historical data"
+    },
+    "msp": {
+      "historical_data_exists": false,
+      "date_aligned": false,
+      "state_specific": false,
+      "can_be_ml_feature": false,
+      "status": "NOT AVAILABLE \u2014 no structured historical MSP dataset"
+    },
+    "natural_disasters": {
+      "historical_data_exists": "PARTIAL",
+      "date_aligned": true,
+      "state_specific": false,
+      "can_be_ml_feature": "PARTIAL",
+      "status": "ONLY black_swan_config events \u2014 3 national events, not crop/state specific"
+    },
+    "export_restrictions": {
+      "historical_data_exists": false,
+      "date_aligned": false,
+      "state_specific": false,
+      "can_be_ml_feature": false,
+      "status": "NOT AVAILABLE \u2014 no structured historical data"
+    },
+    "historical_news": {
+      "historical_data_exists": false,
+      "date_aligned": false,
+      "state_specific": false,
+      "can_be_ml_feature": false,
+      "status": "NOT AVAILABLE \u2014 current news pipeline only"
+    },
+    "current_news": {
+      "historical_data_exists": "N/A (live)",
+      "date_aligned": "N/A",
+      "state_specific": true,
+      "can_be_ml_feature": false,
+      "status": "ADVISORY LAYER ONLY \u2014 cannot be ML training feature"
+    }
+  },
+  "arrival_qtl_audit": {
+    "column_name": "arrival_qtl",
+    "in_real_historical_prices_state_csv": true,
+    "all_values_zero": true,
+    "pct_nonzero": 0.0,
+    "source_field_in_archive": "Arrivals / Arrivals_Qty \u2014 DOES NOT EXIST in AGMARKNET archive (only Arrival_Date exists)",
+    "used_in_training": true,
+    "feature_position_in_training": 13,
+    "value_used_at_inference": 500.0,
+    "inference_location": "inference.py line 244: arr_qtl = 500.0",
+    "impact": "CRITICAL \u2014 model was trained with all zeros (which XGBoost may have learned to ignore), but inference uses 500.0 \u2014 feature distribution shift at inference time",
+    "decision": "REMOVE \u2014 drop arrival_qtl from feature_cols in train_state_models.py, rebuild dataset without this column, retrain all 5 state-aware XGBoost models",
+    "models_requiring_retraining": [
+      "xgboost_state_rice",
+      "xgboost_state_wheat",
+      "xgboost_state_maize",
+      "xgboost_state_onion",
+      "xgboost_state_potato"
+    ]
+  },
+  "model_artifacts": {
+    "crop_only_models": {
+      "arima": [
+        "arima_rice.pkl",
+        "arima_wheat.pkl",
+        "arima_maize.pkl",
+        "arima_onion.pkl",
+        "arima_potato.pkl"
+      ],
+      "prophet": [
+        "prophet_rice.pkl",
+        "prophet_wheat.pkl",
+        "prophet_maize.pkl",
+        "prophet_onion.pkl",
+        "prophet_potato.pkl"
+      ],
+      "xgboost": [
+        "xgboost_rice.pkl",
+        "xgboost_wheat.pkl",
+        "xgboost_maize.pkl",
+        "xgboost_onion.pkl",
+        "xgboost_potato.pkl"
+      ],
+      "mlp": [
+        "mlp_rice.pkl",
+        "mlp_wheat.pkl",
+        "mlp_maize.pkl",
+        "mlp_onion.pkl",
+        "mlp_potato.pkl"
+      ],
+      "lstm": "NOT TRAINED \u2014 TensorFlow binary incompatible with Python 3.13/Anaconda"
+    },
+    "state_aware_models": {
+      "xgboost_state": [
+        "xgboost_state_rice.pkl (13 features)",
+        "xgboost_state_wheat.pkl (13 features)",
+        "xgboost_state_maize.pkl (13 features)",
+        "xgboost_state_onion.pkl (13 features)",
+        "xgboost_state_potato.pkl (13 features)"
+      ],
+      "state_encoders": {
+        "rice": "24 states",
+        "wheat": "18 states",
+        "maize": "20 states",
+        "onion": "30 states",
+        "potato": "30 states"
+      },
+      "current_feature_count": 13,
+      "CRITICAL_BUG": "arrival_qtl is feature 13 \u2014 trained on ALL ZEROS, inference uses 500.0"
+    },
+    "recommendation_models": {
+      "crop_recommender_rf.pkl": "Random Forest, 22-class crop classifier",
+      "crop_recommender_encoder.pkl": "LabelEncoder for crop labels",
+      "training_data": "crop_recommendation.csv \u2014 synthetic NPK/climate, no geography"
+    },
+    "current_state_model_metrics": {
+      "rice": {
+        "state_aware": {
+          "mae": 87.24,
+          "rmse": 158.83,
+          "mape_pct": 3.44
+        },
+        "baseline": {
+          "mae": 90.75,
+          "rmse": 171.23
+        }
+      },
+      "wheat": {
+        "state_aware": {
+          "mae": 66.87,
+          "rmse": 131.56,
+          "mape_pct": 2.54
+        },
+        "baseline": {
+          "mae": 84.37,
+          "rmse": 235.62
+        }
+      },
+      "maize": {
+        "state_aware": {
+          "mae": 87.26,
+          "rmse": 159.42,
+          "mape_pct": 3.63
+        },
+        "baseline": {
+          "mae": 86.38,
+          "rmse": 162.7
+        }
+      },
+      "onion": {
+        "state_aware": {
+          "mae": 1651.03,
+          "rmse": 132899.96,
+          "mape_pct": 10.29
+        },
+        "baseline": {
+          "mae": 1644.3,
+          "rmse": 132900.08
+        }
+      },
+      "potato": {
+        "state_aware": {
+          "mae": 185.62,
+          "rmse": 456.15,
+          "mape_pct": 16.6
+        },
+        "baseline": {
+          "mae": 175.58,
+          "rmse": 514.99
+        }
+      }
+    }
+  },
+  "inference_paths": {
+    "PATH_A_PRIMARY": {
+      "endpoint": "GET /api/predict?crop=&state=&horizon_days=",
+      "file": "app/api/endpoints.py",
+      "calls": "app/ml/inference.py::predict_price()",
+      "features": "11 crop-only (lag_1..lag_30, rolling_7/30, month, season, temp, rain, black_swan) + state_aware XGBoost (13 features incl. buggy arrival_qtl)",
+      "state_model": "xgboost_state (13 features incl. buggy arr_qtl=500)",
+      "crop_fallback_order": "xgboost_state > prophet/xgboost/arima/mlp",
+      "sell_hold_wait": true,
+      "thresholds": "+/-3% for most crops, +/-5% for onion/potato",
+      "data_stale_threshold": "14 days \u2192 WAIT",
+      "farmer_facing": true,
+      "status": "PRIMARY \u2014 used by farmer UI"
+    },
+    "PATH_B_SECONDARY": {
+      "endpoint": "POST /api/predict/price (price_router.py)",
+      "file": "app/api/price_router.py \u2192 app/ml/price_predictor.py",
+      "farmer_facing": false,
+      "status": "SECONDARY \u2014 not used by farmer UI, developer endpoint"
+    },
+    "PATH_C_PHASE6": {
+      "endpoint": "POST /api/phase6/recommend",
+      "file": "app/api/phase6_router.py \u2192 app/services/phase6_integration_service.py",
+      "farmer_facing": true,
+      "used_for": "Crop recommendation",
+      "status": "ACTIVE \u2014 main crop recommendation endpoint"
+    }
+  },
+  "critical_bugs": {
+    "BUG_1_arrival_qtl_fabrication": {
+      "severity": "CRITICAL",
+      "description": "arrival_qtl trained on ALL ZEROS, inference uses hardcoded 500.0",
+      "location": "inference.py:244, train_state_models.py:122",
+      "fix": "Remove arrival_qtl from features, rebuild dataset, retrain state models"
+    },
+    "BUG_2_black_swan_date_format": {
+      "severity": "MEDIUM",
+      "description": "black_swan_config.json uses 'start'/'end' keys but feature_engineering.py reads 'start_date'/'end_date' \u2014 events are never matched",
+      "location": "feature_engineering.py:94-97 reads start_date/end_date, black_swan_config.json has start/end",
+      "fix": "Standardize key names to 'start_date'/'end_date' in black_swan_config.json OR update feature_engineering.py"
+    },
+    "BUG_3_technical_fields_in_api": {
+      "severity": "MEDIUM",
+      "description": "best_model, model_comparison, model_level, forecast_scope, best_model_label exposed in /api/predict response",
+      "fix": "Strip technical fields from farmer-facing response"
+    },
+    "BUG_4_graph_date_label": {
+      "severity": "LOW",
+      "description": "Price prediction graph starts from 'Today' but observation_date may be 2-14 days old",
+      "fix": "Use actual observation_date from API response as graph anchor"
+    }
+  },
+  "news_pipeline": {
+    "current_implementation": "app/services/news_intelligence_service.py + phase6_integration_service.py",
+    "source_tiers": {
+      "TIER_1_OFFICIAL": [
+        "icar",
+        "pib",
+        "ministry of agriculture",
+        "imd",
+        "kvk",
+        "apmc",
+        "state agriculture department"
+      ],
+      "TIER_2_AGRI_RESEARCH": [
+        "krishi jagran",
+        "rural voice",
+        "agrospectrum",
+        "agriwatch",
+        "fao"
+      ],
+      "TIER_3_BUSINESS_MARKET": [
+        "reuters",
+        "economic times",
+        "business standard",
+        "financial express"
+      ],
+      "TIER_4_GENERAL_MEDIA": [
+        "the hindu",
+        "indian express",
+        "times of india",
+        "hindustan times"
+      ],
+      "DISCOVERY_ONLY": [
+        "google news",
+        "rss feed"
+      ]
+    },
+    "groq_llama_role": "FACT EXTRACTION from retrieved news \u2014 not news generation",
+    "dynamic_search_queries": true,
+    "state_district_aware": true,
+    "cross_verification": true,
+    "verification_states": [
+      "VERIFIED",
+      "SINGLE_SOURCE",
+      "CONFLICTING",
+      "UNVERIFIED",
+      "STALE"
+    ],
+    "news_price_adjustment_bounds": {
+      "min": -5.0,
+      "max": 3.0
+    },
+    "news_override_hard_rejection": false,
+    "historical_news": false,
+    "status": "FUNCTIONING \u2014 bounded adjustment, credibility tiers, cross-verification"
+  },
+  "recommendation_pipeline": {
+    "entry_point": "POST /api/phase6/recommend",
+    "service": "app/services/phase6_integration_service.py::AgroIntelPhase6Engine",
+    "geographic_requirements": "state + district + season (district IS required)",
+    "pipeline_stages": [
+      "District resolution and normalization",
+      "Season filter (hard \u2014 incompatible season crops excluded)",
+      "District cultivation evidence (APY data 246,091 records, 652 canonical districts)",
+      "Soil compatibility scoring",
+      "Weather compatibility scoring",
+      "Water/irrigation assessment",
+      "ML suitability (crop recommender RF with 22 classes)",
+      "Market price context (Mandi prices)",
+      "News intelligence (bounded \u00b15/+3 adjustment)",
+      "Groq/Llama NLP explanation"
+    ],
+    "hard_agronomic_filter": true,
+    "unknown_rule": "UNKNOWN data never converted to SUITABLE",
+    "news_override_agronomic_rejection": false,
+    "identical_scores_bug": "Previously fixed \u2014 scores are now crop-specific based on real evidence"
+  },
+  "state_crop_data_coverage": {
+    "adequate_pairs_200plus": 116,
+    "limited_pairs_50_199": 3,
+    "insufficient_15_49": 6,
+    "no_data_pairs": 55,
+    "wheat_no_data_states": [
+      "Andaman and Nicobar Islands",
+      "Andhra Pradesh",
+      "Arunachal Pradesh",
+      "Chandigarh",
+      "Dadra and Nagar Haveli",
+      "Daman and Diu",
+      "Goa",
+      "Himachal Pradesh",
+      "Kerala",
+      "Lakshadweep",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Puducherry",
+      "Sikkim",
+      "Tamil Nadu",
+      "Tripura"
+    ],
+    "note": "States with no wheat data correctly fall back to CROP_ONLY model"
+  },
+  "frontend": {
+    "script_file": "frontend/script.js",
+    "crop_recommendation_api": "POST /api/phase6/recommend",
+    "price_prediction_api": "GET /api/predict?crop=&state=&horizon_days=",
+    "technical_fields_exposed": [
+      "best_model",
+      "model_comparison",
+      "model_level",
+      "forecast_scope",
+      "best_model_label"
+    ],
+    "graph": "Chart.js 30-day forecast",
+    "observation_date_display": "Uses observation_date from API but labels may say 'Today'",
+    "state_used_for_price": true,
+    "district_used_for_price": false
+  },
+  "what_works_correctly": [
+    "AGMARKNET state-level historical data (178,522 rows, 30 states, 5 crops)",
+    "Chronological train-test split (2019-2023 train, 2024 test) in train_state_models.py",
+    "State encoding with LabelEncoder per crop",
+    "State-specific price series for lag computation",
+    "Live Mandi API fetching with cache fallback and MSP last resort",
+    "SELL/HOLD/WAIT decision logic with \u00b13%/\u00b15% thresholds and 14-day stale check",
+    "Crop recommendation agronomic pipeline (district evidence, season, soil, water)",
+    "News credibility tiers (TIER 1-4 + DISCOVERY)",
+    "Cross-source verification (VERIFIED/SINGLE_SOURCE/CONFLICTING/UNVERIFIED/STALE)",
+    "Bounded news adjustment (\u22125 to +3 points)",
+    "Hard agronomic rejection \u2014 news cannot rescue rejected crops",
+    "UNKNOWN data never promoted to SUITABLE",
+    "Black swan events (3 events, date-aligned, nationally defined)"
+  ]
+}

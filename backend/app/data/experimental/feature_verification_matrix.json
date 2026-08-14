@@ -1,0 +1,116 @@
+{
+  "features": [
+    {
+      "name": "state_enc",
+      "source": "AGMARKNET archive state label",
+      "calculation": "LabelEncoder transform",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_1",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(1)",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_7",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(7)",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_14",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(14)",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_30",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(30)",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "rolling_7",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(1).rolling(7).mean()",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "rolling_30",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(1).rolling(30).mean()",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "rolling_std_7",
+      "source": "AGMARKNET historical prices",
+      "calculation": "shift(1).rolling(7).std()",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "price_range",
+      "source": "AGMARKNET historical prices",
+      "calculation": "max_price - min_price",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "day_of_year",
+      "source": "Calendar date",
+      "calculation": "dt.dayofyear",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "month",
+      "source": "Calendar date",
+      "calculation": "dt.month",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "day_of_week",
+      "source": "Calendar date",
+      "calculation": "dt.dayofweek",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "year",
+      "source": "Calendar date",
+      "calculation": "dt.year",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "black_swan",
+      "source": "Macro historical crisis dates",
+      "calculation": "Date window membership",
+      "training_availability": "YES",
+      "inference_availability": "YES",
+      "leakage_risk": "NONE"
+    }
+  ]
+}

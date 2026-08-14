@@ -1,14 +1,14 @@
 {
   "rice": {
     "state_aware": {
-      "mae": 87.23514677576051,
-      "rmse": 158.82782973652195,
-      "mape": 3.4413107987423106,
-      "r2": 0.8739446915479744
+      "mae": 94.45386291693391,
+      "rmse": 167.812246690287,
+      "mape": 3.696071761843141,
+      "r2": 0.8592801900783198
     },
     "baseline_crop_only": {
-      "mae": 90.75206893894581,
-      "rmse": 171.2264228982788
+      "mae": 91.89426058655732,
+      "rmse": 165.82426426374744
     },
     "total_records": 34137,
     "states_covered": 24,
@@ -20,24 +20,25 @@
       "lag_30",
       "rolling_7",
       "rolling_30",
+      "rolling_std_7",
+      "price_range",
       "day_of_year",
       "month",
       "day_of_week",
       "year",
-      "black_swan",
-      "arrival_qtl"
+      "black_swan"
     ]
   },
   "wheat": {
     "state_aware": {
-      "mae": 66.86997866218377,
-      "rmse": 131.56063747970734,
-      "mape": 2.5423318650681583,
-      "r2": 0.7916237817234888
+      "mae": 79.84246795049835,
+      "rmse": 140.27043099538824,
+      "mape": 3.0773417663140816,
+      "r2": 0.7631199552788616
     },
     "baseline_crop_only": {
-      "mae": 84.37245812783694,
-      "rmse": 235.61797321601065
+      "mae": 77.4831159522898,
+      "rmse": 152.29560010884833
     },
     "total_records": 22722,
     "states_covered": 18,
@@ -49,24 +50,25 @@
       "lag_30",
       "rolling_7",
       "rolling_30",
+      "rolling_std_7",
+      "price_range",
       "day_of_year",
       "month",
       "day_of_week",
       "year",
-      "black_swan",
-      "arrival_qtl"
+      "black_swan"
     ]
   },
   "maize": {
     "state_aware": {
-      "mae": 87.25726039431429,
-      "rmse": 159.42078696268817,
-      "mape": 3.633461577703435,
-      "r2": 0.8144660682977607
+      "mae": 85.13542323239213,
+      "rmse": 151.00440023071673,
+      "mape": 3.568362055101849,
+      "r2": 0.8335389399104554
     },
     "baseline_crop_only": {
-      "mae": 86.3788289523432,
-      "rmse": 162.70497027770878
+      "mae": 85.39671084275031,
+      "rmse": 154.8152326240632
     },
     "total_records": 25592,
     "states_covered": 20,
@@ -78,24 +80,25 @@
       "lag_30",
       "rolling_7",
       "rolling_30",
+      "rolling_std_7",
+      "price_range",
       "day_of_year",
       "month",
       "day_of_week",
       "year",
-      "black_swan",
-      "arrival_qtl"
+      "black_swan"
     ]
   },
   "onion": {
     "state_aware": {
-      "mae": 1651.0324092623987,
-      "rmse": 132899.95701792926,
-      "mape": 10.287803499121734,
-      "r2": -0.00020408846497632638
+      "mae": 1643.672685579711,
+      "rmse": 132899.89834894176,
+      "mape": 10.754656975149151,
+      "r2": -0.00020320538044371617
     },
     "baseline_crop_only": {
-      "mae": 1644.2974942823819,
-      "rmse": 132900.0761077594
+      "mae": 1650.7300582053379,
+      "rmse": 132899.44053263034
     },
     "total_records": 45556,
     "states_covered": 30,
@@ -107,24 +110,25 @@
       "lag_30",
       "rolling_7",
       "rolling_30",
+      "rolling_std_7",
+      "price_range",
       "day_of_year",
       "month",
       "day_of_week",
       "year",
-      "black_swan",
-      "arrival_qtl"
+      "black_swan"
     ]
   },
   "potato": {
     "state_aware": {
-      "mae": 185.61655522063685,
-      "rmse": 456.15414819982476,
-      "mape": 16.603147165604547,
-      "r2": 0.8153371952614895
+      "mae": 271.8788720278931,
+      "rmse": 1075.5425448024412,
+      "mape": 16.732856827666186,
+      "r2": -0.02662387238526942
     },
     "baseline_crop_only": {
-      "mae": 175.58080150209256,
-      "rmse": 514.9856843211945
+      "mae": 277.7849404976731,
+      "rmse": 1272.8806056644498
     },
     "total_records": 46807,
     "states_covered": 30,
@@ -136,12 +140,13 @@
       "lag_30",
       "rolling_7",
       "rolling_30",
+      "rolling_std_7",
+      "price_range",
       "day_of_year",
       "month",
       "day_of_week",
       "year",
-      "black_swan",
-      "arrival_qtl"
+      "black_swan"
     ]
   }
 }

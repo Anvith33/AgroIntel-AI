@@ -34,6 +34,14 @@ from app.services.nlp_explanation_service import (
     get_crop_information
 )
 
+from app.services.news_intelligence_service import (
+    classify_source_credibility,
+    generate_local_search_queries,
+    generate_price_search_queries,
+    verify_cross_source,
+    calculate_bounded_news_adjustment
+)
+
 try:
     from app.services import mandi_service
 except ImportError:
@@ -269,6 +277,29 @@ class AgroIntelPhase6Engine:
                 key = (intel.get("state", "").lower(), intel.get("crop", "").lower())
                 self.intel_lookup[key].append(intel)
 
+        # Build crop-specific district evidence lookup: (canonical_id/district, crop.lower()) -> evidence dict
+        self.district_crop_evidence_map = {}
+        if isinstance(self.crop_evidence, list):
+            for d_item in self.crop_evidence:
+                d_cid = d_item.get("district_id", "").lower()
+                d_st = d_item.get("state", "").lower()
+                d_dt = d_item.get("district", "").lower()
+
+                for c_entry in d_item.get("crops", []):
+                    c_name = c_entry.get("crop", "").lower()
+                    canon_c = c_entry.get("canonical_crop", "").lower()
+
+                    if c_name:
+                        self.district_crop_evidence_map[(d_cid, c_name)] = c_entry
+                        self.district_crop_evidence_map[(d_st, d_dt, c_name)] = c_entry
+                    if canon_c:
+                        self.district_crop_evidence_map[(d_cid, canon_c)] = c_entry
+                        self.district_crop_evidence_map[(d_st, d_dt, canon_c)] = c_entry
+
+        # Load Crop Requirements database
+        reqs_raw = self._load_json(EXP_DIR / "crop_requirements.json")
+        self.crop_requirements = reqs_raw.get("crop_requirements", {}) if isinstance(reqs_raw, dict) else {}
+
     def _load_json(self, path):
         if path.exists():
             with open(path) as f:
@@ -392,19 +423,54 @@ class AgroIntelPhase6Engine:
         for crop_name, cand_info in unique_candidates.items():
             is_perennial = crop_name in PERENNIAL_CROPS
 
-            # --- SEASONAL SUITABILITY ---
+            # 1. --- CROP-SPECIFIC DISTRICT EVIDENCE ---
+            ev_item = self.district_crop_evidence_map.get((canonical_id.lower(), crop_name.lower()))
+            if not ev_item:
+                ev_item = self.district_crop_evidence_map.get((canon_state.lower(), canon_district.lower(), crop_name.lower()))
+
+            if ev_item:
+                years_present = ev_item.get("years_present", [])
+                n_years = len(years_present)
+                tot_prod = ev_item.get("total_production", 0)
+                seasons_present = [s.lower() for s in ev_item.get("seasons_present", [])]
+
+                if n_years >= 10:
+                    evidence_score = 25.0 if tot_prod > 10000 else 20.0
+                    evidence_status = f"STRONG_HISTORICAL_DISTRICT_EVIDENCE_{n_years}Y"
+                elif n_years >= 5:
+                    evidence_score = 15.0
+                    evidence_status = f"MODERATE_HISTORICAL_DISTRICT_EVIDENCE_{n_years}Y"
+                elif n_years >= 1:
+                    evidence_score = 8.0
+                    evidence_status = f"SOME_HISTORICAL_DISTRICT_EVIDENCE_{n_years}Y"
+                else:
+                    evidence_score = 4.0
+                    evidence_status = "MINIMAL_HISTORICAL_EVIDENCE"
+            else:
+                years_present = []
+                seasons_present = []
+                c_ev = cand_info.get("evidence_score", 0.5)
+                if isinstance(c_ev, (int, float)):
+                    evidence_score = round(float(c_ev) * 6.0, 1)
+                else:
+                    evidence_score = 3.0
+                evidence_status = "REGIONAL_CANDIDATE_MATRIX"
+
+            # 2. --- SEASONAL SUITABILITY & HARD FILTER ---
             season_suitable = True
             season_score = 20.0
-            season_reason = "Suitable for requested season"
+            season_reason = f"Suitable for {season} season"
 
             if not is_perennial and season.lower() not in ["whole year", "perennial"]:
-                # Check seasonal compatibility from calendar if available
                 cal_info = self.season_calendar.get(crop_name, {}) if isinstance(self.season_calendar, dict) else {}
-                supported_seasons = cal_info.get("seasons", ["Kharif", "Rabi", "Summer", "Whole Year"])
-                if season not in supported_seasons and "Whole Year" not in supported_seasons:
+                cal_seasons = [s.lower() for s in cal_info.get("seasons", ["Kharif", "Rabi", "Summer", "Whole Year"])]
+                
+                valid_seasons = set(seasons_present + cal_seasons + ["whole year"])
+
+                if season.lower() not in valid_seasons:
                     season_suitable = False
                     season_score = 0.0
-                    season_reason = f"Season mismatch (crop grows in {', '.join(supported_seasons)})"
+                    season_reason = f"Season mismatch (crop grows in {', '.join([s.title() for s in valid_seasons if s != 'whole year'])})"
 
             if not season_suitable:
                 rejected_crops.append({
@@ -414,24 +480,29 @@ class AgroIntelPhase6Engine:
                 })
                 continue
 
-            # --- SOIL SUITABILITY ---
-            soil_score = 15.0
+            # 3. --- SOIL SUITABILITY & HARD FILTER ---
+            soil_score = 0.0  # NO default positive score!
             soil_status = "UNKNOWN"
-            soil_reason = "Soil measurements unavailable"
+            soil_reason = "Soil pH measurement unavailable."
+
+            req_info = self.crop_requirements.get(crop_name, {})
+            ph_req = req_info.get("soil_ph", {})
+            min_ph = ph_req.get("min", 5.5)
+            max_ph = ph_req.get("max", 7.5)
 
             if soil_ph is not None:
-                if 6.0 <= soil_ph <= 7.5:
+                if min_ph <= soil_ph <= max_ph:
                     soil_score = 15.0
                     soil_status = "SUITABLE"
-                    soil_reason = f"Optimal soil pH ({soil_ph})"
-                elif 5.2 <= soil_ph <= 8.2:
-                    soil_score = 10.0
+                    soil_reason = f"Soil pH {soil_ph} is within optimal range ({min_ph}–{max_ph}) for {crop_name}."
+                elif (min_ph - 0.5) <= soil_ph <= (max_ph + 0.5):
+                    soil_score = 7.0
                     soil_status = "PARTIALLY_SUITABLE"
-                    soil_reason = f"Acceptable soil pH ({soil_ph})"
+                    soil_reason = f"Soil pH {soil_ph} is acceptable for {crop_name}."
                 else:
                     soil_score = 0.0
                     soil_status = "UNSUITABLE"
-                    soil_reason = f"Soil pH ({soil_ph}) outside safe agronomic range"
+                    soil_reason = f"Soil pH {soil_ph} is outside safe tolerance ({min_ph}–{max_ph}) for {crop_name}."
 
             if soil_status == "UNSUITABLE":
                 rejected_crops.append({
@@ -441,12 +512,12 @@ class AgroIntelPhase6Engine:
                 })
                 continue
 
-            # --- WEATHER SUITABILITY ---
-            weather_score = 15.0
-            weather_status = "SUITABLE"
-            weather_reason = "Weather bounds compatible"
+            # 4. --- WEATHER SUITABILITY & HARD FILTER ---
+            weather_score = 0.0  # NO default positive score!
+            weather_status = "UNKNOWN"
+            weather_reason = "Local weather measurements unavailable."
 
-            # --- WATER LOGIC (Explicit UNKNOWN Rule) ---
+            # 5. --- WATER LOGIC (Explicit UNKNOWN Rule) ---
             if water_available_mm is not None:
                 water_score = 10.0
                 water_status = "SUITABLE"
@@ -454,12 +525,12 @@ class AgroIntelPhase6Engine:
             else:
                 water_score = 0.0
                 water_status = "UNKNOWN"
-                water_reason = "Water suitability could not be conclusively evaluated because district-level irrigation measurements were unavailable."
+                water_reason = "Water suitability could not be fully verified."
 
-            # --- CROP ROTATION LOGIC ---
-            rotation_score = 10.0
+            # 6. --- CROP ROTATION LOGIC ---
+            rotation_score = 0.0  # NO default positive score!
             rotation_status = "UNKNOWN"
-            rotation_reason = "Previous crop information unavailable"
+            rotation_reason = "Previous crop information unavailable."
 
             if previous_crop:
                 if previous_crop.lower() == crop_name.lower():
@@ -479,61 +550,63 @@ class AgroIntelPhase6Engine:
                     rotation_status = "NEUTRAL_ROTATION"
                     rotation_reason = f"Compatible rotation after {previous_crop}"
 
-            # --- EVIDENCE SCORE ---
-            evidence_conf = cand_info.get("evidence_confidence", cand_info.get("composite_evidence_score", 0.8))
-            if isinstance(evidence_conf, (int, float)):
-                evidence_score = min(20.0, round(float(evidence_conf) * 20.0, 2))
+            # 7. --- ML RANKING SCORE ---
+            data_conf = cand_info.get("data_confidence") or cand_info.get("evidence_score") or 0.7
+            if isinstance(data_conf, (int, float)):
+                ml_score = min(15.0, round(float(data_conf) * 15.0, 2))
             else:
-                evidence_score = 15.0
+                ml_score = 8.0
 
-            # --- ML RANKING SCORE (RF Adapter) ---
-            rf_prob = cand_info.get("rf_probability", cand_info.get("ml_score", 0.75))
-            if isinstance(rf_prob, (int, float)):
-                ml_score = min(15.0, round(float(rf_prob) * 15.0, 2))
-            else:
-                ml_score = 10.0
-
-            # --- CURRENT INTELLIGENCE RISK ADJUSTMENT ---
+            # 8. --- CURRENT INTELLIGENCE RISK ADJUSTMENT ---
             intel_records = self.intel_lookup.get((canon_state.lower(), crop_name.lower()), [])
-            news_adjustment = 0.0
-            news_signal = "NO_SIGNIFICANT_SIGNAL"
+            news_adjustment, news_signal, news_verification_status = calculate_bounded_news_adjustment(intel_records)
 
-            if intel_records:
-                top_intel = intel_records[0]
-                news_signal = top_intel.get("recommendation_risk_signal", "NO_SIGNIFICANT_SIGNAL")
-                if news_signal == "RISK_INCREASED":
-                    news_adjustment = -5.0
-                elif news_signal == "RISK_ELEVATED":
-                    news_adjustment = -3.0
-                elif news_signal == "RISK_DECREASED":
-                    news_adjustment = +3.0
-
-            # --- MARKET SCORE ---
+            # 9. --- MARKET SCORE ---
             m_data = self.mandi_lookup.get((canon_district.lower(), crop_name.lower()))
-            market_score = 5.0
-            if m_data:
-                market_score = 8.0
+            if not m_data:
+                m_data = self.mandi_lookup.get((canon_state.lower(), crop_name.lower()))
+            market_score = 5.0 if m_data else 0.0
 
             # --- COMPOSITE SCORE (Normalized to 0-100) ---
             final_score = round(
                 evidence_score + season_score + soil_score + weather_score +
-                rotation_score + ml_score + news_adjustment + market_score, 1
+                water_score + rotation_score + ml_score + news_adjustment + market_score, 1
             )
             final_score = max(0.0, min(100.0, final_score))
 
-            # Explanatory reasons & risks
             reasons = [
-                f"Verified district cultivation evidence ({evidence_score}/20)",
-                f"Agronomically compatible season ({season_score}/20)",
-                soil_reason,
-                rotation_reason
+                f"{evidence_status} ({evidence_score}/25)",
+                f"{season_reason} ({season_score}/20)",
             ]
-            risks = []
+            if soil_status == "SUITABLE":
+                reasons.append(soil_reason)
+            if rotation_status != "UNKNOWN":
+                reasons.append(rotation_reason)
 
+            risks = []
             if water_status == "UNKNOWN":
                 risks.append(water_reason)
-            if news_signal in ["RISK_INCREASED", "RISK_ELEVATED"]:
+            if news_signal in ["RISK_INCREASED", "RISK_ELEVATED", "HIGH_RISK", "NEGATIVE"]:
                 risks.append(f"Active risk signal: {news_signal}")
+
+            internal_evidence_record = {
+                "crop": crop_name,
+                "state": canon_state,
+                "district": canon_district,
+                "season": season,
+                "district_evidence": f"{evidence_status} (Score: {evidence_score}/25)",
+                "season_status": "SUITABLE" if season_suitable else "OUT_OF_SEASON",
+                "soil_status": soil_status,
+                "weather_status": weather_status,
+                "water_status": water_status,
+                "rotation_status": rotation_status,
+                "ml_result": f"Score: {ml_score}/15",
+                "news_result": f"Signal: {news_signal}, Adjustment: {news_adjustment}",
+                "news_verification_status": news_verification_status,
+                "hard_filter_status": "PASSED",
+                "final_recommendation": "RECOMMENDED",
+                "final_score": final_score
+            }
 
             scored_recommendations.append({
                 "crop": crop_name,
@@ -554,8 +627,10 @@ class AgroIntelPhase6Engine:
                 "confidence": round(min(0.95, final_score / 100.0), 2),
                 "reasons": reasons,
                 "risks": risks,
-                "evidence_source": cand_info.get("source", "data.gov.in APY")
+                "evidence_source": cand_info.get("source", "data.gov.in APY"),
+                "internal_evidence_record": internal_evidence_record
             })
+
 
         # Sort recommendations by final_score descending, assign rank, and generate NLP explanations
         scored_recommendations = sorted(scored_recommendations, key=lambda x: x["final_score"], reverse=True)

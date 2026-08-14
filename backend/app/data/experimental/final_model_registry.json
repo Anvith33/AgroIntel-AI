@@ -1,0 +1,39 @@
+{
+  "registry_version": "4.0_state_aware_production",
+  "updated_at": "2026-08-14T14:17:41.165638",
+  "primary_price_model": "xgboost_state",
+  "registered_models": {
+    "price_prediction": {
+      "rice": {
+        "model_file": "xgboost_state_rice.pkl",
+        "encoder_file": "state_encoder_rice.pkl",
+        "features": 14
+      },
+      "wheat": {
+        "model_file": "xgboost_state_wheat.pkl",
+        "encoder_file": "state_encoder_wheat.pkl",
+        "features": 14
+      },
+      "maize": {
+        "model_file": "xgboost_state_maize.pkl",
+        "encoder_file": "state_encoder_maize.pkl",
+        "features": 14
+      },
+      "onion": {
+        "model_file": "xgboost_state_onion.pkl",
+        "encoder_file": "state_encoder_onion.pkl",
+        "features": 14
+      },
+      "potato": {
+        "model_file": "xgboost_state_potato.pkl",
+        "encoder_file": "state_encoder_potato.pkl",
+        "features": 14
+      }
+    },
+    "crop_recommendation": {
+      "classifier": "crop_recommender_rf.pkl",
+      "encoder": "crop_recommender_encoder.pkl",
+      "classes_count": 22
+    }
+  }
+}

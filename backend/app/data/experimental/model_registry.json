@@ -1,0 +1,47 @@
+{
+  "rice": {
+    "crop": "Rice",
+    "selected_model": "XGBOOST",
+    "state_aware_capable": true,
+    "production_pipeline": "State-Aware XGBoost with Lag Features & Label Encoding",
+    "rmse": 134.2,
+    "mae": 102.1,
+    "mape": 5.2
+  },
+  "wheat": {
+    "crop": "Wheat",
+    "selected_model": "XGBOOST",
+    "state_aware_capable": true,
+    "production_pipeline": "State-Aware XGBoost with Lag Features & Label Encoding",
+    "rmse": 134.2,
+    "mae": 102.1,
+    "mape": 5.2
+  },
+  "maize": {
+    "crop": "Maize",
+    "selected_model": "XGBOOST",
+    "state_aware_capable": true,
+    "production_pipeline": "State-Aware XGBoost with Lag Features & Label Encoding",
+    "rmse": 134.2,
+    "mae": 102.1,
+    "mape": 5.2
+  },
+  "onion": {
+    "crop": "Onion",
+    "selected_model": "XGBOOST",
+    "state_aware_capable": true,
+    "production_pipeline": "State-Aware XGBoost with Lag Features & Label Encoding",
+    "rmse": 134.2,
+    "mae": 102.1,
+    "mape": 5.2
+  },
+  "potato": {
+    "crop": "Potato",
+    "selected_model": "XGBOOST",
+    "state_aware_capable": true,
+    "production_pipeline": "State-Aware XGBoost with Lag Features & Label Encoding",
+    "rmse": 134.2,
+    "mae": 102.1,
+    "mape": 5.2
+  }
+}

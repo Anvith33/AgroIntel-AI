@@ -1,0 +1,898 @@
+{
+  "Andhra Pradesh": {
+    "rice": {
+      "record_count": 2175,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 1944,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 1683,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 594,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Arunachal Pradesh": {
+    "rice": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 25.02
+    },
+    "potato": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 25.7
+    }
+  },
+  "Assam": {
+    "rice": {
+      "record_count": 239,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 345,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 261,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 411,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 451,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Bihar": {
+    "rice": {
+      "record_count": 110,
+      "forecast_tier": "STATE_AWARE_FALLBACK",
+      "confidence_level": "MODERATE",
+      "estimated_30d_mape": 6.34
+    },
+    "wheat": {
+      "record_count": 843,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 183,
+      "forecast_tier": "STATE_AWARE_FALLBACK",
+      "confidence_level": "MODERATE",
+      "estimated_30d_mape": 6.05
+    },
+    "onion": {
+      "record_count": 1042,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 1048,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Chhattisgarh": {
+    "rice": {
+      "record_count": 2191,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2054,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 2165,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2100,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2143,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Goa": {
+    "rice": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 1532,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 1499,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Gujarat": {
+    "rice": {
+      "record_count": 2131,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2091,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 1945,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2171,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2172,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Haryana": {
+    "rice": {
+      "record_count": 813,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 569,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 685,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Himachal Pradesh": {
+    "rice": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 2177,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2188,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Jharkhand": {
+    "rice": {
+      "record_count": 571,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 350,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 257,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 569,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 588,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Karnataka": {
+    "rice": {
+      "record_count": 1980,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 1891,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 2123,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2132,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2155,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Kerala": {
+    "rice": {
+      "record_count": 1683,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 819,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Madhya Pradesh": {
+    "rice": {
+      "record_count": 2117,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2188,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 2137,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2178,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2170,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Maharashtra": {
+    "rice": {
+      "record_count": 2100,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2183,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 2173,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2161,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2169,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Manipur": {
+    "rice": {
+      "record_count": 764,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 707,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 772,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 799,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Meghalaya": {
+    "rice": {
+      "record_count": 49,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 10,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 288,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 1306,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Mizoram": {
+    "rice": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 56,
+      "forecast_tier": "STATE_AWARE_FALLBACK",
+      "confidence_level": "MODERATE",
+      "estimated_30d_mape": 20.02
+    },
+    "potato": {
+      "record_count": 86,
+      "forecast_tier": "STATE_AWARE_FALLBACK",
+      "confidence_level": "MODERATE",
+      "estimated_30d_mape": 20.56
+    }
+  },
+  "Nagaland": {
+    "rice": {
+      "record_count": 15,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 162,
+      "forecast_tier": "STATE_AWARE_FALLBACK",
+      "confidence_level": "MODERATE",
+      "estimated_30d_mape": 6.05
+    },
+    "onion": {
+      "record_count": 486,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 1412,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Odisha": {
+    "rice": {
+      "record_count": 2166,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 456,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 1854,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2191,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Punjab": {
+    "rice": {
+      "record_count": 495,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 431,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 788,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Rajasthan": {
+    "rice": {
+      "record_count": 1647,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2179,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 2056,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Sikkim": {
+    "rice": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.92
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 25.02
+    },
+    "potato": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 25.7
+    }
+  },
+  "Tamil Nadu": {
+    "rice": {
+      "record_count": 2146,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 2140,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 225,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 195,
+      "forecast_tier": "STATE_AWARE_FALLBACK",
+      "confidence_level": "MODERATE",
+      "estimated_30d_mape": 20.56
+    }
+  },
+  "Telangana": {
+    "rice": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 315,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 1946,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2075,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2070,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Tripura": {
+    "rice": {
+      "record_count": 1139,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 8.93
+    },
+    "maize": {
+      "record_count": 2,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 2183,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Uttar Pradesh": {
+    "rice": {
+      "record_count": 2189,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 2187,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "Uttarakhand": {
+    "rice": {
+      "record_count": 1185,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 956,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 230,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.04
+    },
+    "onion": {
+      "record_count": 2169,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2187,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  },
+  "West Bengal": {
+    "rice": {
+      "record_count": 2191,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.28
+    },
+    "wheat": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 5.95
+    },
+    "maize": {
+      "record_count": 0,
+      "forecast_tier": "CROP_LEVEL_FALLBACK",
+      "confidence_level": "LOW_PROVABLY_NATIONAL",
+      "estimated_30d_mape": 7.56
+    },
+    "onion": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 16.68
+    },
+    "potato": {
+      "record_count": 2192,
+      "forecast_tier": "STATE_CROP_MODEL",
+      "confidence_level": "HIGH",
+      "estimated_30d_mape": 17.13
+    }
+  }
+}

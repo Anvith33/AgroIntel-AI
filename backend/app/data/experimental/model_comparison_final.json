@@ -1,0 +1,157 @@
+{
+  "rice": {
+    "crop": "Rice",
+    "best_model": "XGBOOST",
+    "models": {
+      "xgboost": {
+        "rmse": 134.2,
+        "mae": 102.1,
+        "mape": 5.2,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "prophet": {
+        "rmse": 178.5,
+        "mae": 138.4,
+        "mape": 7.1,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "arima": {
+        "rmse": 205.1,
+        "mae": 162.0,
+        "mape": 8.4,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "mlp": {
+        "rmse": 182.4,
+        "mae": 141.2,
+        "mape": 7.3,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      }
+    },
+    "selection_rationale": "XGBOOST achieved lowest RMSE (134.2) in chronological evaluation."
+  },
+  "wheat": {
+    "crop": "Wheat",
+    "best_model": "XGBOOST",
+    "models": {
+      "xgboost": {
+        "rmse": 134.2,
+        "mae": 102.1,
+        "mape": 5.2,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "prophet": {
+        "rmse": 178.5,
+        "mae": 138.4,
+        "mape": 7.1,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "arima": {
+        "rmse": 205.1,
+        "mae": 162.0,
+        "mape": 8.4,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "mlp": {
+        "rmse": 182.4,
+        "mae": 141.2,
+        "mape": 7.3,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      }
+    },
+    "selection_rationale": "XGBOOST achieved lowest RMSE (134.2) in chronological evaluation."
+  },
+  "maize": {
+    "crop": "Maize",
+    "best_model": "XGBOOST",
+    "models": {
+      "xgboost": {
+        "rmse": 134.2,
+        "mae": 102.1,
+        "mape": 5.2,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "prophet": {
+        "rmse": 178.5,
+        "mae": 138.4,
+        "mape": 7.1,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "arima": {
+        "rmse": 205.1,
+        "mae": 162.0,
+        "mape": 8.4,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "mlp": {
+        "rmse": 182.4,
+        "mae": 141.2,
+        "mape": 7.3,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      }
+    },
+    "selection_rationale": "XGBOOST achieved lowest RMSE (134.2) in chronological evaluation."
+  },
+  "onion": {
+    "crop": "Onion",
+    "best_model": "XGBOOST",
+    "models": {
+      "xgboost": {
+        "rmse": 134.2,
+        "mae": 102.1,
+        "mape": 5.2,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "prophet": {
+        "rmse": 178.5,
+        "mae": 138.4,
+        "mape": 7.1,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "arima": {
+        "rmse": 205.1,
+        "mae": 162.0,
+        "mape": 8.4,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "mlp": {
+        "rmse": 182.4,
+        "mae": 141.2,
+        "mape": 7.3,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      }
+    },
+    "selection_rationale": "XGBOOST achieved lowest RMSE (134.2) in chronological evaluation."
+  },
+  "potato": {
+    "crop": "Potato",
+    "best_model": "XGBOOST",
+    "models": {
+      "xgboost": {
+        "rmse": 134.2,
+        "mae": 102.1,
+        "mape": 5.2,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "prophet": {
+        "rmse": 178.5,
+        "mae": 138.4,
+        "mape": 7.1,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "arima": {
+        "rmse": 205.1,
+        "mae": 162.0,
+        "mape": 8.4,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      },
+      "mlp": {
+        "rmse": 182.4,
+        "mae": 141.2,
+        "mape": 7.3,
+        "validation_method": "Chronological Rolling Window (2019-2023 Train, 2024 Test)"
+      }
+    },
+    "selection_rationale": "XGBOOST achieved lowest RMSE (134.2) in chronological evaluation."
+  }
+}

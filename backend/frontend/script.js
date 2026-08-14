@@ -242,7 +242,6 @@ async function submitCropRec(event) {
 function renderRecResults(data) {
     const loc      = data.location || {};
     const recs     = (data.recommendations || []).slice(0, 5);
-    const rejected = (data.rejected_crops  || []).slice(0, 3);
 
     if (recs.length === 0) {
         const msg = data.message || "No suitable candidate crops found.";
@@ -260,71 +259,54 @@ function renderRecResults(data) {
 
     const recHtml = recs.map((rec, i) => {
         const info = rec.crop_information || {};
-        const expl = rec.explanation || {};
-        const sb   = rec.score_breakdown || {};
+        const expl = rec.nlp_explanation || rec.explanation || {};
 
-        const scoreBreakdownHtml = Object.keys(sb).length > 0 ? `
-        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">
-            ${Object.entries(sb).filter(([k]) => !k.includes('_note')).map(([k, v]) => {
-                const label = k.replace(/_/g,' ').replace(/\b\w/g, l => l.toUpperCase());
-                const color = typeof v === 'number' ? (v >= 15 ? '#22c55e' : v >= 8 ? '#fbbf24' : '#f97316') : '#94a3b8';
-                return `<span style="font-size:0.7rem;background:${color}18;color:${color};border:1px solid ${color}40;border-radius:4px;padding:2px 7px">${label}: ${typeof v === 'number' ? Math.round(v) : v}</span>`;
-            }).join('')}
-        </div>` : '';
-
-        const whyRec = expl.why_recommended || rec.reasons?.join('; ') || `${rec.crop} is agronomically suitable for this district and season.`;
+        const whyRec = expl.why_recommended || rec.reasons?.join('; ') || `${rec.crop} is agronomically suitable for this district and season based on regional cultivation evidence and environmental conditions.`;
         const situation = expl.current_situation || '';
         const consideration = expl.considerations || '';
 
         return `
         <div class="rec-card glass-card ${rankColors[i]||''}" style="margin-bottom:16px;padding:18px">
-            <div class="rec-card-top" style="margin-bottom:12px">
-                <div class="rec-badge-wrap">
-                    <span class="rec-rank">#${rec.rank || i+1}</span>
-                </div>
-                <div class="rec-crop-info">
-                    <h3 class="rec-crop-name" style="margin:0;font-size:1.4rem">${rec.crop}</h3>
-                    <div style="font-size:0.8rem;opacity:0.75;margin-top:2px">Recommended for ${data.season || ''} in ${loc.district || ''}</div>
-                </div>
-                <div class="rec-score-wrap">
-                    <div class="score-circle ${rankColors[i]||''}">
-                        <span class="score-val">${Math.round(rec.final_score || 0)}</span>
-                        <span class="score-pct">/100</span>
+            <div class="rec-card-top" style="margin-bottom:12px;display:flex;align-items:center;justify-content:space-between">
+                <div style="display:flex;align-items:center;gap:12px">
+                    <span class="rec-rank" style="font-size:1.1rem;font-weight:800;color:#a3e635;background:rgba(163,230,53,0.12);border:1px solid rgba(163,230,53,0.3);padding:4px 12px;border-radius:20px">#${rec.rank || i+1}</span>
+                    <div class="rec-crop-info">
+                        <h3 class="rec-crop-name" style="margin:0;font-size:1.4rem">${rec.crop}</h3>
+                        <div style="font-size:0.8rem;opacity:0.75;margin-top:2px">Recommended for ${data.season || ''} season in ${loc.district || ''}, ${loc.state || ''}</div>
                     </div>
                 </div>
             </div>
 
             <!-- Why Recommended -->
-            <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.15);border-radius:8px;padding:12px;margin-bottom:10px">
+            <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.15);border-radius:8px;padding:14px;margin-bottom:10px">
                 <h4 style="margin:0 0 6px;font-size:0.85rem;color:#a3e635;display:flex;align-items:center;gap:5px">
-                    <span class="material-symbols-rounded" style="font-size:1rem">check_circle</span> Why Recommended
+                    <span class="material-symbols-rounded" style="font-size:1rem">check_circle</span> WHY RECOMMENDED?
                 </h4>
-                <div style="font-size:0.83rem;line-height:1.45;opacity:0.9">${whyRec}</div>
-                ${scoreBreakdownHtml}
+                <div style="font-size:0.85rem;line-height:1.5;opacity:0.92">${whyRec}</div>
             </div>
 
             ${situation ? `
             <!-- Current Situation -->
-            <div style="background:rgba(56,189,248,0.06);border:1px solid rgba(56,189,248,0.15);border-radius:8px;padding:10px;margin-bottom:10px">
+            <div style="background:rgba(56,189,248,0.06);border:1px solid rgba(56,189,248,0.15);border-radius:8px;padding:12px;margin-bottom:10px">
                 <h4 style="margin:0 0 4px;font-size:0.82rem;color:#38bdf8;display:flex;align-items:center;gap:5px">
-                    <span class="material-symbols-rounded" style="font-size:0.95rem">news</span> Current Situation
+                    <span class="material-symbols-rounded" style="font-size:0.95rem">newspaper</span> CURRENT SITUATION
                 </h4>
-                <div style="font-size:0.8rem;line-height:1.4;opacity:0.88">${situation}</div>
+                <div style="font-size:0.83rem;line-height:1.45;opacity:0.9">${situation}</div>
             </div>` : ''}
 
             ${consideration ? `
-            <!-- Risk / Considerations -->
-            <div style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.15);border-radius:8px;padding:10px;margin-bottom:10px">
+            <!-- Things to Consider -->
+            <div style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.15);border-radius:8px;padding:12px;margin-bottom:10px">
                 <h4 style="margin:0 0 4px;font-size:0.82rem;color:#fbbf24;display:flex;align-items:center;gap:5px">
-                    <span class="material-symbols-rounded" style="font-size:0.95rem">warning</span> Consideration
+                    <span class="material-symbols-rounded" style="font-size:0.95rem">info</span> THINGS TO CONSIDER
                 </h4>
-                <div style="font-size:0.8rem;line-height:1.4;opacity:0.88">${consideration}</div>
+                <div style="font-size:0.83rem;line-height:1.45;opacity:0.9">${consideration}</div>
             </div>` : ''}
 
             <!-- About this Crop -->
             <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:14px">
                 <h4 style="margin:0 0 10px;font-size:0.92rem;color:#e2e8f0;display:flex;align-items:center;gap:6px">
-                    <span class="material-symbols-rounded" style="font-size:1.1rem;color:#a3e635">info</span> About ${rec.crop}
+                    <span class="material-symbols-rounded" style="font-size:1.1rem;color:#a3e635">grass</span> ABOUT ${rec.crop.toUpperCase()}
                 </h4>
                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:0.82rem;line-height:1.45">
                     <div><strong style="color:#a3e635">Why grown:</strong> <span style="opacity:0.9">${info.why_grown || 'Cultivated for farm revenue and local food demand.'}</span></div>
@@ -336,25 +318,16 @@ function renderRecResults(data) {
         </div>`;
     }).join('');
 
-    const rejHtml = rejected.length > 0 ? `
-    <div class="glass-card" style="padding:14px;margin-top:12px">
-        <h4 style="margin:0 0 8px;font-size:0.88rem;opacity:0.8">❌ Excluded Candidates</h4>
-        ${rejected.map(r=>`<div style="font-size:0.78rem;padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
-            <strong>${r.crop}</strong> — ${r.rejection_reason}
-            <span style="opacity:0.5;font-size:0.7rem">[${r.rejection_stage}]</span>
-        </div>`).join('')}
-    </div>` : '';
-
     const html = `
         <div class="rec-header-row" style="margin-bottom:16px">
-            <h3>Top Recommended Crops for <strong>${loc.district || data.district || ''}</strong>, ${loc.state || data.state || ''}</h3>
+            <h3>Recommended Crops for <strong>${loc.district || data.district || ''}</strong>, ${loc.state || data.state || ''}</h3>
             <p class="rec-season-tag">Season: ${data.season || ''}</p>
         </div>
-        ${recHtml}
-        ${rejHtml}`;
+        ${recHtml}`;
 
     document.getElementById("recResults").innerHTML = html;
 }
+
 
 // ─── Price Prediction ─────────────────────────────────────────────────────────
 // IMPORTANT: This function calls ONLY /api/predict — never /api/phase6/recommend
@@ -462,11 +435,11 @@ function renderPredResults(predData, crop, horizon, inputState) {
         } else if (changePct <= -threshold) {
             advAction = "SELL";
             advColor  = "#f97316";
-            advReason = `The ${modelName} model forecasts a decline of approximately ${absChange.toFixed(1)}% from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Selling at the current observed price may reduce downside risk.`;
+            advReason = `The price forecasting model projects a decline of approximately ${absChange.toFixed(1)}% from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Selling at the current observed price may reduce downside risk.`;
         } else if (changePct >= threshold) {
             advAction = "HOLD";
             advColor  = "#22c55e";
-            advReason = `The ${modelName} model forecasts an increase of approximately ${absChange.toFixed(1)}% from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Holding may provide a better expected selling price.`;
+            advReason = `The price forecasting model projects an increase of approximately ${absChange.toFixed(1)}% from ₹${Math.round(curPriceNum).toLocaleString('en-IN')} to approximately ₹${Math.round(predPriceNum).toLocaleString('en-IN')} over the next ${horizon} days. Holding may provide a better expected selling price.`;
         } else {
             advAction = "WAIT";
             advColor  = "#94a3b8";

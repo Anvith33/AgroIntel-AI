@@ -1,0 +1,391 @@
+{
+  "verification_matrix": [
+    {
+      "crop": "rice",
+      "model": "Naive Persistence",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 5798,
+      "mae": 94.25,
+      "rmse": 187.43,
+      "mape_pct": 3.8,
+      "artifact_code_evidence": "Baseline 1-day lag benchmark"
+    },
+    {
+      "crop": "rice",
+      "model": "Moving Average (30d)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 5798,
+      "mae": 95.59,
+      "rmse": 179.66,
+      "mape_pct": 3.85,
+      "artifact_code_evidence": "Rolling 30-day statistical mean"
+    },
+    {
+      "crop": "rice",
+      "model": "Autoregressive (Ridge)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 5798,
+      "mae": 86.15,
+      "rmse": 162.74,
+      "mape_pct": 3.46,
+      "artifact_code_evidence": "Multi-lag linear statistical regressor"
+    },
+    {
+      "crop": "rice",
+      "model": "MLP Neural Network",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 5798,
+      "mae": 223.55,
+      "rmse": 272.64,
+      "mape_pct": 9.23,
+      "artifact_code_evidence": "Multi-layer perceptron (64, 32)"
+    },
+    {
+      "crop": "rice",
+      "model": "State-Aware XGBoost",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 5798,
+      "mae": 93.2,
+      "rmse": 165.76,
+      "mape_pct": 3.66,
+      "artifact_code_evidence": "Production XGBoost regressor (14 features)"
+    },
+    {
+      "crop": "wheat",
+      "model": "Naive Persistence",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 3938,
+      "mae": 66.75,
+      "rmse": 138.4,
+      "mape_pct": 2.51,
+      "artifact_code_evidence": "Baseline 1-day lag benchmark"
+    },
+    {
+      "crop": "wheat",
+      "model": "Moving Average (30d)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 3938,
+      "mae": 66.97,
+      "rmse": 117.43,
+      "mape_pct": 2.56,
+      "artifact_code_evidence": "Rolling 30-day statistical mean"
+    },
+    {
+      "crop": "wheat",
+      "model": "Autoregressive (Ridge)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 3938,
+      "mae": 73.14,
+      "rmse": 128.25,
+      "mape_pct": 2.74,
+      "artifact_code_evidence": "Multi-lag linear statistical regressor"
+    },
+    {
+      "crop": "wheat",
+      "model": "MLP Neural Network",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 3938,
+      "mae": 384.44,
+      "rmse": 446.64,
+      "mape_pct": 14.69,
+      "artifact_code_evidence": "Multi-layer perceptron (64, 32)"
+    },
+    {
+      "crop": "wheat",
+      "model": "State-Aware XGBoost",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 3938,
+      "mae": 87.72,
+      "rmse": 162.73,
+      "mape_pct": 3.42,
+      "artifact_code_evidence": "Production XGBoost regressor (14 features)"
+    },
+    {
+      "crop": "maize",
+      "model": "Naive Persistence",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 4267,
+      "mae": 81.32,
+      "rmse": 166.45,
+      "mape_pct": 3.56,
+      "artifact_code_evidence": "Baseline 1-day lag benchmark"
+    },
+    {
+      "crop": "maize",
+      "model": "Moving Average (30d)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 4267,
+      "mae": 80.69,
+      "rmse": 148.52,
+      "mape_pct": 3.5,
+      "artifact_code_evidence": "Rolling 30-day statistical mean"
+    },
+    {
+      "crop": "maize",
+      "model": "Autoregressive (Ridge)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 4267,
+      "mae": 75.41,
+      "rmse": 142.69,
+      "mape_pct": 3.26,
+      "artifact_code_evidence": "Multi-lag linear statistical regressor"
+    },
+    {
+      "crop": "maize",
+      "model": "MLP Neural Network",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 4267,
+      "mae": 250.25,
+      "rmse": 307.36,
+      "mape_pct": 10.62,
+      "artifact_code_evidence": "Multi-layer perceptron (64, 32)"
+    },
+    {
+      "crop": "maize",
+      "model": "State-Aware XGBoost",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 4267,
+      "mae": 86.56,
+      "rmse": 153.03,
+      "mape_pct": 3.62,
+      "artifact_code_evidence": "Production XGBoost regressor (14 features)"
+    },
+    {
+      "crop": "onion",
+      "model": "Naive Persistence",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8253,
+      "mae": 3092.4,
+      "rmse": 187949.92,
+      "mape_pct": 90.93,
+      "artifact_code_evidence": "Baseline 1-day lag benchmark"
+    },
+    {
+      "crop": "onion",
+      "model": "Moving Average (30d)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8253,
+      "mae": 2188.3,
+      "rmse": 133481.28,
+      "mape_pct": 41.21,
+      "artifact_code_evidence": "Rolling 30-day statistical mean"
+    },
+    {
+      "crop": "onion",
+      "model": "Autoregressive (Ridge)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8253,
+      "mae": 2966.53,
+      "rmse": 164722.91,
+      "mape_pct": 82.07,
+      "artifact_code_evidence": "Multi-lag linear statistical regressor"
+    },
+    {
+      "crop": "onion",
+      "model": "MLP Neural Network",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8253,
+      "mae": 2905.26,
+      "rmse": 145482.6,
+      "mape_pct": 78.69,
+      "artifact_code_evidence": "Multi-layer perceptron (64, 32)"
+    },
+    {
+      "crop": "onion",
+      "model": "State-Aware XGBoost",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8253,
+      "mae": 1642.56,
+      "rmse": 132899.64,
+      "mape_pct": 10.79,
+      "artifact_code_evidence": "Production XGBoost regressor (14 features)"
+    },
+    {
+      "crop": "potato",
+      "model": "Naive Persistence",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8518,
+      "mae": 142.3,
+      "rmse": 318.65,
+      "mape_pct": 9.19,
+      "artifact_code_evidence": "Baseline 1-day lag benchmark"
+    },
+    {
+      "crop": "potato",
+      "model": "Moving Average (30d)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8518,
+      "mae": 190.12,
+      "rmse": 337.19,
+      "mape_pct": 15.01,
+      "artifact_code_evidence": "Rolling 30-day statistical mean"
+    },
+    {
+      "crop": "potato",
+      "model": "Autoregressive (Ridge)",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8518,
+      "mae": 250.76,
+      "rmse": 393.08,
+      "mape_pct": 15.54,
+      "artifact_code_evidence": "Multi-lag linear statistical regressor"
+    },
+    {
+      "crop": "potato",
+      "model": "MLP Neural Network",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8518,
+      "mae": 255.5,
+      "rmse": 432.53,
+      "mape_pct": 15.06,
+      "artifact_code_evidence": "Multi-layer perceptron (64, 32)"
+    },
+    {
+      "crop": "potato",
+      "model": "State-Aware XGBoost",
+      "actually_trained": true,
+      "test_data": "2024 Unseen Holdout",
+      "n_test": 8518,
+      "mae": 267.86,
+      "rmse": 1040.1,
+      "mape_pct": 16.48,
+      "artifact_code_evidence": "Production XGBoost regressor (14 features)"
+    }
+  ],
+  "detailed_audit": {
+    "rice": {
+      "n_test_observations": 5798,
+      "1_step_holdout_mae": {
+        "Naive": 94.25,
+        "MovingAvg_30d": 95.59,
+        "Autoregressive_Ridge": 86.15,
+        "MLP_NeuralNet": 223.55,
+        "StateAware_XGBoost": 93.2
+      },
+      "1_step_holdout_mape": {
+        "Naive": 3.8,
+        "MovingAvg_30d": 3.85,
+        "Autoregressive_Ridge": 3.46,
+        "MLP_NeuralNet": 9.23,
+        "StateAware_XGBoost": 3.66
+      },
+      "30_step_recursive_holdout_mae": {
+        "Naive_Flatline": 137.79,
+        "Autoregressive_Recursive": 129.73,
+        "StateAware_XGBoost_Recursive": 260.97
+      }
+    },
+    "wheat": {
+      "n_test_observations": 3938,
+      "1_step_holdout_mae": {
+        "Naive": 66.75,
+        "MovingAvg_30d": 66.97,
+        "Autoregressive_Ridge": 73.14,
+        "MLP_NeuralNet": 384.44,
+        "StateAware_XGBoost": 87.72
+      },
+      "1_step_holdout_mape": {
+        "Naive": 2.51,
+        "MovingAvg_30d": 2.56,
+        "Autoregressive_Ridge": 2.74,
+        "MLP_NeuralNet": 14.69,
+        "StateAware_XGBoost": 3.42
+      },
+      "30_step_recursive_holdout_mae": {
+        "Naive_Flatline": 132.19,
+        "Autoregressive_Recursive": 204.09,
+        "StateAware_XGBoost_Recursive": 116.9
+      }
+    },
+    "maize": {
+      "n_test_observations": 4267,
+      "1_step_holdout_mae": {
+        "Naive": 81.32,
+        "MovingAvg_30d": 80.69,
+        "Autoregressive_Ridge": 75.41,
+        "MLP_NeuralNet": 250.25,
+        "StateAware_XGBoost": 86.56
+      },
+      "1_step_holdout_mape": {
+        "Naive": 3.56,
+        "MovingAvg_30d": 3.5,
+        "Autoregressive_Ridge": 3.26,
+        "MLP_NeuralNet": 10.62,
+        "StateAware_XGBoost": 3.62
+      },
+      "30_step_recursive_holdout_mae": {
+        "Naive_Flatline": 116.68,
+        "Autoregressive_Recursive": 140.41,
+        "StateAware_XGBoost_Recursive": 131.02
+      }
+    },
+    "onion": {
+      "n_test_observations": 8253,
+      "1_step_holdout_mae": {
+        "Naive": 3092.4,
+        "MovingAvg_30d": 2188.3,
+        "Autoregressive_Ridge": 2966.53,
+        "MLP_NeuralNet": 2905.26,
+        "StateAware_XGBoost": 1642.56
+      },
+      "1_step_holdout_mape": {
+        "Naive": 90.93,
+        "MovingAvg_30d": 41.21,
+        "Autoregressive_Ridge": 82.07,
+        "MLP_NeuralNet": 78.69,
+        "StateAware_XGBoost": 10.79
+      },
+      "30_step_recursive_holdout_mae": {
+        "Naive_Flatline": 482.78,
+        "Autoregressive_Recursive": 469.25,
+        "StateAware_XGBoost_Recursive": 565.48
+      }
+    },
+    "potato": {
+      "n_test_observations": 8518,
+      "1_step_holdout_mae": {
+        "Naive": 142.3,
+        "MovingAvg_30d": 190.12,
+        "Autoregressive_Ridge": 250.76,
+        "MLP_NeuralNet": 255.5,
+        "StateAware_XGBoost": 267.86
+      },
+      "1_step_holdout_mape": {
+        "Naive": 9.19,
+        "MovingAvg_30d": 15.01,
+        "Autoregressive_Ridge": 15.54,
+        "MLP_NeuralNet": 15.06,
+        "StateAware_XGBoost": 16.48
+      },
+      "30_step_recursive_holdout_mae": {
+        "Naive_Flatline": 242.57,
+        "Autoregressive_Recursive": 586.31,
+        "StateAware_XGBoost_Recursive": 280.9
+      }
+    }
+  }
+}

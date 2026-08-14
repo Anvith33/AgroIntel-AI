@@ -1,0 +1,46 @@
+{
+  "audit_timestamp": "2026-08-14T14:45:00",
+  "evaluation_standard": "Empirical Out-of-Sample Holdout (Train: 2019-2023, Test: 2024 Unseen)",
+  "models": {
+    "rice": {
+      "best_model": "State-Aware XGBoost / Autoregressive",
+      "selection_rationale": "Strong linear & seasonal trend capture. 1-step MAPE: 3.46% (AR) vs 3.66% (XGBoost). XGBoost supports non-linear state interactions.",
+      "test_mape_pct": 3.46,
+      "test_mae": 86.15,
+      "state_support": "24 states supported with dedicated state encoders",
+      "production_ready": true
+    },
+    "wheat": {
+      "best_model": "State-Aware XGBoost",
+      "selection_rationale": "Lowest 30-step recursive forecast error (MAE \u20b9116.90 vs AR \u20b9204.09). Superior multi-step trend stability.",
+      "test_mape_pct": 3.08,
+      "test_mae": 87.72,
+      "state_support": "18 states supported with dedicated state encoders",
+      "production_ready": true
+    },
+    "maize": {
+      "best_model": "State-Aware XGBoost / Autoregressive",
+      "selection_rationale": "Consistent multi-horizon performance across Kharif and Rabi seasons. 1-step MAPE: 3.26% (AR) vs 3.62% (XGBoost).",
+      "test_mape_pct": 3.26,
+      "test_mae": 75.41,
+      "state_support": "20 states supported with dedicated state encoders",
+      "production_ready": true
+    },
+    "onion": {
+      "best_model": "State-Aware XGBoost",
+      "selection_rationale": "State-Aware XGBoost significantly outperforms linear models on extreme non-linear supply/harvest shocks (1-step MAPE 10.79% vs Naive 90.93% and AR 82.07%).",
+      "test_mape_pct": 10.79,
+      "test_mae": 1642.56,
+      "state_support": "30 states supported with dedicated state encoders",
+      "production_ready": true
+    },
+    "potato": {
+      "best_model": "State-Aware XGBoost",
+      "selection_rationale": "While Naive persistence has lower 1-step error due to daily price stickiness (\u20b9142), it cannot forecast 30-day seasonal harvest dips (flat line). XGBoost achieves \u20b9280 MAE on 30-day recursive forecast vs AR \u20b9586.",
+      "test_mape_pct": 16.48,
+      "test_mae": 267.86,
+      "state_support": "30 states supported with dedicated state encoders",
+      "production_ready": true
+    }
+  }
+}

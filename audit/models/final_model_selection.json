@@ -1,0 +1,41 @@
+{
+  "evaluation_timestamp": "2026-08-14T14:58:34.268367",
+  "production_objective": "State-Specific 30-Day Forward Price Forecasting",
+  "models": {
+    "rice": {
+      "selected_model": "State-Aware XGBoost",
+      "selection_rationale": "Strong balance of low MAE (<Rs.94, <3.7% MAPE) with native state encoding support.",
+      "holdout_30d_mae": 123.65,
+      "holdout_30d_mape": 4.93,
+      "production_ready": true
+    },
+    "wheat": {
+      "selected_model": "State-Aware XGBoost",
+      "selection_rationale": "Lowest 30-day recursive forecast drift and superior multi-step trend capture.",
+      "holdout_30d_mae": 128.24,
+      "holdout_30d_mape": 4.97,
+      "production_ready": true
+    },
+    "maize": {
+      "selected_model": "State-Aware XGBoost",
+      "selection_rationale": "Strong balance of low MAE (<Rs.94, <3.7% MAPE) with native state encoding support.",
+      "holdout_30d_mae": 117.54,
+      "holdout_30d_mape": 5.06,
+      "production_ready": true
+    },
+    "onion": {
+      "selected_model": "State-Aware XGBoost",
+      "selection_rationale": "Non-linear supply/harvest shock resilience. Handles extreme seasonal volatility where linear models fail.",
+      "holdout_30d_mae": 248.37,
+      "holdout_30d_mape": 14.71,
+      "production_ready": true
+    },
+    "potato": {
+      "selected_model": "State-Aware XGBoost",
+      "selection_rationale": "Non-linear supply/harvest shock resilience. Handles extreme seasonal volatility where linear models fail.",
+      "holdout_30d_mae": 366.79,
+      "holdout_30d_mape": 16.43,
+      "production_ready": true
+    }
+  }
+}

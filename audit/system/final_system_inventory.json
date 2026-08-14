@@ -1,0 +1,1729 @@
+{
+  "generated_at": "2026-08-14T14:58:33.906773",
+  "system_name": "AgroIntel Agricultural Intelligence Platform",
+  "architecture_version": "v4.2 Production Hardened",
+  "modules": {
+    "app/data/crop_recommendation.csv": {
+      "size_bytes": 147833,
+      "file_type": ".csv",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/BUG_FIX_REPORT.md": {
+      "size_bytes": 2463,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE5_IMPROVEMENT_REPORT.md": {
+      "size_bytes": 5111,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/ingestion.py": {
+      "size_bytes": 12968,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/SYSTEM_ARCHITECTURE_REPORT.md": {
+      "size_bytes": 6435,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/backfill_weather.py": {
+      "size_bytes": 6216,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/process_kaggle.py": {
+      "size_bytes": 4731,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/weather_history.csv": {
+      "size_bytes": 1416,
+      "file_type": ".csv",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/crop_information.json": {
+      "size_bytes": 15820,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE5_VERIFICATION_REPORT.md": {
+      "size_bytes": 3221,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE5_IMPLEMENTATION_REPORT.md": {
+      "size_bytes": 7770,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE5_FINAL_VERIFICATION_REPORT.md": {
+      "size_bytes": 2661,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/RF_MODEL_VALIDATION.md": {
+      "size_bytes": 4209,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/satellite_service.py": {
+      "size_bytes": 8406,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE6_FINAL_VERIFICATION_REPORT.md": {
+      "size_bytes": 1741,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE6_VERIFICATION_REPORT.md": {
+      "size_bytes": 2577,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/FRONTEND_NAVIGATION_FIX_REPORT.md": {
+      "size_bytes": 5989,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/API_REFERENCE.md": {
+      "size_bytes": 4244,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/API_FRESHNESS_VALIDATION_REPORT.md": {
+      "size_bytes": 8065,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/rf_alignment_correction_log.json": {
+      "size_bytes": 214686,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/FRONTEND_ARCHITECTURE.md": {
+      "size_bytes": 3574,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/WEATHER_DOCUMENTATION.md": {
+      "size_bytes": 3901,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PERFORMANCE_REPORT.md": {
+      "size_bytes": 2328,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE7_VERIFICATION_REPORT.md": {
+      "size_bytes": 2538,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE6_FINAL_IMPROVEMENT_REPORT.md": {
+      "size_bytes": 5050,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/CROP_RECOMMENDATION_VALIDATION_REPORT.md": {
+      "size_bytes": 12267,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/real_historical_prices.csv": {
+      "size_bytes": 386267,
+      "file_type": ".csv",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/RUNTIME_RECOMMENDATION_DEBUG_REPORT.md": {
+      "size_bytes": 7929,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/TESTING_REPORT.md": {
+      "size_bytes": 3936,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/feature_columns.json": {
+      "size_bytes": 1135,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/BACKEND_FINAL_REPORT.md": {
+      "size_bytes": 3337,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/FINAL_PROJECT_CHECKLIST.md": {
+      "size_bytes": 2081,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/performance_summary.json": {
+      "size_bytes": 436,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/district_aliases.json": {
+      "size_bytes": 22289,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/API_INTEGRATION_GUIDE.md": {
+      "size_bytes": 2111,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/UI_STYLE_GUIDE.md": {
+      "size_bytes": 1777,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE_FRONTEND_AND_DATA_AUDIT_REPORT.md": {
+      "size_bytes": 8942,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/crop_aliases.json": {
+      "size_bytes": 3215,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/region_crop_mapping.json": {
+      "size_bytes": 341479,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/CURRENT_PRICE_AUDIT_REPORT.md": {
+      "size_bytes": 9329,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/soil_classifier.py": {
+      "size_bytes": 7098,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE3_IMPROVEMENT_REPORT.md": {
+      "size_bytes": 5924,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/FINAL_FRONTEND_FIX_REPORT.md": {
+      "size_bytes": 5430,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/API_ENDPOINT_DOCUMENTATION.md": {
+      "size_bytes": 3387,
+      "file_type": ".md",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/validate_crop_dataset.py": {
+      "size_bytes": 8112,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/mandi_cache.json": {
+      "size_bytes": 8333,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/geo_soil_mapping.json": {
+      "size_bytes": 25555,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE4_IMPROVEMENT_REPORT.md": {
+      "size_bytes": 4287,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/recommendation_history.json": {
+      "size_bytes": 77973,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE5_FINAL_IMPROVEMENT_REPORT.md": {
+      "size_bytes": 5221,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/NATIONWIDE_REGION_CROP_VALIDATION_REPORT.md": {
+      "size_bytes": 4830,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/crop_dataset.json": {
+      "size_bytes": 10049,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/prediction_history.json": {
+      "size_bytes": 56171,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE6_IMPLEMENTATION_REPORT.md": {
+      "size_bytes": 8085,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/LOCALHOST_INTERACTIVE_TEST_REPORT.md": {
+      "size_bytes": 4968,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/DISTRICT_FILTER_FIX_REPORT.md": {
+      "size_bytes": 3998,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/task.md": {
+      "size_bytes": 805,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/FRONTEND_COMPONENTS.md": {
+      "size_bytes": 1680,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE7_IMPLEMENTATION_REPORT.md": {
+      "size_bytes": 4300,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/LOCALHOST_TEST_REPORT.md": {
+      "size_bytes": 5356,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/DATA_QUALITY_AND_GRAPH_REFINEMENT_REPORT.md": {
+      "size_bytes": 6927,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/GITHUB_CLONE_PORTABILITY_REPORT.md": {
+      "size_bytes": 6696,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/WHEAT_MODEL_VALIDATION.md": {
+      "size_bytes": 3410,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/SYSTEM_VALIDATION_REPORT.md": {
+      "size_bytes": 1958,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/black_swan_config.json": {
+      "size_bytes": 852,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/SYSTEM_DIAGNOSTICS.md": {
+      "size_bytes": 2158,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/agro_zone_validator.py": {
+      "size_bytes": 14307,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/PHASE6_PROBABILITY_NORMALIZATION_REPORT.md": {
+      "size_bytes": 3128,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/FINAL_DATASET_AND_GRAPH_VALIDATION.md": {
+      "size_bytes": 10122,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/real_historical_prices_state.csv": {
+      "size_bytes": 11819619,
+      "file_type": ".csv",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/experimental/phase3_current_data_audit.md": {
+      "size_bytes": 4292,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/model_training_report.json": {
+      "size_bytes": 3694,
+      "file_type": ".json",
+      "role": "TRAINING",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_crop_price_validation.json": {
+      "size_bytes": 55106,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_model_registry.json": {
+      "size_bytes": 1106,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_recommendation_validation.json": {
+      "size_bytes": 672,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_articles.json": {
+      "size_bytes": 210043,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_forecast_quality_matrix.json": {
+      "size_bytes": 23586,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/crop_season_calendar.json": {
+      "size_bytes": 5190197,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_validation_report.md": {
+      "size_bytes": 4855,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_140_state_crop_audit.json": {
+      "size_bytes": 99574,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/price_model_comparison.json": {
+      "size_bytes": 1118,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_system_capabilities.json": {
+      "size_bytes": 4476,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/nationwide_candidate_matrix_v2.json": {
+      "size_bytes": 59632941,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_source_audit.json": {
+      "size_bytes": 1843,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/recommendation_evidence_audit.json": {
+      "size_bytes": 29629,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_specific_price_validation.json": {
+      "size_bytes": 47491,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/FINAL_MODEL_SELECTION_VERIFIED.json": {
+      "size_bytes": 2236,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_model_comparison.md": {
+      "size_bytes": 1185,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/external_event_intelligence.json": {
+      "size_bytes": 1238,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/recommendation_validation.json": {
+      "size_bytes": 22456,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/recommendation_accuracy_audit.json": {
+      "size_bytes": 29629,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/feature_verification_matrix.json": {
+      "size_bytes": 3227,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_crop_data_audit.json": {
+      "size_bytes": 34589,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase2_validation_report.md": {
+      "size_bytes": 4581,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_demo_results.json": {
+      "size_bytes": 12069,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/raw_apy_metadata.json": {
+      "size_bytes": 534,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_price_model_audit.md": {
+      "size_bytes": 3902,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_model_comparison.json": {
+      "size_bytes": 2007,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/complete_repository_audit.json": {
+      "size_bytes": 22377,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_cross_verification_report.json": {
+      "size_bytes": 2596,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase5_news_validation_report.md": {
+      "size_bytes": 10692,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/crop_family_mapping.json": {
+      "size_bytes": 10746,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/historical_data_quality_report.json": {
+      "size_bytes": 1182,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/model_registry.json": {
+      "size_bytes": 1217,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/model_benchmark_25_verified.json": {
+      "size_bytes": 10899,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/feature_availability_audit.json": {
+      "size_bytes": 3627,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/current_crop_year_trends.json": {
+      "size_bytes": 888322,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_price_model_audit.json": {
+      "size_bytes": 3756,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/arrival_qtl_audit.json": {
+      "size_bytes": 1530,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/agriculture_data_source_audit.md": {
+      "size_bytes": 3277,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/audit_step2_models.json": {
+      "size_bytes": 19225,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/random_district_e2e_test.json": {
+      "size_bytes": 6715,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/source_comparison.json": {
+      "size_bytes": 91686,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_crop_data_coverage.json": {
+      "size_bytes": 34589,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/current_agriculture_sources.json": {
+      "size_bytes": 3196,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/candidate_rejection_reasons.json": {
+      "size_bytes": 46130,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/current_crop_evidence.json": {
+      "size_bytes": 12099181,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/data_leakage_audit.json": {
+      "size_bytes": 913,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase2_5_audit_report.md": {
+      "size_bytes": 11423,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/crop_requirements.json": {
+      "size_bytes": 10982,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_forecasting_validation.json": {
+      "size_bytes": 4037,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/nationwide_candidate_matrix.json": {
+      "size_bytes": 14616094,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/evidence_verification_results.json": {
+      "size_bytes": 14219049,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_140_state_crop_audit.md": {
+      "size_bytes": 4231,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_intelligence_schema.json": {
+      "size_bytes": 1183,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_news_validation.json": {
+      "size_bytes": 984,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/district_master.json": {
+      "size_bytes": 100640,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/current_intelligence.json": {
+      "size_bytes": 3844524,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/identical_prediction_root_cause.json": {
+      "size_bytes": 2763,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/current_data_coverage.json": {
+      "size_bytes": 183222,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_specific_forecast_validation.json": {
+      "size_bytes": 47491,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/audit_step1_datasets.json": {
+      "size_bytes": 2467,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_events.json": {
+      "size_bytes": 135184,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/rotation_parameters.json": {
+      "size_bytes": 2783,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/identical_prediction_audit.json": {
+      "size_bytes": 1185,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/extreme_forecast_audit.json": {
+      "size_bytes": 3018,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/decision_logic_audit.json": {
+      "size_bytes": 47220,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/crop_recommendation_evaluation.json": {
+      "size_bytes": 1117,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/forecast_horizon_validation.json": {
+      "size_bytes": 2616,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/unresolved_districts.json": {
+      "size_bytes": 2,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_crop_data_quality_final.json": {
+      "size_bytes": 69516,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/raw_apy_records.json": {
+      "size_bytes": 46231743,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase1_validation_report.md": {
+      "size_bytes": 7820,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_forecasting_scientific_audit.json": {
+      "size_bytes": 20447,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/price_model_evaluation.json": {
+      "size_bytes": 2398,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase4_validation_report.md": {
+      "size_bytes": 5511,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_event_clusters.json": {
+      "size_bytes": 21278,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_verification_results.json": {
+      "size_bytes": 64421,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/market_intelligence.json": {
+      "size_bytes": 2198265,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_forecasting_scientific_audit.md": {
+      "size_bytes": 4356,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/state_model_evaluation_summary.json": {
+      "size_bytes": 3069,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/random_district_e2e_test_report.md": {
+      "size_bytes": 3569,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/model_comparison_final.json": {
+      "size_bytes": 4557,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/district_crop_confidence.json": {
+      "size_bytes": 10486539,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_source_registry.json": {
+      "size_bytes": 17378,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/candidate_validation_report.md": {
+      "size_bytes": 4906,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase6_price_validation.json": {
+      "size_bytes": 1411,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_state_crop_validation_report.md": {
+      "size_bytes": 4231,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/district_crop_evidence.json": {
+      "size_bytes": 17446203,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/recent_crop_evidence.json": {
+      "size_bytes": 14539855,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/rf_candidate_adapter.py": {
+      "size_bytes": 8055,
+      "file_type": ".py",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/feature_temporal_alignment_audit.json": {
+      "size_bytes": 3561,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/phase5_validation_report.md": {
+      "size_bytes": 4484,
+      "file_type": ".md",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/final_model_selection.json": {
+      "size_bytes": 1910,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/multi_source_crop_evidence.json": {
+      "size_bytes": 40682315,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/experimental_candidate_dataset.json": {
+      "size_bytes": 822588,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/unresolved_crops.json": {
+      "size_bytes": 4764,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/experimental/news_source_status.json": {
+      "size_bytes": 8847,
+      "file_type": ".json",
+      "role": "AUDIT_REPORT",
+      "status": "AUDIT_RECORD"
+    },
+    "app/data/eda_plots/eda_summary.json": {
+      "size_bytes": 1401,
+      "file_type": ".json",
+      "role": "DATA_SOURCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/eda_plots/feature_correlation.png": {
+      "size_bytes": 314266,
+      "file_type": ".png",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/eda_plots/price_seasonality.png": {
+      "size_bytes": 158946,
+      "file_type": ".png",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/eda_plots/price_trends.png": {
+      "size_bytes": 405995,
+      "file_type": ".png",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/eda_plots/price_distribution.png": {
+      "size_bytes": 178067,
+      "file_type": ".png",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_7_VIVA_REFERENCE.md": {
+      "size_bytes": 7302,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_4_API_REFERENCE.md": {
+      "size_bytes": 6548,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_2_ML_MODELS.md": {
+      "size_bytes": 5634,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_3_DATA_SOURCES.md": {
+      "size_bytes": 6371,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_1_SYSTEM_ARCHITECTURE.md": {
+      "size_bytes": 7218,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_6_NEWS_INTELLIGENCE.md": {
+      "size_bytes": 7410,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/data/docs/REPORT_5_VERIFICATION_TESTS.md": {
+      "size_bytes": 7094,
+      "file_type": ".md",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/feature_engineering.py": {
+      "size_bytes": 7628,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/news_pipeline_audit.py": {
+      "size_bytes": 15155,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/price_predictor.py": {
+      "size_bytes": 18010,
+      "file_type": ".py",
+      "role": "INFERENCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/__init__.py": {
+      "size_bytes": 13,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/build_state_dataset.py": {
+      "size_bytes": 15118,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/crop_recommendation_audit.py": {
+      "size_bytes": 8153,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/crop_recommender.py": {
+      "size_bytes": 5634,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/price_trainer.py": {
+      "size_bytes": 17685,
+      "file_type": ".py",
+      "role": "TRAINING",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/eda.py": {
+      "size_bytes": 6426,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/train_state_models.py": {
+      "size_bytes": 9175,
+      "file_type": ".py",
+      "role": "TRAINING",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/exhaustive_28state_validation.py": {
+      "size_bytes": 17652,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/train.py": {
+      "size_bytes": 13783,
+      "file_type": ".py",
+      "role": "TRAINING",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/inference.py": {
+      "size_bytes": 50066,
+      "file_type": ".py",
+      "role": "INFERENCE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/train_lstm.py": {
+      "size_bytes": 6028,
+      "file_type": ".py",
+      "role": "TRAINING",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/ml/state_specific_price_validation.py": {
+      "size_bytes": 4958,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/phase6_integration_service.py": {
+      "size_bytes": 40605,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/mandi_service.py": {
+      "size_bytes": 12294,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/region_service.py": {
+      "size_bytes": 5637,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/nlp_explanation_service.py": {
+      "size_bytes": 12419,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/weather_service.py": {
+      "size_bytes": 4814,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/news_intelligence_service.py": {
+      "size_bytes": 8331,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/trend_engine.py": {
+      "size_bytes": 3896,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/recommendation_engine.py": {
+      "size_bytes": 19284,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/__init__.py": {
+      "size_bytes": 61,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/decision_engine.py": {
+      "size_bytes": 6263,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/prediction_logger.py": {
+      "size_bytes": 3150,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/confidence_engine.py": {
+      "size_bytes": 3004,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/soil_service.py": {
+      "size_bytes": 3993,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/services/recommendation_logger.py": {
+      "size_bytes": 2311,
+      "file_type": ".py",
+      "role": "SERVICE",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/system_router.py": {
+      "size_bytes": 5651,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/__init__.py": {
+      "size_bytes": 14,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/price_router.py": {
+      "size_bytes": 5362,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/crop_router.py": {
+      "size_bytes": 1913,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/schemas.py": {
+      "size_bytes": 4600,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/health_router.py": {
+      "size_bytes": 1456,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/advisory_router.py": {
+      "size_bytes": 4722,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/endpoints.py": {
+      "size_bytes": 8674,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "app/api/phase6_router.py": {
+      "size_bytes": 16358,
+      "file_type": ".py",
+      "role": "API",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_state_potato.pkl": {
+      "size_bytes": 1004558,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/state_encoder_wheat.pkl": {
+      "size_bytes": 452,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_state_onion.json": {
+      "size_bytes": 548,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_rice.pkl": {
+      "size_bytes": 7496,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_wheat.json": {
+      "size_bytes": 1291,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_state_potato.pkl": {
+      "size_bytes": 113702,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_state_onion.pkl": {
+      "size_bytes": 111497,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/arima_rice.pkl": {
+      "size_bytes": 4649971,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/state_encoder_rice.pkl": {
+      "size_bytes": 527,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_state_maize.pkl": {
+      "size_bytes": 75979,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_rice.json": {
+      "size_bytes": 1291,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_state_rice.json": {
+      "size_bytes": 539,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/state_encoder_maize.pkl": {
+      "size_bytes": 480,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/feature_columns.json": {
+      "size_bytes": 1135,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/state_encoder_onion.pkl": {
+      "size_bytes": 615,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/model_registry.json": {
+      "size_bytes": 4036,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/crop_recommender_encoder.pkl": {
+      "size_bytes": 466,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/mlp_potato.pkl": {
+      "size_bytes": 82241,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_potato.pkl": {
+      "size_bytes": 237590,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/prophet_rice.pkl": {
+      "size_bytes": 195419,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_state_wheat.pkl": {
+      "size_bytes": 68383,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_maize.json": {
+      "size_bytes": 1288,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/arima_maize.pkl": {
+      "size_bytes": 4649971,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/prophet_onion.pkl": {
+      "size_bytes": 195423,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_wheat.pkl": {
+      "size_bytes": 7497,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/prophet_maize.pkl": {
+      "size_bytes": 195423,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_state_rice.pkl": {
+      "size_bytes": 1300774,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_potato.json": {
+      "size_bytes": 1298,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/state_encoder_potato.pkl": {
+      "size_bytes": 615,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/arima_onion.pkl": {
+      "size_bytes": 4649971,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/mlp_rice.pkl": {
+      "size_bytes": 82241,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/mlp_wheat.pkl": {
+      "size_bytes": 82241,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/arima_potato.pkl": {
+      "size_bytes": 4649971,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_state_maize.json": {
+      "size_bytes": 540,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_rice.pkl": {
+      "size_bytes": 263579,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/prophet_potato.pkl": {
+      "size_bytes": 195419,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/crop_recommender_rf.pkl": {
+      "size_bytes": 3339910,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_state_maize.pkl": {
+      "size_bytes": 1166157,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/crop_recommender_metrics.json": {
+      "size_bytes": 8456,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_wheat.pkl": {
+      "size_bytes": 120233,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_state_onion.pkl": {
+      "size_bytes": 1272602,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_potato.pkl": {
+      "size_bytes": 7498,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/arima_wheat.pkl": {
+      "size_bytes": 4649971,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/mlp_onion.pkl": {
+      "size_bytes": 82241,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_maize.pkl": {
+      "size_bytes": 7497,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/prophet_wheat.pkl": {
+      "size_bytes": 195423,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_onion.pkl": {
+      "size_bytes": 7497,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/mlp_maize.pkl": {
+      "size_bytes": 82241,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_state_wheat.pkl": {
+      "size_bytes": 1048391,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_onion.pkl": {
+      "size_bytes": 120915,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_onion.json": {
+      "size_bytes": 1297,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/data_tail_state_rice.pkl": {
+      "size_bytes": 88579,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/xgboost_maize.pkl": {
+      "size_bytes": 120847,
+      "file_type": ".pkl",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_state_wheat.json": {
+      "size_bytes": 541,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "models/metrics_state_potato.json": {
+      "size_bytes": 544,
+      "file_type": ".json",
+      "role": "MODEL_ARTIFACT",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/generate_phase3_current_data.py": {
+      "size_bytes": 15489,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/generate_phase4_candidate_matrix.py": {
+      "size_bytes": 16718,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/process_phase1_data.py": {
+      "size_bytes": 26633,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/run_random_district_e2e_test.py": {
+      "size_bytes": 15531,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/execute_phase5_news_engine.py": {
+      "size_bytes": 67911,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/evaluate_phase5_pipeline.py": {
+      "size_bytes": 14022,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/audit_phase2_datasets.py": {
+      "size_bytes": 27588,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/execute_phase6_final_engine.py": {
+      "size_bytes": 17268,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/fetch_full_apy_data.py": {
+      "size_bytes": 4091,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/generate_corrected_phase4_engine.py": {
+      "size_bytes": 26113,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/generate_phase4_full_foundation.py": {
+      "size_bytes": 30702,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/generate_phase5_intelligence.py": {
+      "size_bytes": 25039,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/fix_district_rf_alignment.py": {
+      "size_bytes": 11242,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    },
+    "scripts/generate_phase2_intelligence.py": {
+      "size_bytes": 44833,
+      "file_type": ".py",
+      "role": "UTILITY",
+      "status": "ACTIVE_PRODUCTION"
+    }
+  }
+}

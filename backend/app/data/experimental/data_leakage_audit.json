@@ -1,0 +1,37 @@
+{
+  "audit_timestamp": "2026-08-14T14:59:01.291054",
+  "anti_leakage_mechanisms": [
+    {
+      "feature": "lag_1",
+      "rule": "Explicit shift(1) backward indexing. Never references day t.",
+      "status": "VERIFIED_SAFE"
+    },
+    {
+      "feature": "rolling_7",
+      "rule": "Calculated on shift(1) over window [t-7, t-1].",
+      "status": "VERIFIED_SAFE"
+    },
+    {
+      "feature": "rolling_30",
+      "rule": "Calculated on shift(1) over window [t-30, t-1].",
+      "status": "VERIFIED_SAFE"
+    },
+    {
+      "feature": "rolling_std_7",
+      "rule": "Calculated on shift(1) over window [t-7, t-1].",
+      "status": "VERIFIED_SAFE"
+    },
+    {
+      "feature": "price_range",
+      "rule": "Historical daily spread (max_price - min_price).",
+      "status": "VERIFIED_SAFE"
+    },
+    {
+      "feature": "black_swan",
+      "rule": "Historical date interval matching. No future lookahead.",
+      "status": "VERIFIED_SAFE"
+    }
+  ],
+  "temporal_split_integrity": "Train (2019-2023) and Test (2024) are strictly chronological. Zero overlap.",
+  "verdict": "ZERO_DATA_LEAKAGE_CONFIRMED"
+}

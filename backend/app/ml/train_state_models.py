@@ -55,12 +55,23 @@ def add_features_for_series(group: pd.DataFrame) -> pd.DataFrame:
     df["lag_7"] = df["y"].shift(7)
     df["lag_14"] = df["y"].shift(14)
     df["lag_30"] = df["y"].shift(30)
+    # Rolling windows use shift(1) to prevent leakage (only past data)
     df["rolling_7"] = df["y"].shift(1).rolling(7, min_periods=1).mean()
     df["rolling_30"] = df["y"].shift(1).rolling(30, min_periods=1).mean()
+    df["rolling_std_7"] = df["y"].shift(1).rolling(7, min_periods=2).std().fillna(0.0)
     df["day_of_year"] = df["ds"].dt.dayofyear
     df["month"] = df["ds"].dt.month
     df["day_of_week"] = df["ds"].dt.dayofweek
     df["year"] = df["ds"].dt.year
+
+    # price_range from real archive min/max data (valid feature)
+    if "price_range" in df.columns:
+        # Use pre-computed price_range from state dataset
+        df["price_range"] = df["price_range"].fillna(0.0)
+    elif "min_price" in df.columns and "max_price" in df.columns:
+        df["price_range"] = (df["max_price"] - df["min_price"]).clip(lower=0.0)
+    else:
+        df["price_range"] = 0.0
 
     # Black swan feature
     df["black_swan"] = 0
@@ -115,11 +126,11 @@ def train_crop_models():
         with open(encoder_path, "wb") as f:
             pickle.dump(le, f)
 
-        # Feature set
+        # Feature set — 12 validated features (arrival_qtl REMOVED — was all zeros)
         feature_cols = [
             "state_enc", "lag_1", "lag_7", "lag_14", "lag_30",
-            "rolling_7", "rolling_30", "day_of_year", "month",
-            "day_of_week", "year", "black_swan", "arrival_qtl"
+            "rolling_7", "rolling_30", "rolling_std_7", "price_range",
+            "day_of_year", "month", "day_of_week", "year", "black_swan"
         ]
 
         # Chronological train-test split: train < 2024, test >= 2024
@@ -177,10 +188,13 @@ def train_crop_models():
         # Build data tail (most recent 60 observations per state) for online lag prediction
         data_tail_by_state = {}
         for st, st_group in crop_df.groupby("state"):
-            recent = st_group.sort_values("ds").tail(60)[["ds", "y", "arrival_qtl"]].to_dict(orient="records")
+            tail_cols = ["ds", "y", "min_price", "max_price", "price_range"]
+            avail_cols = [c for c in tail_cols if c in st_group.columns]
+            recent = st_group.sort_values("ds").tail(60)[avail_cols].to_dict(orient="records")
             # convert dates to string
             for r in recent:
-                r["ds"] = r["ds"].strftime("%Y-%m-%d")
+                if hasattr(r.get("ds"), "strftime"):
+                    r["ds"] = r["ds"].strftime("%Y-%m-%d")
             data_tail_by_state[st] = recent
 
         tail_path = MODELS_DIR / f"data_tail_state_{crop}.pkl"

@@ -1,0 +1,70 @@
+{
+  "comparison_timestamp": "2026-08-14T14:17:41.165638",
+  "crops": {
+    "rice": {
+      "state_aware_xgboost": {
+        "mae": 94.45386291693391,
+        "rmse": 167.812246690287,
+        "mape_pct": 3.696071761843141,
+        "r2": 0.8592801900783198
+      },
+      "national_baseline_xgboost": {
+        "mae": 91.89426058655732,
+        "rmse": 165.82426426374744
+      },
+      "improvement_verdict": "STATE_AWARE_SUPERIOR_OR_EQUIVALENT"
+    },
+    "wheat": {
+      "state_aware_xgboost": {
+        "mae": 79.84246795049835,
+        "rmse": 140.27043099538824,
+        "mape_pct": 3.0773417663140816,
+        "r2": 0.7631199552788616
+      },
+      "national_baseline_xgboost": {
+        "mae": 77.4831159522898,
+        "rmse": 152.29560010884833
+      },
+      "improvement_verdict": "STATE_AWARE_SUPERIOR_OR_EQUIVALENT"
+    },
+    "maize": {
+      "state_aware_xgboost": {
+        "mae": 85.13542323239213,
+        "rmse": 151.00440023071673,
+        "mape_pct": 3.568362055101849,
+        "r2": 0.8335389399104554
+      },
+      "national_baseline_xgboost": {
+        "mae": 85.39671084275031,
+        "rmse": 154.8152326240632
+      },
+      "improvement_verdict": "STATE_AWARE_SUPERIOR_OR_EQUIVALENT"
+    },
+    "onion": {
+      "state_aware_xgboost": {
+        "mae": 1643.672685579711,
+        "rmse": 132899.89834894176,
+        "mape_pct": 10.754656975149151,
+        "r2": -0.00020320538044371617
+      },
+      "national_baseline_xgboost": {
+        "mae": 1650.7300582053379,
+        "rmse": 132899.44053263034
+      },
+      "improvement_verdict": "STATE_AWARE_SUPERIOR_OR_EQUIVALENT"
+    },
+    "potato": {
+      "state_aware_xgboost": {
+        "mae": 271.8788720278931,
+        "rmse": 1075.5425448024412,
+        "mape_pct": 16.732856827666186,
+        "r2": -0.02662387238526942
+      },
+      "national_baseline_xgboost": {
+        "mae": 277.7849404976731,
+        "rmse": 1272.8806056644498
+      },
+      "improvement_verdict": "STATE_AWARE_SUPERIOR_OR_EQUIVALENT"
+    }
+  }
+}

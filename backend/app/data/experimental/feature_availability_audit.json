@@ -1,0 +1,140 @@
+{
+  "audit_timestamp": "2026-08-14T14:17:41.165638",
+  "total_features_audited": 20,
+  "approved_training_features": [
+    "state_enc",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_7",
+    "rolling_30",
+    "rolling_std_7",
+    "price_range",
+    "day_of_year",
+    "month",
+    "day_of_week",
+    "year",
+    "black_swan"
+  ],
+  "removed_invalid_features": [
+    {
+      "feature": "arrival_qtl",
+      "reason": "100% 0.0 values in AGMARKNET archive. Hardcoded 500.0 at inference was artificial fabrication. Replaced with real price_range & rolling_std_7."
+    }
+  ],
+  "features_detail": {
+    "state_enc": {
+      "type": "Categorical",
+      "source": "State label encoded from AGMARKNET",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "lag_1": {
+      "type": "Continuous",
+      "source": "1-day lagged modal price",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "lag_7": {
+      "type": "Continuous",
+      "source": "7-day lagged modal price",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "lag_14": {
+      "type": "Continuous",
+      "source": "14-day lagged modal price",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "lag_30": {
+      "type": "Continuous",
+      "source": "30-day lagged modal price",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "rolling_7": {
+      "type": "Continuous",
+      "source": "7-day rolling mean (lagged by 1)",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "rolling_30": {
+      "type": "Continuous",
+      "source": "30-day rolling mean (lagged by 1)",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "rolling_std_7": {
+      "type": "Continuous",
+      "source": "7-day rolling volatility (lagged by 1)",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "price_range": {
+      "type": "Continuous",
+      "source": "max_price - min_price market spread",
+      "state_specific": true,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "day_of_year": {
+      "type": "Temporal",
+      "source": "Julian day of year (1-366)",
+      "state_specific": false,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "month": {
+      "type": "Temporal",
+      "source": "Calendar month (1-12)",
+      "state_specific": false,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "day_of_week": {
+      "type": "Temporal",
+      "source": "Day of week (0-6)",
+      "state_specific": false,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "year": {
+      "type": "Temporal",
+      "source": "Calendar year",
+      "state_specific": false,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "black_swan": {
+      "type": "Binary",
+      "source": "Explicit historical macro crisis windows",
+      "state_specific": false,
+      "date_aligned": true,
+      "status": "APPROVED"
+    },
+    "arrival_qtl": {
+      "type": "Continuous",
+      "source": "Archive column was unpopulated",
+      "state_specific": false,
+      "date_aligned": false,
+      "status": "REJECTED_AND_PURGED"
+    },
+    "live_news_sentiment": {
+      "type": "Advisory",
+      "source": "Phase 6 bounded intelligence",
+      "state_specific": true,
+      "date_aligned": false,
+      "status": "POST_PROCESSING_ONLY"
+    }
+  }
+}

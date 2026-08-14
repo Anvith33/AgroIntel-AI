@@ -84,7 +84,7 @@ def explain_crop_recommendation(
 
     considerations_text = ""
     if str(water_status).startswith("UNKNOWN") or water_status == "UNKNOWN":
-        considerations_text = "District-level irrigation measurements are unavailable, so water suitability could not be fully evaluated."
+        considerations_text = "Water suitability could not be fully verified."
     elif risks:
         considerations_text = risks[0]
     else:

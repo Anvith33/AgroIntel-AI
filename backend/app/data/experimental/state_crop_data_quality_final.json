@@ -1,0 +1,2474 @@
+{
+  "audit_timestamp": "2026-08-14T14:29:32.877185",
+  "total_records_in_dataset": 178522,
+  "date_range_global": [
+    "2019-01-01",
+    "2024-12-31"
+  ],
+  "crops_audited": [
+    "rice",
+    "wheat",
+    "maize",
+    "onion",
+    "potato"
+  ],
+  "states_28_audited": [
+    "Andhra Pradesh",
+    "Arunachal Pradesh",
+    "Assam",
+    "Bihar",
+    "Chhattisgarh",
+    "Goa",
+    "Gujarat",
+    "Haryana",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Kerala",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Punjab",
+    "Rajasthan",
+    "Sikkim",
+    "Tamil Nadu",
+    "Telangana",
+    "Tripura",
+    "Uttar Pradesh",
+    "Uttarakhand",
+    "West Bengal"
+  ],
+  "per_crop_state_quality": {
+    "rice": {
+      "Andhra Pradesh": {
+        "record_count": 2175,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 17,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1650.0,
+          "max": 3250.0,
+          "mean": 1957.63,
+          "std": 180.55
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Arunachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Assam": {
+        "record_count": 239,
+        "date_range": [
+          "2019-01-02",
+          "2019-12-31"
+        ],
+        "missing_dates_estimate": 125,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1150.0,
+          "max": 2737.5,
+          "mean": 1509.26,
+          "std": 152.86
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Bihar": {
+        "record_count": 110,
+        "date_range": [
+          "2022-02-03",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 953,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "LIMITED_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1300.0,
+          "max": 2340.0,
+          "mean": 1869.37,
+          "std": 255.32
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Chhattisgarh": {
+        "record_count": 2191,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1362.4,
+          "max": 2301.54,
+          "mean": 1668.86,
+          "std": 230.93
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Goa": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Gujarat": {
+        "record_count": 2131,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 61,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1270.0,
+          "max": 2376.0,
+          "mean": 1701.86,
+          "std": 246.37
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Haryana": {
+        "record_count": 813,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1379,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 6,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1771.0,
+          "max": 5166.67,
+          "mean": 2929.74,
+          "std": 914.11
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Himachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Jharkhand": {
+        "record_count": 571,
+        "date_range": [
+          "2019-01-01",
+          "2021-07-10"
+        ],
+        "missing_dates_estimate": 351,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1750.0,
+          "max": 1835.0,
+          "mean": 1773.68,
+          "std": 16.01
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Karnataka": {
+        "record_count": 1980,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 212,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 9,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1.0,
+          "max": 3307.5,
+          "mean": 2013.63,
+          "std": 364.91
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Kerala": {
+        "record_count": 1683,
+        "date_range": [
+          "2019-01-04",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 506,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1650.0,
+          "max": 3125.0,
+          "mean": 2033.32,
+          "std": 148.2
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Madhya Pradesh": {
+        "record_count": 2117,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 75,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 8,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1200.0,
+          "max": 4100.0,
+          "mean": 2070.16,
+          "std": 443.81
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Maharashtra": {
+        "record_count": 2100,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 92,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1360.0,
+          "max": 3418.33,
+          "mean": 2251.61,
+          "std": 279.69
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Manipur": {
+        "record_count": 764,
+        "date_range": [
+          "2019-01-02",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 1426,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1437.5,
+          "max": 3625.0,
+          "mean": 2565.74,
+          "std": 676.35
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Meghalaya": {
+        "record_count": 49,
+        "date_range": [
+          "2019-01-12",
+          "2021-02-13"
+        ],
+        "missing_dates_estimate": 715,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "INSUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2200.0,
+          "max": 10000.0,
+          "mean": 3433.67,
+          "std": 1116.79
+        },
+        "action_required": "FALLBACK_TO_CROP_MODEL"
+      },
+      "Mizoram": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Nagaland": {
+        "record_count": 15,
+        "date_range": [
+          "2019-12-05",
+          "2020-03-12"
+        ],
+        "missing_dates_estimate": 84,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "INSUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 8000.0,
+          "max": 8500.0,
+          "mean": 8206.67,
+          "std": 194.45
+        },
+        "action_required": "FALLBACK_TO_CROP_MODEL"
+      },
+      "Odisha": {
+        "record_count": 2166,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 26,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1730.0,
+          "max": 3500.0,
+          "mean": 1937.1,
+          "std": 167.51
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Punjab": {
+        "record_count": 495,
+        "date_range": [
+          "2019-03-04",
+          "2024-12-19"
+        ],
+        "missing_dates_estimate": 1623,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 8,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 3945.0,
+          "mean": 2083.85,
+          "std": 320.81
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Rajasthan": {
+        "record_count": 1647,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 545,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1300.0,
+          "max": 4158.67,
+          "mean": 2873.53,
+          "std": 609.95
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Sikkim": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Tamil Nadu": {
+        "record_count": 2146,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 46,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1289.63,
+          "max": 2950.0,
+          "mean": 1829.09,
+          "std": 211.12
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Telangana": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1611.5,
+          "max": 2351.95,
+          "mean": 1944.68,
+          "std": 170.1
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Tripura": {
+        "record_count": 1139,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1053,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1240.0,
+          "max": 4275.0,
+          "mean": 1737.33,
+          "std": 228.68
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttar Pradesh": {
+        "record_count": 2189,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 3,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1434.5,
+          "max": 2369.8,
+          "mean": 1875.4,
+          "std": 234.84
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttarakhand": {
+        "record_count": 1185,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1007,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 15,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 950.0,
+          "max": 3600.0,
+          "mean": 1947.11,
+          "std": 291.2
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "West Bengal": {
+        "record_count": 2191,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1581.11,
+          "max": 2498.33,
+          "mean": 1953.15,
+          "std": 186.63
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      }
+    },
+    "wheat": {
+      "Andhra Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Arunachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Assam": {
+        "record_count": 345,
+        "date_range": [
+          "2019-01-01",
+          "2019-12-31"
+        ],
+        "missing_dates_estimate": 20,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1770.0,
+          "max": 2800.0,
+          "mean": 2377.11,
+          "std": 162.02
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Bihar": {
+        "record_count": 843,
+        "date_range": [
+          "2022-01-03",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 251,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 4,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1325.0,
+          "max": 24000.0,
+          "mean": 2493.03,
+          "std": 1506.63
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Chhattisgarh": {
+        "record_count": 2054,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 138,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1176.0,
+          "max": 3346.0,
+          "mean": 1975.19,
+          "std": 287.17
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Goa": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Gujarat": {
+        "record_count": 2091,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 101,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1500.0,
+          "max": 4430.0,
+          "mean": 2160.68,
+          "std": 359.69
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Haryana": {
+        "record_count": 569,
+        "date_range": [
+          "2019-01-21",
+          "2024-12-06"
+        ],
+        "missing_dates_estimate": 1578,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1300.0,
+          "max": 2820.0,
+          "mean": 2094.18,
+          "std": 189.25
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Himachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Jharkhand": {
+        "record_count": 350,
+        "date_range": [
+          "2019-01-01",
+          "2021-07-10"
+        ],
+        "missing_dates_estimate": 572,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1735.0,
+          "max": 3800.0,
+          "mean": 2265.29,
+          "std": 227.36
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Karnataka": {
+        "record_count": 1891,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 301,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 71,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1.0,
+          "max": 8307.7,
+          "mean": 2742.73,
+          "std": 527.0
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Kerala": {
+        "record_count": 819,
+        "date_range": [
+          "2019-01-16",
+          "2023-12-05"
+        ],
+        "missing_dates_estimate": 966,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1750.0,
+          "max": 7000.0,
+          "mean": 2112.3,
+          "std": 336.98
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Madhya Pradesh": {
+        "record_count": 2188,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 4,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1562.6,
+          "max": 2908.47,
+          "mean": 2094.39,
+          "std": 308.98
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Maharashtra": {
+        "record_count": 2183,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 9,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1471.6,
+          "max": 3064.81,
+          "mean": 2223.16,
+          "std": 351.06
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Manipur": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Meghalaya": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Mizoram": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Nagaland": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Odisha": {
+        "record_count": 456,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-14"
+        ],
+        "missing_dates_estimate": 1719,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 8,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1840.0,
+          "max": 4580.0,
+          "mean": 3141.98,
+          "std": 425.23
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Punjab": {
+        "record_count": 431,
+        "date_range": [
+          "2019-01-07",
+          "2024-12-24"
+        ],
+        "missing_dates_estimate": 1748,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1695.0,
+          "max": 3060.0,
+          "mean": 2085.62,
+          "std": 252.29
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Rajasthan": {
+        "record_count": 2179,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 13,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1521.67,
+          "max": 2936.5,
+          "mean": 2097.67,
+          "std": 312.06
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Sikkim": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Tamil Nadu": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Telangana": {
+        "record_count": 315,
+        "date_range": [
+          "2019-03-09",
+          "2024-11-26"
+        ],
+        "missing_dates_estimate": 1775,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1209.0,
+          "max": 2736.0,
+          "mean": 2128.35,
+          "std": 254.72
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Tripura": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Uttar Pradesh": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1649.93,
+          "max": 2778.11,
+          "mean": 2094.01,
+          "std": 292.08
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttarakhand": {
+        "record_count": 956,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1236,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1735.0,
+          "max": 2775.0,
+          "mean": 2107.0,
+          "std": 185.42
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "West Bengal": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1730.0,
+          "max": 3225.0,
+          "mean": 2185.12,
+          "std": 301.26
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      }
+    },
+    "maize": {
+      "Andhra Pradesh": {
+        "record_count": 1944,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 248,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 3,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1086.0,
+          "max": 4000.0,
+          "mean": 1861.73,
+          "std": 253.5
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Arunachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Assam": {
+        "record_count": 261,
+        "date_range": [
+          "2019-01-01",
+          "2019-12-31"
+        ],
+        "missing_dates_estimate": 104,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 5,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 950.0,
+          "max": 1900.0,
+          "mean": 1594.8,
+          "std": 172.61
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Bihar": {
+        "record_count": 183,
+        "date_range": [
+          "2022-01-06",
+          "2023-04-22"
+        ],
+        "missing_dates_estimate": 289,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 11,
+        "history_classification": "LIMITED_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 800.0,
+          "max": 5000.0,
+          "mean": 1996.35,
+          "std": 424.13
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Chhattisgarh": {
+        "record_count": 2165,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 27,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 2625.0,
+          "mean": 1713.69,
+          "std": 276.99
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Goa": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Gujarat": {
+        "record_count": 1945,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 247,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1150.0,
+          "max": 2887.5,
+          "mean": 1974.77,
+          "std": 299.85
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Haryana": {
+        "record_count": 685,
+        "date_range": [
+          "2019-01-13",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 1494,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 16,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 252.0,
+          "max": 5500.0,
+          "mean": 1898.69,
+          "std": 437.3
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Himachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Jharkhand": {
+        "record_count": 257,
+        "date_range": [
+          "2019-01-01",
+          "2021-07-10"
+        ],
+        "missing_dates_estimate": 665,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1700.0,
+          "max": 1950.0,
+          "mean": 1735.37,
+          "std": 50.32
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Karnataka": {
+        "record_count": 2123,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 69,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 12,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1100.0,
+          "max": 10875.0,
+          "mean": 1928.52,
+          "std": 417.14
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Kerala": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Madhya Pradesh": {
+        "record_count": 2137,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 55,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 3,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 881.0,
+          "max": 2568.6,
+          "mean": 1753.76,
+          "std": 334.17
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Maharashtra": {
+        "record_count": 2173,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 19,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 981.0,
+          "max": 3287.5,
+          "mean": 1865.51,
+          "std": 360.48
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Manipur": {
+        "record_count": 707,
+        "date_range": [
+          "2019-01-02",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 1483,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2500.0,
+          "max": 4000.0,
+          "mean": 3236.78,
+          "std": 426.64
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Meghalaya": {
+        "record_count": 10,
+        "date_range": [
+          "2019-06-25",
+          "2019-07-12"
+        ],
+        "missing_dates_estimate": 8,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "INSUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2400.0,
+          "max": 3400.0,
+          "mean": 2780.0,
+          "std": 354.49
+        },
+        "action_required": "FALLBACK_TO_CROP_MODEL"
+      },
+      "Mizoram": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Nagaland": {
+        "record_count": 162,
+        "date_range": [
+          "2019-06-27",
+          "2023-10-09"
+        ],
+        "missing_dates_estimate": 1404,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 21,
+        "history_classification": "LIMITED_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1700.0,
+          "max": 10300.0,
+          "mean": 5375.1,
+          "std": 2309.0
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Odisha": {
+        "record_count": 1854,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 338,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 28,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1100.0,
+          "max": 4910.0,
+          "mean": 1676.37,
+          "std": 326.94
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Punjab": {
+        "record_count": 788,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1404,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 28,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 450.0,
+          "max": 3100.0,
+          "mean": 1726.33,
+          "std": 456.78
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Rajasthan": {
+        "record_count": 2056,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 136,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 8,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 210.0,
+          "max": 3000.0,
+          "mean": 1951.14,
+          "std": 309.34
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Sikkim": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Tamil Nadu": {
+        "record_count": 2140,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 52,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1200.0,
+          "max": 2945.71,
+          "mean": 2022.7,
+          "std": 387.11
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Telangana": {
+        "record_count": 1946,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 246,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 2619.0,
+          "mean": 1911.52,
+          "std": 228.19
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Tripura": {
+        "record_count": 2,
+        "date_range": [
+          "2019-09-14",
+          "2020-12-21"
+        ],
+        "missing_dates_estimate": 463,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "INSUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2600.0,
+          "max": 17500.0,
+          "mean": 10050.0,
+          "std": 10535.89
+        },
+        "action_required": "FALLBACK_TO_CROP_MODEL"
+      },
+      "Uttar Pradesh": {
+        "record_count": 2187,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 5,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1067.5,
+          "max": 2431.82,
+          "mean": 1898.48,
+          "std": 274.84
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttarakhand": {
+        "record_count": 230,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-26"
+        ],
+        "missing_dates_estimate": 1957,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 7,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1500.0,
+          "max": 4300.0,
+          "mean": 2192.67,
+          "std": 351.2
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "West Bengal": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      }
+    },
+    "onion": {
+      "Andhra Pradesh": {
+        "record_count": 1683,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 509,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 92,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 280.0,
+          "max": 9500.0,
+          "mean": 2111.36,
+          "std": 1316.4
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Arunachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Assam": {
+        "record_count": 411,
+        "date_range": [
+          "2019-01-01",
+          "2023-12-22"
+        ],
+        "missing_dates_estimate": 1406,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 9,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 950.0,
+          "max": 6450.0,
+          "mean": 2536.8,
+          "std": 1418.84
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Bihar": {
+        "record_count": 1042,
+        "date_range": [
+          "2021-11-16",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 100,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 26,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1100.0,
+          "max": 35143.33,
+          "mean": 2880.36,
+          "std": 2250.9
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Chhattisgarh": {
+        "record_count": 2100,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 92,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 16,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 650.0,
+          "max": 6375.0,
+          "mean": 2149.24,
+          "std": 1041.92
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Goa": {
+        "record_count": 1532,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 660,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 11,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 800.0,
+          "max": 7000.0,
+          "mean": 1852.93,
+          "std": 816.0
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Gujarat": {
+        "record_count": 2171,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 21,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 34,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 544.29,
+          "max": 5500.0,
+          "mean": 1862.25,
+          "std": 842.35
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Haryana": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 826.18,
+          "max": 6812.5,
+          "mean": 2011.08,
+          "std": 941.46
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Himachal Pradesh": {
+        "record_count": 2177,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 15,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 958.33,
+          "max": 9916.67,
+          "mean": 2750.33,
+          "std": 1260.63
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Jharkhand": {
+        "record_count": 569,
+        "date_range": [
+          "2019-01-01",
+          "2022-04-21"
+        ],
+        "missing_dates_estimate": 638,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 10,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 8000.0,
+          "mean": 2405.44,
+          "std": 1248.27
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Karnataka": {
+        "record_count": 2132,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 60,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 55,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 500.0,
+          "max": 8800.0,
+          "mean": 1993.62,
+          "std": 1006.16
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Kerala": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 22,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1662.5,
+          "max": 12413.33,
+          "mean": 4144.11,
+          "std": 1623.98
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Madhya Pradesh": {
+        "record_count": 2178,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 14,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 27,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 316.27,
+          "max": 4080.36,
+          "mean": 1347.95,
+          "std": 738.46
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Maharashtra": {
+        "record_count": 2161,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 31,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 12,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 404.79,
+          "max": 12075330.28,
+          "mean": 7219.98,
+          "std": 259726.16
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Manipur": {
+        "record_count": 772,
+        "date_range": [
+          "2019-01-02",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 1418,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 3,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1900.0,
+          "max": 10062.5,
+          "mean": 4168.35,
+          "std": 1584.89
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Meghalaya": {
+        "record_count": 288,
+        "date_range": [
+          "2019-01-03",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 1901,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 3,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1700.0,
+          "max": 8500.0,
+          "mean": 3557.81,
+          "std": 1509.53
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Mizoram": {
+        "record_count": 56,
+        "date_range": [
+          "2019-01-04",
+          "2019-11-28"
+        ],
+        "missing_dates_estimate": 273,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 5,
+        "history_classification": "LIMITED_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2900.0,
+          "max": 11000.0,
+          "mean": 4971.43,
+          "std": 2151.42
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Nagaland": {
+        "record_count": 486,
+        "date_range": [
+          "2019-01-04",
+          "2024-12-19"
+        ],
+        "missing_dates_estimate": 1691,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 36,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2300.0,
+          "max": 13600.0,
+          "mean": 5113.62,
+          "std": 1614.88
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Odisha": {
+        "record_count": 2191,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1255.0,
+          "max": 9500.0,
+          "mean": 3006.11,
+          "std": 1220.24
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Punjab": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 774.03,
+          "max": 6301.43,
+          "mean": 2125.42,
+          "std": 985.9
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Rajasthan": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 3,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 530.18,
+          "max": 8000.0,
+          "mean": 1832.31,
+          "std": 1025.82
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Sikkim": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Tamil Nadu": {
+        "record_count": 225,
+        "date_range": [
+          "2023-08-17",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 278,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 4,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 54.7,
+          "max": 7905.0,
+          "mean": 4909.1,
+          "std": 1864.71
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Telangana": {
+        "record_count": 2075,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 117,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 60,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 484.0,
+          "max": 6000.0,
+          "mean": 2074.27,
+          "std": 823.25
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Tripura": {
+        "record_count": 2183,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 9,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1262.5,
+          "max": 12900.0,
+          "mean": 3538.47,
+          "std": 1578.5
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttar Pradesh": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 794.45,
+          "max": 6003.75,
+          "mean": 1985.91,
+          "std": 954.37
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttarakhand": {
+        "record_count": 2169,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 23,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 10,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 700.0,
+          "max": 8250.0,
+          "mean": 1839.62,
+          "std": 797.33
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "West Bengal": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 789.6,
+          "max": 9233.33,
+          "mean": 2693.39,
+          "std": 1336.93
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      }
+    },
+    "potato": {
+      "Andhra Pradesh": {
+        "record_count": 594,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-28"
+        ],
+        "missing_dates_estimate": 1595,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 19,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 500.0,
+          "max": 3500.0,
+          "mean": 1687.46,
+          "std": 702.62
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Arunachal Pradesh": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Assam": {
+        "record_count": 451,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 1741,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 4,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 500.0,
+          "max": 4000.0,
+          "mean": 1338.07,
+          "std": 668.84
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Bihar": {
+        "record_count": 1048,
+        "date_range": [
+          "2021-11-16",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 94,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 6,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 726.74,
+          "max": 20000.0,
+          "mean": 1744.69,
+          "std": 1299.41
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Chhattisgarh": {
+        "record_count": 2143,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 49,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 13,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 400.0,
+          "max": 4400.0,
+          "mean": 1751.17,
+          "std": 632.77
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Goa": {
+        "record_count": 1499,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 693,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 2,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 3500.0,
+          "mean": 1774.4,
+          "std": 478.11
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Gujarat": {
+        "record_count": 2172,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 20,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 9,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 733.85,
+          "max": 3500.0,
+          "mean": 1581.2,
+          "std": 522.66
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Haryana": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 522.54,
+          "max": 3094.53,
+          "mean": 1222.43,
+          "std": 468.38
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Himachal Pradesh": {
+        "record_count": 2188,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 4,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 5,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 557.14,
+          "max": 3912.5,
+          "mean": 1676.67,
+          "std": 673.68
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Jharkhand": {
+        "record_count": 588,
+        "date_range": [
+          "2019-01-01",
+          "2023-01-24"
+        ],
+        "missing_dates_estimate": 897,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 11,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 800.0,
+          "max": 3500.0,
+          "mean": 1732.06,
+          "std": 523.67
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Karnataka": {
+        "record_count": 2155,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 37,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 26,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 650.0,
+          "max": 5071.38,
+          "mean": 1847.06,
+          "std": 520.81
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Kerala": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 6,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2033.33,
+          "max": 6638.89,
+          "mean": 3340.83,
+          "std": 733.76
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Madhya Pradesh": {
+        "record_count": 2170,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 22,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 35,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 245.8,
+          "max": 2870.81,
+          "mean": 1167.77,
+          "std": 395.69
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Maharashtra": {
+        "record_count": 2169,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 23,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 8,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 814.29,
+          "max": 4500.0,
+          "mean": 1673.81,
+          "std": 527.07
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Manipur": {
+        "record_count": 799,
+        "date_range": [
+          "2019-01-02",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 1391,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 4,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1125.0,
+          "max": 7500.0,
+          "mean": 2446.0,
+          "std": 935.45
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Meghalaya": {
+        "record_count": 1306,
+        "date_range": [
+          "2019-01-03",
+          "2024-12-30"
+        ],
+        "missing_dates_estimate": 883,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 84,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 58009.0,
+          "mean": 2636.06,
+          "std": 3861.04
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Mizoram": {
+        "record_count": 86,
+        "date_range": [
+          "2019-01-04",
+          "2019-11-28"
+        ],
+        "missing_dates_estimate": 243,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "LIMITED_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 2000.0,
+          "max": 4500.0,
+          "mean": 3228.78,
+          "std": 615.73
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Nagaland": {
+        "record_count": 1412,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-27"
+        ],
+        "missing_dates_estimate": 776,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 139,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 1000.0,
+          "max": 8800.0,
+          "mean": 3096.39,
+          "std": 1435.51
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Odisha": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 754.13,
+          "max": 4254.55,
+          "mean": 1989.38,
+          "std": 695.96
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Punjab": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 5,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 435.69,
+          "max": 2944.12,
+          "mean": 1085.22,
+          "std": 450.14
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Rajasthan": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 528.33,
+          "max": 3231.84,
+          "mean": 1258.73,
+          "std": 501.48
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Sikkim": {
+        "record_count": 0,
+        "date_range": null,
+        "missing_dates_estimate": "ALL",
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "NO_HISTORICAL_DATA",
+        "is_state_specific": false,
+        "action_required": "CROP_LEVEL_FALLBACK_REQUIRED"
+      },
+      "Tamil Nadu": {
+        "record_count": 195,
+        "date_range": [
+          "2024-06-18",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 2,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "LIMITED_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 47.08,
+          "max": 5394.27,
+          "mean": 4629.23,
+          "std": 1557.1
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Telangana": {
+        "record_count": 2070,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 122,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 8,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 600.0,
+          "max": 3800.0,
+          "mean": 1975.99,
+          "std": 648.99
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Tripura": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 1,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 995.62,
+          "max": 5184.44,
+          "mean": 2281.63,
+          "std": 753.75
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttar Pradesh": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 535.23,
+          "max": 2982.15,
+          "mean": 1215.67,
+          "std": 528.91
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "Uttarakhand": {
+        "record_count": 2187,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 5,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 435.55,
+          "max": 3100.0,
+          "mean": 1077.16,
+          "std": 429.07
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      },
+      "West Bengal": {
+        "record_count": 2192,
+        "date_range": [
+          "2019-01-01",
+          "2024-12-31"
+        ],
+        "missing_dates_estimate": 0,
+        "duplicates": 0,
+        "price_jumps_over_50pct": 0,
+        "history_classification": "SUFFICIENT_STATE_HISTORY",
+        "is_state_specific": true,
+        "price_stats": {
+          "min": 476.59,
+          "max": 3818.75,
+          "mean": 1548.51,
+          "std": 642.01
+        },
+        "action_required": "STATE_AWARE_ELIGIBLE"
+      }
+    }
+  }
+}

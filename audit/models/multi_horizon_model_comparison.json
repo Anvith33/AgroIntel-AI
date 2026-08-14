@@ -1,0 +1,282 @@
+{
+  "evaluation_timestamp": "2026-08-14T14:58:34.268360",
+  "training_period": "2019-01-01 to 2023-12-31",
+  "holdout_test_period": "2024-01-01 to 2024-12-31",
+  "crops": {
+    "rice": {
+      "test_records_2024": 5798,
+      "single_step_1d_metrics": {
+        "Naive": {
+          "mae": 94.25,
+          "mape": 3.8
+        },
+        "MovingAverage": {
+          "mae": 95.59,
+          "mape": 3.85
+        },
+        "AR_Ridge": {
+          "mae": 86.15,
+          "mape": 3.46
+        },
+        "MLP": {
+          "mae": 223.55,
+          "mape": 9.23
+        },
+        "StateAware_XGBoost": {
+          "mae": 93.2,
+          "mape": 3.66
+        }
+      },
+      "multi_horizon_degradation": {
+        "1_day": {
+          "xgboost_mae": 89.68,
+          "xgboost_mape": 3.52,
+          "ar_mae": 76.15,
+          "ar_mape": 3.09,
+          "naive_mae": 87.71
+        },
+        "7_day": {
+          "xgboost_mae": 95.29,
+          "xgboost_mape": 3.72,
+          "ar_mae": 88.13,
+          "ar_mape": 3.47,
+          "naive_mae": 94.21
+        },
+        "15_day": {
+          "xgboost_mae": 143.18,
+          "xgboost_mape": 5.34,
+          "ar_mae": 126.48,
+          "ar_mape": 4.83,
+          "naive_mae": 129.36
+        },
+        "30_day": {
+          "xgboost_mae": 123.65,
+          "xgboost_mape": 4.93,
+          "ar_mae": 121.58,
+          "ar_mape": 5.03,
+          "naive_mae": 147.24
+        }
+      }
+    },
+    "wheat": {
+      "test_records_2024": 3938,
+      "single_step_1d_metrics": {
+        "Naive": {
+          "mae": 66.75,
+          "mape": 2.51
+        },
+        "MovingAverage": {
+          "mae": 66.97,
+          "mape": 2.56
+        },
+        "AR_Ridge": {
+          "mae": 73.14,
+          "mape": 2.74
+        },
+        "MLP": {
+          "mae": 384.44,
+          "mape": 14.69
+        },
+        "StateAware_XGBoost": {
+          "mae": 87.72,
+          "mape": 3.42
+        }
+      },
+      "multi_horizon_degradation": {
+        "1_day": {
+          "xgboost_mae": 85.9,
+          "xgboost_mape": 3.34,
+          "ar_mae": 64.79,
+          "ar_mape": 2.46,
+          "naive_mae": 60.13
+        },
+        "7_day": {
+          "xgboost_mae": 79.42,
+          "xgboost_mape": 3.14,
+          "ar_mae": 79.25,
+          "ar_mape": 2.99,
+          "naive_mae": 68.47
+        },
+        "15_day": {
+          "xgboost_mae": 116.67,
+          "xgboost_mape": 4.52,
+          "ar_mae": 84.13,
+          "ar_mape": 3.19,
+          "naive_mae": 79.38
+        },
+        "30_day": {
+          "xgboost_mae": 128.24,
+          "xgboost_mape": 4.97,
+          "ar_mae": 106.68,
+          "ar_mape": 3.94,
+          "naive_mae": 83.51
+        }
+      }
+    },
+    "maize": {
+      "test_records_2024": 4267,
+      "single_step_1d_metrics": {
+        "Naive": {
+          "mae": 81.32,
+          "mape": 3.56
+        },
+        "MovingAverage": {
+          "mae": 80.69,
+          "mape": 3.5
+        },
+        "AR_Ridge": {
+          "mae": 75.41,
+          "mape": 3.26
+        },
+        "MLP": {
+          "mae": 250.25,
+          "mape": 10.62
+        },
+        "StateAware_XGBoost": {
+          "mae": 86.56,
+          "mape": 3.62
+        }
+      },
+      "multi_horizon_degradation": {
+        "1_day": {
+          "xgboost_mae": 102.52,
+          "xgboost_mape": 4.31,
+          "ar_mae": 101.61,
+          "ar_mape": 4.41,
+          "naive_mae": 103.92
+        },
+        "7_day": {
+          "xgboost_mae": 83.54,
+          "xgboost_mape": 3.41,
+          "ar_mae": 75.34,
+          "ar_mape": 3.19,
+          "naive_mae": 85.18
+        },
+        "15_day": {
+          "xgboost_mae": 87.11,
+          "xgboost_mape": 3.54,
+          "ar_mae": 75.8,
+          "ar_mape": 3.24,
+          "naive_mae": 83.51
+        },
+        "30_day": {
+          "xgboost_mae": 117.54,
+          "xgboost_mape": 5.06,
+          "ar_mae": 102.88,
+          "ar_mape": 4.65,
+          "naive_mae": 107.87
+        }
+      }
+    },
+    "onion": {
+      "test_records_2024": 8253,
+      "single_step_1d_metrics": {
+        "Naive": {
+          "mae": 3092.4,
+          "mape": 90.93
+        },
+        "MovingAverage": {
+          "mae": 2188.3,
+          "mape": 41.21
+        },
+        "AR_Ridge": {
+          "mae": 2966.53,
+          "mape": 82.07
+        },
+        "MLP": {
+          "mae": 2905.26,
+          "mape": 78.69
+        },
+        "StateAware_XGBoost": {
+          "mae": 1642.56,
+          "mape": 10.79
+        }
+      },
+      "multi_horizon_degradation": {
+        "1_day": {
+          "xgboost_mae": 176.01,
+          "xgboost_mape": 10.04,
+          "ar_mae": 179.61,
+          "ar_mape": 7.18,
+          "naive_mae": 180.81
+        },
+        "7_day": {
+          "xgboost_mae": 204.35,
+          "xgboost_mape": 11.84,
+          "ar_mae": 195.37,
+          "ar_mape": 7.26,
+          "naive_mae": 191.52
+        },
+        "15_day": {
+          "xgboost_mae": 188.15,
+          "xgboost_mape": 7.0,
+          "ar_mae": 202.02,
+          "ar_mape": 7.73,
+          "naive_mae": 164.46
+        },
+        "30_day": {
+          "xgboost_mae": 248.37,
+          "xgboost_mape": 14.71,
+          "ar_mae": 246.18,
+          "ar_mape": 10.18,
+          "naive_mae": 225.42
+        }
+      }
+    },
+    "potato": {
+      "test_records_2024": 8518,
+      "single_step_1d_metrics": {
+        "Naive": {
+          "mae": 142.3,
+          "mape": 9.19
+        },
+        "MovingAverage": {
+          "mae": 190.12,
+          "mape": 15.01
+        },
+        "AR_Ridge": {
+          "mae": 250.76,
+          "mape": 15.54
+        },
+        "MLP": {
+          "mae": 255.5,
+          "mape": 15.06
+        },
+        "StateAware_XGBoost": {
+          "mae": 267.86,
+          "mape": 16.48
+        }
+      },
+      "multi_horizon_degradation": {
+        "1_day": {
+          "xgboost_mae": 301.72,
+          "xgboost_mape": 36.52,
+          "ar_mae": 276.1,
+          "ar_mape": 34.77,
+          "naive_mae": 177.74
+        },
+        "7_day": {
+          "xgboost_mae": 335.42,
+          "xgboost_mape": 14.3,
+          "ar_mae": 253.9,
+          "ar_mape": 10.55,
+          "naive_mae": 159.81
+        },
+        "15_day": {
+          "xgboost_mae": 302.04,
+          "xgboost_mape": 12.69,
+          "ar_mae": 296.62,
+          "ar_mape": 12.4,
+          "naive_mae": 169.86
+        },
+        "30_day": {
+          "xgboost_mae": 366.79,
+          "xgboost_mape": 16.43,
+          "ar_mae": 334.91,
+          "ar_mape": 14.44,
+          "naive_mae": 180.44
+        }
+      }
+    }
+  }
+}

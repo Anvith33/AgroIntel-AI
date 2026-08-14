@@ -1,12 +1,19 @@
 """
 build_state_dataset.py — Build real_historical_prices_state.csv
 
-Reads archive/csv/{year}.csv files (2001–2026, AGMARKNET data).
+Reads archive/csv/{year}.csv files (2019–2024, AGMARKNET data).
 Preserves State column. Aggregates by (Date, Crop, State).
 Outputs: real_historical_prices_state.csv
 
-Columns: ds, crop, state, y (modal price ₹/qtl), 
-         min_price, max_price, market_count, arrival_qtl
+Columns: ds, crop, state, y (modal price ₹/qtl),
+         min_price, max_price, market_count, price_range, rolling_std_7
+
+NOTE: arrival_qtl has been REMOVED. AGMARKNET archive only has
+Arrival_Date (a date field), NOT an arrival quantity field.
+All previous arrival_qtl values were 0.0 — fabricated data.
+New valid features added:
+  - price_range: max_price - min_price (intra-day market spread)
+  - rolling_std_7: 7-day rolling std of modal price per state-crop series
 """
 
 import csv
@@ -190,30 +197,92 @@ def build_dataset():
     logger.info(f"Raw rows processed: {total_raw:,}  Skipped: {skipped:,}")
     logger.info(f"Unique (date, crop, state) keys: {len(Accum):,}")
 
-    # Write CSV
+    # Write CSV — sort by state+crop+date for rolling_std_7 computation
+    # First collect all rows in memory to compute rolling_std_7 per state-crop series
+    raw_rows = []
+    for (date_str, crop, state), v in sorted(Accum.items()):
+        modals   = v["modals"]
+        mins     = v["mins"]
+        maxs     = v["maxs"]
+
+        y         = round(sum(modals) / len(modals), 2)
+        min_p     = round(sum(mins)   / len(mins),   2) if mins else 0.0
+        max_p     = round(sum(maxs)   / len(maxs),   2) if maxs else 0.0
+        mkt_count = len(modals)
+        price_range = round(max_p - min_p, 2) if (max_p > 0 and min_p > 0) else 0.0
+
+        raw_rows.append({
+            "ds": date_str,
+            "crop": crop,
+            "state": state,
+            "y": y,
+            "min_price": min_p,
+            "max_price": max_p,
+            "market_count": mkt_count,
+            "price_range": price_range,
+        })
+
+    # Build rolling_std_7 per (crop, state) group
+    import pandas as pd
+    df_all = pd.DataFrame(raw_rows)
+    df_all["ds"] = pd.to_datetime(df_all["ds"])
+    df_all = df_all.sort_values(["crop", "state", "ds"]).reset_index(drop=True)
+
+    # Compute rolling std using only past data (shift(1) prevents leakage)
+    def _add_rolling_std(group):
+        group = group.sort_values("ds").copy()
+        group["rolling_std_7"] = (
+            group["y"].shift(1).rolling(7, min_periods=2).std().fillna(0.0)
+        )
+        return group
+
+    df_all = df_all.groupby(["crop", "state"], group_keys=False).apply(_add_rolling_std)
+    df_all["rolling_std_7"] = df_all["rolling_std_7"].round(2)
+    df_all["ds"] = df_all["ds"].dt.strftime("%Y-%m-%d")
+
     rows_written = 0
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["ds", "crop", "state", "y",
-                          "min_price", "max_price",
-                          "market_count", "arrival_qtl"])
-        for (date_str, crop, state), v in sorted(Accum.items()):
-            modals   = v["modals"]
-            mins     = v["mins"]
-            maxs     = v["maxs"]
-            arrivals = v["arrivals"]
-
-            y          = round(sum(modals) / len(modals), 2)
-            min_p      = round(sum(mins)   / len(mins),   2) if mins   else 0.0
-            max_p      = round(sum(maxs)   / len(maxs),   2) if maxs   else 0.0
-            mkt_count  = len(modals)
-            arr_total  = round(sum(arrivals), 2)
-
-            writer.writerow([date_str, crop, state, y,
-                              min_p, max_p, mkt_count, arr_total])
+                         "min_price", "max_price",
+                         "market_count", "price_range", "rolling_std_7"])
+        for _, row in df_all.iterrows():
+            writer.writerow([
+                row["ds"], row["crop"], row["state"], row["y"],
+                row["min_price"], row["max_price"],
+                row["market_count"], row["price_range"], row["rolling_std_7"]
+            ])
             rows_written += 1
 
     logger.info(f"Written {rows_written:,} rows to {OUTPUT_CSV}")
+
+    # ── Generate arrival_qtl audit artifact ──────────────────────────────────
+    arrival_audit = {
+        "generated_at": datetime.now().isoformat(),
+        "column_name": "arrival_qtl",
+        "source_archive_columns": ["State", "District", "Market", "Commodity",
+                                   "Variety", "Grade", "Arrival_Date",
+                                   "Min_Price", "Max_Price", "Modal_Price", "Commodity_Code"],
+        "arrival_quantity_column_exists_in_archive": False,
+        "note": "AGMARKNET archive has 'Arrival_Date' (a date field) but NO arrival quantity/volume column. Previous code tried to parse 'Arrivals'/'Arrivals_Qty' fields which do not exist — resulting in all zeros.",
+        "historical_availability": "NOT_AVAILABLE",
+        "pct_nonzero_in_old_dataset": 0.0,
+        "used_in_training": "YES — xgboost_state models were trained with arrival_qtl as a feature (all zeros)",
+        "value_used_at_inference": 500.0,
+        "inference_location": "inference.py line 244: arr_qtl = 500.0 (hardcoded fabrication)",
+        "impact": "CRITICAL — model trained with zeros but inference used 500.0 causing feature distribution mismatch",
+        "action_taken": "REMOVED from dataset, training, and inference. Replaced with price_range (max-min) and rolling_std_7 which ARE available from real archive data.",
+        "replacement_features_added": {
+            "price_range": "max_price - min_price per trading day (intra-market price spread, proxy for demand-supply tension)",
+            "rolling_std_7": "7-day rolling std of modal price per state-crop series (price volatility, uses only past data)"
+        },
+        "decision": "REMOVED — confirmed NOT AVAILABLE in AGMARKNET archive"
+    }
+
+    arrival_audit_path = BASE_DIR / "app" / "data" / "experimental" / "arrival_qtl_audit.json"
+    with open(arrival_audit_path, "w") as f:
+        json.dump(arrival_audit, f, indent=2)
+    logger.info(f"Arrival qty audit saved to {arrival_audit_path}")
 
     # ── Build audit JSON ─────────────────────────────────────────────────────
     logger.info("Building state_crop_data_audit.json ...")

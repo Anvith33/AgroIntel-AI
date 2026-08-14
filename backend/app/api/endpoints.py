@@ -117,33 +117,56 @@ def predict(
     try:
         result = predict_price(crop_clean, state, horizon_days)
 
-        # predict_price now sets "available" correctly — do NOT override it
-        # Add nested market/forecast/advisory objects for frontend compatibility
-        result["market"] = {
-            "current_price":     result.get("current_price"),
-            "observation_date":  result.get("observation_date"),
-            "market_name":       result.get("market_name"),
-            "data_age_days":     result.get("data_age_days"),
-            "source":            result.get("price_data_source", "data.gov.in"),
-            "source_note":       result.get("price_source_note", ""),
-            "price_label":       "Latest Available Mandi Price",
-        }
-        result["forecast"] = {
-            "available":       result.get("available", False),
-            "model":           result.get("best_model_label", result.get("best_model")),
-            "predicted_price": result.get("predicted_price"),
-            "prediction_date": result.get("prediction_start"),
-            "forecast_series": result.get("predictions", []),
-            "date_labels":     result.get("date_labels", []),
-            "scope":           result.get("forecast_scope", ""),
-            "model_level":     result.get("model_level", "STATE_AWARE"),
-        }
+        # ── Build clean farmer-facing response ────────────────────────────────
+        # Strip ALL technical internal fields before returning to frontend.
+        # Farmers must never see: model names, MAE, RMSE, model_level,
+        # forecast_scope, best_model, model_comparison, price_cached_time, etc.
 
-        result["advisory"] = {
-            "decision": result.get("recommendation", "WAIT"),
-            "reason":   result.get("recommendation_reason", ""),
+        farmer_response = {
+            # Core availability
+            "available":             result.get("available", False),
+            "crop":                  result.get("crop", crop_clean),
+            "state":                 result.get("state", state),
+
+            # Price information
+            "current_price":         result.get("current_price"),
+            "predicted_price":       result.get("predicted_price"),
+            "predictions":           result.get("predictions", []),
+            "date_labels":           result.get("date_labels", []),
+            "horizon_days":          result.get("horizon_days", horizon_days),
+
+            # Observation metadata
+            "observation_date":      result.get("observation_date"),
+            "market_name":           result.get("market_name"),
+            "data_age_days":         result.get("data_age_days"),
+
+            # Advisory
+            "recommendation":        result.get("recommendation", "WAIT"),
+            "recommendation_reason": result.get("recommendation_reason", ""),
+            "black_swan_warning":    result.get("black_swan_warning"),
+
+            # Nested objects for frontend compatibility
+            "market": {
+                "current_price":    result.get("current_price"),
+                "observation_date": result.get("observation_date"),
+                "market_name":      result.get("market_name"),
+                "data_age_days":    result.get("data_age_days"),
+                "price_label":      "Latest Available Mandi Price",
+            },
+            "forecast": {
+                "available":        result.get("available", False),
+                "predicted_price":  result.get("predicted_price"),
+                "prediction_start": result.get("prediction_start"),
+                "forecast_series":  result.get("predictions", []),
+                "date_labels":      result.get("date_labels", []),
+            },
+            "advisory": {
+                "decision": result.get("recommendation", "WAIT"),
+                "reason":   result.get("recommendation_reason", ""),
+            },
         }
-        return result
+        return farmer_response
+
     except Exception as e:
         logger.error("Prediction error for %s in %s: %s", crop, state, e)
         return {

@@ -1,0 +1,1052 @@
+{
+  "validation_timestamp": "2026-08-14T14:19:04",
+  "total_test_cases": 50,
+  "pass_count": 50,
+  "fail_count": 0,
+  "success_rate_pct": 100.0,
+  "results": [
+    {
+      "test_case": {
+        "state": "Karnataka",
+        "district": "Dakshina Kannada",
+        "season": "Kharif",
+        "soil_ph": 5.8,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Black Pepper",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Karnataka",
+        "district": "Dakshin Kannad",
+        "season": "Rabi",
+        "soil_ph": 6.0,
+        "previous_crop": "Pulses"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Rice",
+      "top_score": 85.2,
+      "confidence": 0.85,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Karnataka",
+        "district": "Shimoga",
+        "season": "Kharif",
+        "soil_ph": 6.2,
+        "previous_crop": "Maize"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Horse-gram",
+      "top_score": 83.2,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Karnataka",
+        "district": "Belagavi",
+        "season": "Kharif",
+        "soil_ph": 7.2,
+        "previous_crop": "Sugarcane"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Onion",
+      "top_score": 87.7,
+      "confidence": 0.88,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Kerala",
+        "district": "Wayanad",
+        "season": "Kharif",
+        "soil_ph": 5.5,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Sesame (Sesamum)",
+      "top_score": 77.2,
+      "confidence": 0.77,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        20.0,
+        20.0,
+        15.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Kerala",
+        "district": "Palakkad",
+        "season": "Kharif",
+        "soil_ph": 6.5,
+        "previous_crop": "Paddy"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Sorghum (Jowar)",
+      "top_score": 82.2,
+      "confidence": 0.82,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Tamil Nadu",
+        "district": "Thanjavur",
+        "season": "Kharif",
+        "soil_ph": 6.8,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Groundnut",
+      "top_score": 83.9,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Tamil Nadu",
+        "district": "Coimbatore",
+        "season": "Rabi",
+        "soil_ph": 7.5,
+        "previous_crop": "Cotton"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Groundnut",
+      "top_score": 83.9,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Andhra Pradesh",
+        "district": "Guntur",
+        "season": "Kharif",
+        "soil_ph": 7.8,
+        "previous_crop": "Chilli"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Moong (Green Gram)",
+      "top_score": 84.2,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Andhra Pradesh",
+        "district": "East Godavari",
+        "season": "Kharif",
+        "soil_ph": 6.6,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Onion",
+      "top_score": 87.7,
+      "confidence": 0.88,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Telangana",
+        "district": "Warangal",
+        "season": "Kharif",
+        "soil_ph": 7.0,
+        "previous_crop": "Cotton"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Rice",
+      "top_score": 85.1,
+      "confidence": 0.85,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Telangana",
+        "district": "Nizamabad",
+        "season": "Rabi",
+        "soil_ph": 7.4,
+        "previous_crop": "Maize"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Moong (Green Gram)",
+      "top_score": 84.1,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "season": "Rabi",
+        "soil_ph": 7.2,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Barley",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        15.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Punjab",
+        "district": "Amritsar",
+        "season": "Kharif",
+        "soil_ph": 7.0,
+        "previous_crop": "Wheat"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Pigeonpea (Arhar/Tur)",
+      "top_score": 84.2,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        20.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Haryana",
+        "district": "Karnal",
+        "season": "Rabi",
+        "soil_ph": 7.3,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Wheat",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Haryana",
+        "district": "Hisar",
+        "season": "Kharif",
+        "soil_ph": 8.0,
+        "previous_crop": "Mustard"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Pearl Millet (Bajra)",
+      "top_score": 79.7,
+      "confidence": 0.8,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Uttar Pradesh",
+        "district": "Varanasi",
+        "season": "Rabi",
+        "soil_ph": 6.9,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Chickpea (Gram)",
+      "top_score": 84.3,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Uttar Pradesh",
+        "district": "Agra",
+        "season": "Rabi",
+        "soil_ph": 7.6,
+        "previous_crop": "Bajra"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Wheat",
+      "top_score": 79.7,
+      "confidence": 0.8,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Uttar Pradesh",
+        "district": "Meerut",
+        "season": "Kharif",
+        "soil_ph": 7.1,
+        "previous_crop": "Sugarcane"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Onion",
+      "top_score": 82.2,
+      "confidence": 0.82,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Bihar",
+        "district": "Patna",
+        "season": "Rabi",
+        "soil_ph": 7.0,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Khesari",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Bihar",
+        "district": "Muzaffarpur",
+        "season": "Kharif",
+        "soil_ph": 6.8,
+        "previous_crop": "Maize"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Pigeonpea (Arhar/Tur)",
+      "top_score": 84.2,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Maharashtra",
+        "district": "Nashik",
+        "season": "Kharif",
+        "soil_ph": 7.2,
+        "previous_crop": "Onion"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Finger Millet (Ragi)",
+      "top_score": 87.7,
+      "confidence": 0.88,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Maharashtra",
+        "district": "Pune",
+        "season": "Rabi",
+        "soil_ph": 7.4,
+        "previous_crop": "Soybean"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Safflower",
+      "top_score": 87.7,
+      "confidence": 0.88,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Maharashtra",
+        "district": "Nagpur",
+        "season": "Kharif",
+        "soil_ph": 7.8,
+        "previous_crop": "Cotton"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Sugarcane",
+      "top_score": 82.2,
+      "confidence": 0.82,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Gujarat",
+        "district": "Rajkot",
+        "season": "Kharif",
+        "soil_ph": 7.9,
+        "previous_crop": "Groundnut"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Cotton",
+      "top_score": 83.9,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Gujarat",
+        "district": "Surat",
+        "season": "Kharif",
+        "soil_ph": 7.3,
+        "previous_crop": "Sugarcane"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Black Gram (Urad)",
+      "top_score": 84.2,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Rajasthan",
+        "district": "Jaipur",
+        "season": "Kharif",
+        "soil_ph": 8.1,
+        "previous_crop": "Wheat"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Moong (Green Gram)",
+      "top_score": 71.2,
+      "confidence": 0.71,
+      "candidate_count": 4,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Rajasthan",
+        "district": "Ganganagar",
+        "season": "Rabi",
+        "soil_ph": 7.8,
+        "previous_crop": "Cotton"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Wheat",
+      "top_score": 79.7,
+      "confidence": 0.8,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Madhya Pradesh",
+        "district": "Indore",
+        "season": "Kharif",
+        "soil_ph": 7.5,
+        "previous_crop": "Wheat"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Sorghum (Jowar)",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "season": "Rabi",
+        "soil_ph": 7.6,
+        "previous_crop": "Soybean"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Wheat",
+      "top_score": 84.7,
+      "confidence": 0.85,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Chhattisgarh",
+        "district": "Raipur",
+        "season": "Kharif",
+        "soil_ph": 6.5,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Potato",
+      "top_score": 87.7,
+      "confidence": 0.88,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Odisha",
+        "district": "Cuttack",
+        "season": "Kharif",
+        "soil_ph": 6.2,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Horse-gram",
+      "top_score": 83.2,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Odisha",
+        "district": "Sambalpur",
+        "season": "Rabi",
+        "soil_ph": 6.4,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Sesame (Sesamum)",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        20.0,
+        20.0,
+        20.0,
+        15.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "West Bengal",
+        "district": "Bardhaman",
+        "season": "Kharif",
+        "soil_ph": 6.0,
+        "previous_crop": "Jute"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Maize",
+      "top_score": 84.1,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        20.0,
+        25.0,
+        20.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "West Bengal",
+        "district": "Hooghly",
+        "season": "Rabi",
+        "soil_ph": 6.5,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Potato",
+      "top_score": 87.7,
+      "confidence": 0.88,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Jharkhand",
+        "district": "Ranchi",
+        "season": "Kharif",
+        "soil_ph": 5.8,
+        "previous_crop": "Maize"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Pigeonpea (Arhar/Tur)",
+      "top_score": 73.6,
+      "confidence": 0.74,
+      "candidate_count": 1,
+      "evidence_score_sample": [
+        15.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Assam",
+        "district": "Kamrup",
+        "season": "Kharif",
+        "soil_ph": 5.2,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Mesta",
+      "top_score": 74.7,
+      "confidence": 0.75,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Assam",
+        "district": "Dibrugarh",
+        "season": "Kharif",
+        "soil_ph": 5.0,
+        "previous_crop": "Tea"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Pigeonpea (Arhar/Tur)",
+      "top_score": 71.2,
+      "confidence": 0.71,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Himachal Pradesh",
+        "district": "Shimla",
+        "season": "Rabi",
+        "soil_ph": 6.0,
+        "previous_crop": "Maize"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Barley",
+      "top_score": 82.4,
+      "confidence": 0.82,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        20.0,
+        25.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Himachal Pradesh",
+        "district": "Kangra",
+        "season": "Kharif",
+        "soil_ph": 6.2,
+        "previous_crop": "Wheat"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Potato",
+      "top_score": 81.8,
+      "confidence": 0.82,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Uttarakhand",
+        "district": "Dehradun",
+        "season": "Kharif",
+        "soil_ph": 6.5,
+        "previous_crop": "Wheat"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Finger Millet (Ragi)",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Tripura",
+        "district": "West Tripura",
+        "season": "Kharif",
+        "soil_ph": 5.4,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Mesta",
+      "top_score": 73.6,
+      "confidence": 0.74,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        20.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Meghalaya",
+        "district": "East Khasi Hills",
+        "season": "Kharif",
+        "soil_ph": 5.1,
+        "previous_crop": "Ginger"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Sweet Potato",
+      "top_score": 74.4,
+      "confidence": 0.74,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Goa",
+        "district": "North Goa",
+        "season": "Kharif",
+        "soil_ph": 5.6,
+        "previous_crop": "Coconut"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Finger Millet (Ragi)",
+      "top_score": 81.4,
+      "confidence": 0.81,
+      "candidate_count": 4,
+      "evidence_score_sample": [
+        20.0,
+        25.0,
+        15.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Manipur",
+        "district": "Imphal West",
+        "season": "Kharif",
+        "soil_ph": 5.8,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Peas & Beans (pulses)",
+      "top_score": 77.7,
+      "confidence": 0.78,
+      "candidate_count": 4,
+      "evidence_score_sample": [
+        20.0,
+        15.0,
+        25.0,
+        8.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Nagaland",
+        "district": "Kohima",
+        "season": "Kharif",
+        "soil_ph": 5.3,
+        "previous_crop": "Maize"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Potato",
+      "top_score": 87.4,
+      "confidence": 0.87,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Mizoram",
+        "district": "Aizawl",
+        "season": "Kharif",
+        "soil_ph": 5.5,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Potato",
+      "top_score": 77.3,
+      "confidence": 0.77,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        20.0,
+        15.0,
+        15.0,
+        25.0,
+        15.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Sikkim",
+        "district": "East Sikkim",
+        "season": "Kharif",
+        "soil_ph": 5.7,
+        "previous_crop": "Cardamom"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Other Kharif Pulses",
+      "top_score": 82.4,
+      "confidence": 0.82,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Punjab",
+        "district": "Patiala",
+        "season": "Rabi",
+        "soil_ph": 7.4,
+        "previous_crop": "Rice"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Wheat",
+      "top_score": 82.7,
+      "confidence": 0.83,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        20.0
+      ]
+    },
+    {
+      "test_case": {
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "season": "Kharif",
+        "soil_ph": 6.5,
+        "previous_crop": "Ragi"
+      },
+      "status": "PASS",
+      "top_recommended_crop": "Black Gram (Urad)",
+      "top_score": 84.2,
+      "confidence": 0.84,
+      "candidate_count": 5,
+      "evidence_score_sample": [
+        25.0,
+        25.0,
+        25.0,
+        25.0,
+        25.0
+      ]
+    }
+  ]
+}

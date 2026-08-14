@@ -1,0 +1,119 @@
+{
+  "audit_timestamp": "2026-08-14T14:30:11.698214",
+  "total_forecasts_checked": 140,
+  "extreme_forecasts_detected": [
+    {
+      "state": "Nagaland",
+      "crop": "maize",
+      "current_price": 1803.11,
+      "predicted_price": 7278.79,
+      "pct_change": 303.68,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Manipur",
+      "crop": "onion",
+      "current_price": 1757.05,
+      "predicted_price": 6073.01,
+      "pct_change": 245.64,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "onion",
+      "current_price": 1775.79,
+      "predicted_price": 6044.4,
+      "pct_change": 240.38,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "onion",
+      "current_price": 1831.5,
+      "predicted_price": 6024.2,
+      "pct_change": 228.92,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "onion",
+      "current_price": 1721.9,
+      "predicted_price": 5920.86,
+      "pct_change": 243.86,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "onion",
+      "current_price": 1799.45,
+      "predicted_price": 6008.14,
+      "pct_change": 233.89,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Tripura",
+      "crop": "onion",
+      "current_price": 1761.47,
+      "predicted_price": 6085.27,
+      "pct_change": 245.47,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Assam",
+      "crop": "potato",
+      "current_price": 1196.12,
+      "predicted_price": 3774.66,
+      "pct_change": 215.58,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Kerala",
+      "crop": "potato",
+      "current_price": 1137.44,
+      "predicted_price": 4086.04,
+      "pct_change": 259.23,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Manipur",
+      "crop": "potato",
+      "current_price": 1187.03,
+      "predicted_price": 3963.75,
+      "pct_change": 233.92,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Meghalaya",
+      "crop": "potato",
+      "current_price": 1236.44,
+      "predicted_price": 4148.46,
+      "pct_change": 235.52,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Mizoram",
+      "crop": "potato",
+      "current_price": 1188.31,
+      "predicted_price": 8272.4,
+      "pct_change": 596.15,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Nagaland",
+      "crop": "potato",
+      "current_price": 1191.04,
+      "predicted_price": 4109.01,
+      "pct_change": 244.99,
+      "reason": "Unrealistic price projection"
+    },
+    {
+      "state": "Tamil Nadu",
+      "crop": "potato",
+      "current_price": 1235.33,
+      "predicted_price": 4114.35,
+      "pct_change": 233.06,
+      "reason": "Unrealistic price projection"
+    }
+  ],
+  "verdict": "REALISTIC_PRICE_BOUNDS"
+}

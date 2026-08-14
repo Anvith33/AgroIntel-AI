@@ -1,0 +1,164 @@
+{
+  "training_timestamp": "2026-08-14T14:17:41.165638",
+  "models_trained": [
+    "xgboost_state_rice",
+    "xgboost_state_wheat",
+    "xgboost_state_maize",
+    "xgboost_state_onion",
+    "xgboost_state_potato"
+  ],
+  "feature_count": 14,
+  "framework": "XGBoost 3.2.0 + Scikit-Learn LabelEncoder",
+  "metrics_by_crop": {
+    "rice": {
+      "state_aware": {
+        "mae": 94.45386291693391,
+        "rmse": 167.812246690287,
+        "mape": 3.696071761843141,
+        "r2": 0.8592801900783198
+      },
+      "baseline_crop_only": {
+        "mae": 91.89426058655732,
+        "rmse": 165.82426426374744
+      },
+      "total_records": 34137,
+      "states_covered": 24,
+      "feature_cols": [
+        "state_enc",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_30",
+        "rolling_7",
+        "rolling_30",
+        "rolling_std_7",
+        "price_range",
+        "day_of_year",
+        "month",
+        "day_of_week",
+        "year",
+        "black_swan"
+      ]
+    },
+    "wheat": {
+      "state_aware": {
+        "mae": 79.84246795049835,
+        "rmse": 140.27043099538824,
+        "mape": 3.0773417663140816,
+        "r2": 0.7631199552788616
+      },
+      "baseline_crop_only": {
+        "mae": 77.4831159522898,
+        "rmse": 152.29560010884833
+      },
+      "total_records": 22722,
+      "states_covered": 18,
+      "feature_cols": [
+        "state_enc",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_30",
+        "rolling_7",
+        "rolling_30",
+        "rolling_std_7",
+        "price_range",
+        "day_of_year",
+        "month",
+        "day_of_week",
+        "year",
+        "black_swan"
+      ]
+    },
+    "maize": {
+      "state_aware": {
+        "mae": 85.13542323239213,
+        "rmse": 151.00440023071673,
+        "mape": 3.568362055101849,
+        "r2": 0.8335389399104554
+      },
+      "baseline_crop_only": {
+        "mae": 85.39671084275031,
+        "rmse": 154.8152326240632
+      },
+      "total_records": 25592,
+      "states_covered": 20,
+      "feature_cols": [
+        "state_enc",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_30",
+        "rolling_7",
+        "rolling_30",
+        "rolling_std_7",
+        "price_range",
+        "day_of_year",
+        "month",
+        "day_of_week",
+        "year",
+        "black_swan"
+      ]
+    },
+    "onion": {
+      "state_aware": {
+        "mae": 1643.672685579711,
+        "rmse": 132899.89834894176,
+        "mape": 10.754656975149151,
+        "r2": -0.00020320538044371617
+      },
+      "baseline_crop_only": {
+        "mae": 1650.7300582053379,
+        "rmse": 132899.44053263034
+      },
+      "total_records": 45556,
+      "states_covered": 30,
+      "feature_cols": [
+        "state_enc",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_30",
+        "rolling_7",
+        "rolling_30",
+        "rolling_std_7",
+        "price_range",
+        "day_of_year",
+        "month",
+        "day_of_week",
+        "year",
+        "black_swan"
+      ]
+    },
+    "potato": {
+      "state_aware": {
+        "mae": 271.8788720278931,
+        "rmse": 1075.5425448024412,
+        "mape": 16.732856827666186,
+        "r2": -0.02662387238526942
+      },
+      "baseline_crop_only": {
+        "mae": 277.7849404976731,
+        "rmse": 1272.8806056644498
+      },
+      "total_records": 46807,
+      "states_covered": 30,
+      "feature_cols": [
+        "state_enc",
+        "lag_1",
+        "lag_7",
+        "lag_14",
+        "lag_30",
+        "rolling_7",
+        "rolling_30",
+        "rolling_std_7",
+        "price_range",
+        "day_of_year",
+        "month",
+        "day_of_week",
+        "year",
+        "black_swan"
+      ]
+    }
+  }
+}

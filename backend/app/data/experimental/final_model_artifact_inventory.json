@@ -1,0 +1,390 @@
+{
+  "total_artifacts": 55,
+  "artifacts": [
+    {
+      "artifact": "arima_maize.pkl",
+      "crop": "maize",
+      "role": "FALLBACK_NATIONAL_ARIMA",
+      "size_bytes": 4649971,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "arima_onion.pkl",
+      "crop": "onion",
+      "role": "FALLBACK_NATIONAL_ARIMA",
+      "size_bytes": 4649971,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "arima_potato.pkl",
+      "crop": "potato",
+      "role": "FALLBACK_NATIONAL_ARIMA",
+      "size_bytes": 4649971,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "arima_rice.pkl",
+      "crop": "rice",
+      "role": "FALLBACK_NATIONAL_ARIMA",
+      "size_bytes": 4649971,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "arima_wheat.pkl",
+      "crop": "wheat",
+      "role": "FALLBACK_NATIONAL_ARIMA",
+      "size_bytes": 4649971,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "crop_recommender_encoder.pkl",
+      "crop": "22_crops",
+      "role": "PRIMARY_CROP_RECOMMENDER_RF",
+      "size_bytes": 466,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "crop_recommender_metrics.json",
+      "crop": "22_crops",
+      "role": "PRIMARY_CROP_RECOMMENDER_RF",
+      "size_bytes": 8456,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "crop_recommender_rf.pkl",
+      "crop": "22_crops",
+      "role": "PRIMARY_CROP_RECOMMENDER_RF",
+      "size_bytes": 3339910,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "data_tail_maize.pkl",
+      "crop": "unknown",
+      "role": "SUPPORT_ARTIFACT",
+      "size_bytes": 7497,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "data_tail_onion.pkl",
+      "crop": "unknown",
+      "role": "SUPPORT_ARTIFACT",
+      "size_bytes": 7497,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "data_tail_potato.pkl",
+      "crop": "unknown",
+      "role": "SUPPORT_ARTIFACT",
+      "size_bytes": 7498,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "data_tail_rice.pkl",
+      "crop": "unknown",
+      "role": "SUPPORT_ARTIFACT",
+      "size_bytes": 7496,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "data_tail_state_maize.pkl",
+      "crop": "maize",
+      "role": "PRIMARY_STATE_DATA_TAIL",
+      "size_bytes": 75979,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "data_tail_state_onion.pkl",
+      "crop": "onion",
+      "role": "PRIMARY_STATE_DATA_TAIL",
+      "size_bytes": 111497,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "data_tail_state_potato.pkl",
+      "crop": "potato",
+      "role": "PRIMARY_STATE_DATA_TAIL",
+      "size_bytes": 113702,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "data_tail_state_rice.pkl",
+      "crop": "rice",
+      "role": "PRIMARY_STATE_DATA_TAIL",
+      "size_bytes": 88579,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "data_tail_state_wheat.pkl",
+      "crop": "wheat",
+      "role": "PRIMARY_STATE_DATA_TAIL",
+      "size_bytes": 68383,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "data_tail_wheat.pkl",
+      "crop": "unknown",
+      "role": "SUPPORT_ARTIFACT",
+      "size_bytes": 7497,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "feature_columns.json",
+      "crop": "unknown",
+      "role": "SUPPORT_ARTIFACT",
+      "size_bytes": 1135,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_maize.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 1288,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_onion.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 1297,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_potato.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 1298,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_rice.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 1291,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_state_maize.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 540,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_state_onion.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 548,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_state_potato.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 544,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_state_rice.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 539,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_state_wheat.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 541,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "metrics_wheat.json",
+      "crop": "all",
+      "role": "METRICS_RECORD",
+      "size_bytes": 1291,
+      "loaded_in_production": false
+    },
+    {
+      "artifact": "mlp_maize.pkl",
+      "crop": "maize",
+      "role": "FALLBACK_NATIONAL_MLP",
+      "size_bytes": 82241,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "mlp_onion.pkl",
+      "crop": "onion",
+      "role": "FALLBACK_NATIONAL_MLP",
+      "size_bytes": 82241,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "mlp_potato.pkl",
+      "crop": "potato",
+      "role": "FALLBACK_NATIONAL_MLP",
+      "size_bytes": 82241,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "mlp_rice.pkl",
+      "crop": "rice",
+      "role": "FALLBACK_NATIONAL_MLP",
+      "size_bytes": 82241,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "mlp_wheat.pkl",
+      "crop": "wheat",
+      "role": "FALLBACK_NATIONAL_MLP",
+      "size_bytes": 82241,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "model_registry.json",
+      "crop": "all",
+      "role": "METADATA_REGISTRY",
+      "size_bytes": 4036,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "prophet_maize.pkl",
+      "crop": "maize",
+      "role": "FALLBACK_NATIONAL_PROPHET",
+      "size_bytes": 195423,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "prophet_onion.pkl",
+      "crop": "onion",
+      "role": "FALLBACK_NATIONAL_PROPHET",
+      "size_bytes": 195423,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "prophet_potato.pkl",
+      "crop": "potato",
+      "role": "FALLBACK_NATIONAL_PROPHET",
+      "size_bytes": 195419,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "prophet_rice.pkl",
+      "crop": "rice",
+      "role": "FALLBACK_NATIONAL_PROPHET",
+      "size_bytes": 195419,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "prophet_wheat.pkl",
+      "crop": "wheat",
+      "role": "FALLBACK_NATIONAL_PROPHET",
+      "size_bytes": 195423,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "state_encoder_maize.pkl",
+      "crop": "maize",
+      "role": "PRIMARY_STATE_ENCODER",
+      "size_bytes": 480,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "state_encoder_onion.pkl",
+      "crop": "onion",
+      "role": "PRIMARY_STATE_ENCODER",
+      "size_bytes": 615,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "state_encoder_potato.pkl",
+      "crop": "potato",
+      "role": "PRIMARY_STATE_ENCODER",
+      "size_bytes": 615,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "state_encoder_rice.pkl",
+      "crop": "rice",
+      "role": "PRIMARY_STATE_ENCODER",
+      "size_bytes": 527,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "state_encoder_wheat.pkl",
+      "crop": "wheat",
+      "role": "PRIMARY_STATE_ENCODER",
+      "size_bytes": 452,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_maize.pkl",
+      "crop": "maize",
+      "role": "FALLBACK_NATIONAL_XGBOOST",
+      "size_bytes": 120847,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_onion.pkl",
+      "crop": "onion",
+      "role": "FALLBACK_NATIONAL_XGBOOST",
+      "size_bytes": 120915,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_potato.pkl",
+      "crop": "potato",
+      "role": "FALLBACK_NATIONAL_XGBOOST",
+      "size_bytes": 237590,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_rice.pkl",
+      "crop": "rice",
+      "role": "FALLBACK_NATIONAL_XGBOOST",
+      "size_bytes": 263579,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_state_maize.pkl",
+      "crop": "maize",
+      "role": "PRIMARY_STATE_AWARE_XGBOOST",
+      "size_bytes": 1166157,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_state_onion.pkl",
+      "crop": "onion",
+      "role": "PRIMARY_STATE_AWARE_XGBOOST",
+      "size_bytes": 1272602,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_state_potato.pkl",
+      "crop": "potato",
+      "role": "PRIMARY_STATE_AWARE_XGBOOST",
+      "size_bytes": 1004558,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_state_rice.pkl",
+      "crop": "rice",
+      "role": "PRIMARY_STATE_AWARE_XGBOOST",
+      "size_bytes": 1300774,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_state_wheat.pkl",
+      "crop": "wheat",
+      "role": "PRIMARY_STATE_AWARE_XGBOOST",
+      "size_bytes": 1048391,
+      "loaded_in_production": true
+    },
+    {
+      "artifact": "xgboost_wheat.pkl",
+      "crop": "wheat",
+      "role": "FALLBACK_NATIONAL_XGBOOST",
+      "size_bytes": 120233,
+      "loaded_in_production": true
+    }
+  ]
+}

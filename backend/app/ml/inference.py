@@ -181,11 +181,19 @@ def _predict_state_aware_xgboost(bundle: dict, crop: str, state: str, live_curre
     """
     Generate state-aware XGBoost price prediction using state encoding and state price history.
     Returns (predictions, model_level, forecast_scope, state_enc)
+
+    Features (14, matching retrained models):
+      state_enc, lag_1, lag_7, lag_14, lag_30,
+      rolling_7, rolling_30, rolling_std_7, price_range,
+      day_of_year, month, day_of_week, year, black_swan
+
+    NOTE: arrival_qtl has been REMOVED. It was all zeros in training
+    and 500.0 hardcoded at inference — a fabricated feature.
     """
     model = bundle.get("xgboost_state")
     encoder = bundle.get("state_encoder")
     tails = bundle.get("data_tail_state") or {}
-    
+
     if not model or not encoder:
         return None, "CROP_ONLY", "National Crop Model Fallback", 0
 
@@ -218,9 +226,17 @@ def _predict_state_aware_xgboost(bundle: dict, crop: str, state: str, live_curre
     st_tail = tails.get(norm_st, [])
     if st_tail and len(st_tail) >= 15:
         recent_prices = [float(r["y"]) for r in st_tail]
+        # Extract price_range values from tail (avg of available)
+        tail_price_ranges = [float(r.get("price_range", 0)) for r in st_tail]
+        avg_price_range = float(np.mean(tail_price_ranges)) if tail_price_ranges else 0.0
+        # Extract rolling_std_7 seed from recent tail observations
+        seed_prices = np.array(recent_prices[-7:])
+        seed_rolling_std_7 = float(np.std(seed_prices)) if len(seed_prices) >= 2 else 0.0
     else:
         base_p = float(live_current_price) if live_current_price else 2000.0
         recent_prices = [base_p] * 30
+        avg_price_range = 0.0
+        seed_rolling_std_7 = 0.0
 
     if live_current_price and live_current_price > 0:
         recent_prices[-1] = float(live_current_price)
@@ -229,21 +245,27 @@ def _predict_state_aware_xgboost(bundle: dict, crop: str, state: str, live_curre
     predictions = []
     current_dt = target_date
 
-    for _ in range(horizon_days):
-        l1 = prices[-1]
-        l7 = prices[-7] if len(prices) >= 7 else prices[-1]
+    for step in range(horizon_days):
+        l1  = prices[-1]
+        l7  = prices[-7]  if len(prices) >= 7  else prices[-1]
         l14 = prices[-14] if len(prices) >= 14 else prices[-1]
         l30 = prices[-30] if len(prices) >= 30 else prices[-1]
-        r7 = float(np.mean(prices[-7:]))
+        r7  = float(np.mean(prices[-7:]))
         r30 = float(np.mean(prices[-30:]))
+        # rolling_std_7: std of last 7 prices (uses only past predictions)
+        rolling_std_7 = float(np.std(prices[-7:])) if len(prices) >= 2 else seed_rolling_std_7
+        # price_range: use historical avg price range for this state-crop
+        price_range = avg_price_range
         d_year = current_dt.timetuple().tm_yday
-        month = current_dt.month
+        month  = current_dt.month
         d_week = current_dt.weekday()
-        year = current_dt.year
-        bs = 0
-        arr_qtl = 500.0
+        year   = current_dt.year
+        bs     = is_black_swan_period(current_dt)
 
-        feats = np.array([[state_enc, l1, l7, l14, l30, r7, r30, d_year, month, d_week, year, bs, arr_qtl]])
+        # 14 features — matching retrained model exactly
+        feats = np.array([[state_enc, l1, l7, l14, l30, r7, r30,
+                           rolling_std_7, price_range,
+                           d_year, month, d_week, year, bs]])
         pred_val = float(model.predict(feats)[0])
 
         predictions.append(pred_val)

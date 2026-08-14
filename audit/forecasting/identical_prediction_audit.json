@@ -1,0 +1,47 @@
+{
+  "rice": {
+    "total_predictions": 28,
+    "unique_rounded_values": 23,
+    "pct_state_specific": 82.1,
+    "min_predicted": 1778.24,
+    "max_predicted": 3320.12,
+    "state_price_range": 1541.88,
+    "status": "STATE_SPECIFIC"
+  },
+  "wheat": {
+    "total_predictions": 28,
+    "unique_rounded_values": 18,
+    "pct_state_specific": 64.3,
+    "min_predicted": 2174.39,
+    "max_predicted": 3105.64,
+    "state_price_range": 931.25,
+    "status": "STATE_SPECIFIC"
+  },
+  "maize": {
+    "total_predictions": 28,
+    "unique_rounded_values": 20,
+    "pct_state_specific": 71.4,
+    "min_predicted": 1579.31,
+    "max_predicted": 7278.79,
+    "state_price_range": 5699.48,
+    "status": "STATE_SPECIFIC"
+  },
+  "potato": {
+    "total_predictions": 28,
+    "unique_rounded_values": 27,
+    "pct_state_specific": 96.4,
+    "min_predicted": 1291.85,
+    "max_predicted": 8272.4,
+    "state_price_range": 6980.55,
+    "status": "STATE_SPECIFIC"
+  },
+  "onion": {
+    "total_predictions": 28,
+    "unique_rounded_values": 27,
+    "pct_state_specific": 96.4,
+    "min_predicted": 1985.12,
+    "max_predicted": 6085.27,
+    "state_price_range": 4100.15,
+    "status": "STATE_SPECIFIC"
+  }
+}

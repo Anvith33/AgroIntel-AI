@@ -1,0 +1,100 @@
+{
+  "audit_timestamp": "2026-08-14T14:30:11.698211",
+  "crops_audited": {
+    "rice": {
+      "total_states": 28,
+      "unique_forecast_values": 23,
+      "identical_prediction_clusters": {
+        "2365.1": {
+          "states": [
+            "Arunachal Pradesh",
+            "Goa",
+            "Himachal Pradesh",
+            "Mizoram",
+            "Nagaland",
+            "Sikkim"
+          ],
+          "count": 6,
+          "root_cause": "CROP_LEVEL fallback due to insufficient state history (<50 records) in AGMARKNET archive."
+        }
+      },
+      "is_genuine_state_differentiation": true
+    },
+    "wheat": {
+      "total_states": 28,
+      "unique_forecast_values": 18,
+      "identical_prediction_clusters": {
+        "3002.6": {
+          "states": [
+            "Andhra Pradesh",
+            "Arunachal Pradesh",
+            "Goa",
+            "Himachal Pradesh",
+            "Manipur",
+            "Meghalaya",
+            "Mizoram",
+            "Nagaland",
+            "Sikkim",
+            "Tamil Nadu",
+            "Tripura"
+          ],
+          "count": 11,
+          "root_cause": "CROP_LEVEL fallback due to insufficient state history (<50 records) in AGMARKNET archive."
+        }
+      },
+      "is_genuine_state_differentiation": true
+    },
+    "maize": {
+      "total_states": 28,
+      "unique_forecast_values": 20,
+      "identical_prediction_clusters": {
+        "2325.3": {
+          "states": [
+            "Arunachal Pradesh",
+            "Goa",
+            "Himachal Pradesh",
+            "Kerala",
+            "Meghalaya",
+            "Mizoram",
+            "Sikkim",
+            "Tripura",
+            "West Bengal"
+          ],
+          "count": 9,
+          "root_cause": "CROP_LEVEL fallback due to insufficient state history (<50 records) in AGMARKNET archive."
+        }
+      },
+      "is_genuine_state_differentiation": true
+    },
+    "onion": {
+      "total_states": 28,
+      "unique_forecast_values": 27,
+      "identical_prediction_clusters": {
+        "3287.4": {
+          "states": [
+            "Arunachal Pradesh",
+            "Sikkim"
+          ],
+          "count": 2,
+          "root_cause": "CROP_LEVEL fallback due to insufficient state history (<50 records) in AGMARKNET archive."
+        }
+      },
+      "is_genuine_state_differentiation": true
+    },
+    "potato": {
+      "total_states": 28,
+      "unique_forecast_values": 27,
+      "identical_prediction_clusters": {
+        "2582.9": {
+          "states": [
+            "Arunachal Pradesh",
+            "Sikkim"
+          ],
+          "count": 2,
+          "root_cause": "CROP_LEVEL fallback due to insufficient state history (<50 records) in AGMARKNET archive."
+        }
+      },
+      "is_genuine_state_differentiation": true
+    }
+  }
+}

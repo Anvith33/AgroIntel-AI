@@ -1,0 +1,111 @@
+{
+  "audit_timestamp": "2026-08-14T14:30:11.696387",
+  "features_in_ml_pipeline": [
+    {
+      "name": "state_enc",
+      "historical_source": "AGMARKNET archive state label",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_1",
+      "historical_source": "AGMARKNET 1-day shifted price",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_7",
+      "historical_source": "AGMARKNET 7-day shifted price",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_14",
+      "historical_source": "AGMARKNET 14-day shifted price",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "lag_30",
+      "historical_source": "AGMARKNET 30-day shifted price",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "rolling_7",
+      "historical_source": "AGMARKNET rolling mean (shift 1)",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "rolling_30",
+      "historical_source": "AGMARKNET rolling mean (shift 1)",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "rolling_std_7",
+      "historical_source": "AGMARKNET rolling std (shift 1)",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "price_range",
+      "historical_source": "AGMARKNET daily max - min modal spread",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "day_of_year",
+      "historical_source": "Calendar date",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "month",
+      "historical_source": "Calendar date",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "day_of_week",
+      "historical_source": "Calendar date",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "year",
+      "historical_source": "Calendar date",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    },
+    {
+      "name": "black_swan",
+      "historical_source": "Explicit macro historical crisis dates",
+      "temporal_alignment": "PERFECT",
+      "leakage_risk": "NONE"
+    }
+  ],
+  "external_factors_investigation": {
+    "diesel_fuel_prices": {
+      "status": "DATA NOT AVAILABLE",
+      "finding": "No daily/monthly historical diesel price dataset by state exists in repository.",
+      "ml_status": "EXCLUDED from ML training to avoid synthetic fabrication."
+    },
+    "transport_logistics_costs": {
+      "status": "DATA NOT AVAILABLE",
+      "finding": "No historical road freight index or inter-state transport tariff series available.",
+      "ml_status": "EXCLUDED from ML training."
+    },
+    "historical_news_events": {
+      "status": "NON-CONTINUOUS / UNINDEXED",
+      "finding": "Live news exists for present context, but historical 2019-2023 news archives with date-aligned sentiment scores do not exist.",
+      "ml_status": "EXCLUDED from ML feature vector. Kept strictly as POST-forecast advisory/context explanation layer."
+    },
+    "weather_data": {
+      "status": "NATIONAL_MONTHLY_PROXY",
+      "finding": "weather_history.csv contains national monthly averages (2019-2024). Not state/district resolved.",
+      "ml_status": "Used as regional macro indicator; live weather is fetched dynamically at runtime."
+    }
+  }
+}

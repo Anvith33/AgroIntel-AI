@@ -4,13 +4,13 @@
     "common_uses": "Staple food grain, puffed rice, rice flour, and cattle feed from straw.",
     "season": "Kharif (Monsoon) in most states; Rabi/Summer in coastal and irrigated areas.",
     "soil": "Clay loam or heavy clay soils with good water retention capacity.",
-    "climate": "Warm, humid climate with temperatures between 20\u00b0C\u201337\u00b0C and high moisture.",
+    "climate": "Warm, humid climate with temperatures between 20°C–37°C and high moisture.",
     "key_characteristics": "High water requirement; responds well to organic and nitrogenous fertilizers."
   },
   "paddy": {
     "why_grown": "Paddy (unhusked rice) is the primary Kharif cereal crop supporting smallholder farm incomes across India.",
     "common_uses": "Milling into rice, bran oil extraction, and agricultural fodder.",
-    "season": "Kharif (June\u2013November) and Rabi in southern/eastern belts.",
+    "season": "Kharif (June–November) and Rabi in southern/eastern belts.",
     "soil": "Alluvial and clay loam soils capable of holding standing water.",
     "climate": "Tropical and subtropical climate with adequate seasonal rainfall.",
     "key_characteristics": "Requires flooded conditions or regular irrigation during flowering stage."
@@ -18,9 +18,9 @@
   "wheat": {
     "why_grown": "Wheat is the premier Rabi cereal crop, essential for food security and cereal economics in North and Central India.",
     "common_uses": "Atta (flour), suji, maida, bread, biscuits, and traditional flatbreads (chapatis).",
-    "season": "Rabi (November\u2013April).",
+    "season": "Rabi (November–April).",
     "soil": "Well-drained fertile loamy soils and clay loams.",
-    "climate": "Cool winters during vegetative growth and warm dry conditions for harvesting (15\u00b0C\u201325\u00b0C).",
+    "climate": "Cool winters during vegetative growth and warm dry conditions for harvesting (15°C–25°C).",
     "key_characteristics": "Moderate water requirement; sensitive to excessive rainfall at harvest."
   },
   "maize": {
@@ -28,16 +28,16 @@
     "common_uses": "Poultry feed, cattle feed, human food, corn starch, and ethanol production.",
     "season": "Kharif, Rabi, and Spring/Summer.",
     "soil": "Deep, well-drained loamy soils rich in organic matter.",
-    "climate": "Warm climate with temperatures between 21\u00b0C\u201330\u00b0C.",
+    "climate": "Warm climate with temperatures between 21°C–30°C.",
     "key_characteristics": "Drought tolerant; susceptible to waterlogging in early stages."
   },
   "potato": {
     "why_grown": "Potato is a high-yielding horticultural cash crop providing high economic returns per hectare.",
     "common_uses": "Fresh vegetable consumption, chips, processing, and food manufacturing.",
-    "season": "Rabi (October\u2013February) in plains; Kharif in hill regions.",
+    "season": "Rabi (October–February) in plains; Kharif in hill regions.",
     "soil": "Loose, well-drained sandy loam soil rich in humus.",
-    "climate": "Cool climate with night temperatures around 15\u00b0C\u201320\u00b0C for optimal tuberization.",
-    "key_characteristics": "Short duration crop (90\u2013110 days); requires frequent light irrigation."
+    "climate": "Cool climate with night temperatures around 15°C–20°C for optimal tuberization.",
+    "key_characteristics": "Short duration crop (90–110 days); requires frequent light irrigation."
   },
   "onion": {
     "why_grown": "Onion is an essential vegetable crop with steady market demand and significant commercial value.",
@@ -50,23 +50,23 @@
   "soybean": {
     "why_grown": "Soybean is a major oilseed and protein crop that improves soil fertility through nitrogen fixation.",
     "common_uses": "Edible oil extraction, high-protein soy meal for poultry/livestock, and food products.",
-    "season": "Kharif (June\u2013October).",
+    "season": "Kharif (June–October).",
     "soil": "Well-drained fertile black cotton soils or deep loams.",
-    "climate": "Warm and moist climate with temperature around 26\u00b0C\u201332\u00b0C.",
+    "climate": "Warm and moist climate with temperature around 26°C–32°C.",
     "key_characteristics": "Leguminous crop that fixes atmospheric nitrogen; enriches soil for next crop."
   },
   "cotton": {
     "why_grown": "Cotton (White Gold) is India's primary commercial fibre crop, supporting the textile industry.",
     "common_uses": "Textile fibre, surgical cotton, cottonseed oil, and oilcake feed.",
-    "season": "Kharif (May\u2013December).",
+    "season": "Kharif (May–December).",
     "soil": "Deep black cotton soils (Vertisols) or fertile alluvial soils.",
-    "climate": "Uniformly high temperature (21\u00b0C\u201330\u00b0C) with clear sunny days during boll formation.",
+    "climate": "Uniformly high temperature (21°C–30°C) with clear sunny days during boll formation.",
     "key_characteristics": "Long duration cash crop; benefits from integrated pest management."
   },
   "sugarcane": {
     "why_grown": "Sugarcane is a long-duration industrial commercial crop powering the sugar and ethanol sector.",
     "common_uses": "Sugar, jaggery (gur), molasses, ethanol biofuel, and bagasse for paper/energy.",
-    "season": "Whole Year / Perennial (12\u201318 months duration).",
+    "season": "Whole Year / Perennial (12–18 months duration).",
     "soil": "Deep, well-drained loams or clay loams with neutral pH.",
     "climate": "Tropical and subtropical climate with long sunny periods and ample moisture.",
     "key_characteristics": "High water and nutrient requirements; excellent ratoon cropping capability."
@@ -74,7 +74,7 @@
   "chickpea (gram)": {
     "why_grown": "Chickpea (Chana) is India's top Rabi pulse crop, crucial for soil health and pulse production.",
     "common_uses": "Whole pulse (chana), dal, besan (gram flour), and roasted snacks.",
-    "season": "Rabi (October\u2013March).",
+    "season": "Rabi (October–March).",
     "soil": "Well-drained medium-to-heavy loams or sandy loams.",
     "climate": "Cool and dry weather; highly sensitive to high humidity and rain at flowering.",
     "key_characteristics": "Improves soil nitrogen balance; low water requirement."
@@ -84,8 +84,8 @@
     "common_uses": "Dal, sprouts, soups, and green manure.",
     "season": "Kharif, Summer (Zaid), and Rabi in south India.",
     "soil": "Well-drained loamy or sandy loam soils.",
-    "climate": "Warm climate (25\u00b0C\u201335\u00b0C); tolerant to brief high temperatures.",
-    "key_characteristics": "Short duration (60\u201375 days); fixes nitrogen and restores soil health."
+    "climate": "Warm climate (25°C–35°C); tolerant to brief high temperatures.",
+    "key_characteristics": "Short duration (60–75 days); fixes nitrogen and restores soil health."
   },
   "black gram (urad)": {
     "why_grown": "Urad is a high-protein legume crop cultivated widely in Kharif and Summer seasons.",
@@ -98,7 +98,7 @@
   "pigeonpea (arhar/tur)": {
     "why_grown": "Pigeonpea (Tur) is a major deep-rooted Kharif pulse providing high dietary protein.",
     "common_uses": "Tur dal (yellow split pulse) and green vegetable pods.",
-    "season": "Kharif (June\u2013January).",
+    "season": "Kharif (June–January).",
     "soil": "Deep, well-drained loams or medium clay soils.",
     "climate": "Warm tropical climate with moderate seasonal rainfall.",
     "key_characteristics": "Deep taproot system opens subsoil; highly drought tolerant."
@@ -108,7 +108,7 @@
     "common_uses": "Edible oil, roasted peanut snacks, peanut butter, and oilcake fodder.",
     "season": "Kharif and Summer.",
     "soil": "Well-drained sandy loam or light sandy soil for easy peg penetration.",
-    "climate": "Warm climate with 22\u00b0C\u201330\u00b0C temperature and sunny weather.",
+    "climate": "Warm climate with 22°C–30°C temperature and sunny weather.",
     "key_characteristics": "Requires light soil texture for pod development; fixes atmospheric nitrogen."
   },
   "banana": {
@@ -134,6 +134,70 @@
     "soil": "Deep, well-drained red clay loams or laterite soils.",
     "climate": "Humid tropical climate with high humidity and abundant rainfall.",
     "key_characteristics": "Requires shade in early growth; highly profitable long-term crop."
+  },
+  "black pepper": {
+    "why_grown": "Black Pepper (King of Spices) is a high-value commercial spice crop grown in humid tropical plantation ecosystems.",
+    "common_uses": "Culinary spice, essential oils, oleoresin extraction, and medicinal formulations.",
+    "season": "Kharif / Whole Year (Perennial vine).",
+    "soil": "Deep, well-drained red laterite or loamy soils rich in humus.",
+    "climate": "Humid tropical climate with warm temperatures (20°C–32°C) and heavy rainfall.",
+    "key_characteristics": "Perennial climbing vine trained on shade trees; high export value."
+  },
+  "chilli (dry)": {
+    "why_grown": "Chilli is an essential commercial spice and cash crop grown for domestic culinary demand and export.",
+    "common_uses": "Red chilli powder, oleoresin, culinary seasoning, and hot sauces.",
+    "season": "Kharif, Rabi, and Summer.",
+    "soil": "Well-drained loamy soil rich in organic matter with pH 6.0–7.5.",
+    "climate": "Warm, dry climate for fruit ripening; sensitive to frost and waterlogging.",
+    "key_characteristics": "High cash returns per hectare; requires balanced irrigation."
+  },
+  "chilli": {
+    "why_grown": "Chilli is an essential commercial spice and cash crop grown for domestic culinary demand and export.",
+    "common_uses": "Red chilli powder, oleoresin, culinary seasoning, and hot sauces.",
+    "season": "Kharif, Rabi, and Summer.",
+    "soil": "Well-drained loamy soil rich in organic matter with pH 6.0–7.5.",
+    "climate": "Warm, dry climate for fruit ripening; sensitive to frost and waterlogging.",
+    "key_characteristics": "High cash returns per hectare; requires balanced irrigation."
+  },
+  "cardamom": {
+    "why_grown": "Cardamom (Queen of Spices) is a high-value perennial spice crop cultivated in forest shade ecosystems.",
+    "common_uses": "Flavoring agent in sweets, tea, culinary dishes, and traditional medicine.",
+    "season": "Whole Year / Perennial.",
+    "soil": "Rich forest loam soil with high humus content and good drainage.",
+    "climate": "Cool, humid tropical climate under forest canopy shade (15°C–35°C).",
+    "key_characteristics": "Shade-loving perennial; sensitive to prolonged drought."
+  },
+  "cashewnut": {
+    "why_grown": "Cashew is a resilient commercial plantation crop grown for edible nuts and cashew apple processing.",
+    "common_uses": "Edible kernel nuts, confectionery, cashew nut shell liquid (CNSL), and beverages.",
+    "season": "Whole Year / Perennial.",
+    "soil": "Well-drained red laterite, coastal sand, or poor gravelly soils.",
+    "climate": "Warm tropical climate with distinct dry period during flowering and fruiting.",
+    "key_characteristics": "Drought hardy; grows on marginal soils unfit for major annual crops."
+  },
+  "ginger": {
+    "why_grown": "Ginger is an important commercial spice rhizome cultivated for high market value and medicinal properties.",
+    "common_uses": "Fresh ginger spice, dry ginger powder (sonth), ginger oil, and confectionery.",
+    "season": "Kharif (May–December).",
+    "soil": "Rich, friable loamy soil rich in humus with excellent drainage.",
+    "climate": "Warm and humid climate during vegetative growth.",
+    "key_characteristics": "Shallow-rooted rhizome; highly sensitive to soil waterlogging."
+  },
+  "turmeric": {
+    "why_grown": "Turmeric (Golden Spice) is a major commercial spice crop valued for curcumin content and yellow dye.",
+    "common_uses": "Culinary spice, natural food dye, cosmetics, and traditional medicine.",
+    "season": "Kharif (May–January).",
+    "soil": "Well-drained sandy loam or clay loam soils with high organic content.",
+    "climate": "Warm and humid climate with temperatures between 20°C–35°C.",
+    "key_characteristics": "Long duration rhizome crop; enriches farm revenue."
+  },
+  "garlic": {
+    "why_grown": "Garlic is a high-value bulbous spice crop cultivated for culinary, seasoning, and medicinal uses.",
+    "common_uses": "Culinary seasoning, garlic paste, dehydrated flakes, and herbal medicines.",
+    "season": "Rabi (October–March).",
+    "soil": "Well-drained fertile loamy soils rich in organic matter.",
+    "climate": "Cool and dry climate during vegetative phase; warm dry harvest season.",
+    "key_characteristics": "Shallow root system; sensitive to soil moisture fluctuations."
   },
   "horse-gram": {
     "why_grown": "Horse-gram (Kulthi) is a hardy drought-resistant pulse crop grown in marginal soils.",
@@ -166,5 +230,13 @@
     "soil": "Red loam, sandy loam, or clay loam soils.",
     "climate": "Adaptable climate; grows well in moderate rainfall belts.",
     "key_characteristics": "Excellent grain storage life; resistant to major grain pests."
+  },
+  "barley": {
+    "why_grown": "Barley is a resilient Rabi cereal crop grown for food grain, malting industry, and cattle fodder.",
+    "common_uses": "Malt beverages, brewing industry, baby food, and dry fodder.",
+    "season": "Rabi (October–April).",
+    "soil": "Well-drained sandy loams or light clay soils.",
+    "climate": "Cool dry climate during growth period.",
+    "key_characteristics": "Tolerant to soil salinity and drought better than wheat."
   }
 }
