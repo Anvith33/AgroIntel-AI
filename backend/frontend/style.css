@@ -1004,13 +1004,12 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
 }
 .footer-brand { font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); }
-.footer-copy  { font-size: 0.78rem; color: var(--text-muted); }
+.footer-copy  { font-size: 0.74rem; color: var(--text-muted); line-height: 1.5; max-width: 720px; }
 
 /* ─── Toast Notifications ─────────────────────────────────── */
 .toast-box {

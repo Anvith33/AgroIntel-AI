@@ -71,6 +71,7 @@ def get_combined_advisory(request: AdvisoryRequest):
     target_crop_lower = target_crop.lower().strip()
 
     # 4. Step 3: Authoritative State-Aware Price Forecast
+    # CRITICAL: Each crop uses ONLY its own validated model. No cross-crop substitution.
     if target_crop_lower in PRICE_PREDICTION_CROPS:
         price_result = predict_price(
             crop=target_crop_lower,
@@ -79,22 +80,28 @@ def get_combined_advisory(request: AdvisoryRequest):
         )
         curr_p = price_result.get("current_price")
         pred_p = price_result.get("predicted_price")
-        decision_action = price_result.get("recommendation", "HOLD")
-        decision_reason = price_result.get("recommendation_reason", "")
+        # Use forecast decision only if the forecast actually succeeded
+        if price_result.get("available", False) and pred_p is not None:
+            decision_action = price_result.get("recommendation")  # SELL / HOLD / WAIT
+            decision_reason = price_result.get("recommendation_reason", "")
+        else:
+            decision_action = None
+            decision_reason = "A reliable 30-day price forecast is currently unavailable for this crop."
     else:
-        # Non-benchmark crop (e.g. Sugarcane, Cotton) — provide market vector without fake price models
+        # Non-benchmark crop (e.g. Sugarcane, Cotton) — no price forecasting model exists
+        # Provide current mandi price if available, but NO fake decision
         m_vec = rec_result.get("market", {})
         curr_p = m_vec.get("current_price")
         pred_p = None
-        decision_action = "HOLD"
-        decision_reason = f"Econometric 30-day price forecasting is certified for benchmark food crops (Rice, Wheat, Maize, Onion, Potato)."
+        decision_action = None
+        decision_reason = "A reliable 30-day price forecast is currently unavailable for this crop."
         price_result = {
             "available": False,
             "crop": target_crop,
             "state": canon_state,
             "current_price": curr_p,
             "predicted_price": None,
-            "recommendation": decision_action,
+            "recommendation": None,
             "recommendation_reason": decision_reason
         }
 
@@ -116,6 +123,20 @@ def get_combined_advisory(request: AdvisoryRequest):
     t_end = time.perf_counter()
     latency_ms = round((t_end - t_start) * 1000.0, 2)
 
+    # Build price prediction block — forecast_available tells frontend what to display
+    price_prediction_block = {
+        "crop": target_crop,
+        "forecast_available": price_result.get("available", False),
+        "current_price": curr_p,
+        "predicted_30d_avg": pred_p,  # null when no forecast
+        "decision": decision_action,  # null when no forecast — NEVER default HOLD
+        "decision_reason": decision_reason,
+        "observation_date": price_result.get("observation_date"),
+        "forecast_series": price_result.get("predictions", []),
+        "date_labels": price_result.get("date_labels", []),
+        "farmer_message": decision_reason if decision_action is None else None,
+    }
+
     return {
         "state": canon_state,
         "district": canon_district,
@@ -123,14 +144,6 @@ def get_combined_advisory(request: AdvisoryRequest):
         "target_price_crop": target_crop,
         "combined_summary": combined_summary,
         "crop_recommendations": recs,
-        "price_prediction": {
-            "crop": target_crop,
-            "current_price": curr_p,
-            "predicted_30d_avg": pred_p,
-            "decision": decision_action,
-            "decision_reason": decision_reason,
-            "observation_date": price_result.get("observation_date"),
-            "forecast_series": price_result.get("forecast_series")
-        },
+        "price_prediction": price_prediction_block,
         "response_time_ms": latency_ms
     }

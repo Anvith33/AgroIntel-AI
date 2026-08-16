@@ -49,7 +49,7 @@ AgroIntel is an enterprise-grade AI agricultural intelligence platform that prov
 
 ```
 .
-├── audit/                          # Complete scientific audit and quality reports
+├── audit/                          # Scientific audit and quality reports
 │   ├── data/                       # Historical data quality & leakage audits
 │   ├── models/                     # Model comparison & evaluation reports
 │   ├── forecasting/                # 140 state-crop validation & horizon audits
@@ -65,12 +65,16 @@ AgroIntel is an enterprise-grade AI agricultural intelligence platform that prov
 │   │   ├── services/               # Recommendation, news & decision engines
 │   │   └── main.py                 # FastAPI application entry point
 │   ├── frontend/                   # Farmer web application (HTML/CSS/JS)
-│   ├── models/                     # Production model artifacts (.pkl)
+│   ├── models/                     # Production model artifacts (.joblib)
 │   └── scripts/                    # Pipeline runner scripts & audits
-├── documentation/                  # Technical documentation & reference guides
+├── documentation/                  # ← 5 consolidated technical documents
+│   ├── 01_SETUP_AND_DEPLOYMENT.md  # Installation, config, directory structure
+│   ├── 02_SYSTEM_ARCHITECTURE.md   # Pipeline diagrams, module reference, decision logic
+│   ├── 03_ML_MODELS_AND_DATA.md    # Model specs, data sources, evaluation metrics
+│   ├── 04_API_REFERENCE.md         # All endpoints with request/response examples
+│   └── 05_PROJECT_QA_AND_VIVA.md   # Viva Q&A, test results, bug history
 ├── tests/                          # Automated pytest validation suites
-├── README.md                       # Master project overview and instructions
-└── FINAL_REPOSITORY_CLEANUP_REPORT.md # Final cleanup and release verification
+└── README.md                       # Project overview and quick start
 ```
 
 ---

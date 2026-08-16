@@ -240,8 +240,8 @@ async function submitCropRec(event) {
 }
 
 function renderRecResults(data) {
-    const loc      = data.location || {};
-    const recs     = (data.recommendations || []).slice(0, 5);
+    const loc  = data.location || {};
+    const recs = (data.recommendations || []).slice(0, 5);
 
     if (recs.length === 0) {
         const msg = data.message || "No suitable candidate crops found.";
@@ -257,53 +257,23 @@ function renderRecResults(data) {
 
     const rankColors = ["first-rank", "second-rank", "third-rank", "", ""];
 
+    // NOTE: rec.nlp_explanation fields (why_recommended, current_situation, considerations)
+    // are intentionally not rendered in the farmer UI.  They remain in the API response
+    // and are available for audit / debugging at /api/phase6/recommend.
     const recHtml = recs.map((rec, i) => {
         const info = rec.crop_information || {};
-        const expl = rec.nlp_explanation || rec.explanation || {};
-
-        const whyRec = expl.why_recommended || rec.reasons?.join('; ') || `${rec.crop} is agronomically suitable for this district and season based on regional cultivation evidence and environmental conditions.`;
-        const situation = expl.current_situation || '';
-        const consideration = expl.considerations || '';
-
         return `
-        <div class="rec-card glass-card ${rankColors[i]||''}" style="margin-bottom:16px;padding:18px">
-            <div class="rec-card-top" style="margin-bottom:12px;display:flex;align-items:center;justify-content:space-between">
-                <div style="display:flex;align-items:center;gap:12px">
-                    <span class="rec-rank" style="font-size:1.1rem;font-weight:800;color:#a3e635;background:rgba(163,230,53,0.12);border:1px solid rgba(163,230,53,0.3);padding:4px 12px;border-radius:20px">#${rec.rank || i+1}</span>
-                    <div class="rec-crop-info">
-                        <h3 class="rec-crop-name" style="margin:0;font-size:1.4rem">${rec.crop}</h3>
-                        <div style="font-size:0.8rem;opacity:0.75;margin-top:2px">Recommended for ${data.season || ''} season in ${loc.district || ''}, ${loc.state || ''}</div>
-                    </div>
+        <div class="rec-card glass-card ${rankColors[i] || ''}" style="margin-bottom:16px;padding:18px">
+            <!-- Header: rank + crop name + location subtitle -->
+            <div class="rec-card-top" style="margin-bottom:14px;display:flex;align-items:center;gap:12px">
+                <span class="rec-rank" style="flex-shrink:0;font-size:1.1rem;font-weight:800;color:#a3e635;background:rgba(163,230,53,0.12);border:1px solid rgba(163,230,53,0.3);padding:4px 12px;border-radius:20px">#${rec.rank || i + 1}</span>
+                <div>
+                    <h3 class="rec-crop-name" style="margin:0;font-size:1.4rem">${rec.crop}</h3>
+                    <div style="font-size:0.8rem;opacity:0.75;margin-top:2px">Recommended for ${data.season || ''} season in ${loc.district || ''}, ${loc.state || ''}</div>
                 </div>
             </div>
 
-            <!-- Why Recommended -->
-            <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.15);border-radius:8px;padding:14px;margin-bottom:10px">
-                <h4 style="margin:0 0 6px;font-size:0.85rem;color:#a3e635;display:flex;align-items:center;gap:5px">
-                    <span class="material-symbols-rounded" style="font-size:1rem">check_circle</span> WHY RECOMMENDED?
-                </h4>
-                <div style="font-size:0.85rem;line-height:1.5;opacity:0.92">${whyRec}</div>
-            </div>
-
-            ${situation ? `
-            <!-- Current Situation -->
-            <div style="background:rgba(56,189,248,0.06);border:1px solid rgba(56,189,248,0.15);border-radius:8px;padding:12px;margin-bottom:10px">
-                <h4 style="margin:0 0 4px;font-size:0.82rem;color:#38bdf8;display:flex;align-items:center;gap:5px">
-                    <span class="material-symbols-rounded" style="font-size:0.95rem">newspaper</span> CURRENT SITUATION
-                </h4>
-                <div style="font-size:0.83rem;line-height:1.45;opacity:0.9">${situation}</div>
-            </div>` : ''}
-
-            ${consideration ? `
-            <!-- Things to Consider -->
-            <div style="background:rgba(251,191,36,0.06);border:1px solid rgba(251,191,36,0.15);border-radius:8px;padding:12px;margin-bottom:10px">
-                <h4 style="margin:0 0 4px;font-size:0.82rem;color:#fbbf24;display:flex;align-items:center;gap:5px">
-                    <span class="material-symbols-rounded" style="font-size:0.95rem">info</span> THINGS TO CONSIDER
-                </h4>
-                <div style="font-size:0.83rem;line-height:1.45;opacity:0.9">${consideration}</div>
-            </div>` : ''}
-
-            <!-- About this Crop -->
+            <!-- About this Crop (farmer-friendly general information) -->
             <div style="background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:14px">
                 <h4 style="margin:0 0 10px;font-size:0.92rem;color:#e2e8f0;display:flex;align-items:center;gap:6px">
                     <span class="material-symbols-rounded" style="font-size:1.1rem;color:#a3e635">grass</span> ABOUT ${rec.crop.toUpperCase()}
@@ -318,15 +288,14 @@ function renderRecResults(data) {
         </div>`;
     }).join('');
 
-    const html = `
+    document.getElementById("recResults").innerHTML = `
         <div class="rec-header-row" style="margin-bottom:16px">
             <h3>Recommended Crops for <strong>${loc.district || data.district || ''}</strong>, ${loc.state || data.state || ''}</h3>
             <p class="rec-season-tag">Season: ${data.season || ''}</p>
         </div>
         ${recHtml}`;
-
-    document.getElementById("recResults").innerHTML = html;
 }
+
 
 
 // ─── Price Prediction ─────────────────────────────────────────────────────────
@@ -723,12 +692,28 @@ async function submitAdvisory(event) {
 
 function renderAdvisoryResults(data) {
     const priceData = data.price_prediction || {};
-    const dec       = (priceData.decision || "HOLD").toUpperCase();
-    const conf      = priceData.confidence ?? 0;
-    const avgPrice  = priceData.predicted_30d_avg ?? "—";
-    const curPrice  = priceData.current_price ?? "—";
-    const recs      = data.crop_recommendations?.slice(0, 3) || [];
-    const decClass  = dec === "SELL" ? "dec-sell" : dec === "WAIT" ? "" : "dec-hold";
+    // decision is null when no forecast model exists — NEVER default to HOLD
+    const rawDecision  = priceData.decision;
+    const forecastAvail = priceData.forecast_available === true;
+    const curPrice      = priceData.current_price;
+    const avgPrice      = priceData.predicted_30d_avg;
+    const farmerMsg     = priceData.farmer_message || "A reliable 30-day price forecast is currently unavailable for this crop.";
+    const recs          = data.crop_recommendations?.slice(0, 3) || [];
+
+    // Format display values — never show ₹— for predicted when forecast unavailable
+    const curPriceDisplay  = typeof curPrice === 'number'
+        ? `₹${Math.round(curPrice).toLocaleString('en-IN')}/qtl`
+        : 'Not available';
+    const predPriceDisplay = forecastAvail && typeof avgPrice === 'number'
+        ? `₹${Math.round(avgPrice).toLocaleString('en-IN')}/qtl`
+        : 'Currently unavailable';
+
+    // Decision display — null means no forecast, show "Not available" not HOLD
+    let decDisplay = 'Not available';
+    let decColor   = '#94a3b8';  // neutral grey
+    if (rawDecision === 'SELL') { decDisplay = 'SELL'; decColor = '#ef4444'; }
+    else if (rawDecision === 'HOLD') { decDisplay = 'HOLD'; decColor = '#22c55e'; }
+    else if (rawDecision === 'WAIT') { decDisplay = 'WAIT'; decColor = '#f59e0b'; }
 
     const html = `
         <div class="adv-summary glass-card">
@@ -742,7 +727,6 @@ function renderAdvisoryResults(data) {
                 <div class="adv-crop-row glass-card">
                     <span class="adv-rank">#${i+1}</span>
                     <span class="adv-crop-name">${capitalize(r.crop)}</span>
-                    <span class="adv-score">${Math.round(r.suitability_score ?? 0)}% match</span>
                 </div>`).join('')}
         </div>` : ''}
 
@@ -750,22 +734,22 @@ function renderAdvisoryResults(data) {
             <h4>📈 Market Analysis — ${capitalize(data.target_price_crop || '')}</h4>
             <div class="adv-market-grid">
                 <div class="adv-metric">
-                    <span class="adv-m-lbl">Current Price</span>
-                    <span class="adv-m-val">₹${curPrice}</span>
+                    <span class="adv-m-lbl">Current Mandi Price</span>
+                    <span class="adv-m-val">${curPriceDisplay}</span>
                 </div>
                 <div class="adv-metric">
-                    <span class="adv-m-lbl">30-Day Predicted</span>
-                    <span class="adv-m-val">₹${avgPrice}</span>
+                    <span class="adv-m-lbl">30-Day Forecast</span>
+                    <span class="adv-m-val" style="color:${forecastAvail ? '#a3e635' : '#94a3b8'}">${predPriceDisplay}</span>
                 </div>
                 <div class="adv-metric">
-                    <span class="adv-m-lbl">Recommendation</span>
-                    <span class="adv-m-val ${decClass}">${dec}</span>
-                </div>
-                <div class="adv-metric">
-                    <span class="adv-m-lbl">Confidence</span>
-                    <span class="adv-m-val">${Math.round(conf)}%</span>
+                    <span class="adv-m-lbl">Market Decision</span>
+                    <span class="adv-m-val" style="color:${decColor};font-weight:700">${decDisplay}</span>
                 </div>
             </div>
+            ${!forecastAvail ? `
+            <div style="margin-top:12px;padding:10px 14px;background:rgba(148,163,184,0.08);border:1px solid rgba(148,163,184,0.2);border-radius:8px;font-size:0.83rem;color:#94a3b8;line-height:1.5">
+                ℹ️ ${farmerMsg}
+            </div>` : ''}
         </div>
 
         ${(data.consolidated_reasons || []).length > 0 ? `

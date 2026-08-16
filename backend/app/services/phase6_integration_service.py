@@ -696,43 +696,81 @@ class AgroIntelPhase6Engine:
                 "available": False,
                 "crop": crop,
                 "predicted_price": None,
+                "predictions": [],
+                "date_labels": [],
                 "forecast_horizon_days": 30,
-                "message": f"Econometric price forecasting is available for major food commodities (Rice, Wheat, Maize, Onion, Potato)."
+                "message": "A reliable 30-day price forecast is currently unavailable for this crop."
             }
 
         from app.ml.inference import predict_price
         try:
             ml_res = predict_price(crop_lower, state=state, horizon_days=30)
-            preds = ml_res.get("forecast_series") or ml_res.get("predictions", [])
+            if not ml_res.get("available", False):
+                return {
+                    "available": False,
+                    "crop": crop,
+                    "predicted_price": None,
+                    "predictions": [],
+                    "date_labels": [],
+                    "forecast_horizon_days": 30,
+                    "message": "A reliable 30-day price forecast could not be generated for this crop at this time."
+                }
+            preds = ml_res.get("predictions", [])
             pred_price = ml_res.get("predicted_price")
             date_labels = ml_res.get("date_labels", [])
             obs_date = ml_res.get("observation_date")
+            # Enforce exactly 30 forecast points
+            if len(preds) != 30:
+                logger.warning(f"Forecast for {crop} has {len(preds)} points, expected 30. Trimming/padding.")
+                if len(preds) > 30:
+                    preds = preds[:30]
+                    date_labels = date_labels[:30] if len(date_labels) > 30 else date_labels
+            return {
+                "available": True,
+                "crop": crop,
+                "current_price": current_price,
+                "predicted_price": pred_price,
+                "predictions": preds,
+                "date_labels": date_labels,
+                "observation_date": obs_date,
+                "forecast_horizon_days": 30
+            }
         except Exception as e:
             logger.warning(f"Error running ML inference for {crop}: {e}")
-            preds = []
-            pred_price = None
-            date_labels = []
-            obs_date = None
-
-        return {
-            "available": True,
-            "crop": crop,
-            "current_price": current_price,
-            "predicted_price": pred_price,
-            "predictions": preds,
-            "date_labels": date_labels,
-            "observation_date": obs_date,
-            "forecast_horizon_days": 30
-        }
+            return {
+                "available": False,
+                "crop": crop,
+                "predicted_price": None,
+                "predictions": [],
+                "date_labels": [],
+                "forecast_horizon_days": 30,
+                "message": "A reliable 30-day price forecast could not be generated for this crop at this time."
+            }
 
     def _derive_price_advisory(self, mandi_vec: dict, forecast_vec: dict) -> dict:
+        """Derive SELL/HOLD/WAIT advisory ONLY when both a current price and a valid forecast exist.
+        NEVER returns a decision when forecast is unavailable."""
+        # Forecast must explicitly be available
+        if not forecast_vec.get("available", False):
+            return {
+                "action": None,
+                "reason": forecast_vec.get("message", "A reliable 30-day price forecast is currently unavailable for this crop."),
+                "current_price": mandi_vec.get("current_price"),
+                "predicted_price": None,
+                "price_change_pct": None
+            }
+
         curr = mandi_vec.get("current_price")
         pred = forecast_vec.get("predicted_price")
 
+        # Both prices must be valid positive numbers to derive a meaningful decision
         if not isinstance(curr, (int, float)) or not isinstance(pred, (int, float)) or curr <= 0 or pred <= 0:
             return {
-                "action": "HOLD",
-                "reason": "Verify latest mandi market prices before executing sales transactions."
+                "action": None,
+                "reason": "Current mandi price is unavailable. Cannot generate a market decision without a confirmed price reference.",
+                "current_price": curr,
+                "predicted_price": pred,
+                "price_change_pct": None
             }
 
         diff_pct = (pred - curr) / curr * 100.0
