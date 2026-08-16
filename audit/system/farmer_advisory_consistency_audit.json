@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-16T11:35:55.661073",
+  "consistency_checks": [
+    {
+      "check": "Farmer Advisory recommends Sugarcane for Ahilya Nagar Kharif -> analyzes Sugarcane (NOT Wheat)",
+      "passed": true,
+      "target_crop": "Sugarcane"
+    },
+    {
+      "check": "30-day forecast graph points count",
+      "expected_points": 30,
+      "actual_points": 30,
+      "passed": true
+    },
+    {
+      "check": "Zero internal technical strings (e.g. 25.0/25, UNKNOWN) in farmer UI text",
+      "passed": true
+    }
+  ],
+  "verdict": "FARMER_ADVISORY_CONSISTENCY_VERIFIED"
+}

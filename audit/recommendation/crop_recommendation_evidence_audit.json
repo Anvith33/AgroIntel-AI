@@ -1,0 +1,258 @@
+{
+  "timestamp": "2026-08-16T11:35:54.355960",
+  "total_scenarios_tested": 25,
+  "passed_count": 24,
+  "scenarios": [
+    {
+      "state": "Maharashtra",
+      "district": "Ahilya Nagar",
+      "season": "Kharif",
+      "top_recommended_crop": "Sugarcane",
+      "recommendation_count": 5,
+      "why_recommended": "Sugarcane is recommended for Ahilya Nagar because it is Sugarcane has strong historical cultivation evidence in Ahilya Nagar; well-suited for the Kharif cropping season.",
+      "considerations": "Sugarcane requires substantial water throughout its 10\u201314 month growing period. In semi-arid regions (such as Ahilya Nagar), cultivation is well-suited to canal-irrigated belts (e.g. Pravara/Godavari basins) or fields with reliable borewells. Ensure adequate irrigation is available before planting.",
+      "passed": true
+    },
+    {
+      "state": "Maharashtra",
+      "district": "Ahilya Nagar",
+      "season": "Rabi",
+      "top_recommended_crop": "Chickpea (Gram)",
+      "recommendation_count": 5,
+      "why_recommended": "Chickpea (Gram) is recommended for Ahilya Nagar because it is well-suited for the Rabi cropping season.",
+      "considerations": "Deep-rooting Rabi pulse that utilizes residual soil moisture effectively with minimal supplementary irrigation.",
+      "passed": true
+    },
+    {
+      "state": "Maharashtra",
+      "district": "Nashik",
+      "season": "Kharif",
+      "top_recommended_crop": "Finger Millet (Ragi)",
+      "recommendation_count": 5,
+      "why_recommended": "Finger Millet (Ragi) is recommended for Nashik because it is well-suited for the Kharif cropping season.",
+      "considerations": "Ensure adequate soil moisture and standard field management practices for Finger Millet (Ragi).",
+      "passed": true
+    },
+    {
+      "state": "Maharashtra",
+      "district": "Pune",
+      "season": "Rabi",
+      "top_recommended_crop": "Chickpea (Gram)",
+      "recommendation_count": 5,
+      "why_recommended": "Chickpea (Gram) is recommended for Pune because it is well-suited for the Rabi cropping season.",
+      "considerations": "Deep-rooting Rabi pulse that utilizes residual soil moisture effectively with minimal supplementary irrigation.",
+      "passed": true
+    },
+    {
+      "state": "Karnataka",
+      "district": "Dakshina Kannada",
+      "season": "Kharif",
+      "top_recommended_crop": "Rice",
+      "recommendation_count": 5,
+      "why_recommended": "Rice is recommended for Dakshin Kannad because it is Rice has strong historical cultivation evidence in Dakshin Kannad; well-suited for the Kharif cropping season.",
+      "considerations": "Paddy requires substantial moisture and standing water during vegetative and flowering stages. Ensure reliable canal, borewell, or heavy monsoon rainfall before planting.",
+      "passed": true
+    },
+    {
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "season": "Kharif",
+      "top_recommended_crop": "Black Gram (Urad)",
+      "recommendation_count": 5,
+      "why_recommended": "Black Gram (Urad) is recommended for Mysuru because it is well-suited for the Kharif cropping season.",
+      "considerations": "Drought-hardy pulse suitable for rainfed cultivation with low moisture requirements.",
+      "passed": true
+    },
+    {
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "season": "Kharif",
+      "top_recommended_crop": "Onion",
+      "recommendation_count": 5,
+      "why_recommended": "Onion is recommended for Belagavi because it is Onion has strong historical cultivation evidence in Belagavi; well-suited for the Kharif cropping season.",
+      "considerations": "Onion requires shallow, frequent irrigations to maintain uniform bulb development without waterlogging.",
+      "passed": true
+    },
+    {
+      "state": "Punjab",
+      "district": "Ludhiana",
+      "season": "Rabi",
+      "top_recommended_crop": "Barley",
+      "recommendation_count": 5,
+      "why_recommended": "Barley is recommended for Ludhiana because it is Barley has strong historical cultivation evidence in Ludhiana; well-suited for the Rabi cropping season.",
+      "considerations": "Ensure adequate soil moisture and standard field management practices for Barley.",
+      "passed": true
+    },
+    {
+      "state": "Punjab",
+      "district": "Amritsar",
+      "season": "Rabi",
+      "top_recommended_crop": "Wheat",
+      "recommendation_count": 5,
+      "why_recommended": "Wheat is recommended for Amritsar because it is Wheat has strong historical cultivation evidence in Amritsar; well-suited for the Rabi cropping season.",
+      "considerations": "Rabi wheat requires 4\u20136 scheduled irrigations, especially at the Crown Root Initiation (CRI) and grain-filling stages.",
+      "passed": true
+    },
+    {
+      "state": "Haryana",
+      "district": "Karnal",
+      "season": "Rabi",
+      "top_recommended_crop": "Wheat",
+      "recommendation_count": 5,
+      "why_recommended": "Wheat is recommended for Karnal because it is Wheat has strong historical cultivation evidence in Karnal; well-suited for the Rabi cropping season.",
+      "considerations": "Rabi wheat requires 4\u20136 scheduled irrigations, especially at the Crown Root Initiation (CRI) and grain-filling stages.",
+      "passed": true
+    },
+    {
+      "state": "Uttar Pradesh",
+      "district": "Varanasi",
+      "season": "Rabi",
+      "top_recommended_crop": "Chickpea (Gram)",
+      "recommendation_count": 5,
+      "why_recommended": "Chickpea (Gram) is recommended for Varanasi because it is well-suited for the Rabi cropping season.",
+      "considerations": "Deep-rooting Rabi pulse that utilizes residual soil moisture effectively with minimal supplementary irrigation.",
+      "passed": true
+    },
+    {
+      "state": "Uttar Pradesh",
+      "district": "Prayagraj",
+      "season": "Kharif",
+      "top_recommended_crop": "Black Gram (Urad)",
+      "recommendation_count": 5,
+      "why_recommended": "Black Gram (Urad) is recommended for Prayagraj because it is well-suited for the Kharif cropping season.",
+      "considerations": "Drought-hardy pulse suitable for rainfed cultivation with low moisture requirements.",
+      "passed": true
+    },
+    {
+      "state": "Bihar",
+      "district": "Patna",
+      "season": "Kharif",
+      "top_recommended_crop": "Potato",
+      "recommendation_count": 5,
+      "why_recommended": "Potato is recommended for Patna because it is Potato has strong historical cultivation evidence in Patna; well-suited for the Kharif cropping season.",
+      "considerations": "Potato requires consistent soil moisture during tuber initiation and bulking stages. Avoid excess moisture near harvest to prevent rotting.",
+      "passed": true
+    },
+    {
+      "state": "West Bengal",
+      "district": "Burdwan",
+      "season": "Kharif",
+      "top_recommended_crop": null,
+      "recommendation_count": 0,
+      "why_recommended": null,
+      "considerations": null,
+      "passed": false
+    },
+    {
+      "state": "Odisha",
+      "district": "Cuttack",
+      "season": "Kharif",
+      "top_recommended_crop": "Horse-gram",
+      "recommendation_count": 5,
+      "why_recommended": "Horse-gram is recommended for Cuttack because it is Horse-gram has strong historical cultivation evidence in Cuttack; well-suited for the Kharif cropping season.",
+      "considerations": "Ensure adequate soil moisture and standard field management practices for Horse-gram.",
+      "passed": true
+    },
+    {
+      "state": "Gujarat",
+      "district": "Rajkot",
+      "season": "Kharif",
+      "top_recommended_crop": "Maize",
+      "recommendation_count": 5,
+      "why_recommended": "Maize is recommended for Rajkot because it is Maize has strong historical cultivation evidence in Rajkot; well-suited for the Kharif cropping season.",
+      "considerations": "Maize requires moderate moisture. Timely irrigation during critical tasseling and silking stages is essential for optimal grain yield.",
+      "passed": true
+    },
+    {
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "season": "Kharif",
+      "top_recommended_crop": "Onion",
+      "recommendation_count": 5,
+      "why_recommended": "Onion is recommended for Jaipur because it is Onion has strong historical cultivation evidence in Jaipur; well-suited for the Kharif cropping season.",
+      "considerations": "Onion requires shallow, frequent irrigations to maintain uniform bulb development without waterlogging.",
+      "passed": true
+    },
+    {
+      "state": "Tamil Nadu",
+      "district": "Thanjavur",
+      "season": "Kharif",
+      "top_recommended_crop": "Maize",
+      "recommendation_count": 5,
+      "why_recommended": "Maize is recommended for Thanjavur because it is Maize has strong historical cultivation evidence in Thanjavur; well-suited for the Kharif cropping season.",
+      "considerations": "Maize requires moderate moisture. Timely irrigation during critical tasseling and silking stages is essential for optimal grain yield.",
+      "passed": true
+    },
+    {
+      "state": "Telangana",
+      "district": "Warangal",
+      "season": "Kharif",
+      "top_recommended_crop": "Rice",
+      "recommendation_count": 5,
+      "why_recommended": "Rice is recommended for Warangal because it is Rice has strong historical cultivation evidence in Warangal; well-suited for the Kharif cropping season.",
+      "considerations": "Paddy requires substantial moisture and standing water during vegetative and flowering stages. Ensure reliable canal, borewell, or heavy monsoon rainfall before planting.",
+      "passed": true
+    },
+    {
+      "state": "Andhra Pradesh",
+      "district": "Guntur",
+      "season": "Kharif",
+      "top_recommended_crop": "Moong (Green Gram)",
+      "recommendation_count": 5,
+      "why_recommended": "Moong (Green Gram) is recommended for Guntur because it is well-suited for the Kharif cropping season.",
+      "considerations": "Short-duration pulse that thrives with minimal moisture and enriches soil nitrogen for subsequent rotations.",
+      "passed": true
+    },
+    {
+      "state": "Madhya Pradesh",
+      "district": "Indore",
+      "season": "Kharif",
+      "top_recommended_crop": "Sorghum (Jowar)",
+      "recommendation_count": 5,
+      "why_recommended": "Sorghum (Jowar) is recommended for Indore because it is well-suited for the Kharif cropping season.",
+      "considerations": "Jowar has high water-use efficiency and excellent drought resilience, making it a dependable rainfed crop.",
+      "passed": true
+    },
+    {
+      "state": "Assam",
+      "district": "Kamrup",
+      "season": "Kharif",
+      "top_recommended_crop": "Sugarcane",
+      "recommendation_count": 5,
+      "why_recommended": "Sugarcane is recommended for Kamrup because it is Sugarcane has strong historical cultivation evidence in Kamrup; well-suited for the Kharif cropping season.",
+      "considerations": "Sugarcane requires substantial water throughout its 10\u201314 month growing period. In semi-arid regions (such as Ahilya Nagar), cultivation is well-suited to canal-irrigated belts (e.g. Pravara/Godavari basins) or fields with reliable borewells. Ensure adequate irrigation is available before planting.",
+      "passed": true
+    },
+    {
+      "state": "Kerala",
+      "district": "Wayanad",
+      "season": "Kharif",
+      "top_recommended_crop": "Sesame (Sesamum)",
+      "recommendation_count": 5,
+      "why_recommended": "Sesame (Sesamum) is recommended for Wayanad because it is well-suited for the Kharif cropping season.",
+      "considerations": "Ensure adequate soil moisture and standard field management practices for Sesame (Sesamum).",
+      "passed": true
+    },
+    {
+      "state": "Himachal Pradesh",
+      "district": "Shimla",
+      "season": "Kharif",
+      "top_recommended_crop": "Rice",
+      "recommendation_count": 5,
+      "why_recommended": "Rice is recommended for Shimla because it is Rice has strong historical cultivation evidence in Shimla; well-suited for the Kharif cropping season.",
+      "considerations": "Paddy requires substantial moisture and standing water during vegetative and flowering stages. Ensure reliable canal, borewell, or heavy monsoon rainfall before planting.",
+      "passed": true
+    },
+    {
+      "state": "Uttarakhand",
+      "district": "Dehradun",
+      "season": "Rabi",
+      "top_recommended_crop": "Barley",
+      "recommendation_count": 5,
+      "why_recommended": "Barley is recommended for Dehradun because it is Barley has strong historical cultivation evidence in Dehradun; well-suited for the Rabi cropping season.",
+      "considerations": "Ensure adequate soil moisture and standard field management practices for Barley.",
+      "passed": true
+    }
+  ],
+  "verdict": "CROP_RECOMMENDATION_EVIDENCE_VALIDATED"
+}

@@ -7,7 +7,7 @@ import logging
 import os
 import random
 import time
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -75,7 +75,7 @@ def phase6_recommend(request: Phase6RecommendRequest):
     latency_ms = round((time.perf_counter() - t_start) * 1000.0, 2)
     result["response_time_ms"] = latency_ms
     result["engine_version"] = "Phase6_v1.0"
-    result["timestamp"] = datetime.utcnow().isoformat()
+    result["timestamp"] = datetime.now(timezone.utc).isoformat()
     return result
 
 

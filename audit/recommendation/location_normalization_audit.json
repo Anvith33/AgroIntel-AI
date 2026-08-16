@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-08-16T11:35:22.271114",
+  "total_alias_tests": 11,
+  "passed_count": 11,
+  "verdict": "CANONICAL_LOCATION_NORMALIZATION_VERIFIED",
+  "test_cases": [
+    {
+      "input_district": "Ahmednagar",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Ahilya Nagar",
+      "resolved_canonical_id": "Maharashtra::Ahilya Nagar",
+      "expected_canonical_name": "Ahilya Nagar",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Ahmed Nagar",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Ahilya Nagar",
+      "resolved_canonical_id": "Maharashtra::Ahilya Nagar",
+      "expected_canonical_name": "Ahilya Nagar",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Ahilyanagar",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Ahilya Nagar",
+      "resolved_canonical_id": "Maharashtra::Ahilya Nagar",
+      "expected_canonical_name": "Ahilya Nagar",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Ahmadnagar",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Ahilya Nagar",
+      "resolved_canonical_id": "Maharashtra::Ahilya Nagar",
+      "expected_canonical_name": "Ahilya Nagar",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Ahilya Nagar",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Ahilya Nagar",
+      "resolved_canonical_id": "Maharashtra::Ahilya Nagar",
+      "expected_canonical_name": "Ahilya Nagar",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Aurangabad",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Chhatrapati Sambhajinagar",
+      "resolved_canonical_id": "Maharashtra::Chhatrapati Sambhajinagar",
+      "expected_canonical_name": "Chhatrapati Sambhajinagar",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Osmanabad",
+      "input_state": "Maharashtra",
+      "resolved_canonical_name": "Dharashiv",
+      "resolved_canonical_id": "Maharashtra::Dharashiv",
+      "expected_canonical_name": "Dharashiv",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Dakshin Kannad",
+      "input_state": "Karnataka",
+      "resolved_canonical_name": "Dakshina Kannada",
+      "resolved_canonical_id": "Karnataka::Dakshina Kannada",
+      "expected_canonical_name": "Dakshina Kannada",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Mysore",
+      "input_state": "Karnataka",
+      "resolved_canonical_name": "Mysuru",
+      "resolved_canonical_id": "Karnataka::Mysuru",
+      "expected_canonical_name": "Mysuru",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Allahabad",
+      "input_state": "Uttar Pradesh",
+      "resolved_canonical_name": "Prayagraj",
+      "resolved_canonical_id": "Uttar Pradesh::Prayagraj",
+      "expected_canonical_name": "Prayagraj",
+      "match_status": "PASS"
+    },
+    {
+      "input_district": "Faizabad",
+      "input_state": "Uttar Pradesh",
+      "resolved_canonical_name": "Ayodhya",
+      "resolved_canonical_id": "Uttar Pradesh::Ayodhya",
+      "expected_canonical_name": "Ayodhya",
+      "match_status": "PASS"
+    }
+  ]
+}

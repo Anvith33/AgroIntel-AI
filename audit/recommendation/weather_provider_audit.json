@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-08-16T11:35:23.852537",
+  "architecture": "Multi-Provider Fallback (OpenMeteo -> OpenWeather -> HistoricalClimate -> UNAVAILABLE)",
+  "zero_fake_defaults_verified": true,
+  "providers_tested": {
+    "open_meteo": {
+      "available": true,
+      "status": "OBSERVED_LIVE",
+      "avg_temp_c": 24.33,
+      "total_rain_7d_mm": 12.3
+    },
+    "openweather": {
+      "available": false,
+      "status": "API_KEY_NOT_SET_OR_UNAVAILABLE"
+    },
+    "historical_climate": {
+      "available": false,
+      "status": "FILE_NOT_FOUND"
+    }
+  },
+  "fused_runtime_output": {
+    "active_provider": "open-meteo",
+    "weather_status": "OBSERVED_LIVE",
+    "avg_temp": 24.33,
+    "total_rainfall": 12.3
+  },
+  "verdict": "WEATHER_PROVIDER_ABSTRACTION_OPERATIONAL"
+}

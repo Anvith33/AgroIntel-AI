@@ -13481,6 +13481,24 @@
         "Chickpea"
       ],
       "source": "Agmarknet Historical Data [Corrected: RF alias alignment]"
+    },
+    "Ahilya Nagar": {
+      "state": "Maharashtra",
+      "soil_type": "Black Soil",
+      "agro_climatic_zone": "Zone 9 - Western Plateau and Hills Region",
+      "top_crops": [
+        "Wheat",
+        "Onion",
+        "Soybean",
+        "Chickpea",
+        "Maize",
+        "Pigeonpeas",
+        "Potato",
+        "Cotton",
+        "Sugarcane",
+        "Rice"
+      ],
+      "source": "Agmarknet Historical Data [Corrected: RF alias alignment]"
     }
   }
 }

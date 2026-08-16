@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-08-16T11:35:22.271449",
+  "water_status_states": [
+    "SUITABLE",
+    "LIMITED",
+    "UNSUITABLE",
+    "UNKNOWN"
+  ],
+  "unknown_water_rule": "UNKNOWN is never converted to SUITABLE. Actionable crop water guidance is provided to farmers based on true crop water requirements.",
+  "crop_water_guidance_database": {
+    "High Water Crops (1200-2500 mm)": [
+      "Sugarcane",
+      "Rice",
+      "Banana"
+    ],
+    "Moderate Water Crops (450-800 mm)": [
+      "Cotton",
+      "Maize",
+      "Onion",
+      "Potato",
+      "Soybean",
+      "Wheat"
+    ],
+    "Low / Drought-Hardy Crops (250-450 mm)": [
+      "Pearl Millet (Bajra)",
+      "Sorghum (Jowar)",
+      "Moong (Green Gram)",
+      "Black Gram (Urad)",
+      "Chickpea (Gram)"
+    ]
+  },
+  "ahilya_nagar_kharif_case_study": {
+    "district": "Ahilya Nagar (Ahmednagar)",
+    "state": "Maharashtra",
+    "season": "Kharif",
+    "canal_zones": "Pravara and Godavari irrigation project command areas support high water crops like Sugarcane.",
+    "rainfed_zones": "Parner, Pathardi, Jamkhed, Shevgaon talukas rely on low/moderate water crops like Bajra, Moong, Soybean, Cotton, Onion.",
+    "farmer_guidance_policy": "Translates water status into concrete irrigation advice without exposing technical UNKNOWN flags."
+  },
+  "verdict": "WATER_SUITABILITY_GROUNDED_AND_DECOUPLED_FROM_NEWS"
+}

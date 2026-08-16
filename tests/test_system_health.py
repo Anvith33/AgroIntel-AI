@@ -1,9 +1,11 @@
-import pytest, requests
+import pytest
+from fastapi.testclient import TestClient
+from app.main import app
 
-BASE_URL = "http://localhost:8000"
+client = TestClient(app)
 
 def test_health():
-    resp = requests.get(f"{BASE_URL}/health", timeout=5)
+    resp = client.get("/health")
     assert resp.status_code == 200
     data = resp.json()
     assert data.get("status") == "healthy"
@@ -11,6 +13,6 @@ def test_health():
     assert data.get("crop_model") is True
 
 def test_frontend_mount():
-    resp = requests.get(f"{BASE_URL}/", timeout=5)
+    resp = client.get("/")
     assert resp.status_code == 200
     assert "AgroIntel" in resp.text

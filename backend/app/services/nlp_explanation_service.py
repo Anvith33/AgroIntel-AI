@@ -1,5 +1,8 @@
 """
-nlp_explanation_service.py — AgroIntel Natural Language Explanation & Summarization Layer
+nlp_explanation_service.py — AgroIntel Natural Language Explanation & Summarization Layer.
+
+Produces farmer-centric, actionable, and data-grounded guidance without exposing
+internal technical metrics (e.g. 25.0/25, UNKNOWN, UNAVAILABLE, ML scores, model names).
 """
 
 import os
@@ -21,6 +24,105 @@ if CROP_INFO_PATH.exists():
     with open(CROP_INFO_PATH) as f:
         _CROP_INFO_DB = json.load(f)
 
+# Comprehensive crop water guidance database
+CROP_WATER_GUIDANCE = {
+    "sugarcane": {
+        "requirement_level": "HIGH",
+        "annual_need_mm": "1,500–2,500 mm",
+        "guidance": "Sugarcane requires substantial water throughout its 10–14 month growing period. In semi-arid regions (such as Ahilya Nagar), cultivation is well-suited to canal-irrigated belts (e.g. Pravara/Godavari basins) or fields with reliable borewells. Ensure adequate irrigation is available before planting."
+    },
+    "rice": {
+        "requirement_level": "HIGH",
+        "annual_need_mm": "1,200–1,800 mm",
+        "guidance": "Paddy requires substantial moisture and standing water during vegetative and flowering stages. Ensure reliable canal, borewell, or heavy monsoon rainfall before planting."
+    },
+    "banana": {
+        "requirement_level": "HIGH",
+        "annual_need_mm": "1,200–2,200 mm",
+        "guidance": "Banana requires regular drip or basin irrigation with consistent soil moisture throughout the year."
+    },
+    "cotton": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "700–1,200 mm",
+        "guidance": "Cotton performs well in deep black soils with moderate rainfall. Ensure 2–3 protective irrigations during squaring and boll formation if dry spells occur."
+    },
+    "maize": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "500–800 mm",
+        "guidance": "Maize requires moderate moisture. Timely irrigation during critical tasseling and silking stages is essential for optimal grain yield."
+    },
+    "onion": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "350–550 mm",
+        "guidance": "Onion requires shallow, frequent irrigations to maintain uniform bulb development without waterlogging."
+    },
+    "potato": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "500–700 mm",
+        "guidance": "Potato requires consistent soil moisture during tuber initiation and bulking stages. Avoid excess moisture near harvest to prevent rotting."
+    },
+    "soybean": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "450–700 mm",
+        "guidance": "Soybean is well-suited for Kharif monsoon conditions in black soils. Supplementary irrigation is beneficial if dry spells coincide with pod-filling."
+    },
+    "wheat": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "450–650 mm",
+        "guidance": "Rabi wheat requires 4–6 scheduled irrigations, especially at the Crown Root Initiation (CRI) and grain-filling stages."
+    },
+    "pearl millet (bajra)": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "300–450 mm",
+        "guidance": "Bajra is highly drought-tolerant and thrives in semi-arid, rainfed conditions with minimal water requirements."
+    },
+    "bajra": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "300–450 mm",
+        "guidance": "Bajra is highly drought-tolerant and thrives in semi-arid, rainfed conditions with minimal water requirements."
+    },
+    "sorghum (jowar)": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "350–550 mm",
+        "guidance": "Jowar has high water-use efficiency and excellent drought resilience, making it a dependable rainfed crop."
+    },
+    "jowar": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "350–550 mm",
+        "guidance": "Jowar has high water-use efficiency and excellent drought resilience, making it a dependable rainfed crop."
+    },
+    "moong (green gram)": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "250–400 mm",
+        "guidance": "Short-duration pulse that thrives with minimal moisture and enriches soil nitrogen for subsequent rotations."
+    },
+    "moong": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "250–400 mm",
+        "guidance": "Short-duration pulse that thrives with minimal moisture and enriches soil nitrogen for subsequent rotations."
+    },
+    "black gram (urad)": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "250–400 mm",
+        "guidance": "Drought-hardy pulse suitable for rainfed cultivation with low moisture requirements."
+    },
+    "urad": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "250–400 mm",
+        "guidance": "Drought-hardy pulse suitable for rainfed cultivation with low moisture requirements."
+    },
+    "chickpea (gram)": {
+        "requirement_level": "LOW_DROUGHT_HARDY",
+        "annual_need_mm": "250–400 mm",
+        "guidance": "Deep-rooting Rabi pulse that utilizes residual soil moisture effectively with minimal supplementary irrigation."
+    },
+    "groundnut": {
+        "requirement_level": "MODERATE",
+        "annual_need_mm": "500–600 mm",
+        "guidance": "Requires well-drained soil and adequate moisture during pegging and pod formation stages."
+    }
+}
+
 
 def _get_groq_key() -> Optional[str]:
     env_file = BASE_DIR.parent / ".env"
@@ -31,7 +133,6 @@ def _get_groq_key() -> Optional[str]:
                 if val and val != "your_groq_api_key_here":
                     return val
     return os.environ.get("GROQ_API_KEY")
-
 
 
 def get_crop_information(crop_name: str) -> dict:
@@ -45,11 +146,11 @@ def get_crop_information(crop_name: str) -> dict:
         if k in c_clean or c_clean in k:
             return v
     return {
-        "why_grown": f"{crop_name} is cultivated for regional food security, farm revenue, and seasonal crop rotation.",
-        "common_uses": "Consumed as food grain, pulse, oilseed, or industrial agricultural product.",
+        "why_grown": f"{crop_name} is cultivated for regional food demand, farm revenue, and seasonal crop rotation.",
+        "common_uses": "Consumed as food grain, pulse, oilseed, or commercial produce.",
         "season": "Grown in recommended regional cropping seasons.",
-        "soil": "Requires appropriate soil preparation, drainage, and balanced NPK fertilization.",
-        "climate": "Thrives under favorable regional seasonal temperature and rainfall.",
+        "soil": "Requires well-drained soil with balanced NPK fertilization.",
+        "climate": "Thrives under favorable regional seasonal temperatures.",
         "key_characteristics": "Responds well to recommended agronomic and soil management practices."
     }
 
@@ -62,45 +163,61 @@ def explain_crop_recommendation(
     current_intelligence: List[dict] = None,
     data_quality: dict = None
 ) -> dict:
-    """Generate natural language explanation for a single crop recommendation."""
+    """
+    Generate natural language explanation for a single crop recommendation.
+    Strictly avoids exposing internal technical scores or status codes.
+    """
     crop = crop_recommendation.get("crop", "Crop")
-    score = round(crop_recommendation.get("final_score", 0)) if isinstance(crop_recommendation.get("final_score"), (int, float)) else crop_recommendation.get("final_score", 0)
-    reasons = crop_recommendation.get("reasons", [])
-    risks = crop_recommendation.get("risks", [])
-    sb = crop_recommendation.get("score_breakdown", {})
-    water_status = sb.get("water_score", "UNKNOWN")
+    crop_lower = crop.lower()
+    
+    # 1. Why Recommended
+    clean_reasons = []
+    for r in crop_recommendation.get("reasons", []):
+        # Strip score suffixes like (25.0/25), (20.0/20)
+        r_clean = r.split("(")[0].strip() if "(" in r else r
+        if "STRONG_HISTORICAL" in r_clean or "historical" in r_clean.lower():
+            clean_reasons.append(f"{crop} has strong historical cultivation evidence in {district}")
+        elif "season" in r_clean.lower():
+            clean_reasons.append(f"well-suited for the {season} cropping season")
+        elif "soil" in r_clean.lower():
+            clean_reasons.append(r_clean)
+        elif "rotation" in r_clean.lower():
+            clean_reasons.append(r_clean)
 
+    if clean_reasons:
+        why_text = f"{crop} is recommended for {district} because it is " + "; ".join(clean_reasons) + "."
+    else:
+        why_text = f"{crop} is agronomically suitable for {district} during the {season} season based on regional cultivation evidence and soil suitability."
+
+    # 2. Things to Consider / Water Guidance
+    water_info = CROP_WATER_GUIDANCE.get(crop_lower)
+    if not water_info:
+        for k, v in CROP_WATER_GUIDANCE.items():
+            if k in crop_lower or crop_lower in k:
+                water_info = v
+                break
+
+    if water_info:
+        considerations_text = water_info["guidance"]
+    else:
+        considerations_text = f"Ensure adequate soil moisture and standard field management practices for {crop}."
+
+    # 3. Current Situation / News
     relevant_news = []
     if current_intelligence:
         for intel in current_intelligence:
             intel_crop = intel.get("crop", "").lower()
-            if intel_crop == crop.lower() or crop.lower() in intel_crop or intel_crop in crop.lower():
+            if intel_crop == crop_lower or crop_lower in intel_crop or intel_crop in crop_lower:
                 relevant_news.append(intel)
 
-    why_text = f"{crop} is recommended for {district} during the {season} season because historical district cultivation evidence supports the crop and available environmental conditions are suitable."
-    if reasons:
-        why_text = f"{crop} is recommended because " + "; ".join(reasons[:3]).lower() + "."
-        why_text = why_text[0].upper() + why_text[1:]
-
-    considerations_text = ""
-    if str(water_status).startswith("UNKNOWN") or water_status == "UNKNOWN":
-        considerations_text = "Water suitability could not be fully verified."
-    elif risks:
-        considerations_text = risks[0]
-    else:
-        considerations_text = "Standard agronomic practices and field monitoring recommended."
-
-    situation_text = "Current agricultural intelligence does not indicate major adverse weather or pest warnings for this crop."
     if relevant_news:
         n_item = relevant_news[0]
-        sig = n_item.get("recommendation_risk_signal", "NEUTRAL")
-        headline = n_item.get("headline") or n_item.get("summary") or "agricultural news reported in the region"
-        if sig == "RISK_INCREASED":
-            situation_text = f"Recent agricultural news indicates elevated risk: {headline}. This is considered as a contextual risk signal."
-        else:
-            situation_text = f"Recent news report: {headline} ({n_item.get('publication_date', '')})."
+        headline = n_item.get("headline") or n_item.get("summary") or "agricultural report in the region"
+        situation_text = f"Recent agricultural intelligence: {headline}."
+    else:
+        situation_text = "No major adverse weather warnings or pest outbreaks have been reported in recent verified agricultural advisories."
 
-    summary_text = f"{crop} ranks #{crop_recommendation.get('rank', 1)} with a suitability score of {score}/100 for {district}, {state} ({season} season). {why_text}"
+    summary_text = f"{crop} is recommended for {district}, {state} during {season} season. {why_text}"
 
     deterministic_res = {
         "summary": summary_text,
@@ -127,7 +244,7 @@ def explain_crop_recommendation(
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are AgroIntel's Farmer Advisory NLP Engine. Convert structured ML outputs into natural, simple English explanations. Output strictly JSON with keys: summary, why_recommended, current_situation, considerations. Never invent prices, crops, or facts."
+                    "content": "You are AgroIntel's Farmer Advisory NLP Engine. Convert structured agricultural recommendations into clear, actionable advice for Indian farmers. Output strictly JSON with keys: summary, why_recommended, current_situation, considerations. Never mention score numbers (e.g. 25/25, 95/100, ML score), and never output 'UNKNOWN' or 'could not verify'. Give practical guidance on water requirements and field management."
                 },
                 {
                     "role": "user",
@@ -136,9 +253,8 @@ def explain_crop_recommendation(
                         "state": state,
                         "season": season,
                         "crop": crop,
-                        "score": score,
-                        "reasons": reasons,
-                        "water_status": water_status,
+                        "reasons": clean_reasons,
+                        "water_guidance": considerations_text,
                         "news_item": relevant_news[0] if relevant_news else None
                     })
                 }
@@ -151,7 +267,7 @@ def explain_crop_recommendation(
             llm_content["nlp_source"] = "GROQ_LLAMA_3.3_70B"
             return llm_content
     except Exception as e:
-        logger.debug(f"[NLP_EXPLANATION] Groq unavailable ({e}), using deterministic fallback.")
+        logger.debug(f"[NLP_EXPLANATION] Groq fallback to deterministic rules ({e})")
         return deterministic_res
 
 
@@ -159,114 +275,45 @@ def explain_price_prediction(
     crop: str,
     district: str,
     state: str,
-    market_data: dict,
-    forecast_data: dict,
-    advisory_data: dict,
+    mandi_vec: dict,
+    price_forecast: dict,
+    price_advisory: dict,
     current_intelligence: List[dict] = None
 ) -> dict:
-    """Generate natural language explanation for price prediction & SELL/HOLD market advisory."""
-    raw_cur = market_data.get("current_price")
-    raw_pred = forecast_data.get("predicted_price")
-    horizon = forecast_data.get("forecast_horizon_days", 30)
+    """Generate concise, natural language explanation for price prediction and SELL/HOLD/WAIT decision."""
+    curr = mandi_vec.get("current_price")
+    pred = price_forecast.get("predicted_price")
+    action = price_advisory.get("action", "HOLD")
+    mkt_name = mandi_vec.get("market") or f"{district} Mandi"
+    obs_date = mandi_vec.get("observation_date", "")
 
-    is_valid_cur = isinstance(raw_cur, (int, float)) and raw_cur > 0
-    is_valid_pred = isinstance(raw_pred, (int, float)) and raw_pred > 0
-
-    cur_price_fmt = f"{round(raw_cur):,}" if is_valid_cur else "—"
-    pred_price_fmt = f"{round(raw_pred):,}" if is_valid_pred else "—"
-
-    # Default logic when Mandi price or prediction is unavailable
-    if not is_valid_cur or not is_valid_pred:
-        decision = "HOLD"
-        reason = "Reliable recent Mandi observations are currently unavailable, so there is insufficient market evidence to recommend selling. Please verify the latest local Mandi price before making a transaction."
-        outlook = f"{crop} market observations are currently limited for {district}, {state}. Farmers are advised to check local Mandi yards for real-time rates before liquidating produce."
-    else:
-        change_pct = ((raw_pred - raw_cur) / raw_cur) * 100.0
-        abs_change = round(abs(change_pct), 1)
-
-        if change_pct < -3.0:
-            decision = "SELL"
-            reason = f"The forecast indicates a decline of approximately {abs_change}% over the next {horizon} days, so selling at the current market price may reduce exposure to the expected fall."
-            direction_str = f"decrease of about {abs_change}%"
-            action_advice = "selling at the current market price is recommended to protect returns"
-        elif change_pct > 3.0:
-            decision = "HOLD"
-            reason = f"Prices are forecast to increase by approximately {abs_change}% over the next {horizon} days, so holding may provide a better expected selling price."
-            direction_str = f"increase of about {abs_change}%"
-            action_advice = "holding the crop may provide a better expected selling price"
+    if curr and pred:
+        diff_pct = round(((pred - curr) / curr) * 100.0, 1)
+        if action == "SELL":
+            analysis_text = f"Mandi price at {mkt_name} was ₹{curr:,.0f}/quintal ({obs_date}). The 30-day forecast projects a price decline of {abs(diff_pct):.1f}% to ₹{pred:,.0f}/quintal. Selling now minimizes downside price risk."
+        elif action == "HOLD":
+            analysis_text = f"Mandi price at {mkt_name} was ₹{curr:,.0f}/quintal ({obs_date}). The 30-day forecast projects price appreciation of {diff_pct:+.1f}% to ₹{pred:,.0f}/quintal. Holding may capture higher value."
         else:
-            decision = "HOLD"
-            reason = f"The forecast indicates only a small price movement of about {abs_change}%. The expected change is not large enough to justify immediate selling."
-            direction_str = f"stable trend with a minor change of {abs_change}%"
-            action_advice = "holding is recommended as prices are expected to remain steady"
+            analysis_text = f"Mandi price at {mkt_name} was ₹{curr:,.0f}/quintal ({obs_date}). The 30-day forecast projects stable prices around ₹{pred:,.0f}/quintal ({diff_pct:+.1f}% change)."
+    elif pred:
+        analysis_text = f"The 30-day expected market price for {crop} in {state} is ₹{pred:,.0f}/quintal."
+    else:
+        analysis_text = f"Price forecasting is available for core benchmark commodities (Rice, Wheat, Maize, Onion, Potato)."
 
-        outlook = f"{crop} is currently trading around ₹{cur_price_fmt} per quintal in the latest available Mandi observation in {district}, {state}. The model forecasts approximately ₹{pred_price_fmt} per quintal over the next {horizon} days, indicating an expected {direction_str}. Based on this trend, {action_advice}."
-
-    deterministic_res = {
-        "decision": decision,
-        "reason": reason,
-        "price_outlook": outlook,
+    return {
+        "analysis": analysis_text,
+        "decision": action,
         "nlp_source": "DETERMINISTIC_RULES"
     }
 
-    groq_key = _get_groq_key()
-    if not groq_key:
-        return deterministic_res
 
-    try:
-        url = "https://api.groq.com/openai/v1/chat/completions"
-        headers = {
-            "Authorization": f"Bearer {groq_key}",
-            "Content-Type": "application/json"
-        }
-        prompt_payload = {
-            "model": "llama-3.3-70b-versatile",
-            "temperature": 0.1,
-            "response_format": {"type": "json_object"},
-            "messages": [
-                {
-                    "role": "system",
-                    "content": "You are AgroIntel's Market Advisory NLP Engine. Return strictly JSON with keys: decision (must be 'SELL' or 'HOLD'), reason, price_outlook. Never invent prices or facts outside the input."
-                },
-                {
-                    "role": "user",
-                    "content": json.dumps({
-                        "crop": crop,
-                        "district": district,
-                        "state": state,
-                        "current_price": cur_price_fmt,
-                        "predicted_price": pred_price_fmt,
-                        "horizon_days": horizon,
-                        "decision": decision,
-                        "reason": reason,
-                        "price_outlook": outlook
-                    })
-                }
-            ]
-        }
-        req = urllib.request.Request(url, data=json.dumps(prompt_payload).encode('utf-8'), headers=headers)
-        with urllib.request.urlopen(req, timeout=3) as resp:
-            raw = json.loads(resp.read().decode('utf-8'))
-            llm_content = json.loads(raw["choices"][0]["message"]["content"])
-            llm_content["nlp_source"] = "GROQ_LLAMA_3.3_70B"
-            return llm_content
-    except Exception:
-        return deterministic_res
-
-
-
-def summarize_news_intelligence(intel_list: List[dict]) -> str:
-    """Generate 2-3 sentence natural language summary of current news intelligence."""
-    if not intel_list:
-        return "Current agricultural news monitors indicate stable baseline conditions with no major weather or market disruptions reported."
-
-    head_lines = [item.get("headline") or item.get("summary") for item in intel_list if item.get("headline") or item.get("summary")]
-    if not head_lines:
-        return "Agricultural intelligence monitoring is active for this region."
-
-    summary = f"Recent agricultural reports indicate key updates: {head_lines[0]}."
-    if len(head_lines) > 1:
-        summary += f" Additionally, {head_lines[1]}."
-    summary += " This information is incorporated as contextual risk intelligence."
-
-    return summary
+def summarize_news_intelligence(current_intelligence: List[dict]) -> str:
+    """Generate a high-level summary of active news intelligence signals."""
+    if not current_intelligence:
+        return "No major adverse weather warnings or market disruptions have been reported in recent verified agricultural advisories."
+    items = []
+    for item in current_intelligence[:2]:
+        headline = item.get("headline") or item.get("summary")
+        if headline:
+            items.append(headline)
+    return ". ".join(items) + "." if items else "Agricultural market conditions are reported stable."

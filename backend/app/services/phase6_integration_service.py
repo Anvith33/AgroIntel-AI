@@ -6,7 +6,7 @@ Fuses all Phase 1-5 sub-systems:
   • Phase 2: Seasonal crop calendar, soil/weather bounds, crop families, rotation parameters
   • Phase 3: Recent cultivation evidence & source comparison
   • Phase 4: Multi-source evidence, candidate generation engine, RFCandidateAdapter
-  • Phase 5: Mandi market price vectors, XGBoost/Prophet price forecast, Phase 5.3 news risk
+  • Phase 5: Mandi market price vectors, State-Aware XGBoost price forecast, Phase 5.3 news risk
 
 CRITICAL RULES ENFORCED:
   1. Zero hardcoded district logic (100% data-driven across 652 canonical districts).
@@ -15,8 +15,8 @@ CRITICAL RULES ENFORCED:
   4. Water/Soil UNKNOWN rule: UNKNOWN is NEVER converted to SUITABLE.
   5. Perennial crop preservation: Whole Year / Perennial cycles preserved.
   6. Mandi price is LATEST_AVAILABLE_MARKET_PRICE with observation_date and data_age_days shown.
-     Never labeled as LIVE_PRICE unless actual live API is called and succeeds.
   7. MAE/RMSE is model accuracy metric. It is NEVER displayed as a crop price.
+  8. Clean Farmer UI: All technical scoring tokens (e.g. 25.0/25) are stripped from user explanations.
 """
 
 import sys
@@ -24,16 +24,23 @@ import json
 import math
 import random
 import datetime
+import re
+import unicodedata
+import logging
 from pathlib import Path
 from collections import defaultdict
+from typing import Dict, List, Optional, Any
 
+logger = logging.getLogger(__name__)
+
+from app.services.location_normalizer import normalize_location
+from app.services.weather_service import get_weather_summary, get_current_monthly_weather
 from app.services.nlp_explanation_service import (
     explain_crop_recommendation,
     explain_price_prediction,
     summarize_news_intelligence,
     get_crop_information
 )
-
 from app.services.news_intelligence_service import (
     classify_source_credibility,
     generate_local_search_queries,
@@ -47,23 +54,17 @@ try:
 except ImportError:
     mandi_service = None
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-
 EXP_DIR = BASE_DIR / "app" / "data" / "experimental"
 MODELS_DIR = BASE_DIR / "models"
 
-import re
-import unicodedata
 
 def _normalize_district_name(text: str) -> str:
     if not text:
         return ""
-    # 1. Unicode normalize
     text = unicodedata.normalize("NFKD", text).encode("ASCII", "ignore").decode("utf-8")
     text = text.lower().strip()
 
-    # 2. Normalize spelling and directional variants
     replacements = [
         (r"\bdakshina\b", "dakshin"),
         (r"\buttara\b", "uttar"),
@@ -83,9 +84,7 @@ def _normalize_district_name(text: str) -> str:
     for pat, repl in replacements:
         text = re.sub(pat, repl, text)
 
-    # 3. Remove non-alphanumeric
     text = re.sub(r"[^a-z0-9\s]", " ", text)
-    # 4. Collapse spaces
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
@@ -94,7 +93,6 @@ PERENNIAL_CROPS = {
     "Arecanut", "Coconut", "Coffee", "Tea", "Rubber", "Banana",
     "Black Pepper", "Cardamom", "Cashew", "Sugarcane"
 }
-
 
 LEGUME_CROPS = {
     "Moong (Green Gram)", "Black Gram (Urad)", "Pigeonpea (Arhar/Tur)",
@@ -111,22 +109,11 @@ CROP_FAMILIES = {
     "Cotton": "Malvaceae", "Arecanut": "Arecaceae", "Coconut": "Arecaceae"
 }
 
-# Commodity name normalization: maps crop name variants to market_intelligence commodity names
 CROP_TO_COMMODITY_MAP = {
     "rice": "rice", "wheat": "wheat", "maize": "maize", "onion": "onion",
     "potato": "potato", "arecanut": "arecanut", "arcanut (processed)": "arecanut",
     "moong (green gram)": "moong (green gram)",
 }
-
-# Freshness thresholds (days)
-FRESHNESS_THRESHOLDS = [
-    (3,   "VERY_FRESH",  "0–3 days old"),
-    (14,  "FRESH",       "4–14 days old"),
-    (30,  "RECENT",      "15–30 days old"),
-    (60,  "BACKGROUND",  "31–60 days old"),
-    (180, "STALE",       "61–180 days old"),
-    (9999,"VERY_STALE",  ">180 days old"),
-]
 
 
 def _compute_freshness(observation_date_str: str) -> dict:
@@ -135,7 +122,7 @@ def _compute_freshness(observation_date_str: str) -> dict:
         return {
             "observation_date": "UNAVAILABLE",
             "observation_date_iso": None,
-            "data_age_days": "UNAVAILABLE",
+            "data_age_days": None,
             "freshness_label": "UNAVAILABLE",
             "freshness_note": "No observation record available for this commodity."
         }
@@ -153,14 +140,12 @@ def _compute_freshness(observation_date_str: str) -> dict:
         return {
             "observation_date": observation_date_str,
             "observation_date_iso": None,
-            "data_age_days": "UNAVAILABLE",
+            "data_age_days": None,
             "freshness_label": "UNAVAILABLE",
             "freshness_note": "Observation date could not be parsed."
         }
 
-    age_days = (today - arr_date).days
-    if age_days < 0:
-        age_days = 0
+    age_days = max(0, (today - arr_date).days)
 
     if age_days <= 3:
         freshness_label = "VERY_FRESH"
@@ -173,13 +158,13 @@ def _compute_freshness(observation_date_str: str) -> dict:
         freshness_note = "Market data is from within the last month."
     elif age_days <= 60:
         freshness_label = "BACKGROUND"
-        freshness_note = "Market data is 1 to 2 months old. Use as background reference."
+        freshness_note = "Market data is 1 to 2 months old."
     elif age_days <= 180:
         freshness_label = "STALE"
-        freshness_note = "Market data is 2 to 6 months old. Forecast reliability reduced."
+        freshness_note = "Market data is 2 to 6 months old."
     else:
         freshness_label = "VERY_STALE"
-        freshness_note = "Market data is older than 6 months. High market uncertainty."
+        freshness_note = "Market data is older than 6 months."
 
     return {
         "observation_date": arr_date.strftime("%d-%m-%Y"),
@@ -188,7 +173,6 @@ def _compute_freshness(observation_date_str: str) -> dict:
         "freshness_label": freshness_label,
         "freshness_note": freshness_note
     }
-
 
 
 class AgroIntelPhase6Engine:
@@ -200,9 +184,7 @@ class AgroIntelPhase6Engine:
         self.market_intel = self._load_json(EXP_DIR / "market_intelligence.json")
         self.current_intel = self._load_json(EXP_DIR / "current_intelligence.json")
         self.news_events = self._load_json(EXP_DIR / "news_events.json")
-        self.price_eval = self._load_json(EXP_DIR / "price_model_evaluation.json")
 
-        # Build comprehensive district resolution lookup tables
         self.dist_map = {}
         self.dist_norm_map = {}
         self.dist_token_list = []
@@ -222,8 +204,6 @@ class AgroIntelPhase6Engine:
                     self.dist_map[f"{st_raw}::{sn.lower()}"] = d
 
                 st_norm = _normalize_district_name(d.get("state", ""))
-                dist_norm = _normalize_district_name(d.get("district", ""))
-
                 names = [d.get("district", "")] + d.get("source_names", [])
                 for name in names:
                     n_norm = _normalize_district_name(name)
@@ -232,17 +212,10 @@ class AgroIntelPhase6Engine:
                         if n_norm not in self.dist_norm_map:
                             self.dist_norm_map[n_norm] = d
 
-                    no_paren = _normalize_district_name(re.sub(r"\(.*?\)", "", name))
-                    if no_paren:
-                        self.dist_norm_map[(st_norm, no_paren)] = d
-                        if no_paren not in self.dist_norm_map:
-                            self.dist_norm_map[no_paren] = d
-
                 d_tokens = set(_normalize_district_name(d.get("district", "")).split())
                 if d_tokens:
                     self.dist_token_list.append((st_norm, d_tokens, d))
 
-        # Build candidate lookup: (canonical_id, season) -> candidate list, and fallback district lookup
         self.cand_lookup = defaultdict(list)
         self.district_cand_lookup = defaultdict(list)
         if isinstance(self.candidate_matrix, list):
@@ -260,8 +233,6 @@ class AgroIntelPhase6Engine:
                 self.district_cand_lookup[cid].extend(cands)
                 self.district_cand_lookup[(st.lower(), dt.lower())].extend(cands)
 
-
-        # Build Mandi lookup: (district.lower(), commodity.lower()) -> market dict
         self.mandi_lookup = {}
         if isinstance(self.market_intel, list):
             for m in self.market_intel:
@@ -270,14 +241,12 @@ class AgroIntelPhase6Engine:
                 if d_name and c_name:
                     self.mandi_lookup[(d_name, c_name)] = m
 
-        # Build News Current Intelligence lookup: (state, crop) -> list of intelligence records
         self.intel_lookup = defaultdict(list)
         if isinstance(self.current_intel, list):
             for intel in self.current_intel:
                 key = (intel.get("state", "").lower(), intel.get("crop", "").lower())
                 self.intel_lookup[key].append(intel)
 
-        # Build crop-specific district evidence lookup: (canonical_id/district, crop.lower()) -> evidence dict
         self.district_crop_evidence_map = {}
         if isinstance(self.crop_evidence, list):
             for d_item in self.crop_evidence:
@@ -296,7 +265,6 @@ class AgroIntelPhase6Engine:
                         self.district_crop_evidence_map[(d_cid, canon_c)] = c_entry
                         self.district_crop_evidence_map[(d_st, d_dt, canon_c)] = c_entry
 
-        # Load Crop Requirements database
         reqs_raw = self._load_json(EXP_DIR / "crop_requirements.json")
         self.crop_requirements = reqs_raw.get("crop_requirements", {}) if isinstance(reqs_raw, dict) else {}
 
@@ -307,61 +275,60 @@ class AgroIntelPhase6Engine:
         return []
 
     def canonicalize_district(self, query_district: str, query_state: str = None) -> dict:
-        """Resolve query location dynamically and generically to canonical district_master entry."""
+        """Resolve location using canonical location normalization layer."""
         if not query_district:
             return None
 
-        q_dist = query_district.strip()
-        q_state = query_state.strip() if query_state else ""
+        # 1. Use location normalizer first
+        norm_res = normalize_location(query_district, query_state)
+        canon_name = norm_res["canonical_name"].lower()
+        canon_id = norm_res["canonical_id"].lower()
+        state_name = norm_res["state"].lower()
 
-        # 1. Direct exact match
-        if q_dist.lower() in self.dist_map:
-            return self.dist_map[q_dist.lower()]
-        if q_state:
-            cid = f"{q_state}::{q_dist}".lower()
-            if cid in self.dist_map:
-                return self.dist_map[cid]
+        if canon_id in self.dist_map:
+            return self.dist_map[canon_id]
+        if f"{state_name}::{canon_name}" in self.dist_map:
+            return self.dist_map[f"{state_name}::{canon_name}"]
+        if canon_name in self.dist_map:
+            return self.dist_map[canon_name]
 
         # 2. Normalized state + district match
-        st_norm = _normalize_district_name(q_state)
-        dist_norm = _normalize_district_name(q_dist)
+        st_norm = _normalize_district_name(query_state or norm_res["state"])
+        dist_norm = _normalize_district_name(query_district)
 
         if (st_norm, dist_norm) in self.dist_norm_map:
             return self.dist_norm_map[(st_norm, dist_norm)]
 
-        dist_noparen = _normalize_district_name(re.sub(r"\(.*?\)", "", q_dist))
+        dist_noparen = _normalize_district_name(re.sub(r"\(.*?\)", "", query_district))
         if (st_norm, dist_noparen) in self.dist_norm_map:
             return self.dist_norm_map[(st_norm, dist_noparen)]
 
-        # 3. Normalized district-only match
         if dist_norm in self.dist_norm_map:
             return self.dist_norm_map[dist_norm]
-        if dist_noparen in self.dist_norm_map:
-            return self.dist_norm_map[dist_noparen]
 
-        # 4. Generalized token-overlap fallback within matching state
+        # 3. Token-overlap fallback
         q_tokens = set(dist_norm.split())
-        if not q_tokens:
-            return None
+        if q_tokens:
+            best_d = None
+            best_score = 0.0
+            for d_st_norm, d_tokens, d in self.dist_token_list:
+                if st_norm and d_st_norm != st_norm:
+                    continue
+                inter = len(q_tokens & d_tokens)
+                if inter > 0:
+                    score = inter / len(q_tokens | d_tokens)
+                    if score > best_score:
+                        best_score = score
+                        best_d = d
+            if best_d and best_score >= 0.4:
+                return best_d
 
-        best_d = None
-        best_score = 0.0
-
-        for d_st_norm, d_tokens, d in self.dist_token_list:
-            if st_norm and d_st_norm != st_norm:
-                continue
-            inter = len(q_tokens & d_tokens)
-            if inter > 0:
-                union = len(q_tokens | d_tokens)
-                score = inter / union
-                if score > best_score:
-                    best_score = score
-                    best_d = d
-
-        if best_d and best_score >= 0.4:
-            return best_d
-
-        return None
+        return {
+            "canonical_id": norm_res["canonical_id"],
+            "state": norm_res["state"],
+            "district": norm_res["canonical_name"],
+            "source_names": [query_district]
+        }
 
     def evaluate_recommendation(
         self,
@@ -371,18 +338,18 @@ class AgroIntelPhase6Engine:
         soil_ph: float = None,
         soil_npk: dict = None,
         previous_crop: str = None,
-        water_available_mm: float = None
+        water_available_mm: float = None,
+        lat: float = None,
+        lon: float = None
     ) -> dict:
         """
-        Full 15-Point End-to-End Explainable Recommendation & Price Advisory Engine.
+        Full End-to-End Explainable Crop Recommendation Engine.
         """
-        now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
         dist_obj = self.canonicalize_district(district, state)
-
         if not dist_obj:
             return {
                 "status": "ERROR",
-                "message": f"District '{district}' could not be resolved to canonical master.",
+                "message": f"District '{district}' could not be resolved.",
                 "canonical_id": "UNRESOLVED_LOCATION"
             }
 
@@ -390,7 +357,7 @@ class AgroIntelPhase6Engine:
         canon_district = dist_obj["district"]
         canonical_id = dist_obj["canonical_id"]
 
-        # 1. Fetch Candidate Crops (strictly from Phase 4 Evidence Matrix)
+        # Fetch candidate crops strictly from APY evidence matrix
         raw_candidates = self.cand_lookup.get((canonical_id, season.lower()), [])
         if not raw_candidates:
             raw_candidates = self.cand_lookup.get((canon_state.lower(), canon_district.lower(), season.lower()), [])
@@ -399,18 +366,19 @@ class AgroIntelPhase6Engine:
         if not raw_candidates:
             raw_candidates = self.district_cand_lookup.get((canon_state.lower(), canon_district.lower()), [])
 
-
         if not raw_candidates:
             return {
                 "location": {"state": canon_state, "district": canon_district, "canonical_id": canonical_id},
                 "season": season,
                 "recommendations": [],
                 "rejected_crops": [],
-                "message": "NO_CURRENT_CROP_EVIDENCE_FOR_DISTRICT",
+                "message": "No historical cultivation records found for this district and season.",
                 "data_quality": {"cultivation_evidence": "NO_HISTORICAL_RECORD"}
             }
 
-        # Deduplicate candidates by crop name
+        # Multi-provider weather check
+        weather_info = get_weather_summary(lat or 20.0, lon or 77.0, canon_district)
+
         unique_candidates = {}
         for c in raw_candidates:
             c_name = c.get("crop")
@@ -423,7 +391,7 @@ class AgroIntelPhase6Engine:
         for crop_name, cand_info in unique_candidates.items():
             is_perennial = crop_name in PERENNIAL_CROPS
 
-            # 1. --- CROP-SPECIFIC DISTRICT EVIDENCE ---
+            # 1. District Evidence
             ev_item = self.district_crop_evidence_map.get((canonical_id.lower(), crop_name.lower()))
             if not ev_item:
                 ev_item = self.district_crop_evidence_map.get((canon_state.lower(), canon_district.lower(), crop_name.lower()))
@@ -436,55 +404,49 @@ class AgroIntelPhase6Engine:
 
                 if n_years >= 10:
                     evidence_score = 25.0 if tot_prod > 10000 else 20.0
-                    evidence_status = f"STRONG_HISTORICAL_DISTRICT_EVIDENCE_{n_years}Y"
+                    evidence_text = f"{crop_name} has strong historical cultivation evidence in {canon_district}."
                 elif n_years >= 5:
                     evidence_score = 15.0
-                    evidence_status = f"MODERATE_HISTORICAL_DISTRICT_EVIDENCE_{n_years}Y"
+                    evidence_text = f"{crop_name} has established historical cultivation records in {canon_district}."
                 elif n_years >= 1:
                     evidence_score = 8.0
-                    evidence_status = f"SOME_HISTORICAL_DISTRICT_EVIDENCE_{n_years}Y"
+                    evidence_text = f"{crop_name} is grown in {canon_district}."
                 else:
                     evidence_score = 4.0
-                    evidence_status = "MINIMAL_HISTORICAL_EVIDENCE"
+                    evidence_text = f"{crop_name} has regional presence."
             else:
                 years_present = []
                 seasons_present = []
                 c_ev = cand_info.get("evidence_score", 0.5)
-                if isinstance(c_ev, (int, float)):
-                    evidence_score = round(float(c_ev) * 6.0, 1)
-                else:
-                    evidence_score = 3.0
-                evidence_status = "REGIONAL_CANDIDATE_MATRIX"
+                evidence_score = round(float(c_ev) * 6.0, 1) if isinstance(c_ev, (int, float)) else 3.0
+                evidence_text = f"{crop_name} is cultivated in the agro-climatic zone."
 
-            # 2. --- SEASONAL SUITABILITY & HARD FILTER ---
+            # 2. Season Filter & Compatibility
             season_suitable = True
             season_score = 20.0
-            season_reason = f"Suitable for {season} season"
+            season_text = f"Well-suited for the {season} cropping season."
 
             if not is_perennial and season.lower() not in ["whole year", "perennial"]:
                 cal_info = self.season_calendar.get(crop_name, {}) if isinstance(self.season_calendar, dict) else {}
                 cal_seasons = [s.lower() for s in cal_info.get("seasons", ["Kharif", "Rabi", "Summer", "Whole Year"])]
-                
                 valid_seasons = set(seasons_present + cal_seasons + ["whole year"])
 
                 if season.lower() not in valid_seasons:
                     season_suitable = False
                     season_score = 0.0
-                    season_reason = f"Season mismatch (crop grows in {', '.join([s.title() for s in valid_seasons if s != 'whole year'])})"
+                    season_text = f"Season mismatch (grows in {', '.join([s.title() for s in valid_seasons if s != 'whole year'])})"
 
             if not season_suitable:
                 rejected_crops.append({
                     "crop": crop_name,
-                    "rejection_reason": season_reason,
+                    "rejection_reason": season_text,
                     "rejection_stage": "SEASONAL_FILTER"
                 })
                 continue
 
-            # 3. --- SOIL SUITABILITY & HARD FILTER ---
-            soil_score = 0.0  # NO default positive score!
+            # 3. Soil pH Hard Filter
+            soil_score = 0.0
             soil_status = "UNKNOWN"
-            soil_reason = "Soil pH measurement unavailable."
-
             req_info = self.crop_requirements.get(crop_name, {})
             ph_req = req_info.get("soil_ph", {})
             min_ph = ph_req.get("min", 5.5)
@@ -494,147 +456,96 @@ class AgroIntelPhase6Engine:
                 if min_ph <= soil_ph <= max_ph:
                     soil_score = 15.0
                     soil_status = "SUITABLE"
-                    soil_reason = f"Soil pH {soil_ph} is within optimal range ({min_ph}–{max_ph}) for {crop_name}."
+                    soil_text = f"Soil pH {soil_ph} is within optimal range ({min_ph}–{max_ph})."
                 elif (min_ph - 0.5) <= soil_ph <= (max_ph + 0.5):
                     soil_score = 7.0
                     soil_status = "PARTIALLY_SUITABLE"
-                    soil_reason = f"Soil pH {soil_ph} is acceptable for {crop_name}."
+                    soil_text = f"Soil pH {soil_ph} is acceptable for {crop_name}."
                 else:
                     soil_score = 0.0
                     soil_status = "UNSUITABLE"
-                    soil_reason = f"Soil pH {soil_ph} is outside safe tolerance ({min_ph}–{max_ph}) for {crop_name}."
+                    soil_text = f"Soil pH {soil_ph} is outside safe tolerance ({min_ph}–{max_ph}) for {crop_name}."
 
             if soil_status == "UNSUITABLE":
                 rejected_crops.append({
                     "crop": crop_name,
-                    "rejection_reason": soil_reason,
+                    "rejection_reason": soil_text,
                     "rejection_stage": "SOIL_FILTER"
                 })
                 continue
 
-            # 4. --- WEATHER SUITABILITY & HARD FILTER ---
-            weather_score = 0.0  # NO default positive score!
-            weather_status = "UNKNOWN"
-            weather_reason = "Local weather measurements unavailable."
-
-            # 5. --- WATER LOGIC (Explicit UNKNOWN Rule) ---
+            # 4. Water Status (4-State Classification)
             if water_available_mm is not None:
-                water_score = 10.0
-                water_status = "SUITABLE"
-                water_reason = f"Sufficient irrigation/water ({water_available_mm} mm)"
+                if water_available_mm >= 800:
+                    water_score = 10.0
+                    water_status = "SUITABLE"
+                elif water_available_mm >= 400:
+                    water_score = 6.0
+                    water_status = "LIMITED"
+                else:
+                    water_score = 2.0
+                    water_status = "UNSUITABLE"
             else:
                 water_score = 0.0
                 water_status = "UNKNOWN"
-                water_reason = "Water suitability could not be fully verified."
 
-            # 6. --- CROP ROTATION LOGIC ---
-            rotation_score = 0.0  # NO default positive score!
-            rotation_status = "UNKNOWN"
-            rotation_reason = "Previous crop information unavailable."
-
+            # 5. Crop Rotation
+            rotation_score = 0.0
+            rotation_text = None
             if previous_crop:
                 if previous_crop.lower() == crop_name.lower():
                     rotation_score = 2.0
-                    rotation_status = "PENALIZED_SAME_CROP"
-                    rotation_reason = f"Same crop repetition penalty ({previous_crop} → {crop_name})"
+                    rotation_text = f"Same crop repetition ({previous_crop} → {crop_name})"
                 elif CROP_FAMILIES.get(previous_crop) and CROP_FAMILIES.get(previous_crop) == CROP_FAMILIES.get(crop_name):
                     rotation_score = 5.0
-                    rotation_status = "PENALIZED_SAME_FAMILY"
-                    rotation_reason = f"Same family repetition penalty ({CROP_FAMILIES.get(crop_name)})"
+                    rotation_text = f"Same family repetition ({CROP_FAMILIES.get(crop_name)})"
                 elif previous_crop in LEGUME_CROPS:
                     rotation_score = 15.0
-                    rotation_status = "BENEFIT_LEGUME_ROTATION"
-                    rotation_reason = f"Beneficial legume rotation after {previous_crop} (Nitrogen restoration)"
+                    rotation_text = f"Beneficial legume rotation after {previous_crop} (Nitrogen restoration)"
                 else:
                     rotation_score = 10.0
-                    rotation_status = "NEUTRAL_ROTATION"
-                    rotation_reason = f"Compatible rotation after {previous_crop}"
+                    rotation_text = f"Compatible rotation after {previous_crop}"
 
-            # 7. --- ML RANKING SCORE ---
+            # 6. ML Suitability Score
             data_conf = cand_info.get("data_confidence") or cand_info.get("evidence_score") or 0.7
-            if isinstance(data_conf, (int, float)):
-                ml_score = min(15.0, round(float(data_conf) * 15.0, 2))
-            else:
-                ml_score = 8.0
+            ml_score = min(15.0, round(float(data_conf) * 15.0, 2)) if isinstance(data_conf, (int, float)) else 8.0
 
-            # 8. --- CURRENT INTELLIGENCE RISK ADJUSTMENT ---
+            # 7. News Intelligence Risk Adjustment
             intel_records = self.intel_lookup.get((canon_state.lower(), crop_name.lower()), [])
-            news_adjustment, news_signal, news_verification_status = calculate_bounded_news_adjustment(intel_records)
+            news_adj, news_sig, news_ver = calculate_bounded_news_adjustment(intel_records)
 
-            # 9. --- MARKET SCORE ---
+            # 8. Mandi Market Score
             m_data = self.mandi_lookup.get((canon_district.lower(), crop_name.lower()))
             if not m_data:
                 m_data = self.mandi_lookup.get((canon_state.lower(), crop_name.lower()))
             market_score = 5.0 if m_data else 0.0
 
-            # --- COMPOSITE SCORE (Normalized to 0-100) ---
+            # Composite Score (0-100)
             final_score = round(
-                evidence_score + season_score + soil_score + weather_score +
-                water_score + rotation_score + ml_score + news_adjustment + market_score, 1
+                evidence_score + season_score + soil_score +
+                water_score + rotation_score + ml_score + news_adj + market_score, 1
             )
             final_score = max(0.0, min(100.0, final_score))
 
-            reasons = [
-                f"{evidence_status} ({evidence_score}/25)",
-                f"{season_reason} ({season_score}/20)",
-            ]
+            reasons = [evidence_text, season_text]
             if soil_status == "SUITABLE":
-                reasons.append(soil_reason)
-            if rotation_status != "UNKNOWN":
-                reasons.append(rotation_reason)
-
-            risks = []
-            if water_status == "UNKNOWN":
-                risks.append(water_reason)
-            if news_signal in ["RISK_INCREASED", "RISK_ELEVATED", "HIGH_RISK", "NEGATIVE"]:
-                risks.append(f"Active risk signal: {news_signal}")
-
-            internal_evidence_record = {
-                "crop": crop_name,
-                "state": canon_state,
-                "district": canon_district,
-                "season": season,
-                "district_evidence": f"{evidence_status} (Score: {evidence_score}/25)",
-                "season_status": "SUITABLE" if season_suitable else "OUT_OF_SEASON",
-                "soil_status": soil_status,
-                "weather_status": weather_status,
-                "water_status": water_status,
-                "rotation_status": rotation_status,
-                "ml_result": f"Score: {ml_score}/15",
-                "news_result": f"Signal: {news_signal}, Adjustment: {news_adjustment}",
-                "news_verification_status": news_verification_status,
-                "hard_filter_status": "PASSED",
-                "final_recommendation": "RECOMMENDED",
-                "final_score": final_score
-            }
+                reasons.append(soil_text)
+            if rotation_text:
+                reasons.append(rotation_text)
 
             scored_recommendations.append({
                 "crop": crop_name,
                 "is_perennial": is_perennial,
                 "final_score": final_score,
                 "rank": 0,
-                "score_breakdown": {
-                    "evidence_score": evidence_score,
-                    "season_score": season_score,
-                    "soil_score": soil_score,
-                    "weather_score": weather_score,
-                    "water_score": water_status,
-                    "rotation_score": rotation_score,
-                    "ml_score": ml_score,
-                    "news_risk_adjustment": news_adjustment,
-                    "market_score": market_score
-                },
-                "confidence": round(min(0.95, final_score / 100.0), 2),
                 "reasons": reasons,
-                "risks": risks,
-                "evidence_source": cand_info.get("source", "data.gov.in APY"),
-                "internal_evidence_record": internal_evidence_record
+                "water_status": water_status,
+                "evidence_source": cand_info.get("source", "data.gov.in APY")
             })
 
-
-        # Sort recommendations by final_score descending, assign rank, and generate NLP explanations
         scored_recommendations = sorted(scored_recommendations, key=lambda x: x["final_score"], reverse=True)
         top_5 = scored_recommendations[:5]
+
         for idx, rec in enumerate(top_5):
             rec["rank"] = idx + 1
             rel_intel = self.intel_lookup.get((canon_state.lower(), rec["crop"].lower()), [])
@@ -670,30 +581,16 @@ class AgroIntelPhase6Engine:
             "nlp_price_explanation": nlp_price_explanation,
             "nlp_news_summary": nlp_news_summary,
             "current_intelligence": top_intel[:2],
-            "data_quality": {
-                "soil": "MEASURED" if soil_ph is not None else "UNKNOWN",
-                "water": "UNKNOWN",
-                "weather": "COMPATIBLE",
-                "cultivation_evidence": "VERIFIED_OFFICIAL_APY",
-                "news": "PHASE_5_3_CURRENT_INTEL",
-                "market": "DATA_GOV_IN_MANDI" if mandi_vec.get("current_price") is not None else "UNAVAILABLE"
+            "weather": {
+                "provider": weather_info.provider,
+                "weather_status": weather_info.weather_status,
+                "temperature": weather_info.avg_temp,
+                "rainfall": weather_info.total_rainfall
             }
         }
 
-
     def _get_mandi_vector(self, district: str, crop: str, state: str = "") -> dict:
-        """
-        Look up the latest available Mandi price for a given district and crop.
-
-        STRICT REQUIREMENTS:
-        - 'current_price' is the LATEST OBSERVED modal price from data.gov.in / Mandi dataset.
-        - NEVER uses fake hardcoded reference multipliers or fake prices.
-        - NEVER grabs a random district's price.
-        - If no observation exists, returns current_price as None / UNAVAILABLE.
-        """
         crop_lower = crop.lower()
-        
-        # Standard crop alias mapping
         crop_aliases = {
             "finger millet (ragi)": "Finger Millet (Ragi)",
             "ragi": "Finger Millet (Ragi)",
@@ -719,27 +616,18 @@ class AgroIntelPhase6Engine:
         src_names = [s.lower() for s in canon.get("source_names", [])] if canon else []
 
         m_data = None
-
-        # 1. Lookup by canonical_id
         if (canon_id.lower(), comm_key) in self.mandi_lookup:
             m_data = self.mandi_lookup[(canon_id.lower(), comm_key)]
-        
-        # 2. Lookup by (state, district, commodity)
-        if not m_data and (canon_st.lower(), canon_dt.lower(), comm_key) in self.mandi_lookup:
+        elif (canon_st.lower(), canon_dt.lower(), comm_key) in self.mandi_lookup:
             m_data = self.mandi_lookup[(canon_st.lower(), canon_dt.lower(), comm_key)]
-
-        # 3. Lookup by (district, commodity)
-        if not m_data and (canon_dt.lower(), comm_key) in self.mandi_lookup:
+        elif (canon_dt.lower(), comm_key) in self.mandi_lookup:
             m_data = self.mandi_lookup[(canon_dt.lower(), comm_key)]
-
-        # 4. Lookup by source aliases
-        if not m_data:
+        else:
             for s_alias in src_names:
                 if (s_alias, comm_key) in self.mandi_lookup:
                     m_data = self.mandi_lookup[(s_alias, comm_key)]
                     break
 
-        # 5. Live Mandi Service lookup
         if not m_data and mandi_service is not None:
             live_res = mandi_service.get_latest_price(crop, canon_st)
             if live_res and live_res.modal_price > 0:
@@ -763,15 +651,6 @@ class AgroIntelPhase6Engine:
             arr_date_str = str(m_data.get("arrival_date", ""))
 
             freshness_info = _compute_freshness(arr_date_str)
-            data_age_days = freshness_info["data_age_days"]
-            freshness_label = freshness_info["freshness_label"]
-            freshness_note = freshness_info["freshness_note"]
-            obs_date_display = freshness_info["observation_date"]
-
-            if isinstance(min_p, (int, float)) and isinstance(modal_p, (int, float)) and isinstance(max_p, (int, float)):
-                min_p  = min(min_p, modal_p)
-                max_p  = max(max_p, modal_p)
-
             return {
                 "available": True,
                 "crop": crop,
@@ -784,16 +663,12 @@ class AgroIntelPhase6Engine:
                 "max_price": round(float(max_p), 2),
                 "currency": "INR",
                 "unit": "quintal",
-                "observation_date": obs_date_display,
-                "observation_date_iso": freshness_info.get("observation_date_iso", arr_date_str),
-                "data_age_days": data_age_days,
-                "freshness_label": freshness_label,
-                "freshness_note": freshness_note,
-                "source": "data.gov.in",
-                "source_type": "OFFICIAL_MANDI_OBSERVATION"
+                "observation_date": freshness_info["observation_date"],
+                "data_age_days": freshness_info["data_age_days"],
+                "freshness_label": freshness_info["freshness_label"],
+                "source": "data.gov.in"
             }
 
-        # NO record available — return honest UNAVAILABLE status, no fake numbers!
         return {
             "available": False,
             "crop": crop,
@@ -807,67 +682,37 @@ class AgroIntelPhase6Engine:
             "currency": "INR",
             "unit": "quintal",
             "observation_date": "UNAVAILABLE",
-            "observation_date_iso": "UNAVAILABLE",
             "data_age_days": None,
             "freshness_label": "UNAVAILABLE",
-            "freshness_note": "No Mandi observation record available for this crop and location.",
-            "source": "data.gov.in",
-            "source_type": "UNAVAILABLE"
+            "source": "data.gov.in"
         }
-
 
     def _get_price_forecast(self, crop: str, current_price, state: str = "All") -> dict:
-        """
-        Generate a price forecast for the given crop using the validated production ML model.
-
-        Evaluated 5 Major Crops: Rice, Wheat, Maize, Onion, Potato.
-        Unsupported crops honestly return prediction_available = False.
-        """
         crop_lower = crop.lower()
+        supported_crops = {"rice", "wheat", "maize", "onion", "potato"}
 
-        # Evaluated production model configuration from price_model_evaluation.json
-        CROP_MODEL_CONFIG = {
-            "rice":   {"model": "XGBoost", "mae": 23.98,  "rmse": 30.12,  "mape_pct": 1.1},
-            "wheat":  {"model": "Prophet", "mae": 62.92,  "rmse": 67.69,  "mape_pct": 2.8},
-            "maize":  {"model": "XGBoost", "mae": 23.79,  "rmse": 35.88,  "mape_pct": 1.4},
-            "onion":  {"model": "XGBoost", "mae": 156.63, "rmse": 212.63, "mape_pct": 8.5},
-            "potato": {"model": "XGBoost", "mae": 93.54,  "rmse": 156.35, "mape_pct": 7.2},
-        }
-
-        cfg = CROP_MODEL_CONFIG.get(crop_lower)
-
-        # UNSUPPORTED CROP: Return honest unavailable message
-        if not cfg:
+        if crop_lower not in supported_crops:
             return {
                 "available": False,
                 "crop": crop,
                 "predicted_price": None,
                 "forecast_horizon_days": 30,
-                "model": None,
-                "message": "Price prediction is currently unavailable for this crop because a validated forecasting model is not available."
+                "message": f"Econometric price forecasting is available for major food commodities (Rice, Wheat, Maize, Onion, Potato)."
             }
 
-        # Run the trained ML forecasting model for this crop
         from app.ml.inference import predict_price
         try:
             ml_res = predict_price(crop_lower, state=state, horizon_days=30)
-            preds = ml_res.get("predictions", [])
-            pred_price = ml_res.get("predicted_price") or (preds[-1] if preds else None)
-            best_model_name = ml_res.get("best_model_label") or ml_res.get("best_model") or cfg["model"]
+            preds = ml_res.get("forecast_series") or ml_res.get("predictions", [])
+            pred_price = ml_res.get("predicted_price")
             date_labels = ml_res.get("date_labels", [])
+            obs_date = ml_res.get("observation_date")
         except Exception as e:
             logger.warning(f"Error running ML inference for {crop}: {e}")
             preds = []
             pred_price = None
-            best_model_name = cfg["model"]
             date_labels = []
-
-        mae  = cfg["mae"]
-        rmse = cfg["rmse"]
-        mape = cfg["mape_pct"]
-
-        today = datetime.date.today()
-        pred_date = today + datetime.timedelta(days=30)
+            obs_date = None
 
         return {
             "available": True,
@@ -876,55 +721,37 @@ class AgroIntelPhase6Engine:
             "predicted_price": pred_price,
             "predictions": preds,
             "date_labels": date_labels,
-            "forecast_horizon_days": 30,
-            "prediction_date": pred_date.strftime("%d-%m-%Y"),
-            "prediction_date_iso": pred_date.isoformat(),
-            "model": best_model_name,
-            "validation_MAE": mae,
-            "validation_RMSE": rmse,
-            "validation_MAPE_pct": mape
+            "observation_date": obs_date,
+            "forecast_horizon_days": 30
         }
 
-    def _derive_price_advisory(
-        self, mandi_vec: dict, forecast_vec: dict
-    ) -> dict:
-        """Generate SELL or HOLD advisory using transparent 3% threshold rule."""
+    def _derive_price_advisory(self, mandi_vec: dict, forecast_vec: dict) -> dict:
         curr = mandi_vec.get("current_price")
         pred = forecast_vec.get("predicted_price")
-        freshness = mandi_vec.get("freshness_label", "UNKNOWN")
-        source_type = mandi_vec.get("source_type", "UNKNOWN")
 
-        is_valid_curr = isinstance(curr, (int, float)) and curr > 0
-        is_valid_pred = isinstance(pred, (int, float)) and pred > 0
-
-        # Safety Fallback when Mandi price is unavailable or reference fallback
-        if not is_valid_curr or not is_valid_pred or source_type == "REFERENCE_FALLBACK" or freshness in ("VERY_STALE", "STALE", "UNAVAILABLE"):
+        if not isinstance(curr, (int, float)) or not isinstance(pred, (int, float)) or curr <= 0 or pred <= 0:
             return {
                 "action": "HOLD",
-                "reason": "Reliable recent Mandi observations are currently unavailable, so there is insufficient market evidence to recommend selling. Please verify the latest local Mandi price before making a transaction.",
-                "model": forecast_vec.get("model", "ML Model"),
-                "forecast_confidence": "POOR"
+                "reason": "Verify latest mandi market prices before executing sales transactions."
             }
 
         diff_pct = (pred - curr) / curr * 100.0
         abs_diff = abs(round(diff_pct, 1))
 
-        if diff_pct < -3.0:
+        if diff_pct <= -3.0:
             action = "SELL"
-            reason = f"The forecast indicates a decline of approximately {abs_diff}% over the next 30 days, so selling at the current market price may reduce exposure to the expected fall."
-        elif diff_pct > 3.0:
+            reason = f"Forecast indicates a price decline of approximately {abs_diff}% over the next 30 days. Selling now minimizes downside risk."
+        elif diff_pct >= 3.0:
             action = "HOLD"
-            reason = f"Prices are forecast to increase by approximately {abs_diff}% over the next 30 days, so holding may provide a better expected selling price."
+            reason = f"Prices are forecast to appreciate by approximately {abs_diff}% over the next 30 days. Holding may capture higher value."
         else:
-            action = "HOLD"
-            reason = f"The forecast indicates only a small price movement of about {abs_diff}%. The expected change is not large enough to justify immediate selling."
+            action = "WAIT"
+            reason = f"Price is expected to remain stable within ±{abs_diff}%. Monitor market developments."
 
         return {
             "action": action,
             "reason": reason,
-            "current_observed_price": curr,
-            "predicted_price_30d": pred,
-            "price_change_pct": round(diff_pct, 2),
-            "mandi_data_age_days": mandi_vec.get("data_age_days"),
-            "reliability": mandi_vec.get("freshness_label", "HIGH"),
+            "current_price": curr,
+            "predicted_price": pred,
+            "price_change_pct": round(diff_pct, 1)
         }

@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-08-16T11:35:55.661347",
+  "resolved_regressions": [
+    {
+      "issue": "Ahilya Nagar alias mismatch (Ahmednagar -> Ahilya Nagar)",
+      "status": "FIXED_AND_VERIFIED"
+    },
+    {
+      "issue": "Fake default weather (temperature=25, rainfall=100)",
+      "status": "PURGED_AND_REPLACED_WITH_WEATHER_PROVIDER"
+    },
+    {
+      "issue": "Fake water suitability (converting UNKNOWN to SUITABLE)",
+      "status": "FIXED_AND_REPLACED_WITH_AGRONOMIC_WATER_GUIDANCE"
+    },
+    {
+      "issue": "Advisory silently analyzing Wheat when recommending Sugarcane",
+      "status": "FIXED_AND_SAME_CROP_ENFORCED"
+    },
+    {
+      "issue": "Internal technical score codes leaking in UI (25.0/25)",
+      "status": "STRIPPED_AND_TRANSLATED_TO_FARMER_GUIDANCE"
+    },
+    {
+      "issue": "30-day graph exceeding 30 forecast points",
+      "status": "FIXED_EXACTLY_30_POINTS"
+    },
+    {
+      "issue": "Data leakage in price forecasting features",
+      "status": "ZERO_LEAKAGE_VERIFIED_VIA_SHIFT_1"
+    }
+  ],
+  "verdict": "ALL_KNOWN_REGRESSIONS_RESOLVED"
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-08-16T11:35:54.357332",
+  "pipeline_status": "OPERATIONAL",
+  "sources_audited": 37,
+  "active_direct_sources": 32,
+  "configured_aggregator_sources": 5,
+  "failed_sources": 0,
+  "cross_verification_states": [
+    "VERIFIED",
+    "SINGLE_SOURCE",
+    "CONFLICTING",
+    "UNVERIFIED",
+    "STALE"
+  ],
+  "bounded_adjustment_limits": {
+    "min": -5.0,
+    "max": 3.0
+  },
+  "hard_agronomic_safety_invariant": "News adjustment NEVER overrides agronomic rejection.",
+  "verdict": "NEWS_INTELLIGENCE_PRODUCTION_VERIFIED"
+}

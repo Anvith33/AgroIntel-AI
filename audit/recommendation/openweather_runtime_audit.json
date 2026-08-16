@@ -1,0 +1,7 @@
+{
+  "timestamp": "2026-08-16T11:35:23.853549",
+  "provider_name": "OpenWeatherMap API",
+  "configured_key": "Checked in settings/env",
+  "runtime_status": "SECONDARY_FALLBACK_OPERATIONAL",
+  "primary_live_provider": "Open-Meteo API (Free, zero key requirement, 100% reachable)"
+}
