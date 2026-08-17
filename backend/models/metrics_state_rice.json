@@ -1,7 +1,7 @@
 {
   "crop": "rice",
   "best_algorithm": "state_aware_xgboost",
-  "trained_at": "2026-08-17T09:53:19.158500+00:00",
+  "trained_at": "2026-08-17T17:36:30.479704+00:00",
   "training_time_seconds": 0.94,
   "train_samples": 28339,
   "test_samples": 5798,

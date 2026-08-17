@@ -15,6 +15,7 @@ Never crashes on single-source failure.
 import hashlib
 import json
 import logging
+import re
 import time
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -65,10 +66,7 @@ class NewsIngestionJob:
     def _clean_text(raw_text: str) -> str:
         if not raw_text:
             return ""
-        # Remove basic XML/HTML tags
-        clean = re_tag.sub(" ", raw_text) if "re_tag" in globals() else raw_text
-        import re
-        clean = re.sub(r"<[^>]+>", " ", clean)
+        clean = re.sub(r"<[^>]+>", " ", raw_text)
         clean = re.sub(r"\s+", " ", clean).strip()
         return clean
 
@@ -248,7 +246,6 @@ class NewsIngestionJob:
 
 
 if __name__ == "__main__":
-    Tuple_Result = Any
     job = NewsIngestionJob()
     res = job.run()
     print(json.dumps({k: v for k, v in res.items() if k != "sources_status"}, indent=2))

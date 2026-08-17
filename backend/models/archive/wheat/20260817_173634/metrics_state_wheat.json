@@ -1,8 +1,8 @@
 {
   "crop": "wheat",
   "best_algorithm": "state_aware_xgboost",
-  "trained_at": "2026-08-17T17:36:31.376193+00:00",
-  "training_time_seconds": 0.89,
+  "trained_at": "2026-08-17T09:53:19.983868+00:00",
+  "training_time_seconds": 0.81,
   "train_samples": 18784,
   "test_samples": 3938,
   "holdout_mae": 79.0,

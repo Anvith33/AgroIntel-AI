@@ -258,7 +258,6 @@ class ModelValidationJob:
 
 
 if __name__ == "__main__":
-    Tuple_Sim = Any
     job = ModelValidationJob()
     res = job.run()
     print(json.dumps(res, indent=2))

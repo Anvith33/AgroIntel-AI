@@ -1,7 +1,7 @@
 {
   "job_name": "validate_models",
-  "timestamp": "2026-08-17T09:53:23.287525+00:00",
-  "execution_time_seconds": 0.17,
+  "timestamp": "2026-08-17T17:36:34.931416+00:00",
+  "execution_time_seconds": 0.16,
   "promoted_crops_count": 5,
   "rejected_crops_count": 0,
   "promoted_crops": [
@@ -16,9 +16,9 @@
     "rice": {
       "crop": "rice",
       "decision": "PROMOTE",
-      "reason": "Candidate passed all safety checks. Candidate MAE: 93.81 (Production: 94.45386291693391)",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 93.81 (Production: 93.81)",
       "candidate_mae": 93.81,
-      "production_mae": 94.45386291693391,
+      "production_mae": 93.81,
       "sample_30d_forecast_head": [
         2203.83,
         2179.08,
@@ -44,9 +44,9 @@
     "wheat": {
       "crop": "wheat",
       "decision": "PROMOTE",
-      "reason": "Candidate passed all safety checks. Candidate MAE: 79.0 (Production: 79.84246795049835)",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 79.0 (Production: 79.0)",
       "candidate_mae": 79.0,
-      "production_mae": 79.84246795049835,
+      "production_mae": 79.0,
       "sample_30d_forecast_head": [
         2357.55,
         2359.6,
@@ -72,9 +72,9 @@
     "maize": {
       "crop": "maize",
       "decision": "PROMOTE",
-      "reason": "Candidate passed all safety checks. Candidate MAE: 84.3 (Production: 85.13542323239213)",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 84.3 (Production: 84.3)",
       "candidate_mae": 84.3,
-      "production_mae": 85.13542323239213,
+      "production_mae": 84.3,
       "sample_30d_forecast_head": [
         2328.42,
         2378.52,
@@ -100,9 +100,9 @@
     "onion": {
       "crop": "onion",
       "decision": "PROMOTE",
-      "reason": "Candidate passed all safety checks. Candidate MAE: 1642.16 (Production: 1643.672685579711)",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 1642.16 (Production: 1642.16)",
       "candidate_mae": 1642.16,
-      "production_mae": 1643.672685579711,
+      "production_mae": 1642.16,
       "sample_30d_forecast_head": [
         6771.47,
         6431.87,
@@ -128,9 +128,9 @@
     "potato": {
       "crop": "potato",
       "decision": "PROMOTE",
-      "reason": "Candidate passed all safety checks. Candidate MAE: 271.26 (Production: 271.8788720278931)",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 271.26 (Production: 271.26)",
       "candidate_mae": 271.26,
-      "production_mae": 271.8788720278931,
+      "production_mae": 271.26,
       "sample_30d_forecast_head": [
         8209.65,
         8077.63,
