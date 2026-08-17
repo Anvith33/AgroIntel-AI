@@ -168,3 +168,32 @@ def get_demo_metadata():
         "supported_seasons": ["Kharif", "Rabi", "Zaid"],
         "prediction_horizons": [7, 15, 30, 60, 90],
     }
+
+
+@router.post("/system/daily-update", summary="Trigger Full Daily Agricultural Ingestion & Retraining Pipeline")
+def trigger_daily_update():
+    """
+    Executes the automated 8-stage Daily Update Pipeline:
+      1. Mandi Price Ingestion & Normalization
+      2. Multi-Tier RSS News Ingestion
+      3. News Classification & Cross-Verification
+      4. 28-State Weather Ingestion
+      5. Dataset Build & Anti-Leakage Audit
+      6. Multi-Crop Candidate Retraining
+      7. Candidate Validation & Spike Rejection
+      8. Safe Model Promotion & Archival
+    """
+    from app.jobs.daily_pipeline import DailyPipelineRunner
+    try:
+        res = DailyPipelineRunner.run_daily_pipeline()
+        return {
+            "status": "success",
+            "message": "Daily update pipeline completed successfully.",
+            "pipeline_summary": res
+        }
+    except Exception as e:
+        logger.error(f"Daily update trigger error: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Daily update pipeline failed: {str(e)}"
+        )

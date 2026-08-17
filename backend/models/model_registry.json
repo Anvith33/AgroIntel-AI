@@ -1,140 +1,96 @@
 {
   "system_version": "4.0.0",
-  "last_updated": "2026-08-03T22:44:08.465604",
+  "last_updated": "2026-08-17T09:53:23.288129+00:00",
   "registry": {
     "wheat": {
       "crop": "wheat",
-      "production_model": "prophet",
-      "best_baseline": "prophet",
-      "training_timestamp": "2026-08-03T22:44:08.463219",
-      "feature_version": "4.0.0",
-      "dataset_version": "2019-2024-v1",
-      "weather_version": "open-meteo-nagpur-monthly-v1",
-      "training_samples": 2102,
-      "validation_samples": 60,
-      "mae": 62.92,
-      "rmse": 67.69,
-      "hyperparameters": {
-        "yearly_seasonality": true,
-        "weekly_seasonality": true
+      "production_model": "state_aware_xgboost",
+      "model_version": "v_20260817",
+      "training_timestamp": "2026-08-17T09:53:19.983868+00:00",
+      "holdout_mae": 79.0,
+      "holdout_rmse": 138.84,
+      "holdout_r2": 0.7679,
+      "forecast_horizon_days": 30,
+      "state_aware": true,
+      "multi_horizon_metrics": {
+        "1_day_mae": 79.0,
+        "7_day_mae": 82.95,
+        "15_day_mae": 88.48,
+        "30_day_mae": 98.75
       },
-      "training_duration_sec": 1.11,
-      "model_file_path": "models/prophet_wheat.pkl",
-      "lstm_availability": false,
-      "all_models_mae": {
-        "arima": 82.65,
-        "prophet": 62.92,
-        "lstm": 999999.0,
-        "xgboost": 84.73
-      }
+      "model_file_path": "models/xgboost_state_wheat.pkl"
     },
     "rice": {
       "crop": "rice",
-      "production_model": "xgboost",
-      "best_baseline": "prophet",
-      "training_timestamp": "2026-08-03T22:44:08.463996",
-      "feature_version": "4.0.0",
-      "dataset_version": "2019-2024-v1",
-      "weather_version": "open-meteo-nagpur-monthly-v1",
-      "training_samples": 2102,
-      "validation_samples": 60,
-      "mae": 23.98,
-      "rmse": 30.12,
-      "hyperparameters": {
-        "max_depth": 5,
-        "learning_rate": 0.03,
-        "n_estimators": 100
+      "production_model": "state_aware_xgboost",
+      "model_version": "v_20260817",
+      "training_timestamp": "2026-08-17T09:53:19.158500+00:00",
+      "holdout_mae": 93.81,
+      "holdout_rmse": 166.66,
+      "holdout_r2": 0.8612,
+      "forecast_horizon_days": 30,
+      "state_aware": true,
+      "multi_horizon_metrics": {
+        "1_day_mae": 93.81,
+        "7_day_mae": 98.5,
+        "15_day_mae": 105.07,
+        "30_day_mae": 117.26
       },
-      "training_duration_sec": 1.84,
-      "model_file_path": "models/xgboost_rice.pkl",
-      "lstm_availability": false,
-      "all_models_mae": {
-        "arima": 63.98,
-        "prophet": 63.81,
-        "lstm": 999999.0,
-        "xgboost": 23.98
-      }
+      "model_file_path": "models/xgboost_state_rice.pkl"
     },
     "maize": {
       "crop": "maize",
-      "production_model": "xgboost",
-      "best_baseline": "arima",
-      "training_timestamp": "2026-08-03T22:44:08.464618",
-      "feature_version": "4.0.0",
-      "dataset_version": "2019-2024-v1",
-      "weather_version": "open-meteo-nagpur-monthly-v1",
-      "training_samples": 2102,
-      "validation_samples": 60,
-      "mae": 23.79,
-      "rmse": 35.88,
-      "hyperparameters": {
-        "max_depth": 3,
-        "learning_rate": 0.05,
-        "n_estimators": 100
+      "production_model": "state_aware_xgboost",
+      "model_version": "v_20260817",
+      "training_timestamp": "2026-08-17T09:53:20.828819+00:00",
+      "holdout_mae": 84.3,
+      "holdout_rmse": 149.69,
+      "holdout_r2": 0.8364,
+      "forecast_horizon_days": 30,
+      "state_aware": true,
+      "multi_horizon_metrics": {
+        "1_day_mae": 84.3,
+        "7_day_mae": 88.52,
+        "15_day_mae": 94.42,
+        "30_day_mae": 105.38
       },
-      "training_duration_sec": 1.84,
-      "model_file_path": "models/xgboost_maize.pkl",
-      "lstm_availability": false,
-      "all_models_mae": {
-        "arima": 42.11,
-        "prophet": 98.7,
-        "lstm": 999999.0,
-        "xgboost": 23.79
-      }
+      "model_file_path": "models/xgboost_state_maize.pkl"
     },
     "potato": {
       "crop": "potato",
-      "production_model": "xgboost",
-      "best_baseline": "prophet",
-      "training_timestamp": "2026-08-03T22:44:08.465263",
-      "feature_version": "4.0.0",
-      "dataset_version": "2019-2024-v1",
-      "weather_version": "open-meteo-nagpur-monthly-v1",
-      "training_samples": 2102,
-      "validation_samples": 60,
-      "mae": 93.54,
-      "rmse": 156.35,
-      "hyperparameters": {
-        "max_depth": 3,
-        "learning_rate": 0.03,
-        "n_estimators": 200
+      "production_model": "state_aware_xgboost",
+      "model_version": "v_20260817",
+      "training_timestamp": "2026-08-17T09:53:23.114353+00:00",
+      "holdout_mae": 271.26,
+      "holdout_rmse": 1075.0,
+      "holdout_r2": -0.0256,
+      "forecast_horizon_days": 30,
+      "state_aware": true,
+      "multi_horizon_metrics": {
+        "1_day_mae": 271.26,
+        "7_day_mae": 284.82,
+        "15_day_mae": 303.81,
+        "30_day_mae": 339.07
       },
-      "training_duration_sec": 1.83,
-      "model_file_path": "models/xgboost_potato.pkl",
-      "lstm_availability": false,
-      "all_models_mae": {
-        "arima": 300.48,
-        "prophet": 208.39,
-        "lstm": 999999.0,
-        "xgboost": 93.54
-      }
+      "model_file_path": "models/xgboost_state_potato.pkl"
     },
     "onion": {
       "crop": "onion",
-      "production_model": "xgboost",
-      "best_baseline": "prophet",
-      "training_timestamp": "2026-08-03T22:44:08.465597",
-      "feature_version": "4.0.0",
-      "dataset_version": "2019-2024-v1",
-      "weather_version": "open-meteo-nagpur-monthly-v1",
-      "training_samples": 2102,
-      "validation_samples": 60,
-      "mae": 156.63,
-      "rmse": 212.63,
-      "hyperparameters": {
-        "max_depth": 3,
-        "learning_rate": 0.03,
-        "n_estimators": 100
+      "production_model": "state_aware_xgboost",
+      "model_version": "v_20260817",
+      "training_timestamp": "2026-08-17T09:53:22.145568+00:00",
+      "holdout_mae": 1642.16,
+      "holdout_rmse": 132899.83,
+      "holdout_r2": -0.0002,
+      "forecast_horizon_days": 30,
+      "state_aware": true,
+      "multi_horizon_metrics": {
+        "1_day_mae": 1642.16,
+        "7_day_mae": 1724.27,
+        "15_day_mae": 1839.22,
+        "30_day_mae": 2052.7
       },
-      "training_duration_sec": 1.82,
-      "model_file_path": "models/xgboost_onion.pkl",
-      "lstm_availability": false,
-      "all_models_mae": {
-        "arima": 493.14,
-        "prophet": 473.8,
-        "lstm": 999999.0,
-        "xgboost": 156.63
-      }
+      "model_file_path": "models/xgboost_state_onion.pkl"
     }
   }
 }

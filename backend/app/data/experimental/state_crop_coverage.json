@@ -1,0 +1,774 @@
+{
+  "rice": {
+    "Andhra Pradesh": {
+      "record_count": 2175,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1957.63,
+      "status": "SUFFICIENT"
+    },
+    "Assam": {
+      "record_count": 239,
+      "date_range": "2019-01-02 to 2019-12-31",
+      "avg_price": 1509.26,
+      "status": "SUFFICIENT"
+    },
+    "Bihar": {
+      "record_count": 110,
+      "date_range": "2022-02-03 to 2024-12-31",
+      "avg_price": 1869.37,
+      "status": "SUFFICIENT"
+    },
+    "Chandigarh": {
+      "record_count": 7,
+      "date_range": "2023-10-03 to 2024-10-10",
+      "avg_price": 2219.71,
+      "status": "LIMITED"
+    },
+    "Chhattisgarh": {
+      "record_count": 2191,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1668.86,
+      "status": "SUFFICIENT"
+    },
+    "Delhi": {
+      "record_count": 1215,
+      "date_range": "2019-01-01 to 2024-12-30",
+      "avg_price": 3186.23,
+      "status": "SUFFICIENT"
+    },
+    "Gujarat": {
+      "record_count": 2131,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1701.86,
+      "status": "SUFFICIENT"
+    },
+    "Haryana": {
+      "record_count": 813,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2929.74,
+      "status": "SUFFICIENT"
+    },
+    "Jharkhand": {
+      "record_count": 571,
+      "date_range": "2019-01-01 to 2021-07-10",
+      "avg_price": 1773.68,
+      "status": "SUFFICIENT"
+    },
+    "Karnataka": {
+      "record_count": 1980,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2013.63,
+      "status": "SUFFICIENT"
+    },
+    "Kerala": {
+      "record_count": 1683,
+      "date_range": "2019-01-04 to 2024-12-31",
+      "avg_price": 2033.32,
+      "status": "SUFFICIENT"
+    },
+    "Madhya Pradesh": {
+      "record_count": 2117,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2070.16,
+      "status": "SUFFICIENT"
+    },
+    "Maharashtra": {
+      "record_count": 2100,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2251.61,
+      "status": "SUFFICIENT"
+    },
+    "Manipur": {
+      "record_count": 764,
+      "date_range": "2019-01-02 to 2024-12-30",
+      "avg_price": 2565.74,
+      "status": "SUFFICIENT"
+    },
+    "Meghalaya": {
+      "record_count": 49,
+      "date_range": "2019-01-12 to 2021-02-13",
+      "avg_price": 3433.67,
+      "status": "LIMITED"
+    },
+    "Nagaland": {
+      "record_count": 15,
+      "date_range": "2019-12-05 to 2020-03-12",
+      "avg_price": 8206.67,
+      "status": "LIMITED"
+    },
+    "Odisha": {
+      "record_count": 2166,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1937.1,
+      "status": "SUFFICIENT"
+    },
+    "Puducherry": {
+      "record_count": 1369,
+      "date_range": "2019-01-02 to 2024-12-31",
+      "avg_price": 1786.09,
+      "status": "SUFFICIENT"
+    },
+    "Punjab": {
+      "record_count": 495,
+      "date_range": "2019-03-04 to 2024-12-19",
+      "avg_price": 2083.85,
+      "status": "SUFFICIENT"
+    },
+    "Rajasthan": {
+      "record_count": 1647,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2873.53,
+      "status": "SUFFICIENT"
+    },
+    "Tamil Nadu": {
+      "record_count": 2146,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1829.09,
+      "status": "SUFFICIENT"
+    },
+    "Telangana": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1944.68,
+      "status": "SUFFICIENT"
+    },
+    "Tripura": {
+      "record_count": 1139,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1737.33,
+      "status": "SUFFICIENT"
+    },
+    "Uttar Pradesh": {
+      "record_count": 2189,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1875.4,
+      "status": "SUFFICIENT"
+    },
+    "Uttarakhand": {
+      "record_count": 1185,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1947.11,
+      "status": "SUFFICIENT"
+    },
+    "West Bengal": {
+      "record_count": 2191,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1953.15,
+      "status": "SUFFICIENT"
+    }
+  },
+  "wheat": {
+    "Assam": {
+      "record_count": 345,
+      "date_range": "2019-01-01 to 2019-12-31",
+      "avg_price": 2377.11,
+      "status": "SUFFICIENT"
+    },
+    "Bihar": {
+      "record_count": 843,
+      "date_range": "2022-01-03 to 2024-12-31",
+      "avg_price": 2493.03,
+      "status": "SUFFICIENT"
+    },
+    "Chhattisgarh": {
+      "record_count": 2054,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1975.19,
+      "status": "SUFFICIENT"
+    },
+    "Delhi": {
+      "record_count": 1208,
+      "date_range": "2019-01-01 to 2024-12-30",
+      "avg_price": 2375.69,
+      "status": "SUFFICIENT"
+    },
+    "Gujarat": {
+      "record_count": 2091,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2160.68,
+      "status": "SUFFICIENT"
+    },
+    "Haryana": {
+      "record_count": 569,
+      "date_range": "2019-01-21 to 2024-12-06",
+      "avg_price": 2094.18,
+      "status": "SUFFICIENT"
+    },
+    "Jharkhand": {
+      "record_count": 350,
+      "date_range": "2019-01-01 to 2021-07-10",
+      "avg_price": 2265.29,
+      "status": "SUFFICIENT"
+    },
+    "Karnataka": {
+      "record_count": 1891,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2742.73,
+      "status": "SUFFICIENT"
+    },
+    "Kerala": {
+      "record_count": 819,
+      "date_range": "2019-01-16 to 2023-12-05",
+      "avg_price": 2112.3,
+      "status": "SUFFICIENT"
+    },
+    "Madhya Pradesh": {
+      "record_count": 2188,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2094.39,
+      "status": "SUFFICIENT"
+    },
+    "Maharashtra": {
+      "record_count": 2183,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2223.16,
+      "status": "SUFFICIENT"
+    },
+    "Odisha": {
+      "record_count": 456,
+      "date_range": "2019-01-01 to 2024-12-14",
+      "avg_price": 3141.98,
+      "status": "SUFFICIENT"
+    },
+    "Punjab": {
+      "record_count": 431,
+      "date_range": "2019-01-07 to 2024-12-24",
+      "avg_price": 2085.62,
+      "status": "SUFFICIENT"
+    },
+    "Rajasthan": {
+      "record_count": 2179,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2097.67,
+      "status": "SUFFICIENT"
+    },
+    "Telangana": {
+      "record_count": 315,
+      "date_range": "2019-03-09 to 2024-11-26",
+      "avg_price": 2128.35,
+      "status": "SUFFICIENT"
+    },
+    "Uttar Pradesh": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2094.01,
+      "status": "SUFFICIENT"
+    },
+    "Uttarakhand": {
+      "record_count": 956,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2107.0,
+      "status": "SUFFICIENT"
+    },
+    "West Bengal": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2185.12,
+      "status": "SUFFICIENT"
+    }
+  },
+  "maize": {
+    "Andhra Pradesh": {
+      "record_count": 1944,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1861.73,
+      "status": "SUFFICIENT"
+    },
+    "Assam": {
+      "record_count": 261,
+      "date_range": "2019-01-01 to 2019-12-31",
+      "avg_price": 1594.8,
+      "status": "SUFFICIENT"
+    },
+    "Bihar": {
+      "record_count": 183,
+      "date_range": "2022-01-06 to 2023-04-22",
+      "avg_price": 1996.35,
+      "status": "SUFFICIENT"
+    },
+    "Chhattisgarh": {
+      "record_count": 2165,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1713.69,
+      "status": "SUFFICIENT"
+    },
+    "Delhi": {
+      "record_count": 249,
+      "date_range": "2019-01-03 to 2024-12-23",
+      "avg_price": 2186.77,
+      "status": "SUFFICIENT"
+    },
+    "Gujarat": {
+      "record_count": 1945,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1974.77,
+      "status": "SUFFICIENT"
+    },
+    "Haryana": {
+      "record_count": 685,
+      "date_range": "2019-01-13 to 2024-12-30",
+      "avg_price": 1898.69,
+      "status": "SUFFICIENT"
+    },
+    "Jharkhand": {
+      "record_count": 257,
+      "date_range": "2019-01-01 to 2021-07-10",
+      "avg_price": 1735.37,
+      "status": "SUFFICIENT"
+    },
+    "Karnataka": {
+      "record_count": 2123,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1928.52,
+      "status": "SUFFICIENT"
+    },
+    "Madhya Pradesh": {
+      "record_count": 2137,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1753.76,
+      "status": "SUFFICIENT"
+    },
+    "Maharashtra": {
+      "record_count": 2173,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1865.51,
+      "status": "SUFFICIENT"
+    },
+    "Manipur": {
+      "record_count": 707,
+      "date_range": "2019-01-02 to 2024-12-30",
+      "avg_price": 3236.78,
+      "status": "SUFFICIENT"
+    },
+    "Meghalaya": {
+      "record_count": 10,
+      "date_range": "2019-06-25 to 2019-07-12",
+      "avg_price": 2780.0,
+      "status": "LIMITED"
+    },
+    "Nagaland": {
+      "record_count": 162,
+      "date_range": "2019-06-27 to 2023-10-09",
+      "avg_price": 5375.1,
+      "status": "SUFFICIENT"
+    },
+    "Odisha": {
+      "record_count": 1854,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1676.37,
+      "status": "SUFFICIENT"
+    },
+    "Puducherry": {
+      "record_count": 14,
+      "date_range": "2019-01-23 to 2023-10-30",
+      "avg_price": 2010.86,
+      "status": "LIMITED"
+    },
+    "Punjab": {
+      "record_count": 788,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1726.33,
+      "status": "SUFFICIENT"
+    },
+    "Rajasthan": {
+      "record_count": 2056,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1951.14,
+      "status": "SUFFICIENT"
+    },
+    "Tamil Nadu": {
+      "record_count": 2140,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2022.7,
+      "status": "SUFFICIENT"
+    },
+    "Telangana": {
+      "record_count": 1946,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1911.52,
+      "status": "SUFFICIENT"
+    },
+    "Tripura": {
+      "record_count": 2,
+      "date_range": "2019-09-14 to 2020-12-21",
+      "avg_price": 10050.0,
+      "status": "LIMITED"
+    },
+    "Uttar Pradesh": {
+      "record_count": 2187,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1898.48,
+      "status": "SUFFICIENT"
+    },
+    "Uttarakhand": {
+      "record_count": 230,
+      "date_range": "2019-01-01 to 2024-12-26",
+      "avg_price": 2192.67,
+      "status": "SUFFICIENT"
+    }
+  },
+  "onion": {
+    "Andaman and Nicobar": {
+      "record_count": 85,
+      "date_range": "2019-03-02 to 2024-04-05",
+      "avg_price": 5364.71,
+      "status": "SUFFICIENT"
+    },
+    "Andhra Pradesh": {
+      "record_count": 1683,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2111.36,
+      "status": "SUFFICIENT"
+    },
+    "Assam": {
+      "record_count": 411,
+      "date_range": "2019-01-01 to 2023-12-22",
+      "avg_price": 2536.8,
+      "status": "SUFFICIENT"
+    },
+    "Bihar": {
+      "record_count": 1042,
+      "date_range": "2021-11-16 to 2024-12-31",
+      "avg_price": 2880.36,
+      "status": "SUFFICIENT"
+    },
+    "Chandigarh": {
+      "record_count": 866,
+      "date_range": "2019-01-01 to 2024-12-24",
+      "avg_price": 1816.89,
+      "status": "SUFFICIENT"
+    },
+    "Chhattisgarh": {
+      "record_count": 2100,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2149.24,
+      "status": "SUFFICIENT"
+    },
+    "Delhi": {
+      "record_count": 1984,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1906.83,
+      "status": "SUFFICIENT"
+    },
+    "Goa": {
+      "record_count": 1532,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1852.93,
+      "status": "SUFFICIENT"
+    },
+    "Gujarat": {
+      "record_count": 2171,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1862.25,
+      "status": "SUFFICIENT"
+    },
+    "Haryana": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2011.08,
+      "status": "SUFFICIENT"
+    },
+    "Himachal Pradesh": {
+      "record_count": 2177,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2750.33,
+      "status": "SUFFICIENT"
+    },
+    "Jammu and Kashmir": {
+      "record_count": 1768,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2536.5,
+      "status": "SUFFICIENT"
+    },
+    "Jharkhand": {
+      "record_count": 569,
+      "date_range": "2019-01-01 to 2022-04-21",
+      "avg_price": 2405.44,
+      "status": "SUFFICIENT"
+    },
+    "Karnataka": {
+      "record_count": 2132,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1993.62,
+      "status": "SUFFICIENT"
+    },
+    "Kerala": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 4144.11,
+      "status": "SUFFICIENT"
+    },
+    "Madhya Pradesh": {
+      "record_count": 2178,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1347.95,
+      "status": "SUFFICIENT"
+    },
+    "Maharashtra": {
+      "record_count": 2161,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 7219.98,
+      "status": "SUFFICIENT"
+    },
+    "Manipur": {
+      "record_count": 772,
+      "date_range": "2019-01-02 to 2024-12-30",
+      "avg_price": 4168.35,
+      "status": "SUFFICIENT"
+    },
+    "Meghalaya": {
+      "record_count": 288,
+      "date_range": "2019-01-03 to 2024-12-30",
+      "avg_price": 3557.81,
+      "status": "SUFFICIENT"
+    },
+    "Mizoram": {
+      "record_count": 56,
+      "date_range": "2019-01-04 to 2019-11-28",
+      "avg_price": 4971.43,
+      "status": "LIMITED"
+    },
+    "Nagaland": {
+      "record_count": 486,
+      "date_range": "2019-01-04 to 2024-12-19",
+      "avg_price": 5113.62,
+      "status": "SUFFICIENT"
+    },
+    "Odisha": {
+      "record_count": 2191,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 3006.11,
+      "status": "SUFFICIENT"
+    },
+    "Punjab": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2125.42,
+      "status": "SUFFICIENT"
+    },
+    "Rajasthan": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1832.31,
+      "status": "SUFFICIENT"
+    },
+    "Tamil Nadu": {
+      "record_count": 225,
+      "date_range": "2023-08-17 to 2024-12-31",
+      "avg_price": 4909.1,
+      "status": "SUFFICIENT"
+    },
+    "Telangana": {
+      "record_count": 2075,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2074.27,
+      "status": "SUFFICIENT"
+    },
+    "Tripura": {
+      "record_count": 2183,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 3538.47,
+      "status": "SUFFICIENT"
+    },
+    "Uttar Pradesh": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1985.91,
+      "status": "SUFFICIENT"
+    },
+    "Uttarakhand": {
+      "record_count": 2169,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1839.62,
+      "status": "SUFFICIENT"
+    },
+    "West Bengal": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2693.39,
+      "status": "SUFFICIENT"
+    }
+  },
+  "potato": {
+    "Andaman and Nicobar": {
+      "record_count": 123,
+      "date_range": "2019-03-04 to 2024-12-31",
+      "avg_price": 4867.03,
+      "status": "SUFFICIENT"
+    },
+    "Andhra Pradesh": {
+      "record_count": 594,
+      "date_range": "2019-01-01 to 2024-12-28",
+      "avg_price": 1687.46,
+      "status": "SUFFICIENT"
+    },
+    "Assam": {
+      "record_count": 451,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1338.07,
+      "status": "SUFFICIENT"
+    },
+    "Bihar": {
+      "record_count": 1048,
+      "date_range": "2021-11-16 to 2024-12-31",
+      "avg_price": 1744.69,
+      "status": "SUFFICIENT"
+    },
+    "Chandigarh": {
+      "record_count": 903,
+      "date_range": "2019-01-01 to 2024-12-24",
+      "avg_price": 1013.4,
+      "status": "SUFFICIENT"
+    },
+    "Chhattisgarh": {
+      "record_count": 2143,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1751.17,
+      "status": "SUFFICIENT"
+    },
+    "Delhi": {
+      "record_count": 2099,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1336.63,
+      "status": "SUFFICIENT"
+    },
+    "Goa": {
+      "record_count": 1499,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1774.4,
+      "status": "SUFFICIENT"
+    },
+    "Gujarat": {
+      "record_count": 2172,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1581.2,
+      "status": "SUFFICIENT"
+    },
+    "Haryana": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1222.43,
+      "status": "SUFFICIENT"
+    },
+    "Himachal Pradesh": {
+      "record_count": 2188,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1676.67,
+      "status": "SUFFICIENT"
+    },
+    "Jammu and Kashmir": {
+      "record_count": 1814,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1606.61,
+      "status": "SUFFICIENT"
+    },
+    "Jharkhand": {
+      "record_count": 588,
+      "date_range": "2019-01-01 to 2023-01-24",
+      "avg_price": 1732.06,
+      "status": "SUFFICIENT"
+    },
+    "Karnataka": {
+      "record_count": 2155,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1847.06,
+      "status": "SUFFICIENT"
+    },
+    "Kerala": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 3340.83,
+      "status": "SUFFICIENT"
+    },
+    "Madhya Pradesh": {
+      "record_count": 2170,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1167.77,
+      "status": "SUFFICIENT"
+    },
+    "Maharashtra": {
+      "record_count": 2169,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1673.81,
+      "status": "SUFFICIENT"
+    },
+    "Manipur": {
+      "record_count": 799,
+      "date_range": "2019-01-02 to 2024-12-30",
+      "avg_price": 2446.0,
+      "status": "SUFFICIENT"
+    },
+    "Meghalaya": {
+      "record_count": 1306,
+      "date_range": "2019-01-03 to 2024-12-30",
+      "avg_price": 2636.06,
+      "status": "SUFFICIENT"
+    },
+    "Mizoram": {
+      "record_count": 86,
+      "date_range": "2019-01-04 to 2019-11-28",
+      "avg_price": 3228.78,
+      "status": "SUFFICIENT"
+    },
+    "Nagaland": {
+      "record_count": 1412,
+      "date_range": "2019-01-01 to 2024-12-27",
+      "avg_price": 3096.39,
+      "status": "SUFFICIENT"
+    },
+    "Odisha": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1989.38,
+      "status": "SUFFICIENT"
+    },
+    "Punjab": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1085.22,
+      "status": "SUFFICIENT"
+    },
+    "Rajasthan": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1258.73,
+      "status": "SUFFICIENT"
+    },
+    "Tamil Nadu": {
+      "record_count": 195,
+      "date_range": "2024-06-18 to 2024-12-31",
+      "avg_price": 4629.23,
+      "status": "SUFFICIENT"
+    },
+    "Telangana": {
+      "record_count": 2070,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1975.99,
+      "status": "SUFFICIENT"
+    },
+    "Tripura": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 2281.63,
+      "status": "SUFFICIENT"
+    },
+    "Uttar Pradesh": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1215.67,
+      "status": "SUFFICIENT"
+    },
+    "Uttarakhand": {
+      "record_count": 2187,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1077.16,
+      "status": "SUFFICIENT"
+    },
+    "West Bengal": {
+      "record_count": 2192,
+      "date_range": "2019-01-01 to 2024-12-31",
+      "avg_price": 1548.51,
+      "status": "SUFFICIENT"
+    }
+  }
+}

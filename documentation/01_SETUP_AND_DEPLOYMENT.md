@@ -101,7 +101,39 @@ python -m app.ml.crop_recommender
 
 ---
 
-## 7. Directory Structure
+## 7. Daily Automated Update Pipeline
+
+The daily pipeline executes an 8-stage automated workflow with safe candidate validation and rollback protection:
+
+```bash
+# Run individual stages manually:
+python -m app.jobs.fetch_mandi       # 1. Ingest & normalize live AGMARKNET Mandi data
+python -m app.jobs.fetch_news        # 2. Ingest 37 multi-tier RSS news feeds
+python -m app.jobs.process_news      # 3. Classify events & cross-verify sources
+python -m app.jobs.update_weather    # 4. Fetch 28-state Open-Meteo climate signals
+python -m app.jobs.build_dataset     # 5. Build features with shift(1) anti-leakage
+python -m app.jobs.train_all         # 6. Retrain all 5 crops (XGBoost, Prophet, ARIMA, MLP)
+python -m app.jobs.validate_models   # 7. Validate 30d forecast & spike rejection
+python -m app.jobs.promote_models    # 8. Archive & safely promote valid candidates
+
+# Run the complete automated pipeline end-to-end:
+python -m app.jobs.daily_pipeline
+```
+
+### Background Scheduler in FastAPI
+To enable the built-in automated daily scheduler inside the FastAPI server, set:
+```bash
+export ENABLE_DAILY_SCHEDULER=true
+uvicorn app.main:app --port 8000
+```
+Or trigger an immediate run via API:
+```bash
+curl -X POST http://localhost:8000/api/system/daily-update
+```
+
+---
+
+## 8. Directory Structure
 
 ```
 projectphase2/
@@ -117,13 +149,17 @@ projectphase2/
 │   │   ├── api/               # FastAPI routers & endpoints
 │   │   ├── core/              # Config, constants, settings
 │   │   ├── data/              # Historical price CSVs, district maps, JSON data
+│   │   ├── jobs/              # Daily ingestion, retraining & promotion jobs
 │   │   ├── ml/                # ML training, inference, feature engineering
 │   │   └── services/          # Recommendation, news, decision engines
 │   ├── frontend/              # Farmer web UI (HTML + CSS + JS)
-│   ├── models/                # Production model artifacts (.joblib)
+│   ├── models/                # Model artifacts (.pkl)
+│   │   ├── production/        # Deployed production models
+│   │   ├── candidates/        # Newly trained candidate models
+│   │   └── archive/           # Versioned rollback backups per crop
 │   └── scripts/               # Pipeline runner scripts
-├── documentation/             # ← You are here (5 consolidated docs)
-├── tests/                     # Automated pytest validation suites
+├── documentation/             # 5 consolidated technical reference documents
+├── tests/                     # Automated pytest validation suites (25 tests)
 ├── README.md                  # Project overview and quick start
 └── requirements.txt           # Python dependencies
 ```

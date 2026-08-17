@@ -136,13 +136,14 @@ USER INPUT (State + District + Season + optional Soil NPK/pH)
 
 | File | Contents |
 |---|---|
-| `rice_models.joblib` | XGBoost + ARIMA + MLP + data_tail + metrics |
-| `wheat_models.joblib` | Prophet + XGBoost + ARIMA + MLP + data_tail + metrics |
-| `maize_models.joblib` | XGBoost + ARIMA + MLP + data_tail + metrics |
-| `onion_models.joblib` | XGBoost + ARIMA + MLP + data_tail + metrics |
-| `potato_models.joblib` | XGBoost + ARIMA + MLP + data_tail + metrics |
-| `crop_recommendation_rf.pkl` | 22-class Random Forest recommender |
-| `model_registry.json` | Registry of all model metadata and metrics |
+| `xgboost_state_{crop}.pkl` | State-Aware XGBoost production models (Rice, Wheat, Maize, Onion, Potato) |
+| `prophet_{crop}.pkl` | Facebook Prophet seasonal models |
+| `arima_{crop}.pkl` | Statistical ARIMA baseline models |
+| `mlp_{crop}.pkl` | Deep Learning MLP Neural Network models |
+| `state_encoder_{crop}.pkl` | Scikit-Learn LabelEncoders for 28 Indian States |
+| `data_tail_state_{crop}.pkl` | 60-day historical state price data tails for lag features |
+| `crop_recommender_rf.pkl` | 22-class Random Forest crop recommendation model |
+| `model_registry.json` | Registry of all model metadata, metrics, and best model selection |
 
 ---
 

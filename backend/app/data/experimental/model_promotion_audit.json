@@ -1,0 +1,157 @@
+{
+  "job_name": "validate_models",
+  "timestamp": "2026-08-17T09:53:23.287525+00:00",
+  "execution_time_seconds": 0.17,
+  "promoted_crops_count": 5,
+  "rejected_crops_count": 0,
+  "promoted_crops": [
+    "rice",
+    "wheat",
+    "maize",
+    "onion",
+    "potato"
+  ],
+  "rejected_crops": [],
+  "validation_details": {
+    "rice": {
+      "crop": "rice",
+      "decision": "PROMOTE",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 93.81 (Production: 94.45386291693391)",
+      "candidate_mae": 93.81,
+      "production_mae": 94.45386291693391,
+      "sample_30d_forecast_head": [
+        2203.83,
+        2179.08,
+        2176.03,
+        2175.96,
+        2160.62
+      ],
+      "sample_30d_forecast_tail": [
+        2113.65,
+        2100.79,
+        2109.03,
+        2098.04,
+        2108.72
+      ],
+      "checks": {
+        "artifacts_exist": true,
+        "forecast_30d_simulation": true,
+        "non_negative_prices": true,
+        "no_extreme_spikes": true,
+        "mae_within_acceptance_bound": true
+      }
+    },
+    "wheat": {
+      "crop": "wheat",
+      "decision": "PROMOTE",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 79.0 (Production: 79.84246795049835)",
+      "candidate_mae": 79.0,
+      "production_mae": 79.84246795049835,
+      "sample_30d_forecast_head": [
+        2357.55,
+        2359.6,
+        2361.05,
+        2291.23,
+        2291.07
+      ],
+      "sample_30d_forecast_tail": [
+        2230.83,
+        2264.83,
+        2282.26,
+        2281.47,
+        2279.92
+      ],
+      "checks": {
+        "artifacts_exist": true,
+        "forecast_30d_simulation": true,
+        "non_negative_prices": true,
+        "no_extreme_spikes": true,
+        "mae_within_acceptance_bound": true
+      }
+    },
+    "maize": {
+      "crop": "maize",
+      "decision": "PROMOTE",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 84.3 (Production: 85.13542323239213)",
+      "candidate_mae": 84.3,
+      "production_mae": 85.13542323239213,
+      "sample_30d_forecast_head": [
+        2328.42,
+        2378.52,
+        2474.25,
+        2437.26,
+        2432.07
+      ],
+      "sample_30d_forecast_tail": [
+        2214.38,
+        2165.25,
+        2206.85,
+        2201.06,
+        2211.78
+      ],
+      "checks": {
+        "artifacts_exist": true,
+        "forecast_30d_simulation": true,
+        "non_negative_prices": true,
+        "no_extreme_spikes": true,
+        "mae_within_acceptance_bound": true
+      }
+    },
+    "onion": {
+      "crop": "onion",
+      "decision": "PROMOTE",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 1642.16 (Production: 1643.672685579711)",
+      "candidate_mae": 1642.16,
+      "production_mae": 1643.672685579711,
+      "sample_30d_forecast_head": [
+        6771.47,
+        6431.87,
+        6578.36,
+        6468.67,
+        6536.92
+      ],
+      "sample_30d_forecast_tail": [
+        6692.51,
+        6794.67,
+        6689.06,
+        6761.18,
+        6688.02
+      ],
+      "checks": {
+        "artifacts_exist": true,
+        "forecast_30d_simulation": true,
+        "non_negative_prices": true,
+        "no_extreme_spikes": true,
+        "mae_within_acceptance_bound": true
+      }
+    },
+    "potato": {
+      "crop": "potato",
+      "decision": "PROMOTE",
+      "reason": "Candidate passed all safety checks. Candidate MAE: 271.26 (Production: 271.8788720278931)",
+      "candidate_mae": 271.26,
+      "production_mae": 271.8788720278931,
+      "sample_30d_forecast_head": [
+        8209.65,
+        8077.63,
+        8230.6,
+        5292.54,
+        4904.4
+      ],
+      "sample_30d_forecast_tail": [
+        4995.76,
+        5841.99,
+        5899.47,
+        5721.03,
+        5565.09
+      ],
+      "checks": {
+        "artifacts_exist": true,
+        "forecast_30d_simulation": true,
+        "non_negative_prices": true,
+        "no_extreme_spikes": true,
+        "mae_within_acceptance_bound": true
+      }
+    }
+  }
+}

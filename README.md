@@ -65,7 +65,7 @@ AgroIntel is an enterprise-grade AI agricultural intelligence platform that prov
 │   │   ├── services/               # Recommendation, news & decision engines
 │   │   └── main.py                 # FastAPI application entry point
 │   ├── frontend/                   # Farmer web application (HTML/CSS/JS)
-│   ├── models/                     # Production model artifacts (.joblib)
+│   ├── models/                     # Production model artifacts (.pkl)
 │   └── scripts/                    # Pipeline runner scripts & audits
 ├── documentation/                  # ← 5 consolidated technical documents
 │   ├── 01_SETUP_AND_DEPLOYMENT.md  # Installation, config, directory structure

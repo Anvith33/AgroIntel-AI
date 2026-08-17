@@ -36,10 +36,13 @@ logging.basicConfig(
 logger = logging.getLogger("agrointel")
 
 
+import asyncio
+import os
+
 # ── Lifespan Context Manager (Pre-load & Cache Resources) ─────────────────────
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Pre-load model registry, feature metadata, and verify core directories on startup."""
+    """Pre-load model registry, feature metadata, and start background scheduler."""
     logger.info("Initializing AgroIntel v4.0 production environment...")
     models_dir = settings.MODELS_DIR
     registry_path = models_dir / "model_registry.json"
@@ -52,7 +55,33 @@ async def lifespan(app: FastAPI):
         app.state.model_registry = {}
         logger.warning(f"Model registry not found at {registry_path}. Run training first.")
 
+    # Background Scheduler Task
+    scheduler_task = None
+    if os.getenv("ENABLE_DAILY_SCHEDULER", "false").lower() in ("true", "1", "yes"):
+        async def _background_daily_worker():
+            from app.jobs.daily_pipeline import DailyPipelineRunner
+            logger.info("Background Daily Update Scheduler started.")
+            while True:
+                try:
+                    # Run daily interval (every 24 hours = 86400s)
+                    await asyncio.sleep(86400)
+                    logger.info("Scheduled background trigger: Running Daily Pipeline...")
+                    await asyncio.to_thread(DailyPipelineRunner.run_daily_pipeline)
+                except asyncio.CancelledError:
+                    break
+                except Exception as e:
+                    logger.error(f"Error in background daily worker: {e}")
+
+        scheduler_task = asyncio.create_task(_background_daily_worker())
+
     yield
+
+    if scheduler_task:
+        scheduler_task.cancel()
+        try:
+            await scheduler_task
+        except asyncio.CancelledError:
+            pass
     logger.info("Shutting down AgroIntel v4.0 application.")
 
 

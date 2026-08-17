@@ -1,0 +1,20 @@
+{
+  "job_name": "fetch_mandi",
+  "timestamp": "2026-08-17T09:52:37.439571",
+  "execution_time_seconds": 12.5,
+  "api_status": "NO_API_DATA_OR_OFFLINE",
+  "raw_records_fetched": 0,
+  "valid_records_extracted": 0,
+  "rejected_records": 0,
+  "duplicates_ignored": 0,
+  "new_records_added": 0,
+  "total_dataset_rows": 178522,
+  "supported_crops": [
+    "rice",
+    "wheat",
+    "maize",
+    "onion",
+    "potato"
+  ],
+  "target_dataset_path": "/Users/kaushikpoojary/Downloads/projectphase2/backend/app/data/real_historical_prices_state.csv"
+}
