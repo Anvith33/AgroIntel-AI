@@ -1,8 +1,8 @@
 {
   "pipeline_name": "AgroIntel Daily Update Pipeline",
-  "run_timestamp": "2026-08-18T14:52:24.309970+00:00",
+  "run_timestamp": "2026-08-18T16:13:04.983198+00:00",
   "overall_status": "PARTIAL_SUCCESS",
-  "total_duration_seconds": 73.59,
+  "total_duration_seconds": 80.93,
   "stages": {
     "fetch_mandi": {
       "status": "FAILED",
@@ -11,7 +11,7 @@
     "fetch_news": {
       "status": "SUCCESS",
       "sources_active": 14,
-      "articles_ingested": 537
+      "articles_ingested": 158
     },
     "process_news": {
       "status": "SUCCESS",
@@ -19,7 +19,7 @@
     },
     "update_weather": {
       "status": "SUCCESS",
-      "states_success": 27
+      "states_success": 25
     },
     "build_dataset": {
       "status": "PASS",
@@ -57,7 +57,7 @@
         "onion",
         "potato"
       ],
-      "version_tag": "20260818_145337"
+      "version_tag": "20260818_161425"
     }
   },
   "errors_count": 1,

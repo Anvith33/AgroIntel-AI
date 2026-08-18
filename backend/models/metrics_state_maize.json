@@ -1,8 +1,8 @@
 {
   "crop": "maize",
   "best_algorithm": "state_aware_xgboost",
-  "trained_at": "2026-08-18T14:53:35.697156+00:00",
-  "training_time_seconds": 1.0,
+  "trained_at": "2026-08-18T16:14:23.791437+00:00",
+  "training_time_seconds": 1.05,
   "train_samples": 21325,
   "test_samples": 4267,
   "holdout_mae": 84.3,
