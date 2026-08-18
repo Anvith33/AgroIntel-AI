@@ -13,7 +13,7 @@ Candidate Model Families Evaluated:
   2. Baseline Crop-Only XGBoost
   3. Prophet (Facebook Seasonal Additive Model)
   4. ARIMA(1,1,1) (Statistical Autoregressive Moving Average)
-  5. MLP Neural Network (Scikit-Learn Multi-Layer Perceptron)
+  5. LSTM Recurrent Neural Network (Deep Learning Sequence Model)
 
 Validation & Splitting:
   - Strict Chronological Holdout (Train: 2019-2023, Unseen Test: 2024).
