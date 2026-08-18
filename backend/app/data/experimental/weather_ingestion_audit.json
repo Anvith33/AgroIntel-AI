@@ -1,10 +1,10 @@
 {
   "job_name": "update_weather",
-  "timestamp": "2026-08-17T17:36:28.841218+00:00",
-  "execution_time_seconds": 69.17,
+  "timestamp": "2026-08-18T14:53:32.196244+00:00",
+  "execution_time_seconds": 28.46,
   "states_targeted": 28,
-  "states_success": 21,
-  "states_failed": 7,
+  "states_success": 27,
+  "states_failed": 1,
   "data_grounding_verified": true,
   "fake_defaults_injected": 0,
   "results": [
@@ -14,10 +14,10 @@
       "lon": 79.74,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 31.89,
-      "total_rainfall": 3.1,
-      "avg_humidity": 52.78,
-      "updated_at": "2026-08-17T17:35:20.481122+00:00"
+      "avg_temp": 31.06,
+      "total_rainfall": 17.9,
+      "avg_humidity": 57.3,
+      "updated_at": "2026-08-18T14:53:04.600351+00:00"
     },
     {
       "state": "Arunachal Pradesh",
@@ -25,19 +25,21 @@
       "lon": 94.7278,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 26.09,
-      "total_rainfall": 126.2,
-      "avg_humidity": 86.36,
-      "updated_at": "2026-08-17T17:35:21.422096+00:00"
+      "avg_temp": 26.04,
+      "total_rainfall": 108.4,
+      "avg_humidity": 86.52,
+      "updated_at": "2026-08-18T14:53:05.410680+00:00"
     },
     {
       "state": "Assam",
-      "status": "UNAVAILABLE",
-      "error": "_ssl.c:1015: The handshake operation timed out",
+      "lat": 26.2006,
+      "lon": 92.9376,
+      "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": null,
-      "total_rainfall": null,
-      "avg_humidity": null
+      "avg_temp": 27.47,
+      "total_rainfall": 135.1,
+      "avg_humidity": 92.3,
+      "updated_at": "2026-08-18T14:53:06.229909+00:00"
     },
     {
       "state": "Bihar",
@@ -45,10 +47,10 @@
       "lon": 85.3131,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 28.94,
-      "total_rainfall": 112.3,
-      "avg_humidity": 85.39,
-      "updated_at": "2026-08-17T17:35:28.419288+00:00"
+      "avg_temp": 28.78,
+      "total_rainfall": 73.3,
+      "avg_humidity": 86.08,
+      "updated_at": "2026-08-18T14:53:07.060696+00:00"
     },
     {
       "state": "Chhattisgarh",
@@ -56,10 +58,10 @@
       "lon": 81.8661,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 25.98,
-      "total_rainfall": 69.7,
-      "avg_humidity": 88.79,
-      "updated_at": "2026-08-17T17:35:29.578155+00:00"
+      "avg_temp": 25.8,
+      "total_rainfall": 60.4,
+      "avg_humidity": 90.17,
+      "updated_at": "2026-08-18T14:53:07.789546+00:00"
     },
     {
       "state": "Goa",
@@ -67,10 +69,10 @@
       "lon": 74.124,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 25.47,
-      "total_rainfall": 73.8,
-      "avg_humidity": 92.19,
-      "updated_at": "2026-08-17T17:35:30.339120+00:00"
+      "avg_temp": 25.42,
+      "total_rainfall": 88.7,
+      "avg_humidity": 92.95,
+      "updated_at": "2026-08-18T14:53:08.604142+00:00"
     },
     {
       "state": "Gujarat",
@@ -78,10 +80,10 @@
       "lon": 71.1924,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 27.02,
-      "total_rainfall": 4.9,
-      "avg_humidity": 79.14,
-      "updated_at": "2026-08-17T17:35:31.097261+00:00"
+      "avg_temp": 27.04,
+      "total_rainfall": 2.9,
+      "avg_humidity": 78.67,
+      "updated_at": "2026-08-18T14:53:09.400300+00:00"
     },
     {
       "state": "Haryana",
@@ -89,19 +91,21 @@
       "lon": 76.0856,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 29.44,
-      "total_rainfall": 35.7,
-      "avg_humidity": 80.05,
-      "updated_at": "2026-08-17T17:35:31.879019+00:00"
+      "avg_temp": 29.52,
+      "total_rainfall": 34.8,
+      "avg_humidity": 79.45,
+      "updated_at": "2026-08-18T14:53:10.190735+00:00"
     },
     {
       "state": "Himachal Pradesh",
-      "status": "UNAVAILABLE",
-      "error": "_ssl.c:1015: The handshake operation timed out",
+      "lat": 31.1048,
+      "lon": 77.1734,
+      "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": null,
-      "total_rainfall": null,
-      "avg_humidity": null
+      "avg_temp": 16.79,
+      "total_rainfall": 66.4,
+      "avg_humidity": 91.41,
+      "updated_at": "2026-08-18T14:53:10.970652+00:00"
     },
     {
       "state": "Jharkhand",
@@ -109,10 +113,10 @@
       "lon": 85.2799,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 27.0,
-      "total_rainfall": 157.4,
-      "avg_humidity": 86.35,
-      "updated_at": "2026-08-17T17:35:38.816651+00:00"
+      "avg_temp": 26.75,
+      "total_rainfall": 83.9,
+      "avg_humidity": 88.21,
+      "updated_at": "2026-08-18T14:53:11.771417+00:00"
     },
     {
       "state": "Karnataka",
@@ -120,10 +124,10 @@
       "lon": 75.7139,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 24.8,
-      "total_rainfall": 15.6,
-      "avg_humidity": 77.53,
-      "updated_at": "2026-08-17T17:35:39.577732+00:00"
+      "avg_temp": 24.73,
+      "total_rainfall": 11.7,
+      "avg_humidity": 77.73,
+      "updated_at": "2026-08-18T14:53:12.552635+00:00"
     },
     {
       "state": "Kerala",
@@ -131,10 +135,10 @@
       "lon": 76.2711,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 25.99,
-      "total_rainfall": 26.3,
-      "avg_humidity": 85.11,
-      "updated_at": "2026-08-17T17:35:40.768028+00:00"
+      "avg_temp": 26.06,
+      "total_rainfall": 27.4,
+      "avg_humidity": 84.61,
+      "updated_at": "2026-08-18T14:53:13.358589+00:00"
     },
     {
       "state": "Madhya Pradesh",
@@ -142,10 +146,10 @@
       "lon": 78.6569,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 25.28,
-      "total_rainfall": 161.7,
-      "avg_humidity": 91.61,
-      "updated_at": "2026-08-17T17:35:41.561387+00:00"
+      "avg_temp": 25.14,
+      "total_rainfall": 357.8,
+      "avg_humidity": 92.26,
+      "updated_at": "2026-08-18T14:53:14.171207+00:00"
     },
     {
       "state": "Maharashtra",
@@ -153,10 +157,10 @@
       "lon": 75.7139,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 25.99,
-      "total_rainfall": 4.1,
-      "avg_humidity": 75.43,
-      "updated_at": "2026-08-17T17:35:42.467169+00:00"
+      "avg_temp": 26.16,
+      "total_rainfall": 5.9,
+      "avg_humidity": 74.73,
+      "updated_at": "2026-08-18T14:53:14.952823+00:00"
     },
     {
       "state": "Manipur",
@@ -173,19 +177,21 @@
       "lon": 91.3662,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 20.05,
-      "total_rainfall": 77.1,
-      "avg_humidity": 94.23,
-      "updated_at": "2026-08-17T17:35:49.429788+00:00"
+      "avg_temp": 20.4,
+      "total_rainfall": 33.0,
+      "avg_humidity": 92.55,
+      "updated_at": "2026-08-18T14:53:21.996280+00:00"
     },
     {
       "state": "Mizoram",
-      "status": "UNAVAILABLE",
-      "error": "_ssl.c:1015: The handshake operation timed out",
+      "lat": 23.1645,
+      "lon": 92.9376,
+      "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": null,
-      "total_rainfall": null,
-      "avg_humidity": null
+      "avg_temp": 24.49,
+      "total_rainfall": 79.7,
+      "avg_humidity": 91.49,
+      "updated_at": "2026-08-18T14:53:22.807859+00:00"
     },
     {
       "state": "Nagaland",
@@ -193,10 +199,10 @@
       "lon": 94.5624,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 21.9,
-      "total_rainfall": 94.5,
-      "avg_humidity": 93.48,
-      "updated_at": "2026-08-17T17:35:57.786993+00:00"
+      "avg_temp": 22.0,
+      "total_rainfall": 55.0,
+      "avg_humidity": 91.68,
+      "updated_at": "2026-08-18T14:53:23.564603+00:00"
     },
     {
       "state": "Odisha",
@@ -204,28 +210,32 @@
       "lon": 85.0985,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 27.61,
-      "total_rainfall": 50.3,
-      "avg_humidity": 85.46,
-      "updated_at": "2026-08-17T17:36:00.432038+00:00"
+      "avg_temp": 28.02,
+      "total_rainfall": 39.3,
+      "avg_humidity": 83.11,
+      "updated_at": "2026-08-18T14:53:24.370080+00:00"
     },
     {
       "state": "Punjab",
-      "status": "UNAVAILABLE",
-      "error": "_ssl.c:1015: The handshake operation timed out",
+      "lat": 31.1471,
+      "lon": 75.3412,
+      "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": null,
-      "total_rainfall": null,
-      "avg_humidity": null
+      "avg_temp": 28.75,
+      "total_rainfall": 42.4,
+      "avg_humidity": 85.58,
+      "updated_at": "2026-08-18T14:53:25.158938+00:00"
     },
     {
       "state": "Rajasthan",
-      "status": "UNAVAILABLE",
-      "error": "_ssl.c:1015: The handshake operation timed out",
+      "lat": 27.0238,
+      "lon": 74.2179,
+      "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": null,
-      "total_rainfall": null,
-      "avg_humidity": null
+      "avg_temp": 28.62,
+      "total_rainfall": 0.0,
+      "avg_humidity": 69.74,
+      "updated_at": "2026-08-18T14:53:26.227634+00:00"
     },
     {
       "state": "Sikkim",
@@ -233,10 +243,10 @@
       "lon": 88.5122,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 25.97,
-      "total_rainfall": 121.2,
-      "avg_humidity": 88.07,
-      "updated_at": "2026-08-17T17:36:13.607321+00:00"
+      "avg_temp": 26.14,
+      "total_rainfall": 238.3,
+      "avg_humidity": 90.05,
+      "updated_at": "2026-08-18T14:53:27.048194+00:00"
     },
     {
       "state": "Tamil Nadu",
@@ -244,10 +254,10 @@
       "lon": 78.6569,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 30.02,
-      "total_rainfall": 13.5,
-      "avg_humidity": 60.55,
-      "updated_at": "2026-08-17T17:36:14.357499+00:00"
+      "avg_temp": 29.84,
+      "total_rainfall": 19.9,
+      "avg_humidity": 62.71,
+      "updated_at": "2026-08-18T14:53:27.822962+00:00"
     },
     {
       "state": "Telangana",
@@ -255,10 +265,10 @@
       "lon": 79.0193,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 27.07,
-      "total_rainfall": 6.5,
-      "avg_humidity": 72.89,
-      "updated_at": "2026-08-17T17:36:19.811527+00:00"
+      "avg_temp": 26.94,
+      "total_rainfall": 14.9,
+      "avg_humidity": 74.3,
+      "updated_at": "2026-08-18T14:53:28.785876+00:00"
     },
     {
       "state": "Tripura",
@@ -266,10 +276,10 @@
       "lon": 91.9882,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 27.3,
-      "total_rainfall": 29.8,
-      "avg_humidity": 88.18,
-      "updated_at": "2026-08-17T17:36:20.558030+00:00"
+      "avg_temp": 27.41,
+      "total_rainfall": 47.9,
+      "avg_humidity": 88.32,
+      "updated_at": "2026-08-18T14:53:29.796381+00:00"
     },
     {
       "state": "Uttar Pradesh",
@@ -277,19 +287,21 @@
       "lon": 80.9462,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 28.06,
-      "total_rainfall": 117.3,
-      "avg_humidity": 88.95,
-      "updated_at": "2026-08-17T17:36:21.844000+00:00"
+      "avg_temp": 28.15,
+      "total_rainfall": 78.2,
+      "avg_humidity": 89.1,
+      "updated_at": "2026-08-18T14:53:30.613738+00:00"
     },
     {
       "state": "Uttarakhand",
-      "status": "UNAVAILABLE",
-      "error": "_ssl.c:1015: The handshake operation timed out",
+      "lat": 30.0668,
+      "lon": 79.0193,
+      "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": null,
-      "total_rainfall": null,
-      "avg_humidity": null
+      "avg_temp": 17.09,
+      "total_rainfall": 96.6,
+      "avg_humidity": 94.46,
+      "updated_at": "2026-08-18T14:53:31.427029+00:00"
     },
     {
       "state": "West Bengal",
@@ -297,10 +309,10 @@
       "lon": 87.855,
       "status": "OBSERVED_LIVE",
       "provider": "open-meteo",
-      "avg_temp": 28.09,
-      "total_rainfall": 113.2,
-      "avg_humidity": 89.53,
-      "updated_at": "2026-08-17T17:36:28.841155+00:00"
+      "avg_temp": 28.11,
+      "total_rainfall": 64.0,
+      "avg_humidity": 89.98,
+      "updated_at": "2026-08-18T14:53:32.196204+00:00"
     }
   ]
 }

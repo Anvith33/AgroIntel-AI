@@ -1,8 +1,8 @@
 {
   "crop": "potato",
   "best_algorithm": "state_aware_xgboost",
-  "trained_at": "2026-08-17T17:36:34.758557+00:00",
-  "training_time_seconds": 1.24,
+  "trained_at": "2026-08-18T14:53:37.707444+00:00",
+  "training_time_seconds": 0.97,
   "train_samples": 38289,
   "test_samples": 8518,
   "holdout_mae": 271.26,

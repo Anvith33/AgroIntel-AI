@@ -30,9 +30,9 @@
     "target_url": "https://news.google.com/rss/search?q=site%3Aagriwelfare.gov.in%20agriculture%20scheme%20farmer&hl=en-IN&gl=IN&ceid=IN:en",
     "status": "SUCCESS",
     "http_status": 200,
-    "articles_fetched": 30,
-    "new_articles_added": 2,
-    "latest_date": "Mon, 10 Apr 2023 14:12:05 GMT",
+    "articles_fetched": 29,
+    "new_articles_added": 0,
+    "latest_date": "Mon, 10 Apr 2023 21:12:02 GMT",
     "error": null
   },
   {
@@ -54,9 +54,9 @@
     "target_url": "https://news.google.com/rss/search?q=site%3Amoes.gov.in%20climate%20weather%20extreme%20event&hl=en-IN&gl=IN&ceid=IN:en",
     "status": "SUCCESS",
     "http_status": 200,
-    "articles_fetched": 8,
-    "new_articles_added": 1,
-    "latest_date": "Tue, 17 Feb 2015 02:52:17 GMT",
+    "articles_fetched": 6,
+    "new_articles_added": 6,
+    "latest_date": "Wed, 23 Jul 2025 07:00:00 GMT",
     "error": null
   },
   {
@@ -76,12 +76,12 @@
     "source_name": "Agri Farming",
     "tier": "TIER_4",
     "target_url": "https://www.agrifarming.in/feed",
-    "status": "SUCCESS",
-    "http_status": 200,
-    "articles_fetched": 10,
+    "status": "FAILED",
+    "http_status": 408,
+    "articles_fetched": 0,
     "new_articles_added": 0,
-    "latest_date": "Fri, 14 Aug 2026 12:03:46 +0000",
-    "error": null
+    "latest_date": null,
+    "error": "Request Timeout (> 8.0s)"
   },
   {
     "source_id": "agriculture_world",
@@ -102,7 +102,7 @@
     "http_status": 200,
     "articles_fetched": 15,
     "new_articles_added": 15,
-    "latest_date": "Mon, 17 Aug 2026 15:00:55 +0000",
+    "latest_date": "Tue, 18 Aug 2026 13:12:03 +0000",
     "error": null
   },
   {
@@ -149,8 +149,8 @@
     "status": "SUCCESS",
     "http_status": 200,
     "articles_fetched": 51,
-    "new_articles_added": 34,
-    "latest_date": "Mon, 17 Aug 2026 07:55:25 +0530",
+    "new_articles_added": 44,
+    "latest_date": "Tue, 18 Aug 2026 13:07:36 +0530",
     "error": null
   },
   {
@@ -173,8 +173,8 @@
     "status": "SUCCESS",
     "http_status": 200,
     "articles_fetched": 60,
-    "new_articles_added": 59,
-    "latest_date": "Mon, 17 Aug 2026 22:57:24 +0530",
+    "new_articles_added": 60,
+    "latest_date": "Tue, 18 Aug 2026 20:17:28 +0530",
     "error": null
   },
   {
@@ -207,7 +207,7 @@
     "status": "SUCCESS",
     "http_status": 200,
     "articles_fetched": 100,
-    "new_articles_added": 6,
+    "new_articles_added": 100,
     "latest_date": "Thu, 13 Aug 2026 18:41:56 GMT",
     "error": null
   },
@@ -220,7 +220,7 @@
     "http_status": 200,
     "articles_fetched": 60,
     "new_articles_added": 60,
-    "latest_date": "Mon, 17 Aug 2026 22:59:47 +0530",
+    "latest_date": "Tue, 18 Aug 2026 20:13:46 +0530",
     "error": null
   },
   {
@@ -231,8 +231,8 @@
     "status": "SUCCESS",
     "http_status": 200,
     "articles_fetched": 200,
-    "new_articles_added": 131,
-    "latest_date": "Mon, 17 Aug 2026 17:27:44 +0000",
+    "new_articles_added": 200,
+    "latest_date": "Tue, 18 Aug 2026 14:41:15 +0000",
     "error": null
   },
   {
@@ -242,9 +242,9 @@
     "target_url": "https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms",
     "status": "SUCCESS",
     "http_status": 200,
-    "articles_fetched": 19,
-    "new_articles_added": 19,
-    "latest_date": "2026-08-17T21:59:20+05:30",
+    "articles_fetched": 20,
+    "new_articles_added": 20,
+    "latest_date": "2026-08-18T19:59:12+05:30",
     "error": null
   },
   {
@@ -268,7 +268,7 @@
     "http_status": 200,
     "articles_fetched": 20,
     "new_articles_added": 20,
-    "latest_date": "Mon, 17 Aug 2026 22:32:26 +0530",
+    "latest_date": "Tue, 18 Aug 2026 20:08:32 +0530",
     "error": null
   },
   {
@@ -291,8 +291,8 @@
     "status": "SUCCESS",
     "http_status": 200,
     "articles_fetched": 20,
-    "new_articles_added": 2,
-    "latest_date": "17 Aug 2026 17:30:51 +0000",
+    "new_articles_added": 3,
+    "latest_date": "18 Aug 2026 16:59:06 +0000",
     "error": null
   },
   {

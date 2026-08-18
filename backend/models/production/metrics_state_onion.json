@@ -1,8 +1,8 @@
 {
   "crop": "onion",
   "best_algorithm": "state_aware_xgboost",
-  "trained_at": "2026-08-17T17:36:33.502337+00:00",
-  "training_time_seconds": 1.25,
+  "trained_at": "2026-08-18T14:53:36.728254+00:00",
+  "training_time_seconds": 1.02,
   "train_samples": 37303,
   "test_samples": 8253,
   "holdout_mae": 1642.16,
