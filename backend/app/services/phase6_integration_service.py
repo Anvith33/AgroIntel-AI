@@ -357,10 +357,26 @@ class AgroIntelPhase6Engine:
         canon_district = dist_obj["district"]
         canonical_id = dist_obj["canonical_id"]
 
+        # Resolve friendly season names to canonical representation
+        season_aliases = {
+            "rainy season": "Kharif",
+            "rainy": "Kharif",
+            "monsoon": "Kharif",
+            "winter season": "Rabi",
+            "winter": "Rabi",
+            "summer season": "Zaid",
+            "summer": "Zaid",
+            "zaid": "Zaid",
+            "kharif": "Kharif",
+            "rabi": "Rabi",
+            "whole year": "Whole Year",
+        }
+        canonical_season = season_aliases.get(season.strip().lower(), season) if isinstance(season, str) else "Kharif"
+
         # Fetch candidate crops strictly from APY evidence matrix
-        raw_candidates = self.cand_lookup.get((canonical_id, season.lower()), [])
+        raw_candidates = self.cand_lookup.get((canonical_id, canonical_season.lower()), [])
         if not raw_candidates:
-            raw_candidates = self.cand_lookup.get((canon_state.lower(), canon_district.lower(), season.lower()), [])
+            raw_candidates = self.cand_lookup.get((canon_state.lower(), canon_district.lower(), canonical_season.lower()), [])
         if not raw_candidates:
             raw_candidates = self.district_cand_lookup.get(canonical_id, [])
         if not raw_candidates:
@@ -369,7 +385,7 @@ class AgroIntelPhase6Engine:
         if not raw_candidates:
             return {
                 "location": {"state": canon_state, "district": canon_district, "canonical_id": canonical_id},
-                "season": season,
+                "season": canonical_season,
                 "recommendations": [],
                 "rejected_crops": [],
                 "message": "No historical cultivation records found for this district and season.",
@@ -424,14 +440,14 @@ class AgroIntelPhase6Engine:
             # 2. Season Filter & Compatibility
             season_suitable = True
             season_score = 20.0
-            season_text = f"Well-suited for the {season} cropping season."
+            season_text = f"Well-suited for the {canonical_season} cropping season."
 
-            if not is_perennial and season.lower() not in ["whole year", "perennial"]:
+            if not is_perennial and canonical_season.lower() not in ["whole year", "perennial"]:
                 cal_info = self.season_calendar.get(crop_name, {}) if isinstance(self.season_calendar, dict) else {}
                 cal_seasons = [s.lower() for s in cal_info.get("seasons", ["Kharif", "Rabi", "Summer", "Whole Year"])]
                 valid_seasons = set(seasons_present + cal_seasons + ["whole year"])
 
-                if season.lower() not in valid_seasons:
+                if canonical_season.lower() not in valid_seasons:
                     season_suitable = False
                     season_score = 0.0
                     season_text = f"Season mismatch (grows in {', '.join([s.title() for s in valid_seasons if s != 'whole year'])})"
@@ -572,7 +588,7 @@ class AgroIntelPhase6Engine:
                 "district": canon_district,
                 "canonical_id": canonical_id
             },
-            "season": season,
+            "season": canonical_season,
             "recommendations": top_5,
             "rejected_crops": rejected_crops[:5],
             "market": mandi_vec,
