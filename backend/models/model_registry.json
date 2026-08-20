@@ -18,7 +18,11 @@
         "15_day_mae": 88.48,
         "30_day_mae": 98.75
       },
-      "model_file_path": "models/xgboost_state_wheat.pkl"
+      "model_file_path": "models/xgboost_state_wheat.pkl",
+      "lstm_availability": true,
+      "all_models_mae": {
+        "lstm": 1466.7
+      }
     },
     "rice": {
       "crop": "rice",
@@ -36,7 +40,11 @@
         "15_day_mae": 105.07,
         "30_day_mae": 117.26
       },
-      "model_file_path": "models/xgboost_state_rice.pkl"
+      "model_file_path": "models/xgboost_state_rice.pkl",
+      "lstm_availability": true,
+      "all_models_mae": {
+        "lstm": 1148.14
+      }
     },
     "maize": {
       "crop": "maize",
@@ -54,7 +62,11 @@
         "15_day_mae": 94.42,
         "30_day_mae": 105.38
       },
-      "model_file_path": "models/xgboost_state_maize.pkl"
+      "model_file_path": "models/xgboost_state_maize.pkl",
+      "lstm_availability": true,
+      "all_models_mae": {
+        "lstm": 1400.22
+      }
     },
     "potato": {
       "crop": "potato",
@@ -72,7 +84,11 @@
         "15_day_mae": 303.81,
         "30_day_mae": 339.07
       },
-      "model_file_path": "models/xgboost_state_potato.pkl"
+      "model_file_path": "models/xgboost_state_potato.pkl",
+      "lstm_availability": true,
+      "all_models_mae": {
+        "lstm": 2057.5
+      }
     },
     "onion": {
       "crop": "onion",
@@ -90,7 +106,11 @@
         "15_day_mae": 1839.22,
         "30_day_mae": 2052.7
       },
-      "model_file_path": "models/xgboost_state_onion.pkl"
+      "model_file_path": "models/xgboost_state_onion.pkl",
+      "lstm_availability": true,
+      "all_models_mae": {
+        "lstm": 3328.21
+      }
     }
   }
 }
