@@ -1,12 +1,12 @@
 {
   "job_name": "fetch_news",
-  "timestamp": "2026-08-19T17:52:49.129695+00:00",
-  "execution_time_seconds": 11.74,
+  "timestamp": "2026-08-21T18:05:37.009909+00:00",
+  "execution_time_seconds": 18.17,
   "total_sources_audited": 26,
   "sources_active": 15,
   "sources_failed": 11,
-  "new_articles_ingested": 4,
-  "total_stored_articles": 2300,
+  "new_articles_ingested": 15,
+  "total_stored_articles": 2775,
   "sources_status": [
     {
       "source_id": "icar",
@@ -39,7 +39,7 @@
       "target_url": "https://news.google.com/rss/search?q=site%3Aagriwelfare.gov.in%20agriculture%20scheme%20farmer&hl=en-IN&gl=IN&ceid=IN:en",
       "status": "SUCCESS",
       "http_status": 200,
-      "articles_fetched": 27,
+      "articles_fetched": 23,
       "new_articles_added": 0,
       "latest_date": "Mon, 10 Apr 2023 21:12:02 GMT",
       "error": null
@@ -63,9 +63,9 @@
       "target_url": "https://news.google.com/rss/search?q=site%3Amoes.gov.in%20climate%20weather%20extreme%20event&hl=en-IN&gl=IN&ceid=IN:en",
       "status": "SUCCESS",
       "http_status": 200,
-      "articles_fetched": 5,
+      "articles_fetched": 3,
       "new_articles_added": 0,
-      "latest_date": "Wed, 23 Jul 2025 07:00:00 GMT",
+      "latest_date": "Wed, 03 Dec 2025 08:00:00 GMT",
       "error": null
     },
     {
@@ -74,11 +74,11 @@
       "tier": "TIER_4",
       "target_url": "https://krishijagran.com/feed/",
       "status": "FAILED",
-      "http_status": 408,
+      "http_status": 404,
       "articles_fetched": 0,
       "new_articles_added": 0,
       "latest_date": null,
-      "error": "Request Timeout (> 8.0s)"
+      "error": "HTTP 404"
     },
     {
       "source_id": "agri_farming",
@@ -89,7 +89,7 @@
       "http_status": 200,
       "articles_fetched": 10,
       "new_articles_added": 0,
-      "latest_date": "Fri, 14 Aug 2026 12:03:46 +0000",
+      "latest_date": "Thu, 20 Aug 2026 07:25:07 +0000",
       "error": null
     },
     {
@@ -110,8 +110,8 @@
       "status": "SUCCESS",
       "http_status": 200,
       "articles_fetched": 15,
-      "new_articles_added": 0,
-      "latest_date": "Wed, 19 Aug 2026 15:00:34 +0000",
+      "new_articles_added": 15,
+      "latest_date": "Fri, 21 Aug 2026 15:00:29 +0000",
       "error": null
     },
     {
@@ -124,7 +124,7 @@
       "articles_fetched": 0,
       "new_articles_added": 0,
       "latest_date": null,
-      "error": "[Errno 8] nodename nor servname provided, or not known"
+      "error": "[Errno 11001] getaddrinfo failed"
     },
     {
       "source_id": "rural_voice",
@@ -159,7 +159,7 @@
       "http_status": 200,
       "articles_fetched": 51,
       "new_articles_added": 0,
-      "latest_date": "Wed, 19 Aug 2026 18:05:11 +0530",
+      "latest_date": "Fri, 21 Aug 2026 10:51:44 +0530",
       "error": null
     },
     {
@@ -183,7 +183,7 @@
       "http_status": 200,
       "articles_fetched": 60,
       "new_articles_added": 0,
-      "latest_date": "Wed, 19 Aug 2026 22:15:15 +0530",
+      "latest_date": "Fri, 21 Aug 2026 22:45:33 +0530",
       "error": null
     },
     {
@@ -228,8 +228,8 @@
       "status": "SUCCESS",
       "http_status": 200,
       "articles_fetched": 60,
-      "new_articles_added": 3,
-      "latest_date": "Wed, 19 Aug 2026 23:16:41 +0530",
+      "new_articles_added": 0,
+      "latest_date": "Fri, 21 Aug 2026 23:21:57 +0530",
       "error": null
     },
     {
@@ -241,7 +241,7 @@
       "http_status": 200,
       "articles_fetched": 200,
       "new_articles_added": 0,
-      "latest_date": "Wed, 19 Aug 2026 17:30:29 +0000",
+      "latest_date": "Fri, 21 Aug 2026 17:40:33 +0000",
       "error": null
     },
     {
@@ -253,7 +253,7 @@
       "http_status": 200,
       "articles_fetched": 20,
       "new_articles_added": 0,
-      "latest_date": "2026-08-19T22:30:08+05:30",
+      "latest_date": "2026-08-21T23:12:00+05:30",
       "error": null
     },
     {
@@ -277,7 +277,7 @@
       "http_status": 200,
       "articles_fetched": 20,
       "new_articles_added": 0,
-      "latest_date": "Wed, 19 Aug 2026 22:13:06 +0530",
+      "latest_date": "Fri, 21 Aug 2026 23:10:37 +0530",
       "error": null
     },
     {
@@ -301,7 +301,7 @@
       "http_status": 200,
       "articles_fetched": 20,
       "new_articles_added": 0,
-      "latest_date": "19 Aug 2026 15:23:29 +0000",
+      "latest_date": "21 Aug 2026 15:31:18 +0000",
       "error": null
     },
     {
@@ -312,7 +312,7 @@
       "status": "SUCCESS",
       "http_status": 200,
       "articles_fetched": 61,
-      "new_articles_added": 1,
+      "new_articles_added": 0,
       "latest_date": "Mon, 22 Jun 2026 07:00:00 GMT",
       "error": null
     }
