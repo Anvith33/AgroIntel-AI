@@ -359,6 +359,24 @@ class AgroIntelPhase6Engine:
         canonical_id = dist_obj["canonical_id"]
         canon_season = normalize_season(season)
 
+        # Resolve friendly season names to canonical representation (whole-year support)
+        _season_aliases = {
+            "rainy season": "Kharif",
+            "rainy": "Kharif",
+            "monsoon": "Kharif",
+            "winter season": "Rabi",
+            "winter": "Rabi",
+            "summer season": "Zaid",
+            "summer": "Zaid",
+            "zaid": "Zaid",
+            "kharif": "Kharif",
+            "rabi": "Rabi",
+            "whole year": "Whole Year",
+            "all year": "Whole Year",
+            "perennial": "Whole Year",
+        }
+        canonical_season = _season_aliases.get(season.strip().lower(), season) if isinstance(season, str) else "Kharif"
+
         # Fetch candidate crops strictly from APY evidence matrix
         raw_candidates = self.cand_lookup.get((canonical_id, canon_season.lower()), [])
         if not raw_candidates:
@@ -578,7 +596,7 @@ class AgroIntelPhase6Engine:
                 "district": canon_district,
                 "canonical_id": canonical_id
             },
-            "season": season,
+            "season": canonical_season,
             "recommendations": top_5,
             "rejected_crops": rejected_crops[:5],
             "market": mandi_vec,

@@ -113,6 +113,116 @@ def _forecast_xgboost(
     return predictions
 
 
+def _forecast_state_aware_xgboost(
+    crop: str,
+    model: Any,
+    data_tail_df: pd.DataFrame,
+    start_date: date,
+    state: Optional[str],
+    total_days: int = 90,
+) -> List[float]:
+    """
+    Generate State-Aware XGBoost predictions using 14-feature state-encoded vector.
+    Feature set: state_enc, lag_1, lag_7, lag_14, lag_30, rolling_7, rolling_30,
+                 rolling_std_7, price_range, day_of_year, month, day_of_week, year, black_swan
+    """
+    BLACK_SWAN_EVENTS = [
+        {"start": pd.to_datetime("2020-03-01"), "end": pd.to_datetime("2020-12-31")},
+        {"start": pd.to_datetime("2022-02-24"), "end": pd.to_datetime("2022-12-31")},
+        {"start": pd.to_datetime("2023-01-01"), "end": pd.to_datetime("2023-06-30")},
+    ]
+
+    # Load state encoder
+    encoder_path = MODELS_DIR / f"state_encoder_{crop}.pkl"
+    state_enc_val = 0  # Default: unknown state encodes to 0
+    if encoder_path.exists() and state:
+        with open(encoder_path, "rb") as f:
+            le = pickle.load(f)
+        state_clean = state.strip().title()
+        if state_clean in le.classes_:
+            state_enc_val = int(le.transform([state_clean])[0])
+        else:
+            # Use national median encoding (midpoint of classes)
+            state_enc_val = len(le.classes_) // 2
+
+    # Build initial price tail from state-specific data if available
+    # data_tail_state_{crop}.pkl is a dict: {state_name: [{"ds": ..., "y": ...}, ...]}
+    if state and isinstance(data_tail_df, dict):
+        state_clean = state.strip().title()
+        state_records = data_tail_df.get(state_clean)
+        if not state_records:
+            # Try case-insensitive lookup
+            for k, v in data_tail_df.items():
+                if k.lower() == state_clean.lower():
+                    state_records = v
+                    break
+        if state_records and len(state_records) >= 7:
+            price_tail = [r["y"] for r in state_records[-60:]]
+        else:
+            # Aggregate: use last known price across all states
+            all_prices = [r["y"] for records in data_tail_df.values() for r in records]
+            price_tail = all_prices[-60:] if len(all_prices) >= 60 else all_prices
+    elif hasattr(data_tail_df, "columns") and "state" in data_tail_df.columns and state:
+        state_clean = state.strip().title()
+        state_df = data_tail_df[data_tail_df["state"] == state_clean]
+        if len(state_df) >= 30:
+            price_tail = list(state_df["y"].values[-60:])
+        else:
+            price_tail = list(data_tail_df["y"].values[-60:])
+    elif hasattr(data_tail_df, "columns"):
+        price_tail = list(data_tail_df["y"].values[-60:])
+    else:
+        # Generic fallback if it's a dict without matching structure
+        all_prices = [r["y"] for records in data_tail_df.values() for r in (records if isinstance(records, list) else [])]
+        price_tail = all_prices[-60:] if len(all_prices) >= 60 else (all_prices or [2000.0])
+
+
+    predictions = []
+    current_dt = start_date
+
+    for _ in range(total_days):
+        dt = pd.to_datetime(current_dt)
+
+        # Black swan flag
+        black_swan = int(any(
+            e["start"] <= dt <= e["end"] for e in BLACK_SWAN_EVENTS
+        ))
+
+        # Safe lag extraction from rolling price tail
+        def safe_lag(n: int) -> float:
+            return float(price_tail[-n]) if len(price_tail) >= n else float(price_tail[0])
+
+        lag_1  = safe_lag(1)
+        lag_7  = safe_lag(7)
+        lag_14 = safe_lag(14)
+        lag_30 = safe_lag(30)
+
+        recent_7  = price_tail[-7:]  if len(price_tail) >= 7  else price_tail
+        recent_30 = price_tail[-30:] if len(price_tail) >= 30 else price_tail
+
+        rolling_7   = float(np.mean(recent_7))
+        rolling_30  = float(np.mean(recent_30))
+        rolling_std_7 = float(np.std(recent_7)) if len(recent_7) >= 2 else 0.0
+        price_range = float(max(recent_7) - min(recent_7)) if recent_7 else 0.0
+
+        X = np.array([[
+            state_enc_val,
+            lag_1, lag_7, lag_14, lag_30,
+            rolling_7, rolling_30, rolling_std_7, price_range,
+            dt.dayofyear, dt.month, dt.dayofweek, dt.year,
+            black_swan
+        ]])
+
+        pred_val = float(model.predict(X)[0])
+        pred_val = max(pred_val, 100.0)
+
+        predictions.append(round(pred_val, 2))
+        price_tail.append(pred_val)
+        current_dt += timedelta(days=1)
+
+    return predictions
+
+
 def _forecast_lstm(
     crop: str,
     data_tail_df: pd.DataFrame,
@@ -135,7 +245,16 @@ def _forecast_lstm(
         with open(scaler_path, "rb") as f:
             scaler = pickle.load(f)
 
-        price_tail = list(data_tail_df["y"].values)
+        if isinstance(data_tail_df, dict):
+            state_clean = state.strip().title() if state else ""
+            state_recs = data_tail_df.get(state_clean) if state_clean else None
+            if not state_recs:
+                all_recs = [r for records in data_tail_df.values() for r in (records if isinstance(records, list) else [])]
+                price_tail = [r["y"] for r in all_recs[-60:]]
+            else:
+                price_tail = [r["y"] for r in state_recs[-60:]]
+        else:
+            price_tail = list(data_tail_df["y"].values)
         predictions = []
         current_dt = start_date
 
@@ -244,15 +363,36 @@ def predict_crop_price(
     weather_version = crop_meta.get("weather_version", "open-meteo-monthly-v1")
     feature_version = feat_meta.get("feature_version", "4.0.0")
 
-    # 2. Load Historical Data Tail
-    tail_path = MODELS_DIR / f"data_tail_{crop_lower}.pkl"
-    if not tail_path.exists():
-        raise FileNotFoundError(f"Data tail file not found: {tail_path}")
+    # 2. Load Historical Data Tail (prefer state-specific tail when state-aware model is active)
+    state_tail_path = MODELS_DIR / f"data_tail_state_{crop_lower}.pkl"
+    generic_tail_path = MODELS_DIR / f"data_tail_{crop_lower}.pkl"
+
+    if prod_model_name == "state_aware_xgboost" and state_tail_path.exists():
+        tail_path = state_tail_path
+    elif generic_tail_path.exists():
+        tail_path = generic_tail_path
+    elif state_tail_path.exists():
+        tail_path = state_tail_path
+    else:
+        raise FileNotFoundError(f"No data tail file found for crop '{crop_lower}'")
+
     with open(tail_path, "rb") as f:
         data_tail_df: pd.DataFrame = pickle.load(f)
 
-    mean_hist_price = float(data_tail_df["y"].mean())
-    hist_end_date = str(data_tail_df["ds"].iloc[-1].date())
+    # Compute mean_hist_price and hist_end_date from whichever format was loaded
+    if isinstance(data_tail_df, dict):
+        # State tail format: {state_name: [{"ds": ..., "y": ...}, ...]}
+        all_y = [r["y"] for records in data_tail_df.values() for r in (records if isinstance(records, list) else [])]
+        all_ds = [r["ds"] for records in data_tail_df.values() for r in (records if isinstance(records, list) else [])]
+        mean_hist_price = float(np.mean(all_y)) if all_y else 2000.0
+        hist_end_date = str(max(pd.to_datetime(all_ds)).date()) if all_ds else str(date.today())
+    else:
+        mean_hist_price = float(data_tail_df["y"].mean())
+        if "ds" in data_tail_df.columns:
+            hist_end_date = str(pd.to_datetime(data_tail_df["ds"]).max().date())
+        else:
+            hist_end_date = str(date.today())
+
 
     # 3. Retrieve Current Mandi Price
     # Priority: (1) Live data.gov.in API  (2) Disk cache  (3) Historical tail (last CSV row)
@@ -274,7 +414,16 @@ def predict_crop_price(
             f"record_date={current_price_date} | age={data_age_days}d | fallback=No"
         )
     else:
-        last_hist_price      = float(data_tail_df["y"].iloc[-1])
+        if isinstance(data_tail_df, dict):
+            state_clean = state.strip().title() if state else ""
+            state_recs = data_tail_df.get(state_clean) if state_clean else None
+            if state_recs:
+                last_hist_price = float(state_recs[-1]["y"])
+            else:
+                all_y = [r["y"] for records in data_tail_df.values() for r in (records if isinstance(records, list) else [])]
+                last_hist_price = float(all_y[-1]) if all_y else mean_hist_price
+        else:
+            last_hist_price = float(data_tail_df["y"].iloc[-1])
         current_price        = last_hist_price
         current_price_source = "Historical Dataset"
         current_price_date   = hist_end_date
@@ -297,7 +446,20 @@ def predict_crop_price(
 
     model_loaded_ok = False
 
-    if prod_model_name == "prophet":
+    if prod_model_name == "state_aware_xgboost":
+        sx_path = MODELS_DIR / f"xgboost_state_{crop_lower}.pkl"
+        if sx_path.exists():
+            with open(sx_path, "rb") as f:
+                model = pickle.load(f)
+            daily_predictions_list = _forecast_state_aware_xgboost(
+                crop_lower, model, data_tail_df, start_date, state, total_days=90
+            )
+            model_loaded_ok = True
+        else:
+            logger.warning(f"State-aware XGBoost model missing for {crop_lower}, falling back to generic XGBoost.")
+            prod_model_name = "xgboost"
+
+    elif prod_model_name == "prophet":
         p_path = MODELS_DIR / f"prophet_{crop_lower}.pkl"
         if p_path.exists():
             with open(p_path, "rb") as f:
@@ -319,18 +481,29 @@ def predict_crop_price(
             daily_predictions_list = lstm_preds
             model_loaded_ok = True
         else:
-            logger.warning(f"LSTM model file missing for {crop_lower}. Falling back to XGBoost forecast.")
-            prod_model_name = "xgboost"
+            logger.warning(f"LSTM model file missing for {crop_lower}. Falling back to state-aware XGBoost.")
+            prod_model_name = "state_aware_xgboost"
 
-    if not model_loaded_ok and prod_model_name == "xgboost":
-        x_path = MODELS_DIR / f"xgboost_{crop_lower}.pkl"
-        if not x_path.exists():
-            raise FileNotFoundError(f"XGBoost model file missing: {x_path}")
-        with open(x_path, "rb") as f:
-            model = pickle.load(f)
-        daily_predictions_list = _forecast_xgboost(
-            model, data_tail_df, start_date, monthly_temp, monthly_rain, total_days=90
-        )
+    if not model_loaded_ok and prod_model_name in ("xgboost", "state_aware_xgboost"):
+        # Final fallback: try state-aware first, then generic
+        sx_path = MODELS_DIR / f"xgboost_state_{crop_lower}.pkl"
+        x_path  = MODELS_DIR / f"xgboost_{crop_lower}.pkl"
+        if sx_path.exists():
+            with open(sx_path, "rb") as f:
+                model = pickle.load(f)
+            daily_predictions_list = _forecast_state_aware_xgboost(
+                crop_lower, model, data_tail_df, start_date, state, total_days=90
+            )
+            prod_model_name = "state_aware_xgboost"
+        elif x_path.exists():
+            with open(x_path, "rb") as f:
+                model = pickle.load(f)
+            daily_predictions_list = _forecast_xgboost(
+                model, data_tail_df, start_date, monthly_temp, monthly_rain, total_days=90
+            )
+            prod_model_name = "xgboost"
+        else:
+            raise FileNotFoundError(f"No XGBoost model file found for crop '{crop_lower}'")
         model_loaded_ok = True
 
     # 6. Build Graph & Confidence Bands Structures

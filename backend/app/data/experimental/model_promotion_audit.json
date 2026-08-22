@@ -1,7 +1,7 @@
 {
   "job_name": "validate_models",
-  "timestamp": "2026-08-21T18:06:06.000996+00:00",
-  "execution_time_seconds": 0.33,
+  "timestamp": "2026-08-22T09:11:27.359698+00:00",
+  "execution_time_seconds": 0.17,
   "promoted_crops_count": 4,
   "rejected_crops_count": 1,
   "promoted_crops": [
